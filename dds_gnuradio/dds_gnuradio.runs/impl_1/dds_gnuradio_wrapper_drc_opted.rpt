@@ -1,0 +1,52 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Mar 30 09:09:49 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Command      : report_drc -file dds_gnuradio_wrapper_drc_opted.rpt
+| Design       : dds_gnuradio_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPOP-1    | Warning  | PREG Output pipelining | 1          |
+| REQP-1615 | Warning  | use_IOB_register       | 2          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP twoInMult_0/U0/data_s_reg output twoInMult_0/U0/data_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+REQP-1615#1 Warning
+use_IOB_register  
+The FDCE cell ltc2145_0/U0/ltc2145_capture_inst/data_a_s_reg[13] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDCE is property connected to an IO.
+Related violations: <none>
+
+REQP-1615#2 Warning
+use_IOB_register  
+The FDCE cell ltc2145_0/U0/ltc2145_capture_inst/data_b_s_reg[13] has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDCE is property connected to an IO.
+Related violations: <none>
+
+

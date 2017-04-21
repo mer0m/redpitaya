@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Mar 29 09:13:02 2017
+# Process ID: 6300
+# Current directory: /home/bma/git/fpga_design/redpitaya/pid_only
+# Command line: vivado pid_only.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/pid_only/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/pid_only/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project pid_only.xpr
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+startgroup
+create_bd_cell -type ip -vlnv ggm:cogen:moyenneurReal:1.0 moyenneurReal_0
+endgroup
+delete_bd_objs [get_bd_cells moyenneurReal_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets ltc2145_0_data_a] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_intf_nets add_const_3_data_out] [get_bd_nets twoInMult_1_data_clk_o] [get_bd_nets nco_counter_0_dds_clk_o] [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets add_const_0_data_out] [get_bd_intf_nets twoInMult_0_data_out] [get_bd_intf_nets add_const_1_data_out] [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_nets nco_counter_0_dds_sin_o] [get_bd_intf_nets add_const_2_data_out] [get_bd_intf_nets axi_interconnect_0_M04_AXI] [get_bd_nets twoInMult_1_data_en_o] [get_bd_nets nco_counter_0_dds_en_o] [get_bd_nets twoInMult_1_data_o] [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_nets xlconstant_1_dout] [get_bd_nets xlslice_0_Dout] [get_bd_nets xlconstant_0_dout] [get_bd_nets ltc2145_0_data_a_en_o] [get_bd_nets ltc2145_0_data_a_clk_o] [get_bd_nets ltc2145_0_data_a_rst_o] [get_bd_cells add_const_1] [get_bd_cells add_const_2] [get_bd_cells add_const_3] [get_bd_cells xlconstant_0] [get_bd_cells xlconstant_1] [get_bd_cells twoInMult_0] [get_bd_cells twoInMult_1] [get_bd_cells nco_counter_0] [get_bd_cells add_const_0] [get_bd_cells xlslice_0]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv2:1.0 red_pitaya_pidv2_0
+endgroup
+set_property location {5 1470 334} [get_bd_cells red_pitaya_pidv2_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins red_pitaya_pidv2_0/s00_axi]
+set_property location {4.5 1571 397} [get_bd_cells red_pitaya_pidv2_0]
+startgroup
+create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 add_const_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_0/s00_axi]
+connect_bd_intf_net [get_bd_intf_pins add_const_0/data_in] [get_bd_intf_pins ltc2145_0/data_a]
+connect_bd_intf_net [get_bd_intf_pins add_const_0/data_out] [get_bd_intf_pins red_pitaya_pidv2_0/data_in]
+copy_bd_objs /  [get_bd_cells {add_const_0}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_1/s00_axi]
+connect_bd_intf_net [get_bd_intf_pins add_const_1/data_in] [get_bd_intf_pins red_pitaya_pidv2_0/data_out]
+connect_bd_intf_net [get_bd_intf_pins add_const_1/data_out] [get_bd_intf_pins ad9767_0/dataA]
+regenerate_bd_layout
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells add_const_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells add_const_1]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+delete_bd_objs [get_bd_cells red_pitaya_pidv3_0]
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+set_property location {2 349 -335} [get_bd_cells red_pitaya_pidv3_0]
+delete_bd_objs [get_bd_cells red_pitaya_pidv3_0]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+save_bd_design
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+set_property location {1 119 -414} [get_bd_cells red_pitaya_pidv3_0]
+set_property location {6 1690 221} [get_bd_cells red_pitaya_pidv3_0]
+delete_bd_objs [get_bd_intf_nets add_const_0_data_out] [get_bd_intf_nets red_pitaya_pidv2_0_data_out] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_cells red_pitaya_pidv2_0]
+connect_bd_intf_net [get_bd_intf_pins red_pitaya_pidv3_0/data_out] [get_bd_intf_pins add_const_1/data_in]
+connect_bd_intf_net [get_bd_intf_pins red_pitaya_pidv3_0/data_in] [get_bd_intf_pins add_const_0/data_out]
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {add_const_0}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_2/s00_axi]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins add_const_2/data_i]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {14} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+connect_bd_net [get_bd_pins add_const_2/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_2/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_2/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_2/data_o] [get_bd_pins red_pitaya_pidv3_0/setpoint_i]
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {add_const_2}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_3/s00_axi]
+connect_bd_net [get_bd_pins add_const_3/data_o] [get_bd_pins red_pitaya_pidv3_0/kp_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_3/data_i] [get_bd_pins xlconstant_0/dout]
+set_property location {3.5 1130 437} [get_bd_cells xlconstant_0]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_3/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_3/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_3/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+copy_bd_objs /  [get_bd_cells {add_const_3}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_4/s00_axi]
+connect_bd_net [get_bd_pins add_const_4/data_o] [get_bd_pins red_pitaya_pidv3_0/ki_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_4/data_i] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins add_const_4/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_4/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_4/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+copy_bd_objs /  [get_bd_cells {add_const_4}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_5/s00_axi]
+connect_bd_net [get_bd_pins add_const_5/data_o] [get_bd_pins red_pitaya_pidv3_0/kd_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_5/data_i] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins add_const_5/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_5/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_5/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+copy_bd_objs /  [get_bd_cells {add_const_5}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_6/s00_axi]
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {1} CONFIG.DATA_IN_SIZE {1}] [get_bd_cells add_const_6]
+endgroup
+startgroup
+endgroup
+connect_bd_net [get_bd_pins add_const_6/data_o] [get_bd_pins red_pitaya_pidv3_0/sign_i]
+copy_bd_objs /  [get_bd_cells {add_const_6}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_7/s00_axi]
+connect_bd_net [get_bd_pins add_const_7/data_o] [get_bd_pins red_pitaya_pidv3_0/int_rst_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_6/data_i] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins add_const_6/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_6/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_6/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+connect_bd_net [get_bd_pins add_const_7/data_i] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins add_const_7/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_7/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_7/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+regenerate_bd_layout
+save_bd_design
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run pid_only_wrapper_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_1_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run synth_1
+reset_run pid_only_wrapper_xbar_0_synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+copy_bd_objs /  [get_bd_cells {xlconstant_0}]
+set_property location {3 1030 1321} [get_bd_cells xlconstant_1]
+delete_bd_objs [get_bd_nets xlconstant_0_dout]
+set_property -dict [list CONFIG.CONST_WIDTH {1}] [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins add_const_7/data_i] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins add_const_6/data_i] [get_bd_pins xlconstant_1/dout]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins add_const_5/data_i]
+connect_bd_net [get_bd_pins add_const_4/data_i] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins add_const_3/data_i] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins add_const_2/data_i] [get_bd_pins xlconstant_0/dout]
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_1_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_1_synth_1
+reset_run synth_1
+reset_run pid_only_wrapper_xbar_0_synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+delete_bd_objs [get_bd_intf_nets ltc2145_0_data_a]
+connect_bd_net [get_bd_pins add_const_0/data_i] [get_bd_pins ltc2145_0/data_a_o]
+connect_bd_net [get_bd_pins add_const_0/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+connect_bd_net [get_bd_pins add_const_0/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+connect_bd_net [get_bd_pins add_const_0/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PSR {14} CONFIG.ISR {14} CONFIG.DSR {14} CONFIG.P_SIZE {14} CONFIG.I_SIZE {14} CONFIG.D_SIZE {14}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+report_ip_status -name ip_status 
+reset_run pid_only_wrapper_xbar_0_synth_1
+reset_run pid_only_wrapper_processing_system7_0_0_synth_1
+reset_run pid_only_wrapper_ad9767_0_0_synth_1
+reset_run pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1
+reset_run pid_only_wrapper_ltc2145_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_3_synth_1
+reset_run pid_only_wrapper_add_const_0_0_synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_1_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+regenerate_bd_layout
+save_bd_design
+set_property offset 0x43C80000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_2_reg0}]
+set_property offset 0x43C00000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_1_reg0}]
+set_property offset 0x43C20000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_1_reg0}]
+set_property offset 0x43C00000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_0_reg0}]
+set_property offset 0x43C10000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_1_reg0}]
+set_property offset 0x43C20000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_2_reg0}]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

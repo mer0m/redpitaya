@@ -1,0 +1,1708 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Dec  2 16:09:38 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_data16_multi_to_ram_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_data16_multi_to_ram_1_0 (ggm:cogen:data16_multi_to_ram:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Dec  2 16:09:38 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_data16_multi_to_ram_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_data16_multi_to_ram_0_1 (ggm:cogen:data16_multi_to_ram:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 16:19:07 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_data16_multi_to_ram_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of test_pound_fironly_v1_data16_multi_to_ram_0_1 (ggm:cogen:data16_multi_to_ram:1.0 (Rev. 5)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'test_pound_fironly_v1_data16_multi_to_ram_0_1'.
+
+
+-Upgrade has removed interface 'data3'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_data16_multi_to_ram_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'data3_clk_i'
+
+-Upgrade has removed port 'data3_en_i'
+
+-Upgrade has removed port 'data3_eof_i'
+
+-Upgrade has removed port 'data3_i'
+
+-Upgrade has removed port 'data3_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 16:15:04 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_data16_multi_to_ram_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_data16_multi_to_ram_0_1 (ggm:cogen:data16_multi_to_ram:1.0 (Rev. 5)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 16:03:48 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneurReal_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_moyenneurReal_1_0 (ggm:cogen:moyenneurReal:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 16:03:48 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneurReal_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_moyenneurReal_0_1 (ggm:cogen:moyenneurReal:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 16:03:48 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneurReal_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_moyenneurReal_0_0 (ggm:cogen:moyenneurReal:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 15:58:36 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneurReal_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_moyenneurReal_1_0 (ggm:cogen:moyenneurReal:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 15:58:36 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneurReal_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_moyenneurReal_0_1 (ggm:cogen:moyenneurReal:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Fri Nov 25 15:58:36 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneurReal_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_moyenneurReal_0_0 (ggm:cogen:moyenneurReal:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:55 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_moyenneur_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_moyenneur_0_0 (ggm:cogen:moyenneur:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'test_pound_fironly_v1_moyenneur_0_0'.
+
+
+-Upgrade has removed interface 'rst'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_moyenneur_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'clk_i'
+
+-Upgrade has removed port 'rst_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_rst_i'
+
+-Upgrade has added port 'data_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:30 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_shifterReal_0_2 (ggm:cogen:shifterReal:1.0) from (Rev. 10) to (Rev. 11)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_shifterReal_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_rst_i'
+
+-Upgrade has added port 'data_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:30 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'test_pound_fironly_v1_red_pitaya_pid_0_0'.
+
+
+-Upgrade has added interface 'data_in' (xilinx.com:interface:real:1.0)
+
+-Upgrade has added interface 'data_out' (xilinx.com:interface:real:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_red_pitaya_pid_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'data_clock_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+-Upgrade has added port 'data_rst_i'
+
+-Upgrade has added port 'data_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:30 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_nco_counter_dual_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_nco_counter_dual_0_0 (user.org:user:nco_counter_dual:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:30 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_nco_counter_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_nco_counter_0_0 (user.org:user:nco_counter:1.0) from (Rev. 9) to (Rev. 11)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_nco_counter_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has added port 'dds_rst_o'
+
+-Upgrade has added port 'pinc_rst_i'
+
+-Upgrade has added port 'poff_rst_i'
+
+-Upgrade has added port 'ref_clk_i'
+
+-Upgrade has added port 'ref_rst_i'
+
+-Upgrade has added port 'wave_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:30 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_mixer_single_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_mixer_single_0_0 (ggm:cogen:mixer_single:1.0) from (Rev. 30) to (Rev. 32)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_mixer_single_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:29 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_ltc2145_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_ltc2145_0_0 (gwbs:user:ltc2145:1.0) from (Rev. 9) to (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_ltc2145_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_a_rst_o'
+
+-Upgrade has added port 'data_b_rst_o'
+
+-Upgrade has added port 'processing_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:29 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_2 (ggm:cogen:fir16RealbitsOneInTwoMult_v1_0:1.0) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_rst_i'
+
+-Upgrade has added port 'data_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:29 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_expanderReal_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_expanderReal_0_3 (ggm:cogen:expanderReal:1.0) from (Rev. 9) to (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_expanderReal_0_3'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_rst_i'
+
+-Upgrade has added port 'data_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:29 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_expanderReal_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_expanderReal_0_2 (ggm:cogen:expanderReal:1.0) from (Rev. 9) to (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_expanderReal_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_rst_i'
+
+-Upgrade has added port 'data_rst_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Thu Nov 24 10:18:29 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_ad9767_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_ad9767_0_1 (ggm:cogen:ad9767:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_ad9767_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'dac_dat_a_rst_i'
+
+-Upgrade has added port 'dac_dat_b_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Nov 23 15:04:34 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_dupplReal_1_to_2_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_dupplReal_1_to_2_0_2 (ggm:cogen:dupplReal_1_to_2:1.0) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_dupplReal_1_to_2_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'data1_rst_o'
+
+-Upgrade has added port 'data2_rst_o'
+
+-Upgrade has added port 'data_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Nov 23 15:04:34 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_dupplReal_1_to_2_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_dupplReal_1_to_2_0_1 (ggm:cogen:dupplReal_1_to_2:1.0) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_dupplReal_1_to_2_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'data1_rst_o'
+
+-Upgrade has added port 'data2_rst_o'
+
+-Upgrade has added port 'data_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Nov 23 15:04:34 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_data16_multi_to_ram_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_data16_multi_to_ram_0_0 (ggm:cogen:data16_multi_to_ram:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_data16_multi_to_ram_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'data1_rst_i'
+
+-Upgrade has added port 'data2_rst_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_shifterReal_1_0 (ggm:cogen:shifterReal:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_shifterReal_0_1 (ggm:cogen:shifterReal:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_shifterReal_0_0 (ggm:cogen:shifterReal:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_ltc2145_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of test_pound_fironly_v1_ltc2145_0_0 (gwbs:user:ltc2145:1.0 (Rev. 9)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_ltc2145_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_a_clk_o'
+
+-Upgrade has added port 'data_b_clk_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:39 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_1_0 (ggm:cogen:fir16RealbitsOneInTwoMult_v1_0:1.0) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:39 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_1 (ggm:cogen:fir16RealbitsOneInTwoMult_v1_0:1.0) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Oct 19 12:36:39 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_0 (ggm:cogen:fir16RealbitsOneInTwoMult_v1_0:1.0) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_fir16RealbitsOneInTwoMult_v1_0_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Oct 11 10:10:26 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_shifterReal_1_0 (ggm:cogen:shifterReal:1.0) from (Rev. 5) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'test_pound_fironly_v1_shifterReal_1_0'.
+
+
+-Upgrade has removed interface 'clk'
+
+-Upgrade has removed interface 'reset'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_shifterReal_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has removed port 'processing_rst_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+-Upgrade has added port 'data_eof_i'
+
+-Upgrade has added port 'data_eof_o'
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'DECAL' is no longer present on the upgraded IP 'test_pound_fironly_v1_shifterReal_1_0', and cannot be set to '12'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv ggm:cogen:shifterReal:1.0 -user_name test_pound_fironly_v1_shifterReal_1_0
+set_property -dict "\
+  CONFIG.Component_Name test_pound_fironly_v1_shifterReal_1_0 \
+  CONFIG.DATA_IN_SIZE 32 \
+  CONFIG.DATA_OUT_SIZE 14 " [get_ips test_pound_fironly_v1_shifterReal_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Oct 11 10:10:26 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_shifterReal_0_1 (ggm:cogen:shifterReal:1.0) from (Rev. 5) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'test_pound_fironly_v1_shifterReal_0_1'.
+
+
+-Upgrade has removed interface 'clk'
+
+-Upgrade has removed interface 'reset'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_shifterReal_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has removed port 'processing_rst_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+-Upgrade has added port 'data_eof_i'
+
+-Upgrade has added port 'data_eof_o'
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'DECAL' is no longer present on the upgraded IP 'test_pound_fironly_v1_shifterReal_0_1', and cannot be set to '11'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv ggm:cogen:shifterReal:1.0 -user_name test_pound_fironly_v1_shifterReal_0_1
+set_property -dict "\
+  CONFIG.Component_Name test_pound_fironly_v1_shifterReal_0_1 \
+  CONFIG.DATA_IN_SIZE 32 \
+  CONFIG.DATA_OUT_SIZE 16 " [get_ips test_pound_fironly_v1_shifterReal_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Oct 11 10:10:26 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_shifterReal_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_shifterReal_0_0 (ggm:cogen:shifterReal:1.0) from (Rev. 5) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'test_pound_fironly_v1_shifterReal_0_0'.
+
+
+-Upgrade has removed interface 'clk'
+
+-Upgrade has removed interface 'reset'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_shifterReal_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'processing_clk_i'
+
+-Upgrade has removed port 'processing_rst_i'
+
+-Upgrade has added port 'data_clk_i'
+
+-Upgrade has added port 'data_clk_o'
+
+-Upgrade has added port 'data_eof_i'
+
+-Upgrade has added port 'data_eof_o'
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'DECAL' is no longer present on the upgraded IP 'test_pound_fironly_v1_shifterReal_0_0', and cannot be set to '11'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv ggm:cogen:shifterReal:1.0 -user_name test_pound_fironly_v1_shifterReal_0_0
+set_property -dict "\
+  CONFIG.Component_Name test_pound_fironly_v1_shifterReal_0_0 \
+  CONFIG.DATA_IN_SIZE 32 \
+  CONFIG.DATA_OUT_SIZE 16 " [get_ips test_pound_fironly_v1_shifterReal_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Oct 11 10:10:26 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_redpitaya_adc_dac_clk_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_redpitaya_adc_dac_clk_0_0 (ggm:cogen:redpitaya_adc_dac_clk:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 16:27:12 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 16:18:20 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 15:50:31 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 15:48:50 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 15:26:11 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 15:24:21 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 15:12:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 14:48:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 14:38:50 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 14:37:37 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 11:16:59 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 11:15:12 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Wed Jul 20 10:39:00 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 16:27:33 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 16:18:43 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 16:04:30 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 15:56:12 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 15:45:53 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 14:17:05 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 14:09:40 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'test_pound_fironly_v1_red_pitaya_pid_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_clock_i'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 12:30:09 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_ltc2145_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_ltc2145_0_0 (gwbs:user:ltc2145:1.0 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 12:29:50 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_ltc2145_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_ltc2145_0_0 (gwbs:user:ltc2145:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 12:02:45 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Jul 19 12:02:13 2016
+| Host         : TF-PYB12 running 64-bit Debian GNU/Linux 8.0 (jessie)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_pound_fironly_v1_red_pitaya_pid_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_pound_fironly_v1_red_pitaya_pid_0_0 (user.org:user:red_pitaya_pid:1.0) from (Rev. 2) to (Rev. 3)
+

@@ -1,0 +1,251 @@
+
+*** Running vivado
+    with args -log pid_vco_wrapper_expanderReal_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pid_vco_wrapper_expanderReal_0_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source pid_vco_wrapper_expanderReal_0_0.tcl -notrace
+Command: synth_design -top pid_vco_wrapper_expanderReal_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19605 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1111.270 ; gain = 180.086 ; free physical = 2316 ; free virtual = 13428
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pid_vco_wrapper_expanderReal_0_0' [/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ip/pid_vco_wrapper_expanderReal_0_0/synth/pid_vco_wrapper_expanderReal_0_0.vhd:71]
+	Parameter format bound to: signed - type: string 
+	Parameter DATA_IN_SIZE bound to: 28 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'expanderReal' declared at '/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ipshared/8279/hdl/expanderReal.vhd:5' bound to instance 'U0' of component 'expanderReal' [/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ip/pid_vco_wrapper_expanderReal_0_0/synth/pid_vco_wrapper_expanderReal_0_0.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'expanderReal' [/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ipshared/8279/hdl/expanderReal.vhd:26]
+	Parameter format bound to: signed - type: string 
+	Parameter DATA_IN_SIZE bound to: 28 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'expanderReal' (1#1) [/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ipshared/8279/hdl/expanderReal.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'pid_vco_wrapper_expanderReal_0_0' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ip/pid_vco_wrapper_expanderReal_0_0/synth/pid_vco_wrapper_expanderReal_0_0.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.738 ; gain = 221.555 ; free physical = 2230 ; free virtual = 13343
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.738 ; gain = 221.555 ; free physical = 2229 ; free virtual = 13342
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1395.891 ; gain = 1.000 ; free physical = 1935 ; free virtual = 13048
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.891 ; gain = 464.707 ; free physical = 1921 ; free virtual = 13034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.891 ; gain = 464.707 ; free physical = 1921 ; free virtual = 13034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.891 ; gain = 464.707 ; free physical = 1921 ; free virtual = 13034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.891 ; gain = 464.707 ; free physical = 1913 ; free virtual = 13026
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design pid_vco_wrapper_expanderReal_0_0 has an empty top module
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1395.891 ; gain = 464.707 ; free physical = 1905 ; free virtual = 13018
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.891 ; gain = 503.707 ; free physical = 1841 ; free virtual = 12954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1434.891 ; gain = 503.707 ; free physical = 1841 ; free virtual = 12954
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1832 ; free virtual = 12945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1795 ; free virtual = 12908
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1795 ; free virtual = 12908
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1795 ; free virtual = 12908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1795 ; free virtual = 12908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1794 ; free virtual = 12907
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1794 ; free virtual = 12907
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.906 ; gain = 512.723 ; free physical = 1794 ; free virtual = 12907
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1443.906 ; gain = 157.480 ; free physical = 1788 ; free virtual = 12901
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 1443.914 ; gain = 512.730 ; free physical = 1788 ; free virtual = 12900
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1448.906 ; gain = 418.219 ; free physical = 1776 ; free virtual = 12889
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_expanderReal_0_0_synth_1/pid_vco_wrapper_expanderReal_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_expanderReal_0_0_synth_1/pid_vco_wrapper_expanderReal_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1448.906 ; gain = 0.000 ; free physical = 1772 ; free virtual = 12885
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 13 19:04:53 2017...

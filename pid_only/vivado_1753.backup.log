@@ -1,0 +1,1053 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 30 08:36:04 2017
+# Process ID: 1753
+# Current directory: /home/bma/git/fpga_design/redpitaya/pid_only
+# Command line: vivado pid_only.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/pid_only/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/pid_only/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 5936.191 ; gain = 156.562 ; free physical = 5295 ; free virtual = 14950
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_3
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_4
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_5
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_6
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_7
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - red_pitaya_pidv3_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 5987.852 ; gain = 31.066 ; free physical = 5147 ; free virtual = 14874
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 6040.531 ; gain = 39.234 ; free physical = 4422 ; free virtual = 14548
+create_bd_design "dds_gnuradio_wrapper"
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd> 
+open_bd_design {/home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0
+Adding cell -- ggm:cogen:data16_multi_to_ram:1.0 - data16_multi_to_ram_0
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_1
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- user.org:user:nco_counter:1.0 - nco_counter_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /nco_counter_0/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_2/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_3/data_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design {/home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd}
+current_bd_design design_1
+set tmpCopyObjs [concat  [get_bd_cells {axi_interconnect_0 expanderReal_0 expanderReal_1 proc_sys_reset_0 twoInMult_0 add_const_0 add_const_1 ad9767_0 xlconstant_0 xlslice_0 add_const_2 data16_multi_to_ram_0 add_const_3 redpitaya_adc_dac_clk_0 processing_system7_0 dupplReal_1_to_2_0 nco_counter_0 ltc2145_0}] [get_bd_intf_ports {DDR FIXED_IO}] [get_bd_ports {dac_rst_o adc_clk_n_i dac_clk_o adc_cdcs dac_wrt_o adc_clk_p_i dac_sel_o dac_dat_o adc_data_b_i adc_data_a_i}] [get_bd_intf_nets {expanderReal_1_data_out processing_system7_0_DDR axi_interconnect_0_M01_AXI expanderReal_0_data_out axi_interconnect_0_M02_AXI add_const_1_data_out axi_interconnect_0_M05_AXI add_const_3_data_out ltc2145_0_data_a ltc2145_0_data_b dupplReal_1_to_2_0_data1_out dupplReal_1_to_2_0_data2_out add_const_0_data_out axi_interconnect_0_M03_AXI add_const_2_data_out axi_interconnect_0_M00_AXI S00_AXI_1 processing_system7_0_FIXED_IO axi_interconnect_0_M04_AXI}] [get_bd_nets {twoInMult_0_data_en_o xlconstant_0_dout redpitaya_adc_dac_clk_0_dac_locked_o ad9767_0_dac_sel_o nco_counter_0_dds_clk_o twoInMult_0_data_o processing_system7_0_FCLK_RESET0_N redpitaya_adc_dac_clk_0_dac_2ph_o ltc2145_0_adc_cdcs ltc2145_0_adc_clk ad9767_0_dac_rst_o ad9767_0_dac_dat_o redpitaya_adc_dac_clk_0_dac_clk_o redpitaya_adc_dac_clk_0_adc_clk_o twoInMult_0_data_clk_o proc_sys_reset_0_peripheral_aresetn nco_counter_0_dds_sin_o xlslice_0_Dout adc_clk_p_i_1 redpitaya_adc_dac_clk_0_dac_2clk_o adc_data_b_i_1 ACLK_1 adc_data_a_i_1 ad9767_0_dac_wrt_o nco_counter_0_dds_en_o adc_clk_n_i_1 proc_sys_reset_0_peripheral_reset proc_sys_reset_0_interconnect_aresetn ad9767_0_dac_clk_o}]]
+current_bd_design dds_gnuradio_wrapper
+copy_bd_objs -from_design design_1 / $tmpCopyObjs
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-1306] The connection to interface pin /nco_counter_0/dds_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_dds
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_0/data1_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /nco_counter_0/dds_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_dds
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_0/data1_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /nco_counter_0/dds_sin_o is being overridden by the user. This pin will not be connected as a part of interface connection data_dds
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_0/data1_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /nco_counter_0/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_2/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_3/data_rst_i(undef)
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_0/data_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_0/data_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_0/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 6175.176 ; gain = 80.820 ; free physical = 4249 ; free virtual = 14393
+current_bd_design [get_bd_designs design_1]
+close_bd_design [get_bd_designs design_1]
+set_property is_enabled false [get_files  /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/design_1/design_1.bd]
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property top dds_gnuradio_wrapper [current_fileset]
+open_bd_design {/home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd}
+startgroup
+set_property -dict [list CONFIG.format {unsigned}] [get_bd_cells add_const_2]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd> 
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/ui/bd_5df4780d.ui> 
+set_property name adc1_offset [get_bd_cells add_const_0]
+set_property name adc_2_offset [get_bd_cells add_const_1]
+set_property name dds_freq [get_bd_cells add_const_2]
+set_property name dds_offset [get_bd_cells add_const_3]
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/ui/bd_5df4780d.ui> 
+set_property name dds_ampl [get_bd_cells dds_freq]
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/ui/bd_5df4780d.ui> 
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/hdl/dds_gnuradio_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/hdl/dds_gnuradio_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc_2_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data16_multi_to_ram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nco_counter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] dds_gnuradio_wrapper_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/hw_handoff/dds_gnuradio_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/hw_handoff/dds_gnuradio_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/hdl/dds_gnuradio_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_gnuradio_wrapper_xbar_0, cache-ID = bc90f1ece8679e69; cache size = 5.049 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_gnuradio_wrapper_proc_sys_reset_0_0, cache-ID = 028947bf0aeddb77; cache size = 5.049 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_gnuradio_wrapper_processing_system7_0_0, cache-ID = 2883913904ebec29; cache size = 5.049 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_gnuradio_wrapper_xlconstant_0_0, cache-ID = 332fe43174ec976c; cache size = 5.049 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_gnuradio_wrapper_xlslice_0_0, cache-ID = c4eda066f09e1f17; cache size = 5.049 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP dds_gnuradio_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 5.049 MB.
+[Thu Mar 30 09:01:03 2017] Launched dds_gnuradio_wrapper_twoInMult_0_0_synth_1, dds_gnuradio_wrapper_add_const_3_0_synth_1, dds_gnuradio_wrapper_data16_multi_to_ram_0_0_synth_1, dds_gnuradio_wrapper_expanderReal_0_0_synth_1, dds_gnuradio_wrapper_dupplReal_1_to_2_0_0_synth_1, dds_gnuradio_wrapper_ltc2145_0_0_synth_1, dds_gnuradio_wrapper_expanderReal_1_0_synth_1, dds_gnuradio_wrapper_redpitaya_adc_dac_clk_0_0_synth_1, dds_gnuradio_wrapper_nco_counter_0_0_synth_1, dds_gnuradio_wrapper_ad9767_0_0_synth_1, dds_gnuradio_wrapper_add_const_1_0_synth_1, dds_gnuradio_wrapper_add_const_2_0_synth_1, dds_gnuradio_wrapper_add_const_0_0_synth_1, synth_1...
+Run output will be captured here:
+dds_gnuradio_wrapper_twoInMult_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_twoInMult_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_add_const_3_0_synth_1/runme.log
+dds_gnuradio_wrapper_data16_multi_to_ram_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_data16_multi_to_ram_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_expanderReal_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_expanderReal_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_dupplReal_1_to_2_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_dupplReal_1_to_2_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_ltc2145_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_ltc2145_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_expanderReal_1_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_expanderReal_1_0_synth_1/runme.log
+dds_gnuradio_wrapper_redpitaya_adc_dac_clk_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_redpitaya_adc_dac_clk_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_nco_counter_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_nco_counter_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_ad9767_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_ad9767_0_0_synth_1/runme.log
+dds_gnuradio_wrapper_add_const_1_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_add_const_1_0_synth_1/runme.log
+dds_gnuradio_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_add_const_2_0_synth_1/runme.log
+dds_gnuradio_wrapper_add_const_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/dds_gnuradio_wrapper_add_const_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/synth_1/runme.log
+[Thu Mar 30 09:01:05 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:43 ; elapsed = 00:00:39 . Memory (MB): peak = 6339.598 ; gain = 111.301 ; free physical = 3464 ; free virtual = 13825
+open_bd_design {/home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd}
+remove_files  /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/design_1/design_1.bd
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6382.660 ; gain = 0.000 ; free physical = 3623 ; free virtual = 14147
+open_bd_design {/home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd}
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - adc_2_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_ampl
+Adding cell -- ggm:cogen:add_const:1.0 - dds_offset
+Adding cell -- ggm:cogen:data16_multi_to_ram:1.0 - data16_multi_to_ram_0
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_1
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- user.org:user:nco_counter:1.0 - nco_counter_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /nco_counter_0/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_offset/data_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <dds_gnuradio_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd>
+reset_run design_1_ad9767_0_0_synth_1
+reset_run design_1_ltc2145_0_0_synth_1
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_redpitaya_adc_dac_clk_0_0_synth_1
+reset_run design_1_xlconstant_0_0_synth_1
+reset_run design_1_add_const_2_0_synth_1
+reset_run design_1_xlslice_0_0_synth_1
+reset_run design_1_add_const_0_0_synth_1
+reset_run design_1_data16_multi_to_ram_0_0_synth_1
+reset_run design_1_expanderReal_0_1_synth_1
+reset_run design_1_twoInMult_0_0_synth_1
+reset_run design_1_dupplReal_1_to_2_0_0_synth_1
+reset_run design_1_add_const_0_1_synth_1
+reset_run design_1_expanderReal_0_0_synth_1
+reset_run design_1_nco_counter_0_0_synth_1
+reset_run design_1_add_const_1_0_synth_1
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 6384.309 ; gain = 0.000 ; free physical = 3623 ; free virtual = 14141
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_3
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_4
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_5
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_6
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_7
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - red_pitaya_pidv3_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+Upgrading '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd'
+INFO: [IP_Flow 19-1972] Upgraded pid_only_wrapper_red_pitaya_pidv3_0_0 from red_pitaya_pidv3_v1_0 1.0 to red_pitaya_pidv3_v1_0 1.0
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/bma/git/fpga_design/redpitaya/pid_only/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.PSR {14} CONFIG.ISR {32}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 09:32:33 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 09:32:33 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 6681.797 ; gain = 37.000 ; free physical = 3321 ; free virtual = 13851
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+Upgrading '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd'
+INFO: [IP_Flow 19-1972] Upgraded pid_only_wrapper_red_pitaya_pidv3_0_0 from red_pitaya_pidv3_v1_0 1.0 to red_pitaya_pidv3_v1_0 1.0
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/bma/git/fpga_design/redpitaya/pid_only/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.PSR {12}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 10:14:59 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 10:14:59 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7008.684 ; gain = 31.820 ; free physical = 3010 ; free virtual = 13543
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+WARNING: [IP_Flow 19-3664] IP 'pid_only_wrapper_red_pitaya_pidv3_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_red_pitaya_pidv3_0_0/pid_only_wrapper_red_pitaya_pidv3_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pid_only_wrapper_red_pitaya_pidv3_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_red_pitaya_pidv3_0_0/pid_only_wrapper_red_pitaya_pidv3_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pid_only_wrapper_red_pitaya_pidv3_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_red_pitaya_pidv3_0_0/pid_only_wrapper_red_pitaya_pidv3_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pid_only_wrapper_red_pitaya_pidv3_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_red_pitaya_pidv3_0_0/pid_only_wrapper_red_pitaya_pidv3_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'pid_only_wrapper_red_pitaya_pidv3_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_red_pitaya_pidv3_0_0/pid_only_wrapper_red_pitaya_pidv3_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7073.301 ; gain = 0.000 ; free physical = 2644 ; free virtual = 13327
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_3
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_4
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_5
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_6
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_7
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - red_pitaya_pidv3_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+startgroup
+endgroup
+set_property name adc1_offset [get_bd_cells add_const_0]
+set_property name dac1_offset [get_bd_cells add_const_1]
+set_property name pid_setpoint [get_bd_cells add_const_2]
+set_property name pid_kp [get_bd_cells add_const_3]
+set_property name pid_ki [get_bd_cells add_const_4]
+set_property name pid_kd [get_bd_cells add_const_7]
+regenerate_bd_layout
+set_property name pid_sign [get_bd_cells add_const_6]
+set_property name pid_rst_int [get_bd_cells pid_kd]
+set_property name pid_kd [get_bd_cells add_const_5]
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_1
+endgroup
+delete_bd_objs [get_bd_cells red_pitaya_pidv3_1]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+Upgrading '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd'
+INFO: [IP_Flow 19-1972] Upgraded pid_only_wrapper_red_pitaya_pidv3_0_0 from red_pitaya_pidv3_v1_0 1.0 to red_pitaya_pidv3_v1_0 1.0
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/bma/git/fpga_design/redpitaya/pid_only/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 10:22:40 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 10:22:41 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 7127.961 ; gain = 45.000 ; free physical = 2598 ; free virtual = 13272
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.ISR {28}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+Upgrading '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd'
+INFO: [IP_Flow 19-1972] Upgraded pid_only_wrapper_red_pitaya_pidv3_0_0 from red_pitaya_pidv3_v1_0 1.0 to red_pitaya_pidv3_v1_0 1.0
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/bma/git/fpga_design/redpitaya/pid_only/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 10:25:24 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 10:25:24 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 7377.672 ; gain = 58.312 ; free physical = 2367 ; free virtual = 13038
+report_ip_status -name ip_status 
+regenerate_bd_layout
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+report_ip_status -name ip_status
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::infer_core -vendor user.org -library user -taxonomy /UserIP /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+ipx::edit_ip_in_project -upgrade true -name redpitaya_pidv3 -directory /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.tmp /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::current_core /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3/component.xml
+set_property vendor_display_name bma [ipx::current_core]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "PSR" -component [ipx::current_core] ]
+set_property value 14 [ipx::get_user_parameters PSR -of_objects [ipx::current_core]]
+set_property value 14 [ipx::get_hdl_parameters PSR -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "ISR" -component [ipx::current_core] ]
+set_property value 18 [ipx::get_user_parameters ISR -of_objects [ipx::current_core]]
+set_property value 18 [ipx::get_hdl_parameters ISR -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "P_SIZE" -component [ipx::current_core] ]
+set_property value 16 [ipx::get_user_parameters P_SIZE -of_objects [ipx::current_core]]
+set_property value 16 [ipx::get_hdl_parameters P_SIZE -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "PSR" -component [ipx::current_core] ]
+set_property value 12 [ipx::get_user_parameters PSR -of_objects [ipx::current_core]]
+set_property value 12 [ipx::get_hdl_parameters PSR -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "I_SIZE" -component [ipx::current_core] ]
+set_property value 16 [ipx::get_user_parameters I_SIZE -of_objects [ipx::current_core]]
+set_property value 16 [ipx::get_hdl_parameters I_SIZE -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "ISR" -component [ipx::current_core] ]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "D_SIZE" -component [ipx::current_core] ]
+set_property value 16 [ipx::get_user_parameters D_SIZE -of_objects [ipx::current_core]]
+set_property value 16 [ipx::get_hdl_parameters D_SIZE -of_objects [ipx::current_core]]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "DSR" -component [ipx::current_core] ]
+set_property value 10 [ipx::get_user_parameters DSR -of_objects [ipx::current_core]]
+set_property value 10 [ipx::get_hdl_parameters DSR -of_objects [ipx::current_core]]
+ipx::add_bus_interface data_in [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:signal:data_rtl:1.0 [ipx::get_bus_interfaces data_in -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:signal:data:1.0 [ipx::get_bus_interfaces data_in -of_objects [ipx::current_core]]
+ipx::add_port_map DATA [ipx::get_bus_interfaces data_in -of_objects [ipx::current_core]]
+set_property physical_name data_i [ipx::get_port_maps DATA -of_objects [ipx::get_bus_interfaces data_in -of_objects [ipx::current_core]]]
+close_project
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8091.785 ; gain = 0.000 ; free physical = 1636 ; free virtual = 12397
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dac1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - pid_setpoint
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ggm:cogen:add_const:1.0 - pid_kp
+Adding cell -- ggm:cogen:add_const:1.0 - pid_ki
+Adding cell -- ggm:cogen:add_const:1.0 - pid_kd
+Adding cell -- ggm:cogen:add_const:1.0 - pid_sign
+Adding cell -- ggm:cogen:add_const:1.0 - pid_rst_int
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - red_pitaya_pidv3_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+startgroup
+set_property -dict [list CONFIG.PSR {14} CONFIG.ISR {18} CONFIG.DSR {10} CONFIG.P_SIZE {16} CONFIG.I_SIZE {16} CONFIG.D_SIZE {16}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/red_pitaya_pidv3_0/kp_i'(16) to net 'add_const_3_data_o'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/red_pitaya_pidv3_0/kd_i'(16) to net 'add_const_5_data_o'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/red_pitaya_pidv3_0/ki_i'(16) to net 'add_const_4_data_o'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 11:09:11 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 11:09:11 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 8188.359 ; gain = 68.199 ; free physical = 1541 ; free virtual = 12291
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {16} CONFIG.DATA_IN_SIZE {16}] [get_bd_cells pid_kd]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {16} CONFIG.DATA_IN_SIZE {16}] [get_bd_cells pid_kp]
+endgroup
+startgroup
+set_property -dict [list CONFIG.format {unsigned}] [get_bd_cells pid_kp]
+endgroup
+startgroup
+set_property -dict [list CONFIG.format {unsigned} CONFIG.DATA_OUT_SIZE {16} CONFIG.DATA_IN_SIZE {16}] [get_bd_cells pid_ki]
+endgroup
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.format {unsigned}] [get_bd_cells pid_sign]
+endgroup
+startgroup
+set_property -dict [list CONFIG.format {unsigned}] [get_bd_cells pid_rst_int]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {16}] [get_bd_cells xlconstant_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/pid_setpoint/data_i'(14) to net 'xlconstant_0_dout'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_xlconstant_0_0, cache-ID = 48fad7e043c9f8a0; cache size = 10.127 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 11:11:15 2017] Launched pid_only_wrapper_add_const_5_0_synth_1, pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_add_const_6_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_add_const_5_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_5_0_synth_1/runme.log
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_add_const_6_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_6_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 11:11:15 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8212.340 ; gain = 18.820 ; free physical = 1517 ; free virtual = 12267
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+reset_run synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+regenerate_bd_layout
+startgroup
+endgroup
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.PSR {12}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/pid_setpoint/data_i'(14) to net 'xlconstant_0_dout'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 11:12:45 2017] Launched pid_only_wrapper_add_const_5_0_synth_1, pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_add_const_6_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_add_const_5_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_5_0_synth_1/runme.log
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_add_const_6_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_6_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 11:12:45 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8239.191 ; gain = 26.852 ; free physical = 1478 ; free virtual = 12235
+startgroup
+set_property -dict [list CONFIG.PSR {14} CONFIG.ISR {20} CONFIG.P_SIZE {14} CONFIG.I_SIZE {14} CONFIG.D_SIZE {14}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells pid_ki]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells pid_kp]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells pid_kd]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {14}] [get_bd_cells xlconstant_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_xlconstant_0_0, cache-ID = 332fe43174ec976c; cache size = 10.127 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 11:30:41 2017] Launched pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 11:30:41 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 8271.527 ; gain = 0.000 ; free physical = 1917 ; free virtual = 11919
+startgroup
+set_property -dict [list CONFIG.PSR {18} CONFIG.ISR {18}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 11:55:04 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 11:55:04 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 8293.059 ; gain = 0.000 ; free physical = 2414 ; free virtual = 11993
+startgroup
+set_property -dict [list CONFIG.PSR {17}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 15:59:34 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 15:59:34 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 8314.605 ; gain = 0.000 ; free physical = 2337 ; free virtual = 11965
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PSR {15}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 16:00:25 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 16:00:25 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 8341.535 ; gain = 0.000 ; free physical = 2317 ; free virtual = 11943
+startgroup
+set_property -dict [list CONFIG.PSR {15} CONFIG.ISR {15} CONFIG.DSR {0} CONFIG.P_SIZE {14} CONFIG.DATA_OUT_SIZE {14}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 10.127 MB.
+[Thu Mar 30 17:02:04 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Thu Mar 30 17:02:04 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 8384.363 ; gain = 0.004 ; free physical = 2425 ; free virtual = 12044
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 19:06:26 2017...

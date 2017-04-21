@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Mar 23 17:38:53 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="df2573dfc3824ebda9f3082aed5d93b8" type="ProjectID"/>
+<property name="ProjectIteration" value="39" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="FileExit" value="1" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="3" type="JavaHandler"/>
+<property name="OpenProject" value="5" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="ReportIPStatus" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="37" type="JavaHandler"/>
+<property name="SaveRSBDesign" value="1" type="JavaHandler"/>
+<property name="ShowView" value="2" type="JavaHandler"/>
+<property name="UpgradeIP" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BaseDialog_OK" value="2" type="GuiResourceData"/>
+<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="2" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="6" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="3" type="GuiResourceData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="2" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_RE_RUN_REPORT" value="1" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+<property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_EXIT, Exit" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top_red_pseudogen_dds - top_red_pseudogen_dds_1 (top_red_pseudogen_dds.vhd" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, IP Integrator, Open Block Design], 7, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="3" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="1" type="GuiResourceData"/>
+<property name="ReportIPStatusInfoDialog_IGNORE" value="1" type="GuiResourceData"/>
+<property name="SystemTab_REPORT_IP_STATUS" value="1" type="GuiResourceData"/>
+<property name="top_red_pseudogen_dds.vhd, 36, 261" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="59" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="55" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

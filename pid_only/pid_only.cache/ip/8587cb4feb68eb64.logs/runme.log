@@ -1,0 +1,93 @@
+
+*** Running vivado
+    with args -log pid_only_wrapper_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pid_only_wrapper_xbar_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source pid_only_wrapper_xbar_0.tcl -notrace
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+Starting RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1130.270 ; gain = 199.086 ; free physical = 631 ; free virtual = 11474
+INFO: [Synth 8-638] synthesizing module 'pid_only_wrapper_xbar_0' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_xbar_0/synth/pid_only_wrapper_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' (2#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' (3#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' (4#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' (5#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter' (6#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' (6#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (8#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' (9#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' (10#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'pid_only_wrapper_xbar_0' (11#1) [/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_xbar_0/synth/pid_only_wrapper_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1250.738 ; gain = 319.555 ; free physical = 131 ; free virtual = 10892
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1250.738 ; gain = 319.555 ; free physical = 131 ; free virtual = 10891
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1515.547 ; gain = 0.000 ; free physical = 125 ; free virtual = 10670
+Finished Constraint Validation : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 177 ; free virtual = 10582
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 177 ; free virtual = 10582
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 177 ; free virtual = 10582
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 191 ; free virtual = 10574
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 130 ; free virtual = 10517
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:55 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 1514 ; free virtual = 11486
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:59 . Memory (MB): peak = 1515.547 ; gain = 584.363 ; free physical = 2371 ; free virtual = 12340
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:02:00 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2393 ; free virtual = 12227
+Finished IO Insertion : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2257 ; free virtual = 12091
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2256 ; free virtual = 12091
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2254 ; free virtual = 12088
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:02:02 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2254 ; free virtual = 12088
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:02:03 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2252 ; free virtual = 12086
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:02:03 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2251 ; free virtual = 12085
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    18|
+|3     |LUT3 |    47|
+|4     |LUT4 |    69|
+|5     |LUT5 |    66|
+|6     |LUT6 |   153|
+|7     |FDRE |   138|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:02:03 . Memory (MB): peak = 1523.555 ; gain = 592.371 ; free physical = 2251 ; free virtual = 12085
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 1523.562 ; gain = 482.875 ; free physical = 2217 ; free virtual = 12078

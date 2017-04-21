@@ -1,0 +1,508 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Apr  5 11:39:53 2017
+# Process ID: 7241
+# Current directory: /home/bma/git/fpga_design/redpitaya/vco_only
+# Command line: vivado vco_only.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/vco_only/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/vco_only/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vco_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 5962.637 ; gain = 184.305 ; free physical = 3785 ; free virtual = 14392
+open_bd_design {/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd}
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - dac1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_ampl
+Adding cell -- ggm:cogen:add_const:1.0 - dds_f0
+Adding cell -- user.org:user:nco_counter:1.0 - dds_nco
+Adding cell -- ggm:cogen:add_const:1.0 - dds_offset
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_offset/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_nco/ref_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <vco_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd>
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6040.602 ; gain = 72.961 ; free physical = 3666 ; free virtual = 14311
+delete_bd_objs [get_bd_intf_nets dds_f0_data_out]
+startgroup
+create_bd_cell -type ip -vlnv ggm:cogen:expanderReal:1.0 expanderReal_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_IN_SIZE {14} CONFIG.DATA_OUT_SIZE {1628}] [get_bd_cells expanderReal_0]
+endgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {28}] [get_bd_cells expanderReal_0]
+set_property location {7.5 2404 507} [get_bd_cells expanderReal_0]
+connect_bd_intf_net [get_bd_intf_pins dds_f0/data_out] [get_bd_intf_pins expanderReal_0/data_in]
+connect_bd_intf_net [get_bd_intf_pins expanderReal_0/data_out] [get_bd_intf_pins dds_nco/pinc_in]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 11:44:23 2017] Launched vco_only_wrapper_expanderReal_0_0_synth_1, synth_1...
+Run output will be captured here:
+vco_only_wrapper_expanderReal_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_expanderReal_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 11:44:23 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 6245.824 ; gain = 199.074 ; free physical = 3380 ; free virtual = 14119
+delete_bd_objs [get_bd_intf_nets expanderReal_0_data_out] [get_bd_intf_nets dds_f0_data_out] [get_bd_cells expanderReal_0]
+connect_bd_intf_net [get_bd_intf_pins dds_nco/pinc_in] [get_bd_intf_pins dds_f0/data_out]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/dds_nco/pinc_i'(28) to net 'dds_f0_data_out_DATA'(14) - Only lower order bits will be connected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 14:18:48 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 14:18:48 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 6317.270 ; gain = 0.004 ; free physical = 2988 ; free virtual = 13997
+delete_bd_objs [get_bd_intf_nets dds_f0_data_out]
+connect_bd_net [get_bd_pins dds_f0/data_o] [get_bd_pins dds_nco/pinc_i]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+connect_bd_net [get_bd_pins dds_f0/data_en_o] [get_bd_pins dds_nco/pinc_en_i]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_en_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+connect_bd_net [get_bd_pins dds_f0/data_clk_o] [get_bd_pins dds_nco/pinc_clk_i]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+connect_bd_net [get_bd_pins dds_f0/data_rst_o] [get_bd_pins dds_nco/pinc_rst_i]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_rst_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dds_nco/pinc_i'(28) to net 'dds_f0_data_o'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 14:32:40 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 14:32:40 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 6321.266 ; gain = 3.996 ; free physical = 2958 ; free virtual = 13967
+delete_bd_objs [get_bd_intf_nets dupplReal_1_to_2_0_data1_out]
+connect_bd_net [get_bd_pins dds_f0/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins dds_f0/data_en_i] [get_bd_pins dupplReal_1_to_2_0/data1_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+connect_bd_net [get_bd_pins dds_f0/data_clk_i] [get_bd_pins dupplReal_1_to_2_0/data1_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+connect_bd_net [get_bd_pins dds_f0/data_rst_i] [get_bd_pins dupplReal_1_to_2_0/data1_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_rst_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dds_nco/pinc_i'(28) to net 'dds_f0_data_o'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 14:57:07 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 14:57:07 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 6341.637 ; gain = 0.004 ; free physical = 2912 ; free virtual = 13921
+delete_bd_objs [get_bd_nets dds_f0_data_o]
+delete_bd_objs [get_bd_nets dds_f0_data_clk_o]
+delete_bd_objs [get_bd_nets dds_f0_data_en_o]
+delete_bd_objs [get_bd_nets dds_f0_data_rst_o]
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 15:40:09 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 15:40:09 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 6382.867 ; gain = 24.867 ; free physical = 133 ; free virtual = 13812
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.COUNTER_SIZE {32} CONFIG.LUT_SIZE {10}] [get_bd_cells dds_nco]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+reset_run vco_only_wrapper_dds_nco_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 16:04:58 2017] Launched vco_only_wrapper_dds_nco_0_synth_1, synth_1...
+Run output will be captured here:
+vco_only_wrapper_dds_nco_0_synth_1: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_dds_nco_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 16:04:58 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 6401.867 ; gain = 18.996 ; free physical = 1246 ; free virtual = 13376
+connect_bd_intf_net [get_bd_intf_pins dds_nco/pinc_in] [get_bd_intf_pins dds_f0/data_out]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/dds_nco/pinc_i'(32) to net 'dds_f0_data_out_DATA'(14) - Only lower order bits will be connected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 16:18:00 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 16:18:00 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 6466.539 ; gain = 0.000 ; free physical = 1981 ; free virtual = 13897
+delete_bd_objs [get_bd_intf_nets dds_f0_data_out]
+connect_bd_net [get_bd_pins dds_f0/data_o] [get_bd_pins dds_nco/pinc_i]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+connect_bd_net [get_bd_pins dds_nco/pinc_clk_i] [get_bd_pins dds_f0/data_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+connect_bd_net [get_bd_pins dds_f0/data_en_o] [get_bd_pins dds_nco/pinc_en_i]
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_en_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+connect_bd_net [get_bd_pins dds_nco/pinc_rst_i] [get_bd_pins dds_f0/data_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/pinc_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection pinc_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_f0/data_rst_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ui/bd_d1153ebd.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/dds_nco/pinc_i'(32) to net 'dds_f0_data_o'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m08_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m09_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m10_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m11_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hw_handoff/vco_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/hdl/vco_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_0, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_1, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_2, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_3, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_4, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_5, cache-ID = 4a27ed60037b94ce; cache size = 10.485 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP vco_only_wrapper_auto_pc_6, cache-ID = 83db42afa3da7e63; cache size = 10.485 MB.
+[Wed Apr  5 16:32:50 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/synth_1/runme.log
+[Wed Apr  5 16:32:50 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 6466.539 ; gain = 0.000 ; free physical = 1986 ; free virtual = 13884
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  5 17:31:57 2017...

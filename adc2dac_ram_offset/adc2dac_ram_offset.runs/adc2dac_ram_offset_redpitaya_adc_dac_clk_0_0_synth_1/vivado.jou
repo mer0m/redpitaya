@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Feb  9 10:14:24 2017
+# Process ID: 3737
+# Current directory: /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.runs/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0_synth_1
+# Command line: vivado -log adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0.tcl
+# Log file: /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.runs/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0_synth_1/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0.vds
+# Journal file: /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.runs/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0.tcl -notrace

@@ -1,0 +1,909 @@
+
+*** Running vivado
+    with args -log test_pound_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source test_pound_wrapper.tcl -notrace
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_pound_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 516 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_processing_system7_0_0/test_pound_processing_system7_0_0.xdc] for cell 'test_pound_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_processing_system7_0_0/test_pound_processing_system7_0_0.xdc] for cell 'test_pound_i/processing_system7_0/inst'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_rst_processing_system7_0_125M_0/test_pound_rst_processing_system7_0_125M_0_board.xdc] for cell 'test_pound_i/rst_processing_system7_0_125M/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_rst_processing_system7_0_125M_0/test_pound_rst_processing_system7_0_125M_0_board.xdc] for cell 'test_pound_i/rst_processing_system7_0_125M/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_rst_processing_system7_0_125M_0/test_pound_rst_processing_system7_0_125M_0.xdc] for cell 'test_pound_i/rst_processing_system7_0_125M/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_rst_processing_system7_0_125M_0/test_pound_rst_processing_system7_0_125M_0.xdc] for cell 'test_pound_i/rst_processing_system7_0_125M/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'test_pound_i/redpitaya_adc_dac_clk_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+INFO: [Timing 38-2] Deriving generated clocks [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1847.820 ; gain = 472.508 ; free physical = 2025 ; free virtual = 13452
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'test_pound_i/redpitaya_adc_dac_clk_0/inst'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_axi_gpio_0_2/test_pound_axi_gpio_0_2_board.xdc] for cell 'test_pound_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_axi_gpio_0_2/test_pound_axi_gpio_0_2_board.xdc] for cell 'test_pound_i/axi_gpio_0/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_axi_gpio_0_2/test_pound_axi_gpio_0_2.xdc] for cell 'test_pound_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_axi_gpio_0_2/test_pound_axi_gpio_0_2.xdc] for cell 'test_pound_i/axi_gpio_0/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_0_1/add_const_ooc.xdc] for cell 'test_pound_i/add_const_0/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_0_1/add_const_ooc.xdc] for cell 'test_pound_i/add_const_0/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_0_2/add_const_ooc.xdc] for cell 'test_pound_i/add_const_1/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_0_2/add_const_ooc.xdc] for cell 'test_pound_i/add_const_1/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data16_multi_to_ram_1_0/data16_multi_to_ram_ooc.xdc] for cell 'test_pound_i/data16_multi_to_ram_1/U0'
+WARNING: [Vivado 12-508] No pins matched 'data32_top_inst/subtop_loop[1].data_subtop_inst/acquisition_fsm_inst/busy_s_reg/C'. [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data16_multi_to_ram_1_0/data16_multi_to_ram_ooc.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {data32_top_inst/subtop_loop[1].data_subtop_inst/acquisition_fsm_inst/busy_s_reg/C}]'. [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data16_multi_to_ram_1_0/data16_multi_to_ram_ooc.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'data32_top_inst/subtop_loop[1].data_subtop_inst/acquisition_fsm_inst/busy_s_reg/C'. [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data16_multi_to_ram_1_0/data16_multi_to_ram_ooc.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {data32_top_inst/subtop_loop[1].data_subtop_inst/acquisition_fsm_inst/busy_s_reg/C}]'. [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data16_multi_to_ram_1_0/data16_multi_to_ram_ooc.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data16_multi_to_ram_1_0/data16_multi_to_ram_ooc.xdc] for cell 'test_pound_i/data16_multi_to_ram_1/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_2_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_2/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_2_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_2/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_3_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_3/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_3_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_3/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_4_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_4/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_4_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_4/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_5_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_5/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_5_0/add_const_ooc.xdc] for cell 'test_pound_i/add_const_5/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_5_1/add_const_ooc.xdc] for cell 'test_pound_i/add_const_6/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_5_1/add_const_ooc.xdc] for cell 'test_pound_i/add_const_6/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_5_2/add_const_ooc.xdc] for cell 'test_pound_i/add_const_7/U0'
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_add_const_5_2/add_const_ooc.xdc] for cell 'test_pound_i/add_const_7/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data32Real_multi_to_ram_0_0/data32Real_ooc.xdc] for cell 'test_pound_i/data32Real_multi_to_ram_0/U0'
+invalid command name "data32_top_inst/subtop_loop[*].data_subtop_inst/start_acquisition2_s_reg/C"
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_data32Real_multi_to_ram_0_0/data32Real_ooc.xdc] for cell 'test_pound_i/data32Real_multi_to_ram_0/U0'
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ad9767/ad9767.xdc]
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ad9767/ad9767.xdc]
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc]
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc]
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc]
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc]
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc_clk' already exists, overwriting the previous clock with the same name. [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc:7]
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc]
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/gpio.xdc]
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/gpio.xdc]
+Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/spi.xdc]
+Finished Parsing XDC File [/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.srcs/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/spi.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 15 instances
+
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1848.820 ; gain = 840.223 ; free physical = 2078 ; free virtual = 13451
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 1880.836 ; gain = 32.016 ; free physical = 2071 ; free virtual = 13443
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1bfdc427b
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 39 inverter(s) to 39 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: d5c46417
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1882.836 ; gain = 0.000 ; free physical = 2061 ; free virtual = 13435
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 1188 cells.
+Phase 2 Constant propagation | Checksum: 13503e759
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1882.836 ; gain = 0.000 ; free physical = 2059 ; free virtual = 13432
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 5215 unconnected nets.
+INFO: [Opt 31-11] Eliminated 4863 unconnected cells.
+Phase 3 Sweep | Checksum: 1386be8b9
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1882.836 ; gain = 0.000 ; free physical = 2059 ; free virtual = 13433
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: dabe1883
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1882.836 ; gain = 0.000 ; free physical = 2059 ; free virtual = 13432
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1882.836 ; gain = 0.000 ; free physical = 2059 ; free virtual = 13432
+Ending Logic Optimization Task | Checksum: dabe1883
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1882.836 ; gain = 0.000 ; free physical = 2059 ; free virtual = 13432
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 3 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 3 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 1735aaa36
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1929 ; free virtual = 13309
+Ending Power Optimization Task | Checksum: 1735aaa36
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2110.891 ; gain = 228.055 ; free physical = 1929 ; free virtual = 13309
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 2110.891 ; gain = 262.070 ; free physical = 1929 ; free virtual = 13309
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1925 ; free virtual = 13309
+INFO: [Common 17-1381] The checkpoint '/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.runs/impl_1/test_pound_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1923 ; free virtual = 13309
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.runs/impl_1/test_pound_wrapper_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1920 ; free virtual = 13309
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1919 ; free virtual = 13309
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1919 ; free virtual = 13309
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 19a09f42a
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1915 ; free virtual = 13309
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 136efc3e8
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1913 ; free virtual = 13309
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 136efc3e8
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1913 ; free virtual = 13308
+Phase 1 Placer Initialization | Checksum: 136efc3e8
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1913 ; free virtual = 13309
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 19cf76ec8
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:34 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1910 ; free virtual = 13308
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 19cf76ec8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:34 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1910 ; free virtual = 13308
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 20fc1473f
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:40 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1909 ; free virtual = 13308
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 14deae137
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:40 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1909 ; free virtual = 13308
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 14deae137
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:40 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1909 ; free virtual = 13308
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 139f1abdf
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:41 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1909 ; free virtual = 13308
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 179c339f0
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1909 ; free virtual = 13307
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 18d2d80c9
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:50 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1907 ; free virtual = 13307
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1927f171d
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:51 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1907 ; free virtual = 13307
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1927f171d
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:51 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1907 ; free virtual = 13307
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 17895c050
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:55 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1907 ; free virtual = 13307
+Phase 3 Detail Placement | Checksum: 17895c050
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:55 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1907 ; free virtual = 13307
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.001. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 20968db23
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:32 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+Phase 4.1 Post Commit Optimization | Checksum: 20968db23
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:01:33 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 20968db23
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:01:33 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 20968db23
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:33 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1c9cac058
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:33 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c9cac058
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:33 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+Ending Placer Task | Checksum: d19b6fb7
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:33 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:45 ; elapsed = 00:01:38 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1906 ; free virtual = 13306
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1879 ; free virtual = 13306
+INFO: [Common 17-1381] The checkpoint '/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.runs/impl_1/test_pound_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1899 ; free virtual = 13306
+report_io: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1898 ; free virtual = 13305
+report_utilization: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1898 ; free virtual = 13306
+report_control_sets: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1898 ; free virtual = 13306
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 4b6d4fe8 ConstDB: 0 ShapeSum: 862e1fcf RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 85682f6f
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1853 ; free virtual = 13262
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 85682f6f
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1852 ; free virtual = 13262
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 85682f6f
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1849 ; free virtual = 13261
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 85682f6f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1849 ; free virtual = 13261
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: fa472d13
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1822 ; free virtual = 13233
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.062  | TNS=0.000  | WHS=-0.956 | THS=-511.698|
+
+Phase 2 Router Initialization | Checksum: 16a232035
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:25 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1805 ; free virtual = 13217
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1b426965b
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:34 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1801 ; free virtual = 13213
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2434
+ Number of Nodes with overlaps = 673
+ Number of Nodes with overlaps = 200
+ Number of Nodes with overlaps = 70
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1c4e31382
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:02 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.047 | TNS=-37.718| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 15ebd0c74
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:01:02 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 17d0def90
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:03 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+Phase 4.1.2 GlobIterForTiming | Checksum: 1064fd61a
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:04 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+Phase 4.1 Global Iteration 0 | Checksum: 1064fd61a
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:04 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 247
+ Number of Nodes with overlaps = 73
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 16eab0a20
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:10 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.621 | TNS=-26.374| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 1bf0c716c
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:11 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1b9a82ac1
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:12 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1801 ; free virtual = 13212
+Phase 4.2.2 GlobIterForTiming | Checksum: 122a89386
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:12 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1801 ; free virtual = 13212
+Phase 4.2 Global Iteration 1 | Checksum: 122a89386
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:13 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1801 ; free virtual = 13212
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 265
+ Number of Nodes with overlaps = 79
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: e10901d3
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:18 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.684 | TNS=-31.959| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 10be915d8
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:18 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+Phase 4 Rip-up And Reroute | Checksum: 10be915d8
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:18 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 123805d46
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:01:19 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.506 | TNS=-16.513| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: a01ca6bd
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:19 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: a01ca6bd
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:19 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+Phase 5 Delay and Skew Optimization | Checksum: a01ca6bd
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:01:19 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 7f40ea5f
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.495 | TNS=-15.036| WHS=0.020  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: c7664caf
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+Phase 6 Post Hold Fix | Checksum: c7664caf
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 11.3191 %
+  Global Horizontal Routing Utilization  = 12.904 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 76.5766%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 80.8824%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 136eefcfd
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 136eefcfd
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:21 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 181aac782
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:23 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.495 | TNS=-15.036| WHS=0.020  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 181aac782
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:23 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:01:24 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+62 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:46 ; elapsed = 00:01:28 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1800 ; free virtual = 13212
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1766 ; free virtual = 13212
+INFO: [Common 17-1381] The checkpoint '/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.runs/impl_1/test_pound_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1791 ; free virtual = 13212
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.runs/impl_1/test_pound_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1791 ; free virtual = 13212
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/test_pound/test_pound.runs/impl_1/test_pound_wrapper_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 2110.891 ; gain = 0.000 ; free physical = 1757 ; free virtual = 13179
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Command: report_power -file test_pound_wrapper_power_routed.rpt -pb test_pound_wrapper_power_summary_routed.pb -rpx test_pound_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+72 Infos, 5 Warnings, 3 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2195.941 ; gain = 84.059 ; free physical = 1674 ; free virtual = 13110
+Command: write_bitstream -force -no_partial_bitfile test_pound_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/mixer_sin_0/U0/data_q_out_s_reg input test_pound_i/mixer_sin_0/U0/data_q_out_s_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/mixer_sin_0/U0/data_q_out_s_reg output test_pound_i/mixer_sin_0/U0/data_q_out_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[0].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[0].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[10].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[10].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[11].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[11].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[12].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[12].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[1].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[1].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[2].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[2].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[3].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[3].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[4].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[4].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[5].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[5].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[6].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[6].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[7].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[7].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[8].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[8].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[9].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[9].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNBDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 60 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./test_pound_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+79 Infos, 65 Warnings, 3 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:45 ; elapsed = 00:00:39 . Memory (MB): peak = 2508.781 ; gain = 312.840 ; free physical = 1323 ; free virtual = 12767
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 21 15:37:33 2017...
+
+*** Running vivado
+    with args -log test_pound_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source test_pound_wrapper.tcl -notrace
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_pound_wrapper.tcl -notrace
+Command: open_checkpoint test_pound_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 996.672 ; gain = 0.000 ; free physical = 4414 ; free virtual = 14377
+INFO: [Netlist 29-17] Analyzing 333 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-5755-ux305/dcp/test_pound_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1813.906 ; gain = 468.508 ; free physical = 3597 ; free virtual = 13689
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-5755-ux305/dcp/test_pound_wrapper_early.xdc]
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-5755-ux305/dcp/test_pound_wrapper.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc_clk' already exists, overwriting the previous clock with the same name. [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc:7]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-5755-ux305/dcp/test_pound_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1840.578 ; gain = 26.672 ; free physical = 3571 ; free virtual = 13662
+Restored from archive | CPU: 1.580000 secs | Memory: 20.869362 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1840.578 ; gain = 26.672 ; free physical = 3571 ; free virtual = 13662
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 15 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1733598
+open_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1840.578 ; gain = 843.906 ; free physical = 3606 ; free virtual = 13663
+Command: write_bitstream -force -no_partial_bitfile test_pound_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/mixer_sin_0/U0/data_q_out_s_reg input test_pound_i/mixer_sin_0/U0/data_q_out_s_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/mixer_sin_0/U0/data_q_out_s_reg output test_pound_i/mixer_sin_0/U0/data_q_out_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[0].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[0].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[10].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[10].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[11].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[11].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[12].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[12].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[1].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[1].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[2].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[2].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[3].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[3].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[4].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[4].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[5].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[5].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[6].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[6].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[7].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[7].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[8].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[8].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[9].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[9].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNBDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 60 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./test_pound_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Mar 28 10:33:56 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 2261.574 ; gain = 420.996 ; free physical = 3199 ; free virtual = 13268
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 10:33:56 2017...
+
+*** Running vivado
+    with args -log test_pound_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source test_pound_wrapper.tcl -notrace
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test_pound_wrapper.tcl -notrace
+Command: open_checkpoint test_pound_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 996.668 ; gain = 0.000 ; free physical = 4013 ; free virtual = 14300
+INFO: [Netlist 29-17] Analyzing 333 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-8199-ux305/dcp/test_pound_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.srcs/sources_1/bd/test_pound/ip/test_pound_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1813.902 ; gain = 468.508 ; free physical = 3293 ; free virtual = 13618
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-8199-ux305/dcp/test_pound_wrapper_early.xdc]
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-8199-ux305/dcp/test_pound_wrapper.xdc]
+WARNING: [Constraints 18-619] A clock with name 'adc_clk' already exists, overwriting the previous clock with the same name. [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.srcs/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc:7]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/.Xil/Vivado-8199-ux305/dcp/test_pound_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1840.574 ; gain = 26.672 ; free physical = 3267 ; free virtual = 13591
+Restored from archive | CPU: 1.610000 secs | Memory: 20.869362 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1840.574 ; gain = 26.672 ; free physical = 3267 ; free virtual = 13591
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 15 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1733598
+open_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1840.574 ; gain = 843.906 ; free physical = 3303 ; free virtual = 13591
+Command: write_bitstream -force -no_partial_bitfile test_pound_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/mixer_sin_0/U0/data_q_out_s_reg input test_pound_i/mixer_sin_0/U0/data_q_out_s_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPIR-1) Asynchronous driver check - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s input pin test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/mixer_sin_0/U0/data_q_out_s_reg output test_pound_i/mixer_sin_0/U0/data_q_out_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNBDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s output test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[0].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[0].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[10].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[10].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[11].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[11].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[12].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[12].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[1].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[1].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[2].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[2].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[3].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[3].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[4].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[4].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[5].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[5].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[6].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[6].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[7].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[7].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[8].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[8].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[9].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst multiplier stage test_pound_i/fir16RealbitsOneInTwoMult_v1_0_0/U0/fir_top_inst/generate_fir[9].fir_glob_inst/fir_proc_inst/multiplier_i/DSP48E1_inst/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNBDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/I_sum_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s multiplier stage test_pound_i/red_pitaya_pidv2_0/U0/red_pitaya_pidv2Logic/P_temp_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 60 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./test_pound_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Mar 28 11:32:04 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:44 ; elapsed = 00:00:36 . Memory (MB): peak = 2260.570 ; gain = 419.996 ; free physical = 2911 ; free virtual = 13201
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 28 11:32:04 2017...

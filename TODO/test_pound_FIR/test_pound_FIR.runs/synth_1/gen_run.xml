@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1487688168">
+  <File Type="VDS-TIMING-PB" Name="test_pound_FIR_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="test_pound_FIR_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="test_pound_FIR_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="test_pound_FIR_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="test_pound_FIR_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="test_pound_FIR_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="test_pound_FIR_wrapper.vds"/>
+  <File Type="PA-TCL" Name="test_pound_FIR_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/test_pound_FIR/test_pound_FIR.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/test_pound_FIR/hdl/test_pound_FIR_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="test_pound_FIR_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ad9767/ad9767.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/ad9767/ad9767.xdc"/>
+        <Attr Name="ImportTime" Val="1437402064"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc"/>
+        <Attr Name="ImportTime" Val="1468930278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc"/>
+        <Attr Name="ImportTime" Val="1426005212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc"/>
+        <Attr Name="ImportTime" Val="1426005212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/gpio.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../sav-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/gpio.xdc"/>
+        <Attr Name="ImportTime" Val="1468327269"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/spi.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../sav-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/spi.xdc"/>
+        <Attr Name="ImportTime" Val="1468323768"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

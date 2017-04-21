@@ -1,0 +1,363 @@
+
+*** Running vivado
+    with args -log vco_only_wrapper_dds_f0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vco_only_wrapper_dds_f0_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source vco_only_wrapper_dds_f0_0.tcl -notrace
+Command: synth_design -top vco_only_wrapper_dds_f0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14212 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1113.270 ; gain = 182.086 ; free physical = 2000 ; free virtual = 13168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vco_only_wrapper_dds_f0_0' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/synth/vco_only_wrapper_dds_f0_0.vhd:90]
+	Parameter format bound to: unsigned - type: string 
+	Parameter add_val bound to: 0 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 32 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 32 - type: integer 
+	Parameter id bound to: 1 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'add_const' declared at '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const.vhd:5' bound to instance 'U0' of component 'add_const' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/synth/vco_only_wrapper_dds_f0_0.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'add_const' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const.vhd:52]
+	Parameter id bound to: 1 - type: integer 
+	Parameter format bound to: unsigned - type: string 
+	Parameter add_val bound to: 0 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 32 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 32 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'add_const_logic' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const_logic.vhd:26]
+	Parameter format bound to: unsigned - type: string 
+	Parameter DATA_OUT_SIZE bound to: 32 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_const_logic' (1#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const_logic.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'wb_add_const' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/wb_add_const.vhd:30]
+	Parameter DEFAULT_OFFSET bound to: 0 - type: integer 
+	Parameter FORMAT bound to: unsigned - type: string 
+	Parameter DATA_SIZE bound to: 32 - type: integer 
+	Parameter id bound to: 1 - type: integer 
+	Parameter wb_size bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wb_add_const' (2#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/wb_add_const.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'add_const_handComm' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const_handComm.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter INTERNAL_ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_const_handComm' (3#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const_handComm.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'add_const' (4#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a7c6/hdl/add_const.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'vco_only_wrapper_dds_f0_0' (5#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/synth/vco_only_wrapper_dds_f0_0.vhd:90]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.738 ; gain = 223.555 ; free physical = 1925 ; free virtual = 13093
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1154.738 ; gain = 223.555 ; free physical = 1925 ; free virtual = 13093
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/add_const_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/add_const_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_dds_f0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_dds_f0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1485.906 ; gain = 0.000 ; free physical = 1618 ; free virtual = 12786
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1610 ; free virtual = 12778
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1610 ; free virtual = 12778
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1610 ; free virtual = 12778
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "offset_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1602 ; free virtual = 12770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module add_const_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
+Module wb_add_const 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module add_const_handComm 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/add_constHandComm/axi_rresp_reg[0]' (FDRE) to 'U0/add_constHandComm/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constHandComm/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/add_constHandComm/axi_bresp_reg[0]' (FDRE) to 'U0/add_constHandComm/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constHandComm/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_bresp_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_rresp_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_awaddr_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_awaddr_reg[0]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_araddr_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_araddr_reg[0]) is unused and will be removed from module add_const.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1578 ; free virtual = 12746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1486 ; free virtual = 12655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1486 ; free virtual = 12655
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1459 ; free virtual = 12628
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1455 ; free virtual = 12623
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1455 ; free virtual = 12623
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1455 ; free virtual = 12623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1455 ; free virtual = 12623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1450 ; free virtual = 12619
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1450 ; free virtual = 12618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT2   |    34|
+|3     |LUT3   |     4|
+|4     |LUT4   |     5|
+|5     |LUT5   |     6|
+|6     |LUT6   |    33|
+|7     |FDCE   |    64|
+|8     |FDRE   |   106|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------+------+
+|      |Instance              |Module             |Cells |
++------+----------------------+-------------------+------+
+|1     |top                   |                   |   262|
+|2     |  U0                  |add_const          |   262|
+|3     |    add_constHandComm |add_const_handComm |    60|
+|4     |    add_constLogic    |add_const_logic    |   138|
+|5     |    wb_add_const_inst |wb_add_const       |    64|
++------+----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.906 ; gain = 554.723 ; free physical = 1450 ; free virtual = 12618
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1485.906 ; gain = 109.465 ; free physical = 1451 ; free virtual = 12619
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1485.914 ; gain = 554.730 ; free physical = 1452 ; free virtual = 12621
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/add_const_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/add_const_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1485.914 ; gain = 453.227 ; free physical = 1994 ; free virtual = 13163
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_dds_f0_0_synth_1/vco_only_wrapper_dds_f0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_dds_f0_0_synth_1/vco_only_wrapper_dds_f0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1509.918 ; gain = 0.000 ; free physical = 1993 ; free virtual = 13162
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  6 15:31:41 2017...

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<drivers name="pid_vco" version="1.0">
+
+    <driver name ="add_const" >
+        <board_driver name="adc1_offset" id = "0"
+            base_addr="0x43C00000" addr_size="0xffff" />
+        <board_driver name="dac1_offset" id = "1"
+            base_addr="0x43C10000" addr_size="0xffff" />
+        <board_driver name="dds_ampl" id = "2"
+            base_addr="0x43C20000" addr_size="0xffff" />
+        <board_driver name="dds_f0" id = "3"
+            base_addr="0x43C30000" addr_size="0xffff" />
+        <board_driver name="dds_offset" id = "4"
+            base_addr="0x43C40000" addr_size="0xffff" />
+        <board_driver name="dds_range" id = "5"
+            base_addr="0x43C50000" addr_size="0xffff" />
+        <board_driver name="pid_kp" id = "6"
+            base_addr="0x43C60000" addr_size="0xffff" />
+        <board_driver name="pid_ki" id = "7"
+            base_addr="0x43C70000" addr_size="0xffff" />
+        <board_driver name="pid_kd" id = "8"
+            base_addr="0x43C80000" addr_size="0xffff" />
+        <board_driver name="pid_rst_int" id = "9"
+            base_addr="0x43C90000" addr_size="0xffff" />
+        <board_driver name="pid_sign" id = "10"
+            base_addr="0x43CB0000" addr_size="0xffff" />
+        <board_driver name="pid_setpoint" id = "11"
+            base_addr="0x43CC0000" addr_size="0xffff" />
+    </driver>
+
+    <driver name ="nco_counter" >
+        <board_driver name="dds_nco" id = "0"
+            base_addr="0x43CA0000" addr_size="0xffff" />
+    </driver>
+
+</drivers>

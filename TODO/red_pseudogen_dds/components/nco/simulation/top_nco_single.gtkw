@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.64 (w)1999-2014 BSI
+[*] Tue Mar 24 16:38:05 2015
+[*]
+[dumpfile] "/home/gwe/projets/fpga/zynq/nco_counter/simulation/simu/top_nco_single_tb.ghw"
+[dumpfile_mtime] "Tue Mar 24 16:38:04 2015"
+[dumpfile_size] 7185122
+[savefile] "/home/gwe/projets/fpga/zynq/nco_counter/simulation/top_nco_single.gtkw"
+[timestart] 959120000
+[size] 1680 1031
+[pos] -1681 -1
+*-24.000000 1330000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.top_nco_single_tb.
+[treeopen] top.top_nco_single_tb.nco_inst.
+[sst_width] 196
+[signals_width] 223
+[sst_expanded] 1
+[sst_vpaned_height] 708
+@28
+top.top_nco_single_tb.reset
+top.top_nco_single_tb.clk
+top.top_nco_single_tb.cos_fake_s
+top.top_nco_single_tb.sin_fake_s
+top.top_nco_single_tb.reset_nco_s
+top.top_nco_single_tb.wave_en_s
+@24
+#{top.top_nco_single_tb.nco_inst.counter_s[9:0]} top.top_nco_single_tb.nco_inst.counter_s[9] top.top_nco_single_tb.nco_inst.counter_s[8] top.top_nco_single_tb.nco_inst.counter_s[7] top.top_nco_single_tb.nco_inst.counter_s[6] top.top_nco_single_tb.nco_inst.counter_s[5] top.top_nco_single_tb.nco_inst.counter_s[4] top.top_nco_single_tb.nco_inst.counter_s[3] top.top_nco_single_tb.nco_inst.counter_s[2] top.top_nco_single_tb.nco_inst.counter_s[1] top.top_nco_single_tb.nco_inst.counter_s[0]
+@10420
+#{top.top_nco_single_tb.nco_inst.cos_o[15:0]} top.top_nco_single_tb.nco_inst.cos_o[15] top.top_nco_single_tb.nco_inst.cos_o[14] top.top_nco_single_tb.nco_inst.cos_o[13] top.top_nco_single_tb.nco_inst.cos_o[12] top.top_nco_single_tb.nco_inst.cos_o[11] top.top_nco_single_tb.nco_inst.cos_o[10] top.top_nco_single_tb.nco_inst.cos_o[9] top.top_nco_single_tb.nco_inst.cos_o[8] top.top_nco_single_tb.nco_inst.cos_o[7] top.top_nco_single_tb.nco_inst.cos_o[6] top.top_nco_single_tb.nco_inst.cos_o[5] top.top_nco_single_tb.nco_inst.cos_o[4] top.top_nco_single_tb.nco_inst.cos_o[3] top.top_nco_single_tb.nco_inst.cos_o[2] top.top_nco_single_tb.nco_inst.cos_o[1] top.top_nco_single_tb.nco_inst.cos_o[0]
+@20000
+-
+-
+-
+-
+@24
+#{top.top_nco_single_tb.nco_inst.counter_sin_s[9:0]} top.top_nco_single_tb.nco_inst.counter_sin_s[9] top.top_nco_single_tb.nco_inst.counter_sin_s[8] top.top_nco_single_tb.nco_inst.counter_sin_s[7] top.top_nco_single_tb.nco_inst.counter_sin_s[6] top.top_nco_single_tb.nco_inst.counter_sin_s[5] top.top_nco_single_tb.nco_inst.counter_sin_s[4] top.top_nco_single_tb.nco_inst.counter_sin_s[3] top.top_nco_single_tb.nco_inst.counter_sin_s[2] top.top_nco_single_tb.nco_inst.counter_sin_s[1] top.top_nco_single_tb.nco_inst.counter_sin_s[0]
+@10420
+#{top.top_nco_single_tb.nco_inst.sin_o[15:0]} top.top_nco_single_tb.nco_inst.sin_o[15] top.top_nco_single_tb.nco_inst.sin_o[14] top.top_nco_single_tb.nco_inst.sin_o[13] top.top_nco_single_tb.nco_inst.sin_o[12] top.top_nco_single_tb.nco_inst.sin_o[11] top.top_nco_single_tb.nco_inst.sin_o[10] top.top_nco_single_tb.nco_inst.sin_o[9] top.top_nco_single_tb.nco_inst.sin_o[8] top.top_nco_single_tb.nco_inst.sin_o[7] top.top_nco_single_tb.nco_inst.sin_o[6] top.top_nco_single_tb.nco_inst.sin_o[5] top.top_nco_single_tb.nco_inst.sin_o[4] top.top_nco_single_tb.nco_inst.sin_o[3] top.top_nco_single_tb.nco_inst.sin_o[2] top.top_nco_single_tb.nco_inst.sin_o[1] top.top_nco_single_tb.nco_inst.sin_o[0]
+@20000
+-
+-
+-
+-
+@29
+#{top.top_nco_single_tb.nco_inst.sin_o[15:0]} top.top_nco_single_tb.nco_inst.sin_o[15] top.top_nco_single_tb.nco_inst.sin_o[14] top.top_nco_single_tb.nco_inst.sin_o[13] top.top_nco_single_tb.nco_inst.sin_o[12] top.top_nco_single_tb.nco_inst.sin_o[11] top.top_nco_single_tb.nco_inst.sin_o[10] top.top_nco_single_tb.nco_inst.sin_o[9] top.top_nco_single_tb.nco_inst.sin_o[8] top.top_nco_single_tb.nco_inst.sin_o[7] top.top_nco_single_tb.nco_inst.sin_o[6] top.top_nco_single_tb.nco_inst.sin_o[5] top.top_nco_single_tb.nco_inst.sin_o[4] top.top_nco_single_tb.nco_inst.sin_o[3] top.top_nco_single_tb.nco_inst.sin_o[2] top.top_nco_single_tb.nco_inst.sin_o[1] top.top_nco_single_tb.nco_inst.sin_o[0]
+[pattern_trace] 1
+[pattern_trace] 0

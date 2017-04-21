@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Feb 21 15:50:29 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="baade3ddacfb47f9b55070bf5856ed41" type="ProjectID"/>
+<property name="ProjectIteration" value="10" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="CustomizeRSBBlock" value="23" type="JavaHandler"/>
+<property name="DisconnectRSBPin" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="41" type="JavaHandler"/>
+<property name="EditUndo" value="17" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="3" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="ReportIPStatus" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="10" type="JavaHandler"/>
+<property name="ShowView" value="8" type="JavaHandler"/>
+<property name="ValidateRSBDesign" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="AbstractCombinedPanel_MOVE_SELECTED_ELEMENT_UP" value="1" type="GuiResourceData"/>
+<property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="1" type="GuiResourceData"/>
+<property name="AddRepositoryInfoDialog_OK" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="1" type="GuiResourceData"/>
+<property name="Clock Configuration, Clock Configuration" value="1" type="GuiResourceData"/>
+<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="7" type="GuiResourceData"/>
+<property name="DDR Configuration, DDR Configuration" value="2" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="2" type="GuiResourceData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="2" type="GuiResourceData"/>
+<property name="IPStatusTablePanel_IP_STATUS_TABLE" value="5" type="GuiResourceData"/>
+<property name="IPStatusTablePanel_MORE_INFO" value="1" type="GuiResourceData"/>
+<property name="Interrupts, Interrupts" value="1" type="GuiResourceData"/>
+<property name="MIO Configuration, MIO Configuration" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_IP_SETTINGS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_PROJECT_SETTINGS" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, add_const_0 ; s00_axi ; reg0 ; 0x43C4_0000 ; 64K ; 0x43C4_FFFF, 3, add_const_0, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, CAN ; CAN ; CAN ; CAN ; CAN ; CAN, 10" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks, 14" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks, 19" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, Timers ; Timers ; Timers ; Timers ; Timers ; Timers, 21" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, red_pitaya_pid_v1_0, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, red_pitaya_pid_v1_0, 0, red_pitaya_pid_v1_0, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, red_pitaya_pid_v1_0, 0, red_pitaya_pid_v1_0, 0, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE,  Training/Board Details ; User Input ; , 23" value="5" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Board Delay (ns" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, DQS to Clock Delay (ns" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, DRAM Training ; DRAM Training ; DRAM Training, 24" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Enable Advanced options ; 0 ;  Enable Advanced DDR QoS settings, 25" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Enable HPR ; Enable HPR ; Enable HPR, 36" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Enable HPR ; Enable HPR ; Enable HPR, 36, Enable HPR, 0, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Memory Part Configuration ; Memory Part Configuration ; Memory Part Configuration, 9" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Read Priority ; Read Priority ; Read Priority, 26" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, Write Priority ; Write Priority ; Write Priority, 31" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, PL-PS Interrupt Ports ; PL-PS Interrupt Ports ; PL-PS Interrupt Ports, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, PS-PL Interrupt Ports ; PS-PL Interrupt Ports ; PS-PL Interrupt Ports, 7" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, ACP Slave AXI Interface ; ACP Slave AXI Interface ; ACP Slave AXI Interface, 51" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, AXI Non Secure Enablement  ; 0 ; Enable AXI Non Secure Transaction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, AXI Non Secure Enablement  ; 0 ; Enable AXI Non Secure Transaction, 31" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, Address Editor ; Address Editor ; Address Editor, 15" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, Allow access to PS/SLCR registers ; 0 ; Allow address mapping to PS and SLCR register space, 19" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, DMA Controller ; DMA Controller ; DMA Controller, 54" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, Enable Clock Resets ; Enable Clock Resets ; Enable Clock Resets, 26" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, Enable Clock Triggers ; Enable Clock Triggers ; Enable Clock Triggers, 21" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, GP Master AXI Interface ; GP Master AXI Interface ; GP Master AXI Interface, 32" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, GP Slave AXI Interface ; GP Slave AXI Interface ; GP Slave AXI Interface, 39" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, General ; General ; General, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, HP Slave AXI Interface ; HP Slave AXI Interface ; HP Slave AXI Interface, 42" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, Input Cross Trigger ; Input Cross Trigger ; Input Cross Trigger, 60" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, M AXI GP0 interface ; 1 ; Enables General purpose AXI master interface 0, 33" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, M AXI GP1 interface ; 0 ; Enables General purpose AXI master interface 1, 36" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, Output Cross Trigger ; Output Cross Trigger ; Output Cross Trigger, 65" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa, 59" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, S AXI HP0 interface ; 0 ; Enables AXI high performance slave interface 0, 43" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, S AXI HP1 interface ; 0 ; Enables AXI high performance slave interface 1, 45" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, S AXI HP2 interface ; 0 ; Enables AXI high performance slave interface 2, 47" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, S AXI HP3 interface ; 0 ; Enables AXI high performance slave interface 3, 49" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit, 36" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO, 16" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO, 30" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals, 15" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, NAND Flash ;  ;  ;  ;  ;  ;  ; , 13" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug, 40" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, Quad SPI Flash ;  ;  ;  ;  ;  ;  ; , 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, SRAM/NOR Flash ;  ;  ;  ;  ;  ;  ; , 6" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MIOTablePagePanel_MIO_TABLE, (String" value="8" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, Run Connection Automation" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RSBSaveAsPDFDialog_ORIENTATION, Landscape, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderMenu_ADD_IP, Add IP..." value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderMenu_SAVE_AS_PDF_FILE, Save as PDF File..." value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, Expand/Collapse" value="1" type="GuiResourceData"/>
+<property name="PS-PL Configuration, PS-PL Configuration" value="2" type="GuiResourceData"/>
+<property name="Peripheral I/O Pins, Peripheral I/O Pins" value="2" type="GuiResourceData"/>
+<property name="ProjectSettingsIPPage_TABBED_PANE" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsIPRepositoryPanel_ADD_REPOSITORY" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsIPRepositoryPanel_REFRESH_ALL" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER" value="3" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="5" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="ReportIPStatusInfoDialog_REPORT_IP_STATUS" value="1" type="GuiResourceData"/>
+<property name="SMC Timing Calculation, SMC Timing Calculation" value="1" type="GuiResourceData"/>
+<property name="SystemTab_SHOW_IP_STATUS" value="2" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="51" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="48" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Apr 12 08:20:21 2017
+# Process ID: 3749
+# Current directory: /home/bma/git/fpga_design/redpitaya/vco_only
+# Command line: vivado vco_only.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/vco_only/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/vco_only/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project vco_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 5955.809 ; gain = 177.301 ; free physical = 5260 ; free virtual = 14909
+save_project_as iq_demod_only /home/bma/git/fpga_design/redpitaya/iq_demod_only -force
+save_project_as: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 5963.809 ; gain = 2.000 ; free physical = 4091 ; free virtual = 14559
+create_bd_design "iq_demod_only_wrapper"
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd> 
+create_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5978.945 ; gain = 15.137 ; free physical = 4043 ; free virtual = 14535
+open_bd_design {/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd}
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - dac1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_ampl
+Adding cell -- ggm:cogen:add_const:1.0 - dds_f0
+Adding cell -- user.org:user:nco_counter:1.0 - dds_nco
+Adding cell -- ggm:cogen:add_const:1.0 - dds_offset
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds_ampl
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0
+Adding cell -- ggm:cogen:add_const:1.0 - dds_range
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds_range
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_offset/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_nco/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_range/data_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <vco_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd>
+current_bd_design [get_bd_designs iq_demod_only_wrapper]
+current_bd_design vco_only_wrapper
+set tmpCopyObjs [concat  [get_bd_cells {axi_interconnect_0 dds_f0 dds_nco expanderReal_0 dac1_offset dds_offset proc_sys_reset_0 dds_ampl dds_range ad9767_0 xlconstant_0 xlslice_0 twoInMult_dds_ampl adc1_offset redpitaya_adc_dac_clk_0 processing_system7_0 twoInMult_dds_range dupplReal_1_to_2_0 ltc2145_0}] [get_bd_intf_ports {DDR FIXED_IO}] [get_bd_ports {dac_rst_o adc_clk_n_i dac_clk_o adc_cdcs dac_wrt_o adc_clk_p_i dac_sel_o dac_dat_o adc_data_b_i adc_data_a_i}] [get_bd_intf_nets {processing_system7_0_DDR processing_system7_0_M_AXI_GP0 axi_interconnect_0_M01_AXI expanderReal_0_data_out adc1_offset_data_out axi_interconnect_0_M02_AXI dds_ampl_data_out dac1_offset_data_out axi_interconnect_0_M09_AXI ltc2145_0_data_a axi_interconnect_0_M10_AXI dupplReal_1_to_2_0_data2_out dds_range_data_out axi_interconnect_0_M11_AXI axi_interconnect_0_M00_AXI dds_offset_data_out axi_interconnect_0_M08_AXI processing_system7_0_FIXED_IO dds_f0_data_out}] [get_bd_nets {dupplReal_1_to_2_0_data1_en_o dupplReal_1_to_2_0_data1_eof_o twoInMult_0_data_en_o xlconstant_0_dout redpitaya_adc_dac_clk_0_dac_locked_o ad9767_0_dac_sel_o nco_counter_0_dds_clk_o twoInMult_0_data_o processing_system7_0_FCLK_RESET0_N redpitaya_adc_dac_clk_0_dac_2ph_o ltc2145_0_adc_cdcs twoInMult_dds_range_data_en_o ltc2145_0_adc_clk ad9767_0_dac_rst_o dupplReal_1_to_2_0_data1_clk_o ad9767_0_dac_dat_o redpitaya_adc_dac_clk_0_dac_clk_o redpitaya_adc_dac_clk_0_adc_clk_o processing_system7_0_FCLK_CLK0 twoInMult_dds_range_data_clk_o twoInMult_0_data_clk_o proc_sys_reset_0_peripheral_aresetn nco_counter_0_dds_sin_o xlslice_0_Dout adc_clk_p_i_1 redpitaya_adc_dac_clk_0_dac_2clk_o dupplReal_1_to_2_0_data1_rst_o adc_data_b_i_1 adc_data_a_i_1 ad9767_0_dac_wrt_o nco_counter_0_dds_en_o adc_clk_n_i_1 twoInMult_dds_range_data_o dupplReal_1_to_2_0_data1_o proc_sys_reset_0_peripheral_reset ad9767_0_dac_clk_o proc_sys_reset_0_interconnect_aresetn}]]
+current_bd_design iq_demod_only_wrapper
+copy_bd_objs -from_design vco_only_wrapper / $tmpCopyObjs
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [PS7-6] Configuring Board Preset part0. Please wait ......
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_range/data1_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /dds_range/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_range/data1_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /dds_range/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_eof_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+WARNING: [BD 41-1306] The connection to interface pin /expanderReal_0/data_eof_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_range/data1_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /dupplReal_1_to_2_0/data1_rst_o is being overridden by the user. This pin will not be connected as a part of interface connection data1_out
+WARNING: [BD 41-1306] The connection to interface pin /expanderReal_0/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/dds_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_dds
+WARNING: [BD 41-1306] The connection to interface pin /dds_ampl/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_ampl/data1_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/dds_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_dds
+WARNING: [BD 41-1306] The connection to interface pin /dds_ampl/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_ampl/data1_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1306] The connection to interface pin /dds_nco/dds_sin_o is being overridden by the user. This pin will not be connected as a part of interface connection data_dds
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_ampl/data1_i is being overridden by the user. This pin will not be connected as a part of interface connection data1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1306] The connection to interface pin /dds_offset/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_ampl/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_range/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_offset/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_nco/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_range/data_rst_i(undef)
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_ampl/data_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_offset/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_ampl/data_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /dds_offset/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_ampl/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_range/data_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /expanderReal_0/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_range/data_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /expanderReal_0/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /twoInMult_dds_range/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /expanderReal_0/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_ampl/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_range/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /dds_offset/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 6100.863 ; gain = 65.418 ; free physical = 3863 ; free virtual = 14397
+current_bd_design [get_bd_designs vco_only_wrapper]
+close_bd_design [get_bd_designs vco_only_wrapper]
+remove_files  /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_ad9767_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_ad9767_0_0/vco_only_wrapper_ad9767_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_adc1_offset_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_adc1_offset_0/vco_only_wrapper_adc1_offset_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_xbar_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_xbar_0/vco_only_wrapper_xbar_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dac1_offset_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dac1_offset_0/vco_only_wrapper_dac1_offset_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dds_ampl_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_ampl_0/vco_only_wrapper_dds_ampl_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dds_f0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_f0_0/vco_only_wrapper_dds_f0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dds_nco_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_nco_0/vco_only_wrapper_dds_nco_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dds_offset_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_offset_0/vco_only_wrapper_dds_offset_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dupplReal_1_to_2_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dupplReal_1_to_2_0_0/vco_only_wrapper_dupplReal_1_to_2_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_ltc2145_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_ltc2145_0_0/vco_only_wrapper_ltc2145_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_proc_sys_reset_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_proc_sys_reset_0_0/vco_only_wrapper_proc_sys_reset_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_processing_system7_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_processing_system7_0_0/vco_only_wrapper_processing_system7_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_redpitaya_adc_dac_clk_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_redpitaya_adc_dac_clk_0_0/vco_only_wrapper_redpitaya_adc_dac_clk_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_twoInMult_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_twoInMult_0_0/vco_only_wrapper_twoInMult_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_xlconstant_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_xlconstant_0_0/vco_only_wrapper_xlconstant_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_xlslice_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_xlslice_0_0/vco_only_wrapper_xlslice_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_expanderReal_0_0'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_expanderReal_0_0/vco_only_wrapper_expanderReal_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_dds_ampl_1'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_dds_ampl_1/vco_only_wrapper_dds_ampl_1.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'vco_only_wrapper_twoInMult_0_1'. Sub-design: '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_twoInMult_0_1/vco_only_wrapper_twoInMult_0_1.xci'.
+delete_ip_run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:33 . Memory (MB): peak = 6167.914 ; gain = 34.914 ; free physical = 3771 ; free virtual = 14336
+remove_files: Time (s): cpu = 00:00:51 ; elapsed = 00:00:33 . Memory (MB): peak = 6167.914 ; gain = 34.914 ; free physical = 3777 ; free virtual = 14342
+file delete -force /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/vco_only_wrapper
+set_property top iq_demod_only_wrapper [current_fileset]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd> 
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M08_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins dds_ampl/s00_axi]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M10_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M05_AXI] [get_bd_intf_pins dds_offset/s00_axi]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M09_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M04_AXI] [get_bd_intf_pins dds_nco/s00_axi]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M11_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M06_AXI] [get_bd_intf_pins dds_f0/s00_axi]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.NUM_MI {7}] [get_bd_cells axi_interconnect_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ui/bd_c3ceb8f5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-1356] Address block </dds_ampl/s00_axi/reg0> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </dds_f0/s00_axi/reg0> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </dds_offset/s00_axi/reg0> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </dds_nco/s00_axi/reg0> is not mapped into </processing_system7_0/Data>. Please use Address Editor to either map or exclude it.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hdl/iq_demod_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hdl/iq_demod_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish.
+INFO: [IP_Flow 19-3499] Reset cancelled 'Synthesis' target for IP 'processing_system7_0'.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IPIntegrator design /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd
+INFO: [Common 17-681] Processing pending cancel.
+assign_bd_address [get_bd_addr_segs {dds_ampl/s00_axi/reg0 dds_f0/s00_axi/reg0 dds_offset/s00_axi/reg0 dds_nco/s00_axi/reg0 }]
+</dds_ampl/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C20000 [ 64K ]>
+</dds_f0/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C30000 [ 64K ]>
+</dds_nco/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C40000 [ 64K ]>
+</dds_offset/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C60000 [ 64K ]>
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ui/bd_c3ceb8f5.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hdl/iq_demod_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hdl/iq_demod_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] iq_demod_only_wrapper_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hw_handoff/iq_demod_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hw_handoff/iq_demod_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/hdl/iq_demod_only_wrapper.hwdef
+[Wed Apr 12 08:46:54 2017] Launched iq_demod_only_wrapper_auto_pc_0_synth_1, iq_demod_only_wrapper_dds_offset_0_synth_1, iq_demod_only_wrapper_dds_nco_0_synth_1, iq_demod_only_wrapper_dds_f0_0_synth_1, iq_demod_only_wrapper_dds_ampl_0_synth_1, iq_demod_only_wrapper_dac1_offset_0_synth_1, iq_demod_only_wrapper_adc1_offset_0_synth_1, iq_demod_only_wrapper_ad9767_0_0_synth_1, iq_demod_only_wrapper_xlslice_0_0_synth_1, iq_demod_only_wrapper_xlconstant_0_0_synth_1, iq_demod_only_wrapper_xbar_0_synth_1, iq_demod_only_wrapper_twoInMult_dds_range_0_synth_1, iq_demod_only_wrapper_twoInMult_dds_ampl_0_synth_1, iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1, iq_demod_only_wrapper_dds_range_0_synth_1, iq_demod_only_wrapper_dupplReal_1_to_2_0_0_synth_1, iq_demod_only_wrapper_expanderReal_0_0_synth_1, iq_demod_only_wrapper_ltc2145_0_0_synth_1, iq_demod_only_wrapper_proc_sys_reset_0_0_synth_1, iq_demod_only_wrapper_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+iq_demod_only_wrapper_auto_pc_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_auto_pc_0_synth_1/runme.log
+iq_demod_only_wrapper_dds_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dds_offset_0_synth_1/runme.log
+iq_demod_only_wrapper_dds_nco_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dds_nco_0_synth_1/runme.log
+iq_demod_only_wrapper_dds_f0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dds_f0_0_synth_1/runme.log
+iq_demod_only_wrapper_dds_ampl_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dds_ampl_0_synth_1/runme.log
+iq_demod_only_wrapper_dac1_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dac1_offset_0_synth_1/runme.log
+iq_demod_only_wrapper_adc1_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_adc1_offset_0_synth_1/runme.log
+iq_demod_only_wrapper_ad9767_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_ad9767_0_0_synth_1/runme.log
+iq_demod_only_wrapper_xlslice_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_xlslice_0_0_synth_1/runme.log
+iq_demod_only_wrapper_xlconstant_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_xlconstant_0_0_synth_1/runme.log
+iq_demod_only_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_xbar_0_synth_1/runme.log
+iq_demod_only_wrapper_twoInMult_dds_range_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_twoInMult_dds_range_0_synth_1/runme.log
+iq_demod_only_wrapper_twoInMult_dds_ampl_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_twoInMult_dds_ampl_0_synth_1/runme.log
+iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1/runme.log
+iq_demod_only_wrapper_dds_range_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dds_range_0_synth_1/runme.log
+iq_demod_only_wrapper_dupplReal_1_to_2_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_dupplReal_1_to_2_0_0_synth_1/runme.log
+iq_demod_only_wrapper_expanderReal_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_expanderReal_0_0_synth_1/runme.log
+iq_demod_only_wrapper_ltc2145_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_ltc2145_0_0_synth_1/runme.log
+iq_demod_only_wrapper_proc_sys_reset_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_proc_sys_reset_0_0_synth_1/runme.log
+iq_demod_only_wrapper_processing_system7_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_processing_system7_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/synth_1/runme.log
+[Wed Apr 12 08:46:56 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 6282.145 ; gain = 63.504 ; free physical = 3234 ; free virtual = 14137
+generate_target all [get_files  /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'iq_demod_only_wrapper' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all iq_demod_only_wrapper_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd]
+launch_runs -jobs 4 iq_demod_only_wrapper_processing_system7_0_0_synth_1
+[Wed Apr 12 10:26:56 2017] Launched iq_demod_only_wrapper_processing_system7_0_0_synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_processing_system7_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/iq_demod_only_wrapper.bd] -directory /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.ip_user_files/sim_scripts -ip_user_files_dir /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.ip_user_files -ipstatic_source_dir /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.cache/compile_simlib/modelsim} {questa=/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.cache/compile_simlib/questa} {ies=/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.cache/compile_simlib/ies} {vcs=/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.cache/compile_simlib/vcs} {riviera=/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 12 10:27:29 2017...

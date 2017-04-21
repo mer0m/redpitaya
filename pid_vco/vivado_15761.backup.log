@@ -1,0 +1,439 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Apr 11 10:06:04 2017
+# Process ID: 15761
+# Current directory: /home/bma/git/fpga_design/redpitaya/pid_vco
+# Command line: vivado pid_vco.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/pid_vco/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/pid_vco/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project pid_vco.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+WARNING: [IP_Flow 19-3664] IP 'vco_only_wrapper_processing_system7_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_processing_system7_0_0/sim/libps7.so'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'vco_only_wrapper_processing_system7_0_0' generated file not found '/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_processing_system7_0_0/sim/libremoteport.so'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 5965.301 ; gain = 185.445 ; free physical = 3668 ; free virtual = 14456
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd}
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dac1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_ampl
+Adding cell -- ggm:cogen:add_const:1.0 - dds_f0
+Adding cell -- user.org:user:nco_counter:1.0 - dds_nco
+Adding cell -- ggm:cogen:add_const:1.0 - dds_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_range
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds_ampl
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds_range
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_offset/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_nco/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_range/data_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <pid_vco_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 6043.207 ; gain = 75.906 ; free physical = 3569 ; free virtual = 14376
+remove_files  /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/vco_only_wrapper/vco_only_wrapper.bd
+delete_ip_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:19 . Memory (MB): peak = 6068.176 ; gain = 2.000 ; free physical = 3527 ; free virtual = 14334
+remove_files: Time (s): cpu = 00:00:41 ; elapsed = 00:00:20 . Memory (MB): peak = 6068.176 ; gain = 2.000 ; free physical = 3527 ; free virtual = 14334
+file delete -force /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/vco_only_wrapper
+set_property top pid_vco_wrapper [current_fileset]
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.PSR {15} CONFIG.ISR {15} CONFIG.DSR {0} CONFIG.P_SIZE {14} CONFIG.I_SIZE {14} CONFIG.D_SIZE {14}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+set_property location {2 372 142} [get_bd_cells red_pitaya_pidv3_0]
+copy_bd_objs /  [get_bd_cells {dds_range}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins dds_range1/s00_axi]
+</dds_range1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C60000 [ 64K ]>
+set_property location {0.5 76 131} [get_bd_cells dds_range1]
+startgroup
+set_property -dict [list CONFIG.format {unsigned}] [get_bd_cells dds_range1]
+endgroup
+set_property name pid_kp [get_bd_cells dds_range1]
+connect_bd_net [get_bd_pins pid_kp/data_o] [get_bd_pins red_pitaya_pidv3_0/kp_i]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kp/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/kp_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+delete_bd_objs [get_bd_intf_nets ltc2145_0_data_a]
+connect_bd_net [get_bd_pins adc1_offset/data_i] [get_bd_pins ltc2145_0/data_a_o]
+WARNING: [BD 41-1306] The connection to interface pin /adc1_offset/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+connect_bd_net [get_bd_pins ltc2145_0/data_a_en_o] [get_bd_pins adc1_offset/data_en_i]
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+WARNING: [BD 41-1306] The connection to interface pin /adc1_offset/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins adc1_offset/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /adc1_offset/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+connect_bd_net [get_bd_pins ltc2145_0/data_a_rst_o] [get_bd_pins adc1_offset/data_rst_i]
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_rst_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+WARNING: [BD 41-1306] The connection to interface pin /adc1_offset/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+startgroup
+set_property location {4 1472 -410} [get_bd_cells pid_kp]
+set_property location {4 1832 -440} [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+startgroup
+set_property location {5 2166 -409} [get_bd_cells red_pitaya_pidv3_0]
+set_property location {4 1706 -379} [get_bd_cells pid_kp]
+endgroup
+connect_bd_net [get_bd_pins pid_kp/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kp/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_kp/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kp/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_kp/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kp/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_kp/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kp/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs /  [get_bd_cells {pid_kp}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins pid_kp1/s00_axi]
+</pid_kp1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C70000 [ 64K ]>
+set_property location {4 1822 -206} [get_bd_cells pid_kp1]
+set_property location {4 1785 -759} [get_bd_cells pid_kp]
+set_property location {4 1788 -500} [get_bd_cells pid_kp1]
+set_property name pid_ki [get_bd_cells pid_kp1]
+connect_bd_net [get_bd_pins pid_ki/data_o] [get_bd_pins red_pitaya_pidv3_0/ki_i]
+WARNING: [BD 41-1306] The connection to interface pin /pid_ki/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/ki_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+connect_bd_net [get_bd_pins pid_ki/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /pid_ki/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_ki/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_ki/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_ki/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_ki/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_ki/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_ki/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs /  [get_bd_cells {pid_ki}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins pid_ki1/s00_axi]
+</pid_ki1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C80000 [ 64K ]>
+set_property location {4 1776 -310} [get_bd_cells pid_ki1]
+startgroup
+set_property location {4 1801 -538} [get_bd_cells pid_ki1]
+set_property location {4 1801 -588} [get_bd_cells pid_ki]
+set_property location {4 1801 -1038} [get_bd_cells pid_kp]
+endgroup
+set_property name pid_kd [get_bd_cells pid_ki1]
+connect_bd_net [get_bd_pins pid_kd/data_o] [get_bd_pins red_pitaya_pidv3_0/kd_i]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kd/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/kd_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+connect_bd_net [get_bd_pins pid_kd/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kd/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_kd/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kd/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_kd/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kd/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_kd/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_kd/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+startgroup
+endgroup
+startgroup
+endgroup
+copy_bd_objs /  [get_bd_cells {pid_kd}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins pid_kd1/s00_axi]
+</pid_kd1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C90000 [ 64K ]>
+set_property location {4 1855 -187} [get_bd_cells pid_kd1]
+set_property location {4 1800 -813} [get_bd_cells pid_ki]
+set_property location {4 1806 -569} [get_bd_cells pid_kd]
+set_property location {4 1795 -364} [get_bd_cells pid_kd1]
+set_property name pid_rst_int [get_bd_cells pid_kd1]
+set_property location {4 1811 -204} [get_bd_cells pid_rst_int]
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {1} CONFIG.DATA_IN_SIZE {1}] [get_bd_cells pid_rst_int]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+set_property location {4 1469 -231} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins pid_rst_int/data_i] [get_bd_pins xlconstant_1/dout]
+WARNING: [BD 41-1306] The connection to interface pin /pid_rst_int/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_rst_int/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_rst_int/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_rst_int/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_rst_int/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_rst_int/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_rst_int/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_rst_int/data_o] [get_bd_pins red_pitaya_pidv3_0/int_rst_i]
+WARNING: [BD 41-1306] The connection to interface pin /pid_rst_int/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/int_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+copy_bd_objs /  [get_bd_cells {pid_rst_int}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins pid_rst_int1/s00_axi]
+</pid_rst_int1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43CB0000 [ 64K ]>
+set_property location {4 1977 -366} [get_bd_cells pid_rst_int1]
+set_property name pid_sign [get_bd_cells pid_rst_int1]
+connect_bd_net [get_bd_pins pid_sign/data_o] [get_bd_pins red_pitaya_pidv3_0/sign_i]
+WARNING: [BD 41-1306] The connection to interface pin /pid_sign/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/sign_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+connect_bd_net [get_bd_pins pid_sign/data_i] [get_bd_pins xlconstant_1/dout]
+WARNING: [BD 41-1306] The connection to interface pin /pid_sign/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_sign/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_sign/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_sign/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_sign/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_sign/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_sign/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+delete_bd_objs [get_bd_intf_nets adc1_offset_data_out]
+connect_bd_intf_net [get_bd_intf_pins red_pitaya_pidv3_0/data_out] [get_bd_intf_pins dupplReal_1_to_2_0/data_in]
+connect_bd_intf_net [get_bd_intf_pins red_pitaya_pidv3_0/data_in] [get_bd_intf_pins adc1_offset/data_out]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ui/bd_5393c222.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/red_pitaya_pidv3_0/setpoint_i
+
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hdl/pid_vco_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hdl/pid_vco_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] pid_vco_wrapper_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hw_handoff/pid_vco_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hw_handoff/pid_vco_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hdl/pid_vco_wrapper.hwdef
+[Tue Apr 11 10:23:03 2017] Launched pid_vco_wrapper_processing_system7_0_0_synth_1, pid_vco_wrapper_ltc2145_0_0_synth_1, pid_vco_wrapper_twoInMult_dds_range_0_synth_1, pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1, pid_vco_wrapper_dds_f0_0_synth_1, pid_vco_wrapper_dds_nco_0_synth_1, pid_vco_wrapper_xlslice_0_0_synth_1, pid_vco_wrapper_dds_offset_0_synth_1, pid_vco_wrapper_xlconstant_0_0_synth_1, pid_vco_wrapper_dds_range_0_synth_1, pid_vco_wrapper_expanderReal_0_0_synth_1, pid_vco_wrapper_adc1_offset_0_synth_1, pid_vco_wrapper_ad9767_0_0_synth_1, pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1, pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1, pid_vco_wrapper_xbar_0_synth_1, pid_vco_wrapper_dac1_offset_0_synth_1, pid_vco_wrapper_pid_ki_0_synth_1, pid_vco_wrapper_dds_ampl_0_synth_1, pid_vco_wrapper_proc_sys_reset_0_0_synth_1, pid_vco_wrapper_pid_rst_int_0_synth_1, pid_vco_wrapper_pid_kd_0_synth_1, pid_vco_wrapper_auto_pc_0_synth_1, pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1, pid_vco_wrapper_xlconstant_1_0_synth_1, pid_vco_wrapper_dds_range_1_synth_1, pid_vco_wrapper_pid_kp_0_synth_1, synth_1...
+Run output will be captured here:
+pid_vco_wrapper_processing_system7_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_processing_system7_0_0_synth_1/runme.log
+pid_vco_wrapper_ltc2145_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_ltc2145_0_0_synth_1/runme.log
+pid_vco_wrapper_twoInMult_dds_range_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_twoInMult_dds_range_0_synth_1/runme.log
+pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1/runme.log
+pid_vco_wrapper_dds_f0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_f0_0_synth_1/runme.log
+pid_vco_wrapper_dds_nco_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_nco_0_synth_1/runme.log
+pid_vco_wrapper_xlslice_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xlslice_0_0_synth_1/runme.log
+pid_vco_wrapper_dds_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_offset_0_synth_1/runme.log
+pid_vco_wrapper_xlconstant_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xlconstant_0_0_synth_1/runme.log
+pid_vco_wrapper_dds_range_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_range_0_synth_1/runme.log
+pid_vco_wrapper_expanderReal_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_expanderReal_0_0_synth_1/runme.log
+pid_vco_wrapper_adc1_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_adc1_offset_0_synth_1/runme.log
+pid_vco_wrapper_ad9767_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_ad9767_0_0_synth_1/runme.log
+pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1/runme.log
+pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1/runme.log
+pid_vco_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xbar_0_synth_1/runme.log
+pid_vco_wrapper_dac1_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dac1_offset_0_synth_1/runme.log
+pid_vco_wrapper_pid_ki_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_ki_0_synth_1/runme.log
+pid_vco_wrapper_dds_ampl_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_ampl_0_synth_1/runme.log
+pid_vco_wrapper_proc_sys_reset_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_proc_sys_reset_0_0_synth_1/runme.log
+pid_vco_wrapper_pid_rst_int_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_rst_int_0_synth_1/runme.log
+pid_vco_wrapper_pid_kd_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_kd_0_synth_1/runme.log
+pid_vco_wrapper_auto_pc_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_auto_pc_0_synth_1/runme.log
+pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+pid_vco_wrapper_xlconstant_1_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xlconstant_1_0_synth_1/runme.log
+pid_vco_wrapper_dds_range_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_range_1_synth_1/runme.log
+pid_vco_wrapper_pid_kp_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_kp_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/synth_1/runme.log
+[Tue Apr 11 10:23:06 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 6253.035 ; gain = 178.617 ; free physical = 2355 ; free virtual = 13371
+reset_run pid_vco_wrapper_dds_f0_0_synth_1
+reset_run pid_vco_wrapper_dds_nco_0_synth_1
+reset_run pid_vco_wrapper_xlslice_0_0_synth_1
+reset_run pid_vco_wrapper_dds_offset_0_synth_1
+reset_run pid_vco_wrapper_xlconstant_0_0_synth_1
+reset_run pid_vco_wrapper_dds_range_0_synth_1
+reset_run pid_vco_wrapper_expanderReal_0_0_synth_1
+reset_run pid_vco_wrapper_adc1_offset_0_synth_1
+reset_run pid_vco_wrapper_ad9767_0_0_synth_1
+reset_run pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1
+reset_run pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1
+reset_run pid_vco_wrapper_xbar_0_synth_1
+reset_run pid_vco_wrapper_dac1_offset_0_synth_1
+reset_run pid_vco_wrapper_pid_ki_0_synth_1
+reset_run pid_vco_wrapper_dds_ampl_0_synth_1
+reset_run pid_vco_wrapper_proc_sys_reset_0_0_synth_1
+reset_run pid_vco_wrapper_pid_rst_int_0_synth_1
+reset_run pid_vco_wrapper_pid_kd_0_synth_1
+reset_run pid_vco_wrapper_auto_pc_0_synth_1
+reset_run pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1
+reset_run pid_vco_wrapper_xlconstant_1_0_synth_1
+reset_run pid_vco_wrapper_dds_range_1_synth_1
+reset_run pid_vco_wrapper_pid_kp_0_synth_1
+reset_run synth_1
+reset_run pid_vco_wrapper_processing_system7_0_0_synth_1
+reset_run pid_vco_wrapper_ltc2145_0_0_synth_1
+reset_run pid_vco_wrapper_twoInMult_dds_range_0_synth_1
+reset_run pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd}
+copy_bd_objs /  [get_bd_cells {pid_kp}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins pid_kp1/s00_axi]
+</pid_kp1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43CC0000 [ 64K ]>
+set_property location {4 1500 303} [get_bd_cells pid_kp1]
+set_property name pid_setpoint [get_bd_cells pid_kp1]
+startgroup
+set_property -dict [list CONFIG.format {signed}] [get_bd_cells pid_setpoint]
+endgroup
+connect_bd_net [get_bd_pins pid_setpoint/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /pid_setpoint/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_setpoint/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_setpoint/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_setpoint/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_setpoint/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_setpoint/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /pid_setpoint/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins pid_setpoint/data_o] [get_bd_pins red_pitaya_pidv3_0/setpoint_i]
+WARNING: [BD 41-1306] The connection to interface pin /pid_setpoint/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/setpoint_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ui/bd_5393c222.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hdl/pid_vco_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hdl/pid_vco_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hw_handoff/pid_vco_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hw_handoff/pid_vco_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/hdl/pid_vco_wrapper.hwdef
+[Tue Apr 11 10:25:39 2017] Launched pid_vco_wrapper_processing_system7_0_0_synth_1, pid_vco_wrapper_ltc2145_0_0_synth_1, pid_vco_wrapper_twoInMult_dds_range_0_synth_1, pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1, pid_vco_wrapper_dds_f0_0_synth_1, pid_vco_wrapper_dds_nco_0_synth_1, pid_vco_wrapper_xlslice_0_0_synth_1, pid_vco_wrapper_dds_offset_0_synth_1, pid_vco_wrapper_xlconstant_0_0_synth_1, pid_vco_wrapper_dds_range_0_synth_1, pid_vco_wrapper_expanderReal_0_0_synth_1, pid_vco_wrapper_adc1_offset_0_synth_1, pid_vco_wrapper_ad9767_0_0_synth_1, pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1, pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1, pid_vco_wrapper_xbar_0_synth_1, pid_vco_wrapper_dac1_offset_0_synth_1, pid_vco_wrapper_pid_ki_0_synth_1, pid_vco_wrapper_dds_ampl_0_synth_1, pid_vco_wrapper_proc_sys_reset_0_0_synth_1, pid_vco_wrapper_pid_rst_int_0_synth_1, pid_vco_wrapper_pid_kd_0_synth_1, pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1, pid_vco_wrapper_xlconstant_1_0_synth_1, pid_vco_wrapper_dds_range_1_synth_1, pid_vco_wrapper_pid_kp_0_synth_1, pid_vco_wrapper_auto_pc_0_synth_1, pid_vco_wrapper_pid_kp_1_synth_1, synth_1...
+Run output will be captured here:
+pid_vco_wrapper_processing_system7_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_processing_system7_0_0_synth_1/runme.log
+pid_vco_wrapper_ltc2145_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_ltc2145_0_0_synth_1/runme.log
+pid_vco_wrapper_twoInMult_dds_range_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_twoInMult_dds_range_0_synth_1/runme.log
+pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1/runme.log
+pid_vco_wrapper_dds_f0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_f0_0_synth_1/runme.log
+pid_vco_wrapper_dds_nco_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_nco_0_synth_1/runme.log
+pid_vco_wrapper_xlslice_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xlslice_0_0_synth_1/runme.log
+pid_vco_wrapper_dds_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_offset_0_synth_1/runme.log
+pid_vco_wrapper_xlconstant_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xlconstant_0_0_synth_1/runme.log
+pid_vco_wrapper_dds_range_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_range_0_synth_1/runme.log
+pid_vco_wrapper_expanderReal_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_expanderReal_0_0_synth_1/runme.log
+pid_vco_wrapper_adc1_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_adc1_offset_0_synth_1/runme.log
+pid_vco_wrapper_ad9767_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_ad9767_0_0_synth_1/runme.log
+pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1/runme.log
+pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1/runme.log
+pid_vco_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xbar_0_synth_1/runme.log
+pid_vco_wrapper_dac1_offset_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dac1_offset_0_synth_1/runme.log
+pid_vco_wrapper_pid_ki_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_ki_0_synth_1/runme.log
+pid_vco_wrapper_dds_ampl_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_ampl_0_synth_1/runme.log
+pid_vco_wrapper_proc_sys_reset_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_proc_sys_reset_0_0_synth_1/runme.log
+pid_vco_wrapper_pid_rst_int_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_rst_int_0_synth_1/runme.log
+pid_vco_wrapper_pid_kd_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_kd_0_synth_1/runme.log
+pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+pid_vco_wrapper_xlconstant_1_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_xlconstant_1_0_synth_1/runme.log
+pid_vco_wrapper_dds_range_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_dds_range_1_synth_1/runme.log
+pid_vco_wrapper_pid_kp_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_kp_0_synth_1/runme.log
+pid_vco_wrapper_auto_pc_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_auto_pc_0_synth_1/runme.log
+pid_vco_wrapper_pid_kp_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_kp_1_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/synth_1/runme.log
+[Tue Apr 11 10:25:40 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 6302.312 ; gain = 28.898 ; free physical = 2278 ; free virtual = 13297
+regenerate_bd_layout
+save_bd_design
+close_bd_design [get_bd_designs pid_vco_wrapper]
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd}
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dac1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_ampl
+Adding cell -- ggm:cogen:add_const:1.0 - dds_f0
+Adding cell -- user.org:user:nco_counter:1.0 - dds_nco
+Adding cell -- ggm:cogen:add_const:1.0 - dds_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds_range
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds_ampl
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds_range
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - red_pitaya_pidv3_0
+Adding cell -- ggm:cogen:add_const:1.0 - pid_kp
+Adding cell -- ggm:cogen:add_const:1.0 - pid_ki
+Adding cell -- ggm:cogen:add_const:1.0 - pid_kd
+Adding cell -- ggm:cogen:add_const:1.0 - pid_rst_int
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- ggm:cogen:add_const:1.0 - pid_sign
+Adding cell -- ggm:cogen:add_const:1.0 - pid_setpoint
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_offset/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_nco/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds_range/data_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_vco_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd>
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ui/bd_5393c222.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 17:55:28 2017...

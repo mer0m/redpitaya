@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Apr 11 10:35:30 2017
+# Process ID: 18780
+# Current directory: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_rst_int_0_synth_1
+# Command line: vivado -log pid_vco_wrapper_pid_rst_int_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pid_vco_wrapper_pid_rst_int_0.tcl
+# Log file: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_rst_int_0_synth_1/pid_vco_wrapper_pid_rst_int_0.vds
+# Journal file: /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.runs/pid_vco_wrapper_pid_rst_int_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source pid_vco_wrapper_pid_rst_int_0.tcl -notrace

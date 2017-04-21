@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Nov 24 10:15:57 2016
+# Process ID: 14945
+# Current directory: /home/pyb/git/pyb/fpga/redpitaya/test_pound_fironly_v1
+# Command line: wbtcv -mode batch -source /home/pyb/git/pyb/fpga/redpitaya/test_pound_fironly_v1/test_pound_fironly_v1.tmp/red_pitaya_pid_v1_0_project/red_pitaya_pid_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/pyb/git/pyb/fpga/redpitaya/test_pound_fironly_v1/webtalk.log
+# Journal file: /home/pyb/git/pyb/fpga/redpitaya/test_pound_fironly_v1/webtalk.jou
+#-----------------------------------------------------------
+source /home/pyb/git/pyb/fpga/redpitaya/test_pound_fironly_v1/test_pound_fironly_v1.tmp/red_pitaya_pid_v1_0_project/red_pitaya_pid_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="17" Path="/home/bma/git/fpga_design/redpitaya/TODO/test_pound/test_pound.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="e32847ae3ae346a08594c1383087c1a5"/>
+    <Option Name="Part" Val="xc7z010clg400-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="BoardPart" Val="em.avnet.com:redpitaya:part0:1.0"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../gitlab/oimp/fpga_ip"/>
+    <Option Name="IPCachePermission" Val="disable"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="XPMLibraries" Val="XPM_CDC"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/test_pound.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/test_pound.ip_user_files/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSABoardId" Val="redpitaya"/>
+    <Option Name="DSANumComputeUnits" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="33"/>
+    <Option Name="WTModelSimExportSim" Val="33"/>
+    <Option Name="WTQuestaExportSim" Val="33"/>
+    <Option Name="WTIesExportSim" Val="33"/>
+    <Option Name="WTVcsExportSim" Val="33"/>
+    <Option Name="WTRivieraExportSim" Val="33"/>
+    <Option Name="WTActivehdlExportSim" Val="33"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="64"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/bd/test_pound/test_pound.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_6/test_pound_auto_pc_6.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_expanderReal_0_0/test_pound_expanderReal_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_ad9767_0_1/test_pound_ad9767_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_3_0/test_pound_add_const_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_15/test_pound_auto_pc_15.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_5/test_pound_auto_pc_5.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_9/test_pound_auto_pc_9.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_3/test_pound_auto_pc_3.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_0_1/test_pound_add_const_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_5_0/test_pound_add_const_5_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_axi_gpio_0_2/test_pound_axi_gpio_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_4/test_pound_auto_pc_4.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_dupplReal_1_to_2_0_3/test_pound_dupplReal_1_to_2_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_redpitaya_adc_dac_clk_0_0/test_pound_redpitaya_adc_dac_clk_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_0/test_pound_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_14/test_pound_auto_pc_14.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_mixer_sin_0_0/test_pound_mixer_sin_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_fir16RealbitsOneInTwoMult_v1_0_0_2/test_pound_fir16RealbitsOneInTwoMult_v1_0_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_shifterReal_1_0/test_pound_shifterReal_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_dupplReal_1_to_2_2_0/test_pound_dupplReal_1_to_2_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_5_2/test_pound_add_const_5_2.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_limiteur_0_0/test_pound_limiteur_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_moyenneurReal_0_0/test_pound_moyenneurReal_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_4_0/test_pound_add_const_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="hdl/test_pound.v"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_moyenneurReal_3_0/test_pound_moyenneurReal_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_dupplReal_1_to_2_0_0/test_pound_dupplReal_1_to_2_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_ltc2145_0_0/test_pound_ltc2145_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_moyenneurReal_0_1/test_pound_moyenneurReal_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_shifterReal_3_0/test_pound_shifterReal_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="hdl/test_pound.hwdef"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_xbar_0/test_pound_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_data32Real_multi_to_ram_0_0/test_pound_data32Real_multi_to_ram_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_8/test_pound_auto_pc_8.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_12/test_pound_auto_pc_12.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_13/test_pound_auto_pc_13.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_moyenneurReal_1_0/test_pound_moyenneurReal_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_processing_system7_0_axi_periph_0/test_pound_processing_system7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_rst_processing_system7_0_125M_0/test_pound_rst_processing_system7_0_125M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_0_2/test_pound_add_const_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_processing_system7_0_0/test_pound_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_5_1/test_pound_add_const_5_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_nco_counter_0_1/test_pound_nco_counter_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_data16_multi_to_ram_1_0/test_pound_data16_multi_to_ram_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_shifterReal_5_0/test_pound_shifterReal_5_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_dupplReal_1_to_2_1_0/test_pound_dupplReal_1_to_2_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="test_pound_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_10/test_pound_auto_pc_10.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="hw_handoff/test_pound.hwh"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="hw_handoff/test_pound_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_11/test_pound_auto_pc_11.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_shifterReal_0_2/test_pound_shifterReal_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_shifterReal_0_0/test_pound_shifterReal_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_2/test_pound_auto_pc_2.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_red_pitaya_pidv2_0_0/test_pound_red_pitaya_pidv2_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_add_const_2_0/test_pound_add_const_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_7/test_pound_auto_pc_7.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_auto_pc_1/test_pound_auto_pc_1.xci"/>
+        <CompFileExtendedInfo CompFileName="test_pound.bd" FileRelPathName="ip/test_pound_nco_counter_0_0/test_pound_nco_counter_0_0.xci"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/test_pound/hdl/test_pound_wrapper.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="test_pound_wrapper"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ad9767/ad9767.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/ad9767/ad9767.xdc"/>
+          <Attr Name="ImportTime" Val="1437402064"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc"/>
+          <Attr Name="ImportTime" Val="1468930278"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc"/>
+          <Attr Name="ImportTime" Val="1426005212"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/ome/pyb/git/oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../oimp/fpga_ip/redpitaya_adc_dac_clk/adc_dac_clk_ooc.xdc"/>
+          <Attr Name="ImportTime" Val="1426005212"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/gpio.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../sav-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/gpio.xdc"/>
+          <Attr Name="ImportTime" Val="1468327269"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/av-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/spi.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../sav-sys/louloulou/redpitaya2/prog/test_pyb_from_2015-11-05_phaseManip/fpga2015/fpga2015/fpga2015.srcs/constrs_1/new/spi.xdc"/>
+          <Attr Name="ImportTime" Val="1468323768"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="test_pound_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+</Project>

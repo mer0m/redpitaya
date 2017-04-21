@@ -1,0 +1,35 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date         : Tue Sep 13 17:57:09 2016
+| Host         : x230 running 64-bit Gentoo Base System release 2.2
+| Command      : report_drc -file top_red_pseudogen_dds_drc_opted.rpt
+| Design       : top_red_pseudogen_dds
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
+
+2. REPORT DETAILS
+-----------------
+PLIO-7#1 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus redpitaya_axi_wrapper00_FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS25 (redpitaya_axi_wrapper00_FIXED_IO_mio[53], redpitaya_axi_wrapper00_FIXED_IO_mio[52], redpitaya_axi_wrapper00_FIXED_IO_mio[51], redpitaya_axi_wrapper00_FIXED_IO_mio[50], redpitaya_axi_wrapper00_FIXED_IO_mio[49], redpitaya_axi_wrapper00_FIXED_IO_mio[48], redpitaya_axi_wrapper00_FIXED_IO_mio[47], redpitaya_axi_wrapper00_FIXED_IO_mio[46], redpitaya_axi_wrapper00_FIXED_IO_mio[45], redpitaya_axi_wrapper00_FIXED_IO_mio[44], redpitaya_axi_wrapper00_FIXED_IO_mio[43], redpitaya_axi_wrapper00_FIXED_IO_mio[42], redpitaya_axi_wrapper00_FIXED_IO_mio[41], redpitaya_axi_wrapper00_FIXED_IO_mio[40], redpitaya_axi_wrapper00_FIXED_IO_mio[39] (the first 15 of 38 listed)); LVCMOS33 (redpitaya_axi_wrapper00_FIXED_IO_mio[15], redpitaya_axi_wrapper00_FIXED_IO_mio[14], redpitaya_axi_wrapper00_FIXED_IO_mio[13], redpitaya_axi_wrapper00_FIXED_IO_mio[12], redpitaya_axi_wrapper00_FIXED_IO_mio[11], redpitaya_axi_wrapper00_FIXED_IO_mio[10], redpitaya_axi_wrapper00_FIXED_IO_mio[9], redpitaya_axi_wrapper00_FIXED_IO_mio[8], redpitaya_axi_wrapper00_FIXED_IO_mio[7], redpitaya_axi_wrapper00_FIXED_IO_mio[6], redpitaya_axi_wrapper00_FIXED_IO_mio[5], redpitaya_axi_wrapper00_FIXED_IO_mio[4], redpitaya_axi_wrapper00_FIXED_IO_mio[3], redpitaya_axi_wrapper00_FIXED_IO_mio[2], redpitaya_axi_wrapper00_FIXED_IO_mio[1] (the first 15 of 16 listed)); 
+Related violations: <none>
+
+

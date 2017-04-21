@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1490857263">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="dds_gnuradio_wrapper.drc"/>
+  <File Type="BG-BGN" Name="dds_gnuradio_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="dds_gnuradio_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="dds_gnuradio_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="dds_gnuradio_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="dds_gnuradio_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="dds_gnuradio_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="dds_gnuradio_wrapper.msk"/>
+  <File Type="BG-BIN" Name="dds_gnuradio_wrapper.bin"/>
+  <File Type="BG-BIT" Name="dds_gnuradio_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="dds_gnuradio_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dds_gnuradio_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="dds_gnuradio_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dds_gnuradio_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dds_gnuradio_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="dds_gnuradio_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="dds_gnuradio_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dds_gnuradio_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="dds_gnuradio_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dds_gnuradio_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dds_gnuradio_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="dds_gnuradio_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="dds_gnuradio_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="dds_gnuradio_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="dds_gnuradio_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dds_gnuradio_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dds_gnuradio_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dds_gnuradio_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="dds_gnuradio_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="dds_gnuradio_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="dds_gnuradio_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dds_gnuradio_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="dds_gnuradio_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dds_gnuradio_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="dds_gnuradio_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="dds_gnuradio_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="dds_gnuradio_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="dds_gnuradio_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="dds_gnuradio_wrapper.vdi"/>
+  <File Type="PLACE-TIMING" Name="dds_gnuradio_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dds_gnuradio_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="dds_gnuradio_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="dds_gnuradio_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dds_gnuradio_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="dds_gnuradio_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="dds_gnuradio_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="dds_gnuradio_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="dds_gnuradio_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="dds_gnuradio_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="dds_gnuradio_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="dds_gnuradio_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="dds_gnuradio_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dds_gnuradio_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="dds_gnuradio_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="dds_gnuradio_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="dds_gnuradio_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="dds_gnuradio_wrapper_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dds_gnuradio_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="dds_gnuradio_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/dds_gnuradio_wrapper/dds_gnuradio_wrapper.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dds_gnuradio_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../gitlab/oimp/fpga_ip/ad9767/ad9767.xdc"/>
+        <Attr Name="ImportTime" Val="1485271787"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga_ip/ltc2145/ltc2145-redpy.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../gitlab/oimp/fpga_ip/ltc2145/ltc2145-redpy.xdc"/>
+        <Attr Name="ImportTime" Val="1485271787"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../gitlab/oimp/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc"/>
+        <Attr Name="ImportTime" Val="1485271787"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_add_const_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_ad9767_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_add_const_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_expanderReal_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_ltc2145_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_redpitaya_adc_dac_clk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_dupplReal_1_to_2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_add_const_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_expanderReal_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_data16_multi_to_ram_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_add_const_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_nco_counter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_gnuradio_wrapper_twoInMult_0_0"/>
+</GenRun>

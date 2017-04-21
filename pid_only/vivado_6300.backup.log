@@ -1,0 +1,818 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Mar 29 09:13:02 2017
+# Process ID: 6300
+# Current directory: /home/bma/git/fpga_design/redpitaya/pid_only
+# Command line: vivado pid_only.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/pid_only/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/pid_only/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:16 . Memory (MB): peak = 5960.246 ; gain = 174.402 ; free physical = 4246 ; free virtual = 14518
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+Adding cell -- user.org:user:nco_counter:1.0 - nco_counter_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_2
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_1/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_2/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /add_const_3/data_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 6042.699 ; gain = 80.555 ; free physical = 4157 ; free virtual = 14428
+startgroup
+create_bd_cell -type ip -vlnv ggm:cogen:moyenneurReal:1.0 moyenneurReal_0
+endgroup
+delete_bd_objs [get_bd_cells moyenneurReal_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets ltc2145_0_data_a] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_intf_nets add_const_3_data_out] [get_bd_nets twoInMult_1_data_clk_o] [get_bd_nets nco_counter_0_dds_clk_o] [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_intf_nets add_const_0_data_out] [get_bd_intf_nets twoInMult_0_data_out] [get_bd_intf_nets add_const_1_data_out] [get_bd_intf_nets axi_interconnect_0_M03_AXI] [get_bd_nets nco_counter_0_dds_sin_o] [get_bd_intf_nets add_const_2_data_out] [get_bd_intf_nets axi_interconnect_0_M04_AXI] [get_bd_nets twoInMult_1_data_en_o] [get_bd_nets nco_counter_0_dds_en_o] [get_bd_nets twoInMult_1_data_o] [get_bd_intf_nets axi_interconnect_0_M02_AXI] [get_bd_nets xlconstant_1_dout] [get_bd_nets xlslice_0_Dout] [get_bd_nets xlconstant_0_dout] [get_bd_nets ltc2145_0_data_a_en_o] [get_bd_nets ltc2145_0_data_a_clk_o] [get_bd_nets ltc2145_0_data_a_rst_o] [get_bd_cells add_const_1] [get_bd_cells add_const_2] [get_bd_cells add_const_3] [get_bd_cells xlconstant_0] [get_bd_cells xlconstant_1] [get_bd_cells twoInMult_0] [get_bd_cells twoInMult_1] [get_bd_cells nco_counter_0] [get_bd_cells add_const_0] [get_bd_cells xlslice_0]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv2:1.0 red_pitaya_pidv2_0
+endgroup
+set_property location {5 1470 334} [get_bd_cells red_pitaya_pidv2_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins red_pitaya_pidv2_0/s00_axi]
+</red_pitaya_pidv2_0/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+set_property location {4.5 1571 397} [get_bd_cells red_pitaya_pidv2_0]
+startgroup
+create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 add_const_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_0/s00_axi]
+</add_const_0/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C10000 [ 64K ]>
+connect_bd_intf_net [get_bd_intf_pins add_const_0/data_in] [get_bd_intf_pins ltc2145_0/data_a]
+connect_bd_intf_net [get_bd_intf_pins add_const_0/data_out] [get_bd_intf_pins red_pitaya_pidv2_0/data_in]
+copy_bd_objs /  [get_bd_cells {add_const_0}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_1/s00_axi]
+</add_const_1/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C20000 [ 64K ]>
+connect_bd_intf_net [get_bd_intf_pins add_const_1/data_in] [get_bd_intf_pins red_pitaya_pidv2_0/data_out]
+connect_bd_intf_net [get_bd_intf_pins add_const_1/data_out] [get_bd_intf_pins ad9767_0/dataA]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells add_const_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {14} CONFIG.DATA_IN_SIZE {14}] [get_bd_cells add_const_1]
+endgroup
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 7.831 MB.
+[Wed Mar 29 11:36:48 2017] Launched pid_only_wrapper_xbar_0_synth_1, pid_only_wrapper_add_const_0_3_synth_1, pid_only_wrapper_add_const_0_0_synth_1, pid_only_wrapper_red_pitaya_pidv2_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xbar_0_synth_1/runme.log
+pid_only_wrapper_add_const_0_3_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_3_synth_1/runme.log
+pid_only_wrapper_add_const_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv2_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv2_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 11:36:49 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 6230.473 ; gain = 162.766 ; free physical = 1806 ; free virtual = 12747
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- user.org:user:red_pitaya_pidv2:1.0 - red_pitaya_pidv2_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+delete_bd_objs [get_bd_cells red_pitaya_pidv3_0]
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- user.org:user:red_pitaya_pidv2:1.0 - red_pitaya_pidv2_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+set_property location {2 349 -335} [get_bd_cells red_pitaya_pidv3_0]
+delete_bd_objs [get_bd_cells red_pitaya_pidv3_0]
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+update_ip_catalog -rebuild -scan_changes
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+report_ip_status -name ip_status
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+close_bd_design [get_bd_designs pid_only_wrapper]
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'spirit:component' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file /home/bma/git/gitlab/oimp/fpga_ip/redpitaya_pidv3/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+close_project
+open_project /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd}
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- user.org:user:red_pitaya_pidv2:1.0 - red_pitaya_pidv2_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_0
+Adding cell -- ggm:cogen:add_const:1.0 - add_const_1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd>
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:red_pitaya_pidv3:1.0 red_pitaya_pidv3_0
+endgroup
+set_property location {1 119 -414} [get_bd_cells red_pitaya_pidv3_0]
+set_property location {6 1690 221} [get_bd_cells red_pitaya_pidv3_0]
+delete_bd_objs [get_bd_intf_nets add_const_0_data_out] [get_bd_intf_nets red_pitaya_pidv2_0_data_out] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_cells red_pitaya_pidv2_0]
+connect_bd_intf_net [get_bd_intf_pins red_pitaya_pidv3_0/data_out] [get_bd_intf_pins add_const_1/data_in]
+connect_bd_intf_net [get_bd_intf_pins red_pitaya_pidv3_0/data_in] [get_bd_intf_pins add_const_0/data_out]
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {add_const_0}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_2/s00_axi]
+</add_const_2/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins add_const_2/data_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {14} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+connect_bd_net [get_bd_pins add_const_2/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_en_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+connect_bd_net [get_bd_pins add_const_2/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_clk_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+connect_bd_net [get_bd_pins add_const_2/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_rst_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_2/data_o] [get_bd_pins red_pitaya_pidv3_0/setpoint_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/setpoint_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {add_const_2}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_3/s00_axi]
+</add_const_3/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C30000 [ 64K ]>
+connect_bd_net [get_bd_pins add_const_3/data_o] [get_bd_pins red_pitaya_pidv3_0/kp_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/kp_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_3/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+set_property location {3.5 1130 437} [get_bd_cells xlconstant_0]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_3/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_3/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_3/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs /  [get_bd_cells {add_const_3}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_4/s00_axi]
+</add_const_4/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C40000 [ 64K ]>
+connect_bd_net [get_bd_pins add_const_4/data_o] [get_bd_pins red_pitaya_pidv3_0/ki_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_4/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/ki_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_4/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_4/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_4/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_4/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_4/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_4/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_4/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_4/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs /  [get_bd_cells {add_const_4}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_5/s00_axi]
+</add_const_5/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C50000 [ 64K ]>
+connect_bd_net [get_bd_pins add_const_5/data_o] [get_bd_pins red_pitaya_pidv3_0/kd_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_5/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/kd_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_5/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_5/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_5/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_5/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_5/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_5/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_5/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_5/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+copy_bd_objs /  [get_bd_cells {add_const_5}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_6/s00_axi]
+</add_const_6/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C60000 [ 64K ]>
+startgroup
+set_property -dict [list CONFIG.DATA_OUT_SIZE {1} CONFIG.DATA_IN_SIZE {1}] [get_bd_cells add_const_6]
+endgroup
+startgroup
+endgroup
+connect_bd_net [get_bd_pins add_const_6/data_o] [get_bd_pins red_pitaya_pidv3_0/sign_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_6/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/sign_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+copy_bd_objs /  [get_bd_cells {add_const_6}]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins add_const_7/s00_axi]
+</add_const_7/s00_axi/reg0> is being mapped into </processing_system7_0/Data> at <0x43C70000 [ 64K ]>
+connect_bd_net [get_bd_pins add_const_7/data_o] [get_bd_pins red_pitaya_pidv3_0/int_rst_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_7/data_o is being overridden by the user. This pin will not be connected as a part of interface connection data_out
+WARNING: [BD 41-1306] The connection to interface pin /red_pitaya_pidv3_0/int_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection coeffs
+regenerate_bd_layout
+connect_bd_net [get_bd_pins add_const_6/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_6/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_6/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_6/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_6/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_6/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_6/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_6/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_7/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_7/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_7/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_7/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_7/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_7/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_7/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_7/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run pid_only_wrapper_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [BD 41-1271] The connection to the pin: /ltc2145_0/data_a_clk_o has been overridden by the user. This pin will not be connected as a part of the interface connection: ltc2145_0_data_a 
+WARNING: [BD 41-1271] The connection to the pin: /ltc2145_0/data_a_rst_o has been overridden by the user. This pin will not be connected as a part of the interface connection: ltc2145_0_data_a 
+WARNING: [BD 41-1271] The connection to the pin: /ltc2145_0/data_a_en_o has been overridden by the user. This pin will not be connected as a part of the interface connection: ltc2145_0_data_a 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/add_const_0/data_en_i
+/add_const_0/data_clk_i
+/add_const_0/data_rst_i
+
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/add_const_6/data_i'(1) to net 'xlconstant_0_dout'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/add_const_7/data_i'(1) to net 'xlconstant_0_dout'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 8.461 MB.
+[Wed Mar 29 18:17:17 2017] Launched pid_only_wrapper_xbar_0_synth_1, pid_only_wrapper_add_const_5_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_xlconstant_0_0_synth_1, pid_only_wrapper_add_const_0_1_synth_1, pid_only_wrapper_add_const_6_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xbar_0_synth_1/runme.log
+pid_only_wrapper_add_const_5_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_5_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_xlconstant_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xlconstant_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_0_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_1_synth_1/runme.log
+pid_only_wrapper_add_const_6_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_6_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:17:18 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 6784.176 ; gain = 64.859 ; free physical = 1642 ; free virtual = 12547
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_1_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run synth_1
+reset_run pid_only_wrapper_xbar_0_synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+copy_bd_objs /  [get_bd_cells {xlconstant_0}]
+set_property location {3 1030 1321} [get_bd_cells xlconstant_1]
+delete_bd_objs [get_bd_nets xlconstant_0_dout]
+set_property -dict [list CONFIG.CONST_WIDTH {1}] [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins add_const_7/data_i] [get_bd_pins xlconstant_1/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_7/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_6/data_i] [get_bd_pins xlconstant_1/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_6/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins add_const_5/data_i]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_5/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_4/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_4/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_3/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_3/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_2/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_2/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [BD 41-1271] The connection to the pin: /ltc2145_0/data_a_clk_o has been overridden by the user. This pin will not be connected as a part of the interface connection: ltc2145_0_data_a 
+WARNING: [BD 41-1271] The connection to the pin: /ltc2145_0/data_a_rst_o has been overridden by the user. This pin will not be connected as a part of the interface connection: ltc2145_0_data_a 
+WARNING: [BD 41-1271] The connection to the pin: /ltc2145_0/data_a_en_o has been overridden by the user. This pin will not be connected as a part of the interface connection: ltc2145_0_data_a 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/add_const_0/data_en_i
+/add_const_0/data_clk_i
+/add_const_0/data_rst_i
+
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 8.461 MB.
+[Wed Mar 29 18:19:18 2017] Launched pid_only_wrapper_xbar_0_synth_1, pid_only_wrapper_add_const_5_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_xlconstant_0_0_synth_1, pid_only_wrapper_add_const_0_1_synth_1, pid_only_wrapper_add_const_6_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, pid_only_wrapper_xlconstant_0_1_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xbar_0_synth_1/runme.log
+pid_only_wrapper_add_const_5_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_5_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_xlconstant_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xlconstant_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_0_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_1_synth_1/runme.log
+pid_only_wrapper_add_const_6_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_6_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+pid_only_wrapper_xlconstant_0_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xlconstant_0_1_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:19:18 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 6826.047 ; gain = 37.871 ; free physical = 1655 ; free virtual = 12500
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_1_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_1_synth_1
+reset_run synth_1
+reset_run pid_only_wrapper_xbar_0_synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+delete_bd_objs [get_bd_intf_nets ltc2145_0_data_a]
+connect_bd_net [get_bd_pins add_const_0/data_i] [get_bd_pins ltc2145_0/data_a_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_0/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+WARNING: [BD 41-1306] The connection to interface pin /ltc2145_0/data_a_o is being overridden by the user. This pin will not be connected as a part of interface connection data_a
+connect_bd_net [get_bd_pins add_const_0/data_en_i] [get_bd_pins ltc2145_0/data_a_en_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_0/data_en_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_0/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_0/data_clk_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+connect_bd_net [get_bd_pins add_const_0/data_rst_i] [get_bd_pins ltc2145_0/data_a_rst_o]
+WARNING: [BD 41-1306] The connection to interface pin /add_const_0/data_rst_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 8.461 MB.
+[Wed Mar 29 18:20:29 2017] Launched pid_only_wrapper_xbar_0_synth_1, pid_only_wrapper_add_const_5_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_xlconstant_0_0_synth_1, pid_only_wrapper_add_const_0_1_synth_1, pid_only_wrapper_add_const_6_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, pid_only_wrapper_xlconstant_0_1_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xbar_0_synth_1/runme.log
+pid_only_wrapper_add_const_5_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_5_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_xlconstant_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xlconstant_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_0_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_1_synth_1/runme.log
+pid_only_wrapper_add_const_6_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_6_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+pid_only_wrapper_xlconstant_0_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xlconstant_0_1_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:20:30 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 6850.867 ; gain = 24.820 ; free physical = 1632 ; free virtual = 12479
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PSR {14} CONFIG.ISR {14} CONFIG.DSR {14} CONFIG.P_SIZE {14} CONFIG.I_SIZE {14} CONFIG.D_SIZE {14}] [get_bd_cells red_pitaya_pidv3_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+reset_run pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 9.295 MB.
+[Wed Mar 29 18:28:48 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:28:48 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6915.344 ; gain = 0.004 ; free physical = 3486 ; free virtual = 13366
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+Upgrading '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd'
+INFO: [IP_Flow 19-1972] Upgraded pid_only_wrapper_red_pitaya_pidv3_0_0 from red_pitaya_pidv3_v1_0 1.0 to red_pitaya_pidv3_v1_0 1.0
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/bma/git/fpga_design/redpitaya/pid_only/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 9.295 MB.
+[Wed Mar 29 18:32:24 2017] Launched pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:32:24 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 6920.340 ; gain = 4.996 ; free physical = 3415 ; free virtual = 13340
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:red_pitaya_pidv3:1.0 [get_ips  pid_only_wrapper_red_pitaya_pidv3_0_0] -log ip_upgrade.log
+Upgrading '/home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd'
+INFO: [IP_Flow 19-1972] Upgraded pid_only_wrapper_red_pitaya_pidv3_0_0 from red_pitaya_pidv3_v1_0 1.0 to red_pitaya_pidv3_v1_0 1.0
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/bma/git/fpga_design/redpitaya/pid_only/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips pid_only_wrapper_red_pitaya_pidv3_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+PCW_ACT_APU_PERIPHERAL_FREQMHZ {666.666687 {50.000000 800.000000} ENABLE SPIN 0 {}} PCW_ACT_CAN_PERIPHERAL_FREQMHZ {10.000000 {0.100000 100.000000} ENABLE SPIN 0 {}} PCW_ACT_DCI_PERIPHERAL_FREQMHZ {10.158730 {0.100000 177.000000} ENABLE SPIN 0 {}} PCW_ACT_ENET0_PERIPHERAL_FREQMHZ {10.000000 {{1000 Mbps} {100 Mbps} {10 Mbps}} ENABLE COMBO 0 {}} PCW_ACT_ENET1_PERIPHERAL_FREQMHZ {10.000000 {{1000 Mbps} {100 Mbps} {10 Mbps}} ENABLE COMBO 0 {}} PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ {50.000000 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ {10.000000 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ {10.000000 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ {10.000000 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_ACT_I2C_PERIPHERAL_FREQMHZ {{{}} {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_PCAP_PERIPHERAL_FREQMHZ {200.000000 {10.000000 300.000000} ENABLE SPIN 0 {}} PCW_ACT_QSPI_PERIPHERAL_FREQMHZ {10.000000 {10.000000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_SDIO_PERIPHERAL_FREQMHZ {10.000000 {10.000000 125.000000} ENABLE SPIN 0 {}} PCW_ACT_SMC_PERIPHERAL_FREQMHZ {10.000000 {10.000000 100.000000} ENABLE SPIN 0 {}} PCW_ACT_SPI_PERIPHERAL_FREQMHZ {10.000000 {0.000000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TPIU_PERIPHERAL_FREQMHZ {200.000000 {10.000000 300.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_ACT_TTC_PERIPHERAL_FREQMHZ {50 {0.100000 100.000000} ENABLE SPIN 0 {}} PCW_ACT_UART_PERIPHERAL_FREQMHZ {10.000000 {10.000000 100.000000} ENABLE SPIN 0 {}} PCW_ACT_USB0_PERIPHERAL_FREQMHZ {60 {5.000000 60.000000} ENABLE SPIN 0 {}} PCW_ACT_USB1_PERIPHERAL_FREQMHZ {60 {5.000000 60.000000} ENABLE SPIN 0 {}} PCW_ACT_WDT_PERIPHERAL_FREQMHZ {111.111115 {0.100000 200.000000} ENABLE SPIN 0 {}} PCW_APU_CLK_RATIO_ENABLE {6:2:1 {6:2:1 4:2:1} ENABLE COMBO 0 {}} PCW_APU_PERIPHERAL_FREQMHZ {666.666666 {50.000000 667.000000} ENABLE SPIN 0 {}} PCW_ARMPLL_CTRL_FBDIV {40 {1.000000 63.000000} DISABLE SPIN 0 {}} PCW_CAN0_CAN0_IO {{{}} {EMIO {MIO 10 .. 11} {MIO 14 .. 15} {MIO 18 .. 19} {MIO 22 .. 23} {MIO 26 .. 27} {MIO 30 .. 31} {MIO 34 .. 35} {MIO 38 .. 39} {MIO 42 .. 43} {MIO 46 .. 47} {MIO 50 .. 51}} DISABLE COMBO 0 {}} PCW_CAN0_GRP_CLK_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_CAN0_GRP_CLK_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_CAN0_PERIPHERAL_CLKSRC {External External ENABLE COMBO 0 {}} PCW_CAN0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_CAN0_PERIPHERAL_FREQMHZ {{{}} {0.100000 100.000000} DISABLE SPIN 0 {}} PCW_CAN1_CAN1_IO {{{}} {EMIO {MIO 8 .. 9} {MIO 12 .. 13} {MIO 16 .. 17} {MIO 20 .. 21} {MIO 24 .. 25} {MIO 28 .. 29} {MIO 32 .. 33} {MIO 36 .. 37} {MIO 40 .. 41} {MIO 44 .. 45} {MIO 48 .. 49} {MIO 52 .. 53}} DISABLE COMBO 0 {}} PCW_CAN1_GRP_CLK_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_CAN1_GRP_CLK_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_CAN1_PERIPHERAL_CLKSRC {External External ENABLE COMBO 0 {}} PCW_CAN1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_CAN1_PERIPHERAL_FREQMHZ {{{}} {0.100000 100.000000} DISABLE SPIN 0 {}} PCW_CAN_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_CAN_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_CAN_PERIPHERAL_DIVISOR1 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_CAN_PERIPHERAL_FREQMHZ {100 {0.100000 100.000000} DISABLE SPIN 0 {}} PCW_CAN_PERIPHERAL_VALID {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_CLK0_FREQ {50000000 {} ENABLE EDIT 0 {}} PCW_CLK1_FREQ {10000000 {} ENABLE EDIT 0 {}} PCW_CLK2_FREQ {10000000 {} ENABLE EDIT 0 {}} PCW_CLK3_FREQ {10000000 {} ENABLE EDIT 0 {}} PCW_CPU_CPU_6X4X_MAX_RANGE {667 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_CPU_CPU_PLL_FREQMHZ {1333.333 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_CPU_PERIPHERAL_CLKSRC {{{ARM PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_CPU_PERIPHERAL_DIVISOR0 {2 {1.000000 63.000000} DISABLE SPIN 0 {}} PCW_CRYSTAL_PERIPHERAL_FREQMHZ {33.333333 {30.000000 60.000000} ENABLE SPIN 0 {}} PCW_DCI_PERIPHERAL_CLKSRC {{{DDR PLL}} {{DDR PLL}} ENABLE COMBO 0 {}} PCW_DCI_PERIPHERAL_DIVISOR0 {15 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_DCI_PERIPHERAL_DIVISOR1 {7 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_DCI_PERIPHERAL_FREQMHZ {10.159 {0.100000 177.000000} ENABLE SPIN 0 {}} PCW_DDRPLL_CTRL_FBDIV {32 {1.000000 63.000000} DISABLE SPIN 0 {}} PCW_DDR_DDR_PLL_FREQMHZ {1066.667 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_DDR_HPRLPR_QUEUE_PARTITION {HPR(0)/LPR(32) {HPR(0)/LPR(32) HPR(8)/LPR(24) HPR(16)/LPR(16) HPR(24)/LPR(8) HPR(32)/LPR(0)} DISABLE COMBO 0 {}} PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL {15 {0.000000 2047.000000} DISABLE SPIN 0 {}} PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL {2 {0.000000 2047.000000} DISABLE SPIN 0 {}} PCW_DDR_PERIPHERAL_CLKSRC {{{DDR PLL}} {{DDR PLL}} ENABLE COMBO 0 {}} PCW_DDR_PERIPHERAL_DIVISOR0 {2 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_DDR_PORT0_HPR_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_DDR_PORT1_HPR_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_DDR_PORT2_HPR_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_DDR_PORT3_HPR_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_DDR_PRIORITY_READPORT_0 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_READPORT_1 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_READPORT_2 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_READPORT_3 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_WRITEPORT_0 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_WRITEPORT_1 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_WRITEPORT_2 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_PRIORITY_WRITEPORT_3 {{{}} {Low Medium High} DISABLE COMBO 0 {}} PCW_DDR_RAM_HIGHADDR {0x1FFFFFFF {} ENABLE EDIT 0 {}} PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL {2 {0.000000 2047.000000} DISABLE SPIN 0 {}} PCW_ENET0_ENET0_IO {{{}} {EMIO {MIO 16 .. 27}} DISABLE COMBO 0 {}} PCW_ENET0_GRP_MDIO_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_ENET0_GRP_MDIO_IO {{{}} {EMIO {MIO 52 .. 53}} DISABLE COMBO 0 {}} PCW_ENET0_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {IO PLL} {DDR PLL} External} ENABLE COMBO 0 {}} PCW_ENET0_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_ENET0_PERIPHERAL_DIVISOR1 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_ENET0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_ENET0_PERIPHERAL_FREQMHZ {{{1000 Mbps}} {{1000 Mbps} {100 Mbps} {10 Mbps}} DISABLE COMBO 0 {}} PCW_ENET0_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_ENET0_RESET_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_ENET1_ENET1_IO {{{}} {EMIO {MIO 28 .. 39}} DISABLE COMBO 0 {}} PCW_ENET1_GRP_MDIO_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_ENET1_GRP_MDIO_IO {{{}} {EMIO {MIO 52 .. 53}} DISABLE COMBO 0 {}} PCW_ENET1_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} External {IO PLL}} ENABLE COMBO 0 {}} PCW_ENET1_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_ENET1_PERIPHERAL_DIVISOR1 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_ENET1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_ENET1_PERIPHERAL_FREQMHZ {{{1000 Mbps}} {{1000 Mbps} {100 Mbps} {10 Mbps}} DISABLE COMBO 0 {}} PCW_ENET1_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_ENET1_RESET_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_ENET_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_ENET_RESET_POLARITY {{{Active Low}} {{Active High} {Active Low}} ENABLE COMBO 0 {}} PCW_ENET_RESET_SELECT {{{}} {{Share reset pin}} DISABLE COMBO 0 {}} PCW_EN_4K_TIMER {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_CAN0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_CAN1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_CLK0_PORT {1 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_CLK1_PORT {{{}} {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_CLK2_PORT {{{}} {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_CLK3_PORT {{{}} {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_DDR {1 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_CAN0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_CAN1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_CD_SDIO0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_CD_SDIO1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_ENET0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_ENET1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_GPIO {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_I2C0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_I2C1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_MODEM_UART0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_MODEM_UART1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_PJTAG {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_SDIO0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_SDIO1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_SPI0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_SPI1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_SRAM_INT {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_TRACE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_TTC0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_TTC1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_UART0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_UART1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_WDT {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_WP_SDIO0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_EMIO_WP_SDIO1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_ENET0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_ENET1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_GPIO {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_I2C0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_I2C1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_MODEM_UART0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_MODEM_UART1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_PJTAG {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_QSPI {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_SDIO0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_SDIO1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_SMC {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_SPI0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_SPI1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_TRACE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_TTC0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_TTC1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_UART0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_UART1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_USB0 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_USB1 {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_EN_WDT {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_FCLK0_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_FCLK0_PERIPHERAL_DIVISOR0 {8 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK0_PERIPHERAL_DIVISOR1 {4 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK1_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_FCLK1_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK1_PERIPHERAL_DIVISOR1 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK2_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_FCLK2_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK2_PERIPHERAL_DIVISOR1 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK3_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_FCLK3_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK3_PERIPHERAL_DIVISOR1 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_FCLK_CLK0_BUF {TRUE {FALSE TRUE} ENABLE COMBO 0 {}} PCW_FCLK_CLK1_BUF {FALSE {FALSE TRUE} ENABLE COMBO 0 {}} PCW_FCLK_CLK2_BUF {FALSE {FALSE TRUE} ENABLE COMBO 0 {}} PCW_FCLK_CLK3_BUF {FALSE {FALSE TRUE} ENABLE COMBO 0 {}} PCW_FPGA0_PERIPHERAL_FREQMHZ {50 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_FPGA1_PERIPHERAL_FREQMHZ {50 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_FPGA2_PERIPHERAL_FREQMHZ {50 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_FPGA3_PERIPHERAL_FREQMHZ {50 {0.100000 250.000000} ENABLE SPIN 0 {}} PCW_FTM_CTI_IN0 {{{}} {DISABLED {CPU0 DBG_REQ} {CPU1 DBG_REQ} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_IN1 {{{}} {DISABLED {CPU0 DBG_REQ} {CPU1 DBG_REQ} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_IN2 {{{}} {DISABLED {CPU0 DBG_REQ} {CPU1 DBG_REQ} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_IN3 {{{}} {DISABLED {CPU0 DBG_REQ} {CPU1 DBG_REQ} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_OUT0 {{{}} {DISABLED {CPU0 DBG_ACK} {CPU1 DBG_ACK} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_OUT1 {{{}} {DISABLED {CPU0 DBG_ACK} {CPU1 DBG_ACK} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_OUT2 {{{}} {DISABLED {CPU0 DBG_ACK} {CPU1 DBG_ACK} BOTH} DISABLE COMBO 0 {}} PCW_FTM_CTI_OUT3 {{{}} {DISABLED {CPU0 DBG_ACK} {CPU1 DBG_ACK} BOTH} DISABLE COMBO 0 {}} PCW_GPIO_EMIO_GPIO_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_GPIO_EMIO_GPIO_IO {{{}} {1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64} DISABLE COMBO 0 {}} PCW_GPIO_EMIO_GPIO_WIDTH {64 {} ENABLE EDIT 0 {}} PCW_GPIO_MIO_GPIO_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_GPIO_MIO_GPIO_IO {{{}} MIO DISABLE COMBO 0 {}} PCW_GPIO_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_I2C0_GRP_INT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_I2C0_GRP_INT_IO {{{}} {EMIO {MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_I2C0_I2C0_IO {{{}} {EMIO {MIO 10 .. 11} {MIO 14 .. 15} {MIO 18 .. 19} {MIO 22 .. 23} {MIO 26 .. 27} {MIO 30 .. 31} {MIO 34 .. 35} {MIO 38 .. 39} {MIO 42 .. 43} {MIO 46 .. 47} {MIO 50 .. 51}} DISABLE COMBO 0 {}} PCW_I2C0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_I2C0_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_I2C0_RESET_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_I2C1_GRP_INT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_I2C1_GRP_INT_IO {{{}} {EMIO {MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_I2C1_I2C1_IO {{{}} {EMIO {MIO 12 .. 13} {MIO 16 .. 17} {MIO 20 .. 21} {MIO 24 .. 25} {MIO 28 .. 29} {MIO 32 .. 33} {MIO 36 .. 37} {MIO 40 .. 41} {MIO 44 .. 45} {MIO 48 .. 49} {MIO 52 .. 53}} DISABLE COMBO 0 {}} PCW_I2C1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_I2C1_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_I2C1_RESET_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_I2C_PERIPHERAL_FREQMHZ {25 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_I2C_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_I2C_RESET_POLARITY {{{Active Low}} {{Active High} {Active Low}} ENABLE COMBO 0 {}} PCW_I2C_RESET_SELECT {{{}} {{Share reset pin}} DISABLE COMBO 0 {}} PCW_IOPLL_CTRL_FBDIV {48 {1.000000 63.000000} DISABLE SPIN 0 {}} PCW_IO_IO_PLL_FREQMHZ {1600.000 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_IRQ_F2P_MODE {DIRECT {DIRECT REVERSE} ENABLE COMBO 0 {}} PCW_MIO_0_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_0_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_0_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_0_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_10_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_10_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_10_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_10_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_11_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_11_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_11_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_11_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_12_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_12_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_12_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_12_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_13_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_13_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_13_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_13_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_14_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_14_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_14_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_14_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_15_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_15_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_15_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_15_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_16_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_16_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_16_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_16_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_17_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_17_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_17_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_17_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_18_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_18_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_18_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_18_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_19_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_19_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_19_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_19_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_1_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_1_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_1_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_1_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_20_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_20_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_20_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_20_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_21_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_21_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_21_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_21_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_22_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_22_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_22_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_22_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_23_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_23_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_23_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_23_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_24_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_24_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_24_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_24_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_25_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_25_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_25_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_25_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_26_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_26_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_26_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_26_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_27_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_27_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_27_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_27_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_28_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_28_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_28_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_28_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_29_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_29_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_29_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_29_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_2_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_2_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_2_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_2_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_30_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_30_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_30_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_30_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_31_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_31_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_31_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_31_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_32_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_32_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_32_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_32_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_33_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_33_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_33_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_33_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_34_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_34_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_34_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_34_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_35_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_35_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_35_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_35_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_36_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_36_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_36_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_36_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_37_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_37_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_37_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_37_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_38_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_38_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_38_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_38_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_39_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_39_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_39_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_39_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_3_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_3_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_3_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_3_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_40_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_40_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_40_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_40_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_41_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_41_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_41_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_41_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_42_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_42_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_42_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_42_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_43_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_43_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_43_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_43_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_44_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_44_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_44_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_44_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_45_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_45_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_45_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_45_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_46_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_46_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_46_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_46_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_47_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_47_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_47_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_47_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_48_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_48_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_48_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_48_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_49_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_49_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_49_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_49_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_4_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_4_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_4_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_4_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_50_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_50_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_50_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_50_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_51_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_51_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_51_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_51_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_52_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_52_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_52_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_52_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_53_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_53_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_53_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_53_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_5_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_5_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_5_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_5_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_6_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_6_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_6_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_6_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_7_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_7_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_7_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_7_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_8_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_8_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_8_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_8_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_9_DIRECTION {{{}} {in out inout} DISABLE COMBO 0 {}} PCW_MIO_9_IOTYPE {{{}} {{LVCMOS 3.3V}} DISABLE COMBO 0 {}} PCW_MIO_9_PULLUP {{{}} {disabled enabled} DISABLE COMBO 0 {}} PCW_MIO_9_SLEW {{{}} {fast slow} DISABLE COMBO 0 {}} PCW_MIO_TREE_PERIPHERALS {unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned {} ENABLE EDIT 0 {}} PCW_MIO_TREE_SIGNALS {unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_AR {1 {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_CLR {1 {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_RC {11 {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_REA {1 {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_RR {1 {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_WC {11 {} ENABLE EDIT 0 {}} PCW_NAND_CYCLES_T_WP {1 {} ENABLE EDIT 0 {}} PCW_NAND_GRP_D8_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NAND_GRP_D8_IO {{{}} {{MIO 16 .. 23}} DISABLE COMBO 0 {}} PCW_NAND_NAND_IO {{{}} {{MIO 0 2.. 14}} DISABLE COMBO 0 {}} PCW_NAND_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_NOR_CS0_T_CEOE {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS0_T_PC {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS0_T_RC {11 {} ENABLE EDIT 0 {}} PCW_NOR_CS0_T_TR {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS0_T_WC {11 {} ENABLE EDIT 0 {}} PCW_NOR_CS0_T_WP {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS0_WE_TIME {0 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_T_CEOE {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_T_PC {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_T_RC {11 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_T_TR {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_T_WC {11 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_T_WP {1 {} ENABLE EDIT 0 {}} PCW_NOR_CS1_WE_TIME {0 {} ENABLE EDIT 0 {}} PCW_NOR_GRP_A25_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NOR_GRP_A25_IO {{{}} {{MIO 1}} DISABLE COMBO 0 {}} PCW_NOR_GRP_CS0_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NOR_GRP_CS0_IO {{{}} {{MIO 0}} DISABLE COMBO 0 {}} PCW_NOR_GRP_CS1_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NOR_GRP_CS1_IO {{{}} {{MIO 1}} DISABLE COMBO 0 {}} PCW_NOR_GRP_SRAM_CS0_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NOR_GRP_SRAM_CS0_IO {{{}} {{MIO 0}} DISABLE COMBO 0 {}} PCW_NOR_GRP_SRAM_CS1_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NOR_GRP_SRAM_CS1_IO {{{}} {{MIO 1}} DISABLE COMBO 0 {}} PCW_NOR_GRP_SRAM_INT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_NOR_GRP_SRAM_INT_IO {{{}} EMIO DISABLE COMBO 0 {}} PCW_NOR_NOR_IO {{{}} {{MIO 3 .. 39}} DISABLE COMBO 0 {}} PCW_NOR_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_NOR_SRAM_CS0_T_CEOE {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS0_T_PC {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS0_T_RC {11 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS0_T_TR {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS0_T_WC {11 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS0_T_WP {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS0_WE_TIME {0 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_T_CEOE {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_T_PC {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_T_RC {11 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_T_TR {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_T_WC {11 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_T_WP {1 {} ENABLE EDIT 0 {}} PCW_NOR_SRAM_CS1_WE_TIME {0 {} ENABLE EDIT 0 {}} PCW_OVERRIDE_BASIC_CLOCK {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_PACKAGE_DDR_BOARD_DELAY0 {0.080 {0.000000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_BOARD_DELAY1 {0.063 {0.000000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_BOARD_DELAY2 {0.057 {0.000000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_BOARD_DELAY3 {0.068 {0.000000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_0 {-0.047 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_1 {-0.025 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_2 {-0.006 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_3 {-0.017 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_PCAP_PERIPHERAL_CLKSRC {{{IO PLL}} {{DDR PLL} {ARM PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_PCAP_PERIPHERAL_DIVISOR0 {8 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_PCAP_PERIPHERAL_FREQMHZ {200 {10.000000 300.000000} ENABLE SPIN 0 {}} PCW_PJTAG_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_PJTAG_PJTAG_IO {{{}} {EMIO {MIO 10 .. 13} {MIO 22 .. 25} {MIO 34 .. 37} {MIO 46 .. 49}} DISABLE COMBO 0 {}} PCW_PLL_BYPASSMODE_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_PRESET_BANK0_VOLTAGE {{{LVCMOS 3.3V}} {{LVCMOS 3.3V} {LVCMOS 2.5V} {HSTL 1.8V} {LVCMOS 1.8V}} ENABLE COMBO 0 {}} PCW_PRESET_BANK1_VOLTAGE {{{LVCMOS 3.3V}} {{LVCMOS 1.8V} {LVCMOS 2.5V} {LVCMOS 3.3V} {HSTL 1.8V}} ENABLE COMBO 0 {}} PCW_QSPI_GRP_FBCLK_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_QSPI_GRP_FBCLK_IO {{{}} {{MIO 8}} DISABLE COMBO 0 {}} PCW_QSPI_GRP_IO1_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_QSPI_GRP_IO1_IO {{{}} {{MIO 0 9 .. 13}} DISABLE COMBO 0 {}} PCW_QSPI_GRP_SINGLE_SS_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_QSPI_GRP_SINGLE_SS_IO {{{}} {{MIO 1 .. 6}} DISABLE COMBO 0 {}} PCW_QSPI_GRP_SS1_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_QSPI_GRP_SS1_IO {{{}} {{MIO 0}} DISABLE COMBO 0 {}} PCW_QSPI_INTERNAL_HIGHADDRESS {0xFCFFFFFF {} ENABLE EDIT 0 {}} PCW_QSPI_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_QSPI_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_QSPI_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_QSPI_PERIPHERAL_FREQMHZ {200 {10.000000 200.000000} DISABLE SPIN 0 {}} PCW_QSPI_QSPI_IO {{{}} {{MIO 1 .. 6}} DISABLE COMBO 0 {}} PCW_SD0_GRP_CD_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SD0_GRP_CD_IO {{{}} {EMIO {MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_SD0_GRP_POW_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SD0_GRP_POW_IO {{{}} {{MIO 0} {MIO 2} {MIO 4} {MIO 6} {MIO 8} {MIO 10} {MIO 12} {MIO 14} {MIO 16} {MIO 18} {MIO 20} {MIO 22} {MIO 24} {MIO 26} {MIO 28} {MIO 30} {MIO 32} {MIO 34} {MIO 36} {MIO 38} {MIO 40} {MIO 42} {MIO 44} {MIO 46} {MIO 48} {MIO 50} {MIO 52}} DISABLE COMBO 0 {}} PCW_SD0_GRP_WP_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SD0_GRP_WP_IO {{{}} {EMIO {MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_SD0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_SD0_SD0_IO {{{}} {EMIO {MIO 16 .. 21} {MIO 28 .. 33} {MIO 40 .. 45}} DISABLE COMBO 0 {}} PCW_SD1_GRP_CD_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SD1_GRP_CD_IO {{{}} {EMIO {MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_SD1_GRP_POW_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SD1_GRP_POW_IO {{{}} {{MIO 1} {MIO 3} {MIO 5} {MIO 7} {MIO 9} {MIO 11} {MIO 13} {MIO 15} {MIO 17} {MIO 19} {MIO 21} {MIO 23} {MIO 25} {MIO 27} {MIO 29} {MIO 31} {MIO 33} {MIO 35} {MIO 37} {MIO 39} {MIO 41} {MIO 43} {MIO 45} {MIO 47} {MIO 49} {MIO 51} {MIO 53}} DISABLE COMBO 0 {}} PCW_SD1_GRP_WP_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SD1_GRP_WP_IO {{{}} {EMIO {MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_SD1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_SD1_SD1_IO {{{}} {EMIO {MIO 10 .. 15} {MIO 22 .. 27} {MIO 34 .. 39} {MIO 46 .. 51}} DISABLE COMBO 0 {}} PCW_SDIO_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_SDIO_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_SDIO_PERIPHERAL_FREQMHZ {100 {10.000000 125.000000} DISABLE SPIN 0 {}} PCW_SDIO_PERIPHERAL_VALID {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_SMC_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_SMC_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_SMC_PERIPHERAL_FREQMHZ {100 {10.000000 100.000000} DISABLE SPIN 0 {}} PCW_SMC_PERIPHERAL_VALID {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_SPI0_GRP_SS0_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SPI0_GRP_SS0_IO {{{}} {EMIO {MIO 18} {MIO 30} {MIO 42}} DISABLE COMBO 0 {}} PCW_SPI0_GRP_SS1_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SPI0_GRP_SS1_IO {{{}} {EMIO {MIO 19} {MIO 31} {MIO 43}} DISABLE COMBO 0 {}} PCW_SPI0_GRP_SS2_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SPI0_GRP_SS2_IO {{{}} {EMIO {MIO 20} {MIO 32} {MIO 44}} DISABLE COMBO 0 {}} PCW_SPI0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_SPI0_SPI0_IO {{{}} {EMIO {MIO 16 .. 21} {MIO 28 .. 33} {MIO 40 .. 45}} DISABLE COMBO 0 {}} PCW_SPI1_GRP_SS0_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SPI1_GRP_SS0_IO {{{}} {EMIO {MIO 13} {MIO 25} {MIO 37} {MIO 49}} DISABLE COMBO 0 {}} PCW_SPI1_GRP_SS1_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SPI1_GRP_SS1_IO {{{}} {EMIO {MIO 14} {MIO 26} {MIO 38} {MIO 50}} DISABLE COMBO 0 {}} PCW_SPI1_GRP_SS2_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_SPI1_GRP_SS2_IO {{{}} {EMIO {MIO 15} {MIO 27} {MIO 39} {MIO 51}} DISABLE COMBO 0 {}} PCW_SPI1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_SPI1_SPI1_IO {{{}} {EMIO {MIO 10 .. 15} {MIO 22 .. 27} {MIO 34 .. 39} {MIO 46 .. 51}} DISABLE COMBO 0 {}} PCW_SPI_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_SPI_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_SPI_PERIPHERAL_FREQMHZ {166.666666 {0.000000 200.000000} DISABLE SPIN 0 {}} PCW_SPI_PERIPHERAL_VALID {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_S_AXI_HP0_DATA_WIDTH {64 {32 64} ENABLE COMBO 0 {}} PCW_S_AXI_HP1_DATA_WIDTH {64 {32 64} ENABLE COMBO 0 {}} PCW_S_AXI_HP2_DATA_WIDTH {64 {32 64} ENABLE COMBO 0 {}} PCW_S_AXI_HP3_DATA_WIDTH {64 {32 64} ENABLE COMBO 0 {}} PCW_TPIU_PERIPHERAL_CLKSRC {External {{ARM PLL} {DDR PLL} {IO PLL} External} ENABLE COMBO 0 {}} PCW_TPIU_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_TPIU_PERIPHERAL_FREQMHZ {200 {10.000000 300.000000} DISABLE SPIN 0 {}} PCW_TRACE_GRP_16BIT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_TRACE_GRP_16BIT_IO {{{}} {EMIO {MIO 2 .. 9}} DISABLE COMBO 0 {}} PCW_TRACE_GRP_2BIT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_TRACE_GRP_2BIT_IO {{{}} {EMIO {MIO 14 .. 15} {MIO 26 .. 27}} DISABLE COMBO 0 {}} PCW_TRACE_GRP_32BIT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_TRACE_GRP_32BIT_IO {{{}} EMIO DISABLE COMBO 0 {}} PCW_TRACE_GRP_4BIT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_TRACE_GRP_4BIT_IO {{{}} {EMIO {MIO 10 .. 11} {MIO 22 .. 23}} DISABLE COMBO 0 {}} PCW_TRACE_GRP_8BIT_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_TRACE_GRP_8BIT_IO {{{}} {EMIO {MIO 16 .. 19}} DISABLE COMBO 0 {}} PCW_TRACE_INTERNAL_WIDTH {2 {2 4 8 16 32} ENABLE COMBO 0 {}} PCW_TRACE_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_TRACE_TRACE_IO {{{}} {EMIO {MIO 12 .. 13} {MIO 24 .. 25}} DISABLE COMBO 0 {}} PCW_TTC0_CLK0_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_TTC0_CLK0_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_TTC0_CLK0_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_TTC0_CLK1_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_TTC0_CLK1_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_TTC0_CLK1_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_TTC0_CLK2_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_TTC0_CLK2_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_TTC0_CLK2_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_TTC0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_TTC0_TTC0_IO {{{}} {EMIO {MIO 18 .. 19} {MIO 30 .. 31} {MIO 42 .. 43}} DISABLE COMBO 0 {}} PCW_TTC1_CLK0_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_TTC1_CLK0_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_TTC1_CLK0_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_TTC1_CLK1_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_TTC1_CLK1_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_TTC1_CLK1_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_TTC1_CLK2_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_TTC1_CLK2_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_TTC1_CLK2_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_TTC1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_TTC1_TTC1_IO {{{}} {EMIO {MIO 16 .. 17} {MIO 28 .. 29} {MIO 40 .. 41}} DISABLE COMBO 0 {}} PCW_TTC_PERIPHERAL_FREQMHZ {50 {0.100000 100.000000} DISABLE SPIN 0 {}} PCW_UART0_BAUD_RATE {115200 {110 300 1200 2400 4800 9600 19200 38400 57600 115200 128000 230400 460800 921600} ENABLE COMBO 0 {}} PCW_UART0_GRP_FULL_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_UART0_GRP_FULL_IO {{{}} EMIO DISABLE COMBO 0 {}} PCW_UART0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_UART0_UART0_IO {{{}} {EMIO {MIO 10 .. 11} {MIO 14 .. 15} {MIO 18 .. 19} {MIO 22 .. 23} {MIO 26 .. 27} {MIO 30 .. 31} {MIO 34 .. 35} {MIO 38 .. 39} {MIO 42 .. 43} {MIO 46 .. 47} {MIO 50 .. 51}} DISABLE COMBO 0 {}} PCW_UART1_BAUD_RATE {115200 {110 300 1200 2400 4800 9600 19200 38400 57600 115200 128000 230400 460800 921600} ENABLE COMBO 0 {}} PCW_UART1_GRP_FULL_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_UART1_GRP_FULL_IO {{{}} EMIO DISABLE COMBO 0 {}} PCW_UART1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_UART1_UART1_IO {{{}} {EMIO {MIO 8 .. 9} {MIO 12 .. 13} {MIO 16 .. 17} {MIO 20 .. 21} {MIO 24 .. 25} {MIO 28 .. 29} {MIO 32 .. 33} {MIO 36 .. 37} {MIO 40 .. 41} {MIO 44 .. 45} {MIO 48 .. 49} {MIO 52 .. 53}} DISABLE COMBO 0 {}} PCW_UART_PERIPHERAL_CLKSRC {{{IO PLL}} {{ARM PLL} {DDR PLL} {IO PLL}} ENABLE COMBO 0 {}} PCW_UART_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} DISABLE SPIN 0 {}} PCW_UART_PERIPHERAL_FREQMHZ {100 {10.000000 100.000000} DISABLE SPIN 0 {}} PCW_UART_PERIPHERAL_VALID {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_ACT_DDR_FREQ_MHZ {533.333374 {200.000000 534.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_ADV_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_DDR_AL {0 {0.000000 20.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_BANK_ADDR_COUNT {3 {2.000000 3.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_BL {8 {4 8} ENABLE COMBO 0 {}} PCW_UIPARAM_DDR_BOARD_DELAY0 {0.25 {0.007000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_BOARD_DELAY1 {0.25 {0.007000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_BOARD_DELAY2 {0.25 {0.007000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_BOARD_DELAY3 {0.25 {0.007000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_BUS_WIDTH {{{32 Bit}} {{16 Bit} {32 Bit}} ENABLE COMBO 0 {}} PCW_UIPARAM_DDR_CL {7 {5.000000 16.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_0_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_0_PACKAGE_LENGTH {54.563 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_0_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_1_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_1_PACKAGE_LENGTH {54.563 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_1_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_2_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_2_PACKAGE_LENGTH {54.563 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_2_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_3_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_3_PACKAGE_LENGTH {54.563 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_3_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_CLOCK_STOP_EN {{{}} {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_DDR_COL_ADDR_COUNT {10 {8.000000 13.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_CWL {6 {5.000000 16.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_DEVICE_CAPACITY {{{1024 MBits}} {{128 MBits} {256 MBits} {512 MBits} {1024 MBits} {2048 MBits} {4096 MBits} {8192 MBits}} DISABLE COMBO 0 {}} PCW_UIPARAM_DDR_DQS_0_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_0_PACKAGE_LENGTH {101.239 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_0_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_1_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_1_PACKAGE_LENGTH {79.5025 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_1_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_2_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_2_PACKAGE_LENGTH {60.536 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_2_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_3_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_3_PACKAGE_LENGTH {71.7715 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_3_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 {0.0 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 {0.0 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 {0.0 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 {0.0 {-0.100000 100.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_0_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_0_PACKAGE_LENGTH {104.5365 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_0_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_1_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_1_PACKAGE_LENGTH {70.676 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_1_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_2_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_2_PACKAGE_LENGTH {59.1615 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_2_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_3_LENGTH_MM {0 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_3_PACKAGE_LENGTH {81.319 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DQ_3_PROPOGATION_DELAY {160 {0.000000 10000.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_DRAM_WIDTH {{{8 Bits}} {{8 Bits} {16 Bits} {32 Bits}} DISABLE COMBO 0 {}} PCW_UIPARAM_DDR_ECC {Disabled {Disabled Enabled} DISABLE COMBO 0 {}} PCW_UIPARAM_DDR_ENABLE {1 {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_DDR_FREQ_MHZ {533.333333 {200.000000 534.000000} ENABLE SPIN 0 {}} PCW_UIPARAM_DDR_HIGH_TEMP {{{Normal (0-85)}} {{Normal (0-85)} {High (95 Max)}} ENABLE COMBO 0 {}} PCW_UIPARAM_DDR_MEMORY_TYPE {{{DDR 3}} {{LPDDR 2} {DDR 2} {DDR 3} {DDR 3 (Low Voltage)}} ENABLE COMBO 0 {}} PCW_UIPARAM_DDR_PARTNO {{{MT41J128M8 JP-125}} {{MT41J128M8 JP-125} {MT41J128M8 JP-15E} {MT41J64M16 JT-125G} {MT41J64M16 JT-15E} {MT41J256M8 DA-107} {MT41K128M16 JT-125} {MT41J256M8 HX-125} {MT41J256M8 HX-15E} {MT41J256M8 HX-187E} {MT41J128M16 HA-107G} {MT41J128M16 HA-125} {MT41J128M16 HA-15E} {MT41J128M16 HA-187E} {MT41J512M8 RA-15E} {MT41K128M16 HA-15E} {MT41K256M16 RE-125} {MT41K256M16 RE-15E} {MT41K256M8 DA-125} {MT41K256M8 DA-15E} {MT41K256M8 HX-15E} {MT41J256M16 RE-125} Custom} ENABLE COMBO 0 {}} PCW_UIPARAM_DDR_ROW_ADDR_COUNT {14 {12.000000 15.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_SPEED_BIN {DDR3_1066F {DDR3_800D DDR3_800E DDR3_1066E DDR3_1066F DDR3_1066G DDR3_1333F DDR3_1333G DDR3_1333H DDR3_1333J DDR3_1600G DDR3_1600H DDR3_1600J DDR3_1600K} DISABLE COMBO 0 {}} PCW_UIPARAM_DDR_TRAIN_DATA_EYE {1 {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_DDR_TRAIN_READ_GATE {1 {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL {1 {0 1} ENABLE CHECKBOX 0 {}} PCW_UIPARAM_DDR_T_FAW {30.0 {0.000000 100.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_T_RAS_MIN {35.0 {0.000000 100.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_T_RC {48.75 {0.000000 100.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_T_RCD {7 {0.000000 16.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_T_RP {7 {0.000000 16.000000} DISABLE SPIN 0 {}} PCW_UIPARAM_DDR_USE_INTERNAL_VREF {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_USB0_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_USB0_PERIPHERAL_FREQMHZ {60 {5.000000 60.000000} DISABLE SPIN 0 {}} PCW_USB0_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_USB0_RESET_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_USB0_USB0_IO {{{}} {{MIO 28 .. 39}} DISABLE COMBO 0 {}} PCW_USB1_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_USB1_PERIPHERAL_FREQMHZ {60 {5.000000 60.000000} DISABLE SPIN 0 {}} PCW_USB1_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_USB1_RESET_IO {{{}} {{MIO 0} {MIO 1} {MIO 2} {MIO 3} {MIO 4} {MIO 5} {MIO 6} {MIO 7} {MIO 8} {MIO 9} {MIO 10} {MIO 11} {MIO 12} {MIO 13} {MIO 14} {MIO 15} {MIO 16} {MIO 17} {MIO 18} {MIO 19} {MIO 20} {MIO 21} {MIO 22} {MIO 23} {MIO 24} {MIO 25} {MIO 26} {MIO 27} {MIO 28} {MIO 29} {MIO 30} {MIO 31} {MIO 32} {MIO 33} {MIO 34} {MIO 35} {MIO 36} {MIO 37} {MIO 38} {MIO 39} {MIO 40} {MIO 41} {MIO 42} {MIO 43} {MIO 44} {MIO 45} {MIO 46} {MIO 47} {MIO 48} {MIO 49} {MIO 50} {MIO 51} {MIO 52} {MIO 53}} DISABLE COMBO 0 {}} PCW_USB1_USB1_IO {{{}} {{MIO 40 .. 51}} DISABLE COMBO 0 {}} PCW_USB_RESET_ENABLE {{{}} {0 1} DISABLE CHECKBOX 0 {}} PCW_USB_RESET_POLARITY {{{Active Low}} {{Active High} {Active Low}} ENABLE COMBO 0 {}} PCW_USB_RESET_SELECT {{{}} {{Share reset pin}} DISABLE COMBO 0 {}} PCW_USE_AXI_NONSECURE {0 {1 0} ENABLE COMBO 0 {}} PCW_USE_CROSS_TRIGGER {0 {0 {} 1} ENABLE COMBO 0 {}} PCW_WDT_PERIPHERAL_CLKSRC {CPU_1X {CPU_1X External} ENABLE COMBO 0 {}} PCW_WDT_PERIPHERAL_DIVISOR0 {1 {-9999.990000 9999.990000} ENABLE SPIN 0 {}} PCW_WDT_PERIPHERAL_ENABLE {0 {0 1} ENABLE CHECKBOX 0 {}} PCW_WDT_PERIPHERAL_FREQMHZ {133.333333 {0.100000 200.000000} DISABLE SPIN 0 {}} PCW_WDT_WDT_IO {{{}} {EMIO {MIO 14 .. 15} {MIO 26 .. 27} {MIO 38 .. 39} {MIO 50 .. 51} {MIO 52 .. 53}} DISABLE COMBO 0 {}}
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+1
+INFO: [Common 17-344] 'launch_runs' was cancelled
+report_ip_status -name ip_status 
+reset_run pid_only_wrapper_xbar_0_synth_1
+reset_run pid_only_wrapper_processing_system7_0_0_synth_1
+reset_run pid_only_wrapper_ad9767_0_0_synth_1
+reset_run pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1
+reset_run pid_only_wrapper_ltc2145_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_3_synth_1
+reset_run pid_only_wrapper_add_const_0_0_synth_1
+reset_run pid_only_wrapper_add_const_5_0_synth_1
+reset_run pid_only_wrapper_add_const_3_0_synth_1
+reset_run pid_only_wrapper_add_const_2_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_0_synth_1
+reset_run pid_only_wrapper_add_const_0_1_synth_1
+reset_run pid_only_wrapper_add_const_6_0_synth_1
+reset_run pid_only_wrapper_add_const_4_0_synth_1
+reset_run pid_only_wrapper_xlconstant_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'pid_only_wrapper.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] pid_only_wrapper_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_proc_sys_reset_0_0, cache-ID = 028947bf0aeddb77; cache size = 9.295 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_xbar_0, cache-ID = 8587cb4feb68eb64; cache size = 9.295 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_processing_system7_0_0, cache-ID = 434e5acbba175d47; cache size = 9.295 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_xlconstant_0_0, cache-ID = 332fe43174ec976c; cache size = 9.295 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_xlconstant_0_1, cache-ID = 4a31f9f4cbd840fa; cache size = 9.295 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 9.295 MB.
+[Wed Mar 29 18:34:37 2017] Launched pid_only_wrapper_ad9767_0_0_synth_1, pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1, pid_only_wrapper_ltc2145_0_0_synth_1, pid_only_wrapper_add_const_0_3_synth_1, pid_only_wrapper_add_const_0_0_synth_1, pid_only_wrapper_add_const_5_0_synth_1, pid_only_wrapper_add_const_3_0_synth_1, pid_only_wrapper_add_const_2_0_synth_1, pid_only_wrapper_add_const_0_1_synth_1, pid_only_wrapper_add_const_6_0_synth_1, pid_only_wrapper_add_const_4_0_synth_1, pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_ad9767_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_ad9767_0_0_synth_1/runme.log
+pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1/runme.log
+pid_only_wrapper_ltc2145_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_ltc2145_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_0_3_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_3_synth_1/runme.log
+pid_only_wrapper_add_const_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_0_synth_1/runme.log
+pid_only_wrapper_add_const_5_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_5_0_synth_1/runme.log
+pid_only_wrapper_add_const_3_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_3_0_synth_1/runme.log
+pid_only_wrapper_add_const_2_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_2_0_synth_1/runme.log
+pid_only_wrapper_add_const_0_1_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_0_1_synth_1/runme.log
+pid_only_wrapper_add_const_6_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_6_0_synth_1/runme.log
+pid_only_wrapper_add_const_4_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_add_const_4_0_synth_1/runme.log
+pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:34:37 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:39 ; elapsed = 00:00:37 . Memory (MB): peak = 6993.965 ; gain = 1.004 ; free physical = 3299 ; free virtual = 13251
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+set_property offset 0x43C80000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_2_reg0}]
+set_property offset 0x43C00000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_1_reg0}]
+set_property offset 0x43C20000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_1_reg0}]
+set_property offset 0x43C00000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_0_reg0}]
+set_property offset 0x43C10000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_1_reg0}]
+set_property offset 0x43C20000 [get_bd_addr_segs {processing_system7_0/Data/SEG_add_const_2_reg0}]
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ui/bd_b65e1414.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block red_pitaya_pidv3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block add_const_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hw_handoff/pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/hdl/pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 9.295 MB.
+[Wed Mar 29 18:55:12 2017] Launched pid_only_wrapper_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+pid_only_wrapper_xbar_0_synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/pid_only_wrapper_xbar_0_synth_1/runme.log
+synth_1: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/synth_1/runme.log
+[Wed Mar 29 18:55:12 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 7087.137 ; gain = 0.004 ; free physical = 3261 ; free virtual = 13230
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 19:11:06 2017...
