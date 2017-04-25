@@ -1,0 +1,452 @@
+
+*** Running vivado
+    with args -log double_pid_vco_wrapper_pid_sign_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_pid_vco_wrapper_pid_sign_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source double_pid_vco_wrapper_pid_sign_0.tcl -notrace
+Command: synth_design -top double_pid_vco_wrapper_pid_sign_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6329 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1111.270 ; gain = 180.086 ; free physical = 1338 ; free virtual = 12627
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'double_pid_vco_wrapper_pid_sign_0' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/synth/double_pid_vco_wrapper_pid_sign_0.vhd:90]
+	Parameter format bound to: unsigned - type: string 
+	Parameter add_val bound to: 0 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 1 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 1 - type: integer 
+	Parameter id bound to: 1 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'add_const' declared at '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const.vhd:5' bound to instance 'U0' of component 'add_const' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/synth/double_pid_vco_wrapper_pid_sign_0.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'add_const' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const.vhd:52]
+	Parameter id bound to: 1 - type: integer 
+	Parameter format bound to: unsigned - type: string 
+	Parameter add_val bound to: 0 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 1 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 1 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'add_const_logic' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const_logic.vhd:26]
+	Parameter format bound to: unsigned - type: string 
+	Parameter DATA_OUT_SIZE bound to: 1 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_const_logic' (1#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const_logic.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'wb_add_const' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/wb_add_const.vhd:30]
+	Parameter DEFAULT_OFFSET bound to: 0 - type: integer 
+	Parameter FORMAT bound to: unsigned - type: string 
+	Parameter DATA_SIZE bound to: 1 - type: integer 
+	Parameter id bound to: 1 - type: integer 
+	Parameter wb_size bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wb_add_const' (2#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/wb_add_const.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'add_const_handComm' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const_handComm.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter INTERNAL_ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_const_handComm' (3#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const_handComm.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'add_const' (4#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/a7c6/hdl/add_const.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'double_pid_vco_wrapper_pid_sign_0' (5#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/synth/double_pid_vco_wrapper_pid_sign_0.vhd:90]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design add_const_handComm has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[31]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[30]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[29]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[28]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[27]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[26]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[25]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[24]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[23]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[22]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[21]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[20]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[19]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[18]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[17]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[16]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[15]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[14]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[13]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[12]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[11]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[10]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[9]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[8]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[7]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[6]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[5]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[4]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[3]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[2]
+WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1151.738 ; gain = 220.555 ; free physical = 1254 ; free virtual = 12544
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1151.738 ; gain = 220.555 ; free physical = 1252 ; free virtual = 12542
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/add_const_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/add_const_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/double_pid_vco_wrapper_pid_sign_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/double_pid_vco_wrapper_pid_sign_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1477.914 ; gain = 0.000 ; free physical = 842 ; free virtual = 12132
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 549 ; free virtual = 11840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 549 ; free virtual = 11840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 549 ; free virtual = 11840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "offset_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 541 ; free virtual = 11831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module add_const_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module wb_add_const 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module add_const_handComm 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[31]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[30]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[29]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[28]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[27]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[26]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[25]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[24]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[23]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[22]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[21]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[20]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[19]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[18]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[17]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[16]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[15]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[14]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[13]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[12]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[11]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[10]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[9]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[8]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[7]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[6]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[5]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[4]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[3]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/add_constHandComm/axi_rresp_reg[0]' (FDRE) to 'U0/add_constHandComm/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constHandComm/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[1]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[2]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[3]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[4]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[5]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[6]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[7]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[8]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[9]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[10]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[11]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[12]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[13]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[14]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[15]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[16]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[17]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[18]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[19]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[20]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[21]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[22]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[23]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[24]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[25]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[26]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[27]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[28]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[29]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[30]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\wb_add_const_inst/readdata_s_reg[31] )
+INFO: [Synth 8-3886] merging instance 'U0/add_constHandComm/axi_bresp_reg[0]' (FDRE) to 'U0/add_constHandComm/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constHandComm/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (wb_add_const_inst/readdata_s_reg[31]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_bresp_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_rresp_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_awaddr_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_awaddr_reg[0]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_araddr_reg[1]) is unused and will be removed from module add_const.
+WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_araddr_reg[0]) is unused and will be removed from module add_const.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 506 ; free virtual = 11797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 827 ; free virtual = 12119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 827 ; free virtual = 12119
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 808 ; free virtual = 12100
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12100
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12100
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |LUT3 |     3|
+|3     |LUT4 |     4|
+|4     |LUT5 |     7|
+|5     |LUT6 |     1|
+|6     |FDCE |     2|
+|7     |FDRE |    13|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------+------+
+|      |Instance              |Module             |Cells |
++------+----------------------+-------------------+------+
+|1     |top                   |                   |    34|
+|2     |  U0                  |add_const          |    34|
+|3     |    add_constHandComm |add_const_handComm |    26|
+|4     |    add_constLogic    |add_const_logic    |     6|
+|5     |    wb_add_const_inst |wb_add_const       |     2|
++------+----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1477.914 ; gain = 546.730 ; free physical = 807 ; free virtual = 12099
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1477.914 ; gain = 108.465 ; free physical = 807 ; free virtual = 12099
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 1477.922 ; gain = 546.738 ; free physical = 808 ; free virtual = 12100
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/add_const_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/add_const_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1477.922 ; gain = 447.234 ; free physical = 800 ; free virtual = 12093
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/double_pid_vco_wrapper_pid_sign_0_synth_1/double_pid_vco_wrapper_pid_sign_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/double_pid_vco_wrapper_pid_sign_0_synth_1/double_pid_vco_wrapper_pid_sign_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1501.926 ; gain = 0.000 ; free physical = 799 ; free virtual = 12091
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 21 09:26:04 2017...

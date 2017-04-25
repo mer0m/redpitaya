@@ -59,14 +59,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_pid_kd_0/pid_vco_wrapper_pid_kd_0.xci">
-          <Proxy FileSetName="pid_vco_wrapper_pid_kd_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_pid_ki_0/pid_vco_wrapper_pid_ki_0.xci">
           <Proxy FileSetName="pid_vco_wrapper_pid_ki_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_dds_range_1/pid_vco_wrapper_dds_range_1.xci">
-          <Proxy FileSetName="pid_vco_wrapper_dds_range_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_axi_interconnect_0_0/pid_vco_wrapper_axi_interconnect_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_ad9767_0_0/pid_vco_wrapper_ad9767_0_0.xci">
@@ -139,14 +133,20 @@
           <Proxy FileSetName="pid_vco_wrapper_pid_rst_int_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="hdl/pid_vco_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="pid_vco_wrapper_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_pid_kp_1/pid_vco_wrapper_pid_kp_1.xci">
           <Proxy FileSetName="pid_vco_wrapper_pid_kp_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="pid_vco_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_auto_pc_0/pid_vco_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_wrapper_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="hdl/pid_vco_wrapper.hwdef"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_auto_pc_0/pid_vco_wrapper_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_dds_range_1/pid_vco_wrapper_dds_range_1.xci">
+          <Proxy FileSetName="pid_vco_wrapper_dds_range_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_wrapper.bd" FileRelPathName="ip/pid_vco_wrapper_pid_kd_0/pid_vco_wrapper_pid_kd_0.xci">
+          <Proxy FileSetName="pid_vco_wrapper_pid_kd_0"/>
+        </CompFileExtendedInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>

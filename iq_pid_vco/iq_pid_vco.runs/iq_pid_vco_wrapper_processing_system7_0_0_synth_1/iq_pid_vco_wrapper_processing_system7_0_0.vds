@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Apr 21 16:53:47 2017
+# Process ID: 14734
+# Current directory: /home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.runs/iq_pid_vco_wrapper_processing_system7_0_0_synth_1
+# Command line: vivado -log iq_pid_vco_wrapper_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source iq_pid_vco_wrapper_processing_system7_0_0.tcl
+# Log file: /home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.runs/iq_pid_vco_wrapper_processing_system7_0_0_synth_1/iq_pid_vco_wrapper_processing_system7_0_0.vds
+# Journal file: /home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.runs/iq_pid_vco_wrapper_processing_system7_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source iq_pid_vco_wrapper_processing_system7_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1122.047 ; gain = 190.867 ; free physical = 1539 ; free virtual = 12714
+INFO: [Synth 8-638] synthesizing module 'iq_pid_vco_wrapper_processing_system7_0_0' [/home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.srcs/sources_1/bd/iq_pid_vco_wrapper/ip/iq_pid_vco_wrapper_processing_system7_0_0/synth/iq_pid_vco_wrapper_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.srcs/sources_1/bd/iq_pid_vco_wrapper/ip/iq_pid_vco_wrapper_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (2#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:33182]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (3#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:33182]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [/home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.srcs/sources_1/bd/iq_pid_vco_wrapper/ip/iq_pid_vco_wrapper_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+INFO: [Synth 8-256] done synthesizing module 'iq_pid_vco_wrapper_processing_system7_0_0' (5#1) [/home/bma/git/fpga_design/redpitaya/iq_pid_vco/iq_pid_vco.srcs/sources_1/bd/iq_pid_vco_wrapper/ip/iq_pid_vco_wrapper_processing_system7_0_0/synth/iq_pid_vco_wrapper_processing_system7_0_0.v:60]
+Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.516 ; gain = 231.336 ; free physical = 1407 ; free virtual = 12582
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1162.516 ; gain = 231.336 ; free physical = 1400 ; free virtual = 12575
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1426.215 ; gain = 0.000 ; free physical = 913 ; free virtual = 12088
+Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1426.215 ; gain = 495.035 ; free physical = 882 ; free virtual = 12058
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1426.215 ; gain = 495.035 ; free physical = 882 ; free virtual = 12058
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1426.215 ; gain = 495.035 ; free physical = 882 ; free virtual = 12057
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1426.215 ; gain = 495.035 ; free physical = 875 ; free virtual = 12050
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1434.223 ; gain = 503.043 ; free physical = 859 ; free virtual = 12034
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1626.223 ; gain = 695.043 ; free physical = 1542 ; free virtual = 12718
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1646.230 ; gain = 715.051 ; free physical = 1522 ; free virtual = 12697
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1501 ; free virtual = 12676
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BIBUF |   130|
+|2     |BUFG  |     4|
+|3     |LUT1  |   352|
+|4     |PS7   |     1|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 1654.238 ; gain = 723.059 ; free physical = 1485 ; free virtual = 12660
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 1666.238 ; gain = 628.773 ; free physical = 1211 ; free virtual = 12387
