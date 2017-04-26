@@ -59,56 +59,56 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_processing_system7_0_0/pid_only_wrapper_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_0_0/pid_only_wrapper_add_const_0_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_2_0/pid_only_wrapper_add_const_2_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_2_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_3_0/pid_only_wrapper_add_const_3_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_3_0"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_only_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="pid_only_wrapper_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_xlconstant_0_0/pid_only_wrapper_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_proc_sys_reset_0_0/pid_only_wrapper_proc_sys_reset_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_only_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_0_3/pid_only_wrapper_add_const_0_3.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_0_3"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hdl/pid_only_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_xbar_0/pid_only_wrapper_xbar_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_redpitaya_adc_dac_clk_0_0/pid_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_5_0/pid_only_wrapper_add_const_5_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_5_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_6_0/pid_only_wrapper_add_const_6_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_6_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_ltc2145_0_0/pid_only_wrapper_ltc2145_0_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_ltc2145_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hdl/pid_only_wrapper.hwdef"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_0_1/pid_only_wrapper_add_const_0_1.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_ad9767_0_0/pid_only_wrapper_ad9767_0_0.xci">
           <Proxy FileSetName="pid_only_wrapper_ad9767_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_xlconstant_0_1/pid_only_wrapper_xlconstant_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_xbar_0/pid_only_wrapper_xbar_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_ltc2145_0_0/pid_only_wrapper_ltc2145_0_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_ltc2145_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_redpitaya_adc_dac_clk_0_0/pid_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_axi_interconnect_0_0/pid_only_wrapper_axi_interconnect_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_0_3/pid_only_wrapper_add_const_0_3.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_0_3"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_processing_system7_0_0/pid_only_wrapper_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_5_0/pid_only_wrapper_add_const_5_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_5_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_proc_sys_reset_0_0/pid_only_wrapper_proc_sys_reset_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_xlconstant_0_0/pid_only_wrapper_xlconstant_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_0_1/pid_only_wrapper_add_const_0_1.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_0_1"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_xlconstant_0_1/pid_only_wrapper_xlconstant_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_4_0/pid_only_wrapper_add_const_4_0.xci">
           <Proxy FileSetName="pid_only_wrapper_add_const_4_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_2_0/pid_only_wrapper_add_const_2_0.xci">
-          <Proxy FileSetName="pid_only_wrapper_add_const_2_0"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_3_0/pid_only_wrapper_add_const_3_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_3_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_6_0/pid_only_wrapper_add_const_6_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_6_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_auto_pc_0/pid_only_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_red_pitaya_pidv3_0_0/pid_only_wrapper_red_pitaya_pidv3_0_0.xci">
           <Proxy FileSetName="pid_only_wrapper_red_pitaya_pidv3_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_auto_pc_0/pid_only_wrapper_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_only_wrapper_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hdl/pid_only_wrapper.hwdef"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_only_wrapper.hwh"/>
-        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="pid_only_wrapper_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="hdl/pid_only_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="pid_only_wrapper.bd" FileRelPathName="ip/pid_only_wrapper_add_const_0_0/pid_only_wrapper_add_const_0_0.xci">
+          <Proxy FileSetName="pid_only_wrapper_add_const_0_0"/>
+        </CompFileExtendedInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -165,12 +165,6 @@
     <FileSet Name="pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pid_only_wrapper_redpitaya_adc_dac_clk_0_0">
       <Config>
         <Option Name="TopModule" Val="pid_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="pid_only_wrapper_ltc2145_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pid_only_wrapper_ltc2145_0_0">
-      <Config>
-        <Option Name="TopModule" Val="pid_only_wrapper_ltc2145_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -234,6 +228,12 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="pid_only_wrapper_ltc2145_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pid_only_wrapper_ltc2145_0_0">
+      <Config>
+        <Option Name="TopModule" Val="pid_only_wrapper_ltc2145_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -274,14 +274,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pid_only_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_only_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
@@ -369,6 +361,16 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+    <Run Id="pid_only_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_only_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
@@ -401,21 +403,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="pid_only_wrapper_redpitaya_adc_dac_clk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Description="Default settings for Implementation." SynthRun="pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pid_only_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="pid_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -568,6 +555,23 @@
     <Run Id="pid_only_wrapper_red_pitaya_pidv3_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_red_pitaya_pidv3_0_0" Description="Default settings for Implementation." SynthRun="pid_only_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="pid_only_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_only_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="pid_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

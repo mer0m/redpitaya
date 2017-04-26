@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Feb  9 10:18:09 2017
+// Date        : Thu Feb  9 10:18:08 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
-// Command     : write_verilog -force -mode funcsim
-//               /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_proc_sys_reset_0_0/adc2dac_ram_offset_proc_sys_reset_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top adc2dac_ram_offset_proc_sys_reset_0_0 -prefix
+//               adc2dac_ram_offset_proc_sys_reset_0_0_ adc2dac_ram_offset_proc_sys_reset_0_0_sim_netlist.v
 // Design      : adc2dac_ram_offset_proc_sys_reset_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -69,7 +69,6 @@ module adc2dac_ram_offset_proc_sys_reset_0_0
         .slowest_sync_clk(slowest_sync_clk));
 endmodule
 
-(* ORIG_REF_NAME = "cdc_sync" *) 
 module adc2dac_ram_offset_proc_sys_reset_0_0_cdc_sync
    (lpf_asr_reg,
     scndry_out,
@@ -251,7 +250,6 @@ module adc2dac_ram_offset_proc_sys_reset_0_0_cdc_sync_0
         .O(lpf_exr_reg));
 endmodule
 
-(* ORIG_REF_NAME = "lpf" *) 
 module adc2dac_ram_offset_proc_sys_reset_0_0_lpf
    (lpf_int,
     slowest_sync_clk,
@@ -400,7 +398,6 @@ endmodule
 (* C_AUX_RESET_HIGH = "1'b0" *) (* C_AUX_RST_WIDTH = "4" *) (* C_EXT_RESET_HIGH = "1'b0" *) 
 (* C_EXT_RST_WIDTH = "4" *) (* C_FAMILY = "zynq" *) (* C_NUM_BUS_RST = "1" *) 
 (* C_NUM_INTERCONNECT_ARESETN = "1" *) (* C_NUM_PERP_ARESETN = "1" *) (* C_NUM_PERP_RST = "1" *) 
-(* ORIG_REF_NAME = "proc_sys_reset" *) 
 module adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset
    (slowest_sync_clk,
     ext_reset_in,
@@ -501,7 +498,6 @@ module adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "sequence_psr" *) 
 module adc2dac_ram_offset_proc_sys_reset_0_0_sequence_psr
    (Core,
     bsr,
@@ -742,7 +738,6 @@ module adc2dac_ram_offset_proc_sys_reset_0_0_sequence_psr
         .R(lpf_int));
 endmodule
 
-(* ORIG_REF_NAME = "upcnt_n" *) 
 module adc2dac_ram_offset_proc_sys_reset_0_0_upcnt_n
    (Q,
     seq_clr,

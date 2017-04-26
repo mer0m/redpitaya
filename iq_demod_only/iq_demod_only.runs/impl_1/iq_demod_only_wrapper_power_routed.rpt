@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Thu Apr 20 17:45:58 2017
+| Date             : Tue Apr 25 09:20:35 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file iq_demod_only_wrapper_power_routed.rpt -pb iq_demod_only_wrapper_power_summary_routed.pb -rpx iq_demod_only_wrapper_power_routed.rpx
 | Design           : iq_demod_only_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 2.062 |
-| Dynamic (W)              | 1.927 |
+| Total On-Chip Power (W)  | 2.060 |
+| Dynamic (W)              | 1.924 |
 | Device Static (W)        | 0.135 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 61.2  |
@@ -50,21 +50,21 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.027 |        8 |       --- |             --- |
-| Slice Logic             |     0.004 |    14169 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     3397 |     17600 |           19.30 |
-|   Register              |    <0.001 |     8289 |     35200 |           23.55 |
+| Slice Logic             |     0.004 |    14175 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     3400 |     17600 |           19.32 |
+|   Register              |    <0.001 |     8293 |     35200 |           23.56 |
 |   CARRY4                |    <0.001 |      110 |      4400 |            2.50 |
 |   F7/F8 Muxes           |    <0.001 |       62 |     17600 |            0.35 |
 |   LUT as Shift Register |    <0.001 |      456 |      6000 |            7.60 |
 |   Others                |     0.000 |      928 |       --- |             --- |
-| Signals                 |     0.016 |    11793 |       --- |             --- |
+| Signals                 |     0.015 |    11794 |       --- |             --- |
 | Block RAM               |     0.011 |      4.5 |        60 |            7.50 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.081 |       57 |        80 |           71.25 |
-| I/O                     |     0.160 |       35 |       100 |           35.00 |
+| I/O                     |     0.159 |       35 |       100 |           35.00 |
 | PS7                     |     1.525 |        1 |       --- |             --- |
 | Static Power            |     0.135 |          |           |                 |
-| Total                   |     2.062 |          |           |                 |
+| Total                   |     2.060 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.155 |       0.147 |      0.008 |
+| Vccint    |       1.000 |     0.154 |       0.146 |      0.008 |
 | Vccaux    |       1.800 |     0.068 |       0.056 |      0.012 |
 | Vcco33    |       3.300 |     0.047 |       0.046 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -155,7 +155,7 @@ Table of Contents
 +------------------------------------------------------------+-----------+
 | Name                                                       | Power (W) |
 +------------------------------------------------------------+-----------+
-| iq_demod_only_wrapper                                      |     1.927 |
+| iq_demod_only_wrapper                                      |     1.924 |
 |   ad9767_0                                                 |     0.005 |
 |     inst                                                   |     0.005 |
 |   adc1_offset                                              |    <0.001 |
@@ -172,7 +172,7 @@ Table of Contents
 |     U0                                                     |     0.006 |
 |       handle_comm                                          |    <0.001 |
 |       nco_inst1                                            |     0.006 |
-|         rom_12.rom_inst                                    |     0.005 |
+|         rom_12.rom12_inst                                  |     0.005 |
 |       wb_nco_inst                                          |    <0.001 |
 |   dds_offset                                               |    <0.001 |
 |     U0                                                     |    <0.001 |
@@ -185,14 +185,14 @@ Table of Contents
 |     U0                                                     |     0.006 |
 |       handle_comm                                          |    <0.001 |
 |       nco_inst1                                            |     0.006 |
-|         rom_12.rom_inst                                    |     0.005 |
+|         rom_12.rom12_inst                                  |     0.005 |
 |       wb_nco_inst                                          |    <0.001 |
-|   fir16RealbitsOneInTwoMult_v1_0_0                         |     0.104 |
-|     U0                                                     |     0.104 |
+|   fir16RealbitsOneInTwoMult_v1_0_0                         |     0.103 |
+|     U0                                                     |     0.103 |
 |       fir16bitsOneInTwoMult_v1_0_S00_AXI_inst              |    <0.001 |
-|       fir_top_inst                                         |     0.104 |
+|       fir_top_inst                                         |     0.103 |
 |         cpt_ram                                            |    <0.001 |
-|         generate_fir[0].fir_glob_inst                      |     0.003 |
+|         generate_fir[0].fir_glob_inst                      |     0.004 |
 |           coeff_reg_delay                                  |    <0.001 |
 |           fir_proc_inst                                    |     0.003 |
 |             multiplier_i                                   |     0.002 |

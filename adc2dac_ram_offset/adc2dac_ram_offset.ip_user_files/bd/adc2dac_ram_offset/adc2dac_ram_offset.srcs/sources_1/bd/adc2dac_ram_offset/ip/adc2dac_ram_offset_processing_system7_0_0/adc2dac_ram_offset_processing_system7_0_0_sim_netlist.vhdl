@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Feb  9 10:16:42 2017
+-- Date        : Tue Mar 28 17:12:48 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode funcsim
---               /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_processing_system7_0_0/adc2dac_ram_offset_processing_system7_0_0_sim_netlist.vhdl
+--               /home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_processing_system7_0_0/adc2dac_ram_offset_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : adc2dac_ram_offset_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -175,7 +175,7 @@ entity adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
     WDT_RST_OUT : out STD_LOGIC;
     TRACE_CLK : in STD_LOGIC;
     TRACE_CTL : out STD_LOGIC;
-    TRACE_DATA : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    TRACE_DATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
     TRACE_CLK_OUT : out STD_LOGIC;
     USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
     USB0_VBUS_PWRSELECT : out STD_LOGIC;
@@ -721,11 +721,11 @@ entity adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   attribute C_FCLK_CLK0_BUF : string;
   attribute C_FCLK_CLK0_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "TRUE";
   attribute C_FCLK_CLK1_BUF : string;
-  attribute C_FCLK_CLK1_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "FALSE";
+  attribute C_FCLK_CLK1_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "TRUE";
   attribute C_FCLK_CLK2_BUF : string;
-  attribute C_FCLK_CLK2_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "FALSE";
+  attribute C_FCLK_CLK2_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "TRUE";
   attribute C_FCLK_CLK3_BUF : string;
-  attribute C_FCLK_CLK3_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "FALSE";
+  attribute C_FCLK_CLK3_BUF of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "TRUE";
   attribute C_GP0_EN_MODIFIABLE_TXN : integer;
   attribute C_GP0_EN_MODIFIABLE_TXN of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_GP1_EN_MODIFIABLE_TXN : integer;
@@ -735,7 +735,7 @@ entity adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   attribute C_INCLUDE_TRACE_BUFFER : integer;
   attribute C_INCLUDE_TRACE_BUFFER of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_IRQ_F2P_MODE : string;
-  attribute C_IRQ_F2P_MODE of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "DIRECT";
+  attribute C_IRQ_F2P_MODE of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "REVERSE";
   attribute C_MIO_PRIMITIVE : integer;
   attribute C_MIO_PRIMITIVE of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 54;
   attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP : integer;
@@ -787,7 +787,7 @@ entity adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   attribute C_TRACE_BUFFER_FIFO_SIZE : integer;
   attribute C_TRACE_BUFFER_FIFO_SIZE of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 128;
   attribute C_TRACE_INTERNAL_WIDTH : integer;
-  attribute C_TRACE_INTERNAL_WIDTH of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 2;
+  attribute C_TRACE_INTERNAL_WIDTH of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 32;
   attribute C_TRACE_PIPELINE_WIDTH : integer;
   attribute C_TRACE_PIPELINE_WIDTH of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 8;
   attribute C_USE_AXI_NONSECURE : integer;
@@ -817,7 +817,7 @@ entity adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
-  attribute POWER of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>";
+  attribute POWER of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS25} bidis={1} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={4} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={LVCMOS25} bidis={2} ioBank={Vcco_p1} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS25} bidis={8} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS25} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS25} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={125} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={125} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
 end adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7;
@@ -826,7 +826,7 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0_processing_s
   signal \<const0>\ : STD_LOGIC;
   signal ENET0_MDIO_T_n : STD_LOGIC;
   signal ENET1_MDIO_T_n : STD_LOGIC;
-  signal FCLK_CLK_unbuffered : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal FCLK_CLK_unbuffered : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal I2C0_SCL_T_n : STD_LOGIC;
   signal I2C0_SDA_T_n : STD_LOGIC;
   signal I2C1_SCL_T_n : STD_LOGIC;
@@ -864,21 +864,21 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0_processing_s
   attribute RTL_KEEP of \TRACE_CTL_PIPE[6]\ : signal is "true";
   signal \TRACE_CTL_PIPE[7]\ : STD_LOGIC;
   attribute RTL_KEEP of \TRACE_CTL_PIPE[7]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[0]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[0]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[0]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[1]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[1]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[1]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[2]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[2]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[2]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[3]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[3]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[3]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[4]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[4]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[4]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[5]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[5]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[5]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[6]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[6]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[6]\ : signal is "true";
-  signal \TRACE_DATA_PIPE[7]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \TRACE_DATA_PIPE[7]\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_KEEP of \TRACE_DATA_PIPE[7]\ : signal is "true";
   signal buffered_DDR_Addr : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal buffered_DDR_BankAddr : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -929,6 +929,9 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0_processing_s
   attribute BOX_TYPE of PS_PORB_BIBUF : label is "PRIMITIVE";
   attribute BOX_TYPE of PS_SRSTB_BIBUF : label is "PRIMITIVE";
   attribute BOX_TYPE of \buffer_fclk_clk_0.FCLK_CLK_0_BUFG\ : label is "PRIMITIVE";
+  attribute BOX_TYPE of \buffer_fclk_clk_1.FCLK_CLK_1_BUFG\ : label is "PRIMITIVE";
+  attribute BOX_TYPE of \buffer_fclk_clk_2.FCLK_CLK_2_BUFG\ : label is "PRIMITIVE";
+  attribute BOX_TYPE of \buffer_fclk_clk_3.FCLK_CLK_3_BUFG\ : label is "PRIMITIVE";
   attribute BOX_TYPE of \genblk13[0].MIO_BIBUF\ : label is "PRIMITIVE";
   attribute BOX_TYPE of \genblk13[10].MIO_BIBUF\ : label is "PRIMITIVE";
   attribute BOX_TYPE of \genblk13[11].MIO_BIBUF\ : label is "PRIMITIVE";
@@ -1077,7 +1080,7 @@ begin
   PJTAG_TDO <= \<const0>\;
   TRACE_CLK_OUT <= \<const0>\;
   TRACE_CTL <= \TRACE_CTL_PIPE[0]\;
-  TRACE_DATA(1 downto 0) <= \TRACE_DATA_PIPE[0]\(1 downto 0);
+  TRACE_DATA(31 downto 0) <= \TRACE_DATA_PIPE[0]\(31 downto 0);
 DDR_CAS_n_BIBUF: unisim.vcomponents.BIBUF
      port map (
       IO => buffered_DDR_CAS_n,
@@ -1925,10 +1928,7 @@ PS7_i: unisim.vcomponents.PS7
       EVENTEVENTO => EVENT_EVENTO,
       EVENTSTANDBYWFE(1 downto 0) => EVENT_STANDBYWFE(1 downto 0),
       EVENTSTANDBYWFI(1 downto 0) => EVENT_STANDBYWFI(1 downto 0),
-      FCLKCLK(3) => FCLK_CLK3,
-      FCLKCLK(2) => FCLK_CLK2,
-      FCLKCLK(1) => FCLK_CLK1,
-      FCLKCLK(0) => FCLK_CLK_unbuffered(0),
+      FCLKCLK(3 downto 0) => FCLK_CLK_unbuffered(3 downto 0),
       FCLKCLKTRIGN(3 downto 0) => B"0000",
       FCLKRESETN(3) => FCLK_RESET3_N,
       FCLKRESETN(2) => FCLK_RESET2_N,
@@ -1961,8 +1961,8 @@ PS7_i: unisim.vcomponents.PS7
       IRQF2P(18) => Core0_nFIQ,
       IRQF2P(17) => Core1_nIRQ,
       IRQF2P(16) => Core0_nIRQ,
-      IRQF2P(15 downto 1) => B"000000000000000",
-      IRQF2P(0) => IRQ_F2P(0),
+      IRQF2P(15) => IRQ_F2P(0),
+      IRQF2P(14 downto 0) => B"000000000000000",
       IRQP2F(28) => IRQ_P2F_DMAC_ABORT,
       IRQP2F(27) => IRQ_P2F_DMAC7,
       IRQP2F(26) => IRQ_P2F_DMAC6,
@@ -2546,6 +2546,21 @@ SPI1_SS_T_INST_0: unisim.vcomponents.LUT1
      port map (
       I => FCLK_CLK_unbuffered(0),
       O => FCLK_CLK0
+    );
+\buffer_fclk_clk_1.FCLK_CLK_1_BUFG\: unisim.vcomponents.BUFG
+     port map (
+      I => FCLK_CLK_unbuffered(1),
+      O => FCLK_CLK1
+    );
+\buffer_fclk_clk_2.FCLK_CLK_2_BUFG\: unisim.vcomponents.BUFG
+     port map (
+      I => FCLK_CLK_unbuffered(2),
+      O => FCLK_CLK2
+    );
+\buffer_fclk_clk_3.FCLK_CLK_3_BUFG\: unisim.vcomponents.BUFG
+     port map (
+      I => FCLK_CLK_unbuffered(3),
+      O => FCLK_CLK3
     );
 \genblk13[0].MIO_BIBUF\: unisim.vcomponents.BIBUF
      port map (
@@ -3141,7 +3156,7 @@ i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[0]\(1)
+      O => \TRACE_DATA_PIPE[0]\(31)
     );
 i_10: unisim.vcomponents.LUT1
     generic map(
@@ -3149,17 +3164,25 @@ i_10: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[7]\(1)
+      O => \TRACE_DATA_PIPE[0]\(22)
     );
-i_11: unisim.vcomponents.LUT1
+i_100: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[7]\(0)
+      O => \TRACE_DATA_PIPE[6]\(3)
     );
-i_12: unisim.vcomponents.LUT1
+i_101: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(2)
+    );
+i_102: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3167,7 +3190,7 @@ i_12: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[6]\(1)
     );
-i_13: unisim.vcomponents.LUT1
+i_103: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3175,7 +3198,271 @@ i_13: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[6]\(0)
     );
-i_14: unisim.vcomponents.LUT1
+i_104: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(31)
+    );
+i_105: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(30)
+    );
+i_106: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(29)
+    );
+i_107: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(28)
+    );
+i_108: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(27)
+    );
+i_109: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(26)
+    );
+i_11: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(21)
+    );
+i_110: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(25)
+    );
+i_111: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(24)
+    );
+i_112: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(23)
+    );
+i_113: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(22)
+    );
+i_114: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(21)
+    );
+i_115: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(20)
+    );
+i_116: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(19)
+    );
+i_117: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(18)
+    );
+i_118: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(17)
+    );
+i_119: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(16)
+    );
+i_12: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(20)
+    );
+i_120: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(15)
+    );
+i_121: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(14)
+    );
+i_122: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(13)
+    );
+i_123: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(12)
+    );
+i_124: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(11)
+    );
+i_125: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(10)
+    );
+i_126: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(9)
+    );
+i_127: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(8)
+    );
+i_128: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(7)
+    );
+i_129: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(6)
+    );
+i_13: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(19)
+    );
+i_130: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(5)
+    );
+i_131: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(4)
+    );
+i_132: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(3)
+    );
+i_133: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[5]\(2)
+    );
+i_134: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3183,7 +3470,7 @@ i_14: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[5]\(1)
     );
-i_15: unisim.vcomponents.LUT1
+i_135: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3191,7 +3478,271 @@ i_15: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[5]\(0)
     );
+i_136: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(31)
+    );
+i_137: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(30)
+    );
+i_138: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(29)
+    );
+i_139: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(28)
+    );
+i_14: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(18)
+    );
+i_140: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(27)
+    );
+i_141: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(26)
+    );
+i_142: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(25)
+    );
+i_143: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(24)
+    );
+i_144: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(23)
+    );
+i_145: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(22)
+    );
+i_146: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(21)
+    );
+i_147: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(20)
+    );
+i_148: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(19)
+    );
+i_149: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(18)
+    );
+i_15: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(17)
+    );
+i_150: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(17)
+    );
+i_151: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(16)
+    );
+i_152: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(15)
+    );
+i_153: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(14)
+    );
+i_154: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(13)
+    );
+i_155: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(12)
+    );
+i_156: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(11)
+    );
+i_157: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(10)
+    );
+i_158: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(9)
+    );
+i_159: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(8)
+    );
 i_16: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(16)
+    );
+i_160: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(7)
+    );
+i_161: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(6)
+    );
+i_162: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(5)
+    );
+i_163: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(4)
+    );
+i_164: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(3)
+    );
+i_165: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[4]\(2)
+    );
+i_166: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3199,7 +3750,7 @@ i_16: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[4]\(1)
     );
-i_17: unisim.vcomponents.LUT1
+i_167: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3207,7 +3758,271 @@ i_17: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[4]\(0)
     );
+i_168: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(31)
+    );
+i_169: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(30)
+    );
+i_17: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(15)
+    );
+i_170: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(29)
+    );
+i_171: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(28)
+    );
+i_172: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(27)
+    );
+i_173: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(26)
+    );
+i_174: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(25)
+    );
+i_175: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(24)
+    );
+i_176: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(23)
+    );
+i_177: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(22)
+    );
+i_178: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(21)
+    );
+i_179: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(20)
+    );
 i_18: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(14)
+    );
+i_180: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(19)
+    );
+i_181: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(18)
+    );
+i_182: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(17)
+    );
+i_183: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(16)
+    );
+i_184: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(15)
+    );
+i_185: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(14)
+    );
+i_186: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(13)
+    );
+i_187: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(12)
+    );
+i_188: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(11)
+    );
+i_189: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(10)
+    );
+i_19: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(13)
+    );
+i_190: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(9)
+    );
+i_191: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(8)
+    );
+i_192: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(7)
+    );
+i_193: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(6)
+    );
+i_194: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(5)
+    );
+i_195: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(4)
+    );
+i_196: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(3)
+    );
+i_197: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[3]\(2)
+    );
+i_198: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3215,7 +4030,7 @@ i_18: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_DATA_PIPE[3]\(1)
     );
-i_19: unisim.vcomponents.LUT1
+i_199: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3229,7 +4044,7 @@ i_2: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[0]\(0)
+      O => \TRACE_DATA_PIPE[0]\(30)
     );
 i_20: unisim.vcomponents.LUT1
     generic map(
@@ -3237,7 +4052,87 @@ i_20: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[2]\(1)
+      O => \TRACE_DATA_PIPE[0]\(12)
+    );
+i_200: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(31)
+    );
+i_201: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(30)
+    );
+i_202: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(29)
+    );
+i_203: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(28)
+    );
+i_204: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(27)
+    );
+i_205: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(26)
+    );
+i_206: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(25)
+    );
+i_207: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(24)
+    );
+i_208: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(23)
+    );
+i_209: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(22)
     );
 i_21: unisim.vcomponents.LUT1
     generic map(
@@ -3245,7 +4140,87 @@ i_21: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[2]\(0)
+      O => \TRACE_DATA_PIPE[0]\(11)
+    );
+i_210: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(21)
+    );
+i_211: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(20)
+    );
+i_212: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(19)
+    );
+i_213: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(18)
+    );
+i_214: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(17)
+    );
+i_215: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(16)
+    );
+i_216: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(15)
+    );
+i_217: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(14)
+    );
+i_218: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(13)
+    );
+i_219: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(12)
     );
 i_22: unisim.vcomponents.LUT1
     generic map(
@@ -3253,7 +4228,87 @@ i_22: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
-      O => \TRACE_DATA_PIPE[1]\(1)
+      O => \TRACE_DATA_PIPE[0]\(10)
+    );
+i_220: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(11)
+    );
+i_221: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(10)
+    );
+i_222: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(9)
+    );
+i_223: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(8)
+    );
+i_224: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(7)
+    );
+i_225: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(6)
+    );
+i_226: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(5)
+    );
+i_227: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(4)
+    );
+i_228: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(3)
+    );
+i_229: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(2)
     );
 i_23: unisim.vcomponents.LUT1
     generic map(
@@ -3261,7 +4316,327 @@ i_23: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(9)
+    );
+i_230: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(1)
+    );
+i_231: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[2]\(0)
+    );
+i_232: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(31)
+    );
+i_233: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(30)
+    );
+i_234: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(29)
+    );
+i_235: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(28)
+    );
+i_236: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(27)
+    );
+i_237: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(26)
+    );
+i_238: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(25)
+    );
+i_239: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(24)
+    );
+i_24: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(8)
+    );
+i_240: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(23)
+    );
+i_241: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(22)
+    );
+i_242: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(21)
+    );
+i_243: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(20)
+    );
+i_244: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(19)
+    );
+i_245: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(18)
+    );
+i_246: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(17)
+    );
+i_247: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(16)
+    );
+i_248: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(15)
+    );
+i_249: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(14)
+    );
+i_25: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(7)
+    );
+i_250: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(13)
+    );
+i_251: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(12)
+    );
+i_252: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(11)
+    );
+i_253: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(10)
+    );
+i_254: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(9)
+    );
+i_255: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(8)
+    );
+i_256: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(7)
+    );
+i_257: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(6)
+    );
+i_258: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(5)
+    );
+i_259: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(4)
+    );
+i_26: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(6)
+    );
+i_260: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(3)
+    );
+i_261: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(2)
+    );
+i_262: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[1]\(1)
+    );
+i_263: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
       O => \TRACE_DATA_PIPE[1]\(0)
+    );
+i_27: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(5)
+    );
+i_28: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(4)
+    );
+i_29: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(3)
     );
 i_3: unisim.vcomponents.LUT1
     generic map(
@@ -3269,9 +4644,41 @@ i_3: unisim.vcomponents.LUT1
     )
         port map (
       I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(29)
+    );
+i_30: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(2)
+    );
+i_31: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(1)
+    );
+i_32: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(0)
+    );
+i_33: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
       O => \TRACE_CTL_PIPE[7]\
     );
-i_4: unisim.vcomponents.LUT1
+i_34: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3279,7 +4686,7 @@ i_4: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_CTL_PIPE[6]\
     );
-i_5: unisim.vcomponents.LUT1
+i_35: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3287,7 +4694,7 @@ i_5: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_CTL_PIPE[5]\
     );
-i_6: unisim.vcomponents.LUT1
+i_36: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3295,7 +4702,7 @@ i_6: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_CTL_PIPE[4]\
     );
-i_7: unisim.vcomponents.LUT1
+i_37: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3303,7 +4710,7 @@ i_7: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_CTL_PIPE[3]\
     );
-i_8: unisim.vcomponents.LUT1
+i_38: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
@@ -3311,13 +4718,541 @@ i_8: unisim.vcomponents.LUT1
       I0 => '0',
       O => \TRACE_CTL_PIPE[2]\
     );
-i_9: unisim.vcomponents.LUT1
+i_39: unisim.vcomponents.LUT1
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => '0',
       O => \TRACE_CTL_PIPE[1]\
+    );
+i_4: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(28)
+    );
+i_40: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(31)
+    );
+i_41: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(30)
+    );
+i_42: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(29)
+    );
+i_43: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(28)
+    );
+i_44: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(27)
+    );
+i_45: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(26)
+    );
+i_46: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(25)
+    );
+i_47: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(24)
+    );
+i_48: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(23)
+    );
+i_49: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(22)
+    );
+i_5: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(27)
+    );
+i_50: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(21)
+    );
+i_51: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(20)
+    );
+i_52: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(19)
+    );
+i_53: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(18)
+    );
+i_54: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(17)
+    );
+i_55: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(16)
+    );
+i_56: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(15)
+    );
+i_57: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(14)
+    );
+i_58: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(13)
+    );
+i_59: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(12)
+    );
+i_6: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(26)
+    );
+i_60: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(11)
+    );
+i_61: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(10)
+    );
+i_62: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(9)
+    );
+i_63: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(8)
+    );
+i_64: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(7)
+    );
+i_65: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(6)
+    );
+i_66: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(5)
+    );
+i_67: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(4)
+    );
+i_68: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(3)
+    );
+i_69: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(2)
+    );
+i_7: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(25)
+    );
+i_70: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(1)
+    );
+i_71: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[7]\(0)
+    );
+i_72: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(31)
+    );
+i_73: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(30)
+    );
+i_74: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(29)
+    );
+i_75: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(28)
+    );
+i_76: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(27)
+    );
+i_77: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(26)
+    );
+i_78: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(25)
+    );
+i_79: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(24)
+    );
+i_8: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(24)
+    );
+i_80: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(23)
+    );
+i_81: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(22)
+    );
+i_82: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(21)
+    );
+i_83: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(20)
+    );
+i_84: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(19)
+    );
+i_85: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(18)
+    );
+i_86: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(17)
+    );
+i_87: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(16)
+    );
+i_88: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(15)
+    );
+i_89: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(14)
+    );
+i_9: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[0]\(23)
+    );
+i_90: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(13)
+    );
+i_91: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(12)
+    );
+i_92: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(11)
+    );
+i_93: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(10)
+    );
+i_94: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(9)
+    );
+i_95: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(8)
+    );
+i_96: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(7)
+    );
+i_97: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(6)
+    );
+i_98: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(5)
+    );
+i_99: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => \TRACE_DATA_PIPE[6]\(4)
     );
 end STRUCTURE;
 library IEEE;
@@ -3326,6 +5261,26 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity adc2dac_ram_offset_processing_system7_0_0 is
   port (
+    SPI0_SCLK_I : in STD_LOGIC;
+    SPI0_SCLK_O : out STD_LOGIC;
+    SPI0_SCLK_T : out STD_LOGIC;
+    SPI0_MOSI_I : in STD_LOGIC;
+    SPI0_MOSI_O : out STD_LOGIC;
+    SPI0_MOSI_T : out STD_LOGIC;
+    SPI0_MISO_I : in STD_LOGIC;
+    SPI0_MISO_O : out STD_LOGIC;
+    SPI0_MISO_T : out STD_LOGIC;
+    SPI0_SS_I : in STD_LOGIC;
+    SPI0_SS_O : out STD_LOGIC;
+    SPI0_SS1_O : out STD_LOGIC;
+    SPI0_SS2_O : out STD_LOGIC;
+    SPI0_SS_T : out STD_LOGIC;
+    TTC0_WAVE0_OUT : out STD_LOGIC;
+    TTC0_WAVE1_OUT : out STD_LOGIC;
+    TTC0_WAVE2_OUT : out STD_LOGIC;
+    USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    USB0_VBUS_PWRSELECT : out STD_LOGIC;
+    USB0_VBUS_PWRFAULT : in STD_LOGIC;
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -3366,7 +5321,13 @@ entity adc2dac_ram_offset_processing_system7_0_0 is
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
+    FCLK_CLK1 : out STD_LOGIC;
+    FCLK_CLK2 : out STD_LOGIC;
+    FCLK_CLK3 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
+    FCLK_RESET1_N : out STD_LOGIC;
+    FCLK_RESET2_N : out STD_LOGIC;
+    FCLK_RESET3_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     DDR_CAS_n : inout STD_LOGIC;
     DDR_CKE : inout STD_LOGIC;
@@ -3445,12 +5406,6 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   signal NLW_inst_ENET1_SOF_RX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_ENET1_SOF_TX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_EVENT_EVENTO_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_FCLK_CLK1_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_FCLK_CLK2_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_FCLK_CLK3_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_FCLK_RESET1_N_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_FCLK_RESET2_N_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_FCLK_RESET3_N_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_FTMT_F2P_TRIGACK_0_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_FTMT_F2P_TRIGACK_1_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_FTMT_F2P_TRIGACK_2_UNCONNECTED : STD_LOGIC;
@@ -3515,16 +5470,6 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   signal NLW_inst_SDIO1_CMD_O_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_CMD_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SDIO1_LED_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_MISO_O_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_MISO_T_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_MOSI_O_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_MOSI_T_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_SCLK_O_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_SCLK_T_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_SS1_O_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_SS2_O_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_SS_O_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_SPI0_SS_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SPI1_MISO_O_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SPI1_MISO_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_SPI1_MOSI_O_UNCONNECTED : STD_LOGIC;
@@ -3586,9 +5531,6 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   signal NLW_inst_S_AXI_HP3_WREADY_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TRACE_CLK_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TRACE_CTL_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -3598,7 +5540,6 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   signal NLW_inst_UART1_DTRN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_RTSN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_TX_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_WDT_RST_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_DMA0_DATYPE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -3690,8 +5631,7 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   signal NLW_inst_S_AXI_HP3_RRESP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_S_AXI_HP3_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_inst_S_AXI_HP3_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_inst_TRACE_DATA_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_inst_TRACE_DATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_inst_USB1_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_DM_WIDTH : integer;
   attribute C_DM_WIDTH of inst : label is 4;
@@ -3712,11 +5652,11 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   attribute C_FCLK_CLK0_BUF : string;
   attribute C_FCLK_CLK0_BUF of inst : label is "TRUE";
   attribute C_FCLK_CLK1_BUF : string;
-  attribute C_FCLK_CLK1_BUF of inst : label is "FALSE";
+  attribute C_FCLK_CLK1_BUF of inst : label is "TRUE";
   attribute C_FCLK_CLK2_BUF : string;
-  attribute C_FCLK_CLK2_BUF of inst : label is "FALSE";
+  attribute C_FCLK_CLK2_BUF of inst : label is "TRUE";
   attribute C_FCLK_CLK3_BUF : string;
-  attribute C_FCLK_CLK3_BUF of inst : label is "FALSE";
+  attribute C_FCLK_CLK3_BUF of inst : label is "TRUE";
   attribute C_GP0_EN_MODIFIABLE_TXN : integer;
   attribute C_GP0_EN_MODIFIABLE_TXN of inst : label is 0;
   attribute C_GP1_EN_MODIFIABLE_TXN : integer;
@@ -3726,7 +5666,7 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   attribute C_INCLUDE_TRACE_BUFFER : integer;
   attribute C_INCLUDE_TRACE_BUFFER of inst : label is 0;
   attribute C_IRQ_F2P_MODE : string;
-  attribute C_IRQ_F2P_MODE of inst : label is "DIRECT";
+  attribute C_IRQ_F2P_MODE of inst : label is "REVERSE";
   attribute C_MIO_PRIMITIVE : integer;
   attribute C_MIO_PRIMITIVE of inst : label is 54;
   attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP : integer;
@@ -3778,7 +5718,7 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   attribute C_TRACE_BUFFER_FIFO_SIZE : integer;
   attribute C_TRACE_BUFFER_FIFO_SIZE of inst : label is 128;
   attribute C_TRACE_INTERNAL_WIDTH : integer;
-  attribute C_TRACE_INTERNAL_WIDTH of inst : label is 2;
+  attribute C_TRACE_INTERNAL_WIDTH of inst : label is 32;
   attribute C_TRACE_PIPELINE_WIDTH : integer;
   attribute C_TRACE_PIPELINE_WIDTH of inst : label is 8;
   attribute C_USE_AXI_NONSECURE : integer;
@@ -3806,10 +5746,190 @@ architecture STRUCTURE of adc2dac_ram_offset_processing_system7_0_0 is
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of inst : label is "adc2dac_ram_offset_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>";
+  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS25} bidis={1} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={4} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={LVCMOS25} bidis={2} ioBank={Vcco_p1} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS25} bidis={8} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS25} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS25} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={125} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={125} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of inst : label is 0;
 begin
+pullup_DDR_DM_2inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DM(2)
+    );
+pullup_DDR_DM_3inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DM(3)
+    );
+pullup_DDR_DQ_16inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(16)
+    );
+pullup_DDR_DQ_17inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(17)
+    );
+pullup_DDR_DQ_18inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(18)
+    );
+pullup_DDR_DQ_19inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(19)
+    );
+pullup_DDR_DQ_20inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(20)
+    );
+pullup_DDR_DQ_21inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(21)
+    );
+pullup_DDR_DQ_22inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(22)
+    );
+pullup_DDR_DQ_23inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(23)
+    );
+pullup_DDR_DQ_24inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(24)
+    );
+pullup_DDR_DQ_25inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(25)
+    );
+pullup_DDR_DQ_26inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(26)
+    );
+pullup_DDR_DQ_27inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(27)
+    );
+pullup_DDR_DQ_28inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(28)
+    );
+pullup_DDR_DQ_29inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(29)
+    );
+pullup_DDR_DQ_30inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(30)
+    );
+pullup_DDR_DQ_31inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQ(31)
+    );
+pullup_DDR_DQS_2inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQS(2)
+    );
+pullup_DDR_DQS_3inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQS(3)
+    );
+pullup_DDR_DQS_n_2inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQS_n(2)
+    );
+pullup_DDR_DQS_n_3inst: unisim.vcomponents.PULLUP
+    port map (
+      O => DDR_DQS_n(3)
+    );
+pullup_MIO_0inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(0)
+    );
+pullup_MIO_1inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(1)
+    );
+pullup_MIO_9inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(9)
+    );
+pullup_MIO_10inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(10)
+    );
+pullup_MIO_11inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(11)
+    );
+pullup_MIO_12inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(12)
+    );
+pullup_MIO_13inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(13)
+    );
+pullup_MIO_14inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(14)
+    );
+pullup_MIO_15inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(15)
+    );
+pullup_MIO_40inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(40)
+    );
+pullup_MIO_41inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(41)
+    );
+pullup_MIO_42inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(42)
+    );
+pullup_MIO_43inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(43)
+    );
+pullup_MIO_44inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(44)
+    );
+pullup_MIO_45inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(45)
+    );
+pullup_MIO_46inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(46)
+    );
+pullup_MIO_47inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(47)
+    );
+pullup_MIO_48inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(48)
+    );
+pullup_MIO_49inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(49)
+    );
+pullup_MIO_50inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(50)
+    );
+pullup_MIO_51inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(51)
+    );
+pullup_MIO_52inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(52)
+    );
+pullup_MIO_53inst: unisim.vcomponents.PULLUP
+    port map (
+      O => MIO(53)
+    );
 inst: entity work.adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7
      port map (
       CAN0_PHY_RX => '0',
@@ -3929,17 +6049,17 @@ inst: entity work.adc2dac_ram_offset_processing_system7_0_0_processing_system7_v
       EVENT_STANDBYWFE(1 downto 0) => NLW_inst_EVENT_STANDBYWFE_UNCONNECTED(1 downto 0),
       EVENT_STANDBYWFI(1 downto 0) => NLW_inst_EVENT_STANDBYWFI_UNCONNECTED(1 downto 0),
       FCLK_CLK0 => FCLK_CLK0,
-      FCLK_CLK1 => NLW_inst_FCLK_CLK1_UNCONNECTED,
-      FCLK_CLK2 => NLW_inst_FCLK_CLK2_UNCONNECTED,
-      FCLK_CLK3 => NLW_inst_FCLK_CLK3_UNCONNECTED,
+      FCLK_CLK1 => FCLK_CLK1,
+      FCLK_CLK2 => FCLK_CLK2,
+      FCLK_CLK3 => FCLK_CLK3,
       FCLK_CLKTRIG0_N => '0',
       FCLK_CLKTRIG1_N => '0',
       FCLK_CLKTRIG2_N => '0',
       FCLK_CLKTRIG3_N => '0',
       FCLK_RESET0_N => FCLK_RESET0_N,
-      FCLK_RESET1_N => NLW_inst_FCLK_RESET1_N_UNCONNECTED,
-      FCLK_RESET2_N => NLW_inst_FCLK_RESET2_N_UNCONNECTED,
-      FCLK_RESET3_N => NLW_inst_FCLK_RESET3_N_UNCONNECTED,
+      FCLK_RESET1_N => FCLK_RESET1_N,
+      FCLK_RESET2_N => FCLK_RESET2_N,
+      FCLK_RESET3_N => FCLK_RESET3_N,
       FPGA_IDLE_N => '0',
       FTMD_TRACEIN_ATID(3 downto 0) => B"0000",
       FTMD_TRACEIN_CLK => '0',
@@ -4122,20 +6242,20 @@ inst: entity work.adc2dac_ram_offset_processing_system7_0_0_processing_system7_v
       SDIO1_DATA_T(3 downto 0) => NLW_inst_SDIO1_DATA_T_UNCONNECTED(3 downto 0),
       SDIO1_LED => NLW_inst_SDIO1_LED_UNCONNECTED,
       SDIO1_WP => '0',
-      SPI0_MISO_I => '0',
-      SPI0_MISO_O => NLW_inst_SPI0_MISO_O_UNCONNECTED,
-      SPI0_MISO_T => NLW_inst_SPI0_MISO_T_UNCONNECTED,
-      SPI0_MOSI_I => '0',
-      SPI0_MOSI_O => NLW_inst_SPI0_MOSI_O_UNCONNECTED,
-      SPI0_MOSI_T => NLW_inst_SPI0_MOSI_T_UNCONNECTED,
-      SPI0_SCLK_I => '0',
-      SPI0_SCLK_O => NLW_inst_SPI0_SCLK_O_UNCONNECTED,
-      SPI0_SCLK_T => NLW_inst_SPI0_SCLK_T_UNCONNECTED,
-      SPI0_SS1_O => NLW_inst_SPI0_SS1_O_UNCONNECTED,
-      SPI0_SS2_O => NLW_inst_SPI0_SS2_O_UNCONNECTED,
-      SPI0_SS_I => '0',
-      SPI0_SS_O => NLW_inst_SPI0_SS_O_UNCONNECTED,
-      SPI0_SS_T => NLW_inst_SPI0_SS_T_UNCONNECTED,
+      SPI0_MISO_I => SPI0_MISO_I,
+      SPI0_MISO_O => SPI0_MISO_O,
+      SPI0_MISO_T => SPI0_MISO_T,
+      SPI0_MOSI_I => SPI0_MOSI_I,
+      SPI0_MOSI_O => SPI0_MOSI_O,
+      SPI0_MOSI_T => SPI0_MOSI_T,
+      SPI0_SCLK_I => SPI0_SCLK_I,
+      SPI0_SCLK_O => SPI0_SCLK_O,
+      SPI0_SCLK_T => SPI0_SCLK_T,
+      SPI0_SS1_O => SPI0_SS1_O,
+      SPI0_SS2_O => SPI0_SS2_O,
+      SPI0_SS_I => SPI0_SS_I,
+      SPI0_SS_O => SPI0_SS_O,
+      SPI0_SS_T => SPI0_SS_T,
       SPI1_MISO_I => '0',
       SPI1_MISO_O => NLW_inst_SPI1_MISO_O_UNCONNECTED,
       SPI1_MISO_T => NLW_inst_SPI1_MISO_T_UNCONNECTED,
@@ -4460,13 +6580,13 @@ inst: entity work.adc2dac_ram_offset_processing_system7_0_0_processing_system7_v
       TRACE_CLK => '0',
       TRACE_CLK_OUT => NLW_inst_TRACE_CLK_OUT_UNCONNECTED,
       TRACE_CTL => NLW_inst_TRACE_CTL_UNCONNECTED,
-      TRACE_DATA(1 downto 0) => NLW_inst_TRACE_DATA_UNCONNECTED(1 downto 0),
+      TRACE_DATA(31 downto 0) => NLW_inst_TRACE_DATA_UNCONNECTED(31 downto 0),
       TTC0_CLK0_IN => '0',
       TTC0_CLK1_IN => '0',
       TTC0_CLK2_IN => '0',
-      TTC0_WAVE0_OUT => NLW_inst_TTC0_WAVE0_OUT_UNCONNECTED,
-      TTC0_WAVE1_OUT => NLW_inst_TTC0_WAVE1_OUT_UNCONNECTED,
-      TTC0_WAVE2_OUT => NLW_inst_TTC0_WAVE2_OUT_UNCONNECTED,
+      TTC0_WAVE0_OUT => TTC0_WAVE0_OUT,
+      TTC0_WAVE1_OUT => TTC0_WAVE1_OUT,
+      TTC0_WAVE2_OUT => TTC0_WAVE2_OUT,
       TTC1_CLK0_IN => '0',
       TTC1_CLK1_IN => '0',
       TTC1_CLK2_IN => '0',
@@ -4489,9 +6609,9 @@ inst: entity work.adc2dac_ram_offset_processing_system7_0_0_processing_system7_v
       UART1_RTSN => NLW_inst_UART1_RTSN_UNCONNECTED,
       UART1_RX => '1',
       UART1_TX => NLW_inst_UART1_TX_UNCONNECTED,
-      USB0_PORT_INDCTL(1 downto 0) => NLW_inst_USB0_PORT_INDCTL_UNCONNECTED(1 downto 0),
-      USB0_VBUS_PWRFAULT => '0',
-      USB0_VBUS_PWRSELECT => NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED,
+      USB0_PORT_INDCTL(1 downto 0) => USB0_PORT_INDCTL(1 downto 0),
+      USB0_VBUS_PWRFAULT => USB0_VBUS_PWRFAULT,
+      USB0_VBUS_PWRSELECT => USB0_VBUS_PWRSELECT,
       USB1_PORT_INDCTL(1 downto 0) => NLW_inst_USB1_PORT_INDCTL_UNCONNECTED(1 downto 0),
       USB1_VBUS_PWRFAULT => '0',
       USB1_VBUS_PWRSELECT => NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED,

@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="double_pid_vco_wrapper" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1492766062"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1492766062"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1492766062"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1493107151"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1493107151"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1493107151"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/double_pid_vco_wrapper_ad9767_0_0/double_pid_vco_wrapper_ad9767_0_0.xci" Type="IP">
         <Instance HierarchyPath="ad9767_0"/>
@@ -23,7 +23,6 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/double_pid_vco_wrapper_axi_interconnect_0_0/double_pid_vco_wrapper_axi_interconnect_0_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_interconnect_0"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

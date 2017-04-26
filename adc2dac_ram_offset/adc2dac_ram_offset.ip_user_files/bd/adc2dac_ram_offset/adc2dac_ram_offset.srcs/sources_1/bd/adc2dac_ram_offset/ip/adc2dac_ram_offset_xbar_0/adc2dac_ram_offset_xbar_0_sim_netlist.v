@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Feb  9 10:20:31 2017
+// Date        : Thu Feb  9 10:20:30 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
-// Command     : write_verilog -force -mode funcsim
-//               /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_xbar_0/adc2dac_ram_offset_xbar_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top adc2dac_ram_offset_xbar_0 -prefix
+//               adc2dac_ram_offset_xbar_0_ adc2dac_ram_offset_xbar_0_sim_netlist.v
 // Design      : adc2dac_ram_offset_xbar_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -305,7 +305,6 @@ module adc2dac_ram_offset_xbar_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_12_addr_arbiter_sasd" *) 
 module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_addr_arbiter_sasd
    (aa_grant_any,
     m_valid_i,
@@ -1447,13 +1446,13 @@ endmodule
 (* C_NUM_MASTER_SLOTS = "3" *) (* C_NUM_SLAVE_SLOTS = "1" *) (* C_R_REGISTER = "1" *) 
 (* C_S_AXI_ARB_PRIORITY = "0" *) (* C_S_AXI_BASE_ID = "0" *) (* C_S_AXI_READ_ACCEPTANCE = "1" *) 
 (* C_S_AXI_SINGLE_THREAD = "1" *) (* C_S_AXI_THREAD_ID_WIDTH = "0" *) (* C_S_AXI_WRITE_ACCEPTANCE = "1" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_crossbar_v2_1_12_axi_crossbar" *) (* P_ADDR_DECODE = "1" *) 
-(* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
-(* P_AXILITE_SIZE = "3'b010" *) (* P_FAMILY = "zynq" *) (* P_INCR = "2'b01" *) 
-(* P_LEN = "8" *) (* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
-(* P_M_AXI_SUPPORTS_READ = "3'b111" *) (* P_M_AXI_SUPPORTS_WRITE = "3'b111" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) 
-(* P_RANGE_CHECK = "1" *) (* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
-(* P_S_AXI_SUPPORTS_READ = "1'b1" *) (* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* P_ADDR_DECODE = "1" *) (* P_AXI3 = "1" *) 
+(* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_AXILITE_SIZE = "3'b010" *) 
+(* P_FAMILY = "zynq" *) (* P_INCR = "2'b01" *) (* P_LEN = "8" *) 
+(* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) (* P_M_AXI_SUPPORTS_READ = "3'b111" *) 
+(* P_M_AXI_SUPPORTS_WRITE = "3'b111" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) (* P_RANGE_CHECK = "1" *) 
+(* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_SUPPORTS_READ = "1'b1" *) 
+(* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
 module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_axi_crossbar
    (aclk,
     aresetn,
@@ -1918,7 +1917,6 @@ module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_axi_crossbar
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_12_crossbar_sasd" *) 
 module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_crossbar_sasd
    (Q,
     \s_axi_rdata[31] ,
@@ -2256,7 +2254,6 @@ module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_crossbar_sasd
         .m_ready_d0(m_ready_d0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_12_decerr_slave" *) 
 module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_decerr_slave
    (mi_bvalid,
     mi_wready,
@@ -2443,7 +2440,6 @@ module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_decerr_slave
         .O(\m_ready_d_reg[0] ));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_12_splitter" *) 
 module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_splitter
    (m_ready_d,
     aresetn_d,
@@ -2591,7 +2587,6 @@ module adc2dac_ram_offset_xbar_0_axi_crossbar_v2_1_12_splitter__parameterized0
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_11_axic_register_slice" *) 
 module adc2dac_ram_offset_xbar_0_axi_register_slice_v2_1_11_axic_register_slice
    (sr_rvalid,
     aa_rready,

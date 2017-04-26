@@ -1237,9 +1237,9 @@ preplace inst ad9767_0 -pg 1 -lvl 6 -y 1590 -defaultsOSRD
 preplace inst pid_sign -pg 1 -lvl 3 -y 780 -defaultsOSRD
 preplace inst pid_ki -pg 1 -lvl 3 -y 120 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 910 -defaultsOSRD
+preplace inst ltc2145_0 -pg 1 -lvl 5 -y 1750 -defaultsOSRD
 preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 4 -y 1200 -defaultsOSRD
 preplace inst pid_rst_int -pg 1 -lvl 3 -y 1020 -defaultsOSRD
-preplace inst ltc2145_0 -pg 1 -lvl 5 -y 1750 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 800 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 1 6 450J 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
 preplace netloc add_const_4_data_o 1 3 1 1230
@@ -1250,29 +1250,29 @@ preplace netloc ltc2145_0_data_a_o 1 2 4 890 1680 1220J 1570 NJ 1570 1890
 preplace netloc ltc2145_0_adc_cdcs 1 5 2 NJ 1800 NJ
 preplace netloc add_const_1_data_out 1 5 1 1950
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440
-preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 4 2 1550 1600 NJ
+preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 4 2 1530 1600 NJ
 preplace netloc axi_interconnect_0_M02_AXI 1 2 3 770 1620 1170J 1430 NJ
-preplace netloc add_const_5_data_o 1 3 1 1180
+preplace netloc add_const_5_data_o 1 3 1 1170
 preplace netloc ltc2145_0_data_a_rst_o 1 2 4 880 1660 1210J 1580 NJ 1580 1900
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 600 430
 preplace netloc adc_clk_n_i_1 1 0 4 NJ 1690 NJ 1690 NJ 1690 1230J
-preplace netloc adc_data_b_i_1 1 0 5 NJ 1800 NJ 1800 NJ 1800 NJ 1800 1590J
+preplace netloc adc_data_b_i_1 1 0 5 NJ 1800 NJ 1800 NJ 1800 NJ 1800 1570J
 preplace netloc axi_interconnect_0_M07_AXI 1 2 1 790
 preplace netloc add_const_6_data_o 1 3 1 1190
-preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 4 2 1590 1630 1930J
-preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 4 2 1570 1620 NJ
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 4 480 1370 NJ 1370 NJ 1370 1580J
+preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 4 2 1570 1630 1930J
+preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 4 2 1550 1620 NJ
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 4 480 1370 NJ 1370 NJ 1370 1560J
 preplace netloc axi_interconnect_0_M04_AXI 1 2 1 760
 preplace netloc xlconstant_0_dout 1 2 1 780
 preplace netloc processing_system7_0_FIXED_IO 1 1 6 460J 650 860J 900 NJ 900 NJ 900 NJ 900 NJ
-preplace netloc red_pitaya_pidv3_0_data_out 1 4 1 1590
-preplace netloc add_const_7_data_o 1 3 1 1170
+preplace netloc red_pitaya_pidv3_0_data_out 1 4 1 1570
+preplace netloc add_const_7_data_o 1 3 1 1180
 preplace netloc axi_interconnect_0_M05_AXI 1 2 1 800
 preplace netloc axi_interconnect_0_M00_AXI 1 2 1 810
 preplace netloc add_const_0_data_out 1 3 1 1160
 preplace netloc ltc2145_0_data_b 1 5 1 1940
 preplace netloc ltc2145_0_data_a_en_o 1 2 4 870 1640 1200J 1550 NJ 1550 1910
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 4 440 1570 830 1700 1200 1790 1560
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 4 440 1570 830 1700 1200 1790 1540
 preplace netloc ad9767_0_dac_clk_o 1 6 1 NJ
 preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 1 470
 preplace netloc axi_interconnect_0_M01_AXI 1 2 1 810
@@ -1280,14 +1280,14 @@ preplace netloc add_const_3_data_o 1 3 1 1220
 preplace netloc add_const_2_data_o 1 3 1 1210
 preplace netloc ltc2145_0_data_a_clk_o 1 2 4 900 1630 1180J 1540 NJ 1540 1920
 preplace netloc ad9767_0_dac_sel_o 1 6 1 NJ
-preplace netloc adc_data_a_i_1 1 0 5 NJ 1780 NJ 1780 NJ 1780 NJ 1780 1590J
-preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 4 1 1540
+preplace netloc adc_data_a_i_1 1 0 5 NJ 1780 NJ 1780 NJ 1780 NJ 1780 1570J
+preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 4 1 1520
 preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 30 1550 460 1550 820 1650 1190J 1450 N
 preplace netloc axi_interconnect_0_M06_AXI 1 2 1 850
 preplace netloc axi_interconnect_0_M03_AXI 1 2 1 800
 preplace netloc adc_clk_p_i_1 1 0 4 NJ 1670 NJ 1670 NJ 1670 1230J
 preplace netloc ad9767_0_dac_dat_o 1 6 1 NJ
-preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 4 2 1540 1590 1950J
+preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 4 2 1520 1590 1950J
 levelinfo -pg 1 0 230 620 1030 1390 1740 2080 2230 -top 0 -bot 1870
 ",
 }

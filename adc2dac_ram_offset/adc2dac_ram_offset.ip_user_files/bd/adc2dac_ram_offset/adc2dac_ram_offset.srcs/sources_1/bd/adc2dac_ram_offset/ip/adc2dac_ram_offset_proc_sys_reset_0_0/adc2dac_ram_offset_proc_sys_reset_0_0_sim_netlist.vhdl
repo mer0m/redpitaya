@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Feb  9 10:18:09 2017
+-- Date        : Thu Feb  9 10:18:08 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
--- Command     : write_vhdl -force -mode funcsim
---               /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_proc_sys_reset_0_0/adc2dac_ram_offset_proc_sys_reset_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top adc2dac_ram_offset_proc_sys_reset_0_0 -prefix
+--               adc2dac_ram_offset_proc_sys_reset_0_0_ adc2dac_ram_offset_proc_sys_reset_0_0_sim_netlist.vhdl
 -- Design      : adc2dac_ram_offset_proc_sys_reset_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity adc2dac_ram_offset_proc_sys_reset_0_0_cdc_sync is
     p_2_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of adc2dac_ram_offset_proc_sys_reset_0_0_cdc_sync : entity is "cdc_sync";
 end adc2dac_ram_offset_proc_sys_reset_0_0_cdc_sync;
 
 architecture STRUCTURE of adc2dac_ram_offset_proc_sys_reset_0_0_cdc_sync is
@@ -235,8 +233,6 @@ entity adc2dac_ram_offset_proc_sys_reset_0_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of adc2dac_ram_offset_proc_sys_reset_0_0_upcnt_n : entity is "upcnt_n";
 end adc2dac_ram_offset_proc_sys_reset_0_0_upcnt_n;
 
 architecture STRUCTURE of adc2dac_ram_offset_proc_sys_reset_0_0_upcnt_n is
@@ -401,8 +397,6 @@ entity adc2dac_ram_offset_proc_sys_reset_0_0_lpf is
     mb_debug_sys_rst : in STD_LOGIC;
     ext_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of adc2dac_ram_offset_proc_sys_reset_0_0_lpf : entity is "lpf";
 end adc2dac_ram_offset_proc_sys_reset_0_0_lpf;
 
 architecture STRUCTURE of adc2dac_ram_offset_proc_sys_reset_0_0_lpf is
@@ -584,8 +578,6 @@ entity adc2dac_ram_offset_proc_sys_reset_0_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of adc2dac_ram_offset_proc_sys_reset_0_0_sequence_psr : entity is "sequence_psr";
 end adc2dac_ram_offset_proc_sys_reset_0_0_sequence_psr;
 
 architecture STRUCTURE of adc2dac_ram_offset_proc_sys_reset_0_0_sequence_psr is
@@ -924,8 +916,6 @@ entity adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset : entity is "proc_sys_reset";
 end adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset;
 
 architecture STRUCTURE of adc2dac_ram_offset_proc_sys_reset_0_0_proc_sys_reset is

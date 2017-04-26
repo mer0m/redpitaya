@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1492153904">
-  <File Type="PA-TCL" Name="pid_vco_wrapper.tcl"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="pid_vco_wrapper_postplace_pwropt.dcp"/>
-  <File Type="INIT-TIMING" Name="pid_vco_wrapper_timing_summary_init.rpt"/>
-  <File Type="OPT-DCP" Name="pid_vco_wrapper_opt.dcp"/>
-  <File Type="OPT-DRC" Name="pid_vco_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="pid_vco_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="pid_vco_wrapper.hwdef"/>
-  <File Type="OPT-TIMING" Name="pid_vco_wrapper_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="pid_vco_wrapper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="pid_vco_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="pid_vco_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="pid_vco_wrapper_placed.dcp"/>
-  <File Type="PLACE-IO" Name="pid_vco_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="pid_vco_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="pid_vco_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="pid_vco_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="pid_vco_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="pid_vco_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="pid_vco_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="pid_vco_wrapper_timing_summary_placed.rpt"/>
-  <File Type="RDI-RDI" Name="pid_vco_wrapper.vdi"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="pid_vco_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="pid_vco_wrapper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="pid_vco_wrapper_drc_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pid_vco_wrapper_postroute_physopt.dcp"/>
-  <File Type="BG-BIT" Name="pid_vco_wrapper.bit"/>
-  <File Type="ROUTE-DCP" Name="pid_vco_wrapper_routed.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pid_vco_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="BG-BIN" Name="pid_vco_wrapper.bin"/>
-  <File Type="ROUTE-TIMING-PB" Name="pid_vco_wrapper_timing_summary_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pid_vco_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BITSTR-MSK" Name="pid_vco_wrapper.msk"/>
-  <File Type="ROUTE-TIMING-RPX" Name="pid_vco_wrapper_timing_summary_routed.rpx"/>
-  <File Type="BITSTR-RBT" Name="pid_vco_wrapper.rbt"/>
-  <File Type="ROUTE-SIMILARITY" Name="pid_vco_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="BITSTR-NKY" Name="pid_vco_wrapper.nky"/>
-  <File Type="ROUTE-CLK" Name="pid_vco_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pid_vco_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="BG-DRC" Name="pid_vco_wrapper.drc"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="pid_vco_wrapper_routed_bb.dcp"/>
-  <File Type="BITSTR-MMI" Name="pid_vco_wrapper.mmi"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1493111269">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pid_vco_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-DRC" Name="pid_vco_wrapper.drc"/>
   <File Type="BG-BGN" Name="pid_vco_wrapper.bgn"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="pid_vco_wrapper_timing_summary_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="pid_vco_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="pid_vco_wrapper.mmi"/>
   <File Type="BITSTR-BMM" Name="pid_vco_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="pid_vco_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="pid_vco_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="pid_vco_wrapper.msk"/>
+  <File Type="BG-BIN" Name="pid_vco_wrapper.bin"/>
+  <File Type="BG-BIT" Name="pid_vco_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pid_vco_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pid_vco_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pid_vco_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pid_vco_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pid_vco_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="pid_vco_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="pid_vco_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pid_vco_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="pid_vco_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pid_vco_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="pid_vco_wrapper_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="pid_vco_wrapper_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="pid_vco_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="pid_vco_wrapper_power_summary_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pid_vco_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-PWR" Name="pid_vco_wrapper_power_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="pid_vco_wrapper_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pid_vco_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-PB" Name="pid_vco_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pid_vco_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="pid_vco_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="pid_vco_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="pid_vco_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="pid_vco_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pid_vco_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="pid_vco_wrapper_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="pid_vco_wrapper_routed_error.dcp"/>
   <File Type="PHYSOPT-TIMING" Name="pid_vco_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="pid_vco_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pid_vco_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pid_vco_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="pid_vco_wrapper.vdi"/>
+  <File Type="PLACE-TIMING" Name="pid_vco_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pid_vco_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pid_vco_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="pid_vco_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pid_vco_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="pid_vco_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pid_vco_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="pid_vco_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="pid_vco_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="pid_vco_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pid_vco_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="pid_vco_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="pid_vco_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="pid_vco_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pid_vco_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="pid_vco_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="pid_vco_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="pid_vco_wrapper_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pid_vco_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="pid_vco_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/pid_vco_wrapper/pid_vco_wrapper.bd">
@@ -116,31 +116,31 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_kp_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_ltc2145_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_twoInMult_dds_range_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_ampl_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dupplReal_1_to_2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_f0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_nco_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_xlslice_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_range_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_rst_int_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_kd_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dac1_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_range_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_kd_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_rst_int_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dac1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_xlconstant_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_twoInMult_dds_ampl_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_redpitaya_adc_dac_clk_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_ad9767_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_xlconstant_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_ki_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_adc1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_kp_1"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_expanderReal_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_ki_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_adc1_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_range_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_xlslice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_f0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dupplReal_1_to_2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_ampl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_twoInMult_dds_range_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_kp_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_processing_system7_0_0"/>
 </GenRun>

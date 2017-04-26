@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Mar 30 09:07:18 2017
+-- Date        : Tue Apr 25 12:25:17 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/ip/dds_gnuradio_wrapper_nco_counter_0_0/dds_gnuradio_wrapper_nco_counter_0_0_stub.vhdl

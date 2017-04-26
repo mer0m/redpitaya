@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14046 
+INFO: Helper process launched with PID 13052 
 awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1112.266 ; gain = 181.086 ; free physical = 1766 ; free virtual = 12361
+Starting RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1114.270 ; gain = 183.086 ; free physical = 1470 ; free virtual = 12854
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'double_pid_vco_wrapper_dds1_nco_0' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/synth/double_pid_vco_wrapper_dds1_nco_0.vhd:103]
 	Parameter id bound to: 1 - type: integer 
@@ -27,35 +27,46 @@ INFO: [Synth 8-638] synthesizing module 'double_pid_vco_wrapper_dds1_nco_0' [/ho
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter LUT_SIZE bound to: 12 - type: integer 
-INFO: [Synth 8-3491] module 'nco_counter' declared at '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:5' bound to instance 'U0' of component 'nco_counter' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/synth/double_pid_vco_wrapper_dds1_nco_0.vhd:205]
-INFO: [Synth 8-638] synthesizing module 'nco_counter' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:67]
+	Parameter RESET_ACCUM bound to: 0 - type: bool 
+	Parameter DEFAULT_RST_ACCUM_VAL bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'nco_counter' declared at '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter.vhd:5' bound to instance 'U0' of component 'nco_counter' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/synth/double_pid_vco_wrapper_dds1_nco_0.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'nco_counter' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter.vhd:69]
 	Parameter id bound to: 1 - type: integer 
+	Parameter RESET_ACCUM bound to: 0 - type: bool 
+	Parameter DEFAULT_RST_ACCUM_VAL bound to: 25 - type: integer 
 	Parameter DATA_SIZE bound to: 14 - type: integer 
 	Parameter LUT_SIZE bound to: 12 - type: integer 
 	Parameter COUNTER_SIZE bound to: 32 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'nco_counter_logic' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter_logic.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'nco_counter_logic' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_logic.vhd:33]
+	Parameter TEST bound to: 0 - type: bool 
+	Parameter RESET_ACCUM bound to: 0 - type: bool 
 	Parameter LUT_SIZE bound to: 12 - type: integer 
 	Parameter COUNTER_SIZE bound to: 32 - type: integer 
 	Parameter DATA_SIZE bound to: 14 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'nco_counter_cos_rom_a12_d16' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter_cos_rom_a12_d16.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'nco_counter_cos_rom_a12_d16' (1#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter_cos_rom_a12_d16.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'nco_counter_logic' (2#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter_logic.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'wb_nco_counter' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/wb_nco_counter.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'nco_counter_cos_rom_a12_d16' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_cos_rom_a12_d16.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'nco_counter_cos_rom_a12_d16' (1#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_cos_rom_a12_d16.vhd:14]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-constant operand to 'image [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_logic.vhd:220]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-constant operand to 'image [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_logic.vhd:222]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-constant operand to 'image [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_logic.vhd:224]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-constant operand to 'image [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_logic.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'nco_counter_logic' (2#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_logic.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'wb_nco_counter' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/wb_nco_counter.vhd:35]
 	Parameter COUNTER_SIZE bound to: 32 - type: integer 
+	Parameter DEFAULT_RST_ACCUM_VAL bound to: 25 - type: integer 
 	Parameter LUT_SIZE bound to: 12 - type: integer 
 	Parameter id bound to: 1 - type: integer 
 	Parameter wb_size bound to: 32 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/wb_nco_counter.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'wb_nco_counter' (3#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/wb_nco_counter.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'nco_counter_handcomm' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter_handcomm.vhd:88]
+INFO: [Synth 8-226] default block is never used [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/wb_nco_counter.vhd:72]
+INFO: [Synth 8-226] default block is never used [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/wb_nco_counter.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'wb_nco_counter' (3#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/wb_nco_counter.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'nco_counter_handcomm' [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_handcomm.vhd:88]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter INTERNAL_ADDR_WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'nco_counter_handcomm' (4#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter_handcomm.vhd:88]
-WARNING: [Synth 8-3848] Net step_scale_s in module/entity nco_counter does not have driver. [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:79]
-INFO: [Synth 8-256] done synthesizing module 'nco_counter' (5#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'nco_counter_handcomm' (4#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter_handcomm.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'nco_counter' (5#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/5a83/hdl/nco_counter.vhd:69]
 INFO: [Synth 8-256] done synthesizing module 'double_pid_vco_wrapper_dds1_nco_0' (6#1) [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/synth/double_pid_vco_wrapper_dds1_nco_0.vhd:103]
 WARNING: [Synth 8-3331] design nco_counter_handcomm has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design nco_counter_handcomm has unconnected port S_AXI_AWPROT[1]
@@ -68,6 +79,38 @@ WARNING: [Synth 8-3331] design nco_counter_handcomm has unconnected port S_AXI_A
 WARNING: [Synth 8-3331] design nco_counter_handcomm has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design nco_counter_handcomm has unconnected port S_AXI_ARPROT[0]
 WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port cpu_clk_i
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[31]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[30]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[29]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[28]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[27]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[26]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[25]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[24]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[23]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[22]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[21]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[20]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[19]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[18]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[17]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[16]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[15]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[14]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[13]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[12]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[11]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[10]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[9]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[8]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[7]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[6]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[5]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[4]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[3]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[2]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[1]
+WARNING: [Synth 8-3331] design nco_counter_logic has unconnected port max_accum_i[0]
 WARNING: [Synth 8-3331] design nco_counter has unconnected port pinc_en_i
 WARNING: [Synth 8-3331] design nco_counter has unconnected port pinc_rst_i
 WARNING: [Synth 8-3331] design nco_counter has unconnected port pinc_clk_i
@@ -75,7 +118,7 @@ WARNING: [Synth 8-3331] design nco_counter has unconnected port poff_en_i
 WARNING: [Synth 8-3331] design nco_counter has unconnected port poff_rst_i
 WARNING: [Synth 8-3331] design nco_counter has unconnected port poff_clk_i
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1167.734 ; gain = 236.555 ; free physical = 1582 ; free virtual = 12172
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1169.738 ; gain = 238.555 ; free physical = 1283 ; free virtual = 12668
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -84,20 +127,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[11] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[10] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[9] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[8] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[7] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[6] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[5] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[4] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[3] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[2] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[1] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
-WARNING: [Synth 8-3295] tying undriven pin wb_nco_inst:step_scale_i[0] to constant 0 [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ipshared/f688/hdl/nco_counter.vhd:129]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1167.734 ; gain = 236.555 ; free physical = 1574 ; free virtual = 12165
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1169.738 ; gain = 238.555 ; free physical = 1273 ; free virtual = 12658
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -113,26 +144,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1494.863 ; gain = 0.000 ; free physical = 1119 ; free virtual = 11718
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1496.867 ; gain = 0.000 ; free physical = 854 ; free virtual = 12238
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 985 ; free virtual = 11579
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 820 ; free virtual = 12212
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 982 ; free virtual = 11577
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 820 ; free virtual = 12212
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 989 ; free virtual = 11584
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 820 ; free virtual = 12212
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:23 ; elapsed = 00:01:37 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 879 ; free virtual = 11476
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 804 ; free virtual = 12195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -148,12 +179,12 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 6     
+	               32 Bit    Registers := 7     
 	               16 Bit    Registers := 2     
 	               12 Bit    Registers := 3     
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 13    
+	                1 Bit    Registers := 15    
 +---ROMs : 
 	                              ROMs := 2     
 +---Muxes : 
@@ -161,7 +192,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -184,15 +215,15 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 3     
 	               12 Bit    Registers := 3     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
 Module wb_nco_counter 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 4     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
 Module nco_counter_handcomm 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -251,21 +282,21 @@ WARNING: [Synth 8-3332] Sequential element (handle_comm/axi_awaddr_reg[0]) is un
 WARNING: [Synth 8-3332] Sequential element (handle_comm/axi_araddr_reg[1]) is unused and will be removed from module nco_counter.
 WARNING: [Synth 8-3332] Sequential element (handle_comm/axi_araddr_reg[0]) is unused and will be removed from module nco_counter.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:06 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1228 ; free virtual = 11834
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1224 ; free virtual = 12618
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+----------------------------+--------------------------------------+---------------+----------------+
-|Module Name                 | RTL Object                           | Depth x Width | Implemented As | 
-+----------------------------+--------------------------------------+---------------+----------------+
-|nco_counter_cos_rom_a12_d16 | data_a_reg                           | 4096x16       | Block RAM      | 
-|nco_counter_cos_rom_a12_d16 | data_b_reg                           | 4096x16       | Block RAM      | 
-|nco_counter                 | nco_inst1/rom_12.rom_inst/data_a_reg | 4096x16       | Block RAM      | 
-|nco_counter                 | nco_inst1/rom_12.rom_inst/data_b_reg | 4096x16       | Block RAM      | 
-+----------------------------+--------------------------------------+---------------+----------------+
++----------------------------+----------------------------------------+---------------+----------------+
+|Module Name                 | RTL Object                             | Depth x Width | Implemented As | 
++----------------------------+----------------------------------------+---------------+----------------+
+|nco_counter_cos_rom_a12_d16 | data_a_reg                             | 4096x16       | Block RAM      | 
+|nco_counter_cos_rom_a12_d16 | data_b_reg                             | 4096x16       | Block RAM      | 
+|nco_counter                 | nco_inst1/rom_12.rom12_inst/data_a_reg | 4096x16       | Block RAM      | 
+|nco_counter                 | nco_inst1/rom_12.rom12_inst/data_b_reg | 4096x16       | Block RAM      | 
++----------------------------+----------------------------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -283,10 +314,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:13 ; elapsed = 00:02:39 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1272 ; free virtual = 11877
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1166 ; free virtual = 12559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:40 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1268 ; free virtual = 11873
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:39 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1166 ; free virtual = 12559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -297,12 +328,12 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom_inst/data_a_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom_inst/data_a_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom_inst/data_a_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom_inst/data_a_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom12_inst/data_a_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom12_inst/data_a_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom12_inst/data_a_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/nco_inst1/rom_12.rom12_inst/data_a_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:40 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1252 ; free virtual = 11857
+Finished Technology Mapping : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1147 ; free virtual = 12539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,7 +357,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1189 ; free virtual = 11800
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1146 ; free virtual = 12540
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -339,7 +370,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1187 ; free virtual = 11799
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1146 ; free virtual = 12540
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -351,25 +382,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1184 ; free virtual = 11796
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1145 ; free virtual = 12539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1207 ; free virtual = 11819
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1145 ; free virtual = 12539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1208 ; free virtual = 11819
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1145 ; free virtual = 12539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1208 ; free virtual = 11819
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1145 ; free virtual = 12539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -379,8 +410,8 @@ Static Shift Register Report:
 +------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name | RTL Name                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|nco_counter | nco_inst1/cpt_off_s_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
 |nco_counter | nco_inst1/cpt_inc_s_reg[31] | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|nco_counter | nco_inst1/cpt_off_s_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
 +------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -402,7 +433,7 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |CARRY4     |    15|
 |2     |LUT1       |     3|
-|3     |LUT2       |    58|
+|3     |LUT2       |    59|
 |4     |LUT3       |    47|
 |5     |LUT4       |    34|
 |6     |LUT5       |     8|
@@ -410,27 +441,27 @@ Report Cell Usage:
 |8     |RAMB36E1   |     1|
 |9     |RAMB36E1_1 |     1|
 |10    |SRL16E     |    44|
-|11    |FDRE       |   171|
-|12    |FDSE       |    20|
+|11    |FDRE       |   172|
+|12    |FDSE       |    21|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+------------------------+----------------------------+------+
-|      |Instance                |Module                      |Cells |
-+------+------------------------+----------------------------+------+
-|1     |top                     |                            |   407|
-|2     |  U0                    |nco_counter                 |   407|
-|3     |    handle_comm         |nco_counter_handcomm        |    28|
-|4     |    nco_inst1           |nco_counter_logic           |   201|
-|5     |      \rom_12.rom_inst  |nco_counter_cos_rom_a12_d16 |    27|
-|6     |    wb_nco_inst         |wb_nco_counter              |   174|
-+------+------------------------+----------------------------+------+
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |   410|
+|2     |  U0                      |nco_counter                 |   410|
+|3     |    handle_comm           |nco_counter_handcomm        |    28|
+|4     |    nco_inst1             |nco_counter_logic           |   204|
+|5     |      \rom_12.rom12_inst  |nco_counter_cos_rom_a12_d16 |    27|
+|6     |    wb_nco_inst           |wb_nco_counter              |   174|
++------+--------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.863 ; gain = 563.684 ; free physical = 1208 ; free virtual = 11819
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1496.867 ; gain = 565.684 ; free physical = 1145 ; free virtual = 12539
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:02:07 . Memory (MB): peak = 1494.863 ; gain = 124.465 ; free physical = 1206 ; free virtual = 11817
-Synthesis Optimization Complete : Time (s): cpu = 00:02:15 ; elapsed = 00:02:42 . Memory (MB): peak = 1494.871 ; gain = 563.691 ; free physical = 1208 ; free virtual = 11818
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1496.867 ; gain = 124.465 ; free physical = 1138 ; free virtual = 12532
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 1496.875 ; gain = 565.691 ; free physical = 1140 ; free virtual = 12534
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -445,11 +476,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 53 Warnings, 1 Critical Warnings and 0 Errors encountered.
+34 Infos, 76 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:27 . Memory (MB): peak = 1494.871 ; gain = 464.188 ; free physical = 1164 ; free virtual = 11769
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1496.875 ; gain = 464.188 ; free physical = 1084 ; free virtual = 12477
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/double_pid_vco_wrapper_dds1_nco_0_synth_1/double_pid_vco_wrapper_dds1_nco_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 5 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/double_pid_vco_wrapper_dds1_nco_0_synth_1/double_pid_vco_wrapper_dds1_nco_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1518.875 ; gain = 0.000 ; free physical = 1123 ; free virtual = 11736
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 21 11:20:00 2017...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1520.879 ; gain = 0.000 ; free physical = 1085 ; free virtual = 12479
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 10:01:24 2017...

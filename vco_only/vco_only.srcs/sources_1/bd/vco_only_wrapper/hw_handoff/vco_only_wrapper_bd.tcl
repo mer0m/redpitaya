@@ -216,6 +216,11 @@ CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {10} \
  ] $dds_nco
 
+  set_property -dict [ list \
+CONFIG.NUM_READ_OUTSTANDING {1} \
+CONFIG.NUM_WRITE_OUTSTANDING {1} \
+ ] [get_bd_intf_pins /dds_nco/s00_axi]
+
   # Create instance: dds_offset, and set properties
   set dds_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds_offset ]
   set_property -dict [ list \
@@ -1258,8 +1263,8 @@ preplace inst ad9767_0 -pg 1 -lvl 7 -y 1080 -defaultsOSRD
 preplace inst expanderReal_0 -pg 1 -lvl 6 -y 150 -defaultsOSRD
 preplace inst dupplReal_1_to_2_0 -pg 1 -lvl 5 -y 320 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
-preplace inst twoInMult_dds_range -pg 1 -lvl 5 -y 100 -defaultsOSRD
 preplace inst ltc2145_0 -pg 1 -lvl 3 -y 990 -defaultsOSRD
+preplace inst twoInMult_dds_range -pg 1 -lvl 5 -y 100 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 2 -y 1010 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 2 7 770J 900 1100J 910 NJ 910 NJ 910 NJ 910 NJ 910 2840J
 preplace netloc axi_interconnect_0_M09_AXI 1 3 5 1130 640 NJ 640 NJ 640 NJ 640 2500J
@@ -1291,8 +1296,8 @@ preplace netloc dupplReal_1_to_2_0_data1_rst_o 1 5 1 1830
 preplace netloc dupplReal_1_to_2_0_data1_en_o 1 3 3 1180 20 1440 210 1760
 preplace netloc dupplReal_1_to_2_0_data1_o 1 4 2 1470 190 1770
 preplace netloc xlconstant_0_dout 1 3 1 1100
-preplace netloc dds_range_data_out 1 4 1 N
 preplace netloc processing_system7_0_FIXED_IO 1 2 7 NJ 880 NJ 880 NJ 880 1830J 750 2140J 900 NJ 900 NJ
+preplace netloc dds_range_data_out 1 4 1 N
 preplace netloc adc1_offset_data_out 1 4 1 N
 preplace netloc ltc2145_0_data_a 1 3 1 1160
 preplace netloc twoInMult_0_data_en_o 1 5 1 1790

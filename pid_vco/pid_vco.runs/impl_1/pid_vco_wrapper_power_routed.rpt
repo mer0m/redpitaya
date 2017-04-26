@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Apr 14 09:15:20 2017
+| Date             : Tue Apr 25 11:11:57 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file pid_vco_wrapper_power_routed.rpt -pb pid_vco_wrapper_power_summary_routed.pb -rpx pid_vco_wrapper_power_routed.rpx
 | Design           : pid_vco_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.734 |
-| Dynamic (W)              | 1.597 |
-| Device Static (W)        | 0.137 |
+| Total On-Chip Power (W)  | 1.933 |
+| Dynamic (W)              | 1.792 |
+| Device Static (W)        | 0.141 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 65.0  |
-| Junction Temperature (C) | 45.0  |
+| Max Ambient (C)          | 62.7  |
+| Junction Temperature (C) | 47.3  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,21 +50,21 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.015 |       11 |       --- |             --- |
-| Slice Logic             |     0.003 |     3850 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1267 |     17600 |            7.20 |
+| Slice Logic             |     0.003 |     3853 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     1268 |     17600 |            7.20 |
 |   CARRY4                |    <0.001 |       65 |      4400 |            1.48 |
-|   Register              |    <0.001 |     1797 |     35200 |            5.11 |
+|   Register              |    <0.001 |     1799 |     35200 |            5.11 |
 |   LUT as Shift Register |    <0.001 |       86 |      6000 |            1.43 |
 |   F7/F8 Muxes           |    <0.001 |       75 |     17600 |            0.43 |
 |   Others                |     0.000 |      268 |       --- |             --- |
-| Signals                 |     0.005 |     2822 |       --- |             --- |
+| Signals                 |     0.006 |     2825 |       --- |             --- |
 | Block RAM               |     0.005 |        2 |        60 |            3.33 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
-| DSPs                    |     0.004 |        4 |        80 |            5.00 |
-| I/O                     |     0.185 |       35 |       100 |           35.00 |
+| DSPs                    |     0.005 |        4 |        80 |            5.00 |
+| I/O                     |     0.378 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
-| Static Power            |     0.137 |          |           |                 |
-| Total                   |     1.734 |          |           |                 |
+| Static Power            |     0.141 |          |           |                 |
+| Total                   |     1.933 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.048 |       0.041 |      0.007 |
-| Vccaux    |       1.800 |     0.068 |       0.056 |      0.012 |
-| Vcco33    |       3.300 |     0.055 |       0.054 |      0.001 |
+| Vccint    |       1.000 |     0.052 |       0.044 |      0.008 |
+| Vccaux    |       1.800 |     0.071 |       0.059 |      0.012 |
+| Vcco33    |       3.300 |     0.111 |       0.110 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
 | Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
@@ -87,7 +87,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.694 |       0.663 |      0.031 |
+| Vccpint   |       1.000 |     0.696 |       0.663 |      0.033 |
 | Vccpaux   |       1.800 |     0.038 |       0.027 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |
@@ -155,9 +155,9 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| pid_vco_wrapper                                |     1.597 |
-|   ad9767_0                                     |     0.005 |
-|     inst                                       |     0.005 |
+| pid_vco_wrapper                                |     1.792 |
+|   ad9767_0                                     |     0.007 |
+|     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
 |     U0                                         |    <0.001 |
 |       add_constHandComm                        |    <0.001 |
@@ -207,8 +207,8 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   dds_f0                                       |     0.001 |
-|     U0                                         |     0.001 |
+|   dds_f0                                       |     0.002 |
+|     U0                                         |     0.002 |
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |     0.001 |
 |       wb_add_const_inst                        |    <0.001 |
@@ -216,7 +216,7 @@ Table of Contents
 |     U0                                         |     0.008 |
 |       handle_comm                              |    <0.001 |
 |       nco_inst1                                |     0.007 |
-|         rom_12.rom_inst                        |     0.005 |
+|         rom_12.rom12_inst                      |     0.005 |
 |       wb_nco_inst                              |    <0.001 |
 |   dds_offset                                   |    <0.001 |
 |     U0                                         |    <0.001 |
@@ -274,8 +274,8 @@ Table of Contents
 |       red_pitaya_pidv3Logic                    |     0.005 |
 |   redpitaya_adc_dac_clk_0                      |     0.104 |
 |     inst                                       |     0.104 |
-|   twoInMult_dds_ampl                           |    <0.001 |
-|     U0                                         |    <0.001 |
+|   twoInMult_dds_ampl                           |     0.001 |
+|     U0                                         |     0.001 |
 |   twoInMult_dds_range                          |     0.001 |
 |     U0                                         |     0.001 |
 |   xlconstant_0                                 |     0.000 |

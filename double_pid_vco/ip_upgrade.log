@@ -1,0 +1,58 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Apr 25 09:58:32 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_pid_vco_wrapper_ltc2145_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of double_pid_vco_wrapper_ltc2145_0_0 (gwbs:user:ltc2145:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Apr 25 09:58:32 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_pid_vco_wrapper_dds_nco_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of double_pid_vco_wrapper_dds_nco_0 (user.org:user:nco_counter:1.0) from (Rev. 15) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Tue Apr 25 09:58:31 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_pid_vco_wrapper_dds1_nco_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of double_pid_vco_wrapper_dds1_nco_0 (user.org:user:nco_counter:1.0) from (Rev. 15) to (Rev. 18)
+

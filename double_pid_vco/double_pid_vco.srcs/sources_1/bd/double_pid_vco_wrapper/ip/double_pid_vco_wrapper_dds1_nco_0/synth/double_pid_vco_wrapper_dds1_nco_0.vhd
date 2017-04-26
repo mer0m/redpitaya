@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:nco_counter:1.0
--- IP Revision: 15
+-- IP Revision: 18
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -110,7 +110,9 @@ ARCHITECTURE double_pid_vco_wrapper_dds1_nco_0_arch OF double_pid_vco_wrapper_dd
       COUNTER_SIZE : INTEGER;
       C_S00_AXI_DATA_WIDTH : INTEGER;
       C_S00_AXI_ADDR_WIDTH : INTEGER;
-      LUT_SIZE : INTEGER
+      LUT_SIZE : INTEGER;
+      RESET_ACCUM : BOOLEAN;
+      DEFAULT_RST_ACCUM_VAL : INTEGER
     );
     PORT (
       ref_clk_i : IN STD_LOGIC;
@@ -209,7 +211,9 @@ BEGIN
       COUNTER_SIZE => 32,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 4,
-      LUT_SIZE => 12
+      LUT_SIZE => 12,
+      RESET_ACCUM => false,
+      DEFAULT_RST_ACCUM_VAL => 25
     )
     PORT MAP (
       ref_clk_i => ref_clk_i,

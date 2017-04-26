@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 30 17:02:01 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 25 11:56:43 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:redpitaya:part0:1.0" DEVICE="7z010" NAME="pid_only_wrapper" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -2299,6 +2299,7 @@
     <MODULE FULLNAME="/ltc2145_0" HWVERSION="1.0" INSTANCE="ltc2145_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ltc2145" VLNV="gwbs:user:ltc2145:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
+        <PARAMETER NAME="CLOCK_DUTY_CYCLE_STABILIZER_EN" VALUE="false"/>
         <PARAMETER NAME="Component_Name" VALUE="pid_only_wrapper_ltc2145_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -3795,7 +3796,6 @@
         <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="processing_rst_i"/>
             <CONNECTION INSTANCE="redpitaya_adc_dac_clk_0" PORT="adc_rst_i"/>
             <CONNECTION INSTANCE="adc1_offset" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dac1_offset" PORT="s00_axi_reset"/>
@@ -3805,12 +3805,13 @@
             <CONNECTION INSTANCE="pid_kd" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="pid_sign" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="pid_rst_int" PORT="s00_axi_reset"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="processing_rst_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_interconnect_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="resetn"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="ARESETN"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="resetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">

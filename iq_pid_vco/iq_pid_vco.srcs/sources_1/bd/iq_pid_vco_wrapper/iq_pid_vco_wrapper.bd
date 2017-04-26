@@ -137,7 +137,35 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>adc_cdcs</spirit:name>
+          <spirit:name>dac_clk_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_dat_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>13</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_rst_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_sel_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_wrt_o</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -175,35 +203,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>dac_clk_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_dat_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>13</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_rst_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_sel_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_wrt_o</spirit:name>
+          <spirit:name>adc_cdcs</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -273,16 +273,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>dds_nco</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">iq_pid_vco_wrapper_dds_nco_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>dds_offset</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -317,13 +307,6 @@
           <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">28</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">32</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>ltc2145_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">iq_pid_vco_wrapper_ltc2145_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -1037,16 +1020,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>demod_nco</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">iq_pid_vco_wrapper_dds_nco_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>demod_fir</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="fir16RealbitsOneInTwoMult_v1_0" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -1067,6 +1040,33 @@
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">13</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">26</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">28</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dds_nco</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">iq_pid_vco_wrapper_dds_nco_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>demod_nco</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">iq_pid_vco_wrapper_dds_nco_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ltc2145_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">iq_pid_vco_wrapper_ltc2145_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -1342,8 +1342,8 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_interconnect_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="interconnect_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>
@@ -1368,15 +1368,12 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_reset</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_reset"/>
-        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="redpitaya_adc_dac_clk_0" spirit:portRef="adc_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dac2_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds_ampl" spirit:portRef="s00_axi_reset"/>
-        <spirit:internalPortReference spirit:componentRef="dds_nco" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds_offset" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds_ampl" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="dds_nco" spirit:portRef="ref_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds_f0" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="adc1_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds_range" spirit:portRef="s00_axi_reset"/>
@@ -1387,9 +1384,12 @@
         <spirit:internalPortReference spirit:componentRef="pid_rst_int" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid_sign" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid_setpoint" spirit:portRef="s00_axi_reset"/>
-        <spirit:internalPortReference spirit:componentRef="demod_nco" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="demod_fir" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="dds_nco" spirit:portRef="ref_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="dds_nco" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="demod_nco" spirit:portRef="ref_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="demod_nco" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
@@ -1398,7 +1398,6 @@
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="dac2_offset" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds_ampl" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="dds_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds_offset" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds_f0" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="adc1_offset" spirit:portRef="s00_axi_aclk"/>
@@ -1409,6 +1408,7 @@
         <spirit:internalPortReference spirit:componentRef="pid_rst_int" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="pid_sign" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="pid_setpoint" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="demod_fir" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ACLK"/>
@@ -1424,10 +1424,10 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M10_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M11_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M12_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="demod_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M13_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="demod_fir" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M14_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="dds_nco" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="demod_nco" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>

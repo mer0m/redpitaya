@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu Apr 20 10:59:15 2017
+| Date         : Tue Apr 25 09:15:56 2017
 | Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command      : report_utilization -file iq_demod_only_wrapper_nco_counter_0_0_utilization_synth.rpt -pb iq_demod_only_wrapper_nco_counter_0_0_utilization_synth.pb
 | Design       : iq_demod_only_wrapper_nco_counter_0_0
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  174 |     0 |     17600 |  0.99 |
-|   LUT as Logic             |  130 |     0 |     17600 |  0.74 |
+| Slice LUTs*                |  175 |     0 |     17600 |  0.99 |
+|   LUT as Logic             |  131 |     0 |     17600 |  0.74 |
 |   LUT as Memory            |   44 |     0 |      6000 |  0.73 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   44 |     0 |           |       |
-| Slice Registers            |  191 |     0 |     35200 |  0.54 |
-|   Register as Flip Flop    |  191 |     0 |     35200 |  0.54 |
+| Slice Registers            |  193 |     0 |     35200 |  0.55 |
+|   Register as Flip Flop    |  193 |     0 |     35200 |  0.55 |
 |   Register as Latch        |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                   |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                   |    0 |     0 |      4400 |  0.00 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 20    |          Yes |         Set |            - |
-| 171   |          Yes |       Reset |            - |
+| 21    |          Yes |         Set |            - |
+| 172   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,12 +149,12 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  171 |        Flop & Latch |
-| LUT2     |   58 |                 LUT |
+| FDRE     |  172 |        Flop & Latch |
+| LUT2     |   59 |                 LUT |
 | LUT3     |   47 |                 LUT |
 | SRL16E   |   44 |  Distributed Memory |
 | LUT4     |   34 |                 LUT |
-| FDSE     |   20 |        Flop & Latch |
+| FDSE     |   21 |        Flop & Latch |
 | CARRY4   |   15 |          CarryLogic |
 | LUT5     |    8 |                 LUT |
 | LUT6     |    5 |                 LUT |

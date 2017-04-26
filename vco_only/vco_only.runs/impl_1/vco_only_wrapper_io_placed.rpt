@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu Apr  6 16:33:42 2017
+| Date         : Tue Apr 25 12:18:54 2017
 | Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command      : report_io -file vco_only_wrapper_io_placed.rpt
 | Design       : vco_only_wrapper

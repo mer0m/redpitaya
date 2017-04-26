@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: gwbs:user:ltc2145:1.0
--- IP Revision: 10
+-- IP Revision: 11
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -80,6 +80,9 @@ ARCHITECTURE pid_only_wrapper_ltc2145_0_0_arch OF pid_only_wrapper_ltc2145_0_0 I
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF pid_only_wrapper_ltc2145_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT ltc2145 IS
+    GENERIC (
+      CLOCK_DUTY_CYCLE_STABILIZER_EN : BOOLEAN
+    );
     PORT (
       processing_rst_i : IN STD_LOGIC;
       resetn : IN STD_LOGIC;
@@ -113,6 +116,9 @@ ARCHITECTURE pid_only_wrapper_ltc2145_0_0_arch OF pid_only_wrapper_ltc2145_0_0 I
   ATTRIBUTE X_INTERFACE_INFO OF data_b_o: SIGNAL IS "xilinx.com:interface:real:1.0 data_b DATA";
 BEGIN
   U0 : ltc2145
+    GENERIC MAP (
+      CLOCK_DUTY_CYCLE_STABILIZER_EN => false
+    )
     PORT MAP (
       processing_rst_i => processing_rst_i,
       resetn => resetn,

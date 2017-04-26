@@ -59,23 +59,86 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0/iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_red_pitaya_pidv3_0_0/iq_pid_vco_wrapper_red_pitaya_pidv3_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_ki_0/iq_pid_vco_wrapper_pid_ki_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_pid_ki_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_kp_0/iq_pid_vco_wrapper_pid_kp_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_pid_kp_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlconstant_0_0/iq_pid_vco_wrapper_xlconstant_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_xlconstant_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hdl/iq_pid_vco_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_processing_system7_0_0/iq_pid_vco_wrapper_processing_system7_0_0.xci">
           <Proxy FileSetName="iq_pid_vco_wrapper_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlslice_0_0/iq_pid_vco_wrapper_xlslice_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_xlslice_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_mixer_sin_0_0/iq_pid_vco_wrapper_mixer_sin_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_mixer_sin_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_range_0/iq_pid_vco_wrapper_dds_range_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dds_range_0"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_f0_0/iq_pid_vco_wrapper_dds_f0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dds_f0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_adc1_offset_0/iq_pid_vco_wrapper_adc1_offset_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_adc1_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_kd_0/iq_pid_vco_wrapper_pid_kd_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_pid_kd_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_expanderReal_0_0/iq_pid_vco_wrapper_expanderReal_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_expanderReal_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dupplReal_1_to_2_0_0/iq_pid_vco_wrapper_dupplReal_1_to_2_0_0.xci">
           <Proxy FileSetName="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_expanderReal_0_0/iq_pid_vco_wrapper_expanderReal_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_expanderReal_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_rst_int_0/iq_pid_vco_wrapper_pid_rst_int_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_pid_rst_int_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dac1_offset_0/iq_pid_vco_wrapper_dac1_offset_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dac1_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_sign_0/iq_pid_vco_wrapper_pid_sign_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_pid_sign_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_nco_0/iq_pid_vco_wrapper_dds_nco_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dds_nco_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_ltc2145_0_0/iq_pid_vco_wrapper_ltc2145_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_ltc2145_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_setpoint_0/iq_pid_vco_wrapper_pid_setpoint_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_pid_setpoint_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_ad9767_0_0/iq_pid_vco_wrapper_ad9767_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_ad9767_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_axi_interconnect_0_0/iq_pid_vco_wrapper_axi_interconnect_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_twoInMult_dds_ampl_0/iq_pid_vco_wrapper_twoInMult_dds_ampl_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_twoInMult_dds_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_ampl_0/iq_pid_vco_wrapper_dds_ampl_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dds_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_proc_sys_reset_0_0/iq_pid_vco_wrapper_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_proc_sys_reset_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_nco_1/iq_pid_vco_wrapper_dds_nco_1.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dds_nco_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_offset_0/iq_pid_vco_wrapper_dds_offset_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dds_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlslice_0_1/iq_pid_vco_wrapper_xlslice_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_range_0/iq_pid_vco_wrapper_dds_range_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_dds_range_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_twoInMult_dds_range_0/iq_pid_vco_wrapper_twoInMult_dds_range_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_twoInMult_dds_range_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xbar_0/iq_pid_vco_wrapper_xbar_0.xci">
           <Proxy FileSetName="iq_pid_vco_wrapper_xbar_0"/>
@@ -83,80 +146,17 @@
         <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlconstant_1_0/iq_pid_vco_wrapper_xlconstant_1_0.xci">
           <Proxy FileSetName="iq_pid_vco_wrapper_xlconstant_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_twoInMult_dds_range_0/iq_pid_vco_wrapper_twoInMult_dds_range_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_twoInMult_dds_range_0"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0/iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlconstant_0_0/iq_pid_vco_wrapper_xlconstant_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_xlconstant_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlslice_0_0/iq_pid_vco_wrapper_xlslice_0_0.xci">
+          <Proxy FileSetName="iq_pid_vco_wrapper_xlslice_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_twoInMult_dds_ampl_0/iq_pid_vco_wrapper_twoInMult_dds_ampl_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_twoInMult_dds_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_ad9767_0_0/iq_pid_vco_wrapper_ad9767_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_ad9767_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_adc1_offset_0/iq_pid_vco_wrapper_adc1_offset_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_adc1_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_offset_0/iq_pid_vco_wrapper_dds_offset_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dds_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_nco_0/iq_pid_vco_wrapper_dds_nco_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dds_nco_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_proc_sys_reset_0_0/iq_pid_vco_wrapper_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_rst_int_0/iq_pid_vco_wrapper_pid_rst_int_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_pid_rst_int_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_red_pitaya_pidv3_0_0/iq_pid_vco_wrapper_red_pitaya_pidv3_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_axi_interconnect_0_0/iq_pid_vco_wrapper_axi_interconnect_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_f0_0/iq_pid_vco_wrapper_dds_f0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dds_f0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_kp_0/iq_pid_vco_wrapper_pid_kp_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_pid_kp_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_setpoint_0/iq_pid_vco_wrapper_pid_setpoint_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_pid_setpoint_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_sign_0/iq_pid_vco_wrapper_pid_sign_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_pid_sign_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_mixer_sin_0_0/iq_pid_vco_wrapper_mixer_sin_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_mixer_sin_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_ltc2145_0_0/iq_pid_vco_wrapper_ltc2145_0_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_ltc2145_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_kd_0/iq_pid_vco_wrapper_pid_kd_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_pid_kd_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_pid_ki_0/iq_pid_vco_wrapper_pid_ki_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_pid_ki_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dac1_offset_0/iq_pid_vco_wrapper_dac1_offset_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dac1_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_ampl_0/iq_pid_vco_wrapper_dds_ampl_0.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dds_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hdl/iq_pid_vco_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_dds_nco_1/iq_pid_vco_wrapper_dds_nco_1.xci">
-          <Proxy FileSetName="iq_pid_vco_wrapper_dds_nco_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_auto_pc_0/iq_pid_vco_wrapper_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_xlslice_0_1/iq_pid_vco_wrapper_xlslice_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="iq_pid_vco_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hdl/iq_pid_vco_wrapper.hwdef"/>
-        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/iq_pid_vco_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="ip/iq_pid_vco_wrapper_auto_pc_0/iq_pid_vco_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/iq_pid_vco_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/iq_pid_vco_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="iq_pid_vco_wrapper.bd" FileRelPathName="hdl/iq_pid_vco_wrapper.hwdef"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -282,12 +282,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="iq_pid_vco_wrapper_dds_nco_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_dds_nco_0">
-      <Config>
-        <Option Name="TopModule" Val="iq_pid_vco_wrapper_dds_nco_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="iq_pid_vco_wrapper_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_proc_sys_reset_0_0">
       <Config>
         <Option Name="TopModule" Val="iq_pid_vco_wrapper_proc_sys_reset_0_0"/>
@@ -336,12 +330,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="iq_pid_vco_wrapper_ltc2145_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_ltc2145_0_0">
-      <Config>
-        <Option Name="TopModule" Val="iq_pid_vco_wrapper_ltc2145_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="iq_pid_vco_wrapper_pid_kd_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_pid_kd_0">
       <Config>
         <Option Name="TopModule" Val="iq_pid_vco_wrapper_pid_kd_0"/>
@@ -375,6 +363,18 @@
     <FileSet Name="iq_pid_vco_wrapper_mixer_sin_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_mixer_sin_0_0">
       <Config>
         <Option Name="TopModule" Val="iq_pid_vco_wrapper_mixer_sin_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="iq_pid_vco_wrapper_dds_nco_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_dds_nco_0">
+      <Config>
+        <Option Name="TopModule" Val="iq_pid_vco_wrapper_dds_nco_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="iq_pid_vco_wrapper_ltc2145_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_pid_vco_wrapper_ltc2145_0_0">
+      <Config>
+        <Option Name="TopModule" Val="iq_pid_vco_wrapper_ltc2145_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -417,9 +417,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_processing_system7_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -427,9 +425,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xlslice_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_xlslice_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xlslice_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_xlslice_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -437,9 +433,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_dds_range_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dds_range_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_range_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dds_range_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -447,9 +441,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -457,9 +449,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_expanderReal_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_expanderReal_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_expanderReal_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_expanderReal_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -467,9 +457,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_xbar_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xbar_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -477,9 +465,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xlconstant_1_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_xlconstant_1_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xlconstant_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_xlconstant_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -487,9 +473,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_twoInMult_dds_range_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_twoInMult_dds_range_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_twoInMult_dds_range_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_twoInMult_dds_range_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -497,9 +481,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xlconstant_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_xlconstant_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xlconstant_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_xlconstant_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -507,9 +489,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_twoInMult_dds_ampl_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_twoInMult_dds_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -517,9 +497,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_ad9767_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_ad9767_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_ad9767_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_ad9767_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -527,9 +505,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_adc1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_adc1_offset_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_adc1_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_adc1_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -537,9 +513,119 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_dds_offset_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dds_offset_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dds_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_proc_sys_reset_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_rst_int_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_rst_int_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_rst_int_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_rst_int_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_dds_f0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dds_f0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_f0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dds_f0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_kp_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_kp_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kp_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_kp_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_setpoint_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_setpoint_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_setpoint_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_setpoint_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_sign_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_sign_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_sign_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_sign_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_kd_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_kd_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kd_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_kd_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_ki_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_ki_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_ki_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_ki_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_dac1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dac1_offset_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dac1_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dac1_offset_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_dds_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dds_ampl_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dds_ampl_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_mixer_sin_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_mixer_sin_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_mixer_sin_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_mixer_sin_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -555,147 +641,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="iq_pid_vco_wrapper_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_proc_sys_reset_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_rst_int_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_rst_int_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_rst_int_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_rst_int_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_dds_f0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dds_f0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_f0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dds_f0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_kp_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_kp_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kp_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_kp_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_setpoint_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_setpoint_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_setpoint_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_setpoint_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_sign_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_sign_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_sign_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_sign_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="iq_pid_vco_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_kd_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_kd_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kd_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_kd_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_ki_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_pid_ki_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_ki_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_pid_ki_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_dac1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dac1_offset_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dac1_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dac1_offset_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_dds_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_dds_ampl_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_dds_ampl_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_mixer_sin_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_pid_vco_wrapper_mixer_sin_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_mixer_sin_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_pid_vco_wrapper_mixer_sin_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -733,9 +679,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_processing_system7_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_processing_system7_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -750,9 +694,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xlslice_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xlslice_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_xlslice_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -767,9 +709,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_dds_range_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_range_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dds_range_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -784,9 +724,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dupplReal_1_to_2_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -801,9 +739,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_expanderReal_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_expanderReal_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_expanderReal_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -818,9 +754,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xbar_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_xbar_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -835,9 +769,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xlconstant_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xlconstant_1_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_xlconstant_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -852,9 +784,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_twoInMult_dds_range_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_twoInMult_dds_range_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_twoInMult_dds_range_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -869,9 +799,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_xlconstant_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_xlconstant_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_xlconstant_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -886,9 +814,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_twoInMult_dds_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_twoInMult_dds_ampl_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_twoInMult_dds_ampl_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -903,9 +829,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_ad9767_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_ad9767_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_ad9767_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -920,9 +844,7 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_adc1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_adc1_offset_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_adc1_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -937,9 +859,217 @@
     </Run>
     <Run Id="iq_pid_vco_wrapper_dds_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_offset_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dds_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_proc_sys_reset_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_rst_int_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_rst_int_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_rst_int_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_dds_f0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_f0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dds_f0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_kp_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kp_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_kp_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_setpoint_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_setpoint_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_setpoint_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_sign_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_sign_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_sign_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_kd_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kd_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_kd_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_pid_ki_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_ki_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_ki_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_dac1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dac1_offset_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dac1_offset_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_dds_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_ampl_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dds_ampl_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_pid_vco_wrapper_mixer_sin_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_mixer_sin_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_mixer_sin_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -969,245 +1099,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="iq_pid_vco_wrapper_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_proc_sys_reset_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_rst_int_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_rst_int_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_rst_int_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_dds_f0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_f0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dds_f0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_kp_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kp_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_kp_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_setpoint_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_setpoint_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_setpoint_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_sign_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_sign_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_sign_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="iq_pid_vco_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_kd_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_kd_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_kd_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_pid_ki_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_pid_ki_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_pid_ki_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_dac1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dac1_offset_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dac1_offset_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_dds_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_dds_ampl_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_dds_ampl_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="iq_pid_vco_wrapper_mixer_sin_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_pid_vco_wrapper_mixer_sin_0_0" Description="Default settings for Implementation." SynthRun="iq_pid_vco_wrapper_mixer_sin_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>

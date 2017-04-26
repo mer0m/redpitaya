@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Fri Mar 31 16:15:10 2017
-# Process ID: 21308
+# Start of session at: Tue Apr 25 12:13:55 2017
+# Process ID: 19642
 # Current directory: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_ltc2145_0_0_synth_1
 # Command line: vivado -log vco_only_wrapper_ltc2145_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vco_only_wrapper_ltc2145_0_0.tcl
 # Log file: /home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_ltc2145_0_0_synth_1/vco_only_wrapper_ltc2145_0_0.vds
@@ -15,19 +15,22 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21429 
+INFO: Helper process launched with PID 19657 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1112.266 ; gain = 181.086 ; free physical = 1345 ; free virtual = 11993
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1113.266 ; gain = 182.086 ; free physical = 355 ; free virtual = 12102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vco_only_wrapper_ltc2145_0_0' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_ltc2145_0_0/synth/vco_only_wrapper_ltc2145_0_0.vhd:79]
-INFO: [Synth 8-3491] module 'ltc2145' declared at '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/0dcc/hdl/ltc2145.vhd:6' bound to instance 'U0' of component 'ltc2145' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_ltc2145_0_0/synth/vco_only_wrapper_ltc2145_0_0.vhd:115]
-INFO: [Synth 8-638] synthesizing module 'ltc2145' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/0dcc/hdl/ltc2145.vhd:30]
-INFO: [Synth 8-638] synthesizing module 'ltc2145_cmos_capture' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/0dcc/hdl/ltc2145_cmos_capture.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'ltc2145_cmos_capture' (1#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/0dcc/hdl/ltc2145_cmos_capture.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'ltc2145' (2#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/0dcc/hdl/ltc2145.vhd:30]
+	Parameter CLOCK_DUTY_CYCLE_STABILIZER_EN bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'ltc2145' declared at '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a9a2/hdl/ltc2145.vhd:6' bound to instance 'U0' of component 'ltc2145' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_ltc2145_0_0/synth/vco_only_wrapper_ltc2145_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'ltc2145' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a9a2/hdl/ltc2145.vhd:33]
+	Parameter CLOCK_DUTY_CYCLE_STABILIZER_EN bound to: 0 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'ltc2145_cmos_capture' [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a9a2/hdl/ltc2145_cmos_capture.vhd:26]
+	Parameter CLOCK_DUTY_CYCLE_STABILIZER_EN bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'ltc2145_cmos_capture' (1#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a9a2/hdl/ltc2145_cmos_capture.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'ltc2145' (2#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ipshared/a9a2/hdl/ltc2145.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'vco_only_wrapper_ltc2145_0_0' (3#1) [/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.srcs/sources_1/bd/vco_only_wrapper/ip/vco_only_wrapper_ltc2145_0_0/synth/vco_only_wrapper_ltc2145_0_0.vhd:79]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1153.734 ; gain = 222.555 ; free physical = 1845 ; free virtual = 12492
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1153.734 ; gain = 222.555 ; free physical = 317 ; free virtual = 12026
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -37,7 +40,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1153.734 ; gain = 222.555 ; free physical = 1844 ; free virtual = 12492
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1153.734 ; gain = 222.555 ; free physical = 314 ; free virtual = 12022
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -49,25 +52,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1480.887 ; gain = 1.000 ; free physical = 1465 ; free virtual = 12113
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1481.895 ; gain = 1.000 ; free physical = 151 ; free virtual = 11665
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1262 ; free virtual = 11910
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 160 ; free virtual = 11612
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1262 ; free virtual = 11910
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 160 ; free virtual = 11612
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1262 ; free virtual = 11910
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 160 ; free virtual = 11612
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1254 ; free virtual = 11902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 153 ; free virtual = 11604
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -109,9 +112,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3917] design vco_only_wrapper_ltc2145_0_0 has port adc_cdcs driven by constant 1
+INFO: [Synth 8-3917] design vco_only_wrapper_ltc2145_0_0 has port adc_cdcs driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1238 ; free virtual = 11885
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 139 ; free virtual = 11591
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -126,10 +129,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:02:03 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1080 ; free virtual = 11728
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 130 ; free virtual = 11560
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:03 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1080 ; free virtual = 11727
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 130 ; free virtual = 11560
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -141,7 +144,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:55 ; elapsed = 00:02:03 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1062 ; free virtual = 11709
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 137 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -165,7 +168,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1062 ; free virtual = 11709
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -178,7 +181,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1062 ; free virtual = 11709
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -190,25 +193,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1062 ; free virtual = 11709
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1062 ; free virtual = 11709
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1061 ; free virtual = 11709
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1061 ; free virtual = 11709
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -237,11 +240,11 @@ Report Instance Areas:
 |3     |    ltc2145_capture_inst |ltc2145_cmos_capture |    56|
 +------+-------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 1480.887 ; gain = 549.707 ; free physical = 1061 ; free virtual = 11709
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.895 ; gain = 550.715 ; free physical = 136 ; free virtual = 11541
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:27 . Memory (MB): peak = 1480.887 ; gain = 109.465 ; free physical = 1060 ; free virtual = 11708
-Synthesis Optimization Complete : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 1480.895 ; gain = 549.715 ; free physical = 1060 ; free virtual = 11708
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1481.895 ; gain = 109.465 ; free physical = 136 ; free virtual = 11541
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1481.902 ; gain = 550.723 ; free physical = 136 ; free virtual = 11541
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -251,9 +254,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:53 . Memory (MB): peak = 1480.895 ; gain = 449.211 ; free physical = 994 ; free virtual = 11641
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1481.902 ; gain = 450.219 ; free physical = 130 ; free virtual = 11535
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_ltc2145_0_0_synth_1/vco_only_wrapper_ltc2145_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/vco_only/vco_only.runs/vco_only_wrapper_ltc2145_0_0_synth_1/vco_only_wrapper_ltc2145_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.35 . Memory (MB): peak = 1480.895 ; gain = 0.000 ; free physical = 994 ; free virtual = 11641
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 16:17:45 2017...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1481.902 ; gain = 0.000 ; free physical = 128 ; free virtual = 11535
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 12:15:09 2017...

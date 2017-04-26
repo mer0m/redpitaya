@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Tue Apr 11 10:27:34 2017
+-- Date        : Tue Apr 25 11:09:03 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/bma/git/fpga_design/redpitaya/pid_vco/pid_vco.srcs/sources_1/bd/pid_vco_wrapper/ip/pid_vco_wrapper_ltc2145_0_0/pid_vco_wrapper_ltc2145_0_0_sim_netlist.vhdl
@@ -558,14 +558,14 @@ entity pid_vco_wrapper_ltc2145_0_0 is
 end pid_vco_wrapper_ltc2145_0_0;
 
 architecture STRUCTURE of pid_vco_wrapper_ltc2145_0_0 is
-  signal \<const1>\ : STD_LOGIC;
+  signal \<const0>\ : STD_LOGIC;
   signal \^adc_clk_i\ : STD_LOGIC;
   signal \^data_b_en_o\ : STD_LOGIC;
   signal \^processing_rst_i\ : STD_LOGIC;
 begin
   \^adc_clk_i\ <= adc_clk_i;
   \^processing_rst_i\ <= processing_rst_i;
-  adc_cdcs <= \<const1>\;
+  adc_cdcs <= \<const0>\;
   adc_clk <= \^adc_clk_i\;
   data_a_clk_o <= \^adc_clk_i\;
   data_a_en_o <= \^data_b_en_o\;
@@ -573,6 +573,10 @@ begin
   data_b_clk_o <= \^adc_clk_i\;
   data_b_en_o <= \^data_b_en_o\;
   data_b_rst_o <= \^processing_rst_i\;
+GND: unisim.vcomponents.GND
+     port map (
+      G => \<const0>\
+    );
 U0: entity work.pid_vco_wrapper_ltc2145_0_0_ltc2145
      port map (
       adc_clk_i => \^adc_clk_i\,
@@ -582,9 +586,5 @@ U0: entity work.pid_vco_wrapper_ltc2145_0_0_ltc2145
       data_b_en_o => \^data_b_en_o\,
       data_b_o(13 downto 0) => data_b_o(13 downto 0),
       resetn => resetn
-    );
-VCC: unisim.vcomponents.VCC
-     port map (
-      P => \<const1>\
     );
 end STRUCTURE;

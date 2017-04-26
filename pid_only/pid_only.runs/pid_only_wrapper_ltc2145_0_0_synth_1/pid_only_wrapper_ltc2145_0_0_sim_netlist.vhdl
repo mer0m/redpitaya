@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed Mar 29 18:36:34 2017
+-- Date        : Tue Apr 25 11:57:35 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ pid_only_wrapper_ltc2145_0_0_sim_netlist.vhdl
@@ -554,14 +554,14 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
-  signal \<const1>\ : STD_LOGIC;
+  signal \<const0>\ : STD_LOGIC;
   signal \^adc_clk_i\ : STD_LOGIC;
   signal \^data_b_en_o\ : STD_LOGIC;
   signal \^processing_rst_i\ : STD_LOGIC;
 begin
   \^adc_clk_i\ <= adc_clk_i;
   \^processing_rst_i\ <= processing_rst_i;
-  adc_cdcs <= \<const1>\;
+  adc_cdcs <= \<const0>\;
   adc_clk <= \^adc_clk_i\;
   data_a_clk_o <= \^adc_clk_i\;
   data_a_en_o <= \^data_b_en_o\;
@@ -569,6 +569,10 @@ begin
   data_b_clk_o <= \^adc_clk_i\;
   data_b_en_o <= \^data_b_en_o\;
   data_b_rst_o <= \^processing_rst_i\;
+GND: unisim.vcomponents.GND
+     port map (
+      G => \<const0>\
+    );
 U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ltc2145
      port map (
       adc_clk_i => \^adc_clk_i\,
@@ -578,9 +582,5 @@ U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ltc2145
       data_b_en_o => \^data_b_en_o\,
       data_b_o(13 downto 0) => data_b_o(13 downto 0),
       resetn => resetn
-    );
-VCC: unisim.vcomponents.VCC
-     port map (
-      P => \<const1>\
     );
 end STRUCTURE;

@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Apr 20 08:12:27 2017
+// Date        : Tue Apr 25 09:15:23 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ iq_demod_only_wrapper_ltc2145_0_0_sim_netlist.v
@@ -46,7 +46,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* x_interface_info = "xilinx.com:interface:real:1.0 data_b DATA_RST" *) output data_b_rst_o;
   (* x_interface_info = "xilinx.com:interface:real:1.0 data_b DATA" *) output [13:0]data_b_o;
 
-  wire \<const1> ;
+  wire \<const0> ;
   wire adc_clk_i;
   wire [13:0]adc_data_a_i;
   wire [13:0]adc_data_b_i;
@@ -56,13 +56,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   wire processing_rst_i;
   wire resetn;
 
-  assign adc_cdcs = \<const1> ;
+  assign adc_cdcs = \<const0> ;
   assign adc_clk = adc_clk_i;
   assign data_a_clk_o = adc_clk_i;
   assign data_a_en_o = data_b_en_o;
   assign data_a_rst_o = processing_rst_i;
   assign data_b_clk_o = adc_clk_i;
   assign data_b_rst_o = processing_rst_i;
+  GND GND
+       (.G(\<const0> ));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ltc2145 U0
        (.adc_clk_i(adc_clk_i),
         .adc_data_a_i(adc_data_a_i),
@@ -71,8 +73,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
         .data_b_en_o(data_b_en_o),
         .data_b_o(data_b_o),
         .resetn(resetn));
-  VCC VCC
-       (.P(\<const1> ));
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ltc2145

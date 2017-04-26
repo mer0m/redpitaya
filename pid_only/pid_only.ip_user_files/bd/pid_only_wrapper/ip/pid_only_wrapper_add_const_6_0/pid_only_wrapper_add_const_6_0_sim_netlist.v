@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Wed Mar 29 18:40:35 2017
+// Date        : Thu Mar 30 11:14:46 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 // Command     : write_verilog -force -mode funcsim
 //               /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_add_const_6_0/pid_only_wrapper_add_const_6_0_sim_netlist.v
@@ -109,7 +109,7 @@ module pid_only_wrapper_add_const_6_0
   (* DATA_IN_SIZE = "1" *) 
   (* DATA_OUT_SIZE = "1" *) 
   (* add_val = "0" *) 
-  (* format = "signed" *) 
+  (* format = "unsigned" *) 
   (* id = "1" *) 
   pid_only_wrapper_add_const_6_0_add_const U0
        (.data_clk_i(data_clk_i),
@@ -145,7 +145,7 @@ endmodule
 
 (* C_S00_AXI_ADDR_WIDTH = "4" *) (* C_S00_AXI_DATA_WIDTH = "32" *) (* DATA_IN_SIZE = "1" *) 
 (* DATA_OUT_SIZE = "1" *) (* ORIG_REF_NAME = "add_const" *) (* add_val = "0" *) 
-(* format = "signed" *) (* id = "1" *) 
+(* format = "unsigned" *) (* id = "1" *) 
 module pid_only_wrapper_add_const_6_0_add_const
    (s00_axi_aclk,
     s00_axi_reset,
@@ -208,8 +208,7 @@ module pid_only_wrapper_add_const_6_0_add_const
 
   wire \<const0> ;
   wire add_constHandComm_n_5;
-  wire add_constHandComm_n_8;
-  wire [1:0]addr_s;
+  wire add_constHandComm_n_6;
   wire data_clk_i;
   wire data_en_i;
   wire data_en_o;
@@ -226,7 +225,7 @@ module pid_only_wrapper_add_const_6_0_add_const
   wire s00_axi_awvalid;
   wire s00_axi_bready;
   wire s00_axi_bvalid;
-  wire [30:0]\^s00_axi_rdata ;
+  wire [0:0]\^s00_axi_rdata ;
   wire s00_axi_reset;
   wire s00_axi_rready;
   wire s00_axi_rvalid;
@@ -238,47 +237,46 @@ module pid_only_wrapper_add_const_6_0_add_const
   assign data_rst_o = data_rst_i;
   assign s00_axi_bresp[1] = \<const0> ;
   assign s00_axi_bresp[0] = \<const0> ;
-  assign s00_axi_rdata[31] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[30] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[29] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[28] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[27] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[26] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[25] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[24] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[23] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[22] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[21] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[20] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[19] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[18] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[17] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[16] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[15] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[14] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[13] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[12] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[11] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[10] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[9] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[8] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[7] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[6] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[5] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[4] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[3] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[2] = \^s00_axi_rdata [30];
-  assign s00_axi_rdata[1] = \^s00_axi_rdata [30];
+  assign s00_axi_rdata[31] = \<const0> ;
+  assign s00_axi_rdata[30] = \<const0> ;
+  assign s00_axi_rdata[29] = \<const0> ;
+  assign s00_axi_rdata[28] = \<const0> ;
+  assign s00_axi_rdata[27] = \<const0> ;
+  assign s00_axi_rdata[26] = \<const0> ;
+  assign s00_axi_rdata[25] = \<const0> ;
+  assign s00_axi_rdata[24] = \<const0> ;
+  assign s00_axi_rdata[23] = \<const0> ;
+  assign s00_axi_rdata[22] = \<const0> ;
+  assign s00_axi_rdata[21] = \<const0> ;
+  assign s00_axi_rdata[20] = \<const0> ;
+  assign s00_axi_rdata[19] = \<const0> ;
+  assign s00_axi_rdata[18] = \<const0> ;
+  assign s00_axi_rdata[17] = \<const0> ;
+  assign s00_axi_rdata[16] = \<const0> ;
+  assign s00_axi_rdata[15] = \<const0> ;
+  assign s00_axi_rdata[14] = \<const0> ;
+  assign s00_axi_rdata[13] = \<const0> ;
+  assign s00_axi_rdata[12] = \<const0> ;
+  assign s00_axi_rdata[11] = \<const0> ;
+  assign s00_axi_rdata[10] = \<const0> ;
+  assign s00_axi_rdata[9] = \<const0> ;
+  assign s00_axi_rdata[8] = \<const0> ;
+  assign s00_axi_rdata[7] = \<const0> ;
+  assign s00_axi_rdata[6] = \<const0> ;
+  assign s00_axi_rdata[5] = \<const0> ;
+  assign s00_axi_rdata[4] = \<const0> ;
+  assign s00_axi_rdata[3] = \<const0> ;
+  assign s00_axi_rdata[2] = \<const0> ;
+  assign s00_axi_rdata[1] = \<const0> ;
   assign s00_axi_rdata[0] = \^s00_axi_rdata [0];
   assign s00_axi_rresp[1] = \<const0> ;
   assign s00_axi_rresp[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
   pid_only_wrapper_add_const_6_0_add_const_handComm add_constHandComm
-       (.\addr_reg_reg[0]_0 (add_constHandComm_n_8),
-        .addr_s(addr_s),
-        .offset_s(offset_s),
+       (.offset_s(offset_s),
         .\offset_s_reg[0] (add_constHandComm_n_5),
+        .\readdata_s_reg[0] (add_constHandComm_n_6),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr[3:2]),
         .s00_axi_arready(s00_axi_arready),
@@ -288,6 +286,7 @@ module pid_only_wrapper_add_const_6_0_add_const
         .s00_axi_awvalid(s00_axi_awvalid),
         .s00_axi_bready(s00_axi_bready),
         .s00_axi_bvalid(s00_axi_bvalid),
+        .s00_axi_rdata(\^s00_axi_rdata ),
         .s00_axi_reset(s00_axi_reset),
         .s00_axi_rready(s00_axi_rready),
         .s00_axi_rvalid(s00_axi_rvalid),
@@ -303,12 +302,11 @@ module pid_only_wrapper_add_const_6_0_add_const
         .data_rst_i(data_rst_i),
         .offset_s(offset_s));
   pid_only_wrapper_add_const_6_0_wb_add_const wb_add_const_inst
-       (.addr_s(addr_s),
-        .axi_arready_reg(add_constHandComm_n_8),
-        .offset_s(offset_s),
+       (.offset_s(offset_s),
         .\offset_s_reg[0]_0 (add_constHandComm_n_5),
+        .\offset_s_reg[0]_1 (add_constHandComm_n_6),
         .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_rdata({\^s00_axi_rdata [30],\^s00_axi_rdata [0]}),
+        .s00_axi_rdata(\^s00_axi_rdata ),
         .s00_axi_reset(s00_axi_reset));
 endmodule
 
@@ -320,12 +318,12 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
     s00_axi_bvalid,
     s00_axi_rvalid,
     \offset_s_reg[0] ,
-    addr_s,
-    \addr_reg_reg[0]_0 ,
+    \readdata_s_reg[0] ,
     s00_axi_reset,
     s00_axi_aclk,
     s00_axi_wdata,
     offset_s,
+    s00_axi_rdata,
     s00_axi_wvalid,
     s00_axi_awvalid,
     s00_axi_bready,
@@ -339,12 +337,12 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
   output s00_axi_bvalid;
   output s00_axi_rvalid;
   output \offset_s_reg[0] ;
-  output [1:0]addr_s;
-  output \addr_reg_reg[0]_0 ;
+  output \readdata_s_reg[0] ;
   input s00_axi_reset;
   input s00_axi_aclk;
   input [0:0]s00_axi_wdata;
   input offset_s;
+  input [0:0]s00_axi_rdata;
   input s00_axi_wvalid;
   input s00_axi_awvalid;
   input s00_axi_bready;
@@ -355,7 +353,6 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
 
   wire [1:0]addr_reg;
   wire \addr_reg[1]_i_2_n_0 ;
-  wire \addr_reg_reg[0]_0 ;
   wire [1:0]addr_s;
   wire \axi_araddr[2]_i_1_n_0 ;
   wire \axi_araddr[3]_i_1_n_0 ;
@@ -369,6 +366,8 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
   wire offset_s;
   wire \offset_s_reg[0] ;
   wire [1:0]read_addr_s;
+  wire \readdata_s[0]_i_2_n_0 ;
+  wire \readdata_s_reg[0] ;
   wire s00_axi_aclk;
   wire [1:0]s00_axi_araddr;
   wire s00_axi_arready;
@@ -378,6 +377,7 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
   wire s00_axi_awvalid;
   wire s00_axi_bready;
   wire s00_axi_bvalid;
+  wire [0:0]s00_axi_rdata;
   wire s00_axi_reset;
   wire s00_axi_rready;
   wire s00_axi_rvalid;
@@ -390,7 +390,7 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
     .INIT(32'hB8FFB800)) 
     \addr_reg[0]_i_1 
        (.I0(read_addr_s[0]),
-        .I1(\addr_reg_reg[0]_0 ),
+        .I1(\readdata_s[0]_i_2_n_0 ),
         .I2(addr_reg[0]),
         .I3(\addr_reg[1]_i_2_n_0 ),
         .I4(write_addr_s[0]),
@@ -399,12 +399,12 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
     .INIT(32'hB8FFB800)) 
     \addr_reg[1]_i_1 
        (.I0(read_addr_s[1]),
-        .I1(\addr_reg_reg[0]_0 ),
+        .I1(\readdata_s[0]_i_2_n_0 ),
         .I2(addr_reg[1]),
         .I3(\addr_reg[1]_i_2_n_0 ),
         .I4(write_addr_s[1]),
         .O(addr_s[1]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h7FFF)) 
     \addr_reg[1]_i_2 
@@ -465,6 +465,7 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
         .D(axi_arready_i_1_n_0),
         .Q(s00_axi_arready),
         .R(s00_axi_reset));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'hFFBF0080)) 
     \axi_awaddr[2]_i_1 
@@ -474,7 +475,6 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
         .I3(s00_axi_awready),
         .I4(write_addr_s[0]),
         .O(\axi_awaddr[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'hFFBF0080)) 
     \axi_awaddr[3]_i_1 
@@ -526,7 +526,7 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
         .D(axi_bvalid_i_1_n_0),
         .Q(s00_axi_bvalid),
         .R(s00_axi_reset));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h08F8)) 
     axi_rvalid_i_1
@@ -541,7 +541,7 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
         .D(axi_rvalid_i_1_n_0),
         .Q(s00_axi_rvalid),
         .R(s00_axi_reset));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'h08)) 
     axi_wready_i_1
@@ -564,14 +564,23 @@ module pid_only_wrapper_add_const_6_0_add_const_handComm
         .I3(\addr_reg[1]_i_2_n_0 ),
         .I4(offset_s),
         .O(\offset_s_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'hFFBF00B0)) 
+    \readdata_s[0]_i_1 
+       (.I0(offset_s),
+        .I1(addr_s[0]),
+        .I2(\readdata_s[0]_i_2_n_0 ),
+        .I3(addr_s[1]),
+        .I4(s00_axi_rdata),
+        .O(\readdata_s_reg[0] ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'h08)) 
-    \readdata_s[31]_i_2 
+    \readdata_s[0]_i_2 
        (.I0(s00_axi_arvalid),
         .I1(s00_axi_arready),
         .I2(s00_axi_rvalid),
-        .O(\addr_reg_reg[0]_0 ));
+        .O(\readdata_s[0]_i_2_n_0 ));
 endmodule
 
 (* ORIG_REF_NAME = "add_const_logic" *) 
@@ -653,24 +662,19 @@ module pid_only_wrapper_add_const_6_0_wb_add_const
     \offset_s_reg[0]_0 ,
     s00_axi_aclk,
     s00_axi_reset,
-    addr_s,
-    axi_arready_reg);
+    \offset_s_reg[0]_1 );
   output offset_s;
-  output [1:0]s00_axi_rdata;
+  output [0:0]s00_axi_rdata;
   input \offset_s_reg[0]_0 ;
   input s00_axi_aclk;
   input s00_axi_reset;
-  input [1:0]addr_s;
-  input axi_arready_reg;
+  input \offset_s_reg[0]_1 ;
 
-  wire [1:0]addr_s;
-  wire axi_arready_reg;
   wire offset_s;
   wire \offset_s_reg[0]_0 ;
-  wire \readdata_s[0]_i_1_n_0 ;
-  wire \readdata_s[31]_i_1_n_0 ;
+  wire \offset_s_reg[0]_1 ;
   wire s00_axi_aclk;
-  wire [1:0]s00_axi_rdata;
+  wire [0:0]s00_axi_rdata;
   wire s00_axi_reset;
 
   FDCE \offset_s_reg[0] 
@@ -679,36 +683,12 @@ module pid_only_wrapper_add_const_6_0_wb_add_const
         .CLR(s00_axi_reset),
         .D(\offset_s_reg[0]_0 ),
         .Q(offset_s));
-  LUT5 #(
-    .INIT(32'hFFBF00B0)) 
-    \readdata_s[0]_i_1 
-       (.I0(offset_s),
-        .I1(addr_s[0]),
-        .I2(axi_arready_reg),
-        .I3(addr_s[1]),
-        .I4(s00_axi_rdata[0]),
-        .O(\readdata_s[0]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFF8F0080)) 
-    \readdata_s[31]_i_1 
-       (.I0(offset_s),
-        .I1(addr_s[0]),
-        .I2(axi_arready_reg),
-        .I3(addr_s[1]),
-        .I4(s00_axi_rdata[1]),
-        .O(\readdata_s[31]_i_1_n_0 ));
   FDCE \readdata_s_reg[0] 
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .CLR(s00_axi_reset),
-        .D(\readdata_s[0]_i_1_n_0 ),
-        .Q(s00_axi_rdata[0]));
-  FDCE \readdata_s_reg[31] 
-       (.C(s00_axi_aclk),
-        .CE(1'b1),
-        .CLR(s00_axi_reset),
-        .D(\readdata_s[31]_i_1_n_0 ),
-        .Q(s00_axi_rdata[1]));
+        .D(\offset_s_reg[0]_1 ),
+        .Q(s00_axi_rdata));
 endmodule
 `ifndef GLBL
 `define GLBL

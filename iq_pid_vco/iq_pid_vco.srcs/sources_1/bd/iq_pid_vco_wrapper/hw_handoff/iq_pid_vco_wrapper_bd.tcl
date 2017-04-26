@@ -216,6 +216,11 @@ CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $dds_nco
 
+  set_property -dict [ list \
+CONFIG.NUM_READ_OUTSTANDING {1} \
+CONFIG.NUM_WRITE_OUTSTANDING {1} \
+ ] [get_bd_intf_pins /dds_nco/s00_axi]
+
   # Create instance: dds_offset, and set properties
   set dds_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds_offset ]
   set_property -dict [ list \
@@ -241,11 +246,6 @@ CONFIG.NB_COEFF {55} \
 CONFIG.NB_FIR {55} \
  ] $demod_fir
 
-  set_property -dict [ list \
-CONFIG.NUM_READ_OUTSTANDING {1} \
-CONFIG.NUM_WRITE_OUTSTANDING {1} \
- ] [get_bd_intf_pins /demod_fir/s00_axi]
-
   # Create instance: demod_mixer, and set properties
   set demod_mixer [ create_bd_cell -type ip -vlnv ggm:cogen:mixer_sin:1.0 demod_mixer ]
   set_property -dict [ list \
@@ -260,6 +260,11 @@ CONFIG.COUNTER_SIZE {32} \
 CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $demod_nco
+
+  set_property -dict [ list \
+CONFIG.NUM_READ_OUTSTANDING {1} \
+CONFIG.NUM_WRITE_OUTSTANDING {1} \
+ ] [get_bd_intf_pins /demod_nco/s00_axi]
 
   # Create instance: dupplReal_1_to_2_0, and set properties
   set dupplReal_1_to_2_0 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_0 ]
@@ -1375,7 +1380,7 @@ CONFIG.DOUT_WIDTH {14} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y 2630 -defaultsOSRD
+preplace port DDR -pg 1 -y 2620 -defaultsOSRD
 preplace port adc_cdcs -pg 1 -y 3120 -defaultsOSRD
 preplace port adc_clk_p_i -pg 1 -y 3360 -defaultsOSRD
 preplace port dac_rst_o -pg 1 -y 2780 -defaultsOSRD
@@ -1399,8 +1404,8 @@ preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 3380 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 3 -y 2710 -defaultsOSRD
 preplace inst twoInMult_dds_ampl -pg 1 -lvl 5 -y 100 -defaultsOSRD
 preplace inst pid_kp -pg 1 -lvl 4 -y 630 -defaultsOSRD
-preplace inst pid_kd -pg 1 -lvl 4 -y 900 -defaultsOSRD
 preplace inst dds_nco -pg 1 -lvl 5 -y 820 -defaultsOSRD
+preplace inst pid_kd -pg 1 -lvl 4 -y 900 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 2900 -defaultsOSRD
 preplace inst dac2_offset -pg 1 -lvl 4 -y 2230 -defaultsOSRD
 preplace inst dds_f0 -pg 1 -lvl 4 -y 1340 -defaultsOSRD
@@ -1412,100 +1417,100 @@ preplace inst pid_ki -pg 1 -lvl 4 -y 1140 -defaultsOSRD
 preplace inst expanderReal_0 -pg 1 -lvl 3 -y 1830 -defaultsOSRD
 preplace inst dupplReal_1_to_2_0 -pg 1 -lvl 3 -y 2190 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 1320 -defaultsOSRD
+preplace inst ltc2145_0 -pg 1 -lvl 3 -y 3010 -defaultsOSRD
 preplace inst twoInMult_dds_range -pg 1 -lvl 5 -y 1830 -defaultsOSRD
 preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 2 -y 1900 -defaultsOSRD
 preplace inst pid_rst_int -pg 1 -lvl 4 -y 2760 -defaultsOSRD
-preplace inst ltc2145_0 -pg 1 -lvl 3 -y 3010 -defaultsOSRD
 preplace inst demod_fir -pg 1 -lvl 4 -y 2460 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 2 -y 2770 -defaultsOSRD
-preplace netloc axi_interconnect_0_M13_AXI 1 3 1 1440
-preplace netloc axi_interconnect_0_M08_AXI 1 3 1 1300
+preplace netloc axi_interconnect_0_M13_AXI 1 3 1 1460
+preplace netloc axi_interconnect_0_M08_AXI 1 3 1 1310
 preplace netloc adc_data_a_i_1 1 0 3 NJ 3030 NJ 3030 NJ
-preplace netloc nco_counter_0_dds_en_o 1 3 3 1530 510 1980 510 2310
-preplace netloc red_pitaya_pidv3_0_data_en_o 1 2 3 910 1730 1570 1890 1940J
-preplace netloc axi_interconnect_0_M07_AXI 1 3 1 1370
-preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 3 NJ 3370 1300J 3410 2030
+preplace netloc nco_counter_0_dds_en_o 1 3 3 1540 510 1990 510 2310
+preplace netloc red_pitaya_pidv3_0_data_en_o 1 2 3 940 1730 1610 1890 1940J
+preplace netloc axi_interconnect_0_M07_AXI 1 3 1 1380
+preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 3 NJ 3370 1310J 3430 2020
 preplace netloc adc_clk_n_i_1 1 0 2 NJ 3380 NJ
-preplace netloc mixer_sin_0_data_en_o 1 3 3 1580 2620 NJ 2620 2330
+preplace netloc mixer_sin_0_data_en_o 1 3 3 1590 2620 NJ 2620 2330
 preplace netloc ad9767_0_dac_rst_o 1 5 1 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 2640 NJ 2640 NJ 2640 NJ
-preplace netloc dupplReal_1_to_2_0_data1_o 1 1 3 410 2350 NJ 2350 1310
+preplace netloc dupplReal_1_to_2_0_data1_o 1 1 3 430 2290 NJ 2290 1320
 preplace netloc ad9767_0_dac_dat_o 1 5 1 NJ
-preplace netloc axi_interconnect_0_M04_AXI 1 3 1 1350
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 360J 1020 890
-preplace netloc axi_interconnect_0_M12_AXI 1 3 1 1500
-preplace netloc fir16RealbitsOneInTwoMult_v1_0_0_data_o 1 1 4 470 2440 NJ 2440 1560J 2150 1870
-preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 3 NJ 3330 1320J 3380 2000
+preplace netloc axi_interconnect_0_M04_AXI 1 3 1 1380
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 360J 1020 920
+preplace netloc axi_interconnect_0_M12_AXI 1 3 1 1520
+preplace netloc fir16RealbitsOneInTwoMult_v1_0_0_data_o 1 1 4 480 3260 NJ 3260 1370J 3370 1900
+preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 3 NJ 3330 1350J 3390 2000
 preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 2 1 940
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 4 380 150 950 150 1430 1260 1910
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 4 380 150 960 150 1440 770 2030
 preplace netloc twoInMult_0_data_en_o 1 3 3 1570 270 NJ 270 2340
-preplace netloc ltc2145_0_data_a_en_o 1 3 1 1520
-preplace netloc processing_system7_0_DDR 1 2 4 870J 2630 NJ 2630 NJ 2630 NJ
-preplace netloc demod_fir_data_en_o 1 2 3 1000 2040 1500J 1930 1890
-preplace netloc nco_counter_0_dds_clk_o 1 3 3 1570 20 1990 190 2350
-preplace netloc expanderReal_0_data_out 1 3 1 1390
-preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1460
-preplace netloc axi_interconnect_0_M02_AXI 1 3 1 1480
-preplace netloc demod_nco_data_dds 1 4 1 1940
-preplace netloc pid_rst_int_data_o 1 1 4 440 3130 NJ 3130 NJ 3130 1870
-preplace netloc xlconstant_1_dout 1 3 1 1500
-preplace netloc twoInMult_dds_range_data_en_o 1 2 4 970 2330 NJ 2330 NJ 2330 2320
-preplace netloc twoInMult_0_data_clk_o 1 3 3 1540 260 NJ 260 2330
-preplace netloc ltc2145_0_adc_clk 1 3 2 1570 2880 1920J
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 3000 NJ 3000 870
-preplace netloc ltc2145_0_adc_cdcs 1 3 3 1390J 3120 NJ 3120 NJ
-preplace netloc axi_interconnect_0_M05_AXI 1 3 1 1340
-preplace netloc xlslice_1_Dout 1 2 1 NJ
-preplace netloc red_pitaya_pidv3_0_data_clk_o 1 2 3 930J 2030 1470 1880 1950J
-preplace netloc ltc2145_0_data_a_o 1 3 1 1610
+preplace netloc ltc2145_0_data_a_en_o 1 3 1 1530
+preplace netloc processing_system7_0_DDR 1 2 4 890J 2880 NJ 2880 NJ 2880 2350J
+preplace netloc demod_fir_data_en_o 1 2 3 1000 2580 NJ 2580 1880
+preplace netloc nco_counter_0_dds_clk_o 1 3 3 1570 20 2010 190 2350
+preplace netloc expanderReal_0_data_out 1 3 1 1410
+preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1470
+preplace netloc axi_interconnect_0_M02_AXI 1 3 1 1510
+preplace netloc demod_nco_data_dds 1 4 1 1920
+preplace netloc pid_rst_int_data_o 1 1 4 460 3270 NJ 3270 1360J 3380 1880
+preplace netloc xlconstant_1_dout 1 3 1 1510
+preplace netloc twoInMult_dds_range_data_en_o 1 2 4 990 2330 NJ 2330 NJ 2330 2320
+preplace netloc twoInMult_0_data_clk_o 1 3 3 1550 260 NJ 260 2330
+preplace netloc ltc2145_0_adc_clk 1 3 2 1570 3130 1960J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 3000 NJ 3000 880
+preplace netloc ltc2145_0_adc_cdcs 1 3 3 1310J 3120 NJ 3120 NJ
+preplace netloc axi_interconnect_0_M05_AXI 1 3 1 1370
+preplace netloc xlslice_1_Dout 1 2 1 910J
+preplace netloc red_pitaya_pidv3_0_data_clk_o 1 2 3 910J 1740 1480 1880 1950J
+preplace netloc ltc2145_0_data_a_o 1 3 1 1560
 preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 390J 1060 990
-preplace netloc pid_kp_data_o 1 1 4 450 2300 NJ 2300 1510J 1910 1890
-preplace netloc axi_interconnect_0_M09_AXI 1 3 2 1360 760 NJ
+preplace netloc pid_kp_data_o 1 1 4 450 640 NJ 640 1500J 1910 1920
+preplace netloc axi_interconnect_0_M09_AXI 1 3 2 1400 760 NJ
 preplace netloc xlslice_0_Dout 1 3 1 NJ
-preplace netloc ltc2145_0_data_a_clk_o 1 3 1 1530
-preplace netloc dupplReal_1_to_2_0_data1_clk_o 1 1 3 430 2060 NJ 2060 1330
-preplace netloc ltc2145_0_data_a_rst_o 1 3 1 1540
-preplace netloc red_pitaya_pidv3_0_data_o 1 2 3 920J 2020 1490J 1920 1930
-preplace netloc pid_sign_data_o 1 1 4 420 3260 NJ 3260 1330J 3370 1870
-preplace netloc demod_fir_data_clk_o 1 2 3 980 2590 NJ 2590 1870
-preplace netloc axi_interconnect_0_M10_AXI 1 3 1 1320
+preplace netloc ltc2145_0_data_a_clk_o 1 3 1 1540
+preplace netloc dupplReal_1_to_2_0_data1_clk_o 1 1 3 400 2300 NJ 2300 1310
+preplace netloc ltc2145_0_data_a_rst_o 1 3 1 1550
+preplace netloc red_pitaya_pidv3_0_data_o 1 2 3 950J 2020 1490J 1930 1930
+preplace netloc pid_sign_data_o 1 1 4 410 3280 NJ 3280 1340J 3420 1870
+preplace netloc demod_fir_data_clk_o 1 2 3 1010 2090 1390J 2150 1890
+preplace netloc axi_interconnect_0_M10_AXI 1 3 1 1330
 preplace netloc mixer_sin_0_data_clk_o 1 3 3 1600 2610 NJ 2610 2320
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 20 190 370 190 880 190 1420 780 1990J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 20 190 370 190 900 190 1430 780 2010J
 preplace netloc ad9767_0_dac_wrt_o 1 5 1 NJ
 preplace netloc axi_interconnect_0_M06_AXI 1 3 1 1450
-preplace netloc twoInMult_dds_range_data_o 1 2 4 960 2320 NJ 2320 NJ 2320 2330
-preplace netloc mixer_sin_0_data_q_o 1 3 3 1590 2580 1980J 2400 2310
-preplace netloc twoInMult_dds_range_data_clk_o 1 2 4 990 2310 NJ 2310 NJ 2310 2310
-preplace netloc mixer_sin_0_data_rst_o 1 3 3 1610 2600 NJ 2600 2310
-preplace netloc dupplReal_1_to_2_0_data2_out 1 3 1 1550
-preplace netloc axi_interconnect_0_M14_AXI 1 3 1 1410
+preplace netloc twoInMult_dds_range_data_o 1 2 4 970 2340 NJ 2340 NJ 2340 2330
+preplace netloc mixer_sin_0_data_q_o 1 3 3 1580 2630 NJ 2630 2340
+preplace netloc twoInMult_dds_range_data_clk_o 1 2 4 980 2320 NJ 2320 NJ 2320 2310
+preplace netloc mixer_sin_0_data_rst_o 1 3 3 1610 2590 NJ 2590 2310
+preplace netloc dupplReal_1_to_2_0_data2_out 1 3 1 1340
+preplace netloc axi_interconnect_0_M14_AXI 1 3 1 1400
 preplace netloc ad9767_0_dac_clk_o 1 5 1 NJ
-preplace netloc nco_counter_0_dds_sin_o 1 4 2 2010 200 2320
-preplace netloc dds_f0_data_out 1 4 1 1900
-preplace netloc pid_setpoint_data_o 1 1 4 450 1720 NJ 1720 1400J 1640 1870
-preplace netloc dupplReal_1_to_2_0_data1_en_o 1 1 3 460 2070 NJ 2070 1300
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 900
-preplace netloc pid_ki_data_o 1 1 4 470 2080 NJ 2080 1310J 1900 1880
+preplace netloc nco_counter_0_dds_sin_o 1 4 2 2030 200 2320
+preplace netloc dds_f0_data_out 1 4 1 1930
+preplace netloc pid_setpoint_data_o 1 1 4 440 2310 NJ 2310 NJ 2310 1900
+preplace netloc dupplReal_1_to_2_0_data1_en_o 1 1 3 470 2060 NJ 2060 1340
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 930
+preplace netloc pid_ki_data_o 1 1 4 480 2070 NJ 2070 1480J 1900 1890
 preplace netloc adc_clk_p_i_1 1 0 2 NJ 3360 NJ
-preplace netloc xlconstant_0_dout 1 3 1 1330
+preplace netloc xlconstant_0_dout 1 3 1 1340
 preplace netloc dds_ampl_data_out 1 4 1 N
 preplace netloc ad9767_0_dac_sel_o 1 5 1 NJ
-preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 3 NJ 3350 1310J 3400 2010
+preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 3 NJ 3350 1330J 3400 2010
 preplace netloc adc1_offset_data_out 1 4 1 1990
-preplace netloc dds_offset_data_out 1 4 1 1970
+preplace netloc dds_offset_data_out 1 4 1 1980
 preplace netloc twoInMult_0_data_o 1 2 4 990 10 NJ 10 NJ 10 2350
-preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 3 NJ 3390 NJ 3390 2020
+preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 3 NJ 3390 1320J 3410 2030
 preplace netloc adc_data_b_i_1 1 0 3 NJ 3050 NJ 3050 NJ
-preplace netloc dds_range_data_out 1 4 1 1960
-preplace netloc pid_kd_data_o 1 1 4 420 900 NJ 900 1570J 1020 1880
-preplace netloc dupplReal_1_to_2_0_data1_rst_o 1 1 3 400 2360 NJ 2360 1300
-preplace netloc red_pitaya_pidv3_0_data_rst_o 1 2 1 940
-preplace netloc dac1_offset_data_out 1 4 1 1900
-preplace netloc axi_interconnect_0_M11_AXI 1 3 1 1380
-preplace netloc axi_interconnect_0_M03_AXI 1 3 1 1310
-preplace netloc demod_fir_data_rst_o 1 2 3 1000 2340 NJ 2340 1880
-preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1510
-levelinfo -pg 1 0 190 670 1150 1740 2170 2370 -top 0 -bot 3480
+preplace netloc dds_range_data_out 1 4 1 1970
+preplace netloc pid_kd_data_o 1 1 4 460 910 NJ 910 1490J 1920 1910
+preplace netloc dupplReal_1_to_2_0_data1_rst_o 1 1 3 420 2080 NJ 2080 1330
+preplace netloc red_pitaya_pidv3_0_data_rst_o 1 2 1 950
+preplace netloc dac1_offset_data_out 1 4 1 1910
+preplace netloc axi_interconnect_0_M11_AXI 1 3 1 1420
+preplace netloc axi_interconnect_0_M03_AXI 1 3 1 1320
+preplace netloc demod_fir_data_rst_o 1 2 3 1010 2600 NJ 2600 1870
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1570
+levelinfo -pg 1 0 190 680 1160 1740 2170 2370 -top 0 -bot 3480
 ",
 }
 

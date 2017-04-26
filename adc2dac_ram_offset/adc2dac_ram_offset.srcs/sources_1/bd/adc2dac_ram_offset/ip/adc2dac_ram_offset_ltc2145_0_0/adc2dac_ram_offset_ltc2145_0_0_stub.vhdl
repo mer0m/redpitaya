@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Feb  9 10:16:15 2017
+-- Date        : Tue Apr 25 12:30:41 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_ltc2145_0_0/adc2dac_ram_offset_ltc2145_0_0_stub.vhdl
+--               /home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_ltc2145_0_0/adc2dac_ram_offset_ltc2145_0_0_stub.vhdl
 -- Design      : adc2dac_ram_offset_ltc2145_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

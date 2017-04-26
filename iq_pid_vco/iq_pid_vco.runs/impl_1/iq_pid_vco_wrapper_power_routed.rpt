@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Apr 21 18:38:25 2017
+| Date             : Tue Apr 25 09:08:59 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file iq_pid_vco_wrapper_power_routed.rpt -pb iq_pid_vco_wrapper_power_summary_routed.pb -rpx iq_pid_vco_wrapper_power_routed.rpx
 | Design           : iq_pid_vco_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.846 |
-| Dynamic (W)              | 1.707 |
-| Device Static (W)        | 0.140 |
+| Total On-Chip Power (W)  | 2.048 |
+| Dynamic (W)              | 1.905 |
+| Device Static (W)        | 0.143 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 63.7  |
-| Junction Temperature (C) | 46.3  |
+| Max Ambient (C)          | 61.4  |
+| Junction Temperature (C) | 48.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,22 +49,22 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.031 |       11 |       --- |             --- |
-| Slice Logic             |     0.006 |     8865 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     1855 |     17600 |           10.54 |
-|   Register              |     0.002 |     5691 |     35200 |           16.17 |
+| Clocks                  |     0.033 |       11 |       --- |             --- |
+| Slice Logic             |     0.006 |     8871 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     1859 |     17600 |           10.56 |
+|   Register              |     0.002 |     5695 |     35200 |           16.18 |
 |   CARRY4                |    <0.001 |       80 |      4400 |            1.82 |
 |   LUT as Shift Register |    <0.001 |      111 |      6000 |            1.85 |
 |   F7/F8 Muxes           |    <0.001 |        9 |     17600 |            0.05 |
 |   Others                |     0.000 |      731 |       --- |             --- |
-| Signals                 |     0.038 |     8115 |       --- |             --- |
+| Signals                 |     0.039 |     8123 |       --- |             --- |
 | Block RAM               |     0.011 |      4.5 |        60 |            7.50 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
-| DSPs                    |     0.087 |       60 |        80 |           75.00 |
-| I/O                     |     0.155 |       35 |       100 |           35.00 |
+| DSPs                    |     0.088 |       60 |        80 |           75.00 |
+| I/O                     |     0.348 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
-| Static Power            |     0.140 |          |           |                 |
-| Total                   |     1.846 |          |           |                 |
+| Static Power            |     0.143 |          |           |                 |
+| Total                   |     2.048 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.187 |       0.180 |      0.008 |
-| Vccaux    |       1.800 |     0.068 |       0.056 |      0.012 |
-| Vcco33    |       3.300 |     0.046 |       0.045 |      0.001 |
+| Vccint    |       1.000 |     0.194 |       0.186 |      0.008 |
+| Vccaux    |       1.800 |     0.070 |       0.059 |      0.012 |
+| Vcco33    |       3.300 |     0.103 |       0.102 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
 | Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
@@ -87,7 +87,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.695 |       0.663 |      0.032 |
+| Vccpint   |       1.000 |     0.698 |       0.663 |      0.035 |
 | Vccpaux   |       1.800 |     0.038 |       0.027 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |
@@ -155,15 +155,15 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| iq_pid_vco_wrapper                             |     1.707 |
-|   ad9767_0                                     |     0.005 |
-|     inst                                       |     0.005 |
+| iq_pid_vco_wrapper                             |     1.905 |
+|   ad9767_0                                     |     0.007 |
+|     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
 |     U0                                         |    <0.001 |
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   axi_interconnect_0                           |     0.005 |
+|   axi_interconnect_0                           |     0.006 |
 |     s00_couplers                               |     0.004 |
 |       auto_pc                                  |     0.004 |
 |         inst                                   |     0.004 |
@@ -216,7 +216,7 @@ Table of Contents
 |     U0                                         |     0.008 |
 |       handle_comm                              |    <0.001 |
 |       nco_inst1                                |     0.007 |
-|         rom_12.rom_inst                        |     0.005 |
+|         rom_12.rom12_inst                      |     0.005 |
 |       wb_nco_inst                              |    <0.001 |
 |   dds_offset                                   |    <0.001 |
 |     U0                                         |    <0.001 |
@@ -228,10 +228,10 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   demod_fir                                    |     0.134 |
-|     U0                                         |     0.134 |
+|   demod_fir                                    |     0.136 |
+|     U0                                         |     0.136 |
 |       fir16bitsOneInTwoMult_v1_0_S00_AXI_inst  |    <0.001 |
-|       fir_top_inst                             |     0.134 |
+|       fir_top_inst                             |     0.136 |
 |         cpt_ram                                |    <0.001 |
 |         generate_fir[0].fir_glob_inst          |     0.010 |
 |           coeff_reg_delay                      |    <0.001 |
@@ -498,7 +498,7 @@ Table of Contents
 |           fir_proc_inst                        |     0.002 |
 |             multiplier_i                       |     0.002 |
 |           reset_delay                          |    <0.001 |
-|         generate_fir[8].fir_glob_inst          |     0.002 |
+|         generate_fir[8].fir_glob_inst          |     0.003 |
 |           coeff_reg_delay                      |    <0.001 |
 |           fir_proc_inst                        |     0.002 |
 |             multiplier_i                       |     0.002 |
@@ -517,7 +517,7 @@ Table of Contents
 |     U0                                         |     0.007 |
 |       handle_comm                              |    <0.001 |
 |       nco_inst1                                |     0.007 |
-|         rom_12.rom_inst                        |     0.005 |
+|         rom_12.rom12_inst                      |     0.005 |
 |       wb_nco_inst                              |    <0.001 |
 |   dupplReal_1_to_2_0                           |     0.000 |
 |   expanderReal_0                               |     0.000 |
@@ -565,8 +565,8 @@ Table of Contents
 |       red_pitaya_pidv3Logic                    |     0.004 |
 |   redpitaya_adc_dac_clk_0                      |     0.104 |
 |     inst                                       |     0.104 |
-|   twoInMult_dds_ampl                           |    <0.001 |
-|     U0                                         |    <0.001 |
+|   twoInMult_dds_ampl                           |     0.001 |
+|     U0                                         |     0.001 |
 |   twoInMult_dds_range                          |     0.001 |
 |     U0                                         |     0.001 |
 |   xlconstant_0                                 |     0.000 |

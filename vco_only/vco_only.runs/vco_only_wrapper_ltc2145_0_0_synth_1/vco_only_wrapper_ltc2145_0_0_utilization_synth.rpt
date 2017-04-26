@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Mar 31 16:17:44 2017
+| Date         : Tue Apr 25 12:15:09 2017
 | Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command      : report_utilization -file vco_only_wrapper_ltc2145_0_0_utilization_synth.rpt -pb vco_only_wrapper_ltc2145_0_0_utilization_synth.pb
 | Design       : vco_only_wrapper_ltc2145_0_0

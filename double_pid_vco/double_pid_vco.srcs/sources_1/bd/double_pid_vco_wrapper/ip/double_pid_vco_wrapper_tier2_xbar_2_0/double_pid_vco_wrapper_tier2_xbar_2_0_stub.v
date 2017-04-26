@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Fri Apr 21 11:25:41 2017
+// Date        : Fri Apr 21 11:25:39 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
-// Command     : write_verilog -force -mode synth_stub
-//               /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_2_0/double_pid_vco_wrapper_tier2_xbar_2_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top double_pid_vco_wrapper_tier2_xbar_2_0 -prefix
+//               double_pid_vco_wrapper_tier2_xbar_2_0_ double_pid_vco_wrapper_tier2_xbar_2_0_stub.v
 // Design      : double_pid_vco_wrapper_tier2_xbar_2_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

@@ -793,13 +793,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>ltc2145_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">adc2dac_ram_offset_ltc2145_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>redpitaya_adc_dac_clk_0</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="redpitaya_adc_dac_clk" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -878,6 +871,13 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">adc2dac_ram_offset_add_const_0_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ltc2145_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">adc2dac_ram_offset_ltc2145_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -1028,19 +1028,19 @@
         <spirit:name>proc_sys_reset_0_peripheral_reset</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_reset"/>
         <spirit:internalPortReference spirit:componentRef="redpitaya_adc_dac_clk_0" spirit:portRef="adc_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="data16_multi_to_ram_0" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="add_const_0" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="add_const_1" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="M02_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>

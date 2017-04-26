@@ -2,42 +2,584 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Fri Apr 21 16:37:47 2017
-# Process ID: 14073
+# Start of session at: Tue Apr 25 10:02:27 2017
+# Process ID: 13377
 # Current directory: /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1
 # Command line: vivado -log double_pid_vco_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source double_pid_vco_wrapper.tcl -notrace
 # Log file: /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper.vdi
 # Journal file: /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source double_pid_vco_wrapper.tcl -notrace
-Command: open_checkpoint double_pid_vco_wrapper_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 996.676 ; gain = 0.000 ; free physical = 2665 ; free virtual = 13792
-INFO: [Netlist 29-17] Analyzing 153 Unisim elements for replacement
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_ad9767_0_0/double_pid_vco_wrapper_ad9767_0_0.dcp' for cell 'ad9767_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_0/double_pid_vco_wrapper_adc1_offset_0.dcp' for cell 'adc1_offset'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_1/double_pid_vco_wrapper_adc1_offset_1.dcp' for cell 'adc2_offset'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_ampl_0/double_pid_vco_wrapper_dds_ampl_0.dcp' for cell 'dds1_ampl'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_f0_0/double_pid_vco_wrapper_dds_f0_0.dcp' for cell 'dds1_f0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_nco_0/double_pid_vco_wrapper_dds_nco_0.dcp' for cell 'dds1_nco'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_offset_0/double_pid_vco_wrapper_dds_offset_0.dcp' for cell 'dds1_offset'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_range_0/double_pid_vco_wrapper_dds_range_0.dcp' for cell 'dds1_range'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_ampl_0/double_pid_vco_wrapper_dds1_ampl_0.dcp' for cell 'dds2_ampl'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_f0_0/double_pid_vco_wrapper_dds1_f0_0.dcp' for cell 'dds2_f0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/double_pid_vco_wrapper_dds1_nco_0.dcp' for cell 'dds2_nco'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_offset_0/double_pid_vco_wrapper_dds1_offset_0.dcp' for cell 'dds2_offset'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_range_0/double_pid_vco_wrapper_dds1_range_0.dcp' for cell 'dds2_range'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_expanderReal_0_0/double_pid_vco_wrapper_expanderReal_0_0.dcp' for cell 'expanderReal_0_dds1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_expanderReal_0_dds1_0/double_pid_vco_wrapper_expanderReal_0_dds1_0.dcp' for cell 'expanderReal_0_dds2'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_ltc2145_0_0/double_pid_vco_wrapper_ltc2145_0_0.dcp' for cell 'ltc2145_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_red_pitaya_pidv3_0_0/double_pid_vco_wrapper_red_pitaya_pidv3_0_0.dcp' for cell 'pid1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kd_0/double_pid_vco_wrapper_pid_kd_0.dcp' for cell 'pid1_kd'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_ki_0/double_pid_vco_wrapper_pid_ki_0.dcp' for cell 'pid1_ki'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kp_0/double_pid_vco_wrapper_pid_kp_0.dcp' for cell 'pid1_kp'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_rst_int_0/double_pid_vco_wrapper_pid_rst_int_0.dcp' for cell 'pid1_rst_int'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_setpoint_0/double_pid_vco_wrapper_pid_setpoint_0.dcp' for cell 'pid1_setpoint'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/double_pid_vco_wrapper_pid_sign_0.dcp' for cell 'pid1_sign'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_red_pitaya_pidv3_0_1/double_pid_vco_wrapper_red_pitaya_pidv3_0_1.dcp' for cell 'pid2'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kd_0/double_pid_vco_wrapper_pid1_kd_0.dcp' for cell 'pid2_kd'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_ki_0/double_pid_vco_wrapper_pid1_ki_0.dcp' for cell 'pid2_ki'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kp_0/double_pid_vco_wrapper_pid1_kp_0.dcp' for cell 'pid2_kp'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_rst_int_0/double_pid_vco_wrapper_pid1_rst_int_0.dcp' for cell 'pid2_rst_int'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_setpoint_0/double_pid_vco_wrapper_pid1_setpoint_0.dcp' for cell 'pid2_setpoint'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_sign_0/double_pid_vco_wrapper_pid1_sign_0.dcp' for cell 'pid2_sign'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0.dcp' for cell 'proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_processing_system7_0_0/double_pid_vco_wrapper_processing_system7_0_0.dcp' for cell 'processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0.dcp' for cell 'redpitaya_adc_dac_clk_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_twoInMult_dds_ampl_0/double_pid_vco_wrapper_twoInMult_dds_ampl_0.dcp' for cell 'twoInMult_dds1_ampl'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_twoInMult_dds1_ampl_0/double_pid_vco_wrapper_twoInMult_dds1_ampl_0.dcp' for cell 'twoInMult_dds1_ampl1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_twoInMult_dds_range_0/double_pid_vco_wrapper_twoInMult_dds_range_0.dcp' for cell 'twoInMult_dds1_range'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_twoInMult_dds1_range_0/double_pid_vco_wrapper_twoInMult_dds1_range_0.dcp' for cell 'twoInMult_dds2_range'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_xlconstant_0_0/double_pid_vco_wrapper_xlconstant_0_0.dcp' for cell 'xlconstant_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_xlconstant_1_0/double_pid_vco_wrapper_xlconstant_1_0.dcp' for cell 'xlconstant_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_xlslice_0_0/double_pid_vco_wrapper_xlslice_0_0.dcp' for cell 'xlslice_dds1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_xlslice_dds1_0/double_pid_vco_wrapper_xlslice_dds1_0.dcp' for cell 'xlslice_dds2'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_0_0/double_pid_vco_wrapper_tier2_xbar_0_0.dcp' for cell 'axi_interconnect_0/tier2_xbar_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_1_0/double_pid_vco_wrapper_tier2_xbar_1_0.dcp' for cell 'axi_interconnect_0/tier2_xbar_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_2_0/double_pid_vco_wrapper_tier2_xbar_2_0.dcp' for cell 'axi_interconnect_0/tier2_xbar_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_xbar_0/double_pid_vco_wrapper_xbar_0.dcp' for cell 'axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_auto_pc_0/double_pid_vco_wrapper_auto_pc_0.dcp' for cell 'axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/.Xil/Vivado-14073-ux305/dcp/double_pid_vco_wrapper_early.xdc]
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_0/add_const_ooc.xdc] for cell 'adc1_offset/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_0/add_const_ooc.xdc] for cell 'adc1_offset/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_ampl_0/add_const_ooc.xdc] for cell 'dds1_ampl/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_ampl_0/add_const_ooc.xdc] for cell 'dds1_ampl/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_f0_0/add_const_ooc.xdc] for cell 'dds1_f0/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_f0_0/add_const_ooc.xdc] for cell 'dds1_f0/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_nco_0/nco_counter_ooc.xdc] for cell 'dds1_nco/U0'
+WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_nco_0/nco_counter_ooc.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_nco_0/nco_counter_ooc.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_nco_0/nco_counter_ooc.xdc] for cell 'dds1_nco/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_offset_0/add_const_ooc.xdc] for cell 'dds1_offset/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_offset_0/add_const_ooc.xdc] for cell 'dds1_offset/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_range_0/add_const_ooc.xdc] for cell 'dds1_range/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_range_0/add_const_ooc.xdc] for cell 'dds1_range/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kd_0/add_const_ooc.xdc] for cell 'pid1_kd/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kd_0/add_const_ooc.xdc] for cell 'pid1_kd/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_ki_0/add_const_ooc.xdc] for cell 'pid1_ki/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_ki_0/add_const_ooc.xdc] for cell 'pid1_ki/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kp_0/add_const_ooc.xdc] for cell 'pid1_kp/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kp_0/add_const_ooc.xdc] for cell 'pid1_kp/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_rst_int_0/add_const_ooc.xdc] for cell 'pid1_rst_int/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_rst_int_0/add_const_ooc.xdc] for cell 'pid1_rst_int/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_setpoint_0/add_const_ooc.xdc] for cell 'pid1_setpoint/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_setpoint_0/add_const_ooc.xdc] for cell 'pid1_setpoint/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/add_const_ooc.xdc] for cell 'pid1_sign/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/add_const_ooc.xdc] for cell 'pid1_sign/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0_board.xdc] for cell 'proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0_board.xdc] for cell 'proc_sys_reset_0/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0.xdc] for cell 'proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0.xdc] for cell 'proc_sys_reset_0/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_processing_system7_0_0/double_pid_vco_wrapper_processing_system7_0_0.xdc] for cell 'processing_system7_0/inst'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_processing_system7_0_0/double_pid_vco_wrapper_processing_system7_0_0.xdc] for cell 'processing_system7_0/inst'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'redpitaya_adc_dac_clk_0/inst'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
 INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
-get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1751.902 ; gain = 444.508 ; free physical = 2027 ; free virtual = 13165
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/.Xil/Vivado-14073-ux305/dcp/double_pid_vco_wrapper_early.xdc]
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/.Xil/Vivado-14073-ux305/dcp/double_pid_vco_wrapper.xdc]
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/.Xil/Vivado-14073-ux305/dcp/double_pid_vco_wrapper.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.63 . Memory (MB): peak = 1758.902 ; gain = 7.000 ; free physical = 2020 ; free virtual = 13158
-Restored from archive | CPU: 0.630000 secs | Memory: 5.495590 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.63 . Memory (MB): peak = 1758.902 ; gain = 7.000 ; free physical = 2020 ; free virtual = 13158
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1802.438 ; gain = 451.508 ; free physical = 1414 ; free virtual = 12831
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'redpitaya_adc_dac_clk_0/inst'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_1/add_const_ooc.xdc] for cell 'adc2_offset/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_1/add_const_ooc.xdc] for cell 'adc2_offset/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_setpoint_0/add_const_ooc.xdc] for cell 'pid2_setpoint/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_setpoint_0/add_const_ooc.xdc] for cell 'pid2_setpoint/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kp_0/add_const_ooc.xdc] for cell 'pid2_kp/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kp_0/add_const_ooc.xdc] for cell 'pid2_kp/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_ki_0/add_const_ooc.xdc] for cell 'pid2_ki/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_ki_0/add_const_ooc.xdc] for cell 'pid2_ki/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_sign_0/add_const_ooc.xdc] for cell 'pid2_sign/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_sign_0/add_const_ooc.xdc] for cell 'pid2_sign/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_rst_int_0/add_const_ooc.xdc] for cell 'pid2_rst_int/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_rst_int_0/add_const_ooc.xdc] for cell 'pid2_rst_int/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kd_0/add_const_ooc.xdc] for cell 'pid2_kd/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kd_0/add_const_ooc.xdc] for cell 'pid2_kd/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_range_0/add_const_ooc.xdc] for cell 'dds2_range/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_range_0/add_const_ooc.xdc] for cell 'dds2_range/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_f0_0/add_const_ooc.xdc] for cell 'dds2_f0/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_f0_0/add_const_ooc.xdc] for cell 'dds2_f0/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/nco_counter_ooc.xdc] for cell 'dds2_nco/U0'
+WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/nco_counter_ooc.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/nco_counter_ooc.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/nco_counter_ooc.xdc] for cell 'dds2_nco/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_ampl_0/add_const_ooc.xdc] for cell 'dds2_ampl/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_ampl_0/add_const_ooc.xdc] for cell 'dds2_ampl/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_offset_0/add_const_ooc.xdc] for cell 'dds2_offset/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_offset_0/add_const_ooc.xdc] for cell 'dds2_offset/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc]
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/constrs_1/imports/fpga_ip/ltc2145/ltc2145-redpy.xdc]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/constrs_1/imports/fpga_ip/ltc2145/ltc2145-redpy.xdc]
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/constrs_1/imports/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/constrs_1/imports/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_0/double_pid_vco_wrapper_adc1_offset_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_xbar_0/double_pid_vco_wrapper_xbar_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_ampl_0/double_pid_vco_wrapper_dds_ampl_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_f0_0/double_pid_vco_wrapper_dds_f0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_nco_0/double_pid_vco_wrapper_dds_nco_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_offset_0/double_pid_vco_wrapper_dds_offset_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds_range_0/double_pid_vco_wrapper_dds_range_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kd_0/double_pid_vco_wrapper_pid_kd_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_ki_0/double_pid_vco_wrapper_pid_ki_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_kp_0/double_pid_vco_wrapper_pid_kp_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_rst_int_0/double_pid_vco_wrapper_pid_rst_int_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_setpoint_0/double_pid_vco_wrapper_pid_setpoint_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid_sign_0/double_pid_vco_wrapper_pid_sign_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_processing_system7_0_0/double_pid_vco_wrapper_processing_system7_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_adc1_offset_1/double_pid_vco_wrapper_adc1_offset_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_setpoint_0/double_pid_vco_wrapper_pid1_setpoint_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kp_0/double_pid_vco_wrapper_pid1_kp_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_ki_0/double_pid_vco_wrapper_pid1_ki_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_sign_0/double_pid_vco_wrapper_pid1_sign_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_rst_int_0/double_pid_vco_wrapper_pid1_rst_int_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_pid1_kd_0/double_pid_vco_wrapper_pid1_kd_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_range_0/double_pid_vco_wrapper_dds1_range_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_f0_0/double_pid_vco_wrapper_dds1_f0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_nco_0/double_pid_vco_wrapper_dds1_nco_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_ampl_0/double_pid_vco_wrapper_dds1_ampl_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_dds1_offset_0/double_pid_vco_wrapper_dds1_offset_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_0_0/double_pid_vco_wrapper_tier2_xbar_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_1_0/double_pid_vco_wrapper_tier2_xbar_1_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_2_0/double_pid_vco_wrapper_tier2_xbar_2_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_auto_pc_0/double_pid_vco_wrapper_auto_pc_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1733598
-open_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1758.902 ; gain = 762.227 ; free physical = 2030 ; free virtual = 13157
+link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1802.438 ; gain = 792.754 ; free physical = 1434 ; free virtual = 12831
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.81 . Memory (MB): peak = 1834.453 ; gain = 32.016 ; free physical = 1430 ; free virtual = 12826
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1bfdf1f43
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 26 inverter(s) to 26 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1df444775
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.92 . Memory (MB): peak = 1842.453 ; gain = 0.000 ; free physical = 1426 ; free virtual = 12823
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 571 cells.
+Phase 2 Constant propagation | Checksum: 15e97bec9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1842.453 ; gain = 0.000 ; free physical = 1426 ; free virtual = 12822
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 1009 unconnected nets.
+INFO: [Opt 31-11] Eliminated 650 unconnected cells.
+Phase 3 Sweep | Checksum: 145e6d4ed
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1842.453 ; gain = 0.000 ; free physical = 1426 ; free virtual = 12822
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 138d82f3f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.453 ; gain = 0.000 ; free physical = 1426 ; free virtual = 12823
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1842.453 ; gain = 0.000 ; free physical = 1426 ; free virtual = 12823
+Ending Logic Optimization Task | Checksum: 138d82f3f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1842.453 ; gain = 0.000 ; free physical = 1426 ; free virtual = 12823
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 4 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: d5d77c62
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1361 ; free virtual = 12757
+Ending Power Optimization Task | Checksum: d5d77c62
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1998.484 ; gain = 156.031 ; free physical = 1361 ; free virtual = 12757
+INFO: [Common 17-83] Releasing license: Implementation
+108 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1998.484 ; gain = 196.047 ; free physical = 1361 ; free virtual = 12757
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1359 ; free virtual = 12757
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1357 ; free virtual = 12756
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1357 ; free virtual = 12756
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6d88794c
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1357 ; free virtual = 12755
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: a9e5267a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: a9e5267a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+Phase 1 Placer Initialization | Checksum: a9e5267a
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 92439d57
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12752
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 92439d57
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12752
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 150f1d1fa
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12752
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 13210e772
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12752
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 13210e772
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12752
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: affc47b5
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12753
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1c3e8473d
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1354 ; free virtual = 12753
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: ff52ae30
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: ff52ae30
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+Phase 3 Detail Placement | Checksum: ff52ae30
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.535. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1e235a27f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+Phase 4.1 Post Commit Optimization | Checksum: 1e235a27f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1e235a27f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1e235a27f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 20467adf6
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20467adf6
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+Ending Placer Task | Checksum: 1766e3b19
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+INFO: [Common 17-83] Releasing license: Implementation
+126 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:22 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1355 ; free virtual = 12753
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.61 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1347 ; free virtual = 12752
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1346 ; free virtual = 12747
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1347 ; free virtual = 12747
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1347 ; free virtual = 12747
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 8b72143f ConstDB: 0 ShapeSum: eafc26da RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: f925864c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1296 ; free virtual = 12697
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: f925864c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1296 ; free virtual = 12697
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: f925864c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1289 ; free virtual = 12690
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: f925864c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1289 ; free virtual = 12690
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2ba565cee
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1277 ; free virtual = 12679
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.473  | TNS=0.000  | WHS=-0.918 | THS=-318.713|
+
+Phase 2 Router Initialization | Checksum: 1dfcb65ab
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1269 ; free virtual = 12670
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19114c692
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1269 ; free virtual = 12670
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 561
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 78c3135c
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:22 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.429  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1888d63ab
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:22 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 131f6a2e2
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.429  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: fe5ead28
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+Phase 4 Rip-up And Reroute | Checksum: fe5ead28
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: fe5ead28
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: fe5ead28
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+Phase 5 Delay and Skew Optimization | Checksum: fe5ead28
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: ef15ab45
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.544  | TNS=0.000  | WHS=0.036  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 186759693
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+Phase 6 Post Hold Fix | Checksum: 186759693
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.57264 %
+  Global Horizontal Routing Utilization  = 3.46002 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: e0cf54a9
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: e0cf54a9
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: efc71289
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:24 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.544  | TNS=0.000  | WHS=0.036  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: efc71289
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:24 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+140 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1268 ; free virtual = 12669
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.81 . Memory (MB): peak = 1998.484 ; gain = 0.000 ; free physical = 1259 ; free virtual = 12669
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/double_pid_vco_wrapper_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file double_pid_vco_wrapper_power_routed.rpt -pb double_pid_vco_wrapper_power_summary_routed.pb -rpx double_pid_vco_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+150 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
 Command: write_bitstream -force -no_partial_bitfile double_pid_vco_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -76,9 +618,10 @@ Creating bitstream...
 Writing bitstream ./double_pid_vco_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Apr 25 10:04:56 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-16 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+158 Infos, 24 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2156.961 ; gain = 398.059 ; free physical = 1660 ; free virtual = 12789
+write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 2307.469 ; gain = 279.902 ; free physical = 898 ; free virtual = 12308
 INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file double_pid_vco_wrapper.hwdef
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 21 16:38:50 2017...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 10:04:56 2017...

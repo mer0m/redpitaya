@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Mar 30 09:07:19 2017
+// Date        : Tue Apr 25 12:25:17 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 // Command     : write_verilog -force -mode funcsim
 //               /home/bma/git/fpga_design/redpitaya/dds_gnuradio/dds_gnuradio.srcs/sources_1/bd/dds_gnuradio_wrapper/ip/dds_gnuradio_wrapper_nco_counter_0_0/dds_gnuradio_wrapper_nco_counter_0_0_sim_netlist.v
@@ -147,7 +147,9 @@ module dds_gnuradio_wrapper_nco_counter_0_0
   (* C_S00_AXI_ADDR_WIDTH = "4" *) 
   (* C_S00_AXI_DATA_WIDTH = "32" *) 
   (* DATA_SIZE = "14" *) 
+  (* DEFAULT_RST_ACCUM_VAL = "25" *) 
   (* LUT_SIZE = "10" *) 
+  (* RESET_ACCUM = "FALSE" *) 
   (* id = "1" *) 
   dds_gnuradio_wrapper_nco_counter_0_0_nco_counter U0
        (.cos_fake_o(cos_fake_o),
@@ -195,8 +197,8 @@ module dds_gnuradio_wrapper_nco_counter_0_0
 endmodule
 
 (* COUNTER_SIZE = "32" *) (* C_S00_AXI_ADDR_WIDTH = "4" *) (* C_S00_AXI_DATA_WIDTH = "32" *) 
-(* DATA_SIZE = "14" *) (* LUT_SIZE = "10" *) (* ORIG_REF_NAME = "nco_counter" *) 
-(* id = "1" *) 
+(* DATA_SIZE = "14" *) (* DEFAULT_RST_ACCUM_VAL = "25" *) (* LUT_SIZE = "10" *) 
+(* ORIG_REF_NAME = "nco_counter" *) (* RESET_ACCUM = "FALSE" *) (* id = "1" *) 
 module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter
    (ref_clk_i,
     ref_rst_i,
@@ -284,7 +286,6 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter
   output wave_en_o;
 
   wire \<const0> ;
-  wire \<const1> ;
   wire [1:0]addr_s;
   wire cos_fake_o;
   wire [9:0]cpt_off_mux_s;
@@ -324,21 +325,19 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter
   wire s00_axi_wvalid;
   wire sin_fake_o;
   wire test_o;
+  wire wave_en_o;
 
   assign dds_clk_o = ref_clk_i;
-  assign dds_en_o = \<const1> ;
+  assign dds_en_o = wave_en_o;
   assign dds_rst_o = ref_rst_i;
   assign s00_axi_bresp[1] = \<const0> ;
   assign s00_axi_bresp[0] = \<const0> ;
   assign s00_axi_rresp[1] = \<const0> ;
   assign s00_axi_rresp[0] = \<const0> ;
   assign wave_clk_o = ref_clk_i;
-  assign wave_en_o = \<const1> ;
   assign wave_rst_o = ref_rst_i;
   GND GND
        (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
   dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_handcomm handle_comm
        (.E(handle_comm_n_7),
         .addr_s(addr_s),
@@ -372,7 +371,8 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter
         .ref_clk_i(ref_clk_i),
         .ref_rst_i(ref_rst_i),
         .sin_fake_o(sin_fake_o),
-        .test_o(test_o));
+        .test_o(test_o),
+        .wave_en_o(wave_en_o));
   FDRE pinc_sw1_s_reg
        (.C(ref_clk_i),
         .CE(1'b1),
@@ -398,10 +398,10 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter
         .Q(poff_sw2_s),
         .R(1'b0));
   dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter wb_nco_inst
-       (.E(handle_comm_n_11),
+       (.E(handle_comm_n_10),
         .addr_s(addr_s),
         .axi_arready_reg(handle_comm_n_7),
-        .axi_wready_reg(handle_comm_n_10),
+        .axi_wready_reg(handle_comm_n_11),
         .cpt_off_mux_s(cpt_off_mux_s),
         .cpt_step_mux_s(cpt_step_mux_s),
         .pinc_i(pinc_i),
@@ -597,7 +597,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_cos_rom
   (* \MEM.PORTA.DATA_BIT_LAYOUT  = "p0_d16" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* RTL_RAM_BITS = "16384" *) 
-  (* RTL_RAM_NAME = "nco_inst1/rom_10.rom_inst/data_a" *) 
+  (* RTL_RAM_NAME = "nco_inst1/rom_10.rom10_inst/data_a" *) 
   (* bram_addr_begin = "0" *) 
   (* bram_addr_end = "1023" *) 
   (* bram_slice_begin = "0" *) 
@@ -613,70 +613,70 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_cos_rom
     .INITP_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_00(256'h7F747F857F967FA67FB47FC17FCC7FD77FE07FE87FEF7FF57FF97FFC7FFE7FFF),
-    .INIT_01(256'h7DAE7DD47DF87E1B7E3D7E5E7E7D7E9B7EB87ED47EEE7F087F207F367F4C7F60),
-    .INIT_02(256'h7AB37AEB7B237B597B8E7BC27BF57C277C577C867CB47CE17D0C7D377D607D88),
-    .INIT_03(256'h768876D3771E776777AF77F5783B787F78C379057946798579C47A017A3E7A79),
-    .INIT_04(256'h7138719671F2724D72A77300735873AE7404745874AC74FE754F759F75EE763B),
-    .INIT_05(256'h6AD16B3F6BAD6C196C846CEE6D586DC06E276E8D6EF26F556FB8701A707A70DA),
-    .INIT_06(256'h636263E0645E64DA655665D0664966C2673967B06825689A690D698069F16A62),
-    .INIT_07(256'h5AFD5B8A5C175CA25D2C5DB65E3F5EC65F4D5FD3605860DC615F61E1626262E3),
-    .INIT_08(256'h51B8525252EC5385541D54B4554B55E056755709579C582F58C0595159E05A6F),
-    .INIT_09(256'h47A9484F48F5499A4A3E4AE24B844C274CC84D694E094EA84F464FE45081511D),
-    .INIT_0A(256'h3CE83D993E493EF93FA84056410341B1425D430943B4445E450845B1465A4701),
-    .INIT_0B(256'h3191324B330433BC3474352B35E23698374E380338B8396C3A203AD33B853C37),
-    .INIT_0C(256'h25C02680274027FF28BE297D2A3B2AF92BB62C732D302DEC2EA82F63301D30D8),
-    .INIT_0D(256'h19921A571B1C1BE01CA41D691E2C1EF01FB32076213821FA22BC237E243F2500),
-    .INIT_0E(256'h0D240DEC0EB40F7C1044110B11D3129A1361142814EE15B5167B1741180718CC),
-    .INIT_0F(256'h0096015F022802F203BB0484054D061606DF07A80871093A0A020ACB0B930C5C),
-    .INIT_10(256'hF406F4CFF597F660F729F7F1F8BAF983FA4CFB15FBDFFCA8FD71FE3AFF03FFCD),
-    .INIT_11(256'hE794E85AE920E9E6EAACEB73EC3AED01EDC8EE8FEF56F01EF0E6F1AEF276F33E),
-    .INIT_12(256'hDB5FDC20DCE1DDA3DE65DF27DFEAE0ADE170E234E2F7E3BCE480E545E60AE6CF),
-    .INIT_13(256'hCF83D03ED0F9D1B4D270D32CD3E9D4A6D564D622D6E0D79FD85ED91ED9DEDA9E),
-    .INIT_14(256'hC420C4D2C585C638C6ECC7A0C855C90BC9C1CA77CB2ECBE6CC9ECD57CE10CEC9),
-    .INIT_15(256'hB950B9F8BAA1BB4BBBF5BCA0BD4BBDF7BEA4BF51BFFFC0AEC15DC20DC2BDC36E),
-    .INIT_16(256'hAF2FAFCCB069B107B1A6B245B2E6B387B428B4CBB56EB612B6B7B75CB802B8A9),
-    .INIT_17(256'hA5D6A665A6F5A786A818A8ABA93FA9D3AA68AAFEAB95AC2DACC5AD5FADF9AE94),
-    .INIT_18(256'h9D5B9DDC9E5E9EE09F649FE8A06EA0F4A17BA204A28DA317A3A2A42DA4BAA548),
-    .INIT_19(256'h95D4964596B7972A979E981398899900997899F19A6B9AE69B629BDF9C5D9CDC),
-    .INIT_1A(256'h8F548FB49015907790DA913F91A4920B927292DB934493AF941B948894F69564),
-    .INIT_1B(256'h89E98A388A878AD78B298B7C8BD08C258C7B8CD28D2A8D848DDE8E3A8E978EF5),
-    .INIT_1C(256'h85A385DE861B8659869886D9871A875D87A187E6882C887388BC89058950899C),
-    .INIT_1D(256'h828A82B382DC830783338361838F83BF83F084228456848A84C084F7852F8568),
-    .INIT_1E(256'h80A880BD80D380EA8103811D813881548172819181B181D281F48218823D8263),
-    .INIT_1F(256'h8000800180038007800C8012801A8022802C8037804480518060807080818094),
-    .INIT_20(256'h8094808180708060805180448037802C8022801A8012800C8007800380018000),
-    .INIT_21(256'h8263823D821881F481D281B18191817281548138811D810380EA80D380BD80A8),
-    .INIT_22(256'h8568852F84F784C0848A8456842283F083BF838F83618333830782DC82B3828A),
-    .INIT_23(256'h899C8950890588BC8873882C87E687A1875D871A86D986988659861B85DE85A3),
-    .INIT_24(256'h8EF58E978E3A8DDE8D848D2A8CD28C7B8C258BD08B7C8B298AD78A878A3889E9),
-    .INIT_25(256'h956494F69488941B93AF934492DB9272920B91A4913F90DA907790158FB48F54),
-    .INIT_26(256'h9CDC9C5D9BDF9B629AE69A6B99F19978990098899813979E972A96B7964595D4),
-    .INIT_27(256'hA548A4BAA42DA3A2A317A28DA204A17BA0F4A06E9FE89F649EE09E5E9DDC9D5B),
-    .INIT_28(256'hAE94ADF9AD5FACC5AC2DAB95AAFEAA68A9D3A93FA8ABA818A786A6F5A665A5D6),
-    .INIT_29(256'hB8A9B802B75CB6B7B612B56EB4CBB428B387B2E6B245B1A6B107B069AFCCAF2F),
-    .INIT_2A(256'hC36EC2BDC20DC15DC0AEBFFFBF51BEA4BDF7BD4BBCA0BBF5BB4BBAA1B9F8B950),
-    .INIT_2B(256'hCEC9CE10CD57CC9ECBE6CB2ECA77C9C1C90BC855C7A0C6ECC638C585C4D2C420),
-    .INIT_2C(256'hDA9ED9DED91ED85ED79FD6E0D622D564D4A6D3E9D32CD270D1B4D0F9D03ECF83),
-    .INIT_2D(256'hE6CFE60AE545E480E3BCE2F7E234E170E0ADDFEADF27DE65DDA3DCE1DC20DB5F),
-    .INIT_2E(256'hF33EF276F1AEF0E6F01EEF56EE8FEDC8ED01EC3AEB73EAACE9E6E920E85AE794),
-    .INIT_2F(256'hFFCDFF03FE3AFD71FCA8FBDFFB15FA4CF983F8BAF7F1F729F660F597F4CFF406),
-    .INIT_30(256'h0C5C0B930ACB0A02093A087107A806DF0616054D048403BB02F20228015F0096),
-    .INIT_31(256'h18CC18071741167B15B514EE14281361129A11D3110B10440F7C0EB40DEC0D24),
-    .INIT_32(256'h2500243F237E22BC21FA213820761FB31EF01E2C1D691CA41BE01B1C1A571992),
-    .INIT_33(256'h30D8301D2F632EA82DEC2D302C732BB62AF92A3B297D28BE27FF2740268025C0),
-    .INIT_34(256'h3C373B853AD33A20396C38B83803374E369835E2352B347433BC3304324B3191),
-    .INIT_35(256'h4701465A45B14508445E43B44309425D41B1410340563FA83EF93E493D993CE8),
-    .INIT_36(256'h511D50814FE44F464EA84E094D694CC84C274B844AE24A3E499A48F5484F47A9),
-    .INIT_37(256'h5A6F59E0595158C0582F579C5709567555E0554B54B4541D538552EC525251B8),
-    .INIT_38(256'h62E3626261E1615F60DC60585FD35F4D5EC65E3F5DB65D2C5CA25C175B8A5AFD),
-    .INIT_39(256'h6A6269F16980690D689A682567B0673966C2664965D0655664DA645E63E06362),
-    .INIT_3A(256'h70DA707A701A6FB86F556EF26E8D6E276DC06D586CEE6C846C196BAD6B3F6AD1),
-    .INIT_3B(256'h763B75EE759F754F74FE74AC7458740473AE7358730072A7724D71F271967138),
-    .INIT_3C(256'h7A797A3E7A0179C479857946790578C3787F783B77F577AF7767771E76D37688),
-    .INIT_3D(256'h7D887D607D377D0C7CE17CB47C867C577C277BF57BC27B8E7B597B237AEB7AB3),
-    .INIT_3E(256'h7F607F4C7F367F207F087EEE7ED47EB87E9B7E7D7E5E7E3D7E1B7DF87DD47DAE),
-    .INIT_3F(256'h7FFF7FFE7FFC7FF97FF57FEF7FE87FE07FD77FCC7FC17FB47FA67F967F857F74),
+    .INIT_00(256'h7F747F867F967FA67FB47FC17FCD7FD77FE07FE87FEF7FF57FF97FFC7FFE7FFF),
+    .INIT_01(256'h7DB07DD57DF97E1C7E3E7E5E7E7E7E9C7EB97ED47EEF7F087F207F377F4C7F61),
+    .INIT_02(256'h7AB57AEE7B257B5C7B917BC47BF77C297C597C887CB67CE27D0E7D387D617D89),
+    .INIT_03(256'h768D76D87722776B77B377F9783F788378C679087949798979C77A047A417A7C),
+    .INIT_04(256'h7140719D71F9725472AE7306735E73B5740A745E74B17503755475A475F37640),
+    .INIT_05(256'h6ADB6B4A6BB76C236C8E6CF86D616DC96E306E956EFA6F5E6FC07022708270E1),
+    .INIT_06(256'h637063EE646B64E7656265DD665666CE674567BC683168A56919698B69FC6A6C),
+    .INIT_07(256'h5B0F5B9C5C285CB35D3D5DC65E4F5ED65F5D5FE2606760EB616E61F0627162F1),
+    .INIT_08(256'h51CE52685301539A543254C9555F55F45689571D57B0584258D3596359F35A81),
+    .INIT_09(256'h47C34869490E49B34A574AFA4B9D4C3F4CE04D804E204EBF4F5D4FFA50975133),
+    .INIT_0A(256'h3D073DB73E673F163FC54073412041CD4279432543D0447A452345CC4674471C),
+    .INIT_0B(256'h31B4326D332633DE3496354D360336B9376F382438D8398C3A3F3AF23BA43C56),
+    .INIT_0C(256'h25E726A72767282628E529A32A612B1E2BDB2C982D542E102ECC2F86304130FB),
+    .INIT_0D(256'h19BD1A821B461C0B1CCF1D931E561F191FDC209F2161222322E423A624672527),
+    .INIT_0E(256'h0D530E1B0EE30FAB10721139120012C7138E1455151B15E116A7176D183318F8),
+    .INIT_0F(256'h00C90192025B032403ED04B6057E0647071007D908A1096A0A320AFB0BC30C8B),
+    .INIT_10(256'hF43DF505F5CEF696F75FF827F8F0F9B9FA82FB4AFC13FCDCFDA5FE6EFF370000),
+    .INIT_11(256'hE7CDE893E959EA1FEAE5EBABEC72ED39EE00EEC7EF8EF055F11DF1E5F2ADF375),
+    .INIT_12(256'hDB99DC5ADD1CDDDDDE9FDF61E024E0E7E1AAE26DE331E3F5E4BAE57EE643E708),
+    .INIT_13(256'hCFBFD07AD134D1F0D2ACD368D425D4E2D59FD65DD71BD7DAD899D959DA19DAD9),
+    .INIT_14(256'hC45CC50EC5C1C674C728C7DCC891C947C9FDCAB3CB6ACC22CCDACD93CE4CCF05),
+    .INIT_15(256'hB98CBA34BADDBB86BC30BCDBBD87BE33BEE0BF8DC03BC0EAC199C249C2F9C3AA),
+    .INIT_16(256'hAF69B006B0A3B141B1E0B280B320B3C1B463B506B5A9B64DB6F2B797B83DB8E4),
+    .INIT_17(256'hA60DA69DA72DA7BEA850A8E3A977AA0CAAA1AB37ABCEAC66ACFFAD98AE32AECD),
+    .INIT_18(256'h9D8F9E109E929F159F99A01EA0A3A12AA1B1A23AA2C3A34DA3D8A464A4F1A57F),
+    .INIT_19(256'h9604967596E7975B97CF984498BB993299AA9A239A9E9B199B959C129C909D0F),
+    .INIT_1A(256'h8F7E8FDE904090A29106916B91D09237929F9308937293DD944994B695259594),
+    .INIT_1B(256'h8A0D8A5C8AAC8AFD8B4F8BA28BF68C4B8CA28CFA8D528DAC8E078E638EC08F1F),
+    .INIT_1C(256'h85BF85FC8639867786B786F8873A877D87C18807884D889588DE8928897389C0),
+    .INIT_1D(256'h829F82C882F2831E834A837883A783D78409843C846F84A484DB8512854B8584),
+    .INIT_1E(256'h80B480C980E080F88111812C81478164818281A281C281E48207822B82508277),
+    .INIT_1F(256'h800280048007800B80118018802080298033803F804C805A806A807A808C809F),
+    .INIT_20(256'h808C807A806A805A804C803F80338029802080188011800B8007800480028001),
+    .INIT_21(256'h8250822B820781E481C281A2818281648147812C811180F880E080C980B4809F),
+    .INIT_22(256'h854B851284DB84A4846F843C840983D783A78378834A831E82F282C8829F8277),
+    .INIT_23(256'h8973892888DE8895884D880787C1877D873A86F886B78677863985FC85BF8584),
+    .INIT_24(256'h8EC08E638E078DAC8D528CFA8CA28C4B8BF68BA28B4F8AFD8AAC8A5C8A0D89C0),
+    .INIT_25(256'h952594B6944993DD93729308929F923791D0916B910690A290408FDE8F7E8F1F),
+    .INIT_26(256'h9C909C129B959B199A9E9A2399AA993298BB984497CF975B96E7967596049594),
+    .INIT_27(256'hA4F1A464A3D8A34DA2C3A23AA1B1A12AA0A3A01E9F999F159E929E109D8F9D0F),
+    .INIT_28(256'hAE32AD98ACFFAC66ABCEAB37AAA1AA0CA977A8E3A850A7BEA72DA69DA60DA57F),
+    .INIT_29(256'hB83DB797B6F2B64DB5A9B506B463B3C1B320B280B1E0B141B0A3B006AF69AECD),
+    .INIT_2A(256'hC2F9C249C199C0EAC03BBF8DBEE0BE33BD87BCDBBC30BB86BADDBA34B98CB8E4),
+    .INIT_2B(256'hCE4CCD93CCDACC22CB6ACAB3C9FDC947C891C7DCC728C674C5C1C50EC45CC3AA),
+    .INIT_2C(256'hDA19D959D899D7DAD71BD65DD59FD4E2D425D368D2ACD1F0D134D07ACFBFCF05),
+    .INIT_2D(256'hE643E57EE4BAE3F5E331E26DE1AAE0E7E024DF61DE9FDDDDDD1CDC5ADB99DAD9),
+    .INIT_2E(256'hF2ADF1E5F11DF055EF8EEEC7EE00ED39EC72EBABEAE5EA1FE959E893E7CDE708),
+    .INIT_2F(256'hFF37FE6EFDA5FCDCFC13FB4AFA82F9B9F8F0F827F75FF696F5CEF505F43DF375),
+    .INIT_30(256'h0BC30AFB0A32096A08A107D907100647057E04B603ED0324025B019200C90000),
+    .INIT_31(256'h1833176D16A715E1151B1455138E12C71200113910720FAB0EE30E1B0D530C8B),
+    .INIT_32(256'h246723A622E422232161209F1FDC1F191E561D931CCF1C0B1B461A8219BD18F8),
+    .INIT_33(256'h30412F862ECC2E102D542C982BDB2B1E2A6129A328E52826276726A725E72527),
+    .INIT_34(256'h3BA43AF23A3F398C38D83824376F36B93603354D349633DE3326326D31B430FB),
+    .INIT_35(256'h467445CC4523447A43D04325427941CD412040733FC53F163E673DB73D073C56),
+    .INIT_36(256'h50974FFA4F5D4EBF4E204D804CE04C3F4B9D4AFA4A5749B3490E486947C3471C),
+    .INIT_37(256'h59F3596358D3584257B0571D568955F4555F54C95432539A5301526851CE5133),
+    .INIT_38(256'h627161F0616E60EB60675FE25F5D5ED65E4F5DC65D3D5CB35C285B9C5B0F5A81),
+    .INIT_39(256'h69FC698B691968A5683167BC674566CE665665DD656264E7646B63EE637062F1),
+    .INIT_3A(256'h708270226FC06F5E6EFA6E956E306DC96D616CF86C8E6C236BB76B4A6ADB6A6C),
+    .INIT_3B(256'h75F375A47554750374B1745E740A73B5735E730672AE725471F9719D714070E1),
+    .INIT_3C(256'h7A417A0479C779897949790878C67883783F77F977B3776B772276D8768D7640),
+    .INIT_3D(256'h7D617D387D0E7CE27CB67C887C597C297BF77BC47B917B5C7B257AEE7AB57A7C),
+    .INIT_3E(256'h7F4C7F377F207F087EEF7ED47EB97E9C7E7E7E5E7E3E7E1C7DF97DD57DB07D89),
+    .INIT_3F(256'h7FFE7FFC7FF97FF57FEF7FE87FE07FD77FCD7FC17FB47FA67F967F867F747F61),
     .INIT_A(18'h00000),
     .INIT_B(18'h00000),
     .RAM_MODE("TDP"),
@@ -1029,24 +1029,26 @@ endmodule
 
 (* ORIG_REF_NAME = "nco_counter_logic" *) 
 module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
-   (dds_cos_o,
-    dds_sin_o,
+   (wave_en_o,
     sin_fake_o,
     cos_fake_o,
+    dds_cos_o,
+    dds_sin_o,
     test_o,
-    ref_clk_i,
     ref_rst_i,
-    cpt_off_mux_s,
-    cpt_step_mux_s);
-  output [13:0]dds_cos_o;
-  output [13:0]dds_sin_o;
+    ref_clk_i,
+    cpt_step_mux_s,
+    cpt_off_mux_s);
+  output wave_en_o;
   output sin_fake_o;
   output cos_fake_o;
+  output [13:0]dds_cos_o;
+  output [13:0]dds_sin_o;
   output test_o;
-  input ref_clk_i;
   input ref_rst_i;
-  input [9:0]cpt_off_mux_s;
+  input ref_clk_i;
   input [31:0]cpt_step_mux_s;
+  input [9:0]cpt_off_mux_s;
 
   wire cos_fake_o;
   wire counter_cos_off_s_carry__0_n_0;
@@ -1058,10 +1060,11 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
   wire counter_cos_off_s_carry_n_1;
   wire counter_cos_off_s_carry_n_2;
   wire counter_cos_off_s_carry_n_3;
-  wire \counter_s[0]_i_2_n_0 ;
+  wire \counter_s[0]_i_1_n_0 ;
   wire \counter_s[0]_i_3_n_0 ;
   wire \counter_s[0]_i_4_n_0 ;
   wire \counter_s[0]_i_5_n_0 ;
+  wire \counter_s[0]_i_6_n_0 ;
   wire \counter_s[12]_i_2_n_0 ;
   wire \counter_s[12]_i_3_n_0 ;
   wire \counter_s[12]_i_4_n_0 ;
@@ -1090,14 +1093,14 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
   wire \counter_s[8]_i_3_n_0 ;
   wire \counter_s[8]_i_4_n_0 ;
   wire \counter_s[8]_i_5_n_0 ;
-  wire \counter_s_reg[0]_i_1_n_0 ;
-  wire \counter_s_reg[0]_i_1_n_1 ;
-  wire \counter_s_reg[0]_i_1_n_2 ;
-  wire \counter_s_reg[0]_i_1_n_3 ;
-  wire \counter_s_reg[0]_i_1_n_4 ;
-  wire \counter_s_reg[0]_i_1_n_5 ;
-  wire \counter_s_reg[0]_i_1_n_6 ;
-  wire \counter_s_reg[0]_i_1_n_7 ;
+  wire \counter_s_reg[0]_i_2_n_0 ;
+  wire \counter_s_reg[0]_i_2_n_1 ;
+  wire \counter_s_reg[0]_i_2_n_2 ;
+  wire \counter_s_reg[0]_i_2_n_3 ;
+  wire \counter_s_reg[0]_i_2_n_4 ;
+  wire \counter_s_reg[0]_i_2_n_5 ;
+  wire \counter_s_reg[0]_i_2_n_6 ;
+  wire \counter_s_reg[0]_i_2_n_7 ;
   wire \counter_s_reg[12]_i_1_n_0 ;
   wire \counter_s_reg[12]_i_1_n_1 ;
   wire \counter_s_reg[12]_i_1_n_2 ;
@@ -1250,33 +1253,35 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
   wire minusOp_carry_n_3;
   wire minusOp_carry_n_6;
   wire minusOp_carry_n_7;
+  wire ready2_s;
   wire ref_clk_i;
   wire ref_rst_i;
-  wire \rom_10.rom_inst_n_28 ;
-  wire \rom_10.rom_inst_n_29 ;
-  wire \rom_10.rom_inst_n_30 ;
-  wire \rom_10.rom_inst_n_31 ;
-  wire \rom_10.rom_inst_n_32 ;
-  wire \rom_10.rom_inst_n_33 ;
-  wire \rom_10.rom_inst_n_34 ;
-  wire \rom_10.rom_inst_n_35 ;
-  wire \rom_10.rom_inst_n_36 ;
-  wire \rom_10.rom_inst_n_37 ;
-  wire \rom_10.rom_inst_n_38 ;
-  wire \rom_10.rom_inst_n_39 ;
-  wire \rom_10.rom_inst_n_40 ;
-  wire \rom_10.rom_inst_n_41 ;
-  wire \rom_10.rom_inst_n_42 ;
-  wire \rom_10.rom_inst_n_43 ;
-  wire \rom_10.rom_inst_n_44 ;
-  wire \rom_10.rom_inst_n_45 ;
-  wire \rom_10.rom_inst_n_46 ;
-  wire \rom_10.rom_inst_n_47 ;
+  wire \rom_10.rom10_inst_n_28 ;
+  wire \rom_10.rom10_inst_n_29 ;
+  wire \rom_10.rom10_inst_n_30 ;
+  wire \rom_10.rom10_inst_n_31 ;
+  wire \rom_10.rom10_inst_n_32 ;
+  wire \rom_10.rom10_inst_n_33 ;
+  wire \rom_10.rom10_inst_n_34 ;
+  wire \rom_10.rom10_inst_n_35 ;
+  wire \rom_10.rom10_inst_n_36 ;
+  wire \rom_10.rom10_inst_n_37 ;
+  wire \rom_10.rom10_inst_n_38 ;
+  wire \rom_10.rom10_inst_n_39 ;
+  wire \rom_10.rom10_inst_n_40 ;
+  wire \rom_10.rom10_inst_n_41 ;
+  wire \rom_10.rom10_inst_n_42 ;
+  wire \rom_10.rom10_inst_n_43 ;
+  wire \rom_10.rom10_inst_n_44 ;
+  wire \rom_10.rom10_inst_n_45 ;
+  wire \rom_10.rom10_inst_n_46 ;
+  wire \rom_10.rom10_inst_n_47 ;
   wire [9:0]sel;
   wire sin_fake_o;
   wire sin_next;
   wire test_o;
   wire test_o_INST_0_i_1_n_0;
+  wire wave_en_o;
   wire [3:1]NLW_counter_cos_off_s_carry__1_CO_UNCONNECTED;
   wire [3:2]NLW_counter_cos_off_s_carry__1_O_UNCONNECTED;
   wire [3:3]\NLW_counter_s_reg[28]_i_1_CO_UNCONNECTED ;
@@ -1298,45 +1303,51 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CYINIT(1'b0),
         .DI(counter_scale_s__0[3:0]),
         .O(sel[3:0]),
-        .S({\rom_10.rom_inst_n_44 ,\rom_10.rom_inst_n_45 ,\rom_10.rom_inst_n_46 ,\rom_10.rom_inst_n_47 }));
+        .S({\rom_10.rom10_inst_n_44 ,\rom_10.rom10_inst_n_45 ,\rom_10.rom10_inst_n_46 ,\rom_10.rom10_inst_n_47 }));
   CARRY4 counter_cos_off_s_carry__0
        (.CI(counter_cos_off_s_carry_n_0),
         .CO({counter_cos_off_s_carry__0_n_0,counter_cos_off_s_carry__0_n_1,counter_cos_off_s_carry__0_n_2,counter_cos_off_s_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI(counter_scale_s__0[7:4]),
         .O(sel[7:4]),
-        .S({\rom_10.rom_inst_n_32 ,\rom_10.rom_inst_n_33 ,\rom_10.rom_inst_n_34 ,\rom_10.rom_inst_n_35 }));
+        .S({\rom_10.rom10_inst_n_32 ,\rom_10.rom10_inst_n_33 ,\rom_10.rom10_inst_n_34 ,\rom_10.rom10_inst_n_35 }));
   CARRY4 counter_cos_off_s_carry__1
        (.CI(counter_cos_off_s_carry__0_n_0),
         .CO({NLW_counter_cos_off_s_carry__1_CO_UNCONNECTED[3:1],counter_cos_off_s_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,counter_scale_s__0[8]}),
         .O({NLW_counter_cos_off_s_carry__1_O_UNCONNECTED[3:2],sel[9:8]}),
-        .S({1'b0,1'b0,\rom_10.rom_inst_n_28 ,\rom_10.rom_inst_n_29 }));
+        .S({1'b0,1'b0,\rom_10.rom10_inst_n_28 ,\rom_10.rom10_inst_n_29 }));
   LUT2 #(
-    .INIT(4'h6)) 
-    \counter_s[0]_i_2 
-       (.I0(in[3]),
-        .I1(\counter_s_reg_n_0_[3] ),
-        .O(\counter_s[0]_i_2_n_0 ));
+    .INIT(4'hB)) 
+    \counter_s[0]_i_1 
+       (.I0(ref_rst_i),
+        .I1(wave_en_o),
+        .O(\counter_s[0]_i_1_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \counter_s[0]_i_3 
-       (.I0(in[2]),
-        .I1(\counter_s_reg_n_0_[2] ),
+       (.I0(in[3]),
+        .I1(\counter_s_reg_n_0_[3] ),
         .O(\counter_s[0]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \counter_s[0]_i_4 
-       (.I0(in[1]),
-        .I1(\counter_s_reg_n_0_[1] ),
+       (.I0(in[2]),
+        .I1(\counter_s_reg_n_0_[2] ),
         .O(\counter_s[0]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \counter_s[0]_i_5 
+       (.I0(in[1]),
+        .I1(\counter_s_reg_n_0_[1] ),
+        .O(\counter_s[0]_i_5_n_0 ));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \counter_s[0]_i_6 
        (.I0(in[0]),
         .I1(\counter_s_reg_n_0_[0] ),
-        .O(\counter_s[0]_i_5_n_0 ));
+        .O(\counter_s[0]_i_6_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \counter_s[12]_i_2 
@@ -1508,34 +1519,34 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
   FDRE \counter_s_reg[0] 
        (.C(ref_clk_i),
         .CE(1'b1),
-        .D(\counter_s_reg[0]_i_1_n_7 ),
+        .D(\counter_s_reg[0]_i_2_n_7 ),
         .Q(\counter_s_reg_n_0_[0] ),
-        .R(ref_rst_i));
-  CARRY4 \counter_s_reg[0]_i_1 
+        .R(\counter_s[0]_i_1_n_0 ));
+  CARRY4 \counter_s_reg[0]_i_2 
        (.CI(1'b0),
-        .CO({\counter_s_reg[0]_i_1_n_0 ,\counter_s_reg[0]_i_1_n_1 ,\counter_s_reg[0]_i_1_n_2 ,\counter_s_reg[0]_i_1_n_3 }),
+        .CO({\counter_s_reg[0]_i_2_n_0 ,\counter_s_reg[0]_i_2_n_1 ,\counter_s_reg[0]_i_2_n_2 ,\counter_s_reg[0]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI(in[3:0]),
-        .O({\counter_s_reg[0]_i_1_n_4 ,\counter_s_reg[0]_i_1_n_5 ,\counter_s_reg[0]_i_1_n_6 ,\counter_s_reg[0]_i_1_n_7 }),
-        .S({\counter_s[0]_i_2_n_0 ,\counter_s[0]_i_3_n_0 ,\counter_s[0]_i_4_n_0 ,\counter_s[0]_i_5_n_0 }));
+        .O({\counter_s_reg[0]_i_2_n_4 ,\counter_s_reg[0]_i_2_n_5 ,\counter_s_reg[0]_i_2_n_6 ,\counter_s_reg[0]_i_2_n_7 }),
+        .S({\counter_s[0]_i_3_n_0 ,\counter_s[0]_i_4_n_0 ,\counter_s[0]_i_5_n_0 ,\counter_s[0]_i_6_n_0 }));
   FDRE \counter_s_reg[10] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[8]_i_1_n_5 ),
         .Q(\counter_s_reg_n_0_[10] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[11] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[8]_i_1_n_4 ),
         .Q(\counter_s_reg_n_0_[11] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[12] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[12]_i_1_n_7 ),
         .Q(\counter_s_reg_n_0_[12] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[12]_i_1 
        (.CI(\counter_s_reg[8]_i_1_n_0 ),
         .CO({\counter_s_reg[12]_i_1_n_0 ,\counter_s_reg[12]_i_1_n_1 ,\counter_s_reg[12]_i_1_n_2 ,\counter_s_reg[12]_i_1_n_3 }),
@@ -1548,25 +1559,25 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[12]_i_1_n_6 ),
         .Q(\counter_s_reg_n_0_[13] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[14] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[12]_i_1_n_5 ),
         .Q(\counter_s_reg_n_0_[14] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[15] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[12]_i_1_n_4 ),
         .Q(\counter_s_reg_n_0_[15] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[16] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[16]_i_1_n_7 ),
         .Q(\counter_s_reg_n_0_[16] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[16]_i_1 
        (.CI(\counter_s_reg[12]_i_1_n_0 ),
         .CO({\counter_s_reg[16]_i_1_n_0 ,\counter_s_reg[16]_i_1_n_1 ,\counter_s_reg[16]_i_1_n_2 ,\counter_s_reg[16]_i_1_n_3 }),
@@ -1579,31 +1590,31 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[16]_i_1_n_6 ),
         .Q(\counter_s_reg_n_0_[17] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[18] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[16]_i_1_n_5 ),
         .Q(\counter_s_reg_n_0_[18] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[19] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[16]_i_1_n_4 ),
         .Q(\counter_s_reg_n_0_[19] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[1] 
        (.C(ref_clk_i),
         .CE(1'b1),
-        .D(\counter_s_reg[0]_i_1_n_6 ),
+        .D(\counter_s_reg[0]_i_2_n_6 ),
         .Q(\counter_s_reg_n_0_[1] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[20] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[20]_i_1_n_7 ),
         .Q(\counter_s_reg_n_0_[20] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[20]_i_1 
        (.CI(\counter_s_reg[16]_i_1_n_0 ),
         .CO({\counter_s_reg[20]_i_1_n_0 ,\counter_s_reg[20]_i_1_n_1 ,\counter_s_reg[20]_i_1_n_2 ,\counter_s_reg[20]_i_1_n_3 }),
@@ -1616,25 +1627,25 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[20]_i_1_n_6 ),
         .Q(\counter_s_reg_n_0_[21] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[22] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[20]_i_1_n_5 ),
         .Q(counter_scale_s__0[0]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[23] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[20]_i_1_n_4 ),
         .Q(counter_scale_s__0[1]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[24] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[24]_i_1_n_7 ),
         .Q(counter_scale_s__0[2]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[24]_i_1 
        (.CI(\counter_s_reg[20]_i_1_n_0 ),
         .CO({\counter_s_reg[24]_i_1_n_0 ,\counter_s_reg[24]_i_1_n_1 ,\counter_s_reg[24]_i_1_n_2 ,\counter_s_reg[24]_i_1_n_3 }),
@@ -1647,25 +1658,25 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[24]_i_1_n_6 ),
         .Q(counter_scale_s__0[3]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[26] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[24]_i_1_n_5 ),
         .Q(counter_scale_s__0[4]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[27] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[24]_i_1_n_4 ),
         .Q(counter_scale_s__0[5]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[28] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[28]_i_1_n_7 ),
         .Q(counter_scale_s__0[6]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[28]_i_1 
        (.CI(\counter_s_reg[24]_i_1_n_0 ),
         .CO({\NLW_counter_s_reg[28]_i_1_CO_UNCONNECTED [3],\counter_s_reg[28]_i_1_n_1 ,\counter_s_reg[28]_i_1_n_2 ,\counter_s_reg[28]_i_1_n_3 }),
@@ -1678,39 +1689,39 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[28]_i_1_n_6 ),
         .Q(counter_scale_s__0[7]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[2] 
        (.C(ref_clk_i),
         .CE(1'b1),
-        .D(\counter_s_reg[0]_i_1_n_5 ),
+        .D(\counter_s_reg[0]_i_2_n_5 ),
         .Q(\counter_s_reg_n_0_[2] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[30] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[28]_i_1_n_5 ),
         .Q(counter_scale_s__0[8]),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[31] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[28]_i_1_n_4 ),
         .Q(counter_scale_s),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[3] 
        (.C(ref_clk_i),
         .CE(1'b1),
-        .D(\counter_s_reg[0]_i_1_n_4 ),
+        .D(\counter_s_reg[0]_i_2_n_4 ),
         .Q(\counter_s_reg_n_0_[3] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[4] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[4]_i_1_n_7 ),
         .Q(\counter_s_reg_n_0_[4] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[4]_i_1 
-       (.CI(\counter_s_reg[0]_i_1_n_0 ),
+       (.CI(\counter_s_reg[0]_i_2_n_0 ),
         .CO({\counter_s_reg[4]_i_1_n_0 ,\counter_s_reg[4]_i_1_n_1 ,\counter_s_reg[4]_i_1_n_2 ,\counter_s_reg[4]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(in[7:4]),
@@ -1721,25 +1732,25 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[4]_i_1_n_6 ),
         .Q(\counter_s_reg_n_0_[5] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[6] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[4]_i_1_n_5 ),
         .Q(\counter_s_reg_n_0_[6] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[7] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[4]_i_1_n_4 ),
         .Q(\counter_s_reg_n_0_[7] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   FDRE \counter_s_reg[8] 
        (.C(ref_clk_i),
         .CE(1'b1),
         .D(\counter_s_reg[8]_i_1_n_7 ),
         .Q(\counter_s_reg_n_0_[8] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 \counter_s_reg[8]_i_1 
        (.CI(\counter_s_reg[4]_i_1_n_0 ),
         .CO({\counter_s_reg[8]_i_1_n_0 ,\counter_s_reg[8]_i_1_n_1 ,\counter_s_reg[8]_i_1_n_2 ,\counter_s_reg[8]_i_1_n_3 }),
@@ -1752,28 +1763,28 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
         .CE(1'b1),
         .D(\counter_s_reg[8]_i_1_n_6 ),
         .Q(\counter_s_reg_n_0_[9] ),
-        .R(ref_rst_i));
+        .R(\counter_s[0]_i_1_n_0 ));
   CARRY4 counter_sin_off_s_carry
        (.CI(1'b0),
         .CO({counter_sin_off_s_carry_n_0,counter_sin_off_s_carry_n_1,counter_sin_off_s_carry_n_2,counter_sin_off_s_carry_n_3}),
         .CYINIT(1'b0),
         .DI(counter_scale_s__0[3:0]),
         .O({counter_sin_off_s_carry_n_4,counter_sin_off_s_carry_n_5,counter_sin_off_s_carry_n_6,NLW_counter_sin_off_s_carry_O_UNCONNECTED[0]}),
-        .S({\rom_10.rom_inst_n_40 ,\rom_10.rom_inst_n_41 ,\rom_10.rom_inst_n_42 ,\rom_10.rom_inst_n_43 }));
+        .S({\rom_10.rom10_inst_n_40 ,\rom_10.rom10_inst_n_41 ,\rom_10.rom10_inst_n_42 ,\rom_10.rom10_inst_n_43 }));
   CARRY4 counter_sin_off_s_carry__0
        (.CI(counter_sin_off_s_carry_n_0),
         .CO({counter_sin_off_s_carry__0_n_0,counter_sin_off_s_carry__0_n_1,counter_sin_off_s_carry__0_n_2,counter_sin_off_s_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI({minusOp_carry_n_7,counter_scale_s__0[6:4]}),
         .O({counter_sin_off_s_carry__0_n_4,counter_sin_off_s_carry__0_n_5,counter_sin_off_s_carry__0_n_6,counter_sin_off_s_carry__0_n_7}),
-        .S({\rom_10.rom_inst_n_36 ,\rom_10.rom_inst_n_37 ,\rom_10.rom_inst_n_38 ,\rom_10.rom_inst_n_39 }));
+        .S({\rom_10.rom10_inst_n_36 ,\rom_10.rom10_inst_n_37 ,\rom_10.rom10_inst_n_38 ,\rom_10.rom10_inst_n_39 }));
   CARRY4 counter_sin_off_s_carry__1
        (.CI(counter_sin_off_s_carry__0_n_0),
         .CO({NLW_counter_sin_off_s_carry__1_CO_UNCONNECTED[3:1],counter_sin_off_s_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,minusOp_carry_n_6}),
         .O({NLW_counter_sin_off_s_carry__1_O_UNCONNECTED[3:2],counter_sin_off_s_carry__1_n_6,counter_sin_off_s_carry__1_n_7}),
-        .S({1'b0,1'b0,\rom_10.rom_inst_n_30 ,\rom_10.rom_inst_n_31 }));
+        .S({1'b0,1'b0,\rom_10.rom10_inst_n_30 ,\rom_10.rom10_inst_n_31 }));
   (* srl_bus_name = "U0/\nco_inst1/cpt_inc2_s_reg " *) 
   (* srl_name = "U0/\nco_inst1/cpt_inc2_s_reg[0]_srl2 " *) 
   SRL16E \cpt_inc2_s_reg[0]_srl2 
@@ -2510,19 +2521,35 @@ module dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_logic
     minusOp_carry_i_3
        (.I0(counter_scale_s__0[7]),
         .O(minusOp_carry_i_3_n_0));
-  dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_cos_rom \rom_10.rom_inst 
+  FDSE #(
+    .INIT(1'b0)) 
+    ready2_s_reg
+       (.C(ref_clk_i),
+        .CE(1'b1),
+        .D(ready2_s),
+        .Q(ready2_s),
+        .S(ref_rst_i));
+  FDRE #(
+    .INIT(1'b0)) 
+    ready_s_reg
+       (.C(ref_clk_i),
+        .CE(1'b1),
+        .D(ready2_s),
+        .Q(wave_en_o),
+        .R(ref_rst_i));
+  dds_gnuradio_wrapper_nco_counter_0_0_nco_counter_cos_rom \rom_10.rom10_inst 
        (.ADDRARDADDR(sel),
         .ADDRBWRADDR({counter_sin_off_s_carry__1_n_6,counter_sin_off_s_carry__1_n_7,counter_sin_off_s_carry__0_n_4,counter_sin_off_s_carry__0_n_5,counter_sin_off_s_carry__0_n_6,counter_sin_off_s_carry__0_n_7,counter_sin_off_s_carry_n_4,counter_sin_off_s_carry_n_5,counter_sin_off_s_carry_n_6}),
         .O({sin_next,minusOp_carry_n_6,minusOp_carry_n_7}),
-        .S({\rom_10.rom_inst_n_28 ,\rom_10.rom_inst_n_29 }),
+        .S({\rom_10.rom10_inst_n_28 ,\rom_10.rom10_inst_n_29 }),
         .counter_scale_s(counter_scale_s),
         .counter_scale_s__0(counter_scale_s__0),
         .cpt_off_s(cpt_off_s),
-        .data_a_reg_0({\rom_10.rom_inst_n_30 ,\rom_10.rom_inst_n_31 }),
-        .data_a_reg_1({\rom_10.rom_inst_n_32 ,\rom_10.rom_inst_n_33 ,\rom_10.rom_inst_n_34 ,\rom_10.rom_inst_n_35 }),
-        .data_a_reg_2({\rom_10.rom_inst_n_36 ,\rom_10.rom_inst_n_37 ,\rom_10.rom_inst_n_38 ,\rom_10.rom_inst_n_39 }),
-        .data_a_reg_3({\rom_10.rom_inst_n_40 ,\rom_10.rom_inst_n_41 ,\rom_10.rom_inst_n_42 ,\rom_10.rom_inst_n_43 }),
-        .data_a_reg_4({\rom_10.rom_inst_n_44 ,\rom_10.rom_inst_n_45 ,\rom_10.rom_inst_n_46 ,\rom_10.rom_inst_n_47 }),
+        .data_a_reg_0({\rom_10.rom10_inst_n_30 ,\rom_10.rom10_inst_n_31 }),
+        .data_a_reg_1({\rom_10.rom10_inst_n_32 ,\rom_10.rom10_inst_n_33 ,\rom_10.rom10_inst_n_34 ,\rom_10.rom10_inst_n_35 }),
+        .data_a_reg_2({\rom_10.rom10_inst_n_36 ,\rom_10.rom10_inst_n_37 ,\rom_10.rom10_inst_n_38 ,\rom_10.rom10_inst_n_39 }),
+        .data_a_reg_3({\rom_10.rom10_inst_n_40 ,\rom_10.rom10_inst_n_41 ,\rom_10.rom10_inst_n_42 ,\rom_10.rom10_inst_n_43 }),
+        .data_a_reg_4({\rom_10.rom10_inst_n_44 ,\rom_10.rom10_inst_n_45 ,\rom_10.rom10_inst_n_46 ,\rom_10.rom10_inst_n_47 }),
         .dds_cos_o(dds_cos_o),
         .dds_sin_o(dds_sin_o),
         .ref_clk_i(ref_clk_i));
@@ -2556,36 +2583,36 @@ endmodule
 module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
    (pinc_sw_s,
     poff_sw_s,
-    cpt_off_mux_s,
     cpt_step_mux_s,
+    cpt_off_mux_s,
     s00_axi_rdata,
     s00_axi_reset,
     pinc_sw_s_reg_0,
     s00_axi_aclk,
     poff_sw_s_reg_0,
     addr_s,
-    poff_i,
-    poff_sw2_s,
     pinc_i,
     pinc_sw2_s,
+    poff_i,
+    poff_sw2_s,
     E,
     s00_axi_wdata,
     axi_wready_reg,
     axi_arready_reg);
   output pinc_sw_s;
   output poff_sw_s;
-  output [9:0]cpt_off_mux_s;
   output [31:0]cpt_step_mux_s;
+  output [9:0]cpt_off_mux_s;
   output [31:0]s00_axi_rdata;
   input s00_axi_reset;
   input pinc_sw_s_reg_0;
   input s00_axi_aclk;
   input poff_sw_s_reg_0;
   input [1:0]addr_s;
-  input [9:0]poff_i;
-  input poff_sw2_s;
   input [31:0]pinc_i;
   input pinc_sw2_s;
+  input [9:0]poff_i;
+  input poff_sw2_s;
   input [0:0]E;
   input [31:0]s00_axi_wdata;
   input [0:0]axi_wready_reg;
@@ -2644,7 +2671,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
   wire s00_axi_reset;
   wire [31:0]s00_axi_wdata;
 
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[0]_srl2_i_1 
@@ -2652,7 +2679,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[0]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[0]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[10]_srl2_i_1 
@@ -2660,7 +2687,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[10]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[10]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[11]_srl2_i_1 
@@ -2668,7 +2695,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[11]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[11]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[12]_srl2_i_1 
@@ -2676,7 +2703,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[12]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[12]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[13]_srl2_i_1 
@@ -2684,7 +2711,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[13]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[13]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[14]_srl2_i_1 
@@ -2692,7 +2719,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[14]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[14]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[15]_srl2_i_1 
@@ -2700,7 +2727,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[15]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[15]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[16]_srl2_i_1 
@@ -2708,7 +2735,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[16]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[16]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[17]_srl2_i_1 
@@ -2716,7 +2743,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[17]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[17]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[18]_srl2_i_1 
@@ -2724,7 +2751,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[18]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[18]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[19]_srl2_i_1 
@@ -2732,7 +2759,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[19]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[19]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[1]_srl2_i_1 
@@ -2740,7 +2767,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[1]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[1]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[20]_srl2_i_1 
@@ -2748,7 +2775,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[20]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[20]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[21]_srl2_i_1 
@@ -2756,7 +2783,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[21]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[21]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[22]_srl2_i_1 
@@ -2764,7 +2791,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[22]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[22]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[23]_srl2_i_1 
@@ -2772,7 +2799,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[23]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[23]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[24]_srl2_i_1 
@@ -2780,7 +2807,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[24]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[24]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[25]_srl2_i_1 
@@ -2788,7 +2815,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[25]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[25]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[26]_srl2_i_1 
@@ -2796,7 +2823,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[26]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[26]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[27]_srl2_i_1 
@@ -2804,7 +2831,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[27]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[27]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[28]_srl2_i_1 
@@ -2812,7 +2839,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[28]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[28]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[29]_srl2_i_1 
@@ -2820,7 +2847,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[29]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[29]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[2]_srl2_i_1 
@@ -2828,7 +2855,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[2]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[2]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[30]_srl2_i_1 
@@ -2836,7 +2863,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[30]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[30]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[31]_srl2_i_1 
@@ -2844,7 +2871,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[31]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[31]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[3]_srl2_i_1 
@@ -2852,7 +2879,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[3]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[3]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[4]_srl2_i_1 
@@ -2860,7 +2887,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[4]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[4]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[5]_srl2_i_1 
@@ -2868,7 +2895,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[5]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[5]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[6]_srl2_i_1 
@@ -2876,7 +2903,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[6]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[6]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[7]_srl2_i_1 
@@ -2884,7 +2911,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[7]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[7]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[8]_srl2_i_1 
@@ -2892,7 +2919,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[8]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[8]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_inc2_s_reg[9]_srl2_i_1 
@@ -2900,7 +2927,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(pinc_i[9]),
         .I2(pinc_sw2_s),
         .O(cpt_step_mux_s[9]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[0]_srl2_i_1 
@@ -2908,7 +2935,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[0]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[0]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[1]_srl2_i_1 
@@ -2916,7 +2943,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[1]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[1]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[2]_srl2_i_1 
@@ -2924,7 +2951,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[2]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[2]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[3]_srl2_i_1 
@@ -2932,7 +2959,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[3]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[3]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[4]_srl2_i_1 
@@ -2940,7 +2967,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[4]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[4]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[5]_srl2_i_1 
@@ -2948,7 +2975,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[5]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[5]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[6]_srl2_i_1 
@@ -2956,7 +2983,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[6]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[6]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[7]_srl2_i_1 
@@ -2964,7 +2991,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[7]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[7]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[8]_srl2_i_1 
@@ -2972,7 +2999,7 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I1(poff_i[8]),
         .I2(poff_sw2_s),
         .O(cpt_off_mux_s[8]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \cpt_off2_s_reg[9]_srl2_i_1 
@@ -2982,385 +3009,385 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .O(cpt_off_mux_s[9]));
   FDRE \cpt_off_s_reg[0] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[0]),
         .Q(\cpt_off_s_reg_n_0_[0] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[10] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[10]),
         .Q(\cpt_off_s_reg_n_0_[10] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[11] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[11]),
         .Q(\cpt_off_s_reg_n_0_[11] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[12] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[12]),
         .Q(\cpt_off_s_reg_n_0_[12] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[13] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[13]),
         .Q(\cpt_off_s_reg_n_0_[13] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[14] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[14]),
         .Q(\cpt_off_s_reg_n_0_[14] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[15] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[15]),
         .Q(\cpt_off_s_reg_n_0_[15] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[16] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[16]),
         .Q(\cpt_off_s_reg_n_0_[16] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[17] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[17]),
         .Q(\cpt_off_s_reg_n_0_[17] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[18] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[18]),
         .Q(\cpt_off_s_reg_n_0_[18] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[19] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[19]),
         .Q(\cpt_off_s_reg_n_0_[19] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[1] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[1]),
         .Q(\cpt_off_s_reg_n_0_[1] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[20] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[20]),
         .Q(\cpt_off_s_reg_n_0_[20] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[21] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[21]),
         .Q(\cpt_off_s_reg_n_0_[21] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[22] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[22]),
         .Q(\cpt_off_s_reg_n_0_[22] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[23] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[23]),
         .Q(\cpt_off_s_reg_n_0_[23] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[24] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[24]),
         .Q(\cpt_off_s_reg_n_0_[24] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[25] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[25]),
         .Q(\cpt_off_s_reg_n_0_[25] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[26] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[26]),
         .Q(\cpt_off_s_reg_n_0_[26] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[27] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[27]),
         .Q(\cpt_off_s_reg_n_0_[27] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[28] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[28]),
         .Q(\cpt_off_s_reg_n_0_[28] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[29] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[29]),
         .Q(\cpt_off_s_reg_n_0_[29] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[2] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[2]),
         .Q(\cpt_off_s_reg_n_0_[2] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[30] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[30]),
         .Q(\cpt_off_s_reg_n_0_[30] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[31] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[31]),
         .Q(\cpt_off_s_reg_n_0_[31] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[3] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[3]),
         .Q(\cpt_off_s_reg_n_0_[3] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[4] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[4]),
         .Q(\cpt_off_s_reg_n_0_[4] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[5] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[5]),
         .Q(\cpt_off_s_reg_n_0_[5] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[6] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[6]),
         .Q(\cpt_off_s_reg_n_0_[6] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[7] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[7]),
         .Q(\cpt_off_s_reg_n_0_[7] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[8] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[8]),
         .Q(\cpt_off_s_reg_n_0_[8] ),
         .R(s00_axi_reset));
   FDRE \cpt_off_s_reg[9] 
        (.C(s00_axi_aclk),
-        .CE(E),
+        .CE(axi_wready_reg),
         .D(s00_axi_wdata[9]),
         .Q(\cpt_off_s_reg_n_0_[9] ),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[0] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[0]),
         .Q(cpt_step_s[0]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[10] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[10]),
         .Q(cpt_step_s[10]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[11] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[11]),
         .Q(cpt_step_s[11]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[12] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[12]),
         .Q(cpt_step_s[12]),
         .S(s00_axi_reset));
   FDSE \cpt_step_s_reg[13] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[13]),
         .Q(cpt_step_s[13]),
         .S(s00_axi_reset));
   FDSE \cpt_step_s_reg[14] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[14]),
         .Q(cpt_step_s[14]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[15] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[15]),
         .Q(cpt_step_s[15]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[16] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[16]),
         .Q(cpt_step_s[16]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[17] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[17]),
         .Q(cpt_step_s[17]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[18] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[18]),
         .Q(cpt_step_s[18]),
         .S(s00_axi_reset));
   FDSE \cpt_step_s_reg[19] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[19]),
         .Q(cpt_step_s[19]),
         .S(s00_axi_reset));
   FDSE \cpt_step_s_reg[1] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[1]),
         .Q(cpt_step_s[1]),
         .S(s00_axi_reset));
   FDSE \cpt_step_s_reg[20] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[20]),
         .Q(cpt_step_s[20]),
         .S(s00_axi_reset));
   FDSE \cpt_step_s_reg[21] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[21]),
         .Q(cpt_step_s[21]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[22] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[22]),
         .Q(cpt_step_s[22]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[23] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[23]),
         .Q(cpt_step_s[23]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[24] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[24]),
         .Q(cpt_step_s[24]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[25] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[25]),
         .Q(cpt_step_s[25]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[26] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[26]),
         .Q(cpt_step_s[26]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[27] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[27]),
         .Q(cpt_step_s[27]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[28] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[28]),
         .Q(cpt_step_s[28]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[29] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[29]),
         .Q(cpt_step_s[29]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[2] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[2]),
         .Q(cpt_step_s[2]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[30] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[30]),
         .Q(cpt_step_s[30]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[31] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[31]),
         .Q(cpt_step_s[31]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[3] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[3]),
         .Q(cpt_step_s[3]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[4] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[4]),
         .Q(cpt_step_s[4]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[5] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[5]),
         .Q(cpt_step_s[5]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[6] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[6]),
         .Q(cpt_step_s[6]),
         .R(s00_axi_reset));
   FDSE \cpt_step_s_reg[7] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[7]),
         .Q(cpt_step_s[7]),
         .S(s00_axi_reset));
   FDRE \cpt_step_s_reg[8] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[8]),
         .Q(cpt_step_s[8]),
         .R(s00_axi_reset));
   FDRE \cpt_step_s_reg[9] 
        (.C(s00_axi_aclk),
-        .CE(axi_wready_reg),
+        .CE(E),
         .D(s00_axi_wdata[9]),
         .Q(cpt_step_s[9]),
         .R(s00_axi_reset));
@@ -3377,13 +3404,13 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .Q(poff_sw_s),
         .S(s00_axi_reset));
   LUT5 #(
-    .INIT(32'hACACF000)) 
+    .INIT(32'hFACF0ACF)) 
     \readdata_s[0]_i_1 
-       (.I0(pinc_sw_s),
-        .I1(cpt_step_s[0]),
+       (.I0(cpt_step_s[0]),
+        .I1(\cpt_off_s_reg_n_0_[0] ),
         .I2(addr_s[1]),
-        .I3(\cpt_off_s_reg_n_0_[0] ),
-        .I4(addr_s[0]),
+        .I3(addr_s[0]),
+        .I4(pinc_sw_s),
         .O(p_0_in[0]));
   LUT4 #(
     .INIT(16'h3808)) 
@@ -3466,13 +3493,13 @@ module dds_gnuradio_wrapper_nco_counter_0_0_wb_nco_counter
         .I3(\cpt_off_s_reg_n_0_[19] ),
         .O(p_0_in[19]));
   LUT5 #(
-    .INIT(32'hACACF000)) 
+    .INIT(32'hAFC0A0C0)) 
     \readdata_s[1]_i_1 
        (.I0(poff_sw_s),
         .I1(cpt_step_s[1]),
-        .I2(addr_s[1]),
-        .I3(\cpt_off_s_reg_n_0_[1] ),
-        .I4(addr_s[0]),
+        .I2(addr_s[0]),
+        .I3(addr_s[1]),
+        .I4(\cpt_off_s_reg_n_0_[1] ),
         .O(p_0_in[1]));
   LUT4 #(
     .INIT(16'h3808)) 

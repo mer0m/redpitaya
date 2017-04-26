@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Tue Mar  7 09:58:53 2017
+//Date        : Tue Mar 28 17:11:24 2017
 //Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 //Command     : generate_target adc2dac_ram_offset.bd
 //Design      : adc2dac_ram_offset
@@ -499,7 +499,12 @@ module adc2dac_ram_offset
         .M_AXI_GP0_WVALID(processing_system7_0_M_AXI_GP0_WVALID),
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
-        .PS_SRSTB(FIXED_IO_ps_srstb));
+        .PS_SRSTB(FIXED_IO_ps_srstb),
+        .SPI0_MISO_I(1'b0),
+        .SPI0_MOSI_I(1'b0),
+        .SPI0_SCLK_I(1'b0),
+        .SPI0_SS_I(1'b0),
+        .USB0_VBUS_PWRFAULT(1'b0));
   adc2dac_ram_offset_ps7_0_axi_periph_0 ps7_0_axi_periph
        (.ACLK(processing_system7_0_FCLK_CLK0),
         .ARESETN(proc_sys_reset_0_interconnect_aresetn),

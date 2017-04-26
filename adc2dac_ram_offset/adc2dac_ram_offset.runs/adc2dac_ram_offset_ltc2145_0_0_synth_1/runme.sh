@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.runs/adc2dac_ram_offset_ltc2145_0_0_synth_1'
+HD_PWD='/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.runs/adc2dac_ram_offset_ltc2145_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

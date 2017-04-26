@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Feb  9 10:16:41 2017
+// Date        : Tue Mar 28 17:12:48 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 // Command     : write_verilog -force -mode funcsim
-//               /home/bma/Documents/BPT_sync/Work/5-ED_SPIM/Work/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_processing_system7_0_0/adc2dac_ram_offset_processing_system7_0_0_sim_netlist.v
+//               /home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_processing_system7_0_0/adc2dac_ram_offset_processing_system7_0_0_sim_netlist.v
 // Design      : adc2dac_ram_offset_processing_system7_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,7 +15,27 @@
 (* CHECK_LICENSE_TYPE = "adc2dac_ram_offset_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2016.4" *) 
 (* NotValidForBitStream *)
 module adc2dac_ram_offset_processing_system7_0_0
-   (M_AXI_GP0_ARVALID,
+   (SPI0_SCLK_I,
+    SPI0_SCLK_O,
+    SPI0_SCLK_T,
+    SPI0_MOSI_I,
+    SPI0_MOSI_O,
+    SPI0_MOSI_T,
+    SPI0_MISO_I,
+    SPI0_MISO_O,
+    SPI0_MISO_T,
+    SPI0_SS_I,
+    SPI0_SS_O,
+    SPI0_SS1_O,
+    SPI0_SS2_O,
+    SPI0_SS_T,
+    TTC0_WAVE0_OUT,
+    TTC0_WAVE1_OUT,
+    TTC0_WAVE2_OUT,
+    USB0_PORT_INDCTL,
+    USB0_VBUS_PWRSELECT,
+    USB0_VBUS_PWRFAULT,
+    M_AXI_GP0_ARVALID,
     M_AXI_GP0_AWVALID,
     M_AXI_GP0_BREADY,
     M_AXI_GP0_RREADY,
@@ -55,7 +75,13 @@ module adc2dac_ram_offset_processing_system7_0_0
     M_AXI_GP0_RRESP,
     M_AXI_GP0_RDATA,
     FCLK_CLK0,
+    FCLK_CLK1,
+    FCLK_CLK2,
+    FCLK_CLK3,
     FCLK_RESET0_N,
+    FCLK_RESET1_N,
+    FCLK_RESET2_N,
+    FCLK_RESET3_N,
     MIO,
     DDR_CAS_n,
     DDR_CKE,
@@ -77,6 +103,26 @@ module adc2dac_ram_offset_processing_system7_0_0
     PS_SRSTB,
     PS_CLK,
     PS_PORB);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_I" *) input SPI0_SCLK_I;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_O" *) output SPI0_SCLK_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_T" *) output SPI0_SCLK_T;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_I" *) input SPI0_MOSI_I;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_O" *) output SPI0_MOSI_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_T" *) output SPI0_MOSI_T;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_I" *) input SPI0_MISO_I;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_O" *) output SPI0_MISO_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_T" *) output SPI0_MISO_T;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_I" *) input SPI0_SS_I;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_O" *) output SPI0_SS_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS1_O" *) output SPI0_SS1_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS2_O" *) output SPI0_SS2_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_T" *) output SPI0_SS_T;
+  output TTC0_WAVE0_OUT;
+  output TTC0_WAVE1_OUT;
+  output TTC0_WAVE2_OUT;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *) output [1:0]USB0_PORT_INDCTL;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *) output USB0_VBUS_PWRSELECT;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT" *) input USB0_VBUS_PWRFAULT;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *) output M_AXI_GP0_ARVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *) output M_AXI_GP0_AWVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BREADY" *) output M_AXI_GP0_BREADY;
@@ -117,7 +163,13 @@ module adc2dac_ram_offset_processing_system7_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RRESP" *) input [1:0]M_AXI_GP0_RRESP;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RDATA" *) input [31:0]M_AXI_GP0_RDATA;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *) output FCLK_CLK0;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK1 CLK" *) output FCLK_CLK1;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK2 CLK" *) output FCLK_CLK2;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK3 CLK" *) output FCLK_CLK3;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST" *) output FCLK_RESET0_N;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET1_N RST" *) output FCLK_RESET1_N;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET2_N RST" *) output FCLK_RESET2_N;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET3_N RST" *) output FCLK_RESET3_N;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO" *) inout [53:0]MIO;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_CAS_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CKE" *) inout DDR_CKE;
@@ -158,7 +210,13 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire DDR_VRP;
   wire DDR_WEB;
   wire FCLK_CLK0;
+  wire FCLK_CLK1;
+  wire FCLK_CLK2;
+  wire FCLK_CLK3;
   wire FCLK_RESET0_N;
+  wire FCLK_RESET1_N;
+  wire FCLK_RESET2_N;
+  wire FCLK_RESET3_N;
   wire [53:0]MIO;
   wire M_AXI_GP0_ACLK;
   wire [31:0]M_AXI_GP0_ARADDR;
@@ -202,6 +260,26 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire PS_CLK;
   wire PS_PORB;
   wire PS_SRSTB;
+  wire SPI0_MISO_I;
+  wire SPI0_MISO_O;
+  wire SPI0_MISO_T;
+  wire SPI0_MOSI_I;
+  wire SPI0_MOSI_O;
+  wire SPI0_MOSI_T;
+  wire SPI0_SCLK_I;
+  wire SPI0_SCLK_O;
+  wire SPI0_SCLK_T;
+  wire SPI0_SS1_O;
+  wire SPI0_SS2_O;
+  wire SPI0_SS_I;
+  wire SPI0_SS_O;
+  wire SPI0_SS_T;
+  wire TTC0_WAVE0_OUT;
+  wire TTC0_WAVE1_OUT;
+  wire TTC0_WAVE2_OUT;
+  wire [1:0]USB0_PORT_INDCTL;
+  wire USB0_VBUS_PWRFAULT;
+  wire USB0_VBUS_PWRSELECT;
   wire NLW_inst_CAN0_PHY_TX_UNCONNECTED;
   wire NLW_inst_CAN1_PHY_TX_UNCONNECTED;
   wire NLW_inst_DMA0_DAVALID_UNCONNECTED;
@@ -247,12 +325,6 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire NLW_inst_ENET1_SOF_RX_UNCONNECTED;
   wire NLW_inst_ENET1_SOF_TX_UNCONNECTED;
   wire NLW_inst_EVENT_EVENTO_UNCONNECTED;
-  wire NLW_inst_FCLK_CLK1_UNCONNECTED;
-  wire NLW_inst_FCLK_CLK2_UNCONNECTED;
-  wire NLW_inst_FCLK_CLK3_UNCONNECTED;
-  wire NLW_inst_FCLK_RESET1_N_UNCONNECTED;
-  wire NLW_inst_FCLK_RESET2_N_UNCONNECTED;
-  wire NLW_inst_FCLK_RESET3_N_UNCONNECTED;
   wire NLW_inst_FTMT_F2P_TRIGACK_0_UNCONNECTED;
   wire NLW_inst_FTMT_F2P_TRIGACK_1_UNCONNECTED;
   wire NLW_inst_FTMT_F2P_TRIGACK_2_UNCONNECTED;
@@ -317,16 +389,6 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire NLW_inst_SDIO1_CMD_O_UNCONNECTED;
   wire NLW_inst_SDIO1_CMD_T_UNCONNECTED;
   wire NLW_inst_SDIO1_LED_UNCONNECTED;
-  wire NLW_inst_SPI0_MISO_O_UNCONNECTED;
-  wire NLW_inst_SPI0_MISO_T_UNCONNECTED;
-  wire NLW_inst_SPI0_MOSI_O_UNCONNECTED;
-  wire NLW_inst_SPI0_MOSI_T_UNCONNECTED;
-  wire NLW_inst_SPI0_SCLK_O_UNCONNECTED;
-  wire NLW_inst_SPI0_SCLK_T_UNCONNECTED;
-  wire NLW_inst_SPI0_SS1_O_UNCONNECTED;
-  wire NLW_inst_SPI0_SS2_O_UNCONNECTED;
-  wire NLW_inst_SPI0_SS_O_UNCONNECTED;
-  wire NLW_inst_SPI0_SS_T_UNCONNECTED;
   wire NLW_inst_SPI1_MISO_O_UNCONNECTED;
   wire NLW_inst_SPI1_MISO_T_UNCONNECTED;
   wire NLW_inst_SPI1_MOSI_O_UNCONNECTED;
@@ -388,9 +450,6 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire NLW_inst_S_AXI_HP3_WREADY_UNCONNECTED;
   wire NLW_inst_TRACE_CLK_OUT_UNCONNECTED;
   wire NLW_inst_TRACE_CTL_UNCONNECTED;
-  wire NLW_inst_TTC0_WAVE0_OUT_UNCONNECTED;
-  wire NLW_inst_TTC0_WAVE1_OUT_UNCONNECTED;
-  wire NLW_inst_TTC0_WAVE2_OUT_UNCONNECTED;
   wire NLW_inst_TTC1_WAVE0_OUT_UNCONNECTED;
   wire NLW_inst_TTC1_WAVE1_OUT_UNCONNECTED;
   wire NLW_inst_TTC1_WAVE2_OUT_UNCONNECTED;
@@ -400,7 +459,6 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire NLW_inst_UART1_DTRN_UNCONNECTED;
   wire NLW_inst_UART1_RTSN_UNCONNECTED;
   wire NLW_inst_UART1_TX_UNCONNECTED;
-  wire NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED;
   wire NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED;
   wire NLW_inst_WDT_RST_OUT_UNCONNECTED;
   wire [1:0]NLW_inst_DMA0_DATYPE_UNCONNECTED;
@@ -492,9 +550,98 @@ module adc2dac_ram_offset_processing_system7_0_0
   wire [1:0]NLW_inst_S_AXI_HP3_RRESP_UNCONNECTED;
   wire [5:0]NLW_inst_S_AXI_HP3_WACOUNT_UNCONNECTED;
   wire [7:0]NLW_inst_S_AXI_HP3_WCOUNT_UNCONNECTED;
-  wire [1:0]NLW_inst_TRACE_DATA_UNCONNECTED;
-  wire [1:0]NLW_inst_USB0_PORT_INDCTL_UNCONNECTED;
+  wire [31:0]NLW_inst_TRACE_DATA_UNCONNECTED;
   wire [1:0]NLW_inst_USB1_PORT_INDCTL_UNCONNECTED;
+PULLUP pullup_DDR_DM_2
+       (.O(DDR_DM[2]));
+PULLUP pullup_DDR_DM_3
+       (.O(DDR_DM[3]));
+PULLUP pullup_DDR_DQ_16
+       (.O(DDR_DQ[16]));
+PULLUP pullup_DDR_DQ_17
+       (.O(DDR_DQ[17]));
+PULLUP pullup_DDR_DQ_18
+       (.O(DDR_DQ[18]));
+PULLUP pullup_DDR_DQ_19
+       (.O(DDR_DQ[19]));
+PULLUP pullup_DDR_DQ_20
+       (.O(DDR_DQ[20]));
+PULLUP pullup_DDR_DQ_21
+       (.O(DDR_DQ[21]));
+PULLUP pullup_DDR_DQ_22
+       (.O(DDR_DQ[22]));
+PULLUP pullup_DDR_DQ_23
+       (.O(DDR_DQ[23]));
+PULLUP pullup_DDR_DQ_24
+       (.O(DDR_DQ[24]));
+PULLUP pullup_DDR_DQ_25
+       (.O(DDR_DQ[25]));
+PULLUP pullup_DDR_DQ_26
+       (.O(DDR_DQ[26]));
+PULLUP pullup_DDR_DQ_27
+       (.O(DDR_DQ[27]));
+PULLUP pullup_DDR_DQ_28
+       (.O(DDR_DQ[28]));
+PULLUP pullup_DDR_DQ_29
+       (.O(DDR_DQ[29]));
+PULLUP pullup_DDR_DQ_30
+       (.O(DDR_DQ[30]));
+PULLUP pullup_DDR_DQ_31
+       (.O(DDR_DQ[31]));
+PULLUP pullup_DDR_DQS_2
+       (.O(DDR_DQS[2]));
+PULLUP pullup_DDR_DQS_3
+       (.O(DDR_DQS[3]));
+PULLUP pullup_DDR_DQS_n_2
+       (.O(DDR_DQS_n[2]));
+PULLUP pullup_DDR_DQS_n_3
+       (.O(DDR_DQS_n[3]));
+PULLUP pullup_MIO_0
+       (.O(MIO[0]));
+PULLUP pullup_MIO_1
+       (.O(MIO[1]));
+PULLUP pullup_MIO_9
+       (.O(MIO[9]));
+PULLUP pullup_MIO_10
+       (.O(MIO[10]));
+PULLUP pullup_MIO_11
+       (.O(MIO[11]));
+PULLUP pullup_MIO_12
+       (.O(MIO[12]));
+PULLUP pullup_MIO_13
+       (.O(MIO[13]));
+PULLUP pullup_MIO_14
+       (.O(MIO[14]));
+PULLUP pullup_MIO_15
+       (.O(MIO[15]));
+PULLUP pullup_MIO_40
+       (.O(MIO[40]));
+PULLUP pullup_MIO_41
+       (.O(MIO[41]));
+PULLUP pullup_MIO_42
+       (.O(MIO[42]));
+PULLUP pullup_MIO_43
+       (.O(MIO[43]));
+PULLUP pullup_MIO_44
+       (.O(MIO[44]));
+PULLUP pullup_MIO_45
+       (.O(MIO[45]));
+PULLUP pullup_MIO_46
+       (.O(MIO[46]));
+PULLUP pullup_MIO_47
+       (.O(MIO[47]));
+PULLUP pullup_MIO_48
+       (.O(MIO[48]));
+PULLUP pullup_MIO_49
+       (.O(MIO[49]));
+PULLUP pullup_MIO_50
+       (.O(MIO[50]));
+PULLUP pullup_MIO_51
+       (.O(MIO[51]));
+PULLUP pullup_MIO_52
+       (.O(MIO[52]));
+PULLUP pullup_MIO_53
+       (.O(MIO[53]));
 
   (* C_DM_WIDTH = "4" *) 
   (* C_DQS_WIDTH = "4" *) 
@@ -505,14 +652,14 @@ module adc2dac_ram_offset_processing_system7_0_0
   (* C_EN_EMIO_PJTAG = "0" *) 
   (* C_EN_EMIO_TRACE = "0" *) 
   (* C_FCLK_CLK0_BUF = "TRUE" *) 
-  (* C_FCLK_CLK1_BUF = "FALSE" *) 
-  (* C_FCLK_CLK2_BUF = "FALSE" *) 
-  (* C_FCLK_CLK3_BUF = "FALSE" *) 
+  (* C_FCLK_CLK1_BUF = "TRUE" *) 
+  (* C_FCLK_CLK2_BUF = "TRUE" *) 
+  (* C_FCLK_CLK3_BUF = "TRUE" *) 
   (* C_GP0_EN_MODIFIABLE_TXN = "0" *) 
   (* C_GP1_EN_MODIFIABLE_TXN = "0" *) 
   (* C_INCLUDE_ACP_TRANS_CHECK = "0" *) 
   (* C_INCLUDE_TRACE_BUFFER = "0" *) 
-  (* C_IRQ_F2P_MODE = "DIRECT" *) 
+  (* C_IRQ_F2P_MODE = "REVERSE" *) 
   (* C_MIO_PRIMITIVE = "54" *) 
   (* C_M_AXI_GP0_ENABLE_STATIC_REMAP = "0" *) 
   (* C_M_AXI_GP0_ID_WIDTH = "12" *) 
@@ -538,7 +685,7 @@ module adc2dac_ram_offset_processing_system7_0_0
   (* C_S_AXI_HP3_ID_WIDTH = "6" *) 
   (* C_TRACE_BUFFER_CLOCK_DELAY = "12" *) 
   (* C_TRACE_BUFFER_FIFO_SIZE = "128" *) 
-  (* C_TRACE_INTERNAL_WIDTH = "2" *) 
+  (* C_TRACE_INTERNAL_WIDTH = "32" *) 
   (* C_TRACE_PIPELINE_WIDTH = "8" *) 
   (* C_USE_AXI_NONSECURE = "0" *) 
   (* C_USE_DEFAULT_ACP_USER_VAL = "0" *) 
@@ -552,7 +699,7 @@ module adc2dac_ram_offset_processing_system7_0_0
   (* C_USE_S_AXI_HP2 = "0" *) 
   (* C_USE_S_AXI_HP3 = "0" *) 
   (* HW_HANDOFF = "adc2dac_ram_offset_processing_system7_0_0.hwdef" *) 
-  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) 
+  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS25} bidis={1} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={4} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={LVCMOS25} bidis={2} ioBank={Vcco_p1} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS25} bidis={8} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS25} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS25} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={125} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={125} usageRate={0.5} />/>" *) 
   (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
   adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7 inst
        (.CAN0_PHY_RX(1'b0),
@@ -672,17 +819,17 @@ module adc2dac_ram_offset_processing_system7_0_0
         .EVENT_STANDBYWFE(NLW_inst_EVENT_STANDBYWFE_UNCONNECTED[1:0]),
         .EVENT_STANDBYWFI(NLW_inst_EVENT_STANDBYWFI_UNCONNECTED[1:0]),
         .FCLK_CLK0(FCLK_CLK0),
-        .FCLK_CLK1(NLW_inst_FCLK_CLK1_UNCONNECTED),
-        .FCLK_CLK2(NLW_inst_FCLK_CLK2_UNCONNECTED),
-        .FCLK_CLK3(NLW_inst_FCLK_CLK3_UNCONNECTED),
+        .FCLK_CLK1(FCLK_CLK1),
+        .FCLK_CLK2(FCLK_CLK2),
+        .FCLK_CLK3(FCLK_CLK3),
         .FCLK_CLKTRIG0_N(1'b0),
         .FCLK_CLKTRIG1_N(1'b0),
         .FCLK_CLKTRIG2_N(1'b0),
         .FCLK_CLKTRIG3_N(1'b0),
         .FCLK_RESET0_N(FCLK_RESET0_N),
-        .FCLK_RESET1_N(NLW_inst_FCLK_RESET1_N_UNCONNECTED),
-        .FCLK_RESET2_N(NLW_inst_FCLK_RESET2_N_UNCONNECTED),
-        .FCLK_RESET3_N(NLW_inst_FCLK_RESET3_N_UNCONNECTED),
+        .FCLK_RESET1_N(FCLK_RESET1_N),
+        .FCLK_RESET2_N(FCLK_RESET2_N),
+        .FCLK_RESET3_N(FCLK_RESET3_N),
         .FPGA_IDLE_N(1'b0),
         .FTMD_TRACEIN_ATID({1'b0,1'b0,1'b0,1'b0}),
         .FTMD_TRACEIN_CLK(1'b0),
@@ -865,20 +1012,20 @@ module adc2dac_ram_offset_processing_system7_0_0
         .SDIO1_DATA_T(NLW_inst_SDIO1_DATA_T_UNCONNECTED[3:0]),
         .SDIO1_LED(NLW_inst_SDIO1_LED_UNCONNECTED),
         .SDIO1_WP(1'b0),
-        .SPI0_MISO_I(1'b0),
-        .SPI0_MISO_O(NLW_inst_SPI0_MISO_O_UNCONNECTED),
-        .SPI0_MISO_T(NLW_inst_SPI0_MISO_T_UNCONNECTED),
-        .SPI0_MOSI_I(1'b0),
-        .SPI0_MOSI_O(NLW_inst_SPI0_MOSI_O_UNCONNECTED),
-        .SPI0_MOSI_T(NLW_inst_SPI0_MOSI_T_UNCONNECTED),
-        .SPI0_SCLK_I(1'b0),
-        .SPI0_SCLK_O(NLW_inst_SPI0_SCLK_O_UNCONNECTED),
-        .SPI0_SCLK_T(NLW_inst_SPI0_SCLK_T_UNCONNECTED),
-        .SPI0_SS1_O(NLW_inst_SPI0_SS1_O_UNCONNECTED),
-        .SPI0_SS2_O(NLW_inst_SPI0_SS2_O_UNCONNECTED),
-        .SPI0_SS_I(1'b0),
-        .SPI0_SS_O(NLW_inst_SPI0_SS_O_UNCONNECTED),
-        .SPI0_SS_T(NLW_inst_SPI0_SS_T_UNCONNECTED),
+        .SPI0_MISO_I(SPI0_MISO_I),
+        .SPI0_MISO_O(SPI0_MISO_O),
+        .SPI0_MISO_T(SPI0_MISO_T),
+        .SPI0_MOSI_I(SPI0_MOSI_I),
+        .SPI0_MOSI_O(SPI0_MOSI_O),
+        .SPI0_MOSI_T(SPI0_MOSI_T),
+        .SPI0_SCLK_I(SPI0_SCLK_I),
+        .SPI0_SCLK_O(SPI0_SCLK_O),
+        .SPI0_SCLK_T(SPI0_SCLK_T),
+        .SPI0_SS1_O(SPI0_SS1_O),
+        .SPI0_SS2_O(SPI0_SS2_O),
+        .SPI0_SS_I(SPI0_SS_I),
+        .SPI0_SS_O(SPI0_SS_O),
+        .SPI0_SS_T(SPI0_SS_T),
         .SPI1_MISO_I(1'b0),
         .SPI1_MISO_O(NLW_inst_SPI1_MISO_O_UNCONNECTED),
         .SPI1_MISO_T(NLW_inst_SPI1_MISO_T_UNCONNECTED),
@@ -1203,13 +1350,13 @@ module adc2dac_ram_offset_processing_system7_0_0
         .TRACE_CLK(1'b0),
         .TRACE_CLK_OUT(NLW_inst_TRACE_CLK_OUT_UNCONNECTED),
         .TRACE_CTL(NLW_inst_TRACE_CTL_UNCONNECTED),
-        .TRACE_DATA(NLW_inst_TRACE_DATA_UNCONNECTED[1:0]),
+        .TRACE_DATA(NLW_inst_TRACE_DATA_UNCONNECTED[31:0]),
         .TTC0_CLK0_IN(1'b0),
         .TTC0_CLK1_IN(1'b0),
         .TTC0_CLK2_IN(1'b0),
-        .TTC0_WAVE0_OUT(NLW_inst_TTC0_WAVE0_OUT_UNCONNECTED),
-        .TTC0_WAVE1_OUT(NLW_inst_TTC0_WAVE1_OUT_UNCONNECTED),
-        .TTC0_WAVE2_OUT(NLW_inst_TTC0_WAVE2_OUT_UNCONNECTED),
+        .TTC0_WAVE0_OUT(TTC0_WAVE0_OUT),
+        .TTC0_WAVE1_OUT(TTC0_WAVE1_OUT),
+        .TTC0_WAVE2_OUT(TTC0_WAVE2_OUT),
         .TTC1_CLK0_IN(1'b0),
         .TTC1_CLK1_IN(1'b0),
         .TTC1_CLK2_IN(1'b0),
@@ -1232,9 +1379,9 @@ module adc2dac_ram_offset_processing_system7_0_0
         .UART1_RTSN(NLW_inst_UART1_RTSN_UNCONNECTED),
         .UART1_RX(1'b1),
         .UART1_TX(NLW_inst_UART1_TX_UNCONNECTED),
-        .USB0_PORT_INDCTL(NLW_inst_USB0_PORT_INDCTL_UNCONNECTED[1:0]),
-        .USB0_VBUS_PWRFAULT(1'b0),
-        .USB0_VBUS_PWRSELECT(NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED),
+        .USB0_PORT_INDCTL(USB0_PORT_INDCTL),
+        .USB0_VBUS_PWRFAULT(USB0_VBUS_PWRFAULT),
+        .USB0_VBUS_PWRSELECT(USB0_VBUS_PWRSELECT),
         .USB1_PORT_INDCTL(NLW_inst_USB1_PORT_INDCTL_UNCONNECTED[1:0]),
         .USB1_VBUS_PWRFAULT(1'b0),
         .USB1_VBUS_PWRSELECT(NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED),
@@ -1245,9 +1392,9 @@ endmodule
 (* C_DM_WIDTH = "4" *) (* C_DQS_WIDTH = "4" *) (* C_DQ_WIDTH = "32" *) 
 (* C_EMIO_GPIO_WIDTH = "64" *) (* C_EN_EMIO_ENET0 = "0" *) (* C_EN_EMIO_ENET1 = "0" *) 
 (* C_EN_EMIO_PJTAG = "0" *) (* C_EN_EMIO_TRACE = "0" *) (* C_FCLK_CLK0_BUF = "TRUE" *) 
-(* C_FCLK_CLK1_BUF = "FALSE" *) (* C_FCLK_CLK2_BUF = "FALSE" *) (* C_FCLK_CLK3_BUF = "FALSE" *) 
+(* C_FCLK_CLK1_BUF = "TRUE" *) (* C_FCLK_CLK2_BUF = "TRUE" *) (* C_FCLK_CLK3_BUF = "TRUE" *) 
 (* C_GP0_EN_MODIFIABLE_TXN = "0" *) (* C_GP1_EN_MODIFIABLE_TXN = "0" *) (* C_INCLUDE_ACP_TRANS_CHECK = "0" *) 
-(* C_INCLUDE_TRACE_BUFFER = "0" *) (* C_IRQ_F2P_MODE = "DIRECT" *) (* C_MIO_PRIMITIVE = "54" *) 
+(* C_INCLUDE_TRACE_BUFFER = "0" *) (* C_IRQ_F2P_MODE = "REVERSE" *) (* C_MIO_PRIMITIVE = "54" *) 
 (* C_M_AXI_GP0_ENABLE_STATIC_REMAP = "0" *) (* C_M_AXI_GP0_ID_WIDTH = "12" *) (* C_M_AXI_GP0_THREAD_ID_WIDTH = "12" *) 
 (* C_M_AXI_GP1_ENABLE_STATIC_REMAP = "0" *) (* C_M_AXI_GP1_ID_WIDTH = "12" *) (* C_M_AXI_GP1_THREAD_ID_WIDTH = "12" *) 
 (* C_NUM_F2P_INTR_INPUTS = "1" *) (* C_PACKAGE_NAME = "clg400" *) (* C_PS7_SI_REV = "PRODUCTION" *) 
@@ -1256,12 +1403,12 @@ endmodule
 (* C_S_AXI_HP0_ID_WIDTH = "6" *) (* C_S_AXI_HP1_DATA_WIDTH = "64" *) (* C_S_AXI_HP1_ID_WIDTH = "6" *) 
 (* C_S_AXI_HP2_DATA_WIDTH = "64" *) (* C_S_AXI_HP2_ID_WIDTH = "6" *) (* C_S_AXI_HP3_DATA_WIDTH = "64" *) 
 (* C_S_AXI_HP3_ID_WIDTH = "6" *) (* C_TRACE_BUFFER_CLOCK_DELAY = "12" *) (* C_TRACE_BUFFER_FIFO_SIZE = "128" *) 
-(* C_TRACE_INTERNAL_WIDTH = "2" *) (* C_TRACE_PIPELINE_WIDTH = "8" *) (* C_USE_AXI_NONSECURE = "0" *) 
+(* C_TRACE_INTERNAL_WIDTH = "32" *) (* C_TRACE_PIPELINE_WIDTH = "8" *) (* C_USE_AXI_NONSECURE = "0" *) 
 (* C_USE_DEFAULT_ACP_USER_VAL = "0" *) (* C_USE_M_AXI_GP0 = "1" *) (* C_USE_M_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_ACP = "0" *) (* C_USE_S_AXI_GP0 = "0" *) (* C_USE_S_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_HP0 = "0" *) (* C_USE_S_AXI_HP1 = "0" *) (* C_USE_S_AXI_HP2 = "0" *) 
 (* C_USE_S_AXI_HP3 = "0" *) (* HW_HANDOFF = "adc2dac_ram_offset_processing_system7_0_0.hwdef" *) (* ORIG_REF_NAME = "processing_system7_v5_5_processing_system7" *) 
-(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
+(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS25} bidis={1} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={4} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={LVCMOS25} bidis={2} ioBank={Vcco_p1} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS25} bidis={8} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS25} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS25} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={125} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={125} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
 module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_processing_system7
    (CAN0_PHY_TX,
     CAN0_PHY_RX,
@@ -2107,7 +2254,7 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   output WDT_RST_OUT;
   input TRACE_CLK;
   output TRACE_CTL;
-  output [1:0]TRACE_DATA;
+  output [31:0]TRACE_DATA;
   output TRACE_CLK_OUT;
   output [1:0]USB0_PORT_INDCTL;
   output USB0_VBUS_PWRSELECT;
@@ -2741,7 +2888,7 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   wire FCLK_CLK1;
   wire FCLK_CLK2;
   wire FCLK_CLK3;
-  wire [0:0]FCLK_CLK_unbuffered;
+  wire [3:0]FCLK_CLK_unbuffered;
   wire FCLK_RESET0_N;
   wire FCLK_RESET1_N;
   wire FCLK_RESET2_N;
@@ -3284,14 +3431,14 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   (* RTL_KEEP = "true" *) wire \TRACE_CTL_PIPE[5] ;
   (* RTL_KEEP = "true" *) wire \TRACE_CTL_PIPE[6] ;
   (* RTL_KEEP = "true" *) wire \TRACE_CTL_PIPE[7] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[0] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[1] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[2] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[3] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[4] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[5] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[6] ;
-  (* RTL_KEEP = "true" *) wire [1:0]\TRACE_DATA_PIPE[7] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[0] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[1] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[2] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[3] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[4] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[5] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[6] ;
+  (* RTL_KEEP = "true" *) wire [31:0]\TRACE_DATA_PIPE[7] ;
   wire TTC0_CLK0_IN;
   wire TTC0_CLK1_IN;
   wire TTC0_CLK2_IN;
@@ -3392,7 +3539,7 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
   assign PJTAG_TDO = \<const0> ;
   assign TRACE_CLK_OUT = \<const0> ;
   assign TRACE_CTL = \TRACE_CTL_PIPE[0] ;
-  assign TRACE_DATA[1:0] = \TRACE_DATA_PIPE[0] ;
+  assign TRACE_DATA[31:0] = \TRACE_DATA_PIPE[0] ;
   (* BOX_TYPE = "PRIMITIVE" *) 
   BIBUF DDR_CAS_n_BIBUF
        (.IO(buffered_DDR_CAS_n),
@@ -4005,7 +4152,7 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
         .EVENTEVENTO(EVENT_EVENTO),
         .EVENTSTANDBYWFE(EVENT_STANDBYWFE),
         .EVENTSTANDBYWFI(EVENT_STANDBYWFI),
-        .FCLKCLK({FCLK_CLK3,FCLK_CLK2,FCLK_CLK1,FCLK_CLK_unbuffered}),
+        .FCLKCLK(FCLK_CLK_unbuffered),
         .FCLKCLKTRIGN({1'b0,1'b0,1'b0,1'b0}),
         .FCLKRESETN({FCLK_RESET3_N,FCLK_RESET2_N,FCLK_RESET1_N,FCLK_RESET0_N}),
         .FPGAIDLEN(FPGA_IDLE_N),
@@ -4019,7 +4166,7 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
         .FTMTP2FDEBUG(FTMT_P2F_DEBUG),
         .FTMTP2FTRIG({FTMT_P2F_TRIG_3,FTMT_P2F_TRIG_2,FTMT_P2F_TRIG_1,FTMT_P2F_TRIG_0}),
         .FTMTP2FTRIGACK({FTMT_P2F_TRIGACK_3,FTMT_P2F_TRIGACK_2,FTMT_P2F_TRIGACK_1,FTMT_P2F_TRIGACK_0}),
-        .IRQF2P({Core1_nFIQ,Core0_nFIQ,Core1_nIRQ,Core0_nIRQ,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,IRQ_F2P}),
+        .IRQF2P({Core1_nFIQ,Core0_nFIQ,Core1_nIRQ,Core0_nIRQ,IRQ_F2P,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .IRQP2F({IRQ_P2F_DMAC_ABORT,IRQ_P2F_DMAC7,IRQ_P2F_DMAC6,IRQ_P2F_DMAC5,IRQ_P2F_DMAC4,IRQ_P2F_DMAC3,IRQ_P2F_DMAC2,IRQ_P2F_DMAC1,IRQ_P2F_DMAC0,IRQ_P2F_SMC,IRQ_P2F_QSPI,IRQ_P2F_CTI,IRQ_P2F_GPIO,IRQ_P2F_USB0,IRQ_P2F_ENET0,IRQ_P2F_ENET_WAKE0,IRQ_P2F_SDIO0,IRQ_P2F_I2C0,IRQ_P2F_SPI0,IRQ_P2F_UART0,IRQ_P2F_CAN0,IRQ_P2F_USB1,IRQ_P2F_ENET1,IRQ_P2F_ENET_WAKE1,IRQ_P2F_SDIO1,IRQ_P2F_I2C1,IRQ_P2F_SPI1,IRQ_P2F_UART1,IRQ_P2F_CAN1}),
         .MAXIGP0ACLK(M_AXI_GP0_ACLK),
         .MAXIGP0ARADDR(M_AXI_GP0_ARADDR),
@@ -4515,8 +4662,20 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
         .O(SPI1_SS_T));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG \buffer_fclk_clk_0.FCLK_CLK_0_BUFG 
-       (.I(FCLK_CLK_unbuffered),
+       (.I(FCLK_CLK_unbuffered[0]),
         .O(FCLK_CLK0));
+  (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG \buffer_fclk_clk_1.FCLK_CLK_1_BUFG 
+       (.I(FCLK_CLK_unbuffered[1]),
+        .O(FCLK_CLK1));
+  (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG \buffer_fclk_clk_2.FCLK_CLK_2_BUFG 
+       (.I(FCLK_CLK_unbuffered[2]),
+        .O(FCLK_CLK2));
+  (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG \buffer_fclk_clk_3.FCLK_CLK_3_BUFG 
+       (.I(FCLK_CLK_unbuffered[3]),
+        .O(FCLK_CLK3));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BIBUF \genblk13[0].MIO_BIBUF 
        (.IO(buffered_MIO[0]),
@@ -4990,117 +5149,1317 @@ module adc2dac_ram_offset_processing_system7_0_0_processing_system7_v5_5_process
     .INIT(2'h2)) 
     i_1
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[0] [1]));
+        .O(\TRACE_DATA_PIPE[0] [31]));
   LUT1 #(
     .INIT(2'h2)) 
     i_10
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[7] [1]));
+        .O(\TRACE_DATA_PIPE[0] [22]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_11
+    i_100
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[7] [0]));
+        .O(\TRACE_DATA_PIPE[6] [3]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_12
+    i_101
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_102
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[6] [1]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_13
+    i_103
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[6] [0]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_14
+    i_104
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_105
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_106
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_107
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_108
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_109
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_11
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_110
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_111
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_112
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_113
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_114
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_115
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_116
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_117
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_118
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_119
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_12
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_120
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_121
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_122
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_123
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_124
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_125
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_126
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_127
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_128
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_129
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_13
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_130
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_131
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_132
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_133
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[5] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_134
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[5] [1]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_15
+    i_135
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[5] [0]));
   LUT1 #(
     .INIT(2'h2)) 
+    i_136
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_137
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_138
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_139
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_14
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_140
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_141
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_142
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_143
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_144
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_145
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_146
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_147
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_148
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_149
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_15
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_150
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_151
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_152
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_153
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_154
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_155
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_156
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_157
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_158
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_159
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
     i_16
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_160
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_161
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_162
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_163
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_164
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_165
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[4] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_166
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[4] [1]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_17
+    i_167
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[4] [0]));
   LUT1 #(
     .INIT(2'h2)) 
+    i_168
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_169
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_17
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_170
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_171
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_172
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_173
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_174
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_175
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_176
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_177
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_178
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_179
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
     i_18
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_180
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_181
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_182
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_183
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_184
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_185
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_186
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_187
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_188
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_189
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_19
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_190
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_191
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_192
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_193
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_194
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_195
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_196
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_197
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[3] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_198
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[3] [1]));
   LUT1 #(
     .INIT(2'h2)) 
-    i_19
+    i_199
        (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[3] [0]));
   LUT1 #(
     .INIT(2'h2)) 
     i_2
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[0] [0]));
+        .O(\TRACE_DATA_PIPE[0] [30]));
   LUT1 #(
     .INIT(2'h2)) 
     i_20
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[2] [1]));
+        .O(\TRACE_DATA_PIPE[0] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_200
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_201
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_202
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_203
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_204
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_205
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_206
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_207
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_208
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_209
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [22]));
   LUT1 #(
     .INIT(2'h2)) 
     i_21
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[2] [0]));
+        .O(\TRACE_DATA_PIPE[0] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_210
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_211
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_212
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_213
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_214
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_215
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_216
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_217
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_218
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_219
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [12]));
   LUT1 #(
     .INIT(2'h2)) 
     i_22
        (.I0(1'b0),
-        .O(\TRACE_DATA_PIPE[1] [1]));
+        .O(\TRACE_DATA_PIPE[0] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_220
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_221
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_222
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_223
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_224
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_225
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_226
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_227
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_228
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_229
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [2]));
   LUT1 #(
     .INIT(2'h2)) 
     i_23
        (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_230
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_231
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[2] [0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_232
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_233
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_234
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_235
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_236
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_237
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_238
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_239
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_24
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_240
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_241
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_242
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_243
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_244
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_245
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_246
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_247
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_248
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_249
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_25
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_250
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_251
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_252
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_253
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_254
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_255
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_256
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_257
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_258
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_259
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_26
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_260
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_261
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_262
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[1] [1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_263
+       (.I0(1'b0),
         .O(\TRACE_DATA_PIPE[1] [0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_27
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_28
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_29
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [3]));
   LUT1 #(
     .INIT(2'h2)) 
     i_3
        (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_30
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_31
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_32
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_33
+       (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[7] ));
   LUT1 #(
     .INIT(2'h2)) 
-    i_4
+    i_34
        (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[6] ));
   LUT1 #(
     .INIT(2'h2)) 
-    i_5
+    i_35
        (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[5] ));
   LUT1 #(
     .INIT(2'h2)) 
-    i_6
+    i_36
        (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[4] ));
   LUT1 #(
     .INIT(2'h2)) 
-    i_7
+    i_37
        (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[3] ));
   LUT1 #(
     .INIT(2'h2)) 
-    i_8
+    i_38
        (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[2] ));
   LUT1 #(
     .INIT(2'h2)) 
-    i_9
+    i_39
        (.I0(1'b0),
         .O(\TRACE_CTL_PIPE[1] ));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_4
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_40
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_41
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_42
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_43
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_44
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_45
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_46
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_47
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_48
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_49
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_5
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_50
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_51
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_52
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_53
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_54
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_55
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_56
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_57
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_58
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_59
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_6
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_60
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_61
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_62
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_63
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_64
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_65
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_66
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_67
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_68
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_69
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_7
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_70
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_71
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[7] [0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_72
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_73
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_74
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_75
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_76
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_77
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_78
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_79
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_8
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_80
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_81
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_82
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_83
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_84
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_85
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_86
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_87
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_88
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_89
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_9
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[0] [23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_90
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_91
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_92
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_93
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_94
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_95
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_96
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_97
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_98
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_99
+       (.I0(1'b0),
+        .O(\TRACE_DATA_PIPE[6] [4]));
 endmodule
 `ifndef GLBL
 `define GLBL

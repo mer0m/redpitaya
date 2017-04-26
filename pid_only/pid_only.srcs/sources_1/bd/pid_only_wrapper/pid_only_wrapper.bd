@@ -815,13 +815,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>ltc2145_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_only_wrapper_ltc2145_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>ad9767_0</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="ad9767" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -936,6 +929,13 @@
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>ltc2145_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_only_wrapper_ltc2145_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
       <spirit:interconnection>
@@ -1008,8 +1008,8 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_interconnect_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="interconnect_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>
@@ -1131,7 +1131,6 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_reset</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_reset"/>
-        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="redpitaya_adc_dac_clk_0" spirit:portRef="adc_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="adc1_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dac1_offset" spirit:portRef="s00_axi_reset"/>
@@ -1141,6 +1140,7 @@
         <spirit:internalPortReference spirit:componentRef="pid_kd" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid_sign" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid_rst_int" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ltc2145_0_data_a_en_o</spirit:name>

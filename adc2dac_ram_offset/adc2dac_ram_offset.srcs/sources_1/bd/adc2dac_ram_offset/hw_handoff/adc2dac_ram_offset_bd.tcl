@@ -1180,42 +1180,42 @@ preplace inst dupplReal_1_to_2_1 -pg 1 -lvl 5 -y 500 -defaultsOSRD
 preplace inst ltc2145_0 -pg 1 -lvl 3 -y 490 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 2 6 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ
-preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1160
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1120
 preplace netloc ad9767_0_dac_rst_o 1 6 2 NJ 580 NJ
 preplace netloc ad9767_0_dac_wrt_o 1 6 2 NJ 520 NJ
-preplace netloc ltc2145_0_adc_cdcs 1 3 5 1180J 420 NJ 420 NJ 420 NJ 420 NJ
-preplace netloc dupplReal_1_to_2_0_data1_out 1 5 1 1680
+preplace netloc ltc2145_0_adc_cdcs 1 3 5 1140J 420 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc dupplReal_1_to_2_0_data1_out 1 5 1 1640
 preplace netloc add_const_1_data_out 1 4 1 N
 preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 N
-preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 4 N 600 NJ 600 NJ 600 1670J
-preplace netloc expanderReal_1_data_out 1 6 1 1950J
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 30 520 NJ 520 810
+preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 4 N 600 NJ 600 NJ 600 1630J
+preplace netloc expanderReal_1_data_out 1 6 1 1910J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 30 520 NJ 520 790
 preplace netloc expanderReal_0_data_out 1 6 1 NJ
 preplace netloc adc_clk_n_i_1 1 0 2 NJ 630 NJ
 preplace netloc adc_data_b_i_1 1 0 3 20J 530 NJ 530 NJ
-preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 1200
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 NJ 440 820
-preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 4 N 640 NJ 640 NJ 640 1690J
-preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 4 N 620 NJ 620 NJ 620 1680J
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 1160
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 NJ 440 800
+preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 4 N 640 NJ 640 NJ 640 1650J
+preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 4 N 620 NJ 620 NJ 620 1640J
 preplace netloc dupplReal_1_to_2_1_data2_out 1 5 1 N
 preplace netloc processing_system7_0_FIXED_IO 1 2 6 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ
-preplace netloc ltc2145_0_data_a 1 3 1 1150
-preplace netloc dupplReal_1_to_2_1_data1_out 1 5 1 1660
+preplace netloc ltc2145_0_data_a 1 3 1 1110
+preplace netloc dupplReal_1_to_2_1_data1_out 1 5 1 1620
 preplace netloc add_const_0_data_out 1 4 1 N
-preplace netloc ltc2145_0_data_b 1 3 1 1190
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 NJ 460 840
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 6 380 420 850 390 1170 190 NJ 190 NJ 190 1960J
+preplace netloc ltc2145_0_data_b 1 3 1 1150
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 NJ 460 820
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 6 380 420 830 390 1130 190 NJ 190 NJ 190 1920J
 preplace netloc ad9767_0_dac_clk_o 1 6 2 NJ 560 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 510 370 400 830 400 1200 400 NJ 400 NJ 400 1970J
-preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 2 1 830
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 510 370 400 810 400 1160 400 NJ 400 NJ 400 1930J
+preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 2 1 810
 preplace netloc ad9767_0_dac_sel_o 1 6 2 NJ 540 NJ
 preplace netloc adc_data_a_i_1 1 0 3 NJ 540 390J 510 NJ
-preplace netloc dupplReal_1_to_2_0_data2_out 1 5 1 1680
-preplace netloc ps7_0_axi_periph_M00_AXI 1 3 4 N 210 NJ 210 NJ 210 1950J
+preplace netloc dupplReal_1_to_2_0_data2_out 1 5 1 1640
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 4 N 210 NJ 210 NJ 210 1910J
 preplace netloc adc_clk_p_i_1 1 0 2 NJ 610 NJ
-preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 4 N 580 NJ 580 NJ 580 1660J
+preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 4 N 580 NJ 580 NJ 580 1620J
 preplace netloc ad9767_0_dac_dat_o 1 6 2 NJ 500 NJ
-levelinfo -pg 1 0 200 610 1010 1310 1550 1820 2070 2190 -top 0 -bot 730
+levelinfo -pg 1 0 200 590 970 1270 1510 1780 2030 2150 -top 0 -bot 730
 ",
 }
 

@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed Mar 29 18:38:35 2017
+-- Date        : Thu Mar 30 11:14:46 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/bma/git/fpga_design/redpitaya/pid_only/pid_only.srcs/sources_1/bd/pid_only_wrapper/ip/pid_only_wrapper_add_const_5_0/pid_only_wrapper_add_const_5_0_sim_netlist.vhdl
@@ -22,12 +22,12 @@ entity pid_only_wrapper_add_const_5_0_add_const_handComm is
     s00_axi_bvalid : out STD_LOGIC;
     s00_axi_rvalid : out STD_LOGIC;
     \offset_s_reg[0]\ : out STD_LOGIC;
-    addr_s : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \addr_reg_reg[0]_0\ : out STD_LOGIC;
+    \readdata_s_reg[0]\ : out STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_wdata : in STD_LOGIC_VECTOR ( 0 to 0 );
     offset_s : in STD_LOGIC;
+    s00_axi_rdata : in STD_LOGIC_VECTOR ( 0 to 0 );
     s00_axi_wvalid : in STD_LOGIC;
     s00_axi_awvalid : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC;
@@ -43,8 +43,7 @@ end pid_only_wrapper_add_const_5_0_add_const_handComm;
 architecture STRUCTURE of pid_only_wrapper_add_const_5_0_add_const_handComm is
   signal addr_reg : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \addr_reg[1]_i_2_n_0\ : STD_LOGIC;
-  signal \^addr_reg_reg[0]_0\ : STD_LOGIC;
-  signal \^addr_s\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \axi_araddr[2]_i_1_n_0\ : STD_LOGIC;
   signal \axi_araddr[3]_i_1_n_0\ : STD_LOGIC;
   signal axi_arready_i_1_n_0 : STD_LOGIC;
@@ -55,6 +54,7 @@ architecture STRUCTURE of pid_only_wrapper_add_const_5_0_add_const_handComm is
   signal axi_rvalid_i_1_n_0 : STD_LOGIC;
   signal axi_wready_i_1_n_0 : STD_LOGIC;
   signal read_addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \readdata_s[0]_i_2_n_0\ : STD_LOGIC;
   signal \^s00_axi_arready\ : STD_LOGIC;
   signal \^s00_axi_awready\ : STD_LOGIC;
   signal \^s00_axi_bvalid\ : STD_LOGIC;
@@ -62,15 +62,13 @@ architecture STRUCTURE of pid_only_wrapper_add_const_5_0_add_const_handComm is
   signal \^s00_axi_wready\ : STD_LOGIC;
   signal write_addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr_reg[1]_i_2\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \axi_awaddr[3]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \addr_reg[1]_i_2\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \axi_awaddr[2]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of axi_awready_i_1 : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \readdata_s[31]_i_2\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \readdata_s[0]_i_2\ : label is "soft_lutpair1";
 begin
-  \addr_reg_reg[0]_0\ <= \^addr_reg_reg[0]_0\;
-  addr_s(1 downto 0) <= \^addr_s\(1 downto 0);
   s00_axi_arready <= \^s00_axi_arready\;
   s00_axi_awready <= \^s00_axi_awready\;
   s00_axi_bvalid <= \^s00_axi_bvalid\;
@@ -82,11 +80,11 @@ begin
     )
         port map (
       I0 => read_addr_s(0),
-      I1 => \^addr_reg_reg[0]_0\,
+      I1 => \readdata_s[0]_i_2_n_0\,
       I2 => addr_reg(0),
       I3 => \addr_reg[1]_i_2_n_0\,
       I4 => write_addr_s(0),
-      O => \^addr_s\(0)
+      O => addr_s(0)
     );
 \addr_reg[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -94,11 +92,11 @@ begin
     )
         port map (
       I0 => read_addr_s(1),
-      I1 => \^addr_reg_reg[0]_0\,
+      I1 => \readdata_s[0]_i_2_n_0\,
       I2 => addr_reg(1),
       I3 => \addr_reg[1]_i_2_n_0\,
       I4 => write_addr_s(1),
-      O => \^addr_s\(1)
+      O => addr_s(1)
     );
 \addr_reg[1]_i_2\: unisim.vcomponents.LUT4
     generic map(
@@ -115,7 +113,7 @@ begin
      port map (
       C => s00_axi_aclk,
       CE => '1',
-      D => \^addr_s\(0),
+      D => addr_s(0),
       Q => addr_reg(0),
       R => '0'
     );
@@ -123,7 +121,7 @@ begin
      port map (
       C => s00_axi_aclk,
       CE => '1',
-      D => \^addr_s\(1),
+      D => addr_s(1),
       Q => addr_reg(1),
       R => '0'
     );
@@ -304,13 +302,25 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => s00_axi_wdata(0),
-      I1 => \^addr_s\(1),
-      I2 => \^addr_s\(0),
+      I1 => addr_s(1),
+      I2 => addr_s(0),
       I3 => \addr_reg[1]_i_2_n_0\,
       I4 => offset_s,
       O => \offset_s_reg[0]\
     );
-\readdata_s[31]_i_2\: unisim.vcomponents.LUT3
+\readdata_s[0]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFBF00B0"
+    )
+        port map (
+      I0 => offset_s,
+      I1 => addr_s(0),
+      I2 => \readdata_s[0]_i_2_n_0\,
+      I3 => addr_s(1),
+      I4 => s00_axi_rdata(0),
+      O => \readdata_s_reg[0]\
+    );
+\readdata_s[0]_i_2\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"08"
     )
@@ -318,7 +328,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
       I0 => s00_axi_arvalid,
       I1 => \^s00_axi_arready\,
       I2 => \^s00_axi_rvalid\,
-      O => \^addr_reg_reg[0]_0\
+      O => \readdata_s[0]_i_2_n_0\
     );
 end STRUCTURE;
 library IEEE;
@@ -411,72 +421,33 @@ use UNISIM.VCOMPONENTS.ALL;
 entity pid_only_wrapper_add_const_5_0_wb_add_const is
   port (
     offset_s : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 0 to 0 );
     \offset_s_reg[0]_0\ : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
-    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    axi_arready_reg : in STD_LOGIC
+    \offset_s_reg[0]_1\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of pid_only_wrapper_add_const_5_0_wb_add_const : entity is "wb_add_const";
 end pid_only_wrapper_add_const_5_0_wb_add_const;
 
 architecture STRUCTURE of pid_only_wrapper_add_const_5_0_wb_add_const is
-  signal \^offset_s\ : STD_LOGIC;
-  signal \readdata_s[0]_i_1_n_0\ : STD_LOGIC;
-  signal \readdata_s[31]_i_1_n_0\ : STD_LOGIC;
-  signal \^s00_axi_rdata\ : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
-  offset_s <= \^offset_s\;
-  s00_axi_rdata(1 downto 0) <= \^s00_axi_rdata\(1 downto 0);
 \offset_s_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => s00_axi_aclk,
       CE => '1',
       CLR => s00_axi_reset,
       D => \offset_s_reg[0]_0\,
-      Q => \^offset_s\
-    );
-\readdata_s[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFBF00B0"
-    )
-        port map (
-      I0 => \^offset_s\,
-      I1 => addr_s(0),
-      I2 => axi_arready_reg,
-      I3 => addr_s(1),
-      I4 => \^s00_axi_rdata\(0),
-      O => \readdata_s[0]_i_1_n_0\
-    );
-\readdata_s[31]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FF8F0080"
-    )
-        port map (
-      I0 => \^offset_s\,
-      I1 => addr_s(0),
-      I2 => axi_arready_reg,
-      I3 => addr_s(1),
-      I4 => \^s00_axi_rdata\(1),
-      O => \readdata_s[31]_i_1_n_0\
+      Q => offset_s
     );
 \readdata_s_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => s00_axi_aclk,
       CE => '1',
       CLR => s00_axi_reset,
-      D => \readdata_s[0]_i_1_n_0\,
-      Q => \^s00_axi_rdata\(0)
-    );
-\readdata_s_reg[31]\: unisim.vcomponents.FDCE
-     port map (
-      C => s00_axi_aclk,
-      CE => '1',
-      CLR => s00_axi_reset,
-      D => \readdata_s[31]_i_1_n_0\,
-      Q => \^s00_axi_rdata\(1)
+      D => \offset_s_reg[0]_1\,
+      Q => s00_axi_rdata(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -528,7 +499,7 @@ entity pid_only_wrapper_add_const_5_0_add_const is
   attribute add_val : integer;
   attribute add_val of pid_only_wrapper_add_const_5_0_add_const : entity is 0;
   attribute format : string;
-  attribute format of pid_only_wrapper_add_const_5_0_add_const : entity is "signed";
+  attribute format of pid_only_wrapper_add_const_5_0_add_const : entity is "unsigned";
   attribute id : integer;
   attribute id of pid_only_wrapper_add_const_5_0_add_const : entity is 1;
 end pid_only_wrapper_add_const_5_0_add_const;
@@ -536,12 +507,11 @@ end pid_only_wrapper_add_const_5_0_add_const;
 architecture STRUCTURE of pid_only_wrapper_add_const_5_0_add_const is
   signal \<const0>\ : STD_LOGIC;
   signal add_constHandComm_n_5 : STD_LOGIC;
-  signal add_constHandComm_n_8 : STD_LOGIC;
-  signal addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal add_constHandComm_n_6 : STD_LOGIC;
   signal \^data_clk_i\ : STD_LOGIC;
   signal \^data_rst_i\ : STD_LOGIC;
   signal offset_s : STD_LOGIC;
-  signal \^s00_axi_rdata\ : STD_LOGIC_VECTOR ( 30 downto 0 );
+  signal \^s00_axi_rdata\ : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
   \^data_clk_i\ <= data_clk_i;
   \^data_rst_i\ <= data_rst_i;
@@ -549,37 +519,37 @@ begin
   data_rst_o <= \^data_rst_i\;
   s00_axi_bresp(1) <= \<const0>\;
   s00_axi_bresp(0) <= \<const0>\;
-  s00_axi_rdata(31) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(30) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(29) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(28) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(27) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(26) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(25) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(24) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(23) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(22) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(21) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(20) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(19) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(18) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(17) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(16) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(15) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(14) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(13) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(12) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(11) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(10) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(9) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(8) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(7) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(6) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(5) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(4) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(3) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(2) <= \^s00_axi_rdata\(30);
-  s00_axi_rdata(1) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(31) <= \<const0>\;
+  s00_axi_rdata(30) <= \<const0>\;
+  s00_axi_rdata(29) <= \<const0>\;
+  s00_axi_rdata(28) <= \<const0>\;
+  s00_axi_rdata(27) <= \<const0>\;
+  s00_axi_rdata(26) <= \<const0>\;
+  s00_axi_rdata(25) <= \<const0>\;
+  s00_axi_rdata(24) <= \<const0>\;
+  s00_axi_rdata(23) <= \<const0>\;
+  s00_axi_rdata(22) <= \<const0>\;
+  s00_axi_rdata(21) <= \<const0>\;
+  s00_axi_rdata(20) <= \<const0>\;
+  s00_axi_rdata(19) <= \<const0>\;
+  s00_axi_rdata(18) <= \<const0>\;
+  s00_axi_rdata(17) <= \<const0>\;
+  s00_axi_rdata(16) <= \<const0>\;
+  s00_axi_rdata(15) <= \<const0>\;
+  s00_axi_rdata(14) <= \<const0>\;
+  s00_axi_rdata(13) <= \<const0>\;
+  s00_axi_rdata(12) <= \<const0>\;
+  s00_axi_rdata(11) <= \<const0>\;
+  s00_axi_rdata(10) <= \<const0>\;
+  s00_axi_rdata(9) <= \<const0>\;
+  s00_axi_rdata(8) <= \<const0>\;
+  s00_axi_rdata(7) <= \<const0>\;
+  s00_axi_rdata(6) <= \<const0>\;
+  s00_axi_rdata(5) <= \<const0>\;
+  s00_axi_rdata(4) <= \<const0>\;
+  s00_axi_rdata(3) <= \<const0>\;
+  s00_axi_rdata(2) <= \<const0>\;
+  s00_axi_rdata(1) <= \<const0>\;
   s00_axi_rdata(0) <= \^s00_axi_rdata\(0);
   s00_axi_rresp(1) <= \<const0>\;
   s00_axi_rresp(0) <= \<const0>\;
@@ -589,10 +559,9 @@ GND: unisim.vcomponents.GND
     );
 add_constHandComm: entity work.pid_only_wrapper_add_const_5_0_add_const_handComm
      port map (
-      \addr_reg_reg[0]_0\ => add_constHandComm_n_8,
-      addr_s(1 downto 0) => addr_s(1 downto 0),
       offset_s => offset_s,
       \offset_s_reg[0]\ => add_constHandComm_n_5,
+      \readdata_s_reg[0]\ => add_constHandComm_n_6,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(1 downto 0) => s00_axi_araddr(3 downto 2),
       s00_axi_arready => s00_axi_arready,
@@ -602,6 +571,7 @@ add_constHandComm: entity work.pid_only_wrapper_add_const_5_0_add_const_handComm
       s00_axi_awvalid => s00_axi_awvalid,
       s00_axi_bready => s00_axi_bready,
       s00_axi_bvalid => s00_axi_bvalid,
+      s00_axi_rdata(0) => \^s00_axi_rdata\(0),
       s00_axi_reset => s00_axi_reset,
       s00_axi_rready => s00_axi_rready,
       s00_axi_rvalid => s00_axi_rvalid,
@@ -621,12 +591,10 @@ add_constLogic: entity work.pid_only_wrapper_add_const_5_0_add_const_logic
     );
 wb_add_const_inst: entity work.pid_only_wrapper_add_const_5_0_wb_add_const
      port map (
-      addr_s(1 downto 0) => addr_s(1 downto 0),
-      axi_arready_reg => add_constHandComm_n_8,
       offset_s => offset_s,
       \offset_s_reg[0]_0\ => add_constHandComm_n_5,
+      \offset_s_reg[0]_1\ => add_constHandComm_n_6,
       s00_axi_aclk => s00_axi_aclk,
-      s00_axi_rdata(1) => \^s00_axi_rdata\(30),
       s00_axi_rdata(0) => \^s00_axi_rdata\(0),
       s00_axi_reset => s00_axi_reset
     );
@@ -689,7 +657,7 @@ architecture STRUCTURE of pid_only_wrapper_add_const_5_0 is
   attribute add_val : integer;
   attribute add_val of U0 : label is 0;
   attribute format : string;
-  attribute format of U0 : label is "signed";
+  attribute format of U0 : label is "unsigned";
   attribute id : integer;
   attribute id of U0 : label is 1;
 begin

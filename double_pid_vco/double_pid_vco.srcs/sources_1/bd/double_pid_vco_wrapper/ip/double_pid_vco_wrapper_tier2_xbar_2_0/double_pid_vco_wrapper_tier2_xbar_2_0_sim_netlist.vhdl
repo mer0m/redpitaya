@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Fri Apr 21 11:25:41 2017
+-- Date        : Fri Apr 21 11:25:39 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
--- Command     : write_vhdl -force -mode funcsim
---               /home/bma/git/fpga_design/redpitaya/double_pid_vco/double_pid_vco.srcs/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_tier2_xbar_2_0/double_pid_vco_wrapper_tier2_xbar_2_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top double_pid_vco_wrapper_tier2_xbar_2_0 -prefix
+--               double_pid_vco_wrapper_tier2_xbar_2_0_ double_pid_vco_wrapper_tier2_xbar_2_0_sim_netlist.vhdl
 -- Design      : double_pid_vco_wrapper_tier2_xbar_2_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -86,8 +86,6 @@ entity double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_addr_arbiter_s
     \m_atarget_enc_reg[0]_1\ : in STD_LOGIC;
     s_axi_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_12_addr_arbiter_sasd";
 end double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_addr_arbiter_sasd;
 
 architecture STRUCTURE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_addr_arbiter_sasd is
@@ -1982,8 +1980,6 @@ entity double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_decerr_slave i
     aresetn_d : in STD_LOGIC;
     \gen_no_arbiter.grant_rnw_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_decerr_slave : entity is "axi_crossbar_v2_1_12_decerr_slave";
 end double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_decerr_slave;
 
 architecture STRUCTURE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_decerr_slave is
@@ -2194,8 +2190,6 @@ entity double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_splitter is
     \m_ready_d_reg[1]_0\ : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_splitter : entity is "axi_crossbar_v2_1_12_splitter";
 end double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_splitter;
 
 architecture STRUCTURE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_splitter is
@@ -2467,8 +2461,6 @@ entity double_pid_vco_wrapper_tier2_xbar_2_0_axi_register_slice_v2_1_11_axic_reg
     Q : in STD_LOGIC_VECTOR ( 7 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_pid_vco_wrapper_tier2_xbar_2_0_axi_register_slice_v2_1_11_axic_register_slice : entity is "axi_register_slice_v2_1_11_axic_register_slice";
 end double_pid_vco_wrapper_tier2_xbar_2_0_axi_register_slice_v2_1_11_axic_register_slice;
 
 architecture STRUCTURE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_register_slice_v2_1_11_axic_register_slice is
@@ -5683,8 +5675,6 @@ entity double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_crossbar_sasd 
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_crossbar_sasd : entity is "axi_crossbar_v2_1_12_crossbar_sasd";
 end double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_crossbar_sasd;
 
 architecture STRUCTURE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_crossbar_sasd is
@@ -6387,8 +6377,6 @@ entity double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_axi_crossbar i
   attribute C_S_AXI_WRITE_ACCEPTANCE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "axi_crossbar_v2_1_12_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of double_pid_vco_wrapper_tier2_xbar_2_0_axi_crossbar_v2_1_12_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

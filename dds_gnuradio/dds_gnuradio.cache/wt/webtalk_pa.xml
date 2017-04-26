@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Apr 20 10:57:16 2017">
+<application name="pa" timeStamp="Tue Apr 25 12:28:25 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a734c095fae249cf807797611fbff628" type="ProjectID"/>
-<property name="ProjectIteration" value="11" type="ProjectIteration"/>
+<property name="ProjectIteration" value="12" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -19,7 +19,7 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="AddSources" value="5" type="JavaHandler"/>
 <property name="AutoConnectPort" value="4" type="JavaHandler"/>
-<property name="CloseProject" value="7" type="JavaHandler"/>
+<property name="CloseProject" value="8" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="3" type="JavaHandler"/>
 <property name="CustomizeRSBBlock" value="45" type="JavaHandler"/>
 <property name="EditConstraintSets" value="3" type="JavaHandler"/>
@@ -35,11 +35,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenProject" value="1" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="11" type="JavaHandler"/>
 <property name="RegenerateRSBLayout" value="28" type="JavaHandler"/>
+<property name="ReportIPStatus" value="1" type="JavaHandler"/>
 <property name="ResetLayout" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="13" type="JavaHandler"/>
+<property name="RunBitgen" value="14" type="JavaHandler"/>
 <property name="SaveRSBDesign" value="17" type="JavaHandler"/>
 <property name="SetSourceEnabled" value="1" type="JavaHandler"/>
 <property name="ShowView" value="8" type="JavaHandler"/>
+<property name="UpgradeIP" value="1" type="JavaHandler"/>
 <property name="ViewTaskProjectManager" value="5" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
@@ -50,6 +52,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BaseDialog_NO" value="1" type="GuiResourceData"/>
 <property name="BaseDialog_OK" value="30" type="GuiResourceData"/>
 <property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
+<property name="BaseReportTab_RERUN" value="1" type="GuiResourceData"/>
 <property name="BoardTreePanel_BOARD_TREE_PANEL" value="3" type="GuiResourceData"/>
 <property name="ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE" value="1" type="GuiResourceData"/>
 <property name="CmdMsgDialog_MESSAGES" value="1" type="GuiResourceData"/>
@@ -65,14 +68,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="34" type="GuiResourceData"/>
 <property name="ExploreAheadView_COLLAPSE_ALL" value="2" type="GuiResourceData"/>
 <property name="ExploreAheadView_EXPAND_ALL" value="1" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="93" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="95" type="GuiResourceData"/>
 <property name="FilterToolBar_HIDE_ALL" value="1" type="GuiResourceData"/>
 <property name="FilterToolBar_SHOW_ALL" value="2" type="GuiResourceData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="62" type="GuiResourceData"/>
 <property name="GICTreeTablePanel_GIC_TREE_TABLE" value="1" type="GuiResourceData"/>
 <property name="GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE" value="1" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
-<property name="GettingStartedView_RECENT_PROJECTS" value="5" type="GuiResourceData"/>
+<property name="GettingStartedView_RECENT_PROJECTS" value="6" type="GuiResourceData"/>
+<property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="1" type="GuiResourceData"/>
 <property name="LogMonitor_MONITOR" value="7" type="GuiResourceData"/>
 <property name="MainMenuMgr_EXPORT" value="2" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="12" type="GuiResourceData"/>
@@ -104,6 +108,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_REGENERATE_LAYOUT" value="28" type="GuiResourceData"/>
 <property name="PACommandNames_RESET_RUNS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_RUN_BITGEN" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_SAVE_RSB_DESIGN" value="8" type="GuiResourceData"/>
 <property name="PACommandNames_SRC_DISABLE" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_TCL_CONSOLE_WINDOW" value="1" type="GuiResourceData"/>
@@ -131,15 +136,16 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SystemBuilderView_BLOCK_DESIGN_OPTIONS" value="2" type="GuiResourceData"/>
 <property name="SystemBuilderView_EXPAND_COLLAPSE" value="37" type="GuiResourceData"/>
 <property name="SystemBuilderView_ORIENTATION" value="10" type="GuiResourceData"/>
+<property name="SystemTab_REPORT_IP_STATUS" value="1" type="GuiResourceData"/>
 <property name="SystemTreeView_SYSTEM_TREE" value="6" type="GuiResourceData"/>
-<property name="TaskBanner_CLOSE" value="6" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="8" type="GuiResourceData"/>
 <property name="TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE" value="1" type="GuiResourceData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="91" type="GuiMode"/>
+<property name="GuiMode" value="94" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="86" type="TclMode"/>
+<property name="TclMode" value="89" type="TclMode"/>
 </item>
 </section>
 </application>
