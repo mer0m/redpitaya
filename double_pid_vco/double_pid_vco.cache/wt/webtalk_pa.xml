@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Apr 25 11:53:19 2017">
+<application name="pa" timeStamp="Fri May  5 18:11:12 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="6e9f35fabc3b4c918a708dfb82776454" type="ProjectID"/>
 <property name="ProjectIteration" value="70" type="ProjectIteration"/>
@@ -66,7 +66,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CustomizeCoreDialog_IP_LOCATION" value="2" type="GuiResourceData"/>
 <property name="CustomizeCoreDialog_PRESETS" value="5" type="GuiResourceData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="43" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="50" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="52" type="GuiResourceData"/>
 <property name="FilterToolBar_HIDE_ALL" value="2" type="GuiResourceData"/>
 <property name="FilterToolBar_SHOW_ALL" value="2" type="GuiResourceData"/>
 <property name="FloatingTopDialog_SELECT_TOP_MODULE_OF_YOUR_DESIGN" value="7" type="GuiResourceData"/>
@@ -77,7 +77,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="GettingStartedView_CLEAR_LIST" value="1" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="3" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
-<property name="GettingStartedView_RECENT_PROJECTS" value="21" type="GuiResourceData"/>
+<property name="GettingStartedView_RECENT_PROJECTS" value="22" type="GuiResourceData"/>
 <property name="HACGCComboBox_VALUE_OF_SPECIFIED_PARAMETER" value="2" type="GuiResourceData"/>
 <property name="HACGCComboBox_VALUE_OF_SPECIFIED_PARAMETER_MANUAL" value="1" type="GuiResourceData"/>
 <property name="HACGCTabbedPane_TABBED_PANE" value="1" type="GuiResourceData"/>
@@ -157,9 +157,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ToolOptionsWindowBehaviorPage_ASK_TO_RERUN_OUT_OF_DATE_PARENT_RUNS" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="94" type="GuiMode"/>
+<property name="GuiMode" value="96" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="89" type="TclMode"/>
+<property name="TclMode" value="91" type="TclMode"/>
 </item>
 </section>
 </application>
