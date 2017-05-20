@@ -545,7 +545,6 @@ class MyApp(App):
 
 	def cb_dds1_nco_changed(self, widget, value):
 		print("/dev/dds1_nco", 125000000, int(self.sb_dds1_nco.get_value()), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
-
 		liboscimp_fpga.nco_counter_send_conf("/dev/dds1_nco", 125000000, int(self.sb_dds1_nco.get_value()), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
 
 	def sd_dds2_nco_changed(self, widget, value):
@@ -560,7 +559,6 @@ class MyApp(App):
 
 	def cb_dds2_nco_changed(self, widget, value):
 		print("/dev/dds2_nco", 125000000, int(self.sb_dds2_nco.get_value()), 32, 0, int(self.cb_pinc_dds2_nco.get_value()), int(self.cb_poff_dds2_nco.get_value()))
-
 		liboscimp_fpga.nco_counter_send_conf("/dev/dds2_nco", 125000000, int(self.sb_dds2_nco.get_value()), 32, 0, int(self.cb_pinc_dds2_nco.get_value()), int(self.cb_poff_dds2_nco.get_value()))
 
 start(MyApp, address="0.0.0.0", port=80)

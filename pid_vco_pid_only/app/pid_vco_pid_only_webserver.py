@@ -37,9 +37,9 @@ class MyApp(App):
 
 		self.hbox_dds1_f0 = gui.HBox(margin="10px")
 		self.lb_dds1_f0 = gui.Label("/dev/dds1_f0", width="20%", margin="10px")
-		self.sd_dds1_f0 = gui.Slider(0, 0, 62500000, 1, width="60%", margin="10px")
+		self.sd_dds1_f0 = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dds1_f0.set_oninput_listener(self.sd_dds1_f0_changed)
-		self.sb_dds1_f0 = gui.SpinBox(0, 0, 62500000, 1, width="20%", margin="10px")
+		self.sb_dds1_f0 = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
 		self.sb_dds1_f0.set_on_change_listener(self.sb_dds1_f0_changed)
 		self.sd_dds1_f0_changed(self.sd_dds1_f0, self.sd_dds1_f0.get_value())
 		self.hbox_dds1_f0.append(self.lb_dds1_f0)
@@ -269,12 +269,12 @@ class MyApp(App):
 
 	def sd_dds1_f0_changed(self, widget, value):
 		print("/dev/dds1_f0", int(value))
-		liboscimp_fpga.add_const_set_offset("/dev/dds1_f0", int(int(value)/(125e6/2**32)))
+		liboscimp_fpga.add_const_set_offset("/dev/dds1_f0", int(value))
 		self.sb_dds1_f0.set_value(value)
 
 	def sb_dds1_f0_changed(self, widget, value):
 		print("/dev/dds1_f0", int(value))
-		liboscimp_fpga.add_const_set_offset("/dev/dds1_f0", int(int(value)/(125e6/2**32)))
+		liboscimp_fpga.add_const_set_offset("/dev/dds1_f0", int(value))
 		self.sd_dds1_f0.set_value(value)
 
 	def sd_dds1_offset_changed(self, widget, value):
