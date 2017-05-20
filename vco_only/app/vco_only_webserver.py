@@ -15,7 +15,7 @@ class MyApp(App):
 		self.lb_adc1_offset = gui.Label("/dev/adc1_offset", width="20%", margin="10px")
 		self.sd_adc1_offset = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_adc1_offset.set_oninput_listener(self.sd_adc1_offset_changed)
-		self.sb_adc1_offset = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sd_adc1_offset = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sb_adc1_offset.set_on_change_listener(self.sb_adc1_offset_changed)
 		self.sd_adc1_offset_changed(self.sd_adc1_offset, self.sd_adc1_offset.get_value())
 		self.hbox_adc1_offset.append(self.lb_adc1_offset)
@@ -27,7 +27,7 @@ class MyApp(App):
 		self.lb_dac1_offset = gui.Label("/dev/dac1_offset", width="20%", margin="10px")
 		self.sd_dac1_offset = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dac1_offset.set_oninput_listener(self.sd_dac1_offset_changed)
-		self.sb_dac1_offset = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sd_dac1_offset = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sb_dac1_offset.set_on_change_listener(self.sb_dac1_offset_changed)
 		self.sd_dac1_offset_changed(self.sd_dac1_offset, self.sd_dac1_offset.get_value())
 		self.hbox_dac1_offset.append(self.lb_dac1_offset)
@@ -39,7 +39,7 @@ class MyApp(App):
 		self.lb_dds_ampl = gui.Label("/dev/dds_ampl", width="20%", margin="10px")
 		self.sd_dds_ampl = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dds_ampl.set_oninput_listener(self.sd_dds_ampl_changed)
-		self.sb_dds_ampl = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sd_dds_ampl = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sb_dds_ampl.set_on_change_listener(self.sb_dds_ampl_changed)
 		self.sd_dds_ampl_changed(self.sd_dds_ampl, self.sd_dds_ampl.get_value())
 		self.hbox_dds_ampl.append(self.lb_dds_ampl)
@@ -49,9 +49,9 @@ class MyApp(App):
 
 		self.hbox_dds_f0 = gui.HBox(margin="10px")
 		self.lb_dds_f0 = gui.Label("/dev/dds_f0", width="20%", margin="10px")
-		self.sd_dds_f0 = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
+		self.sd_dds_f0 = gui.Slider(0, 0, 62500000, 1, width="60%", margin="10px")
 		self.sd_dds_f0.set_oninput_listener(self.sd_dds_f0_changed)
-		self.sb_dds_f0 = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sd_dds_f0 = gui.SpinBox(0, 0, 62500000, 1, width="60%", margin="10px")
 		self.sb_dds_f0.set_on_change_listener(self.sb_dds_f0_changed)
 		self.sd_dds_f0_changed(self.sd_dds_f0, self.sd_dds_f0.get_value())
 		self.hbox_dds_f0.append(self.lb_dds_f0)
@@ -63,7 +63,7 @@ class MyApp(App):
 		self.lb_dds_offset = gui.Label("/dev/dds_offset", width="20%", margin="10px")
 		self.sd_dds_offset = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dds_offset.set_oninput_listener(self.sd_dds_offset_changed)
-		self.sb_dds_offset = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sd_dds_offset = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sb_dds_offset.set_on_change_listener(self.sb_dds_offset_changed)
 		self.sd_dds_offset_changed(self.sd_dds_offset, self.sd_dds_offset.get_value())
 		self.hbox_dds_offset.append(self.lb_dds_offset)
@@ -75,7 +75,7 @@ class MyApp(App):
 		self.lb_dds_range = gui.Label("/dev/dds_range", width="20%", margin="10px")
 		self.sd_dds_range = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dds_range.set_oninput_listener(self.sd_dds_range_changed)
-		self.sb_dds_range = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sd_dds_range = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sb_dds_range.set_on_change_listener(self.sb_dds_range_changed)
 		self.sd_dds_range_changed(self.sd_dds_range, self.sd_dds_range.get_value())
 		self.hbox_dds_range.append(self.lb_dds_range)
@@ -135,12 +135,12 @@ class MyApp(App):
 
 	def sd_dds_f0_changed(self, widget, value):
 		print("/dev/dds_f0", int(value))
-		liboscimp_fpga.add_const_set_offset("/dev/dds_f0", int(value))
+		liboscimp_fpga.add_const_set_offset("/dev/dds_f0", int(int(value)/(125e6/2**32)))
 		self.sb_dds_f0.set_value(value)
 
 	def sb_dds_f0_changed(self, widget, value):
 		print("/dev/dds_f0", int(value))
-		liboscimp_fpga.add_const_set_offset("/dev/dds_f0", int(value))
+		liboscimp_fpga.add_const_set_offset("/dev/dds_f0", int(int(value)/(125e6/2**32)))
 		self.sd_dds_f0.set_value(value)
 
 	def sd_dds_offset_changed(self, widget, value):
