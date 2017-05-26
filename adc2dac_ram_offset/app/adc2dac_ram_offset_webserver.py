@@ -15,7 +15,7 @@ class MyApp(App):
 		self.lb_dac1_offset = gui.Label("/dev/dac1_offset", width="20%", margin="10px")
 		self.sd_dac1_offset = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dac1_offset.set_oninput_listener(self.sd_dac1_offset_changed)
-		self.sd_dac1_offset = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
+		self.sb_dac1_offset = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
 		self.sb_dac1_offset.set_on_change_listener(self.sb_dac1_offset_changed)
 		self.sd_dac1_offset_changed(self.sd_dac1_offset, self.sd_dac1_offset.get_value())
 		self.hbox_dac1_offset.append(self.lb_dac1_offset)
@@ -27,7 +27,7 @@ class MyApp(App):
 		self.lb_dac2_offset = gui.Label("/dev/dac2_offset", width="20%", margin="10px")
 		self.sd_dac2_offset = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
 		self.sd_dac2_offset.set_oninput_listener(self.sd_dac2_offset_changed)
-		self.sd_dac2_offset = gui.SpinBox(0, -8192, 8191, 1, width="60%", margin="10px")
+		self.sb_dac2_offset = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
 		self.sb_dac2_offset.set_on_change_listener(self.sb_dac2_offset_changed)
 		self.sd_dac2_offset_changed(self.sd_dac2_offset, self.sd_dac2_offset.get_value())
 		self.hbox_dac2_offset.append(self.lb_dac2_offset)
@@ -57,4 +57,4 @@ class MyApp(App):
 		liboscimp_fpga.add_const_set_offset("/dev/dac2_offset", int(value))
 		self.sd_dac2_offset.set_value(value)
 
-start(MyApp, address="0.0.0.0", port=80)
+start(MyApp, address="0.0.0.0", port=80, title="adc2dac_ram_offset_webserver")
