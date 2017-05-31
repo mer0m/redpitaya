@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Sat May  6 09:47:06 2017
+| Date             : Tue May 30 18:09:50 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file pid_vco_pid_only_wrapper_power_routed.rpt -pb pid_vco_pid_only_wrapper_power_summary_routed.pb -rpx pid_vco_pid_only_wrapper_power_routed.rpx
 | Design           : pid_vco_pid_only_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.940 |
-| Dynamic (W)              | 1.799 |
+| Total On-Chip Power (W)  | 1.941 |
+| Dynamic (W)              | 1.800 |
 | Device Static (W)        | 0.141 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 62.6  |
@@ -49,21 +49,21 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.018 |       11 |       --- |             --- |
-| Slice Logic             |     0.004 |     5262 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     1807 |     17600 |           10.27 |
+| Clocks                  |     0.019 |       11 |       --- |             --- |
+| Slice Logic             |     0.004 |     5298 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     1841 |     17600 |           10.46 |
 |   CARRY4                |    <0.001 |       81 |      4400 |            1.84 |
 |   Register              |    <0.001 |     2446 |     35200 |            6.95 |
 |   LUT as Shift Register |    <0.001 |       86 |      6000 |            1.43 |
 |   Others                |     0.000 |      330 |       --- |             --- |
-| Signals                 |     0.007 |     4013 |       --- |             --- |
+| Signals                 |     0.007 |     4049 |       --- |             --- |
 | Block RAM               |     0.005 |        2 |        60 |            3.33 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.008 |        6 |        80 |            7.50 |
 | I/O                     |     0.378 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
 | Static Power            |     0.141 |          |           |                 |
-| Total                   |     1.940 |          |           |                 |
+| Total                   |     1.941 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.059 |       0.052 |      0.008 |
+| Vccint    |       1.000 |     0.060 |       0.052 |      0.008 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.012 |
 | Vcco33    |       3.300 |     0.111 |       0.110 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -154,19 +154,19 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| pid_vco_pid_only_wrapper                       |     1.799 |
-|   ad9767_0                                     |     0.006 |
-|     inst                                       |     0.006 |
+| pid_vco_pid_only_wrapper                       |     1.800 |
+|   ad9767_0                                     |     0.007 |
+|     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
 |     U0                                         |    <0.001 |
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   axi_interconnect_0                           |     0.007 |
-|     s00_couplers                               |     0.004 |
-|       auto_pc                                  |     0.004 |
-|         inst                                   |     0.004 |
-|           gen_axilite.gen_b2s_conv.axilite_b2s |     0.004 |
+|   axi_interconnect_0                           |     0.008 |
+|     s00_couplers                               |     0.005 |
+|       auto_pc                                  |     0.005 |
+|         inst                                   |     0.005 |
+|           gen_axilite.gen_b2s_conv.axilite_b2s |     0.005 |
 |             RD.ar_channel_0                    |    <0.001 |
 |               ar_cmd_fsm_0                     |    <0.001 |
 |               cmd_translator_0                 |    <0.001 |

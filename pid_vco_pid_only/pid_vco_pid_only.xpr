@@ -59,27 +59,64 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_axi_interconnect_0_0/pid_vco_pid_only_wrapper_axi_interconnect_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_pid_only_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_pid_only_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_tier2_xbar_2_0/pid_vco_pid_only_wrapper_tier2_xbar_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_kp_0/pid_vco_pid_only_wrapper_pid1_kp_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_kp_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_range_0/pid_vco_pid_only_wrapper_dds1_range_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_range_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_expanderReal_0_dds1_0/pid_vco_pid_only_wrapper_expanderReal_0_dds1_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_ltc2145_0_0/pid_vco_pid_only_wrapper_ltc2145_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_ltc2145_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_0/pid_vco_pid_only_wrapper_pid1_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_ki_0/pid_vco_pid_only_wrapper_pid1_ki_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_ki_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_rst_int_0/pid_vco_pid_only_wrapper_pid1_rst_int_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_rst_int_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_sign_0/pid_vco_pid_only_wrapper_pid1_sign_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_sign_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_setpoint_0/pid_vco_pid_only_wrapper_pid2_setpoint_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_setpoint_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_processing_system7_0_0/pid_vco_pid_only_wrapper_processing_system7_0_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hdl/pid_vco_pid_only_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xlslice_dds1_0/pid_vco_pid_only_wrapper_xlslice_dds1_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_xlslice_dds1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xlconstant_1_0/pid_vco_pid_only_wrapper_xlconstant_1_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_xlconstant_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xlconstant_0_0/pid_vco_pid_only_wrapper_xlconstant_0_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_xlconstant_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xbar_0/pid_vco_pid_only_wrapper_xbar_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_ampl_0/pid_vco_pid_only_wrapper_dds1_ampl_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_axi_interconnect_0_0/pid_vco_pid_only_wrapper_axi_interconnect_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_adc1_offset_0/pid_vco_pid_only_wrapper_adc1_offset_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_adc1_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_range_0/pid_vco_pid_only_wrapper_dds1_range_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_range_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds2_offset_0/pid_vco_pid_only_wrapper_dds2_offset_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_dds2_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_0/pid_vco_pid_only_wrapper_pid1_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_offset_0/pid_vco_pid_only_wrapper_dds1_offset_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_offset_0"/>
@@ -87,57 +124,38 @@
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_nco_0/pid_vco_pid_only_wrapper_dds1_nco_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_nco_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_ki_0/pid_vco_pid_only_wrapper_pid1_ki_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_ki_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hdl/pid_vco_pid_only_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_rst_int_0/pid_vco_pid_only_wrapper_pid2_rst_int_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_rst_int_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_sign_0/pid_vco_pid_only_wrapper_pid1_sign_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_sign_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_0/pid_vco_pid_only_wrapper_pid2_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xlslice_dds1_0/pid_vco_pid_only_wrapper_xlslice_dds1_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_xlslice_dds1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xlconstant_1_0/pid_vco_pid_only_wrapper_xlconstant_1_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_xlconstant_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_kd_0/pid_vco_pid_only_wrapper_pid1_kd_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_kd_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_ad9767_0_0/pid_vco_pid_only_wrapper_ad9767_0_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_ad9767_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_f0_0/pid_vco_pid_only_wrapper_dds1_f0_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_f0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_dds1_ampl_0/pid_vco_pid_only_wrapper_dds1_ampl_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_dds1_ampl_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_ltc2145_0_0/pid_vco_pid_only_wrapper_ltc2145_0_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_ltc2145_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_processing_system7_0_0/pid_vco_pid_only_wrapper_processing_system7_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_kd_0/pid_vco_pid_only_wrapper_pid1_kd_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_kd_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_adc1_offset_0/pid_vco_pid_only_wrapper_adc1_offset_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_adc1_offset_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_kp_0/pid_vco_pid_only_wrapper_pid1_kp_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_kp_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_ad9767_0_0/pid_vco_pid_only_wrapper_ad9767_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_ad9767_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xlconstant_0_0/pid_vco_pid_only_wrapper_xlconstant_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_xlconstant_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_setpoint_0/pid_vco_pid_only_wrapper_pid1_setpoint_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_setpoint_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_kp_0/pid_vco_pid_only_wrapper_pid2_kp_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_kp_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_setpoint_0/pid_vco_pid_only_wrapper_pid1_setpoint_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_setpoint_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_rst_int_0/pid_vco_pid_only_wrapper_pid2_rst_int_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_rst_int_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_ki_0/pid_vco_pid_only_wrapper_pid2_ki_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_ki_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_0/pid_vco_pid_only_wrapper_pid2_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_kd_0/pid_vco_pid_only_wrapper_pid2_kd_0.xci">
+          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_kd_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_sign_0/pid_vco_pid_only_wrapper_pid2_sign_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_sign_0"/>
@@ -145,36 +163,14 @@
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_xbar_0/pid_vco_pid_only_wrapper_xbar_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_kd_0/pid_vco_pid_only_wrapper_pid2_kd_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_kd_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid1_rst_int_0/pid_vco_pid_only_wrapper_pid1_rst_int_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid1_rst_int_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_proc_sys_reset_0_0/pid_vco_pid_only_wrapper_proc_sys_reset_0_0.xci">
           <Proxy FileSetName="pid_vco_pid_only_wrapper_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_setpoint_0/pid_vco_pid_only_wrapper_pid2_setpoint_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_setpoint_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_pid2_ki_0/pid_vco_pid_only_wrapper_pid2_ki_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_pid2_ki_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_tier2_xbar_2_0/pid_vco_pid_only_wrapper_tier2_xbar_2_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_tier2_xbar_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_tier2_xbar_1_0/pid_vco_pid_only_wrapper_tier2_xbar_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_pid_only_wrapper_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hdl/pid_vco_pid_only_wrapper.hwdef"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_pid_only_wrapper.hwh"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_auto_pc_0/pid_vco_pid_only_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="pid_vco_pid_only_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_tier2_xbar_0_0/pid_vco_pid_only_wrapper_tier2_xbar_0_0.xci">
-          <Proxy FileSetName="pid_vco_pid_only_wrapper_tier2_xbar_0_0"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_tier2_xbar_1_0/pid_vco_pid_only_wrapper_tier2_xbar_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_tier2_xbar_0_0/pid_vco_pid_only_wrapper_tier2_xbar_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="hdl/pid_vco_pid_only_wrapper.hwdef"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_pid_only_wrapper_auto_pc_0/pid_vco_pid_only_wrapper_auto_pc_0.xci"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -426,18 +422,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="pid_vco_pid_only_wrapper_tier2_xbar_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pid_vco_pid_only_wrapper_tier2_xbar_2_0">
-      <Config>
-        <Option Name="TopModule" Val="pid_vco_pid_only_wrapper_tier2_xbar_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="pid_vco_pid_only_wrapper_tier2_xbar_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pid_vco_pid_only_wrapper_tier2_xbar_0_0">
-      <Config>
-        <Option Name="TopModule" Val="pid_vco_pid_only_wrapper_tier2_xbar_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -471,9 +455,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -481,9 +463,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_kp_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_kp_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_kp_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_kp_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -491,9 +471,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_range_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dds1_range_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_range_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dds1_range_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -501,9 +479,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_expanderReal_0_dds1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -511,9 +487,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -521,9 +495,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds2_offset_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dds2_offset_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds2_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dds2_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -531,9 +503,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -541,9 +511,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dds1_offset_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dds1_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -551,9 +519,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_nco_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dds1_nco_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_nco_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dds1_nco_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -561,9 +527,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_ki_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_ki_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_ki_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_ki_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -571,9 +535,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_rst_int_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_rst_int_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_rst_int_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_rst_int_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -581,9 +543,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_sign_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_sign_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_sign_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_sign_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -591,9 +551,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -601,9 +559,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -611,9 +567,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xlslice_dds1_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_xlslice_dds1_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xlslice_dds1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_xlslice_dds1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -621,9 +575,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xlconstant_1_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_xlconstant_1_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xlconstant_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_xlconstant_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -631,9 +583,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_kd_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_kd_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_kd_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_kd_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -641,9 +591,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_f0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dds1_f0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_f0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dds1_f0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -651,9 +599,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dds1_ampl_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dds1_ampl_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -661,9 +607,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_processing_system7_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -671,9 +615,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_adc1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_adc1_offset_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_adc1_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_adc1_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -681,9 +623,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_ad9767_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_ad9767_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_ad9767_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_ad9767_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -691,9 +631,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xlconstant_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_xlconstant_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xlconstant_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_xlconstant_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -701,9 +639,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_kp_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_kp_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_kp_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_kp_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -711,9 +647,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_setpoint_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_setpoint_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_setpoint_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_setpoint_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -721,9 +655,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_sign_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_sign_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_sign_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_sign_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -731,9 +663,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -741,9 +671,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_xbar_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xbar_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -751,9 +679,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_kd_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_kd_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_kd_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_kd_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -761,9 +687,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_rst_int_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid1_rst_int_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_rst_int_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid1_rst_int_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -771,9 +695,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_proc_sys_reset_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -781,9 +703,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_setpoint_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_setpoint_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_setpoint_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_setpoint_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -791,9 +711,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_ki_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_pid2_ki_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_ki_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_pid2_ki_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -801,29 +719,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pid_vco_pid_only_wrapper_tier2_xbar_2_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_tier2_xbar_2_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_tier2_xbar_2_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_tier2_xbar_2_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pid_vco_pid_only_wrapper_tier2_xbar_0_0_synth_1" Type="Ft3:Synth" SrcSet="pid_vco_pid_only_wrapper_tier2_xbar_0_0" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_tier2_xbar_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/pid_vco_pid_only_wrapper_tier2_xbar_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -847,9 +743,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -864,9 +758,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_kp_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_kp_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_kp_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -881,9 +773,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_range_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_range_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dds1_range_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -898,9 +788,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_expanderReal_0_dds1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -915,9 +803,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -932,9 +818,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds2_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds2_offset_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dds2_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -949,9 +833,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -966,9 +848,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_offset_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dds1_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -983,9 +863,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_nco_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_nco_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dds1_nco_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1000,9 +878,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_ki_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_ki_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_ki_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1017,9 +893,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_rst_int_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_rst_int_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_rst_int_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1034,9 +908,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_sign_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_sign_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_sign_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1051,9 +923,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1068,9 +938,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1085,9 +953,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xlslice_dds1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xlslice_dds1_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_xlslice_dds1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1102,9 +968,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xlconstant_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xlconstant_1_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_xlconstant_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1119,9 +983,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_kd_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_kd_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_kd_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1136,9 +998,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_f0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_f0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dds1_f0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1153,9 +1013,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dds1_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dds1_ampl_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dds1_ampl_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1170,9 +1028,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_processing_system7_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_processing_system7_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1187,9 +1043,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_adc1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_adc1_offset_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_adc1_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1204,9 +1058,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_ad9767_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_ad9767_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_ad9767_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1221,9 +1073,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xlconstant_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xlconstant_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_xlconstant_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1238,9 +1088,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_kp_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_kp_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_kp_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1255,9 +1103,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_setpoint_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_setpoint_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_setpoint_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1272,9 +1118,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_sign_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_sign_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_sign_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1289,9 +1133,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1306,9 +1148,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_xbar_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_xbar_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1323,9 +1163,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_kd_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_kd_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_kd_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1340,9 +1178,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid1_rst_int_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid1_rst_int_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid1_rst_int_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1357,9 +1193,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_proc_sys_reset_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1374,9 +1208,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_setpoint_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_setpoint_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_setpoint_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1391,9 +1223,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_pid2_ki_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_pid2_ki_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_pid2_ki_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1408,43 +1238,7 @@
     </Run>
     <Run Id="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pid_vco_pid_only_wrapper_tier2_xbar_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_tier2_xbar_2_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_tier2_xbar_2_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="pid_vco_pid_only_wrapper_tier2_xbar_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="pid_vco_pid_only_wrapper_tier2_xbar_0_0" Description="Default settings for Implementation." SynthRun="pid_vco_pid_only_wrapper_tier2_xbar_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

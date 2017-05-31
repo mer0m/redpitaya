@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May  6 09:41:34 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May 30 18:05:14 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:redpitaya:part0:1.0" DEVICE="7z010" NAME="pid_vco_pid_only_wrapper" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -6831,7 +6831,7 @@
         <ADDRESSBLOCK ACCESS="" INTERFACE="s00_axi" NAME="reg0" RANGE="16" USAGE="register"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="format" VALUE="unsigned"/>
+        <PARAMETER NAME="format" VALUE="signed"/>
         <PARAMETER NAME="add_val" VALUE="0"/>
         <PARAMETER NAME="DATA_OUT_SIZE" VALUE="14"/>
         <PARAMETER NAME="DATA_IN_SIZE" VALUE="14"/>
@@ -7056,7 +7056,7 @@
         <ADDRESSBLOCK ACCESS="" INTERFACE="s00_axi" NAME="reg0" RANGE="16" USAGE="register"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="format" VALUE="unsigned"/>
+        <PARAMETER NAME="format" VALUE="signed"/>
         <PARAMETER NAME="add_val" VALUE="0"/>
         <PARAMETER NAME="DATA_OUT_SIZE" VALUE="14"/>
         <PARAMETER NAME="DATA_IN_SIZE" VALUE="14"/>
@@ -7281,7 +7281,7 @@
         <ADDRESSBLOCK ACCESS="" INTERFACE="s00_axi" NAME="reg0" RANGE="16" USAGE="register"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="format" VALUE="unsigned"/>
+        <PARAMETER NAME="format" VALUE="signed"/>
         <PARAMETER NAME="add_val" VALUE="0"/>
         <PARAMETER NAME="DATA_OUT_SIZE" VALUE="14"/>
         <PARAMETER NAME="DATA_IN_SIZE" VALUE="14"/>

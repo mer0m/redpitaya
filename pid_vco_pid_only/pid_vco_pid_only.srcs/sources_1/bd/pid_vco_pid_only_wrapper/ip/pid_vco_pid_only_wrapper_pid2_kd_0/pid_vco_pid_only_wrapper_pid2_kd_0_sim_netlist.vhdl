@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Sat May  6 09:13:56 2017
+-- Date        : Tue May 30 18:06:58 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_pid2_kd_0/pid_vco_pid_only_wrapper_pid2_kd_0_sim_netlist.vhdl
@@ -52,10 +52,10 @@ architecture STRUCTURE of pid_vco_pid_only_wrapper_pid2_kd_0_add_const_handComm 
   signal axi_rvalid_i_1_n_0 : STD_LOGIC;
   signal axi_wready_i_1_n_0 : STD_LOGIC;
   signal read_addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal \readdata_s[13]_i_3_n_0\ : STD_LOGIC;
-  signal \readdata_s[13]_i_4_n_0\ : STD_LOGIC;
-  signal \readdata_s[13]_i_5_n_0\ : STD_LOGIC;
-  signal \readdata_s[13]_i_6_n_0\ : STD_LOGIC;
+  signal \readdata_s[31]_i_3_n_0\ : STD_LOGIC;
+  signal \readdata_s[31]_i_4_n_0\ : STD_LOGIC;
+  signal \readdata_s[31]_i_5_n_0\ : STD_LOGIC;
+  signal \readdata_s[31]_i_6_n_0\ : STD_LOGIC;
   signal \^s00_axi_arready\ : STD_LOGIC;
   signal \^s00_axi_awready\ : STD_LOGIC;
   signal \^s00_axi_bvalid\ : STD_LOGIC;
@@ -68,11 +68,11 @@ architecture STRUCTURE of pid_vco_pid_only_wrapper_pid2_kd_0_add_const_handComm 
   attribute SOFT_HLUTNM of \axi_awaddr[2]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of axi_awready_i_1 : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \readdata_s[13]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \readdata_s[13]_i_3\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \readdata_s[13]_i_4\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \readdata_s[13]_i_5\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \readdata_s[13]_i_6\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \readdata_s[31]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \readdata_s[31]_i_3\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \readdata_s[31]_i_4\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \readdata_s[31]_i_5\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \readdata_s[31]_i_6\ : label is "soft_lutpair1";
 begin
   s00_axi_arready <= \^s00_axi_arready\;
   s00_axi_awready <= \^s00_axi_awready\;
@@ -85,9 +85,9 @@ begin
     )
         port map (
       I0 => read_addr_s(0),
-      I1 => \readdata_s[13]_i_4_n_0\,
+      I1 => \readdata_s[31]_i_4_n_0\,
       I2 => addr_reg(0),
-      I3 => \readdata_s[13]_i_3_n_0\,
+      I3 => \readdata_s[31]_i_3_n_0\,
       I4 => write_addr_s(0),
       O => addr_s(0)
     );
@@ -97,9 +97,9 @@ begin
     )
         port map (
       I0 => read_addr_s(1),
-      I1 => \readdata_s[13]_i_4_n_0\,
+      I1 => \readdata_s[31]_i_4_n_0\,
       I2 => addr_reg(1),
-      I3 => \readdata_s[13]_i_3_n_0\,
+      I3 => \readdata_s[31]_i_3_n_0\,
       I4 => write_addr_s(1),
       O => addr_s(1)
     );
@@ -297,7 +297,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
         port map (
       I0 => write_addr_s(1),
       I1 => write_addr_s(0),
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       O => E(0)
     );
 \readdata_s[0]_i_1\: unisim.vcomponents.LUT6
@@ -306,10 +306,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(0),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(0)
     );
@@ -319,10 +319,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(10),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(10)
     );
@@ -332,10 +332,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(11),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(11)
     );
@@ -345,81 +345,12 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(12),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(12)
-    );
-\readdata_s[13]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"10D0"
-    )
-        port map (
-      I0 => write_addr_s(1),
-      I1 => \readdata_s[13]_i_3_n_0\,
-      I2 => \readdata_s[13]_i_4_n_0\,
-      I3 => read_addr_s(1),
-      O => \readdata_s_reg[0]\(0)
-    );
-\readdata_s[13]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"AAAA8A8AAAA08A80"
-    )
-        port map (
-      I0 => Q(13),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
-      I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
-      I5 => write_addr_s(1),
-      O => D(13)
-    );
-\readdata_s[13]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"7FFF"
-    )
-        port map (
-      I0 => s00_axi_wvalid,
-      I1 => s00_axi_awvalid,
-      I2 => \^s00_axi_awready\,
-      I3 => \^s00_axi_wready\,
-      O => \readdata_s[13]_i_3_n_0\
-    );
-\readdata_s[13]_i_4\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"08"
-    )
-        port map (
-      I0 => s00_axi_arvalid,
-      I1 => \^s00_axi_arready\,
-      I2 => \^s00_axi_rvalid\,
-      O => \readdata_s[13]_i_4_n_0\
-    );
-\readdata_s[13]_i_5\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFBF0080"
-    )
-        port map (
-      I0 => read_addr_s(0),
-      I1 => s00_axi_arvalid,
-      I2 => \^s00_axi_arready\,
-      I3 => \^s00_axi_rvalid\,
-      I4 => addr_reg(0),
-      O => \readdata_s[13]_i_5_n_0\
-    );
-\readdata_s[13]_i_6\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFBF0080"
-    )
-        port map (
-      I0 => read_addr_s(1),
-      I1 => s00_axi_arvalid,
-      I2 => \^s00_axi_arready\,
-      I3 => \^s00_axi_rvalid\,
-      I4 => addr_reg(1),
-      O => \readdata_s[13]_i_6_n_0\
     );
 \readdata_s[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -427,10 +358,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(1),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(1)
     );
@@ -440,12 +371,81 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(2),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(2)
+    );
+\readdata_s[31]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"10D0"
+    )
+        port map (
+      I0 => write_addr_s(1),
+      I1 => \readdata_s[31]_i_3_n_0\,
+      I2 => \readdata_s[31]_i_4_n_0\,
+      I3 => read_addr_s(1),
+      O => \readdata_s_reg[0]\(0)
+    );
+\readdata_s[31]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAA8A8AAAA08A80"
+    )
+        port map (
+      I0 => Q(13),
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
+      I3 => write_addr_s(0),
+      I4 => \readdata_s[31]_i_6_n_0\,
+      I5 => write_addr_s(1),
+      O => D(13)
+    );
+\readdata_s[31]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7FFF"
+    )
+        port map (
+      I0 => s00_axi_wvalid,
+      I1 => s00_axi_awvalid,
+      I2 => \^s00_axi_awready\,
+      I3 => \^s00_axi_wready\,
+      O => \readdata_s[31]_i_3_n_0\
+    );
+\readdata_s[31]_i_4\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"08"
+    )
+        port map (
+      I0 => s00_axi_arvalid,
+      I1 => \^s00_axi_arready\,
+      I2 => \^s00_axi_rvalid\,
+      O => \readdata_s[31]_i_4_n_0\
+    );
+\readdata_s[31]_i_5\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFBF0080"
+    )
+        port map (
+      I0 => read_addr_s(0),
+      I1 => s00_axi_arvalid,
+      I2 => \^s00_axi_arready\,
+      I3 => \^s00_axi_rvalid\,
+      I4 => addr_reg(0),
+      O => \readdata_s[31]_i_5_n_0\
+    );
+\readdata_s[31]_i_6\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFBF0080"
+    )
+        port map (
+      I0 => read_addr_s(1),
+      I1 => s00_axi_arvalid,
+      I2 => \^s00_axi_arready\,
+      I3 => \^s00_axi_rvalid\,
+      I4 => addr_reg(1),
+      O => \readdata_s[31]_i_6_n_0\
     );
 \readdata_s[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -453,10 +453,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(3),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(3)
     );
@@ -466,10 +466,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(4),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(4)
     );
@@ -479,10 +479,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(5),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(5)
     );
@@ -492,10 +492,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(6),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(6)
     );
@@ -505,10 +505,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(7),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(7)
     );
@@ -518,10 +518,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(8),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(8)
     );
@@ -531,10 +531,10 @@ axi_wready_reg: unisim.vcomponents.FDRE
     )
         port map (
       I0 => Q(9),
-      I1 => \readdata_s[13]_i_5_n_0\,
-      I2 => \readdata_s[13]_i_3_n_0\,
+      I1 => \readdata_s[31]_i_5_n_0\,
+      I2 => \readdata_s[31]_i_3_n_0\,
       I3 => write_addr_s(0),
-      I4 => \readdata_s[13]_i_6_n_0\,
+      I4 => \readdata_s[31]_i_6_n_0\,
       I5 => write_addr_s(1),
       O => D(9)
     );
@@ -1296,14 +1296,6 @@ begin
       D => D(12),
       Q => s00_axi_rdata(12)
     );
-\readdata_s_reg[13]\: unisim.vcomponents.FDCE
-     port map (
-      C => s00_axi_aclk,
-      CE => \axi_awaddr_reg[3]\(0),
-      CLR => s00_axi_reset,
-      D => D(13),
-      Q => s00_axi_rdata(13)
-    );
 \readdata_s_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => s00_axi_aclk,
@@ -1319,6 +1311,14 @@ begin
       CLR => s00_axi_reset,
       D => D(2),
       Q => s00_axi_rdata(2)
+    );
+\readdata_s_reg[31]\: unisim.vcomponents.FDCE
+     port map (
+      C => s00_axi_aclk,
+      CE => \axi_awaddr_reg[3]\(0),
+      CLR => s00_axi_reset,
+      D => D(13),
+      Q => s00_axi_rdata(13)
     );
 \readdata_s_reg[3]\: unisim.vcomponents.FDCE
      port map (
@@ -1426,7 +1426,7 @@ entity pid_vco_pid_only_wrapper_pid2_kd_0_add_const is
   attribute add_val : integer;
   attribute add_val of pid_vco_pid_only_wrapper_pid2_kd_0_add_const : entity is 0;
   attribute format : string;
-  attribute format of pid_vco_pid_only_wrapper_pid2_kd_0_add_const : entity is "unsigned";
+  attribute format of pid_vco_pid_only_wrapper_pid2_kd_0_add_const : entity is "signed";
   attribute id : integer;
   attribute id of pid_vco_pid_only_wrapper_pid2_kd_0_add_const : entity is 1;
 end pid_vco_pid_only_wrapper_pid2_kd_0_add_const;
@@ -1439,8 +1439,8 @@ architecture STRUCTURE of pid_vco_pid_only_wrapper_pid2_kd_0_add_const is
   signal \^data_clk_i\ : STD_LOGIC;
   signal \^data_rst_i\ : STD_LOGIC;
   signal offset_s : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal p_0_in : STD_LOGIC_VECTOR ( 13 downto 1 );
-  signal \^s00_axi_rdata\ : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal p_0_in : STD_LOGIC_VECTOR ( 31 downto 1 );
+  signal \^s00_axi_rdata\ : STD_LOGIC_VECTOR ( 30 downto 0 );
 begin
   \^data_clk_i\ <= data_clk_i;
   \^data_rst_i\ <= data_rst_i;
@@ -1448,25 +1448,26 @@ begin
   data_rst_o <= \^data_rst_i\;
   s00_axi_bresp(1) <= \<const0>\;
   s00_axi_bresp(0) <= \<const0>\;
-  s00_axi_rdata(31) <= \<const0>\;
-  s00_axi_rdata(30) <= \<const0>\;
-  s00_axi_rdata(29) <= \<const0>\;
-  s00_axi_rdata(28) <= \<const0>\;
-  s00_axi_rdata(27) <= \<const0>\;
-  s00_axi_rdata(26) <= \<const0>\;
-  s00_axi_rdata(25) <= \<const0>\;
-  s00_axi_rdata(24) <= \<const0>\;
-  s00_axi_rdata(23) <= \<const0>\;
-  s00_axi_rdata(22) <= \<const0>\;
-  s00_axi_rdata(21) <= \<const0>\;
-  s00_axi_rdata(20) <= \<const0>\;
-  s00_axi_rdata(19) <= \<const0>\;
-  s00_axi_rdata(18) <= \<const0>\;
-  s00_axi_rdata(17) <= \<const0>\;
-  s00_axi_rdata(16) <= \<const0>\;
-  s00_axi_rdata(15) <= \<const0>\;
-  s00_axi_rdata(14) <= \<const0>\;
-  s00_axi_rdata(13 downto 0) <= \^s00_axi_rdata\(13 downto 0);
+  s00_axi_rdata(31) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(30) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(29) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(28) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(27) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(26) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(25) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(24) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(23) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(22) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(21) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(20) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(19) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(18) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(17) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(16) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(15) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(14) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(13) <= \^s00_axi_rdata\(30);
+  s00_axi_rdata(12 downto 0) <= \^s00_axi_rdata\(12 downto 0);
   s00_axi_rresp(1) <= \<const0>\;
   s00_axi_rresp(0) <= \<const0>\;
 GND: unisim.vcomponents.GND
@@ -1475,7 +1476,8 @@ GND: unisim.vcomponents.GND
     );
 add_constHandComm: entity work.pid_vco_pid_only_wrapper_pid2_kd_0_add_const_handComm
      port map (
-      D(13 downto 1) => p_0_in(13 downto 1),
+      D(13) => p_0_in(31),
+      D(12 downto 1) => p_0_in(12 downto 1),
       D(0) => add_constHandComm_n_18,
       E(0) => add_constHandComm_n_19,
       Q(13 downto 0) => offset_s(13 downto 0),
@@ -1507,13 +1509,15 @@ add_constLogic: entity work.pid_vco_pid_only_wrapper_pid2_kd_0_add_const_logic
     );
 wb_add_const_inst: entity work.pid_vco_pid_only_wrapper_pid2_kd_0_wb_add_const
      port map (
-      D(13 downto 1) => p_0_in(13 downto 1),
+      D(13) => p_0_in(31),
+      D(12 downto 1) => p_0_in(12 downto 1),
       D(0) => add_constHandComm_n_18,
       E(0) => add_constHandComm_n_19,
       Q(13 downto 0) => offset_s(13 downto 0),
       \axi_awaddr_reg[3]\(0) => add_constHandComm_n_20,
       s00_axi_aclk => s00_axi_aclk,
-      s00_axi_rdata(13 downto 0) => \^s00_axi_rdata\(13 downto 0),
+      s00_axi_rdata(13) => \^s00_axi_rdata\(30),
+      s00_axi_rdata(12 downto 0) => \^s00_axi_rdata\(12 downto 0),
       s00_axi_reset => s00_axi_reset,
       s00_axi_wdata(13 downto 0) => s00_axi_wdata(13 downto 0)
     );
@@ -1576,7 +1580,7 @@ architecture STRUCTURE of pid_vco_pid_only_wrapper_pid2_kd_0 is
   attribute add_val : integer;
   attribute add_val of U0 : label is 0;
   attribute format : string;
-  attribute format of U0 : label is "unsigned";
+  attribute format of U0 : label is "signed";
   attribute id : integer;
   attribute id of U0 : label is 1;
 begin
