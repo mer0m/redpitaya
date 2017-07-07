@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1493107161">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1499448264">
   <File Type="VDS-TIMING-PB" Name="double_pid_vco_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="double_pid_vco_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="double_pid_vco_wrapper.dcp"/>
@@ -56,6 +56,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_dds1_nco_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_dds1_f0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_twoInMult_dds1_range_0"/>
@@ -66,7 +68,6 @@
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_dds1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid1_kp_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid1_ki_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_adc1_offset_1"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid1_setpoint_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid1_sign_0"/>
@@ -81,7 +82,6 @@
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid_ki_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid_rst_int_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid_setpoint_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_pid_vco_wrapper_pid_sign_0"/>

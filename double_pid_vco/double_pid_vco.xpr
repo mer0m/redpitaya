@@ -59,139 +59,139 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_adc1_offset_0/double_pid_vco_wrapper_adc1_offset_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_adc1_offset_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_tier2_xbar_0_0/double_pid_vco_wrapper_tier2_xbar_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_ampl_0/double_pid_vco_wrapper_dds1_ampl_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds1_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlconstant_0_0/double_pid_vco_wrapper_xlconstant_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_xlconstant_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_ki_0/double_pid_vco_wrapper_pid1_ki_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid1_ki_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_f0_0/double_pid_vco_wrapper_dds_f0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds_f0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_ampl_0/double_pid_vco_wrapper_dds_ampl_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds1_ampl_0/double_pid_vco_wrapper_twoInMult_dds1_ampl_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds1_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlconstant_1_0/double_pid_vco_wrapper_xlconstant_1_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_xlconstant_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_kp_0/double_pid_vco_wrapper_pid_kp_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid_kp_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_offset_0/double_pid_vco_wrapper_dds_offset_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_auto_pc_0/double_pid_vco_wrapper_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/double_pid_vco_wrapper.hwh"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/double_pid_vco_wrapper_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_axi_interconnect_0_0/double_pid_vco_wrapper_axi_interconnect_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xbar_0/double_pid_vco_wrapper_xbar_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlslice_dds1_0/double_pid_vco_wrapper_xlslice_dds1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_tier2_xbar_1_0/double_pid_vco_wrapper_tier2_xbar_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_adc1_offset_1/double_pid_vco_wrapper_adc1_offset_1.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_adc1_offset_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="double_pid_vco_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds1_range_0/double_pid_vco_wrapper_twoInMult_dds1_range_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds1_range_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_kd_0/double_pid_vco_wrapper_pid1_kd_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid1_kd_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_sign_0/double_pid_vco_wrapper_pid1_sign_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid1_sign_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_nco_0/double_pid_vco_wrapper_dds1_nco_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds1_nco_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_f0_0/double_pid_vco_wrapper_dds1_f0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds1_f0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_range_0/double_pid_vco_wrapper_dds1_range_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds1_range_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_offset_0/double_pid_vco_wrapper_dds1_offset_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds1_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_expanderReal_0_dds1_0/double_pid_vco_wrapper_expanderReal_0_dds1_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_expanderReal_0_dds1_0"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds_ampl_0/double_pid_vco_wrapper_twoInMult_dds_ampl_0.xci">
           <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds_ampl_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_rst_int_0/double_pid_vco_wrapper_pid_rst_int_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid_rst_int_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_tier2_xbar_2_0/double_pid_vco_wrapper_tier2_xbar_2_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_red_pitaya_pidv3_0_1/double_pid_vco_wrapper_red_pitaya_pidv3_0_1.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_red_pitaya_pidv3_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_setpoint_0/double_pid_vco_wrapper_pid1_setpoint_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid1_setpoint_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_rst_int_0/double_pid_vco_wrapper_pid1_rst_int_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid1_rst_int_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_kp_0/double_pid_vco_wrapper_pid1_kp_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid1_kp_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_ad9767_0_0/double_pid_vco_wrapper_ad9767_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_ad9767_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_nco_0/double_pid_vco_wrapper_dds_nco_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds_nco_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_processing_system7_0_0/double_pid_vco_wrapper_processing_system7_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_red_pitaya_pidv3_0_0/double_pid_vco_wrapper_red_pitaya_pidv3_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hdl/double_pid_vco_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_sign_0/double_pid_vco_wrapper_pid_sign_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid_sign_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_setpoint_0/double_pid_vco_wrapper_pid_setpoint_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid_setpoint_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_expanderReal_0_0/double_pid_vco_wrapper_expanderReal_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_expanderReal_0_0"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlconstant_0_0/double_pid_vco_wrapper_xlconstant_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_xlconstant_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_ltc2145_0_0/double_pid_vco_wrapper_ltc2145_0_0.xci">
           <Proxy FileSetName="double_pid_vco_wrapper_ltc2145_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_kd_0/double_pid_vco_wrapper_pid_kd_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_pid_kd_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_proc_sys_reset_0_0/double_pid_vco_wrapper_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_range_0/double_pid_vco_wrapper_dds_range_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_dds_range_0"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_tier2_xbar_1_0/double_pid_vco_wrapper_tier2_xbar_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_f0_0/double_pid_vco_wrapper_dds1_f0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds1_f0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_ki_0/double_pid_vco_wrapper_pid_ki_0.xci">
           <Proxy FileSetName="double_pid_vco_wrapper_pid_ki_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds_range_0/double_pid_vco_wrapper_twoInMult_dds_range_0.xci">
-          <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds_range_0"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_kp_0/double_pid_vco_wrapper_pid1_kp_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid1_kp_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_red_pitaya_pidv3_0_0/double_pid_vco_wrapper_red_pitaya_pidv3_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_setpoint_0/double_pid_vco_wrapper_pid1_setpoint_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid1_setpoint_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_ki_0/double_pid_vco_wrapper_pid1_ki_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid1_ki_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_sign_0/double_pid_vco_wrapper_pid1_sign_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid1_sign_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_axi_interconnect_0_0/double_pid_vco_wrapper_axi_interconnect_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_kd_0/double_pid_vco_wrapper_pid_kd_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid_kd_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_expanderReal_0_0/double_pid_vco_wrapper_expanderReal_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_expanderReal_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_offset_0/double_pid_vco_wrapper_dds1_offset_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds1_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_rst_int_0/double_pid_vco_wrapper_pid1_rst_int_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid1_rst_int_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_kp_0/double_pid_vco_wrapper_pid_kp_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid_kp_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hdl/double_pid_vco_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_expanderReal_0_dds1_0/double_pid_vco_wrapper_expanderReal_0_dds1_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_expanderReal_0_dds1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_adc1_offset_1/double_pid_vco_wrapper_adc1_offset_1.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_adc1_offset_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_offset_0/double_pid_vco_wrapper_dds_offset_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds1_range_0/double_pid_vco_wrapper_twoInMult_dds1_range_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds1_range_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/double_pid_vco_wrapper.hwh"/>
         <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlslice_0_0/double_pid_vco_wrapper_xlslice_0_0.xci">
           <Proxy FileSetName="double_pid_vco_wrapper_xlslice_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_red_pitaya_pidv3_0_1/double_pid_vco_wrapper_red_pitaya_pidv3_0_1.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_red_pitaya_pidv3_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_auto_pc_0/double_pid_vco_wrapper_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xbar_0/double_pid_vco_wrapper_xbar_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_setpoint_0/double_pid_vco_wrapper_pid_setpoint_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid_setpoint_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_ampl_0/double_pid_vco_wrapper_dds1_ampl_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds1_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlslice_dds1_0/double_pid_vco_wrapper_xlslice_dds1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_range_0/double_pid_vco_wrapper_dds1_range_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds1_range_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_f0_0/double_pid_vco_wrapper_dds_f0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds_f0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_range_0/double_pid_vco_wrapper_dds_range_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds_range_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_xlconstant_1_0/double_pid_vco_wrapper_xlconstant_1_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_xlconstant_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_adc1_offset_0/double_pid_vco_wrapper_adc1_offset_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_adc1_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_ampl_0/double_pid_vco_wrapper_dds_ampl_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds_nco_0/double_pid_vco_wrapper_dds_nco_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds_nco_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds1_ampl_0/double_pid_vco_wrapper_twoInMult_dds1_ampl_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds1_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_rst_int_0/double_pid_vco_wrapper_pid_rst_int_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid_rst_int_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_dds1_nco_0/double_pid_vco_wrapper_dds1_nco_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_dds1_nco_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid_sign_0/double_pid_vco_wrapper_pid_sign_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid_sign_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_pid1_kd_0/double_pid_vco_wrapper_pid1_kd_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_pid1_kd_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hw_handoff/double_pid_vco_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_ad9767_0_0/double_pid_vco_wrapper_ad9767_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_ad9767_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_processing_system7_0_0/double_pid_vco_wrapper_processing_system7_0_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_twoInMult_dds_range_0/double_pid_vco_wrapper_twoInMult_dds_range_0.xci">
+          <Proxy FileSetName="double_pid_vco_wrapper_twoInMult_dds_range_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="ip/double_pid_vco_wrapper_tier2_xbar_2_0/double_pid_vco_wrapper_tier2_xbar_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="double_pid_vco_wrapper_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="double_pid_vco_wrapper.bd" FileRelPathName="hdl/double_pid_vco_wrapper.hwdef"/>
       </File>
       <Config>
@@ -306,12 +306,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_0">
-      <Config>
-        <Option Name="TopModule" Val="double_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="double_pid_vco_wrapper_pid_setpoint_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_pid_setpoint_0">
       <Config>
         <Option Name="TopModule" Val="double_pid_vco_wrapper_pid_setpoint_0"/>
@@ -408,12 +402,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_1">
-      <Config>
-        <Option Name="TopModule" Val="double_pid_vco_wrapper_red_pitaya_pidv3_0_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="double_pid_vco_wrapper_pid1_ki_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_pid1_ki_0">
       <Config>
         <Option Name="TopModule" Val="double_pid_vco_wrapper_pid1_ki_0"/>
@@ -483,6 +471,18 @@
     <FileSet Name="double_pid_vco_wrapper_ltc2145_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_ltc2145_0_0">
       <Config>
         <Option Name="TopModule" Val="double_pid_vco_wrapper_ltc2145_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_1">
+      <Config>
+        <Option Name="TopModule" Val="double_pid_vco_wrapper_red_pitaya_pidv3_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_0">
+      <Config>
+        <Option Name="TopModule" Val="double_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -598,14 +598,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
@@ -741,14 +733,6 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_1_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="double_pid_vco_wrapper_pid1_ki_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_pid1_ki_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_pid1_ki_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_pid1_ki_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
@@ -823,9 +807,7 @@
     </Run>
     <Run Id="double_pid_vco_wrapper_dds1_nco_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_dds1_nco_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_dds1_nco_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_dds1_nco_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -833,9 +815,7 @@
     </Run>
     <Run Id="double_pid_vco_wrapper_dds_nco_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_dds_nco_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_dds_nco_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_dds_nco_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -843,9 +823,23 @@
     </Run>
     <Run Id="double_pid_vco_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_1_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" Type="Ft3:Synth" SrcSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/double_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -1018,21 +1012,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -1287,21 +1266,6 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_red_pitaya_pidv3_0_1_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="double_pid_vco_wrapper_pid1_ki_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_pid1_ki_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_pid1_ki_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
@@ -1439,9 +1403,7 @@
     </Run>
     <Run Id="double_pid_vco_wrapper_dds1_nco_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_dds1_nco_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_dds1_nco_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1456,9 +1418,7 @@
     </Run>
     <Run Id="double_pid_vco_wrapper_dds_nco_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_dds_nco_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_dds_nco_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1473,9 +1433,37 @@
     </Run>
     <Run Id="double_pid_vco_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_1" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_red_pitaya_pidv3_0_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="double_pid_vco_wrapper_red_pitaya_pidv3_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_pid_vco_wrapper_red_pitaya_pidv3_0_0" Description="Default settings for Implementation." SynthRun="double_pid_vco_wrapper_red_pitaya_pidv3_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

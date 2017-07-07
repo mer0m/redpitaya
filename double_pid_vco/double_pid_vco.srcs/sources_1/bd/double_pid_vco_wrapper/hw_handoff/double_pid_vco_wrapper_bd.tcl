@@ -216,11 +216,6 @@ CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $dds1_nco
 
-  set_property -dict [ list \
-CONFIG.NUM_READ_OUTSTANDING {1} \
-CONFIG.NUM_WRITE_OUTSTANDING {1} \
- ] [get_bd_intf_pins /dds1_nco/s00_axi]
-
   # Create instance: dds1_offset, and set properties
   set dds1_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds1_offset ]
   set_property -dict [ list \
@@ -259,11 +254,6 @@ CONFIG.COUNTER_SIZE {32} \
 CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $dds2_nco
-
-  set_property -dict [ list \
-CONFIG.NUM_READ_OUTSTANDING {1} \
-CONFIG.NUM_WRITE_OUTSTANDING {1} \
- ] [get_bd_intf_pins /dds2_nco/s00_axi]
 
   # Create instance: dds2_offset, and set properties
   set dds2_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds2_offset ]
@@ -305,9 +295,9 @@ CONFIG.format {signed} \
 CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.DSR {0} \
 CONFIG.D_SIZE {14} \
-CONFIG.ISR {15} \
-CONFIG.I_SIZE {14} \
-CONFIG.PSR {15} \
+CONFIG.ISR {19} \
+CONFIG.I_SIZE {18} \
+CONFIG.PSR {13} \
 CONFIG.P_SIZE {14} \
  ] $pid1
 
@@ -366,9 +356,9 @@ CONFIG.format {unsigned} \
 CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.DSR {0} \
 CONFIG.D_SIZE {14} \
-CONFIG.ISR {15} \
-CONFIG.I_SIZE {14} \
-CONFIG.PSR {15} \
+CONFIG.ISR {19} \
+CONFIG.I_SIZE {18} \
+CONFIG.PSR {13} \
 CONFIG.P_SIZE {14} \
  ] $pid2
 
@@ -1514,11 +1504,11 @@ preplace port adc_clk_n_i -pg 1 -y 2290 -defaultsOSRD
 preplace portBus adc_data_a_i -pg 1 -y 1930 -defaultsOSRD
 preplace portBus adc_data_b_i -pg 1 -y 1950 -defaultsOSRD
 preplace portBus dac_dat_o -pg 1 -y 2160 -defaultsOSRD
+preplace inst pid1 -pg 1 -lvl 5 -y 3860 -defaultsOSRD
 preplace inst dds2_range -pg 1 -lvl 4 -y 130 -defaultsOSRD
 preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 4280 -defaultsOSRD
-preplace inst pid1 -pg 1 -lvl 5 -y 3860 -defaultsOSRD
-preplace inst dds2_offset -pg 1 -lvl 4 -y 3610 -defaultsOSRD
 preplace inst pid2 -pg 1 -lvl 5 -y 1350 -defaultsOSRD
+preplace inst dds2_offset -pg 1 -lvl 4 -y 3610 -defaultsOSRD
 preplace inst pid2_sign -pg 1 -lvl 4 -y 1520 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 3 -y 3950 -defaultsOSRD
 preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 2290 -defaultsOSRD

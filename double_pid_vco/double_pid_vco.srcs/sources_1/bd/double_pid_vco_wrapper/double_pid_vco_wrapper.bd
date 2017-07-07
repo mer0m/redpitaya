@@ -928,20 +928,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>pid1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_pid_vco_wrapper_red_pitaya_pidv3_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PSR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="ISR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="I_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>redpitaya_adc_dac_clk_0</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="redpitaya_adc_dac_clk" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -1000,20 +986,6 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_pid_vco_wrapper_adc1_offset_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>pid2</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_pid_vco_wrapper_red_pitaya_pidv3_0_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PSR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="ISR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="I_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -1179,6 +1151,34 @@
         <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_pid_vco_wrapper_ltc2145_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pid1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_pid_vco_wrapper_red_pitaya_pidv3_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PSR">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ISR">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="I_SIZE">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pid2</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_pid_vco_wrapper_red_pitaya_pidv3_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PSR">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ISR">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="I_SIZE">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -1514,8 +1514,8 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_interconnect_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="interconnect_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>
@@ -1611,6 +1611,8 @@
         <spirit:internalPortReference spirit:componentRef="dds2_f0" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds2_ampl" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds2_offset" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ACLK"/>
@@ -1637,8 +1639,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M21_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M22_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M23_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Tue Apr 25 10:04:30 2017
+| Date             : Fri Jul  7 19:28:29 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file double_pid_vco_wrapper_power_routed.rpt -pb double_pid_vco_wrapper_power_summary_routed.pb -rpx double_pid_vco_wrapper_power_routed.rpx
 | Design           : double_pid_vco_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 2.036 |
-| Dynamic (W)              | 1.893 |
+| Total On-Chip Power (W)  | 2.037 |
+| Dynamic (W)              | 1.894 |
 | Device Static (W)        | 0.143 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 61.5  |
@@ -50,20 +50,20 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.021 |       11 |       --- |             --- |
-| Slice Logic             |     0.005 |     6462 |       --- |             --- |
-|   LUT as Logic          |     0.004 |     2225 |     17600 |           12.64 |
-|   CARRY4                |    <0.001 |      116 |      4400 |            2.64 |
-|   Register              |    <0.001 |     3066 |     35200 |            8.71 |
+| Slice Logic             |     0.005 |     6564 |       --- |             --- |
+|   LUT as Logic          |     0.004 |     2284 |     17600 |           12.98 |
+|   CARRY4                |    <0.001 |      118 |      4400 |            2.68 |
+|   Register              |    <0.001 |     3094 |     35200 |            8.79 |
 |   LUT as Shift Register |    <0.001 |      110 |      6000 |            1.83 |
 |   Others                |     0.000 |      364 |       --- |             --- |
-| Signals                 |     0.009 |     4967 |       --- |             --- |
+| Signals                 |     0.010 |     5069 |       --- |             --- |
 | Block RAM               |     0.010 |        4 |        60 |            6.67 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.010 |        8 |        80 |           10.00 |
 | I/O                     |     0.458 |       49 |       100 |           49.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
 | Static Power            |     0.143 |          |           |                 |
-| Total                   |     2.036 |          |           |                 |
+| Total                   |     2.037 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.073 |       0.065 |      0.008 |
+| Vccint    |       1.000 |     0.075 |       0.066 |      0.008 |
 | Vccaux    |       1.800 |     0.072 |       0.060 |      0.012 |
 | Vcco33    |       3.300 |     0.135 |       0.134 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -154,7 +154,7 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| double_pid_vco_wrapper                         |     1.893 |
+| double_pid_vco_wrapper                         |     1.894 |
 |   ad9767_0                                     |     0.007 |
 |     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
@@ -282,9 +282,9 @@ Table of Contents
 |   ltc2145_0                                    |    <0.001 |
 |     U0                                         |    <0.001 |
 |       ltc2145_capture_inst                     |    <0.001 |
-|   pid1                                         |     0.004 |
-|     U0                                         |     0.004 |
-|       red_pitaya_pidv3Logic                    |     0.004 |
+|   pid1                                         |     0.005 |
+|     U0                                         |     0.005 |
+|       red_pitaya_pidv3Logic                    |     0.005 |
 |   pid1_kd                                      |    <0.001 |
 |     U0                                         |    <0.001 |
 |       add_constHandComm                        |    <0.001 |
@@ -360,8 +360,8 @@ Table of Contents
 |     U0                                         |     0.001 |
 |   twoInMult_dds1_range                         |     0.001 |
 |     U0                                         |     0.001 |
-|   twoInMult_dds2_range                         |     0.001 |
-|     U0                                         |     0.001 |
+|   twoInMult_dds2_range                         |     0.002 |
+|     U0                                         |     0.002 |
 |   xlconstant_0                                 |     0.000 |
 |   xlslice_dds1                                 |     0.000 |
 |   xlslice_dds2                                 |     0.000 |

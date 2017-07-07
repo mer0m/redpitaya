@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1492766072">
-  <File Type="RDS-UTIL" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_drc_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_timing_summary_synth.rpt"/>
   <File Type="RDS-RDS" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0.vds"/>
   <File Type="PA-TCL" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="double_pid_vco_wrapper_twoInMult_dds1_ampl_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_pid_vco_wrapper_twoInMult_dds1_ampl_0">
     <File Path="$PSRCDIR/sources_1/bd/double_pid_vco_wrapper/ip/double_pid_vco_wrapper_twoInMult_dds1_ampl_0/double_pid_vco_wrapper_twoInMult_dds1_ampl_0.xci">
       <FileInfo>
