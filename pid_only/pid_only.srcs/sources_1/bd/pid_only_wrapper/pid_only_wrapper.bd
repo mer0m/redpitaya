@@ -916,24 +916,24 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>red_pitaya_pidv3_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_only_wrapper_red_pitaya_pidv3_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PSR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="ISR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="I_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>ltc2145_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="ltc2145" spirit:vendor="gwbs" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_only_wrapper_ltc2145_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>red_pitaya_pidv3_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_only_wrapper_red_pitaya_pidv3_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PSR">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ISR">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="I_SIZE">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -1008,8 +1008,8 @@
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_interconnect_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="interconnect_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="resetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>

@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Mar 30 17:02:54 2017
+-- Date        : Fri Jul  7 19:18:12 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ pid_only_wrapper_red_pitaya_pidv3_0_0_stub.vhdl
@@ -20,7 +20,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     data_rst_i : in STD_LOGIC;
     setpoint_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     kp_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    ki_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    ki_i : in STD_LOGIC_VECTOR ( 17 downto 0 );
     kd_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     sign_i : in STD_LOGIC;
     int_rst_i : in STD_LOGIC;
@@ -36,7 +36,7 @@ architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "data_i[13:0],data_en_i,data_clk_i,data_rst_i,setpoint_i[13:0],kp_i[13:0],ki_i[13:0],kd_i[13:0],sign_i,int_rst_i,data_o[13:0],data_en_o,data_clk_o,data_rst_o";
+attribute black_box_pad_pin of stub : architecture is "data_i[13:0],data_en_i,data_clk_i,data_rst_i,setpoint_i[13:0],kp_i[13:0],ki_i[17:0],kd_i[13:0],sign_i,int_rst_i,data_o[13:0],data_en_o,data_clk_o,data_rst_o";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "red_pitaya_pidv3,Vivado 2016.4";
 begin

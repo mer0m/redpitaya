@@ -1124,9 +1124,9 @@ CONFIG.PCW_UART_PERIPHERAL_VALID.VALUE_SRC {DEFAULT} \
 CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.DSR {0} \
 CONFIG.D_SIZE {14} \
-CONFIG.ISR {15} \
-CONFIG.I_SIZE {14} \
-CONFIG.PSR {15} \
+CONFIG.ISR {19} \
+CONFIG.I_SIZE {18} \
+CONFIG.PSR {13} \
 CONFIG.P_SIZE {14} \
  ] $red_pitaya_pidv3_0
 
@@ -1237,8 +1237,8 @@ preplace inst ad9767_0 -pg 1 -lvl 6 -y 1590 -defaultsOSRD
 preplace inst pid_sign -pg 1 -lvl 3 -y 780 -defaultsOSRD
 preplace inst pid_ki -pg 1 -lvl 3 -y 120 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 910 -defaultsOSRD
-preplace inst ltc2145_0 -pg 1 -lvl 5 -y 1750 -defaultsOSRD
 preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 4 -y 1200 -defaultsOSRD
+preplace inst ltc2145_0 -pg 1 -lvl 5 -y 1750 -defaultsOSRD
 preplace inst pid_rst_int -pg 1 -lvl 3 -y 1020 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 800 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 1 6 450J 1360 NJ 1360 NJ 1360 NJ 1360 NJ 1360 NJ
