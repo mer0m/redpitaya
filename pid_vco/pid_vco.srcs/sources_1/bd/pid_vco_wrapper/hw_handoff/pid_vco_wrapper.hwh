@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 25 11:07:40 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jul  7 19:47:53 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:redpitaya:part0:1.0" DEVICE="7z010" NAME="pid_vco_wrapper" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -5848,8 +5848,8 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_interconnect_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_interconnect_0" PORT="ARESETN"/>
             <CONNECTION INSTANCE="ltc2145_0" PORT="resetn"/>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="ARESETN"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
@@ -7042,6 +7042,7 @@
             <CONNECTION INSTANCE="pid_rst_int" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="pid_sign" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="pid_setpoint" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="dds_nco" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M00_ACLK"/>
@@ -7057,7 +7058,6 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M10_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M11_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M12_ACLK"/>
-            <CONNECTION INSTANCE="dds_nco" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="250000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk"/>
@@ -7268,12 +7268,12 @@
     <MODULE FULLNAME="/red_pitaya_pidv3_0" HWVERSION="1.0" INSTANCE="red_pitaya_pidv3_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="red_pitaya_pidv3" VLNV="user.org:user:red_pitaya_pidv3:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="PSR" VALUE="15"/>
-        <PARAMETER NAME="ISR" VALUE="15"/>
+        <PARAMETER NAME="PSR" VALUE="13"/>
+        <PARAMETER NAME="ISR" VALUE="19"/>
         <PARAMETER NAME="DSR" VALUE="0"/>
         <PARAMETER NAME="id" VALUE="1"/>
         <PARAMETER NAME="P_SIZE" VALUE="14"/>
-        <PARAMETER NAME="I_SIZE" VALUE="14"/>
+        <PARAMETER NAME="I_SIZE" VALUE="18"/>
         <PARAMETER NAME="D_SIZE" VALUE="14"/>
         <PARAMETER NAME="DATA_IN_SIZE" VALUE="14"/>
         <PARAMETER NAME="DATA_OUT_SIZE" VALUE="14"/>
@@ -7311,7 +7311,7 @@
             <CONNECTION INSTANCE="pid_kp" PORT="data_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="13" NAME="ki_i" RIGHT="0" SIGIS="undef" SIGNAME="pid_ki_data_o">
+        <PORT DIR="I" LEFT="17" NAME="ki_i" RIGHT="0" SIGIS="undef" SIGNAME="pid_ki_data_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pid_ki" PORT="data_o"/>
           </CONNECTIONS>

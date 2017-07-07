@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Tue Apr 25 11:11:57 2017
+| Date             : Fri Jul  7 19:51:28 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file pid_vco_wrapper_power_routed.rpt -pb pid_vco_wrapper_power_summary_routed.pb -rpx pid_vco_wrapper_power_routed.rpx
 | Design           : pid_vco_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.933 |
-| Dynamic (W)              | 1.792 |
+| Total On-Chip Power (W)  | 1.935 |
+| Dynamic (W)              | 1.794 |
 | Device Static (W)        | 0.141 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 62.7  |
@@ -49,22 +49,22 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.015 |       11 |       --- |             --- |
-| Slice Logic             |     0.003 |     3853 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     1268 |     17600 |            7.20 |
-|   CARRY4                |    <0.001 |       65 |      4400 |            1.48 |
-|   Register              |    <0.001 |     1799 |     35200 |            5.11 |
+| Clocks                  |     0.016 |       11 |       --- |             --- |
+| Slice Logic             |     0.004 |     3904 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     1302 |     17600 |            7.40 |
+|   CARRY4                |    <0.001 |       66 |      4400 |            1.50 |
+|   Register              |    <0.001 |     1813 |     35200 |            5.15 |
 |   LUT as Shift Register |    <0.001 |       86 |      6000 |            1.43 |
 |   F7/F8 Muxes           |    <0.001 |       75 |     17600 |            0.43 |
 |   Others                |     0.000 |      268 |       --- |             --- |
-| Signals                 |     0.006 |     2825 |       --- |             --- |
+| Signals                 |     0.007 |     2883 |       --- |             --- |
 | Block RAM               |     0.005 |        2 |        60 |            3.33 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.005 |        4 |        80 |            5.00 |
 | I/O                     |     0.378 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
 | Static Power            |     0.141 |          |           |                 |
-| Total                   |     1.933 |          |           |                 |
+| Total                   |     1.935 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.052 |       0.044 |      0.008 |
+| Vccint    |       1.000 |     0.054 |       0.046 |      0.008 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.012 |
 | Vcco33    |       3.300 |     0.111 |       0.110 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -155,7 +155,7 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| pid_vco_wrapper                                |     1.792 |
+| pid_vco_wrapper                                |     1.794 |
 |   ad9767_0                                     |     0.007 |
 |     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
@@ -215,7 +215,7 @@ Table of Contents
 |   dds_nco                                      |     0.008 |
 |     U0                                         |     0.008 |
 |       handle_comm                              |    <0.001 |
-|       nco_inst1                                |     0.007 |
+|       nco_inst1                                |     0.008 |
 |         rom_12.rom12_inst                      |     0.005 |
 |       wb_nco_inst                              |    <0.001 |
 |   dds_offset                                   |    <0.001 |
@@ -276,8 +276,8 @@ Table of Contents
 |     inst                                       |     0.104 |
 |   twoInMult_dds_ampl                           |     0.001 |
 |     U0                                         |     0.001 |
-|   twoInMult_dds_range                          |     0.001 |
-|     U0                                         |     0.001 |
+|   twoInMult_dds_range                          |     0.002 |
+|     U0                                         |     0.002 |
 |   xlconstant_0                                 |     0.000 |
 |   xlslice_0                                    |     0.000 |
 +------------------------------------------------+-----------+

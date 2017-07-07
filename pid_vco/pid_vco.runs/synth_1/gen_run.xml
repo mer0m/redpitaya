@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1493111269">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1499449683">
   <File Type="VDS-TIMING-PB" Name="pid_vco_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="pid_vco_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="pid_vco_wrapper.dcp"/>
@@ -56,10 +56,10 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_ltc2145_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_nco_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_dds_range_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_kd_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_pid_rst_int_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_wrapper_proc_sys_reset_0_0"/>
