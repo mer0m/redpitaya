@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1496160329">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1499448713">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="pid_vco_pid_only_wrapper.drc"/>
   <File Type="BG-BGN" Name="pid_vco_pid_only_wrapper.bgn"/>
@@ -116,6 +116,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid2_ki_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_proc_sys_reset_0_0"/>
@@ -128,7 +130,6 @@
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid1_kd_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_xlconstant_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_twoInMult_dds1_range_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid1_sign_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid1_setpoint_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid2_rst_int_0"/>
@@ -137,7 +138,6 @@
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_dds1_nco_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_ad9767_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_dds1_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_pid1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_adc1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_xlslice_dds1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="pid_vco_pid_only_wrapper_dds2_offset_0"/>

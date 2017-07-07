@@ -319,20 +319,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>pid1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid1_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PSR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="ISR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="I_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>pid1_kd</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -394,25 +380,11 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>pid2</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid2_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PSR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="ISR">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="I_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>pid2_kd</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid2_kd_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -422,7 +394,7 @@
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid2_ki_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -432,7 +404,7 @@
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid2_kp_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_S00_AXI_DATA_WIDTH">32</spirit:configurableElementValue>
@@ -680,6 +652,10 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_M_AXI_GP0_SUPPORT_NARROW_BURST">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_M_AXI_GP0_THREAD_ID_WIDTH">12</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_INCLUDE_ACP_TRANS_CHECK">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP0_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP1_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP2_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP3_DATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_DDR">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_SMC">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_QSPI">1</spirit:configurableElementValue>
@@ -755,6 +731,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET_RESET_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET_RESET_SELECT">Share reset pin</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_RESET_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_RESET_IO">&lt;Select&gt;</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_SD0_IO">MIO 40 .. 45</spirit:configurableElementValue>
@@ -796,6 +773,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_I2C0_IO">MIO 50 .. 51</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_GRP_INT_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_RESET_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_RESET_IO">&lt;Select&gt;</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C_RESET_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C_RESET_SELECT">Share reset pin</spirit:configurableElementValue>
@@ -1100,6 +1078,34 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pid1</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PSR">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ISR">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="I_SIZE">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pid2</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="red_pitaya_pidv3" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_pid2_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PSR">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ISR">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="I_SIZE">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>

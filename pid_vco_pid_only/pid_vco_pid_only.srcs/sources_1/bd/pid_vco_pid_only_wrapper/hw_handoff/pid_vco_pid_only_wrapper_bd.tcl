@@ -247,9 +247,9 @@ CONFIG.format {signed} \
 CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.DSR {0} \
 CONFIG.D_SIZE {14} \
-CONFIG.ISR {15} \
-CONFIG.I_SIZE {14} \
-CONFIG.PSR {15} \
+CONFIG.ISR {19} \
+CONFIG.I_SIZE {18} \
+CONFIG.PSR {13} \
 CONFIG.P_SIZE {14} \
  ] $pid1
 
@@ -308,9 +308,9 @@ CONFIG.format {unsigned} \
 CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.DSR {0} \
 CONFIG.D_SIZE {14} \
-CONFIG.ISR {15} \
-CONFIG.I_SIZE {14} \
-CONFIG.PSR {15} \
+CONFIG.ISR {19} \
+CONFIG.I_SIZE {18} \
+CONFIG.PSR {13} \
 CONFIG.P_SIZE {14} \
  ] $pid2
 
@@ -319,7 +319,7 @@ CONFIG.P_SIZE {14} \
   set_property -dict [ list \
 CONFIG.DATA_IN_SIZE {14} \
 CONFIG.DATA_OUT_SIZE {14} \
-CONFIG.format {signed} \
+CONFIG.format {unsigned} \
  ] $pid2_kd
 
   # Create instance: pid2_ki, and set properties
@@ -327,7 +327,7 @@ CONFIG.format {signed} \
   set_property -dict [ list \
 CONFIG.DATA_IN_SIZE {14} \
 CONFIG.DATA_OUT_SIZE {14} \
-CONFIG.format {signed} \
+CONFIG.format {unsigned} \
  ] $pid2_ki
 
   # Create instance: pid2_kp, and set properties
@@ -336,7 +336,7 @@ CONFIG.format {signed} \
 CONFIG.C_S00_AXI_DATA_WIDTH {32} \
 CONFIG.DATA_IN_SIZE {14} \
 CONFIG.DATA_OUT_SIZE {14} \
-CONFIG.format {signed} \
+CONFIG.format {unsigned} \
  ] $pid2_kp
 
   # Create instance: pid2_offset, and set properties
@@ -1411,8 +1411,8 @@ preplace port adc_clk_n_i -pg 1 -y 3500 -defaultsOSRD
 preplace portBus adc_data_a_i -pg 1 -y 3220 -defaultsOSRD
 preplace portBus adc_data_b_i -pg 1 -y 3240 -defaultsOSRD
 preplace portBus dac_dat_o -pg 1 -y 2800 -defaultsOSRD
-preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 670 -defaultsOSRD
 preplace inst pid1 -pg 1 -lvl 6 -y 1470 -defaultsOSRD
+preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 670 -defaultsOSRD
 preplace inst pid2 -pg 1 -lvl 6 -y 2460 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 3 -y 2850 -defaultsOSRD
 preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 3500 -defaultsOSRD

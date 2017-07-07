@@ -13,8 +13,8 @@ preplace port adc_clk_n_i -pg 1 -y 3500 -defaultsOSRD
 preplace portBus adc_data_a_i -pg 1 -y 3220 -defaultsOSRD
 preplace portBus adc_data_b_i -pg 1 -y 3240 -defaultsOSRD
 preplace portBus dac_dat_o -pg 1 -y 2800 -defaultsOSRD
-preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 670 -defaultsOSRD
 preplace inst pid1 -pg 1 -lvl 6 -y 1470 -defaultsOSRD
+preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 670 -defaultsOSRD
 preplace inst pid2 -pg 1 -lvl 6 -y 2460 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 3 -y 2850 -defaultsOSRD
 preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 3500 -defaultsOSRD

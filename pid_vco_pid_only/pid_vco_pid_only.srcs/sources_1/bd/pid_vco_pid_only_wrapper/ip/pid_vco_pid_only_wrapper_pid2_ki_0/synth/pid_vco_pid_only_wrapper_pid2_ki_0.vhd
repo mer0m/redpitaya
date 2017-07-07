@@ -169,7 +169,7 @@ ARCHITECTURE pid_vco_pid_only_wrapper_pid2_ki_0_arch OF pid_vco_pid_only_wrapper
 BEGIN
   U0 : add_const
     GENERIC MAP (
-      format => "signed",
+      format => "unsigned",
       add_val => 0,
       DATA_OUT_SIZE => 14,
       DATA_IN_SIZE => 14,
