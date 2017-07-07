@@ -38,9 +38,9 @@ preplace inst pid_ki -pg 1 -lvl 4 -y 1140 -defaultsOSRD
 preplace inst expanderReal_0 -pg 1 -lvl 3 -y 1830 -defaultsOSRD
 preplace inst dupplReal_1_to_2_0 -pg 1 -lvl 3 -y 2190 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 1320 -defaultsOSRD
+preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 2 -y 1900 -defaultsOSRD
 preplace inst ltc2145_0 -pg 1 -lvl 3 -y 3010 -defaultsOSRD
 preplace inst twoInMult_dds_range -pg 1 -lvl 5 -y 1830 -defaultsOSRD
-preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 2 -y 1900 -defaultsOSRD
 preplace inst pid_rst_int -pg 1 -lvl 4 -y 2760 -defaultsOSRD
 preplace inst demod_fir -pg 1 -lvl 4 -y 2460 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 2 -y 2770 -defaultsOSRD

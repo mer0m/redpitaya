@@ -216,11 +216,6 @@ CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $dds_nco
 
-  set_property -dict [ list \
-CONFIG.NUM_READ_OUTSTANDING {1} \
-CONFIG.NUM_WRITE_OUTSTANDING {1} \
- ] [get_bd_intf_pins /dds_nco/s00_axi]
-
   # Create instance: dds_offset, and set properties
   set dds_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds_offset ]
   set_property -dict [ list \
@@ -260,11 +255,6 @@ CONFIG.COUNTER_SIZE {32} \
 CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $demod_nco
-
-  set_property -dict [ list \
-CONFIG.NUM_READ_OUTSTANDING {1} \
-CONFIG.NUM_WRITE_OUTSTANDING {1} \
- ] [get_bd_intf_pins /demod_nco/s00_axi]
 
   # Create instance: dupplReal_1_to_2_0, and set properties
   set dupplReal_1_to_2_0 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_0 ]
@@ -1215,9 +1205,9 @@ CONFIG.PCW_UART_PERIPHERAL_VALID.VALUE_SRC {DEFAULT} \
 CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.DSR {0} \
 CONFIG.D_SIZE {14} \
-CONFIG.ISR {15} \
-CONFIG.I_SIZE {14} \
-CONFIG.PSR {15} \
+CONFIG.ISR {19} \
+CONFIG.I_SIZE {18} \
+CONFIG.PSR {13} \
 CONFIG.P_SIZE {14} \
  ] $red_pitaya_pidv3_0
 
@@ -1417,9 +1407,9 @@ preplace inst pid_ki -pg 1 -lvl 4 -y 1140 -defaultsOSRD
 preplace inst expanderReal_0 -pg 1 -lvl 3 -y 1830 -defaultsOSRD
 preplace inst dupplReal_1_to_2_0 -pg 1 -lvl 3 -y 2190 -defaultsOSRD
 preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 1320 -defaultsOSRD
+preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 2 -y 1900 -defaultsOSRD
 preplace inst ltc2145_0 -pg 1 -lvl 3 -y 3010 -defaultsOSRD
 preplace inst twoInMult_dds_range -pg 1 -lvl 5 -y 1830 -defaultsOSRD
-preplace inst red_pitaya_pidv3_0 -pg 1 -lvl 2 -y 1900 -defaultsOSRD
 preplace inst pid_rst_int -pg 1 -lvl 4 -y 2760 -defaultsOSRD
 preplace inst demod_fir -pg 1 -lvl 4 -y 2460 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 2 -y 2770 -defaultsOSRD

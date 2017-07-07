@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Tue Apr 25 09:08:59 2017
+| Date             : Fri Jul  7 19:44:28 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command          : report_power -file iq_pid_vco_wrapper_power_routed.rpt -pb iq_pid_vco_wrapper_power_summary_routed.pb -rpx iq_pid_vco_wrapper_power_routed.rpx
 | Design           : iq_pid_vco_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 2.048 |
-| Dynamic (W)              | 1.905 |
+| Total On-Chip Power (W)  | 2.047 |
+| Dynamic (W)              | 1.904 |
 | Device Static (W)        | 0.143 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 61.4  |
@@ -50,21 +50,21 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.033 |       11 |       --- |             --- |
-| Slice Logic             |     0.006 |     8871 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     1859 |     17600 |           10.56 |
-|   Register              |     0.002 |     5695 |     35200 |           16.18 |
-|   CARRY4                |    <0.001 |       80 |      4400 |            1.82 |
+| Slice Logic             |     0.006 |     8922 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     1894 |     17600 |           10.76 |
+|   Register              |     0.002 |     5709 |     35200 |           16.22 |
+|   CARRY4                |    <0.001 |       81 |      4400 |            1.84 |
 |   LUT as Shift Register |    <0.001 |      111 |      6000 |            1.85 |
 |   F7/F8 Muxes           |    <0.001 |        9 |     17600 |            0.05 |
 |   Others                |     0.000 |      731 |       --- |             --- |
-| Signals                 |     0.039 |     8123 |       --- |             --- |
+| Signals                 |     0.039 |     8174 |       --- |             --- |
 | Block RAM               |     0.011 |      4.5 |        60 |            7.50 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.088 |       60 |        80 |           75.00 |
 | I/O                     |     0.348 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
 | Static Power            |     0.143 |          |           |                 |
-| Total                   |     2.048 |          |           |                 |
+| Total                   |     2.047 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.194 |       0.186 |      0.008 |
+| Vccint    |       1.000 |     0.194 |       0.185 |      0.008 |
 | Vccaux    |       1.800 |     0.070 |       0.059 |      0.012 |
 | Vcco33    |       3.300 |     0.103 |       0.102 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -155,7 +155,7 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| iq_pid_vco_wrapper                             |     1.905 |
+| iq_pid_vco_wrapper                             |     1.904 |
 |   ad9767_0                                     |     0.007 |
 |     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
@@ -164,10 +164,10 @@ Table of Contents
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
 |   axi_interconnect_0                           |     0.006 |
-|     s00_couplers                               |     0.004 |
-|       auto_pc                                  |     0.004 |
-|         inst                                   |     0.004 |
-|           gen_axilite.gen_b2s_conv.axilite_b2s |     0.004 |
+|     s00_couplers                               |     0.005 |
+|       auto_pc                                  |     0.005 |
+|         inst                                   |     0.005 |
+|           gen_axilite.gen_b2s_conv.axilite_b2s |     0.005 |
 |             RD.ar_channel_0                    |    <0.001 |
 |               ar_cmd_fsm_0                     |    <0.001 |
 |               cmd_translator_0                 |    <0.001 |
@@ -228,10 +228,10 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   demod_fir                                    |     0.136 |
-|     U0                                         |     0.136 |
+|   demod_fir                                    |     0.135 |
+|     U0                                         |     0.135 |
 |       fir16bitsOneInTwoMult_v1_0_S00_AXI_inst  |    <0.001 |
-|       fir_top_inst                             |     0.136 |
+|       fir_top_inst                             |     0.135 |
 |         cpt_ram                                |    <0.001 |
 |         generate_fir[0].fir_glob_inst          |     0.010 |
 |           coeff_reg_delay                      |    <0.001 |
@@ -498,7 +498,7 @@ Table of Contents
 |           fir_proc_inst                        |     0.002 |
 |             multiplier_i                       |     0.002 |
 |           reset_delay                          |    <0.001 |
-|         generate_fir[8].fir_glob_inst          |     0.003 |
+|         generate_fir[8].fir_glob_inst          |     0.002 |
 |           coeff_reg_delay                      |    <0.001 |
 |           fir_proc_inst                        |     0.002 |
 |             multiplier_i                       |     0.002 |
@@ -560,9 +560,9 @@ Table of Contents
 |         SEQ_COUNTER                            |    <0.001 |
 |   processing_system7_0                         |     1.278 |
 |     inst                                       |     1.278 |
-|   red_pitaya_pidv3_0                           |     0.004 |
-|     U0                                         |     0.004 |
-|       red_pitaya_pidv3Logic                    |     0.004 |
+|   red_pitaya_pidv3_0                           |     0.005 |
+|     U0                                         |     0.005 |
+|       red_pitaya_pidv3Logic                    |     0.005 |
 |   redpitaya_adc_dac_clk_0                      |     0.104 |
 |     inst                                       |     0.104 |
 |   twoInMult_dds_ampl                           |     0.001 |

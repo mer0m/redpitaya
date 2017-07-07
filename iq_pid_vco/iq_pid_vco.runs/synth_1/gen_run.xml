@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1493103808">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1499449220">
   <File Type="VDS-TIMING-PB" Name="iq_pid_vco_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="iq_pid_vco_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="iq_pid_vco_wrapper.dcp"/>
@@ -56,6 +56,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_dds_ampl_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_dac1_offset_0"/>
@@ -65,7 +66,6 @@
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_pid_setpoint_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_pid_kp_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_dds_f0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_red_pitaya_pidv3_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_pid_rst_int_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_pid_vco_wrapper_dds_offset_0"/>
