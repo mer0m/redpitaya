@@ -115,6 +115,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_onl
 # IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0}]
 
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_switchComplex_0_0/pid_vco_pid_only_wrapper_switchComplex_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_switchComplex_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_switchComplex_0_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1}]
+
 # IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_0_0/pid_vco_pid_only_wrapper_tier2_xbar_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_tier2_xbar_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_tier2_xbar_0_0}]
 

@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 32343 
+INFO: Helper process launched with PID 5718 
 awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1115.266 ; gain = 184.086 ; free physical = 872 ; free virtual = 8027
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1115.266 ; gain = 184.086 ; free physical = 1943 ; free virtual = 13060
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'pid_vco_pid_only_wrapper_pid2_0' [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_pid2_0/synth/pid_vco_pid_only_wrapper_pid2_0.vhd:75]
 	Parameter PSR bound to: 13 - type: integer 
@@ -83,7 +83,7 @@ WARNING: [Synth 8-3331] design red_pitaya_pidv3 has unconnected port setpoint_i[
 WARNING: [Synth 8-3331] design red_pitaya_pidv3 has unconnected port setpoint_i[1]
 WARNING: [Synth 8-3331] design red_pitaya_pidv3 has unconnected port setpoint_i[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1156.734 ; gain = 225.555 ; free physical = 786 ; free virtual = 7942
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1156.734 ; gain = 225.555 ; free physical = 1858 ; free virtual = 12977
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -107,7 +107,7 @@ WARNING: [Synth 8-3295] tying undriven pin red_pitaya_pidv3Logic:setpoint_i[2] t
 WARNING: [Synth 8-3295] tying undriven pin red_pitaya_pidv3Logic:setpoint_i[1] to constant 0 [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ipshared/4c67/hdl/red_pitaya_pidv3.vhd:51]
 WARNING: [Synth 8-3295] tying undriven pin red_pitaya_pidv3Logic:setpoint_i[0] to constant 0 [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ipshared/4c67/hdl/red_pitaya_pidv3.vhd:51]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1156.734 ; gain = 225.555 ; free physical = 786 ; free virtual = 7942
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1156.734 ; gain = 225.555 ; free physical = 1852 ; free virtual = 12971
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -119,26 +119,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1484.910 ; gain = 0.000 ; free physical = 482 ; free virtual = 7638
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1484.902 ; gain = 0.000 ; free physical = 1484 ; free virtual = 12662
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1484.910 ; gain = 553.730 ; free physical = 473 ; free virtual = 7629
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1484.902 ; gain = 553.723 ; free physical = 1469 ; free virtual = 12660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1484.910 ; gain = 553.730 ; free physical = 473 ; free virtual = 7629
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1484.902 ; gain = 553.723 ; free physical = 1469 ; free virtual = 12660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1484.910 ; gain = 553.730 ; free physical = 473 ; free virtual = 7629
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1484.902 ; gain = 553.723 ; free physical = 1461 ; free virtual = 12652
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ipshared/4c67/hdl/red_pitaya_pidv3_logic.vhd:90]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1484.910 ; gain = 553.730 ; free physical = 466 ; free virtual = 7622
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1484.902 ; gain = 553.723 ; free physical = 1442 ; free virtual = 12644
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,7 +262,7 @@ INFO: [Synth 8-3332] Sequential element (U0/red_pitaya_pidv3Logic/I_temp_s_reg[0
 INFO: [Synth 8-3332] Sequential element (U0/red_pitaya_pidv3Logic/pid_out_s_reg[15]) is unused and will be removed from module pid_vco_pid_only_wrapper_pid2_0.
 INFO: [Synth 8-3332] Sequential element (U0/red_pitaya_pidv3Logic/pid_out_s_reg[14]) is unused and will be removed from module pid_vco_pid_only_wrapper_pid2_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.910 ; gain = 553.730 ; free physical = 434 ; free virtual = 7590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1484.902 ; gain = 553.723 ; free physical = 1414 ; free virtual = 12610
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -293,10 +293,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1493.910 ; gain = 562.730 ; free physical = 247 ; free virtual = 7402
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1493.902 ; gain = 562.723 ; free physical = 1240 ; free virtual = 12425
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1493.910 ; gain = 562.730 ; free physical = 247 ; free virtual = 7402
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1493.902 ; gain = 562.723 ; free physical = 1240 ; free virtual = 12425
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,7 +308,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 228 ; free virtual = 7384
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1221 ; free virtual = 12406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -332,7 +332,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1222 ; free virtual = 12407
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -345,7 +345,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1222 ; free virtual = 12407
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -357,25 +357,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1222 ; free virtual = 12407
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1222 ; free virtual = 12407
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1224 ; free virtual = 12409
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1224 ; free virtual = 12409
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -411,11 +411,11 @@ Report Instance Areas:
 |3     |    red_pitaya_pidv3Logic |red_pitaya_pidv3_logic |   170|
 +------+--------------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 230 ; free virtual = 7386
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.934 ; gain = 582.754 ; free physical = 1224 ; free virtual = 12409
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1513.941 ; gain = 139.496 ; free physical = 230 ; free virtual = 7386
-Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1513.949 ; gain = 582.770 ; free physical = 230 ; free virtual = 7386
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1513.934 ; gain = 139.496 ; free physical = 1223 ; free virtual = 12409
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 1513.941 ; gain = 582.762 ; free physical = 1223 ; free virtual = 12409
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -427,9 +427,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 42 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1513.949 ; gain = 480.266 ; free physical = 225 ; free virtual = 7381
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1513.941 ; gain = 480.258 ; free physical = 1217 ; free virtual = 12406
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/pid_vco_pid_only_wrapper_pid2_0_synth_1/pid_vco_pid_only_wrapper_pid2_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/pid_vco_pid_only_wrapper_pid2_0_synth_1/pid_vco_pid_only_wrapper_pid2_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1537.953 ; gain = 0.000 ; free physical = 830 ; free virtual = 7986
-INFO: [Common 17-206] Exiting Vivado at Fri Jul  7 19:33:03 2017...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1537.945 ; gain = 0.000 ; free physical = 1217 ; free virtual = 12409
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 09:22:23 2017...

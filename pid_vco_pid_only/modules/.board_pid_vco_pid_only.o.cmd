@@ -468,6 +468,7 @@ deps_/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/modules/board_pid_vco_
   /home/bma/git/gitlab/oimp/fpga_driver/add_const_core/add_const_config.h \
     $(wildcard include/config/h.h) \
   /home/bma/git/gitlab/oimp/fpga_driver/nco_counter_core/nco_counter_config.h \
+  /home/bma/git/gitlab/oimp/fpga_driver/switchComplex_core/switchComplex_config.h \
 
 /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/modules/board_pid_vco_pid_only.o: $(deps_/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/modules/board_pid_vco_pid_only.o)
 

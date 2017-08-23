@@ -5,6 +5,7 @@
 
 #include <add_const_core/add_const_config.h>
 #include <nco_counter_core/nco_counter_config.h>
+#include <switchComplex_core/switchComplex_config.h>
 
 void plat_pid_vco_pid_only_release(struct device *dev)
 {
@@ -163,6 +164,14 @@ static struct resource dds1_nco_resources[] = {
 	},
 };
 
+static struct resource switchComplex_O_resources[] = {
+	{
+		.start = 0x43C10000,
+		.end   = 0x43C10000 + 0xffff,
+		.flags = IORESOURCE_MEM,
+	},
+};
+
 static struct plat_add_const_port plat_adc1_offset_data = {
 	.name		= "adc1_offset",
 	.num		= 0,
@@ -255,6 +264,11 @@ static struct plat_add_const_port plat_pid2_setpoint_data = {
 };
 static struct plat_nco_counter_port plat_dds1_nco_data = {
 	.name		= "dds1_nco",
+	.num		= 0,
+	.idnum		= 0,
+};
+static struct plat_swC_port plat_switchComplex_O_data = {
+	.name		= "switchComplex_O",
 	.num		= 0,
 	.idnum		= 0,
 };
@@ -449,6 +463,16 @@ static struct platform_device plat_dds1_nco_device = {
 	.num_resources		= ARRAY_SIZE(dds1_nco_resources),
 	.resource		= dds1_nco_resources,
 };
+static struct platform_device plat_switchComplex_O_device = {
+	.name = "switchComplex",
+	.id	= 0,
+	.dev	= {
+		.release	= plat_pid_vco_pid_only_release,
+		.platform_data	= &plat_switchComplex_O_data,
+	},
+	.num_resources		= ARRAY_SIZE(switchComplex_O_resources),
+	.resource		= switchComplex_O_resources,
+};
 
 static int __init board_pid_vco_pid_only_init(void)
 {
@@ -510,6 +534,9 @@ static int __init board_pid_vco_pid_only_init(void)
 	ret = platform_device_register(&plat_dds1_nco_device);
 	if (ret < 0)
 		return ret;
+	ret = platform_device_register(&plat_switchComplex_O_device);
+	if (ret < 0)
+		return ret;
 
 	return ret;
 }
@@ -534,6 +561,7 @@ static void __exit board_pid_vco_pid_only_exit(void)
 	platform_device_unregister(&plat_pid2_sign_device);
 	platform_device_unregister(&plat_pid2_setpoint_device);
 	platform_device_unregister(&plat_dds1_nco_device);
+	platform_device_unregister(&plat_switchComplex_O_device);
 }
 
 module_init(board_pid_vco_pid_only_init);

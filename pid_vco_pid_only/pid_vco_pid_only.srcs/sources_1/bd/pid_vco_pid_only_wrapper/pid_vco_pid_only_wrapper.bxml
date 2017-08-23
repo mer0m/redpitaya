@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="pid_vco_pid_only_wrapper" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1499448705"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1499448705"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1499448705"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1503482606"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1503482606"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1503482606"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/pid_vco_pid_only_wrapper_ad9767_0_0/pid_vco_pid_only_wrapper_ad9767_0_0.xci" Type="IP">
         <Instance HierarchyPath="ad9767_0"/>
@@ -23,6 +23,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/pid_vco_pid_only_wrapper_axi_interconnect_0_0/pid_vco_pid_only_wrapper_axi_interconnect_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -286,6 +287,22 @@
       </File>
       <File Name="ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0.xci" Type="IP">
         <Instance HierarchyPath="dupplReal_1_to_2_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_switchComplex_0_0/pid_vco_pid_only_wrapper_switchComplex_0_0.xci" Type="IP">
+        <Instance HierarchyPath="switchComplex_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1.xci" Type="IP">
+        <Instance HierarchyPath="dupplReal_1_to_2_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

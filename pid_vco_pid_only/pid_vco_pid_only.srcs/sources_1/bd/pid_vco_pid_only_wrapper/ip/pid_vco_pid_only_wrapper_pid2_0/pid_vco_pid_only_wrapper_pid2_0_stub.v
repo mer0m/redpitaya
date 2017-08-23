@@ -1,8 +1,8 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Fri Jul  7 19:33:02 2017
-// Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+// Date        : Wed Aug 23 09:22:23 2017
+// Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 // Command     : write_verilog -force -mode synth_stub
 //               /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_pid2_0/pid_vco_pid_only_wrapper_pid2_0_stub.v
 // Design      : pid_vco_pid_only_wrapper_pid2_0

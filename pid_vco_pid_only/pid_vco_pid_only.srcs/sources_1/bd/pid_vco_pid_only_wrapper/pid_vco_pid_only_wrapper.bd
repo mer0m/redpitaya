@@ -1108,6 +1108,22 @@
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>switchComplex_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="switchComplex" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_switchComplex_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dupplReal_1_to_2_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="dupplReal_1_to_2" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
       <spirit:interconnection>
@@ -1251,14 +1267,19 @@
         <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="pid1"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>dupplReal_1_to_2_0_data2_out</spirit:name>
-        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="pid2"/>
-        <spirit:activeInterface spirit:busRef="data2_out" spirit:componentRef="dupplReal_1_to_2_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>pid2_data_out</spirit:name>
         <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid2"/>
         <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="pid2_offset"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_interconnect_0_M02_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M02_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="switchComplex_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>pid1_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid1"/>
+        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="dupplReal_1_to_2_1"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -1514,6 +1535,7 @@
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="ref_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="s00_axi_reset"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
@@ -1565,6 +1587,7 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M21_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M22_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M23_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -1573,25 +1596,15 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>red_pitaya_pidv3_0_data_clk_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="data_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data1_clk_o"/>
         <spirit:internalPortReference spirit:componentRef="twoInMult_dds1_range" spirit:portRef="data1_clk_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_range" spirit:portRef="data_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>red_pitaya_pidv3_0_data_en_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="data_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data1_en_o"/>
         <spirit:internalPortReference spirit:componentRef="twoInMult_dds1_range" spirit:portRef="data1_en_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_range" spirit:portRef="data_en_i"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>red_pitaya_pidv3_0_data_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="data_o"/>
-        <spirit:internalPortReference spirit:componentRef="twoInMult_dds1_range" spirit:portRef="data1_i"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>red_pitaya_pidv3_0_data_rst_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="data_rst_o"/>
-        <spirit:internalPortReference spirit:componentRef="expanderReal_0_dds1" spirit:portRef="data_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>redpitaya_adc_dac_clk_0_adc_clk_o</spirit:name>
@@ -1674,6 +1687,76 @@
         <spirit:name>xlslice_0_Dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlslice_dds1" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="data_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>switchComplex_0_data_q_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data_q_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="data_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>switchComplex_0_data_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="data_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>switchComplex_0_data_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>switchComplex_0_data_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="data_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_0_data2_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data2_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data1_q_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_0_data2_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data2_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data1_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_0_data2_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data2_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data1_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_0_data2_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data2_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data1_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_1_data1_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data1_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="expanderReal_0_dds1" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_1_data1_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data1_o"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_dds1_range" spirit:portRef="data1_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_1_data2_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data2_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data2_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_1_data2_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data2_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data2_q_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_1_data2_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data2_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data2_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dupplReal_1_to_2_1_data2_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data2_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data2_rst_i"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -9570,6 +9653,12 @@
             <spirit:name>SEG_pid2_sign_reg0</spirit:name>
             <spirit:displayName>/pid2_sign/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x43D00000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_switchComplex_0_reg0</spirit:name>
+            <spirit:displayName>/switchComplex_0/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43C10000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>

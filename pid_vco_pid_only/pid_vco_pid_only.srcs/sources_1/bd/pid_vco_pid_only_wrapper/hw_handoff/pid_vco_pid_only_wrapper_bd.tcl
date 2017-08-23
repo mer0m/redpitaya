@@ -230,6 +230,12 @@ CONFIG.format {signed} \
 CONFIG.DATA_SIZE {14} \
  ] $dupplReal_1_to_2_0
 
+  # Create instance: dupplReal_1_to_2_1, and set properties
+  set dupplReal_1_to_2_1 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_1 ]
+  set_property -dict [ list \
+CONFIG.DATA_SIZE {14} \
+ ] $dupplReal_1_to_2_1
+
   # Create instance: expanderReal_0_dds1, and set properties
   set expanderReal_0_dds1 [ create_bd_cell -type ip -vlnv ggm:cogen:expanderReal:1.0 expanderReal_0_dds1 ]
   set_property -dict [ list \
@@ -1250,6 +1256,17 @@ CONFIG.PCW_UART_PERIPHERAL_VALID.VALUE_SRC {DEFAULT} \
   # Create instance: redpitaya_adc_dac_clk_0, and set properties
   set redpitaya_adc_dac_clk_0 [ create_bd_cell -type ip -vlnv ggm:cogen:redpitaya_adc_dac_clk:1.0 redpitaya_adc_dac_clk_0 ]
 
+  # Create instance: switchComplex_0, and set properties
+  set switchComplex_0 [ create_bd_cell -type ip -vlnv ggm:cogen:switchComplex:1.0 switchComplex_0 ]
+  set_property -dict [ list \
+CONFIG.DATA_SIZE {14} \
+ ] $switchComplex_0
+
+  set_property -dict [ list \
+CONFIG.NUM_READ_OUTSTANDING {1} \
+CONFIG.NUM_WRITE_OUTSTANDING {1} \
+ ] [get_bd_intf_pins /switchComplex_0/s00_axi]
+
   # Create instance: twoInMult_dds1_ampl, and set properties
   set twoInMult_dds1_ampl [ create_bd_cell -type ip -vlnv ggm:cogen:twoInMult:1.0 twoInMult_dds1_ampl ]
   set_property -dict [ list \
@@ -1289,6 +1306,7 @@ CONFIG.DOUT_WIDTH {14} \
   connect_bd_intf_net -intf_net adc1_offset_data_out [get_bd_intf_pins adc1_offset/data_out] [get_bd_intf_pins dupplReal_1_to_2_0/data_in]
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins dds1_range/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M01_AXI [get_bd_intf_pins adc1_offset/s00_axi] [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+  connect_bd_intf_net -intf_net axi_interconnect_0_M02_AXI [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins switchComplex_0/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M03_AXI [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins pid1_kp/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M04_AXI [get_bd_intf_pins axi_interconnect_0/M04_AXI] [get_bd_intf_pins pid1_ki/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M05_AXI [get_bd_intf_pins axi_interconnect_0/M05_AXI] [get_bd_intf_pins pid1_kd/s00_axi]
@@ -1312,8 +1330,8 @@ CONFIG.DOUT_WIDTH {14} \
   connect_bd_intf_net -intf_net dds_offset_data_out [get_bd_intf_pins ad9767_0/dataA] [get_bd_intf_pins dds1_offset/data_out]
   connect_bd_intf_net -intf_net dds_range_data_out [get_bd_intf_pins dds1_range/data_out] [get_bd_intf_pins twoInMult_dds1_range/data2]
   connect_bd_intf_net -intf_net dupplReal_1_to_2_0_data1_out [get_bd_intf_pins dupplReal_1_to_2_0/data1_out] [get_bd_intf_pins pid1/data_in]
-  connect_bd_intf_net -intf_net dupplReal_1_to_2_0_data2_out [get_bd_intf_pins dupplReal_1_to_2_0/data2_out] [get_bd_intf_pins pid2/data_in]
   connect_bd_intf_net -intf_net expanderReal_0_data_out [get_bd_intf_pins dds1_f0/data_in] [get_bd_intf_pins expanderReal_0_dds1/data_out]
+  connect_bd_intf_net -intf_net pid1_data_out [get_bd_intf_pins dupplReal_1_to_2_1/data_in] [get_bd_intf_pins pid1/data_out]
   connect_bd_intf_net -intf_net pid2_data_out [get_bd_intf_pins pid2/data_out] [get_bd_intf_pins pid2_offset/data_in]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
@@ -1329,6 +1347,16 @@ CONFIG.DOUT_WIDTH {14} \
   connect_bd_net -net adc_clk_p_i_1 [get_bd_ports adc_clk_p_i] [get_bd_pins redpitaya_adc_dac_clk_0/adc_clk_p_i]
   connect_bd_net -net adc_data_a_i_1 [get_bd_ports adc_data_a_i] [get_bd_pins ltc2145_0/adc_data_a_i]
   connect_bd_net -net adc_data_b_i_1 [get_bd_ports adc_data_b_i] [get_bd_pins ltc2145_0/adc_data_b_i]
+  connect_bd_net -net dupplReal_1_to_2_0_data2_clk_o [get_bd_pins dupplReal_1_to_2_0/data2_clk_o] [get_bd_pins switchComplex_0/data1_clk_i]
+  connect_bd_net -net dupplReal_1_to_2_0_data2_en_o [get_bd_pins dupplReal_1_to_2_0/data2_en_o] [get_bd_pins switchComplex_0/data1_en_i]
+  connect_bd_net -net dupplReal_1_to_2_0_data2_o [get_bd_pins dupplReal_1_to_2_0/data2_o] [get_bd_pins switchComplex_0/data1_q_i]
+  connect_bd_net -net dupplReal_1_to_2_0_data2_rst_o [get_bd_pins dupplReal_1_to_2_0/data2_rst_o] [get_bd_pins switchComplex_0/data1_rst_i]
+  connect_bd_net -net dupplReal_1_to_2_1_data1_o [get_bd_pins dupplReal_1_to_2_1/data1_o] [get_bd_pins twoInMult_dds1_range/data1_i]
+  connect_bd_net -net dupplReal_1_to_2_1_data1_rst_o [get_bd_pins dupplReal_1_to_2_1/data1_rst_o] [get_bd_pins expanderReal_0_dds1/data_rst_i]
+  connect_bd_net -net dupplReal_1_to_2_1_data2_clk_o [get_bd_pins dupplReal_1_to_2_1/data2_clk_o] [get_bd_pins switchComplex_0/data2_clk_i]
+  connect_bd_net -net dupplReal_1_to_2_1_data2_en_o [get_bd_pins dupplReal_1_to_2_1/data2_en_o] [get_bd_pins switchComplex_0/data2_en_i]
+  connect_bd_net -net dupplReal_1_to_2_1_data2_o [get_bd_pins dupplReal_1_to_2_1/data2_o] [get_bd_pins switchComplex_0/data2_q_i]
+  connect_bd_net -net dupplReal_1_to_2_1_data2_rst_o [get_bd_pins dupplReal_1_to_2_1/data2_rst_o] [get_bd_pins switchComplex_0/data2_rst_i]
   connect_bd_net -net ltc2145_0_adc_cdcs [get_bd_ports adc_cdcs] [get_bd_pins ltc2145_0/adc_cdcs]
   connect_bd_net -net ltc2145_0_adc_clk [get_bd_pins dds1_nco/ref_clk_i] [get_bd_pins ltc2145_0/adc_clk]
   connect_bd_net -net ltc2145_0_data_a_clk_o [get_bd_pins adc1_offset/data_clk_i] [get_bd_pins ltc2145_0/data_a_clk_o] [get_bd_pins pid1_kd/data_clk_i] [get_bd_pins pid1_ki/data_clk_i] [get_bd_pins pid1_kp/data_clk_i] [get_bd_pins pid1_rst_int/data_clk_i] [get_bd_pins pid1_setpoint/data_clk_i] [get_bd_pins pid1_sign/data_clk_i] [get_bd_pins pid2_kd/data_clk_i] [get_bd_pins pid2_ki/data_clk_i] [get_bd_pins pid2_kp/data_clk_i] [get_bd_pins pid2_rst_int/data_clk_i] [get_bd_pins pid2_setpoint/data_clk_i] [get_bd_pins pid2_sign/data_clk_i]
@@ -1352,18 +1380,20 @@ CONFIG.DOUT_WIDTH {14} \
   connect_bd_net -net pid_sign_data_o [get_bd_pins pid1/sign_i] [get_bd_pins pid1_sign/data_o]
   connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins ltc2145_0/resetn] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
   connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins axi_interconnect_0/M04_ARESETN] [get_bd_pins axi_interconnect_0/M05_ARESETN] [get_bd_pins axi_interconnect_0/M06_ARESETN] [get_bd_pins axi_interconnect_0/M07_ARESETN] [get_bd_pins axi_interconnect_0/M08_ARESETN] [get_bd_pins axi_interconnect_0/M09_ARESETN] [get_bd_pins axi_interconnect_0/M10_ARESETN] [get_bd_pins axi_interconnect_0/M11_ARESETN] [get_bd_pins axi_interconnect_0/M12_ARESETN] [get_bd_pins axi_interconnect_0/M13_ARESETN] [get_bd_pins axi_interconnect_0/M14_ARESETN] [get_bd_pins axi_interconnect_0/M15_ARESETN] [get_bd_pins axi_interconnect_0/M16_ARESETN] [get_bd_pins axi_interconnect_0/M17_ARESETN] [get_bd_pins axi_interconnect_0/M18_ARESETN] [get_bd_pins axi_interconnect_0/M19_ARESETN] [get_bd_pins axi_interconnect_0/M20_ARESETN] [get_bd_pins axi_interconnect_0/M21_ARESETN] [get_bd_pins axi_interconnect_0/M22_ARESETN] [get_bd_pins axi_interconnect_0/M23_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
-  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins adc1_offset/s00_axi_reset] [get_bd_pins dds1_ampl/data_rst_i] [get_bd_pins dds1_ampl/s00_axi_reset] [get_bd_pins dds1_f0/s00_axi_reset] [get_bd_pins dds1_nco/ref_rst_i] [get_bd_pins dds1_nco/s00_axi_reset] [get_bd_pins dds1_offset/data_rst_i] [get_bd_pins dds1_offset/s00_axi_reset] [get_bd_pins dds1_range/data_rst_i] [get_bd_pins dds1_range/s00_axi_reset] [get_bd_pins ltc2145_0/processing_rst_i] [get_bd_pins pid1_kd/s00_axi_reset] [get_bd_pins pid1_ki/s00_axi_reset] [get_bd_pins pid1_kp/s00_axi_reset] [get_bd_pins pid1_rst_int/s00_axi_reset] [get_bd_pins pid1_setpoint/s00_axi_reset] [get_bd_pins pid1_sign/s00_axi_reset] [get_bd_pins pid2_kd/s00_axi_reset] [get_bd_pins pid2_ki/s00_axi_reset] [get_bd_pins pid2_kp/s00_axi_reset] [get_bd_pins pid2_offset/data_rst_i] [get_bd_pins pid2_offset/s00_axi_reset] [get_bd_pins pid2_rst_int/s00_axi_reset] [get_bd_pins pid2_setpoint/s00_axi_reset] [get_bd_pins pid2_sign/s00_axi_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins redpitaya_adc_dac_clk_0/adc_rst_i]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins adc1_offset/s00_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins axi_interconnect_0/M07_ACLK] [get_bd_pins axi_interconnect_0/M08_ACLK] [get_bd_pins axi_interconnect_0/M09_ACLK] [get_bd_pins axi_interconnect_0/M10_ACLK] [get_bd_pins axi_interconnect_0/M11_ACLK] [get_bd_pins axi_interconnect_0/M12_ACLK] [get_bd_pins axi_interconnect_0/M13_ACLK] [get_bd_pins axi_interconnect_0/M14_ACLK] [get_bd_pins axi_interconnect_0/M15_ACLK] [get_bd_pins axi_interconnect_0/M16_ACLK] [get_bd_pins axi_interconnect_0/M17_ACLK] [get_bd_pins axi_interconnect_0/M18_ACLK] [get_bd_pins axi_interconnect_0/M19_ACLK] [get_bd_pins axi_interconnect_0/M20_ACLK] [get_bd_pins axi_interconnect_0/M21_ACLK] [get_bd_pins axi_interconnect_0/M22_ACLK] [get_bd_pins axi_interconnect_0/M23_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins dds1_ampl/s00_axi_aclk] [get_bd_pins dds1_f0/s00_axi_aclk] [get_bd_pins dds1_nco/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds1_range/s00_axi_aclk] [get_bd_pins pid1_kd/s00_axi_aclk] [get_bd_pins pid1_ki/s00_axi_aclk] [get_bd_pins pid1_kp/s00_axi_aclk] [get_bd_pins pid1_rst_int/s00_axi_aclk] [get_bd_pins pid1_setpoint/s00_axi_aclk] [get_bd_pins pid1_sign/s00_axi_aclk] [get_bd_pins pid2_kd/s00_axi_aclk] [get_bd_pins pid2_ki/s00_axi_aclk] [get_bd_pins pid2_kp/s00_axi_aclk] [get_bd_pins pid2_offset/s00_axi_aclk] [get_bd_pins pid2_rst_int/s00_axi_aclk] [get_bd_pins pid2_setpoint/s00_axi_aclk] [get_bd_pins pid2_sign/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins adc1_offset/s00_axi_reset] [get_bd_pins dds1_ampl/data_rst_i] [get_bd_pins dds1_ampl/s00_axi_reset] [get_bd_pins dds1_f0/s00_axi_reset] [get_bd_pins dds1_nco/ref_rst_i] [get_bd_pins dds1_nco/s00_axi_reset] [get_bd_pins dds1_offset/data_rst_i] [get_bd_pins dds1_offset/s00_axi_reset] [get_bd_pins dds1_range/data_rst_i] [get_bd_pins dds1_range/s00_axi_reset] [get_bd_pins ltc2145_0/processing_rst_i] [get_bd_pins pid1_kd/s00_axi_reset] [get_bd_pins pid1_ki/s00_axi_reset] [get_bd_pins pid1_kp/s00_axi_reset] [get_bd_pins pid1_rst_int/s00_axi_reset] [get_bd_pins pid1_setpoint/s00_axi_reset] [get_bd_pins pid1_sign/s00_axi_reset] [get_bd_pins pid2_kd/s00_axi_reset] [get_bd_pins pid2_ki/s00_axi_reset] [get_bd_pins pid2_kp/s00_axi_reset] [get_bd_pins pid2_offset/data_rst_i] [get_bd_pins pid2_offset/s00_axi_reset] [get_bd_pins pid2_rst_int/s00_axi_reset] [get_bd_pins pid2_setpoint/s00_axi_reset] [get_bd_pins pid2_sign/s00_axi_reset] [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins redpitaya_adc_dac_clk_0/adc_rst_i] [get_bd_pins switchComplex_0/s00_axi_reset]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins adc1_offset/s00_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins axi_interconnect_0/M07_ACLK] [get_bd_pins axi_interconnect_0/M08_ACLK] [get_bd_pins axi_interconnect_0/M09_ACLK] [get_bd_pins axi_interconnect_0/M10_ACLK] [get_bd_pins axi_interconnect_0/M11_ACLK] [get_bd_pins axi_interconnect_0/M12_ACLK] [get_bd_pins axi_interconnect_0/M13_ACLK] [get_bd_pins axi_interconnect_0/M14_ACLK] [get_bd_pins axi_interconnect_0/M15_ACLK] [get_bd_pins axi_interconnect_0/M16_ACLK] [get_bd_pins axi_interconnect_0/M17_ACLK] [get_bd_pins axi_interconnect_0/M18_ACLK] [get_bd_pins axi_interconnect_0/M19_ACLK] [get_bd_pins axi_interconnect_0/M20_ACLK] [get_bd_pins axi_interconnect_0/M21_ACLK] [get_bd_pins axi_interconnect_0/M22_ACLK] [get_bd_pins axi_interconnect_0/M23_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins dds1_ampl/s00_axi_aclk] [get_bd_pins dds1_f0/s00_axi_aclk] [get_bd_pins dds1_nco/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds1_range/s00_axi_aclk] [get_bd_pins pid1_kd/s00_axi_aclk] [get_bd_pins pid1_ki/s00_axi_aclk] [get_bd_pins pid1_kp/s00_axi_aclk] [get_bd_pins pid1_rst_int/s00_axi_aclk] [get_bd_pins pid1_setpoint/s00_axi_aclk] [get_bd_pins pid1_sign/s00_axi_aclk] [get_bd_pins pid2_kd/s00_axi_aclk] [get_bd_pins pid2_ki/s00_axi_aclk] [get_bd_pins pid2_kp/s00_axi_aclk] [get_bd_pins pid2_offset/s00_axi_aclk] [get_bd_pins pid2_rst_int/s00_axi_aclk] [get_bd_pins pid2_setpoint/s00_axi_aclk] [get_bd_pins pid2_sign/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins switchComplex_0/s00_axi_aclk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
-  connect_bd_net -net red_pitaya_pidv3_0_data_clk_o [get_bd_pins dds1_range/data_clk_i] [get_bd_pins pid1/data_clk_o] [get_bd_pins twoInMult_dds1_range/data1_clk_i]
-  connect_bd_net -net red_pitaya_pidv3_0_data_en_o [get_bd_pins dds1_range/data_en_i] [get_bd_pins pid1/data_en_o] [get_bd_pins twoInMult_dds1_range/data1_en_i]
-  connect_bd_net -net red_pitaya_pidv3_0_data_o [get_bd_pins pid1/data_o] [get_bd_pins twoInMult_dds1_range/data1_i]
-  connect_bd_net -net red_pitaya_pidv3_0_data_rst_o [get_bd_pins expanderReal_0_dds1/data_rst_i] [get_bd_pins pid1/data_rst_o]
+  connect_bd_net -net red_pitaya_pidv3_0_data_clk_o [get_bd_pins dds1_range/data_clk_i] [get_bd_pins dupplReal_1_to_2_1/data1_clk_o] [get_bd_pins twoInMult_dds1_range/data1_clk_i]
+  connect_bd_net -net red_pitaya_pidv3_0_data_en_o [get_bd_pins dds1_range/data_en_i] [get_bd_pins dupplReal_1_to_2_1/data1_en_o] [get_bd_pins twoInMult_dds1_range/data1_en_i]
   connect_bd_net -net redpitaya_adc_dac_clk_0_adc_clk_o [get_bd_pins ltc2145_0/adc_clk_i] [get_bd_pins redpitaya_adc_dac_clk_0/adc_clk_o]
   connect_bd_net -net redpitaya_adc_dac_clk_0_dac_2clk_o [get_bd_pins ad9767_0/dac_2clk_i] [get_bd_pins redpitaya_adc_dac_clk_0/dac_2clk_o]
   connect_bd_net -net redpitaya_adc_dac_clk_0_dac_2ph_o [get_bd_pins ad9767_0/dac_2ph_i] [get_bd_pins redpitaya_adc_dac_clk_0/dac_2ph_o]
   connect_bd_net -net redpitaya_adc_dac_clk_0_dac_clk_o [get_bd_pins ad9767_0/dac_clk_i] [get_bd_pins redpitaya_adc_dac_clk_0/dac_clk_o]
   connect_bd_net -net redpitaya_adc_dac_clk_0_dac_locked_o [get_bd_pins ad9767_0/dac_locked_i] [get_bd_pins redpitaya_adc_dac_clk_0/dac_locked_o]
+  connect_bd_net -net switchComplex_0_data_clk_o [get_bd_pins pid2/data_clk_i] [get_bd_pins switchComplex_0/data_clk_o]
+  connect_bd_net -net switchComplex_0_data_en_o [get_bd_pins pid2/data_en_i] [get_bd_pins switchComplex_0/data_en_o]
+  connect_bd_net -net switchComplex_0_data_q_o [get_bd_pins pid2/data_i] [get_bd_pins switchComplex_0/data_q_o]
+  connect_bd_net -net switchComplex_0_data_rst_o [get_bd_pins pid2/data_rst_i] [get_bd_pins switchComplex_0/data_rst_o]
   connect_bd_net -net twoInMult_0_data_clk_o [get_bd_pins dds1_offset/data_clk_i] [get_bd_pins twoInMult_dds1_ampl/data_clk_o]
   connect_bd_net -net twoInMult_0_data_en_o [get_bd_pins dds1_offset/data_en_i] [get_bd_pins twoInMult_dds1_ampl/data_en_o]
   connect_bd_net -net twoInMult_0_data_o [get_bd_pins twoInMult_dds1_ampl/data_o] [get_bd_pins xlslice_dds1/Din]
@@ -1394,143 +1424,159 @@ CONFIG.DOUT_WIDTH {14} \
   create_bd_addr_seg -range 0x00010000 -offset 0x43D10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs pid2_rst_int/s00_axi/reg0] SEG_pid2_rst_int_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43CD0000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs pid2_setpoint/s00_axi/reg0] SEG_pid2_setpoint_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43D00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs pid2_sign/s00_axi/reg0] SEG_pid2_sign_reg0
+  create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs switchComplex_0/s00_axi/reg0] SEG_switchComplex_0_reg0
 
   # Perform GUI Layout
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y 1620 -defaultsOSRD
-preplace port adc_cdcs -pg 1 -y 3260 -defaultsOSRD
-preplace port adc_clk_p_i -pg 1 -y 3480 -defaultsOSRD
-preplace port dac_rst_o -pg 1 -y 2880 -defaultsOSRD
-preplace port dac_clk_o -pg 1 -y 2860 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 1640 -defaultsOSRD
-preplace port dac_sel_o -pg 1 -y 2840 -defaultsOSRD
-preplace port dac_wrt_o -pg 1 -y 2820 -defaultsOSRD
-preplace port adc_clk_n_i -pg 1 -y 3500 -defaultsOSRD
-preplace portBus adc_data_a_i -pg 1 -y 3220 -defaultsOSRD
-preplace portBus adc_data_b_i -pg 1 -y 3240 -defaultsOSRD
-preplace portBus dac_dat_o -pg 1 -y 2800 -defaultsOSRD
-preplace inst pid1 -pg 1 -lvl 6 -y 1470 -defaultsOSRD
-preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 670 -defaultsOSRD
-preplace inst pid2 -pg 1 -lvl 6 -y 2460 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 3 -y 2850 -defaultsOSRD
-preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 3500 -defaultsOSRD
-preplace inst pid2_sign -pg 1 -lvl 4 -y 1980 -defaultsOSRD
-preplace inst pid1_kp -pg 1 -lvl 4 -y 340 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 3 -y 1380 -defaultsOSRD
-preplace inst twoInMult_dds1_ampl -pg 1 -lvl 5 -y 3380 -defaultsOSRD
-preplace inst pid2_kp -pg 1 -lvl 4 -y 2460 -defaultsOSRD
-preplace inst pid1_setpoint -pg 1 -lvl 4 -y 1290 -defaultsOSRD
-preplace inst pid1_kd -pg 1 -lvl 4 -y 1070 -defaultsOSRD
-preplace inst dds1_ampl -pg 1 -lvl 4 -y 3620 -defaultsOSRD
-preplace inst pid2_kd -pg 1 -lvl 4 -y 1760 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 2620 -defaultsOSRD
-preplace inst pid1_rst_int -pg 1 -lvl 4 -y 560 -defaultsOSRD
-preplace inst dds1_range -pg 1 -lvl 4 -y 850 -defaultsOSRD
-preplace inst pid2_rst_int -pg 1 -lvl 4 -y 2220 -defaultsOSRD
-preplace inst dds1_f0 -pg 1 -lvl 4 -y 3380 -defaultsOSRD
-preplace inst adc1_offset -pg 1 -lvl 4 -y 3140 -defaultsOSRD
-preplace inst pid1_ki -pg 1 -lvl 4 -y 120 -defaultsOSRD
-preplace inst ad9767_0 -pg 1 -lvl 8 -y 2840 -defaultsOSRD
-preplace inst dupplReal_1_to_2_0 -pg 1 -lvl 5 -y 2280 -defaultsOSRD
-preplace inst pid2_ki -pg 1 -lvl 4 -y 2700 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 2220 -defaultsOSRD
-preplace inst dds1_offset -pg 1 -lvl 7 -y 2790 -defaultsOSRD
-preplace inst dds1_nco -pg 1 -lvl 5 -y 3130 -defaultsOSRD
-preplace inst xlslice_dds1 -pg 1 -lvl 6 -y 3340 -defaultsOSRD
-preplace inst pid1_sign -pg 1 -lvl 4 -y 1510 -defaultsOSRD
-preplace inst ltc2145_0 -pg 1 -lvl 3 -y 3200 -defaultsOSRD
-preplace inst expanderReal_0_dds1 -pg 1 -lvl 3 -y 610 -defaultsOSRD
-preplace inst pid2_offset -pg 1 -lvl 7 -y 2580 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -y 1770 -defaultsOSRD
-preplace inst pid2_setpoint -pg 1 -lvl 4 -y 2920 -defaultsOSRD
-preplace netloc axi_interconnect_0_M13_AXI 1 3 1 1240
-preplace netloc adc_data_a_i_1 1 0 3 NJ 3220 NJ 3220 NJ
-preplace netloc nco_counter_0_dds_en_o 1 3 3 1370 3480 1740 3480 2100
-preplace netloc axi_interconnect_0_M08_AXI 1 3 1 1170
-preplace netloc red_pitaya_pidv3_0_data_en_o 1 3 4 1370 720 1700 780 NJ 780 2530
-preplace netloc axi_interconnect_0_M07_AXI 1 3 1 1260
-preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 6 NJ 3490 1360J 3300 1740J 3290 NJ 3290 NJ 3290 2820
-preplace netloc adc_clk_n_i_1 1 0 2 NJ 3500 NJ
-preplace netloc ad9767_0_dac_rst_o 1 8 1 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 2 7 NJ 1640 NJ 1640 NJ 1640 NJ 1640 NJ 1640 NJ 1640 NJ
-preplace netloc pid2_kd_data_o 1 4 2 NJ 1770 2090
-preplace netloc ad9767_0_dac_dat_o 1 8 1 NJ
-preplace netloc axi_interconnect_0_M04_AXI 1 3 1 1160
-preplace netloc axi_interconnect_0_M18_AXI 1 3 1 1340
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 NJ 2640 790
-preplace netloc axi_interconnect_0_M12_AXI 1 3 1 1230
-preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 6 NJ 3450 1160J 3460 1720J 2910 NJ 2910 NJ 2910 2800
-preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 2 1 810
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 6 370 3080 820 3080 1330 3280 1690 2620 NJ 2620 2530
-preplace netloc twoInMult_0_data_en_o 1 5 2 NJ 3390 2550
-preplace netloc pid2_sign_data_o 1 4 2 NJ 1990 2070
-preplace netloc axi_interconnect_0_M16_AXI 1 3 1 1320
-preplace netloc ltc2145_0_data_a_en_o 1 3 1 1200
-preplace netloc processing_system7_0_DDR 1 2 7 800J 1630 NJ 1630 NJ 1630 NJ 1630 NJ 1630 NJ 1630 3090J
-preplace netloc axi_interconnect_0_M23_AXI 1 3 4 1160J 2340 NJ 2340 NJ 2340 2510
-preplace netloc nco_counter_0_dds_clk_o 1 3 3 1380 3490 1760 3490 2080
-preplace netloc expanderReal_0_data_out 1 3 1 1270
-preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1290
-preplace netloc pid_rst_int_data_o 1 4 2 NJ 570 2120
-preplace netloc pid2_kp_data_o 1 4 2 N 2470 2100J
-preplace netloc xlconstant_1_dout 1 3 1 1360
-preplace netloc twoInMult_dds_range_data_en_o 1 2 4 820 700 NJ 700 1690J 770 2070
-preplace netloc twoInMult_0_data_clk_o 1 5 2 NJ 3410 2560
-preplace netloc ltc2145_0_adc_clk 1 3 2 NJ 3270 1710
-preplace netloc pid2_rst_int_data_o 1 4 2 1720 2530 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 1550 NJ 1550 780
-preplace netloc ltc2145_0_adc_cdcs 1 3 6 1160J 3260 NJ 3260 NJ 3260 NJ 3260 NJ 3260 NJ
-preplace netloc axi_interconnect_0_M05_AXI 1 3 1 1210
-preplace netloc red_pitaya_pidv3_0_data_clk_o 1 3 4 1380 730 1720 790 NJ 790 2500
-preplace netloc ltc2145_0_data_a_o 1 3 1 1160
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 NJ 2660 820
-preplace netloc pid_kp_data_o 1 4 2 NJ 350 2140
-preplace netloc axi_interconnect_0_M09_AXI 1 3 2 1300J 2580 1680
-preplace netloc dds2_offset_data_out 1 7 1 2800
-preplace netloc xlslice_0_Dout 1 6 1 2500
-preplace netloc ltc2145_0_data_a_clk_o 1 3 1 1220
-preplace netloc ltc2145_0_data_a_rst_o 1 3 1 1250
-preplace netloc red_pitaya_pidv3_0_data_o 1 4 3 1730 940 NJ 940 2510
-preplace netloc pid_sign_data_o 1 4 2 N 1520 NJ
-preplace netloc axi_interconnect_0_M10_AXI 1 3 4 1160J 2100 NJ 2100 NJ 2100 2520
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 30 3670 380 3670 800 3670 1310 3290 1700 2840 NJ 2840 2540
-preplace netloc ad9767_0_dac_wrt_o 1 8 1 NJ
-preplace netloc axi_interconnect_0_M06_AXI 1 3 1 1190
-preplace netloc twoInMult_dds_range_data_o 1 2 4 780 710 NJ 710 1670J 760 2090
-preplace netloc axi_interconnect_0_M17_AXI 1 3 1 1380
-preplace netloc dupplReal_1_to_2_0_data1_out 1 5 1 2100
-preplace netloc twoInMult_dds_range_data_clk_o 1 2 4 790 500 1350J 690 1670J 500 2100
-preplace netloc dupplReal_1_to_2_0_data2_out 1 5 1 2080
-preplace netloc axi_interconnect_0_M14_AXI 1 3 1 1260
-preplace netloc ad9767_0_dac_clk_o 1 8 1 NJ
-preplace netloc nco_counter_0_dds_sin_o 1 4 2 1760 3240 2130
-preplace netloc dds_f0_data_out 1 4 1 1730
-preplace netloc axi_interconnect_0_M15_AXI 1 3 1 1230
-preplace netloc pid_setpoint_data_o 1 4 2 N 1300 2130J
+preplace port DDR -pg 1 -y 1490 -defaultsOSRD
+preplace port adc_cdcs -pg 1 -y 1750 -defaultsOSRD
+preplace port adc_clk_p_i -pg 1 -y 3580 -defaultsOSRD
+preplace port dac_rst_o -pg 1 -y 3060 -defaultsOSRD
+preplace port dac_clk_o -pg 1 -y 3040 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 1500 -defaultsOSRD
+preplace port dac_sel_o -pg 1 -y 3020 -defaultsOSRD
+preplace port dac_wrt_o -pg 1 -y 3000 -defaultsOSRD
+preplace port adc_clk_n_i -pg 1 -y 3600 -defaultsOSRD
+preplace portBus adc_data_a_i -pg 1 -y 1640 -defaultsOSRD
+preplace portBus adc_data_b_i -pg 1 -y 1660 -defaultsOSRD
+preplace portBus dac_dat_o -pg 1 -y 2980 -defaultsOSRD
+preplace inst pid1 -pg 1 -lvl 6 -y 1880 -defaultsOSRD
+preplace inst twoInMult_dds1_range -pg 1 -lvl 5 -y 90 -defaultsOSRD
+preplace inst pid2 -pg 1 -lvl 3 -y 3100 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 4350 -defaultsOSRD
+preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 3600 -defaultsOSRD
+preplace inst pid2_sign -pg 1 -lvl 4 -y 4180 -defaultsOSRD
+preplace inst pid1_kp -pg 1 -lvl 4 -y 1880 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -y 4430 -defaultsOSRD
+preplace inst twoInMult_dds1_ampl -pg 1 -lvl 5 -y 1260 -defaultsOSRD
+preplace inst pid2_kp -pg 1 -lvl 4 -y 3450 -defaultsOSRD
+preplace inst pid1_setpoint -pg 1 -lvl 4 -y 2560 -defaultsOSRD
+preplace inst pid1_kd -pg 1 -lvl 4 -y 2100 -defaultsOSRD
+preplace inst dds1_ampl -pg 1 -lvl 4 -y 440 -defaultsOSRD
+preplace inst pid2_kd -pg 1 -lvl 4 -y 2800 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 2100 -defaultsOSRD
+preplace inst pid1_rst_int -pg 1 -lvl 4 -y 4640 -defaultsOSRD
+preplace inst dds1_range -pg 1 -lvl 4 -y 130 -defaultsOSRD
+preplace inst pid2_rst_int -pg 1 -lvl 4 -y 3960 -defaultsOSRD
+preplace inst dds1_f0 -pg 1 -lvl 4 -y 620 -defaultsOSRD
+preplace inst adc1_offset -pg 1 -lvl 4 -y 1620 -defaultsOSRD
+preplace inst pid1_ki -pg 1 -lvl 4 -y 2320 -defaultsOSRD
+preplace inst ad9767_0 -pg 1 -lvl 5 -y 3020 -defaultsOSRD
+preplace inst switchComplex_0 -pg 1 -lvl 4 -y 920 -defaultsOSRD
+preplace inst dupplReal_1_to_2_0 -pg 1 -lvl 5 -y 1620 -defaultsOSRD
+preplace inst pid2_ki -pg 1 -lvl 4 -y 3200 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 2340 -defaultsOSRD
+preplace inst dupplReal_1_to_2_1 -pg 1 -lvl 7 -y 980 -defaultsOSRD
+preplace inst dds1_offset -pg 1 -lvl 4 -y 1330 -defaultsOSRD
+preplace inst dds1_nco -pg 1 -lvl 5 -y 1010 -defaultsOSRD
+preplace inst xlslice_dds1 -pg 1 -lvl 3 -y 1280 -defaultsOSRD
+preplace inst pid1_sign -pg 1 -lvl 4 -y 3740 -defaultsOSRD
+preplace inst ltc2145_0 -pg 1 -lvl 3 -y 1620 -defaultsOSRD
+preplace inst expanderReal_0_dds1 -pg 1 -lvl 3 -y 170 -defaultsOSRD
+preplace inst pid2_offset -pg 1 -lvl 4 -y 2990 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 1890 -defaultsOSRD
+preplace inst pid2_setpoint -pg 1 -lvl 4 -y 4420 -defaultsOSRD
+preplace netloc axi_interconnect_0_M13_AXI 1 3 1 1250
+preplace netloc axi_interconnect_0_M08_AXI 1 3 1 1250
+preplace netloc dupplReal_1_to_2_1_data2_clk_o 1 3 5 1450 1150 NJ 1150 NJ 1150 NJ 1150 2800
+preplace netloc adc_data_a_i_1 1 0 3 NJ 1640 NJ 1640 NJ
+preplace netloc nco_counter_0_dds_en_o 1 3 3 1420 1200 1830 1350 2240
+preplace netloc red_pitaya_pidv3_0_data_en_o 1 3 5 1460 250 1840 250 NJ 250 NJ 250 2790
+preplace netloc axi_interconnect_0_M07_AXI 1 3 1 1320
+preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 3 790J 3620 NJ 3620 1860
+preplace netloc adc_clk_n_i_1 1 0 2 NJ 3600 NJ
+preplace netloc dupplReal_1_to_2_1_data1_rst_o 1 2 6 860 270 NJ 270 NJ 270 NJ 270 NJ 270 2810
+preplace netloc ad9767_0_dac_rst_o 1 5 3 NJ 3060 NJ 3060 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 6 810J 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 NJ
+preplace netloc dupplReal_1_to_2_0_data2_clk_o 1 3 3 1430 1480 NJ 1480 2210
+preplace netloc pid2_kd_data_o 1 2 3 870 2920 1440J 2440 1760
+preplace netloc axi_interconnect_0_M04_AXI 1 3 1 1460
+preplace netloc ad9767_0_dac_dat_o 1 5 3 NJ 2980 NJ 2980 NJ
+preplace netloc axi_interconnect_0_M18_AXI 1 3 1 1270
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 2 NJ 2120 820
+preplace netloc axi_interconnect_0_M12_AXI 1 3 1 1390
+preplace netloc pid1_data_out 1 6 1 2550
+preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 3 NJ 3550 1460J 3320 1810
+preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 2 1 840
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 4 380 450 840 450 1330 1130 1810
+preplace netloc twoInMult_0_data_en_o 1 3 3 1450 1450 NJ 1450 2220
+preplace netloc dupplReal_1_to_2_1_data1_o 1 4 4 1860 180 NJ 180 NJ 180 2830
+preplace netloc pid2_sign_data_o 1 2 3 890 3590 NJ 3590 1760
+preplace netloc axi_interconnect_0_M16_AXI 1 3 1 1240
+preplace netloc switchComplex_0_data_rst_o 1 2 3 880 3330 NJ 3330 1780
+preplace netloc ltc2145_0_data_a_en_o 1 3 1 1370
+preplace netloc processing_system7_0_DDR 1 2 6 790J 1490 NJ 1490 NJ 1490 NJ 1490 NJ 1490 NJ
+preplace netloc axi_interconnect_0_M23_AXI 1 3 1 1260
+preplace netloc nco_counter_0_dds_clk_o 1 3 3 1460 700 1860 700 2250
+preplace netloc axi_interconnect_0_M02_AXI 1 3 1 1230
+preplace netloc expanderReal_0_data_out 1 3 1 1410
+preplace netloc axi_interconnect_0_M01_AXI 1 3 1 1260
+preplace netloc dupplReal_1_to_2_0_data2_en_o 1 3 3 1430 300 NJ 300 2270
+preplace netloc pid_rst_int_data_o 1 4 2 N 4650 2290J
+preplace netloc pid2_kp_data_o 1 2 3 910 3570 NJ 3570 1760
+preplace netloc xlconstant_1_dout 1 3 1 1260
+preplace netloc twoInMult_dds_range_data_en_o 1 2 4 840 290 NJ 290 NJ 290 2270
+preplace netloc twoInMult_0_data_clk_o 1 3 3 1460 1460 NJ 1460 2210
+preplace netloc ltc2145_0_adc_clk 1 3 2 1240J 1740 1820
+preplace netloc pid2_rst_int_data_o 1 2 3 920 3580 NJ 3580 1770
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 2190 NJ 2190 790
+preplace netloc ltc2145_0_adc_cdcs 1 3 5 1320J 1750 NJ 1750 NJ 1750 NJ 1750 NJ
+preplace netloc axi_interconnect_0_M05_AXI 1 3 1 1360
+preplace netloc red_pitaya_pidv3_0_data_clk_o 1 3 5 1450 10 1850 190 NJ 190 NJ 190 2820
+preplace netloc ltc2145_0_data_a_o 1 3 1 N
+preplace netloc switchComplex_0_data_clk_o 1 2 3 880 1760 NJ 1760 1760
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 NJ 2140 850
+preplace netloc pid_kp_data_o 1 4 2 NJ 1890 2220
+preplace netloc axi_interconnect_0_M09_AXI 1 3 2 1310 1180 1800J
+preplace netloc dds2_offset_data_out 1 4 1 N
+preplace netloc xlslice_0_Dout 1 3 1 NJ
+preplace netloc ltc2145_0_data_a_clk_o 1 3 1 1350
+preplace netloc ltc2145_0_data_a_rst_o 1 3 1 1300
+preplace netloc pid_sign_data_o 1 4 2 N 3750 2280J
+preplace netloc dupplReal_1_to_2_1_data2_rst_o 1 3 5 1460 1140 NJ 1140 NJ 1140 NJ 1140 2790
+preplace netloc dupplReal_1_to_2_0_data2_rst_o 1 3 3 1440 320 NJ 320 2280
+preplace netloc dupplReal_1_to_2_1_data2_o 1 3 5 1440 1160 NJ 1160 NJ 1160 NJ 1160 2810
+preplace netloc axi_interconnect_0_M10_AXI 1 3 1 1340
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 20 490 370 490 830 490 1380 1170 1830J
+preplace netloc ad9767_0_dac_wrt_o 1 5 3 NJ 3000 NJ 3000 NJ
+preplace netloc axi_interconnect_0_M06_AXI 1 3 1 1220
+preplace netloc dupplReal_1_to_2_0_data2_o 1 3 3 1450 310 NJ 310 2260
+preplace netloc twoInMult_dds_range_data_o 1 2 4 830 70 1440J 280 NJ 280 2280
+preplace netloc axi_interconnect_0_M17_AXI 1 3 1 1230
+preplace netloc dupplReal_1_to_2_0_data1_out 1 5 1 2290
+preplace netloc twoInMult_dds_range_data_clk_o 1 2 4 830 280 1250J 260 NJ 260 2260
+preplace netloc axi_interconnect_0_M14_AXI 1 3 1 1290
+preplace netloc ad9767_0_dac_clk_o 1 5 3 NJ 3040 NJ 3040 NJ
+preplace netloc nco_counter_0_dds_sin_o 1 4 2 1870 900 2240
+preplace netloc dds_f0_data_out 1 4 1 1850
+preplace netloc axi_interconnect_0_M15_AXI 1 3 1 1280
+preplace netloc pid_setpoint_data_o 1 4 2 N 2570 2240J
 preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 N
-preplace netloc pid_ki_data_o 1 4 2 NJ 130 2150
-preplace netloc adc_clk_p_i_1 1 0 2 NJ 3480 NJ
-preplace netloc xlconstant_0_dout 1 3 1 1280
-preplace netloc dds_ampl_data_out 1 4 1 1750
-preplace netloc ad9767_0_dac_sel_o 1 8 1 NJ
-preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 6 NJ 3470 NJ 3470 NJ 3470 NJ 3470 NJ 3470 2810
-preplace netloc pid2_data_out 1 6 1 2500
-preplace netloc adc1_offset_data_out 1 4 1 1670
-preplace netloc dds_offset_data_out 1 7 1 N
-preplace netloc twoInMult_0_data_o 1 5 1 2140J
-preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 6 820J 3500 NJ 3500 NJ 3500 NJ 3500 NJ 3500 2830
-preplace netloc adc_data_b_i_1 1 0 3 NJ 3240 NJ 3240 NJ
-preplace netloc dds_range_data_out 1 4 1 1680
-preplace netloc pid_kd_data_o 1 4 2 N 1080 2110J
-preplace netloc red_pitaya_pidv3_0_data_rst_o 1 2 5 800 520 1340J 680 1680J 520 NJ 520 2520
-preplace netloc pid2_ki_data_o 1 4 2 N 2710 2140J
-preplace netloc axi_interconnect_0_M11_AXI 1 3 1 1210
-preplace netloc axi_interconnect_0_M03_AXI 1 3 1 1170
-preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1180
-preplace netloc pid2_setpoint_data_o 1 4 2 N 2930 2120J
-levelinfo -pg 1 0 200 580 1010 1540 1930 2350 2680 2960 3110 -top 0 -bot 3740
+preplace netloc pid_ki_data_o 1 4 2 N 2330 2260J
+preplace netloc adc_clk_p_i_1 1 0 2 NJ 3580 NJ
+preplace netloc dupplReal_1_to_2_1_data2_en_o 1 3 5 1460 710 NJ 710 NJ 710 NJ 710 2800
+preplace netloc switchComplex_0_data_q_o 1 2 3 900 3260 1460J 3080 1790
+preplace netloc xlconstant_0_dout 1 3 1 1400
+preplace netloc switchComplex_0_data_en_o 1 2 3 860 1190 NJ 1190 1770
+preplace netloc dds_ampl_data_out 1 4 1 1840
+preplace netloc ad9767_0_dac_sel_o 1 5 3 NJ 3020 NJ 3020 NJ
+preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 3 810J 3610 NJ 3610 1830
+preplace netloc pid2_data_out 1 3 1 1440
+preplace netloc adc1_offset_data_out 1 4 1 N
+preplace netloc dds_offset_data_out 1 4 1 1800
+preplace netloc twoInMult_0_data_o 1 2 4 880 1210 NJ 1210 1810J 1360 2230
+preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 3 800J 3600 NJ 3600 1840
+preplace netloc adc_data_b_i_1 1 0 3 NJ 1660 NJ 1660 NJ
+preplace netloc dds_range_data_out 1 4 1 N
+preplace netloc pid_kd_data_o 1 4 2 N 2110 2270J
+preplace netloc pid2_ki_data_o 1 2 3 890 2930 1460J 2680 1770
+preplace netloc axi_interconnect_0_M11_AXI 1 3 1 1270
+preplace netloc axi_interconnect_0_M03_AXI 1 3 1 1320
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1220
+preplace netloc pid2_setpoint_data_o 1 2 3 860 4300 NJ 4300 1760
+levelinfo -pg 1 0 200 590 1070 1610 2070 2420 2670 2850 -top 0 -bot 4760
 ",
 }
 

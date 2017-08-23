@@ -46,4 +46,10 @@
             base_addr="0x43CA0000" addr_size="0xffff" />
     </driver>
 
+    <driver name ="switchComplex" >
+        <board_driver name="switchComplex_O" id = "0"
+            base_addr="0x43C10000" addr_size="0xffff" />
+    </driver>
+
+
 </drivers>

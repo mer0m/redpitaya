@@ -1,6 +1,48 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug 23 09:19:54 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pid_vco_pid_only_wrapper_pid2_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of pid_vco_pid_only_wrapper_pid2_0 (user.org:user:red_pitaya_pidv3:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug 23 09:19:54 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pid_vco_pid_only_wrapper_pid1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of pid_vco_pid_only_wrapper_pid1_0 (user.org:user:red_pitaya_pidv3:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
 | Date         : Fri Jul  7 18:15:24 2017
 | Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
 | Command      : upgrade_ip
