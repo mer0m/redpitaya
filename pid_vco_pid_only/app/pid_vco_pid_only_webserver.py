@@ -245,6 +245,12 @@ class MyApp(App):
 		self.hbox_dds1_nco.append(self.cb_poff_dds1_nco)
 		self.w.append(self.hbox_dds1_nco)
 
+		self.hbox_switchComplex_O = gui.HBox(margin="10px")
+		self.cb_switchComplex_O = gui.CheckBoxLabel(switchComplex_O, True, width="5%", margin="10px")
+		self.cb_switchComplex_O.set_on_change_listener(self.cb_switchComplex_O_changed)
+		self.hbox_switchComplex_O.append(self.cb_switchComplex_O)
+		self.w.append(self.hbox_switchComplex_O)
+
 		return self.w
 
 	def sd_adc1_offset_changed(self, widget, value):
@@ -440,5 +446,9 @@ class MyApp(App):
 	def cb_dds1_nco_changed(self, widget, value):
 		print("/dev/dds1_nco", 125000000, int(self.sb_dds1_nco.get_value()), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
 		liboscimp_fpga.nco_counter_send_conf("/dev/dds1_nco", 125000000, int(self.sb_dds1_nco.get_value()), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
+
+	def cb_switchComplex_O_changed(self, widget, value):
+		print("/dev/switchComplex_O", int(self.cb_switchComplex_O.get_value()))
+		liboscimp_fpga.swC_send_conf("/dev/switchComplex_O", int(self.cb_switchComplex_O.get_value()))
 
 start(MyApp, address="0.0.0.0", port=80, title="pid_vco_pid_only_webserver")
