@@ -246,7 +246,7 @@ class MyApp(App):
 		self.w.append(self.hbox_dds1_nco)
 
 		self.hbox_switchComplex_O = gui.HBox(margin="10px")
-		self.cb_switchComplex_O = gui.CheckBoxLabel(switchComplex_O, True, width="5%", margin="10px")
+		self.cb_switchComplex_O = gui.CheckBoxLabel("switchComplex_O", True, width="5%", margin="10px")
 		self.cb_switchComplex_O.set_on_change_listener(self.cb_switchComplex_O_changed)
 		self.hbox_switchComplex_O.append(self.cb_switchComplex_O)
 		self.w.append(self.hbox_switchComplex_O)
