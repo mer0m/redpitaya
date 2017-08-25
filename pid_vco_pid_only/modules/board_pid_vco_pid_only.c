@@ -156,10 +156,42 @@ static struct resource pid2_setpoint_resources[] = {
 	},
 };
 
+static struct resource mod_input_ampl_resources[] = {
+	{
+		.start = 0x43CD3000,
+		.end   = 0x43CD3000 + 0xffff,
+		.flags = IORESOURCE_MEM,
+	},
+};
+
+static struct resource mod_out_pid2_ampl_resources[] = {
+	{
+		.start = 0x43CD5000,
+		.end   = 0x43CD5000 + 0xffff,
+		.flags = IORESOURCE_MEM,
+	},
+};
+
 static struct resource dds1_nco_resources[] = {
 	{
 		.start = 0x43CA0000,
 		.end   = 0x43CA0000 + 0xffff,
+		.flags = IORESOURCE_MEM,
+	},
+};
+
+static struct resource mod_input_nco_resources[] = {
+	{
+		.start = 0x43D40000,
+		.end   = 0x43D40000 + 0xffff,
+		.flags = IORESOURCE_MEM,
+	},
+};
+
+static struct resource mod_out_pid2_nco_resources[] = {
+	{
+		.start = 0x43D60000,
+		.end   = 0x43D60000 + 0xffff,
 		.flags = IORESOURCE_MEM,
 	},
 };
@@ -262,10 +294,30 @@ static struct plat_add_const_port plat_pid2_setpoint_data = {
 	.num		= 17,
 	.idnum		= 17,
 };
+static struct plat_add_const_port plat_mod_input_ampl_data = {
+	.name		= "mod_input_ampl",
+	.num		= 18,
+	.idnum		= 18,
+};
+static struct plat_add_const_port plat_mod_out_pid2_ampl_data = {
+	.name		= "mod_out_pid2_ampl",
+	.num		= 19,
+	.idnum		= 19,
+};
 static struct plat_nco_counter_port plat_dds1_nco_data = {
 	.name		= "dds1_nco",
 	.num		= 0,
 	.idnum		= 0,
+};
+static struct plat_nco_counter_port plat_mod_input_nco_data = {
+	.name		= "mod_input_nco",
+	.num		= 1,
+	.idnum		= 1,
+};
+static struct plat_nco_counter_port plat_mod_out_pid2_nco_data = {
+	.name		= "mod_out_pid2_nco",
+	.num		= 2,
+	.idnum		= 2,
 };
 static struct plat_swC_port plat_switchComplex_O_data = {
 	.name		= "switchComplex_O",
@@ -453,6 +505,26 @@ static struct platform_device plat_pid2_setpoint_device = {
 	.num_resources		= ARRAY_SIZE(pid2_setpoint_resources),
 	.resource		= pid2_setpoint_resources,
 };
+static struct platform_device plat_mod_input_ampl_device = {
+	.name = "add_const",
+	.id	= 18,
+	.dev	= {
+		.release	= plat_pid_vco_pid_only_release,
+		.platform_data	= &plat_mod_input_ampl_data,
+	},
+	.num_resources		= ARRAY_SIZE(mod_input_ampl_resources),
+	.resource		= mod_input_ampl_resources,
+};
+static struct platform_device plat_mod_out_pid2_ampl_device = {
+	.name = "add_const",
+	.id	= 19,
+	.dev	= {
+		.release	= plat_pid_vco_pid_only_release,
+		.platform_data	= &plat_mod_out_pid2_ampl_data,
+	},
+	.num_resources		= ARRAY_SIZE(mod_out_pid2_ampl_resources),
+	.resource		= mod_out_pid2_ampl_resources,
+};
 static struct platform_device plat_dds1_nco_device = {
 	.name = "nco_counter",
 	.id	= 0,
@@ -462,6 +534,26 @@ static struct platform_device plat_dds1_nco_device = {
 	},
 	.num_resources		= ARRAY_SIZE(dds1_nco_resources),
 	.resource		= dds1_nco_resources,
+};
+static struct platform_device plat_mod_input_nco_device = {
+	.name = "nco_counter",
+	.id	= 1,
+	.dev	= {
+		.release	= plat_pid_vco_pid_only_release,
+		.platform_data	= &plat_mod_input_nco_data,
+	},
+	.num_resources		= ARRAY_SIZE(mod_input_nco_resources),
+	.resource		= mod_input_nco_resources,
+};
+static struct platform_device plat_mod_out_pid2_nco_device = {
+	.name = "nco_counter",
+	.id	= 2,
+	.dev	= {
+		.release	= plat_pid_vco_pid_only_release,
+		.platform_data	= &plat_mod_out_pid2_nco_data,
+	},
+	.num_resources		= ARRAY_SIZE(mod_out_pid2_nco_resources),
+	.resource		= mod_out_pid2_nco_resources,
 };
 static struct platform_device plat_switchComplex_O_device = {
 	.name = "switchComplex",
@@ -531,7 +623,19 @@ static int __init board_pid_vco_pid_only_init(void)
 	ret = platform_device_register(&plat_pid2_setpoint_device);
 	if (ret < 0)
 		return ret;
+	ret = platform_device_register(&plat_mod_input_ampl_device);
+	if (ret < 0)
+		return ret;
+	ret = platform_device_register(&plat_mod_out_pid2_ampl_device);
+	if (ret < 0)
+		return ret;
 	ret = platform_device_register(&plat_dds1_nco_device);
+	if (ret < 0)
+		return ret;
+	ret = platform_device_register(&plat_mod_input_nco_device);
+	if (ret < 0)
+		return ret;
+	ret = platform_device_register(&plat_mod_out_pid2_nco_device);
 	if (ret < 0)
 		return ret;
 	ret = platform_device_register(&plat_switchComplex_O_device);
@@ -560,7 +664,11 @@ static void __exit board_pid_vco_pid_only_exit(void)
 	platform_device_unregister(&plat_pid2_rst_int_device);
 	platform_device_unregister(&plat_pid2_sign_device);
 	platform_device_unregister(&plat_pid2_setpoint_device);
+	platform_device_unregister(&plat_mod_input_ampl_device);
+	platform_device_unregister(&plat_mod_out_pid2_ampl_device);
 	platform_device_unregister(&plat_dds1_nco_device);
+	platform_device_unregister(&plat_mod_input_nco_device);
+	platform_device_unregister(&plat_mod_out_pid2_nco_device);
 	platform_device_unregister(&plat_switchComplex_O_device);
 }
 

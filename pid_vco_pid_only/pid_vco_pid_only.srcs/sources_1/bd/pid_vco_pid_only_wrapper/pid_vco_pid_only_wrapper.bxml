@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="pid_vco_pid_only_wrapper" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1503482606"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1503482606"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1503482606"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1503664493"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1503664493"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1503664493"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/pid_vco_pid_only_wrapper_ad9767_0_0/pid_vco_pid_only_wrapper_ad9767_0_0.xci" Type="IP">
         <Instance HierarchyPath="ad9767_0"/>
@@ -303,6 +303,118 @@
       </File>
       <File Name="ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1.xci" Type="IP">
         <Instance HierarchyPath="dupplReal_1_to_2_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_xlslice_dds1_1/pid_vco_pid_only_wrapper_xlslice_dds1_1.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_mod_input_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_adder_substracter_0_1/pid_vco_pid_only_wrapper_adder_substracter_0_1.xci" Type="IP">
+        <Instance HierarchyPath="adder_substracter_mod_input_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_dds1_ampl_1/pid_vco_pid_only_wrapper_dds1_ampl_1.xci" Type="IP">
+        <Instance HierarchyPath="mod_input_ampl"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_dds1_nco_1/pid_vco_pid_only_wrapper_dds1_nco_1.xci" Type="IP">
+        <Instance HierarchyPath="mod_input_nco"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1.xci" Type="IP">
+        <Instance HierarchyPath="twoInMult_mod_input_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_xlslice_dds1_2/pid_vco_pid_only_wrapper_xlslice_dds1_2.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_mod_input_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_expanderReal_0_dds1_1/pid_vco_pid_only_wrapper_expanderReal_0_dds1_1.xci" Type="IP">
+        <Instance HierarchyPath="expanderReal_0_ki_pid1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0/pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0.xci" Type="IP">
+        <Instance HierarchyPath="expanderReal_0_ki_pid2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0/pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0.xci" Type="IP">
+        <Instance HierarchyPath="adder_substracter_mod_out_pid2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_xlslice_mod_input_0_0/pid_vco_pid_only_wrapper_xlslice_mod_input_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_mod_out_pid2_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0/pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0.xci" Type="IP">
+        <Instance HierarchyPath="twoInMult_mod_out_pid2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_xlslice_mod_input_1_0/pid_vco_pid_only_wrapper_xlslice_mod_input_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_mod_out_pid2_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_mod_input_ampl_0/pid_vco_pid_only_wrapper_mod_input_ampl_0.xci" Type="IP">
+        <Instance HierarchyPath="mod_out_pid2_ampl"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/pid_vco_pid_only_wrapper_mod_input_nco_0/pid_vco_pid_only_wrapper_mod_input_nco_0.xci" Type="IP">
+        <Instance HierarchyPath="mod_out_pid2_nco"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed Aug 23 12:06:13 2017
+| Date         : Fri Aug 25 14:38:16 2017
 | Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command      : report_utilization -file pid_vco_pid_only_wrapper_utilization_synth.rpt -pb pid_vco_pid_only_wrapper_utilization_synth.pb
 | Design       : pid_vco_pid_only_wrapper
@@ -173,50 +173,64 @@ Table of Contents
 9. Black Boxes
 --------------
 
-+----------------------------------------------------+------+
-|                      Ref Name                      | Used |
-+----------------------------------------------------+------+
-| pid_vco_pid_only_wrapper_xlslice_dds1_0            |    1 |
-| pid_vco_pid_only_wrapper_xlconstant_1_0            |    1 |
-| pid_vco_pid_only_wrapper_xlconstant_0_0            |    1 |
-| pid_vco_pid_only_wrapper_xbar_0                    |    1 |
-| pid_vco_pid_only_wrapper_twoInMult_dds1_range_0    |    1 |
-| pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0     |    1 |
-| pid_vco_pid_only_wrapper_tier2_xbar_2_0            |    1 |
-| pid_vco_pid_only_wrapper_tier2_xbar_1_0            |    1 |
-| pid_vco_pid_only_wrapper_tier2_xbar_0_0            |    1 |
-| pid_vco_pid_only_wrapper_switchComplex_0_0         |    1 |
-| pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0 |    1 |
-| pid_vco_pid_only_wrapper_processing_system7_0_0    |    1 |
-| pid_vco_pid_only_wrapper_proc_sys_reset_0_0        |    1 |
-| pid_vco_pid_only_wrapper_pid2_sign_0               |    1 |
-| pid_vco_pid_only_wrapper_pid2_setpoint_0           |    1 |
-| pid_vco_pid_only_wrapper_pid2_rst_int_0            |    1 |
-| pid_vco_pid_only_wrapper_pid2_kp_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid2_ki_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid2_kd_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid2_0                    |    1 |
-| pid_vco_pid_only_wrapper_pid1_sign_0               |    1 |
-| pid_vco_pid_only_wrapper_pid1_setpoint_0           |    1 |
-| pid_vco_pid_only_wrapper_pid1_rst_int_0            |    1 |
-| pid_vco_pid_only_wrapper_pid1_kp_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid1_ki_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid1_kd_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid1_0                    |    1 |
-| pid_vco_pid_only_wrapper_ltc2145_0_0               |    1 |
-| pid_vco_pid_only_wrapper_expanderReal_0_dds1_0     |    1 |
-| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1      |    1 |
-| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0      |    1 |
-| pid_vco_pid_only_wrapper_dds2_offset_0             |    1 |
-| pid_vco_pid_only_wrapper_dds1_range_0              |    1 |
-| pid_vco_pid_only_wrapper_dds1_offset_0             |    1 |
-| pid_vco_pid_only_wrapper_dds1_nco_0                |    1 |
-| pid_vco_pid_only_wrapper_dds1_f0_0                 |    1 |
-| pid_vco_pid_only_wrapper_dds1_ampl_0               |    1 |
-| pid_vco_pid_only_wrapper_auto_pc_0                 |    1 |
-| pid_vco_pid_only_wrapper_adc1_offset_0             |    1 |
-| pid_vco_pid_only_wrapper_ad9767_0_0                |    1 |
-+----------------------------------------------------+------+
++----------------------------------------------------------+------+
+|                         Ref Name                         | Used |
++----------------------------------------------------------+------+
+| pid_vco_pid_only_wrapper_xlslice_mod_input_1_0           |    1 |
+| pid_vco_pid_only_wrapper_xlslice_mod_input_0_0           |    1 |
+| pid_vco_pid_only_wrapper_xlslice_dds1_2                  |    1 |
+| pid_vco_pid_only_wrapper_xlslice_dds1_1                  |    1 |
+| pid_vco_pid_only_wrapper_xlslice_dds1_0                  |    1 |
+| pid_vco_pid_only_wrapper_xlconstant_1_0                  |    1 |
+| pid_vco_pid_only_wrapper_xlconstant_0_0                  |    1 |
+| pid_vco_pid_only_wrapper_xbar_0                          |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0         |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_dds1_range_0          |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1           |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0           |    1 |
+| pid_vco_pid_only_wrapper_tier2_xbar_2_0                  |    1 |
+| pid_vco_pid_only_wrapper_tier2_xbar_1_0                  |    1 |
+| pid_vco_pid_only_wrapper_tier2_xbar_0_0                  |    1 |
+| pid_vco_pid_only_wrapper_switchComplex_0_0               |    1 |
+| pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0       |    1 |
+| pid_vco_pid_only_wrapper_processing_system7_0_0          |    1 |
+| pid_vco_pid_only_wrapper_proc_sys_reset_0_0              |    1 |
+| pid_vco_pid_only_wrapper_pid2_sign_0                     |    1 |
+| pid_vco_pid_only_wrapper_pid2_setpoint_0                 |    1 |
+| pid_vco_pid_only_wrapper_pid2_rst_int_0                  |    1 |
+| pid_vco_pid_only_wrapper_pid2_kp_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid2_ki_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid2_kd_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid2_0                          |    1 |
+| pid_vco_pid_only_wrapper_pid1_sign_0                     |    1 |
+| pid_vco_pid_only_wrapper_pid1_setpoint_0                 |    1 |
+| pid_vco_pid_only_wrapper_pid1_rst_int_0                  |    1 |
+| pid_vco_pid_only_wrapper_pid1_kp_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid1_ki_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid1_kd_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid1_0                          |    1 |
+| pid_vco_pid_only_wrapper_mod_input_nco_0                 |    1 |
+| pid_vco_pid_only_wrapper_mod_input_ampl_0                |    1 |
+| pid_vco_pid_only_wrapper_ltc2145_0_0                     |    1 |
+| pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0        |    1 |
+| pid_vco_pid_only_wrapper_expanderReal_0_dds1_1           |    1 |
+| pid_vco_pid_only_wrapper_expanderReal_0_dds1_0           |    1 |
+| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1            |    1 |
+| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0            |    1 |
+| pid_vco_pid_only_wrapper_dds2_offset_0                   |    1 |
+| pid_vco_pid_only_wrapper_dds1_range_0                    |    1 |
+| pid_vco_pid_only_wrapper_dds1_offset_0                   |    1 |
+| pid_vco_pid_only_wrapper_dds1_nco_1                      |    1 |
+| pid_vco_pid_only_wrapper_dds1_nco_0                      |    1 |
+| pid_vco_pid_only_wrapper_dds1_f0_0                       |    1 |
+| pid_vco_pid_only_wrapper_dds1_ampl_1                     |    1 |
+| pid_vco_pid_only_wrapper_dds1_ampl_0                     |    1 |
+| pid_vco_pid_only_wrapper_auto_pc_0                       |    1 |
+| pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0 |    1 |
+| pid_vco_pid_only_wrapper_adder_substracter_0_1           |    1 |
+| pid_vco_pid_only_wrapper_adc1_offset_0                   |    1 |
+| pid_vco_pid_only_wrapper_ad9767_0_0                      |    1 |
++----------------------------------------------------------+------+
 
 
 10. Instantiated Netlists

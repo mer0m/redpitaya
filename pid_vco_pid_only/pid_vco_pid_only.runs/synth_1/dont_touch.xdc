@@ -121,6 +121,48 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_onl
 # IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1}]
 
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_dds1_1/pid_vco_pid_only_wrapper_xlslice_dds1_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_xlslice_dds1_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_xlslice_dds1_1}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_adder_substracter_0_1/pid_vco_pid_only_wrapper_adder_substracter_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_adder_substracter_0_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_adder_substracter_0_1}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_ampl_1/pid_vco_pid_only_wrapper_dds1_ampl_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_dds1_ampl_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_dds1_ampl_1}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/pid_vco_pid_only_wrapper_dds1_nco_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_dds1_nco_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_dds1_nco_1}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_dds1_2/pid_vco_pid_only_wrapper_xlslice_dds1_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_xlslice_dds1_2 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_xlslice_dds1_2}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_expanderReal_0_dds1_1/pid_vco_pid_only_wrapper_expanderReal_0_dds1_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_expanderReal_0_dds1_1 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_expanderReal_0_dds1_1}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0/pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0/pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_mod_input_0_0/pid_vco_pid_only_wrapper_xlslice_mod_input_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_xlslice_mod_input_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_xlslice_mod_input_0_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0/pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_mod_input_1_0/pid_vco_pid_only_wrapper_xlslice_mod_input_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_xlslice_mod_input_1_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_xlslice_mod_input_1_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_ampl_0/pid_vco_pid_only_wrapper_mod_input_ampl_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_mod_input_ampl_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_mod_input_ampl_0}]
+
+# IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/pid_vco_pid_only_wrapper_mod_input_nco_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_mod_input_nco_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_mod_input_nco_0}]
+
 # IP: bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_0_0/pid_vco_pid_only_wrapper_tier2_xbar_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pid_vco_pid_only_wrapper_tier2_xbar_0_0 || ORIG_REF_NAME==pid_vco_pid_only_wrapper_tier2_xbar_0_0}]
 

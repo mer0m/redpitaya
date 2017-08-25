@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Wed Aug 23 12:06:13 2017
-# Process ID: 14141
+# Start of session at: Fri Aug 25 14:38:16 2017
+# Process ID: 15089
 # Current directory: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1
 # Command line: vivado -log pid_vco_pid_only_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pid_vco_pid_only_wrapper.tcl -notrace
 # Log file: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/pid_vco_pid_only_wrapper.vdi
@@ -14,6 +14,8 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_ad9767_0_0/pid_vco_pid_only_wrapper_ad9767_0_0.dcp' for cell 'ad9767_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_adc1_offset_0/pid_vco_pid_only_wrapper_adc1_offset_0.dcp' for cell 'adc1_offset'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_adder_substracter_0_1/pid_vco_pid_only_wrapper_adder_substracter_0_1.dcp' for cell 'adder_substracter_mod_input_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0/pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0.dcp' for cell 'adder_substracter_mod_out_pid2'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_ampl_0/pid_vco_pid_only_wrapper_dds1_ampl_0.dcp' for cell 'dds1_ampl'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_f0_0/pid_vco_pid_only_wrapper_dds1_f0_0.dcp' for cell 'dds1_f0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_0/pid_vco_pid_only_wrapper_dds1_nco_0.dcp' for cell 'dds1_nco'
@@ -22,7 +24,13 @@ INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpi
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0.dcp' for cell 'dupplReal_1_to_2_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1/pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1.dcp' for cell 'dupplReal_1_to_2_1'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_expanderReal_0_dds1_0/pid_vco_pid_only_wrapper_expanderReal_0_dds1_0.dcp' for cell 'expanderReal_0_dds1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_expanderReal_0_dds1_1/pid_vco_pid_only_wrapper_expanderReal_0_dds1_1.dcp' for cell 'expanderReal_0_ki_pid1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0/pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0.dcp' for cell 'expanderReal_0_ki_pid2'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_ltc2145_0_0/pid_vco_pid_only_wrapper_ltc2145_0_0.dcp' for cell 'ltc2145_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_ampl_1/pid_vco_pid_only_wrapper_dds1_ampl_1.dcp' for cell 'mod_input_ampl'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/pid_vco_pid_only_wrapper_dds1_nco_1.dcp' for cell 'mod_input_nco'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_ampl_0/pid_vco_pid_only_wrapper_mod_input_ampl_0.dcp' for cell 'mod_out_pid2_ampl'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/pid_vco_pid_only_wrapper_mod_input_nco_0.dcp' for cell 'mod_out_pid2_nco'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_pid1_0/pid_vco_pid_only_wrapper_pid1_0.dcp' for cell 'pid1'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_pid1_kd_0/pid_vco_pid_only_wrapper_pid1_kd_0.dcp' for cell 'pid1_kd'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_pid1_ki_0/pid_vco_pid_only_wrapper_pid1_ki_0.dcp' for cell 'pid1_ki'
@@ -44,15 +52,21 @@ INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpi
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_switchComplex_0_0/pid_vco_pid_only_wrapper_switchComplex_0_0.dcp' for cell 'switchComplex_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0.dcp' for cell 'twoInMult_dds1_ampl'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0/pid_vco_pid_only_wrapper_twoInMult_dds1_range_0.dcp' for cell 'twoInMult_dds1_range'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1/pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1.dcp' for cell 'twoInMult_mod_input_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0/pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0.dcp' for cell 'twoInMult_mod_out_pid2'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlconstant_0_0/pid_vco_pid_only_wrapper_xlconstant_0_0.dcp' for cell 'xlconstant_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlconstant_1_0/pid_vco_pid_only_wrapper_xlconstant_1_0.dcp' for cell 'xlconstant_1'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_dds1_0/pid_vco_pid_only_wrapper_xlslice_dds1_0.dcp' for cell 'xlslice_dds1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_dds1_1/pid_vco_pid_only_wrapper_xlslice_dds1_1.dcp' for cell 'xlslice_mod_input_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_dds1_2/pid_vco_pid_only_wrapper_xlslice_dds1_2.dcp' for cell 'xlslice_mod_input_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_mod_input_0_0/pid_vco_pid_only_wrapper_xlslice_mod_input_0_0.dcp' for cell 'xlslice_mod_out_pid2_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xlslice_mod_input_1_0/pid_vco_pid_only_wrapper_xlslice_mod_input_1_0.dcp' for cell 'xlslice_mod_out_pid2_1'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_0_0/pid_vco_pid_only_wrapper_tier2_xbar_0_0.dcp' for cell 'axi_interconnect_0/tier2_xbar_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_1_0/pid_vco_pid_only_wrapper_tier2_xbar_1_0.dcp' for cell 'axi_interconnect_0/tier2_xbar_1'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_2_0/pid_vco_pid_only_wrapper_tier2_xbar_2_0.dcp' for cell 'axi_interconnect_0/tier2_xbar_2'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_xbar_0/pid_vco_pid_only_wrapper_xbar_0.dcp' for cell 'axi_interconnect_0/xbar'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_auto_pc_0/pid_vco_pid_only_wrapper_auto_pc_0.dcp' for cell 'axi_interconnect_0/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z010clg400-1
@@ -107,8 +121,22 @@ Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'redpitaya_adc_dac_clk_0/inst'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
 INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
-get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1779.441 ; gain = 431.508 ; free physical = 1035 ; free virtual = 12313
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1806.438 ; gain = 452.508 ; free physical = 1357 ; free virtual = 11880
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'redpitaya_adc_dac_clk_0/inst'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_ampl_1/add_const_ooc.xdc] for cell 'mod_input_ampl/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_ampl_1/add_const_ooc.xdc] for cell 'mod_input_ampl/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/nco_counter_ooc.xdc] for cell 'mod_input_nco/U0'
+WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/nco_counter_ooc.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/nco_counter_ooc.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/nco_counter_ooc.xdc] for cell 'mod_input_nco/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_ampl_0/add_const_ooc.xdc] for cell 'mod_out_pid2_ampl/U0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_ampl_0/add_const_ooc.xdc] for cell 'mod_out_pid2_ampl/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/nco_counter_ooc.xdc] for cell 'mod_out_pid2_nco/U0'
+WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/nco_counter_ooc.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/nco_counter_ooc.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/nco_counter_ooc.xdc] for cell 'mod_out_pid2_nco/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc]
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc]
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/constrs_1/imports/fpga_ip/ltc2145/ltc2145-redpy.xdc]
@@ -138,6 +166,10 @@ INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC const
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_proc_sys_reset_0_0/pid_vco_pid_only_wrapper_proc_sys_reset_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_processing_system7_0_0/pid_vco_pid_only_wrapper_processing_system7_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0/pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_ampl_1/pid_vco_pid_only_wrapper_dds1_ampl_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_dds1_nco_1/pid_vco_pid_only_wrapper_dds1_nco_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_ampl_0/pid_vco_pid_only_wrapper_mod_input_ampl_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_mod_input_nco_0/pid_vco_pid_only_wrapper_mod_input_nco_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_0_0/pid_vco_pid_only_wrapper_tier2_xbar_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_1_0/pid_vco_pid_only_wrapper_tier2_xbar_1_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ip/pid_vco_pid_only_wrapper_tier2_xbar_2_0/pid_vco_pid_only_wrapper_tier2_xbar_2_0.dcp'
@@ -146,7 +178,7 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1779.441 ; gain = 769.754 ; free physical = 1054 ; free virtual = 12313
+link_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1806.438 ; gain = 796.754 ; free physical = 1378 ; free virtual = 11880
 INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
@@ -158,46 +190,46 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.78 . Memory (MB): peak = 1811.457 ; gain = 32.016 ; free physical = 1048 ; free virtual = 12306
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.80 . Memory (MB): peak = 1838.453 ; gain = 32.016 ; free physical = 1364 ; free virtual = 11866
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: e3d55a6e
+Implement Debug Cores | Checksum: 161adb1e0
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 26 inverter(s) to 26 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 106ba8eee
+Phase 1 Retarget | Checksum: 1d263e3b6
 
-Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1821.457 ; gain = 0.000 ; free physical = 1045 ; free virtual = 12305
+Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.88 . Memory (MB): peak = 1846.453 ; gain = 0.000 ; free physical = 1362 ; free virtual = 11864
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-10] Eliminated 609 cells.
-Phase 2 Constant propagation | Checksum: 109510404
+INFO: [Opt 31-10] Eliminated 686 cells.
+Phase 2 Constant propagation | Checksum: 1affbf981
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1821.457 ; gain = 0.000 ; free physical = 1045 ; free virtual = 12304
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1846.453 ; gain = 0.000 ; free physical = 1361 ; free virtual = 11863
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 1025 unconnected nets.
-INFO: [Opt 31-11] Eliminated 728 unconnected cells.
-Phase 3 Sweep | Checksum: 23593c69b
+INFO: [Opt 31-12] Eliminated 1093 unconnected nets.
+INFO: [Opt 31-11] Eliminated 711 unconnected cells.
+Phase 3 Sweep | Checksum: 20f444687
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1821.457 ; gain = 0.000 ; free physical = 1046 ; free virtual = 12304
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1846.453 ; gain = 0.000 ; free physical = 1361 ; free virtual = 11863
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: 24b2f3546
+Phase 4 BUFG optimization | Checksum: 1c8e5df45
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1821.457 ; gain = 0.000 ; free physical = 1045 ; free virtual = 12304
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1846.453 ; gain = 0.000 ; free physical = 1361 ; free virtual = 11863
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1821.457 ; gain = 0.000 ; free physical = 1045 ; free virtual = 12304
-Ending Logic Optimization Task | Checksum: 24b2f3546
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1846.453 ; gain = 0.000 ; free physical = 1361 ; free virtual = 11863
+Ending Logic Optimization Task | Checksum: 1c8e5df45
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1821.457 ; gain = 0.000 ; free physical = 1045 ; free virtual = 12304
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1846.453 ; gain = 0.000 ; free physical = 1361 ; free virtual = 11863
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -210,24 +242,24 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 4
-Ending PowerOpt Patch Enables Task | Checksum: 261a6ceda
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 6 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 6 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 22e9ea9c2
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 984 ; free virtual = 12242
-Ending Power Optimization Task | Checksum: 261a6ceda
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1297 ; free virtual = 11800
+Ending Power Optimization Task | Checksum: 22e9ea9c2
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2004.520 ; gain = 183.062 ; free physical = 984 ; free virtual = 12242
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2034.484 ; gain = 188.031 ; free physical = 1297 ; free virtual = 11800
 INFO: [Common 17-83] Releasing license: Implementation
-97 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+115 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2004.520 ; gain = 225.078 ; free physical = 984 ; free virtual = 12242
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2034.484 ; gain = 228.047 ; free physical = 1297 ; free virtual = 11800
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12242
+Write XDEF Complete: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1295 ; free virtual = 11799
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/pid_vco_pid_only_wrapper_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/pid_vco_pid_only_wrapper_drc_opted.rpt.
@@ -249,79 +281,79 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 982 ; free virtual = 12242
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1294 ; free virtual = 11798
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 982 ; free virtual = 12242
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1294 ; free virtual = 11798
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 551ca00e
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: eea54f83
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 982 ; free virtual = 12243
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1294 ; free virtual = 11798
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 5d6df9c0
+Phase 1.2 Build Placer Netlist Model | Checksum: fa4e3d02
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 982 ; free virtual = 12242
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1292 ; free virtual = 11796
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 5d6df9c0
+Phase 1.3 Constrain Clocks/Macros | Checksum: fa4e3d02
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 982 ; free virtual = 12242
-Phase 1 Placer Initialization | Checksum: 5d6df9c0
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1292 ; free virtual = 11796
+Phase 1 Placer Initialization | Checksum: fa4e3d02
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 982 ; free virtual = 12242
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1292 ; free virtual = 11796
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 140c71b26
+Phase 2 Global Placement | Checksum: 120adc12e
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 140c71b26
+Phase 3.1 Commit Multi Column Macros | Checksum: 120adc12e
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1b9adb096
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: c593230d
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 143b348ab
+Phase 3.3 Area Swap Optimization | Checksum: 13efa4165
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 143b348ab
+Phase 3.4 Pipeline Register Optimization | Checksum: 13efa4165
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1222c7aae
+Phase 3.5 Timing Path Optimizer | Checksum: 188f3208c
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12242
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 1170d2edc
+Phase 3.6 Small Shape Detail Placement | Checksum: baf4ad66
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 980 ; free virtual = 12242
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11796
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 17c32861e
+Phase 3.7 Re-assign LUT pins | Checksum: cc16acb1
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 980 ; free virtual = 12242
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1292 ; free virtual = 11796
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 17c32861e
+Phase 3.8 Pipeline Register Optimization | Checksum: cc16acb1
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 980 ; free virtual = 12242
-Phase 3 Detail Placement | Checksum: 17c32861e
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
+Phase 3 Detail Placement | Checksum: cc16acb1
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 980 ; free virtual = 12242
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1291 ; free virtual = 11795
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -329,47 +361,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.504. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 156ecfbf1
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.501. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 105566e0d
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
-Phase 4.1 Post Commit Optimization | Checksum: 156ecfbf1
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
+Phase 4.1 Post Commit Optimization | Checksum: 105566e0d
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 156ecfbf1
+Phase 4.2 Post Placement Cleanup | Checksum: 105566e0d
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 156ecfbf1
+Phase 4.3 Placer Reporting | Checksum: 105566e0d
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 17647cf16
+Phase 4.4 Final Placement Cleanup | Checksum: f24f8230
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17647cf16
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f24f8230
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
-Ending Placer Task | Checksum: 80fc55ad
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
+Ending Placer Task | Checksum: ebdd2c3a
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
 INFO: [Common 17-83] Releasing license: Implementation
-115 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+133 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 981 ; free virtual = 12241
+place_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:24 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1290 ; free virtual = 11795
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 974 ; free virtual = 12241
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1282 ; free virtual = 11795
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/pid_vco_pid_only_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 976 ; free virtual = 12239
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 976 ; free virtual = 12239
-report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 975 ; free virtual = 12238
+report_io: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1282 ; free virtual = 11789
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1282 ; free virtual = 11789
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1282 ; free virtual = 11789
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -381,141 +413,119 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: dab9d66 ConstDB: 0 ShapeSum: 7350b847 RouteDB: 0
+Checksum: PlaceDB: 5a4d8717 ConstDB: 0 ShapeSum: 918fa523 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: cc4b2340
+Phase 1 Build RT Design | Checksum: 13f8ef866
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 921 ; free virtual = 12184
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1237 ; free virtual = 11744
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: cc4b2340
+Phase 2.1 Create Timer | Checksum: 13f8ef866
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 921 ; free virtual = 12183
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1237 ; free virtual = 11744
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: cc4b2340
+Phase 2.2 Fix Topology Constraints | Checksum: 13f8ef866
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 914 ; free virtual = 12177
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1232 ; free virtual = 11739
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: cc4b2340
+Phase 2.3 Pre Route Cleanup | Checksum: 13f8ef866
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 914 ; free virtual = 12177
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1232 ; free virtual = 11739
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1745d427e
+Phase 2.4 Update Timing | Checksum: 1de7d3e94
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 903 ; free virtual = 12165
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.454  | TNS=0.000  | WHS=-0.871 | THS=-296.102|
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1220 ; free virtual = 11727
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.478  | TNS=0.000  | WHS=-0.843 | THS=-354.645|
 
-Phase 2 Router Initialization | Checksum: 15c3e8ce7
+Phase 2 Router Initialization | Checksum: 1e9df9bed
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 895 ; free virtual = 12158
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1210 ; free virtual = 11717
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1aef08983
+Phase 3 Initial Routing | Checksum: 117b4ad96
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 895 ; free virtual = 12157
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1206 ; free virtual = 11714
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 425
+ Number of Nodes with overlaps = 481
+ Number of Nodes with overlaps = 36
  Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 145c2fe7f
+Phase 4.1.1 Update Timing | Checksum: 20758bc7e
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.032 | TNS=-0.032 | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.133  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
+Phase 4.1 Global Iteration 0 | Checksum: 17a9b4209
 
-Phase 4.1.2 GlobIterForTiming
-
-Phase 4.1.2.1 Update Timing
-Phase 4.1.2.1 Update Timing | Checksum: 22fabd4da
-
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-
-Phase 4.1.2.2 Fast Budgeting
-Phase 4.1.2.2 Fast Budgeting | Checksum: 1de71862e
-
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-Phase 4.1.2 GlobIterForTiming | Checksum: 1a84fb11d
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:21 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-Phase 4.1 Global Iteration 0 | Checksum: 1a84fb11d
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:21 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 15
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 1ca5735b2
+Phase 4.2.1 Update Timing | Checksum: d8a655c0
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.054  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.097  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1a59b81d7
+Phase 4.2 Global Iteration 1 | Checksum: d8a655c0
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
-Phase 4 Rip-up And Reroute | Checksum: 1a59b81d7
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
+Phase 4 Rip-up And Reroute | Checksum: d8a655c0
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: d8a655c0
 
-Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: ca59d177
-
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.169  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 5.1 Delay CleanUp | Checksum: ca59d177
-
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: ca59d177
+Phase 5.2 Clock Skew Optimization | Checksum: d8a655c0
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
-Phase 5 Delay and Skew Optimization | Checksum: ca59d177
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
+Phase 5 Delay and Skew Optimization | Checksum: d8a655c0
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 11a808821
+Phase 6.1.1 Update Timing | Checksum: 1310e2b45
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.169  | TNS=0.000  | WHS=0.022  | THS=0.000  |
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.246  | TNS=0.000  | WHS=0.038  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: c48dfe67
+Phase 6.1 Hold Fix Iter | Checksum: 1211bbab2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
-Phase 6 Post Hold Fix | Checksum: c48dfe67
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
+Phase 6 Post Hold Fix | Checksum: 1211bbab2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:27 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1193 ; free virtual = 11700
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.9344 %
-  Global Horizontal Routing Utilization  = 2.67394 %
+  Global Vertical Routing Utilization    = 2.93201 %
+  Global Horizontal Routing Utilization  = 4.04963 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -524,43 +534,43 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 1060e1a1f
+Phase 7 Route finalize | Checksum: 1734b50da
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1192 ; free virtual = 11700
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1060e1a1f
+Phase 8 Verifying routed nets | Checksum: 1734b50da
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12158
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1192 ; free virtual = 11700
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 112bb27db
+Phase 9 Depositing Routes | Checksum: 13b14caf0
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1192 ; free virtual = 11700
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.169  | TNS=0.000  | WHS=0.022  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.246  | TNS=0.000  | WHS=0.038  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 112bb27db
+Phase 10 Post Router Timing | Checksum: 13b14caf0
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:28 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1192 ; free virtual = 11700
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:28 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1192 ; free virtual = 11700
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-130 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+147 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:26 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 894 ; free virtual = 12157
+route_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:32 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1192 ; free virtual = 11700
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2004.520 ; gain = 0.000 ; free physical = 886 ; free virtual = 12157
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2034.484 ; gain = 0.000 ; free physical = 1182 ; free virtual = 11700
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/pid_vco_pid_only_wrapper_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/pid_vco_pid_only_wrapper_drc_routed.rpt.
@@ -575,7 +585,7 @@ Command: report_power -file pid_vco_pid_only_wrapper_power_routed.rpt -pb pid_vc
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-140 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+157 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 Command: write_bitstream -force -no_partial_bitfile pid_vco_pid_only_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
@@ -594,6 +604,8 @@ WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP pid2/U
 WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP pid2/U0/red_pitaya_pidv3Logic/I_sum_s output pid2/U0/red_pitaya_pidv3Logic/I_sum_s/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP twoInMult_dds1_ampl/U0/data_s_reg output twoInMult_dds1_ampl/U0/data_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP twoInMult_dds1_range/U0/data_s_reg output twoInMult_dds1_range/U0/data_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP twoInMult_mod_input_0/U0/data_s_reg output twoInMult_mod_input_0/U0/data_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP twoInMult_mod_out_pid2/U0/data_s_reg output twoInMult_mod_out_pid2/U0/data_s_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid1/U0/red_pitaya_pidv3Logic/I_sum_s multiplier stage pid1/U0/red_pitaya_pidv3Logic/I_sum_s/PATTERNBDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid1/U0/red_pitaya_pidv3Logic/I_sum_s multiplier stage pid1/U0/red_pitaya_pidv3Logic/I_sum_s/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid1/U0/red_pitaya_pidv3Logic/I_sum_s multiplier stage pid1/U0/red_pitaya_pidv3Logic/I_sum_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
@@ -602,7 +614,7 @@ WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid2/U
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid2/U0/red_pitaya_pidv3Logic/I_sum_s multiplier stage pid2/U0/red_pitaya_pidv3Logic/I_sum_s/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid2/U0/red_pitaya_pidv3Logic/I_sum_s multiplier stage pid2/U0/red_pitaya_pidv3Logic/I_sum_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP pid2/U0/red_pitaya_pidv3Logic/P_temp_s multiplier stage pid2/U0/red_pitaya_pidv3Logic/P_temp_s/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 20 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Loading data files...
 Loading site data...
@@ -613,10 +625,9 @@ Creating bitstream...
 Writing bitstream ./pid_vco_pid_only_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Aug 23 12:08:33 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-148 Infos, 21 Warnings, 1 Critical Warnings and 0 Errors encountered.
+164 Infos, 25 Warnings, 3 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2294.488 ; gain = 280.902 ; free physical = 471 ; free virtual = 11798
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2322.430 ; gain = 281.902 ; free physical = 832 ; free virtual = 11349
 INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file pid_vco_pid_only_wrapper.hwdef
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 12:08:34 2017...
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 25 14:40:51 2017...

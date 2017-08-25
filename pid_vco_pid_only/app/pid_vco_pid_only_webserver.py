@@ -227,6 +227,30 @@ class MyApp(App):
 		self.hbox_pid2_setpoint.append(self.sb_pid2_setpoint)
 		self.w.append(self.hbox_pid2_setpoint)
 
+		self.hbox_mod_input_ampl = gui.HBox(margin="10px")
+		self.lb_mod_input_ampl = gui.Label("/dev/mod_input_ampl", width="20%", margin="10px")
+		self.sd_mod_input_ampl = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
+		self.sd_mod_input_ampl.set_oninput_listener(self.sd_mod_input_ampl_changed)
+		self.sb_mod_input_ampl = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sb_mod_input_ampl.set_on_change_listener(self.sb_mod_input_ampl_changed)
+		self.sd_mod_input_ampl_changed(self.sd_mod_input_ampl, self.sd_mod_input_ampl.get_value())
+		self.hbox_mod_input_ampl.append(self.lb_mod_input_ampl)
+		self.hbox_mod_input_ampl.append(self.sd_mod_input_ampl)
+		self.hbox_mod_input_ampl.append(self.sb_mod_input_ampl)
+		self.w.append(self.hbox_mod_input_ampl)
+
+		self.hbox_mod_out_pid2_ampl = gui.HBox(margin="10px")
+		self.lb_mod_out_pid2_ampl = gui.Label("/dev/mod_out_pid2_ampl", width="20%", margin="10px")
+		self.sd_mod_out_pid2_ampl = gui.Slider(0, -8192, 8191, 1, width="60%", margin="10px")
+		self.sd_mod_out_pid2_ampl.set_oninput_listener(self.sd_mod_out_pid2_ampl_changed)
+		self.sb_mod_out_pid2_ampl = gui.SpinBox(0, -8192, 8191, 1, width="20%", margin="10px")
+		self.sb_mod_out_pid2_ampl.set_on_change_listener(self.sb_mod_out_pid2_ampl_changed)
+		self.sd_mod_out_pid2_ampl_changed(self.sd_mod_out_pid2_ampl, self.sd_mod_out_pid2_ampl.get_value())
+		self.hbox_mod_out_pid2_ampl.append(self.lb_mod_out_pid2_ampl)
+		self.hbox_mod_out_pid2_ampl.append(self.sd_mod_out_pid2_ampl)
+		self.hbox_mod_out_pid2_ampl.append(self.sb_mod_out_pid2_ampl)
+		self.w.append(self.hbox_mod_out_pid2_ampl)
+
 		self.hbox_dds1_nco = gui.HBox(margin="10px")
 		self.lb_dds1_nco = gui.Label("/dev/dds1_nco", width="20%", margin="10px")
 		self.sd_dds1_nco = gui.Slider(0, 0, 62500000, 1, width="50%", margin="10px")
@@ -244,6 +268,42 @@ class MyApp(App):
 		self.hbox_dds1_nco.append(self.cb_pinc_dds1_nco)
 		self.hbox_dds1_nco.append(self.cb_poff_dds1_nco)
 		self.w.append(self.hbox_dds1_nco)
+
+		self.hbox_mod_input_nco = gui.HBox(margin="10px")
+		self.lb_mod_input_nco = gui.Label("/dev/mod_input_nco", width="20%", margin="10px")
+		self.sd_mod_input_nco = gui.Slider(0, 0, 62500000, 1, width="50%", margin="10px")
+		self.sd_mod_input_nco.set_oninput_listener(self.sd_mod_input_nco_changed)
+		self.sb_mod_input_nco = gui.SpinBox(0, 0, 62500000, 1, width="20%", margin="10px")
+		self.sb_mod_input_nco.set_on_change_listener(self.sb_mod_input_nco_changed)
+		self.cb_pinc_mod_input_nco = gui.CheckBoxLabel("pinc", True, width="5%", margin="10px")
+		self.cb_pinc_mod_input_nco.set_on_change_listener(self.cb_mod_input_nco_changed)
+		self.cb_poff_mod_input_nco = gui.CheckBoxLabel("poff", True, width="5%", margin="10px")
+		self.cb_poff_mod_input_nco.set_on_change_listener(self.cb_mod_input_nco_changed)
+		self.sd_mod_input_nco_changed(self.sd_mod_input_nco, self.sd_mod_input_nco.get_value())
+		self.hbox_mod_input_nco.append(self.lb_mod_input_nco)
+		self.hbox_mod_input_nco.append(self.sd_mod_input_nco)
+		self.hbox_mod_input_nco.append(self.sb_mod_input_nco)
+		self.hbox_mod_input_nco.append(self.cb_pinc_mod_input_nco)
+		self.hbox_mod_input_nco.append(self.cb_poff_mod_input_nco)
+		self.w.append(self.hbox_mod_input_nco)
+
+		self.hbox_mod_out_pid2_nco = gui.HBox(margin="10px")
+		self.lb_mod_out_pid2_nco = gui.Label("/dev/mod_out_pid2_nco", width="20%", margin="10px")
+		self.sd_mod_out_pid2_nco = gui.Slider(0, 0, 62500000, 1, width="50%", margin="10px")
+		self.sd_mod_out_pid2_nco.set_oninput_listener(self.sd_mod_out_pid2_nco_changed)
+		self.sb_mod_out_pid2_nco = gui.SpinBox(0, 0, 62500000, 1, width="20%", margin="10px")
+		self.sb_mod_out_pid2_nco.set_on_change_listener(self.sb_mod_out_pid2_nco_changed)
+		self.cb_pinc_mod_out_pid2_nco = gui.CheckBoxLabel("pinc", True, width="5%", margin="10px")
+		self.cb_pinc_mod_out_pid2_nco.set_on_change_listener(self.cb_mod_out_pid2_nco_changed)
+		self.cb_poff_mod_out_pid2_nco = gui.CheckBoxLabel("poff", True, width="5%", margin="10px")
+		self.cb_poff_mod_out_pid2_nco.set_on_change_listener(self.cb_mod_out_pid2_nco_changed)
+		self.sd_mod_out_pid2_nco_changed(self.sd_mod_out_pid2_nco, self.sd_mod_out_pid2_nco.get_value())
+		self.hbox_mod_out_pid2_nco.append(self.lb_mod_out_pid2_nco)
+		self.hbox_mod_out_pid2_nco.append(self.sd_mod_out_pid2_nco)
+		self.hbox_mod_out_pid2_nco.append(self.sb_mod_out_pid2_nco)
+		self.hbox_mod_out_pid2_nco.append(self.cb_pinc_mod_out_pid2_nco)
+		self.hbox_mod_out_pid2_nco.append(self.cb_poff_mod_out_pid2_nco)
+		self.w.append(self.hbox_mod_out_pid2_nco)
 
 		self.hbox_switchComplex_O = gui.HBox(margin="10px")
 		self.cb_switchComplex_O = gui.CheckBoxLabel("switchComplex_O", True, width="5%", margin="10px")
@@ -433,6 +493,26 @@ class MyApp(App):
 		liboscimp_fpga.add_const_set_offset("/dev/pid2_setpoint", int(value))
 		self.sd_pid2_setpoint.set_value(value)
 
+	def sd_mod_input_ampl_changed(self, widget, value):
+		print("/dev/mod_input_ampl", int(value))
+		liboscimp_fpga.add_const_set_offset("/dev/mod_input_ampl", int(value))
+		self.sb_mod_input_ampl.set_value(value)
+
+	def sb_mod_input_ampl_changed(self, widget, value):
+		print("/dev/mod_input_ampl", int(value))
+		liboscimp_fpga.add_const_set_offset("/dev/mod_input_ampl", int(value))
+		self.sd_mod_input_ampl.set_value(value)
+
+	def sd_mod_out_pid2_ampl_changed(self, widget, value):
+		print("/dev/mod_out_pid2_ampl", int(value))
+		liboscimp_fpga.add_const_set_offset("/dev/mod_out_pid2_ampl", int(value))
+		self.sb_mod_out_pid2_ampl.set_value(value)
+
+	def sb_mod_out_pid2_ampl_changed(self, widget, value):
+		print("/dev/mod_out_pid2_ampl", int(value))
+		liboscimp_fpga.add_const_set_offset("/dev/mod_out_pid2_ampl", int(value))
+		self.sd_mod_out_pid2_ampl.set_value(value)
+
 	def sd_dds1_nco_changed(self, widget, value):
 		print("/dev/dds1_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
 		liboscimp_fpga.nco_counter_send_conf("/dev/dds1_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
@@ -446,6 +526,34 @@ class MyApp(App):
 	def cb_dds1_nco_changed(self, widget, value):
 		print("/dev/dds1_nco", 125000000, int(self.sb_dds1_nco.get_value()), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
 		liboscimp_fpga.nco_counter_send_conf("/dev/dds1_nco", 125000000, int(self.sb_dds1_nco.get_value()), 32, 0, int(self.cb_pinc_dds1_nco.get_value()), int(self.cb_poff_dds1_nco.get_value()))
+
+	def sd_mod_input_nco_changed(self, widget, value):
+		print("/dev/mod_input_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_input_nco.get_value()), int(self.cb_poff_mod_input_nco.get_value()))
+		liboscimp_fpga.nco_counter_send_conf("/dev/mod_input_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_input_nco.get_value()), int(self.cb_poff_mod_input_nco.get_value()))
+		self.sb_mod_input_nco.set_value(value)
+
+	def sb_mod_input_nco_changed(self, widget, value):
+		print("/dev/mod_input_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_input_nco.get_value()), int(self.cb_poff_mod_input_nco.get_value()))
+		liboscimp_fpga.nco_counter_send_conf("/dev/mod_input_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_input_nco.get_value()), int(self.cb_poff_mod_input_nco.get_value()))
+		self.sd_mod_input_nco.set_value(value)
+
+	def cb_mod_input_nco_changed(self, widget, value):
+		print("/dev/mod_input_nco", 125000000, int(self.sb_mod_input_nco.get_value()), 32, 0, int(self.cb_pinc_mod_input_nco.get_value()), int(self.cb_poff_mod_input_nco.get_value()))
+		liboscimp_fpga.nco_counter_send_conf("/dev/mod_input_nco", 125000000, int(self.sb_mod_input_nco.get_value()), 32, 0, int(self.cb_pinc_mod_input_nco.get_value()), int(self.cb_poff_mod_input_nco.get_value()))
+
+	def sd_mod_out_pid2_nco_changed(self, widget, value):
+		print("/dev/mod_out_pid2_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_out_pid2_nco.get_value()), int(self.cb_poff_mod_out_pid2_nco.get_value()))
+		liboscimp_fpga.nco_counter_send_conf("/dev/mod_out_pid2_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_out_pid2_nco.get_value()), int(self.cb_poff_mod_out_pid2_nco.get_value()))
+		self.sb_mod_out_pid2_nco.set_value(value)
+
+	def sb_mod_out_pid2_nco_changed(self, widget, value):
+		print("/dev/mod_out_pid2_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_out_pid2_nco.get_value()), int(self.cb_poff_mod_out_pid2_nco.get_value()))
+		liboscimp_fpga.nco_counter_send_conf("/dev/mod_out_pid2_nco", 125000000, int(value), 32, 0, int(self.cb_pinc_mod_out_pid2_nco.get_value()), int(self.cb_poff_mod_out_pid2_nco.get_value()))
+		self.sd_mod_out_pid2_nco.set_value(value)
+
+	def cb_mod_out_pid2_nco_changed(self, widget, value):
+		print("/dev/mod_out_pid2_nco", 125000000, int(self.sb_mod_out_pid2_nco.get_value()), 32, 0, int(self.cb_pinc_mod_out_pid2_nco.get_value()), int(self.cb_poff_mod_out_pid2_nco.get_value()))
+		liboscimp_fpga.nco_counter_send_conf("/dev/mod_out_pid2_nco", 125000000, int(self.sb_mod_out_pid2_nco.get_value()), 32, 0, int(self.cb_pinc_mod_out_pid2_nco.get_value()), int(self.cb_poff_mod_out_pid2_nco.get_value()))
 
 	def cb_switchComplex_O_changed(self, widget, value):
 		print("/dev/switchComplex_O", int(self.cb_switchComplex_O.get_value()))

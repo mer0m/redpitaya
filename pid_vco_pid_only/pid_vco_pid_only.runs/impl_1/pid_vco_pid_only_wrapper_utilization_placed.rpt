@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed Aug 23 12:07:30 2017
+| Date         : Fri Aug 25 14:39:38 2017
 | Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command      : report_utilization -file pid_vco_pid_only_wrapper_utilization_placed.rpt -pb pid_vco_pid_only_wrapper_utilization_placed.pb
 | Design       : pid_vco_pid_only_wrapper
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 | 1984 |     0 |     17600 | 11.27 |
-|   LUT as Logic             | 1897 |     0 |     17600 | 10.78 |
-|   LUT as Memory            |   87 |     0 |      6000 |  1.45 |
+| Slice LUTs                 | 2475 |     0 |     17600 | 14.06 |
+|   LUT as Logic             | 2340 |     0 |     17600 | 13.30 |
+|   LUT as Memory            |  135 |     0 |      6000 |  2.25 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |   87 |     0 |           |       |
-| Slice Registers            | 2488 |     0 |     35200 |  7.07 |
-|   Register as Flip Flop    | 2488 |     0 |     35200 |  7.07 |
+|     LUT as Shift Register  |  135 |     0 |           |       |
+| Slice Registers            | 3196 |     0 |     35200 |  9.08 |
+|   Register as Flip Flop    | 3196 |     0 |     35200 |  9.08 |
 |   Register as Latch        |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                   |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                   |    0 |     0 |      4400 |  0.00 |
@@ -57,9 +57,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 451   |          Yes |           - |        Reset |
-| 112   |          Yes |         Set |            - |
-| 1939  |          Yes |       Reset |            - |
+| 507   |          Yes |           - |        Reset |
+| 154   |          Yes |         Set |            - |
+| 2549  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -69,24 +69,24 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |  786 |     0 |      4400 | 17.86 |
-|   SLICEL                                  |  508 |     0 |           |       |
-|   SLICEM                                  |  278 |     0 |           |       |
-| LUT as Logic                              | 1897 |     0 |     17600 | 10.78 |
+| Slice                                     |  951 |     0 |      4400 | 21.61 |
+|   SLICEL                                  |  598 |     0 |           |       |
+|   SLICEM                                  |  353 |     0 |           |       |
+| LUT as Logic                              | 2340 |     0 |     17600 | 13.30 |
 |   using O5 output only                    |    1 |       |           |       |
-|   using O6 output only                    | 1423 |       |           |       |
-|   using O5 and O6                         |  473 |       |           |       |
-| LUT as Memory                             |   87 |     0 |      6000 |  1.45 |
+|   using O6 output only                    | 1800 |       |           |       |
+|   using O5 and O6                         |  539 |       |           |       |
+| LUT as Memory                             |  135 |     0 |      6000 |  2.25 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
-|   LUT as Shift Register                   |   87 |     0 |           |       |
+|   LUT as Shift Register                   |  135 |     0 |           |       |
 |     using O5 output only                  |    1 |       |           |       |
-|     using O6 output only                  |   62 |       |           |       |
-|     using O5 and O6                       |   24 |       |           |       |
-| LUT Flip Flop Pairs                       | 1016 |     0 |     17600 |  5.77 |
-|   fully used LUT-FF pairs                 |  233 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |  730 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  716 |       |           |       |
-| Unique Control Sets                       |   94 |       |           |       |
+|     using O6 output only                  |   70 |       |           |       |
+|     using O5 and O6                       |   64 |       |           |       |
+| LUT Flip Flop Pairs                       | 1320 |     0 |     17600 |  7.50 |
+|   fully used LUT-FF pairs                 |  283 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |  978 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  944 |       |           |       |
+| Unique Control Sets                       |  118 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
 
@@ -97,9 +97,9 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    2 |     0 |        60 |  3.33 |
-|   RAMB36/FIFO*    |    2 |     0 |        60 |  3.33 |
-|     RAMB36E1 only |    2 |       |           |       |
+| Block RAM Tile    |    6 |     0 |        60 | 10.00 |
+|   RAMB36/FIFO*    |    6 |     0 |        60 | 10.00 |
+|     RAMB36E1 only |    6 |       |           |       |
 |   RAMB18          |    0 |     0 |       120 |  0.00 |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
@@ -111,8 +111,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    6 |     0 |        80 |  7.50 |
-|   DSP48E1 only |    6 |       |           |       |
+| DSPs           |    8 |     0 |        80 | 10.00 |
+|   DSP48E1 only |    8 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -183,25 +183,25 @@ Table of Contents
 +-------------+------+----------------------+
 |   Ref Name  | Used |  Functional Category |
 +-------------+------+----------------------+
-| FDRE        | 1939 |         Flop & Latch |
-| LUT3        |  596 |                  LUT |
-| LUT6        |  572 |                  LUT |
-| FDCE        |  451 |         Flop & Latch |
-| LUT2        |  412 |                  LUT |
-| LUT5        |  395 |                  LUT |
-| LUT4        |  332 |                  LUT |
+| FDRE        | 2549 |         Flop & Latch |
+| LUT2        |  653 |                  LUT |
+| LUT6        |  634 |                  LUT |
+| LUT3        |  590 |                  LUT |
+| FDCE        |  507 |         Flop & Latch |
+| LUT5        |  480 |                  LUT |
+| LUT4        |  453 |                  LUT |
+| FDSE        |  154 |         Flop & Latch |
+| SRL16E      |  152 |   Distributed Memory |
 | BIBUF       |  130 |                   IO |
-| FDSE        |  112 |         Flop & Latch |
-| CARRY4      |   83 |           CarryLogic |
-| SRL16E      |   64 |   Distributed Memory |
-| LUT1        |   63 |                  LUT |
+| CARRY4      |  129 |           CarryLogic |
+| LUT1        |   69 |                  LUT |
 | SRLC32E     |   47 |   Distributed Memory |
 | OBUF        |   19 |                   IO |
 | ODDR        |   18 |                   IO |
 | IBUF        |   14 |                   IO |
-| DSP48E1     |    6 |     Block Arithmetic |
+| DSP48E1     |    8 |     Block Arithmetic |
+| RAMB36E1    |    6 |         Block Memory |
 | BUFG        |    6 |                Clock |
-| RAMB36E1    |    2 |         Block Memory |
 | ZHOLD_DELAY |    1 |               Others |
 | PS7         |    1 | Specialized Resource |
 | PLLE2_ADV   |    1 |                Clock |
@@ -220,48 +220,62 @@ Table of Contents
 10. Instantiated Netlists
 -------------------------
 
-+----------------------------------------------------+------+
-|                      Ref Name                      | Used |
-+----------------------------------------------------+------+
-| pid_vco_pid_only_wrapper_xlslice_dds1_0            |    1 |
-| pid_vco_pid_only_wrapper_xlconstant_0_0            |    1 |
-| pid_vco_pid_only_wrapper_xbar_0                    |    1 |
-| pid_vco_pid_only_wrapper_twoInMult_dds1_range_0    |    1 |
-| pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0     |    1 |
-| pid_vco_pid_only_wrapper_tier2_xbar_2_0            |    1 |
-| pid_vco_pid_only_wrapper_tier2_xbar_1_0            |    1 |
-| pid_vco_pid_only_wrapper_tier2_xbar_0_0            |    1 |
-| pid_vco_pid_only_wrapper_switchComplex_0_0         |    1 |
-| pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0 |    1 |
-| pid_vco_pid_only_wrapper_processing_system7_0_0    |    1 |
-| pid_vco_pid_only_wrapper_proc_sys_reset_0_0        |    1 |
-| pid_vco_pid_only_wrapper_pid2_sign_0               |    1 |
-| pid_vco_pid_only_wrapper_pid2_setpoint_0           |    1 |
-| pid_vco_pid_only_wrapper_pid2_rst_int_0            |    1 |
-| pid_vco_pid_only_wrapper_pid2_kp_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid2_ki_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid2_kd_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid2_0                    |    1 |
-| pid_vco_pid_only_wrapper_pid1_sign_0               |    1 |
-| pid_vco_pid_only_wrapper_pid1_setpoint_0           |    1 |
-| pid_vco_pid_only_wrapper_pid1_rst_int_0            |    1 |
-| pid_vco_pid_only_wrapper_pid1_kp_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid1_ki_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid1_kd_0                 |    1 |
-| pid_vco_pid_only_wrapper_pid1_0                    |    1 |
-| pid_vco_pid_only_wrapper_ltc2145_0_0               |    1 |
-| pid_vco_pid_only_wrapper_expanderReal_0_dds1_0     |    1 |
-| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1      |    1 |
-| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0      |    1 |
-| pid_vco_pid_only_wrapper_dds2_offset_0             |    1 |
-| pid_vco_pid_only_wrapper_dds1_range_0              |    1 |
-| pid_vco_pid_only_wrapper_dds1_offset_0             |    1 |
-| pid_vco_pid_only_wrapper_dds1_nco_0                |    1 |
-| pid_vco_pid_only_wrapper_dds1_f0_0                 |    1 |
-| pid_vco_pid_only_wrapper_dds1_ampl_0               |    1 |
-| pid_vco_pid_only_wrapper_auto_pc_0                 |    1 |
-| pid_vco_pid_only_wrapper_adc1_offset_0             |    1 |
-| pid_vco_pid_only_wrapper_ad9767_0_0                |    1 |
-+----------------------------------------------------+------+
++----------------------------------------------------------+------+
+|                         Ref Name                         | Used |
++----------------------------------------------------------+------+
+| pid_vco_pid_only_wrapper_xlslice_mod_input_1_0           |    1 |
+| pid_vco_pid_only_wrapper_xlslice_mod_input_0_0           |    1 |
+| pid_vco_pid_only_wrapper_xlslice_dds1_2                  |    1 |
+| pid_vco_pid_only_wrapper_xlslice_dds1_1                  |    1 |
+| pid_vco_pid_only_wrapper_xlslice_dds1_0                  |    1 |
+| pid_vco_pid_only_wrapper_xlconstant_0_0                  |    1 |
+| pid_vco_pid_only_wrapper_xbar_0                          |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0         |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_dds1_range_0          |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1           |    1 |
+| pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_0           |    1 |
+| pid_vco_pid_only_wrapper_tier2_xbar_2_0                  |    1 |
+| pid_vco_pid_only_wrapper_tier2_xbar_1_0                  |    1 |
+| pid_vco_pid_only_wrapper_tier2_xbar_0_0                  |    1 |
+| pid_vco_pid_only_wrapper_switchComplex_0_0               |    1 |
+| pid_vco_pid_only_wrapper_redpitaya_adc_dac_clk_0_0       |    1 |
+| pid_vco_pid_only_wrapper_processing_system7_0_0          |    1 |
+| pid_vco_pid_only_wrapper_proc_sys_reset_0_0              |    1 |
+| pid_vco_pid_only_wrapper_pid2_sign_0                     |    1 |
+| pid_vco_pid_only_wrapper_pid2_setpoint_0                 |    1 |
+| pid_vco_pid_only_wrapper_pid2_rst_int_0                  |    1 |
+| pid_vco_pid_only_wrapper_pid2_kp_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid2_ki_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid2_kd_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid2_0                          |    1 |
+| pid_vco_pid_only_wrapper_pid1_sign_0                     |    1 |
+| pid_vco_pid_only_wrapper_pid1_setpoint_0                 |    1 |
+| pid_vco_pid_only_wrapper_pid1_rst_int_0                  |    1 |
+| pid_vco_pid_only_wrapper_pid1_kp_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid1_ki_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid1_kd_0                       |    1 |
+| pid_vco_pid_only_wrapper_pid1_0                          |    1 |
+| pid_vco_pid_only_wrapper_mod_input_nco_0                 |    1 |
+| pid_vco_pid_only_wrapper_mod_input_ampl_0                |    1 |
+| pid_vco_pid_only_wrapper_ltc2145_0_0                     |    1 |
+| pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0        |    1 |
+| pid_vco_pid_only_wrapper_expanderReal_0_dds1_1           |    1 |
+| pid_vco_pid_only_wrapper_expanderReal_0_dds1_0           |    1 |
+| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_1            |    1 |
+| pid_vco_pid_only_wrapper_dupplReal_1_to_2_0_0            |    1 |
+| pid_vco_pid_only_wrapper_dds2_offset_0                   |    1 |
+| pid_vco_pid_only_wrapper_dds1_range_0                    |    1 |
+| pid_vco_pid_only_wrapper_dds1_offset_0                   |    1 |
+| pid_vco_pid_only_wrapper_dds1_nco_1                      |    1 |
+| pid_vco_pid_only_wrapper_dds1_nco_0                      |    1 |
+| pid_vco_pid_only_wrapper_dds1_f0_0                       |    1 |
+| pid_vco_pid_only_wrapper_dds1_ampl_1                     |    1 |
+| pid_vco_pid_only_wrapper_dds1_ampl_0                     |    1 |
+| pid_vco_pid_only_wrapper_auto_pc_0                       |    1 |
+| pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0 |    1 |
+| pid_vco_pid_only_wrapper_adder_substracter_0_1           |    1 |
+| pid_vco_pid_only_wrapper_adc1_offset_0                   |    1 |
+| pid_vco_pid_only_wrapper_ad9767_0_0                      |    1 |
++----------------------------------------------------------+------+
 
 

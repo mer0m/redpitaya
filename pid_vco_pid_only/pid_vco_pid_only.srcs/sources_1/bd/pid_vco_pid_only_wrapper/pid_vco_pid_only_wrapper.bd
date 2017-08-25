@@ -1124,6 +1124,142 @@
           <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_mod_input_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_xlslice_dds1_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">15</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>adder_substracter_mod_input_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="adder_substracter" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_adder_substracter_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>mod_input_ampl</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_dds1_ampl_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>mod_input_nco</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_dds1_nco_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>twoInMult_mod_input_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="twoInMult" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_twoInMult_dds1_ampl_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_mod_input_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_xlslice_dds1_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_TO">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">26</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">28</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>expanderReal_0_ki_pid1</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="expanderReal" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_expanderReal_0_dds1_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">18</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>expanderReal_0_ki_pid2</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="expanderReal" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_expanderReal_0_ki_pid1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">18</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>adder_substracter_mod_out_pid2</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="adder_substracter" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_adder_substracter_mod_input_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_mod_out_pid2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_xlslice_mod_input_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">15</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>twoInMult_mod_out_pid2</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="twoInMult" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_twoInMult_mod_input_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_mod_out_pid2_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_xlslice_mod_input_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_TO">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">26</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">28</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>mod_out_pid2_ampl</spirit:instanceName>
+        <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_mod_input_ampl_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>mod_out_pid2_nco</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_pid_only_wrapper_mod_input_nco_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
       <spirit:interconnection>
@@ -1257,19 +1393,9 @@
         <spirit:activeInterface spirit:busRef="S00_AXI" spirit:componentRef="axi_interconnect_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>adc1_offset_data_out</spirit:name>
-        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="adc1_offset"/>
-        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="dupplReal_1_to_2_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>dupplReal_1_to_2_0_data1_out</spirit:name>
         <spirit:activeInterface spirit:busRef="data1_out" spirit:componentRef="dupplReal_1_to_2_0"/>
         <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="pid1"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>pid2_data_out</spirit:name>
-        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid2"/>
-        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="pid2_offset"/>
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M02_AXI</spirit:name>
@@ -1280,6 +1406,56 @@
         <spirit:name>pid1_data_out</spirit:name>
         <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid1"/>
         <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="dupplReal_1_to_2_1"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>adc1_offset_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="adc1_offset"/>
+        <spirit:activeInterface spirit:busRef="data1" spirit:componentRef="adder_substracter_mod_input_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>dds_ampl_data_out1</spirit:name>
+        <spirit:activeInterface spirit:busRef="data2" spirit:componentRef="twoInMult_mod_input_0"/>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="mod_input_ampl"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_interconnect_0_M19_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M19_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="mod_input_ampl"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_interconnect_0_M20_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M20_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="mod_input_nco"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>pid2_ki_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid2_ki"/>
+        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="expanderReal_0_ki_pid2"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>pid1_ki_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="expanderReal_0_ki_pid1"/>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid1_ki"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>pid2_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="pid2"/>
+        <spirit:activeInterface spirit:busRef="data1" spirit:componentRef="adder_substracter_mod_out_pid2"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_interconnect_0_M21_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M21_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="mod_out_pid2_ampl"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_interconnect_0_M22_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M22_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="mod_out_pid2_nco"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>mod_input_ampl1_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="mod_out_pid2_ampl"/>
+        <spirit:activeInterface spirit:busRef="data2" spirit:componentRef="twoInMult_mod_out_pid2"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -1337,6 +1513,8 @@
         <spirit:name>ltc2145_0_adc_clk</spirit:name>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="adc_clk"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="ref_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="ref_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="ref_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ltc2145_0_data_a_clk_o</spirit:name>
@@ -1417,11 +1595,6 @@
         <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="kd_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>pid2_ki_data_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pid2_ki" spirit:portRef="data_o"/>
-        <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="ki_i"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>pid2_kp_data_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="pid2_kp" spirit:portRef="data_o"/>
         <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="kp_i"/>
@@ -1445,11 +1618,6 @@
         <spirit:name>pid_kd_data_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="pid1_kd" spirit:portRef="data_o"/>
         <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="kd_i"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>pid_ki_data_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="pid1_ki" spirit:portRef="data_o"/>
-        <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="ki_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>pid_kp_data_o</spirit:name>
@@ -1517,7 +1685,6 @@
         <spirit:internalPortReference spirit:componentRef="dds1_f0" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="adc1_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds1_range" spirit:portRef="s00_axi_reset"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_range" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="pid1_kp" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid1_ki" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid1_kd" spirit:portRef="s00_axi_reset"/>
@@ -1531,11 +1698,16 @@
         <spirit:internalPortReference spirit:componentRef="pid2_rst_int" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid2_kd" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="s00_axi_reset"/>
-        <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="ref_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="ref_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="ref_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
@@ -1561,6 +1733,7 @@
         <spirit:internalPortReference spirit:componentRef="pid2_kd" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ACLK"/>
@@ -1587,7 +1760,10 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M21_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M22_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M23_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -1674,6 +1850,7 @@
         <spirit:internalPortReference spirit:componentRef="pid2_kp" spirit:portRef="data_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_ki" spirit:portRef="data_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_kd" spirit:portRef="data_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="data_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_1_dout</spirit:name>
@@ -1732,6 +1909,7 @@
         <spirit:name>dupplReal_1_to_2_1_data1_rst_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data1_rst_o"/>
         <spirit:internalPortReference spirit:componentRef="expanderReal_0_dds1" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_range" spirit:portRef="data_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dupplReal_1_to_2_1_data1_o</spirit:name>
@@ -1757,6 +1935,153 @@
         <spirit:name>dupplReal_1_to_2_1_data2_rst_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_1" spirit:portRef="data2_rst_o"/>
         <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="data2_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_dds2_Dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_input_0" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_0_data_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data_o"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_input_0" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_0_data_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_0_data_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_0_data_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="dupplReal_1_to_2_0" spirit:portRef="data_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>nco_counter_0_dds_clk_o1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="dds_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_input_0" spirit:portRef="data1_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>nco_counter_0_dds_en_o1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="dds_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_input_0" spirit:portRef="data1_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>nco_counter_0_dds_sin_o1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="dds_sin_o"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_input_0" spirit:portRef="data1_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>twoInMult_0_data_o1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_input_0" spirit:portRef="data_o"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_input_1" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_mod_input_1_Dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_input_1" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data2_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>twoInMult_mod_input_0_data_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_input_0" spirit:portRef="data_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data2_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>twoInMult_mod_input_0_data_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_input_0" spirit:portRef="data_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data2_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mod_input_nco_dds_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="dds_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_input_0" spirit:portRef="data2_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>expanderReal_0_dds2_data_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="expanderReal_0_ki_pid1" spirit:portRef="data_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid1" spirit:portRef="ki_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>expanderReal_0_ki_pid2_data_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="expanderReal_0_ki_pid2" spirit:portRef="data_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2" spirit:portRef="ki_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_mod_input_1_data_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data_o"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_out_pid2_0" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_mod_out_pid2_Dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_out_pid2_0" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="data_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="data_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_mod_out_pid2_data_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="data_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_mod_out_pid2_data_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="data_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>adder_substracter_mod_out_pid2_data_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>twoInMult_mod_input_1_data_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_out_pid2" spirit:portRef="data_o"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_out_pid2_1" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_mod_input_2_Dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_mod_out_pid2_1" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data2_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>twoInMult_mod_input_1_data_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_out_pid2" spirit:portRef="data_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data2_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>twoInMult_mod_input_1_data_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_out_pid2" spirit:portRef="data_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data2_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mod_input_nco1_dds_sin_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="dds_sin_o"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_out_pid2" spirit:portRef="data1_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mod_input_nco1_dds_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="dds_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_out_pid2" spirit:portRef="data1_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="data_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mod_input_nco1_dds_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="dds_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="twoInMult_mod_out_pid2" spirit:portRef="data1_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="data_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mod_input_nco1_dds_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="dds_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="adder_substracter_mod_out_pid2" spirit:portRef="data2_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="data_rst_i"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -9548,6 +9873,12 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
+            <spirit:name>SEG_dds1_ampl1_reg0</spirit:name>
+            <spirit:displayName>/mod_input_ampl/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43D30000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
             <spirit:name>SEG_dds1_ampl_reg0</spirit:name>
             <spirit:displayName>/dds1_ampl/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x43C20000</spirit:addressOffset>
@@ -9557,6 +9888,12 @@
             <spirit:name>SEG_dds1_f0_reg0</spirit:name>
             <spirit:displayName>/dds1_f0/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x43C30000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_dds1_nco1_reg0</spirit:name>
+            <spirit:displayName>/mod_input_nco/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43D40000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
@@ -9581,6 +9918,18 @@
             <spirit:name>SEG_dds2_offset_reg0</spirit:name>
             <spirit:displayName>/pid2_offset/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x43D70000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_mod_input_ampl1_reg0</spirit:name>
+            <spirit:displayName>/mod_out_pid2_ampl/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43D50000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_mod_input_nco1_reg0</spirit:name>
+            <spirit:displayName>/mod_out_pid2_nco/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43D60000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
