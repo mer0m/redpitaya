@@ -158,16 +158,16 @@ static struct resource pid2_setpoint_resources[] = {
 
 static struct resource mod_input_ampl_resources[] = {
 	{
-		.start = 0x43CD3000,
-		.end   = 0x43CD3000 + 0xffff,
+		.start = 0x43D30000,
+		.end   = 0x43D30000 + 0xffff,
 		.flags = IORESOURCE_MEM,
 	},
 };
 
 static struct resource mod_out_pid2_ampl_resources[] = {
 	{
-		.start = 0x43CD5000,
-		.end   = 0x43CD5000 + 0xffff,
+		.start = 0x43D50000,
+		.end   = 0x43D50000 + 0xffff,
 		.flags = IORESOURCE_MEM,
 	},
 };

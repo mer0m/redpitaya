@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Fri Aug 25 14:34:46 2017
+//Date        : Fri Aug 25 15:41:24 2017
 //Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 //Command     : generate_target pid_vco_pid_only_wrapper.bd
 //Design      : pid_vco_pid_only_wrapper
@@ -5592,7 +5592,7 @@ module pid_vco_pid_only_wrapper
         .data_clk_o(mod_input_ampl1_data_out_DATA_CLK),
         .data_en_i(mod_input_nco1_dds_en_o),
         .data_en_o(mod_input_ampl1_data_out_DATA_EN),
-        .data_i(xlslice_mod_out_pid2_Dout),
+        .data_i(xlconstant_0_dout),
         .data_o(mod_input_ampl1_data_out_DATA),
         .data_rst_i(mod_input_nco1_dds_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),

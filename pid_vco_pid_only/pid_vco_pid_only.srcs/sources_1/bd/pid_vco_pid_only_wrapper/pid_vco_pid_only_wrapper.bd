@@ -1734,6 +1734,10 @@
         <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="switchComplex_0" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ACLK"/>
@@ -1760,10 +1764,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M21_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M22_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M23_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -1851,6 +1851,7 @@
         <spirit:internalPortReference spirit:componentRef="pid2_ki" spirit:portRef="data_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_kd" spirit:portRef="data_i"/>
         <spirit:internalPortReference spirit:componentRef="mod_input_ampl" spirit:portRef="data_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="data_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_1_dout</spirit:name>
@@ -2023,7 +2024,6 @@
         <spirit:name>xlslice_mod_out_pid2_Dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlslice_mod_out_pid2_0" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="pid2_offset" spirit:portRef="data_i"/>
-        <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="data_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>adder_substracter_mod_out_pid2_data_en_o</spirit:name>

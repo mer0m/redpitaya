@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Aug 25 15:24:50 2017
+# Process ID: 17946
+# Current directory: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only
+# Command line: vivado pid_vco_pid_only.xpr
+# Log file: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/vivado.log
+# Journal file: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project pid_vco_pid_only.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/gitlab/oimp/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:vga:1.0'. The one found in location '/home/bma/git/gitlab/oimp/fpga_ip/interfaces/vga_v1_0/vga.xml' will take precedence over the same Interface in location '/opt/Xilinx/Vivado/2016.4/data/ip/interfaces/vga_v1_0/vga.xml'
+open_project: Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 6007.938 ; gain = 179.910 ; free physical = 3034 ; free virtual = 13611
+open_bd_design {/home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/pid_vco_pid_only_wrapper.bd}
+Adding cell -- ggm:cogen:ad9767:1.0 - ad9767_0
+Adding cell -- ggm:cogen:add_const:1.0 - adc1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds1_ampl
+Adding cell -- ggm:cogen:add_const:1.0 - dds1_f0
+Adding cell -- user.org:user:nco_counter:1.0 - dds1_nco
+Adding cell -- ggm:cogen:add_const:1.0 - dds1_offset
+Adding cell -- ggm:cogen:add_const:1.0 - dds1_range
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_offset
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0_dds1
+Adding cell -- gwbs:user:ltc2145:1.0 - ltc2145_0
+Adding cell -- ggm:cogen:add_const:1.0 - pid1_kd
+Adding cell -- ggm:cogen:add_const:1.0 - pid1_ki
+Adding cell -- ggm:cogen:add_const:1.0 - pid1_kp
+Adding cell -- ggm:cogen:add_const:1.0 - pid1_rst_int
+Adding cell -- ggm:cogen:add_const:1.0 - pid1_setpoint
+Adding cell -- ggm:cogen:add_const:1.0 - pid1_sign
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_kd
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_ki
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_kp
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_rst_int
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_setpoint
+Adding cell -- ggm:cogen:add_const:1.0 - pid2_sign
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- ggm:cogen:redpitaya_adc_dac_clk:1.0 - redpitaya_adc_dac_clk_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds1_ampl
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_dds1_range
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_dds1
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_0
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - pid1
+Adding cell -- user.org:user:red_pitaya_pidv3:1.0 - pid2
+Adding cell -- ggm:cogen:switchComplex:1.0 - switchComplex_0
+Adding cell -- ggm:cogen:dupplReal_1_to_2:1.0 - dupplReal_1_to_2_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_mod_input_0
+Adding cell -- ggm:cogen:adder_substracter:1.0 - adder_substracter_mod_input_0
+Adding cell -- ggm:cogen:add_const:1.0 - mod_input_ampl
+Adding cell -- user.org:user:nco_counter:1.0 - mod_input_nco
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_mod_input_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_mod_input_1
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0_ki_pid1
+Adding cell -- ggm:cogen:expanderReal:1.0 - expanderReal_0_ki_pid2
+Adding cell -- ggm:cogen:adder_substracter:1.0 - adder_substracter_mod_out_pid2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_mod_out_pid2_0
+Adding cell -- ggm:cogen:twoInMult:1.0 - twoInMult_mod_out_pid2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_mod_out_pid2_1
+Adding cell -- ggm:cogen:add_const:1.0 - mod_out_pid2_ampl
+Adding cell -- user.org:user:nco_counter:1.0 - mod_out_pid2_nco
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/interconnect_aresetn(rst) and /ltc2145_0/resetn(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /redpitaya_adc_dac_clk_0/adc_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds1_offset/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds1_ampl/data_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /dds1_nco/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /ltc2145_0/processing_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /mod_input_nco/ref_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_reset(rst) and /mod_out_pid2_nco/ref_rst_i(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <pid_vco_pid_only_wrapper> from BD file </home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/pid_vco_pid_only_wrapper.bd>
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 6148.348 ; gain = 89.871 ; free physical = 2882 ; free virtual = 13475
+disconnect_bd_net /xlslice_mod_out_pid2_Dout [get_bd_pins mod_out_pid2_ampl/data_i]
+connect_bd_net [get_bd_pins mod_out_pid2_ampl/data_i] [get_bd_pins xlconstant_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /mod_out_pid2_ampl/data_i is being overridden by the user. This pin will not be connected as a part of interface connection data_in
+save_bd_design
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/pid_vco_pid_only_wrapper.bd> 
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/ui/bd_2788fea5.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/switchComplex_0/data1_i_i
+/switchComplex_0/data2_i_i
+
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/hdl/pid_vco_pid_only_wrapper.v
+Verilog Output written to : /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/hdl/pid_vco_pid_only_wrapper_wrapper.v
+Wrote  : </home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/pid_vco_pid_only_wrapper.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ad9767_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds1_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds1_f0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds1_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds1_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds1_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_offset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0_dds1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ltc2145_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid1_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_kd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_ki .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_kp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_rst_int .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_setpoint .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pid2_sign .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block redpitaya_adc_dac_clk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds1_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_dds1_range .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_dds1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switchComplex_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dupplReal_1_to_2_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_mod_input_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adder_substracter_mod_input_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod_input_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod_input_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_mod_input_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_mod_input_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0_ki_pid1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block expanderReal_0_ki_pid2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adder_substracter_mod_out_pid2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_mod_out_pid2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block twoInMult_mod_out_pid2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_mod_out_pid2_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod_out_pid2_ampl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mod_out_pid2_nco .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/tier2_xbar_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/tier2_xbar_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/tier2_xbar_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/hw_handoff/pid_vco_pid_only_wrapper.hwh
+Generated Block Design Tcl file /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/hw_handoff/pid_vco_pid_only_wrapper_bd.tcl
+Generated Hardware Definition File /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.srcs/sources_1/bd/pid_vco_pid_only_wrapper/hdl/pid_vco_pid_only_wrapper.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_vco_pid_only_wrapper_tier2_xbar_0_0, cache-ID = 78a023edcae59c0c; cache size = 9.085 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_vco_pid_only_wrapper_tier2_xbar_1_0, cache-ID = 1d34068c94c67dc2; cache size = 9.085 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_vco_pid_only_wrapper_tier2_xbar_2_0, cache-ID = f661ba7a5e59fb09; cache size = 9.085 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP pid_vco_pid_only_wrapper_auto_pc_0, cache-ID = 2ca33e44931973c6; cache size = 9.085 MB.
+[Fri Aug 25 15:41:45 2017] Launched synth_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/synth_1/runme.log
+[Fri Aug 25 15:41:45 2017] Launched impl_1...
+Run output will be captured here: /home/bma/git/fpga_design/redpitaya/pid_vco_pid_only/pid_vco_pid_only.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 6369.629 ; gain = 211.961 ; free physical = 2642 ; free virtual = 13262
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 25 17:34:18 2017...

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Aug 25 14:40:23 2017
+| Date             : Fri Aug 25 15:44:56 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command          : report_power -file pid_vco_pid_only_wrapper_power_routed.rpt -pb pid_vco_pid_only_wrapper_power_summary_routed.pb -rpx pid_vco_pid_only_wrapper_power_routed.rpx
 | Design           : pid_vco_pid_only_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.963 |
-| Dynamic (W)              | 1.821 |
+| Total On-Chip Power (W)  | 1.961 |
+| Dynamic (W)              | 1.820 |
 | Device Static (W)        | 0.142 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 62.4  |
@@ -49,9 +49,9 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.023 |       11 |       --- |             --- |
-| Slice Logic             |     0.006 |     6789 |       --- |             --- |
-|   LUT as Logic          |     0.004 |     2340 |     17600 |           13.30 |
+| Clocks                  |     0.022 |       11 |       --- |             --- |
+| Slice Logic             |     0.006 |     6775 |       --- |             --- |
+|   LUT as Logic          |     0.004 |     2331 |     17600 |           13.24 |
 |   CARRY4                |    <0.001 |      129 |      4400 |            2.93 |
 |   Register              |    <0.001 |     3196 |     35200 |            9.08 |
 |   LUT as Shift Register |    <0.001 |      135 |      6000 |            2.25 |
@@ -63,7 +63,7 @@ Table of Contents
 | I/O                     |     0.376 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
 | Static Power            |     0.142 |          |           |                 |
-| Total                   |     1.963 |          |           |                 |
+| Total                   |     1.961 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.082 |       0.074 |      0.008 |
+| Vccint    |       1.000 |     0.080 |       0.072 |      0.008 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.012 |
 | Vcco33    |       3.300 |     0.111 |       0.110 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -154,9 +154,9 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| pid_vco_pid_only_wrapper                       |     1.821 |
-|   ad9767_0                                     |     0.006 |
-|     inst                                       |     0.006 |
+| pid_vco_pid_only_wrapper                       |     1.820 |
+|   ad9767_0                                     |     0.007 |
+|     inst                                       |     0.007 |
 |   adc1_offset                                  |    <0.001 |
 |     U0                                         |    <0.001 |
 |       add_constHandComm                        |    <0.001 |
@@ -232,7 +232,7 @@ Table of Contents
 |   dds1_f0                                      |     0.001 |
 |     U0                                         |     0.001 |
 |       add_constHandComm                        |    <0.001 |
-|       add_constLogic                           |     0.001 |
+|       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
 |   dds1_nco                                     |     0.008 |
 |     U0                                         |     0.008 |
@@ -263,8 +263,8 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   mod_input_nco                                |     0.008 |
-|     U0                                         |     0.008 |
+|   mod_input_nco                                |     0.007 |
+|     U0                                         |     0.007 |
 |       handle_comm                              |    <0.001 |
 |       nco_inst1                                |     0.007 |
 |         rom_12.rom12_inst                      |     0.005 |
