@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1493116195">
-  <File Type="VDS-TIMING-PB" Name="adc2dac_ram_offset_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="adc2dac_ram_offset_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="adc2dac_ram_offset_wrapper.vds"/>
   <File Type="VDS-TIMINGSUMMARY" Name="adc2dac_ram_offset_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="adc2dac_ram_offset_wrapper_timing_summary_synth.pb"/>
   <File Type="RDS-DCP" Name="adc2dac_ram_offset_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="adc2dac_ram_offset_wrapper_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="adc2dac_ram_offset_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-PROPCONSTRS" Name="adc2dac_ram_offset_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="adc2dac_ram_offset_wrapper.vds"/>
-  <File Type="PA-TCL" Name="adc2dac_ram_offset_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/adc2dac_ram_offset/adc2dac_ram_offset.bd">
@@ -64,15 +64,15 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_add_const_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_ad9767_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_expanderReal_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_add_const_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_data16_multi_to_ram_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_add_const_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_dupplReal_1_to_2_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_data16_multi_to_ram_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_expanderReal_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_ltc2145_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_dupplReal_1_to_2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_expanderReal_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_expanderReal_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_ad9767_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0"/>
 </GenRun>

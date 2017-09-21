@@ -59,48 +59,48 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hdl/adc2dac_ram_offset.hwdef"/>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_ad9767_0_0/adc2dac_ram_offset_ad9767_0_0.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_ad9767_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_proc_sys_reset_0_0/adc2dac_ram_offset_proc_sys_reset_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hdl/adc2dac_ram_offset.v"/>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_processing_system7_0_0/adc2dac_ram_offset_processing_system7_0_0.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_add_const_0_0/adc2dac_ram_offset_add_const_0_0.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_add_const_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_expanderReal_0_1/adc2dac_ram_offset_expanderReal_0_1.xci">
           <Proxy FileSetName="adc2dac_ram_offset_expanderReal_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_data16_multi_to_ram_0_0/adc2dac_ram_offset_data16_multi_to_ram_0_0.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_data16_multi_to_ram_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_add_const_0_0/adc2dac_ram_offset_add_const_0_0.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_add_const_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_dupplReal_1_to_2_0_1/adc2dac_ram_offset_dupplReal_1_to_2_0_1.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_dupplReal_1_to_2_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_add_const_0_1/adc2dac_ram_offset_add_const_0_1.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_add_const_0_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_expanderReal_0_0/adc2dac_ram_offset_expanderReal_0_0.xci">
           <Proxy FileSetName="adc2dac_ram_offset_expanderReal_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_auto_pc_0/adc2dac_ram_offset_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hw_handoff/adc2dac_ram_offset.hwh"/>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_ps7_0_axi_periph_0/adc2dac_ram_offset_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_proc_sys_reset_0_0/adc2dac_ram_offset_proc_sys_reset_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_dupplReal_1_to_2_0_1/adc2dac_ram_offset_dupplReal_1_to_2_0_1.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_dupplReal_1_to_2_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_data16_multi_to_ram_0_0/adc2dac_ram_offset_data16_multi_to_ram_0_0.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_data16_multi_to_ram_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_ltc2145_0_0/adc2dac_ram_offset_ltc2145_0_0.xci">
           <Proxy FileSetName="adc2dac_ram_offset_ltc2145_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_ad9767_0_0/adc2dac_ram_offset_ad9767_0_0.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_ad9767_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_ps7_0_axi_periph_0/adc2dac_ram_offset_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hdl/adc2dac_ram_offset.v"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_processing_system7_0_0/adc2dac_ram_offset_processing_system7_0_0.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_dupplReal_1_to_2_0_0/adc2dac_ram_offset_dupplReal_1_to_2_0_0.xci">
           <Proxy FileSetName="adc2dac_ram_offset_dupplReal_1_to_2_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_xbar_0/adc2dac_ram_offset_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hw_handoff/adc2dac_ram_offset_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hdl/adc2dac_ram_offset.hwdef"/>
         <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="adc2dac_ram_offset_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hw_handoff/adc2dac_ram_offset.hwh"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_auto_pc_0/adc2dac_ram_offset_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_add_const_0_1/adc2dac_ram_offset_add_const_0_1.xci">
+          <Proxy FileSetName="adc2dac_ram_offset_add_const_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="ip/adc2dac_ram_offset_xbar_0/adc2dac_ram_offset_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="adc2dac_ram_offset.bd" FileRelPathName="hw_handoff/adc2dac_ram_offset_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/adc2dac_ram_offset/hdl/adc2dac_ram_offset_wrapper.v">
         <FileInfo>
@@ -337,9 +337,7 @@
     </Run>
     <Run Id="adc2dac_ram_offset_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="adc2dac_ram_offset_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="adc2dac_ram_offset_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/adc2dac_ram_offset_ltc2145_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -513,9 +511,7 @@
     </Run>
     <Run Id="adc2dac_ram_offset_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="adc2dac_ram_offset_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="adc2dac_ram_offset_ltc2145_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

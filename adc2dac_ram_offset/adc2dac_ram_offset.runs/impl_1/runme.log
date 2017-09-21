@@ -495,3 +495,65 @@ INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2247.391 ; gain = 234.902 ; free physical = 533 ; free virtual = 11501
 INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 12:33:18 2017...
+
+*** Running vivado
+    with args -log adc2dac_ram_offset_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source adc2dac_ram_offset_wrapper.tcl -notrace
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source adc2dac_ram_offset_wrapper.tcl -notrace
+Command: open_checkpoint adc2dac_ram_offset_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 996.668 ; gain = 0.000 ; free physical = 2601 ; free virtual = 13434
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.runs/impl_1/.Xil/Vivado-12547-ux305/dcp/adc2dac_ram_offset_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.srcs/sources_1/bd/adc2dac_ram_offset/ip/adc2dac_ram_offset_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.898 ; gain = 453.508 ; free physical = 1981 ; free virtual = 12821
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.runs/impl_1/.Xil/Vivado-12547-ux305/dcp/adc2dac_ram_offset_wrapper_early.xdc]
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.runs/impl_1/.Xil/Vivado-12547-ux305/dcp/adc2dac_ram_offset_wrapper.xdc]
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.runs/impl_1/.Xil/Vivado-12547-ux305/dcp/adc2dac_ram_offset_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.48 . Memory (MB): peak = 1748.898 ; gain = 3.000 ; free physical = 1978 ; free virtual = 12817
+Restored from archive | CPU: 0.480000 secs | Memory: 1.927902 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.48 . Memory (MB): peak = 1748.898 ; gain = 3.000 ; free physical = 1978 ; free virtual = 12817
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1733598
+open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1748.898 ; gain = 752.230 ; free physical = 1983 ; free virtual = 12817
+Command: write_bitstream -force -no_partial_bitfile adc2dac_ram_offset_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./adc2dac_ram_offset_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/adc2dac_ram_offset/adc2dac_ram_offset.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Sep 14 21:59:58 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2139.973 ; gain = 391.074 ; free physical = 1597 ; free virtual = 12444
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 14 21:59:58 2017...
