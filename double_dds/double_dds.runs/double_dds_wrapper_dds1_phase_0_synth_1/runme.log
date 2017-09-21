@@ -15,16 +15,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5344 
+INFO: Helper process launched with PID 6040 
 awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1112.266 ; gain = 181.086 ; free physical = 3311 ; free virtual = 13345
+Starting RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1112.266 ; gain = 181.086 ; free physical = 1869 ; free virtual = 10674
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'double_dds_wrapper_dds1_phase_0' [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/synth/double_dds_wrapper_dds1_phase_0.vhd:90]
 	Parameter format bound to: unsigned - type: string 
 	Parameter add_val bound to: 0 - type: integer 
-	Parameter DATA_OUT_SIZE bound to: 10 - type: integer 
-	Parameter DATA_IN_SIZE bound to: 10 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 16 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 16 - type: integer 
 	Parameter id bound to: 1 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
@@ -33,19 +33,19 @@ INFO: [Synth 8-638] synthesizing module 'add_const' [/home/bma/git/fpga_design/r
 	Parameter id bound to: 1 - type: integer 
 	Parameter format bound to: unsigned - type: string 
 	Parameter add_val bound to: 0 - type: integer 
-	Parameter DATA_OUT_SIZE bound to: 10 - type: integer 
-	Parameter DATA_IN_SIZE bound to: 10 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 16 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 16 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'add_const_logic' [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ipshared/a7c6/hdl/add_const_logic.vhd:26]
 	Parameter format bound to: unsigned - type: string 
-	Parameter DATA_OUT_SIZE bound to: 10 - type: integer 
-	Parameter DATA_IN_SIZE bound to: 10 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 16 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 16 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'add_const_logic' (1#1) [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ipshared/a7c6/hdl/add_const_logic.vhd:26]
 INFO: [Synth 8-638] synthesizing module 'wb_add_const' [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ipshared/a7c6/hdl/wb_add_const.vhd:30]
 	Parameter DEFAULT_OFFSET bound to: 0 - type: integer 
 	Parameter FORMAT bound to: unsigned - type: string 
-	Parameter DATA_SIZE bound to: 10 - type: integer 
+	Parameter DATA_SIZE bound to: 16 - type: integer 
 	Parameter id bound to: 1 - type: integer 
 	Parameter wb_size bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'wb_add_const' (2#1) [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ipshared/a7c6/hdl/wb_add_const.vhd:30]
@@ -82,14 +82,8 @@ WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[1
 WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[18]
 WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[17]
 WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[16]
-WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[15]
-WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[14]
-WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[13]
-WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[12]
-WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[11]
-WARNING: [Synth 8-3331] design wb_add_const has unconnected port wbs_writedata[10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1152.734 ; gain = 221.555 ; free physical = 3227 ; free virtual = 13262
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1152.734 ; gain = 221.555 ; free physical = 1741 ; free virtual = 10547
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -99,7 +93,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1152.734 ; gain = 221.555 ; free physical = 3225 ; free virtual = 13259
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1152.734 ; gain = 221.555 ; free physical = 1732 ; free virtual = 10537
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -115,27 +109,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1483.918 ; gain = 0.000 ; free physical = 2753 ; free virtual = 12788
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1484.906 ; gain = 0.000 ; free physical = 1167 ; free virtual = 9972
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2532 ; free virtual = 12567
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 1161 ; free virtual = 9967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2532 ; free virtual = 12567
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 1161 ; free virtual = 9967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2532 ; free virtual = 12567
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 1161 ; free virtual = 9967
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "offset_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2525 ; free virtual = 12559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 1153 ; free virtual = 9959
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -148,15 +142,15 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	               10 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     10 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
@@ -169,17 +163,17 @@ Hierarchical RTL Component report
 Module add_const_logic 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
 	                1 Bit    Registers := 1     
 Module wb_add_const 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 1     
-	               10 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     10 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
 Module add_const_handComm 
 Detailed RTL Component Info : 
@@ -224,12 +218,6 @@ WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[19]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[18]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[17]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[16]
-WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[15]
-WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[14]
-WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[13]
-WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[12]
-WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[11]
-WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wdata[10]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[3]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[2]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_wstrb[1]
@@ -239,12 +227,6 @@ WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[1]
 WARNING: [Synth 8-3331] design add_const has unconnected port s00_axi_arprot[0]
 INFO: [Synth 8-3886] merging instance 'U0/add_constHandComm/axi_rresp_reg[0]' (FDRE) to 'U0/add_constHandComm/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constHandComm/axi_rresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[10]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
-INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[11]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
-INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[12]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
-INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[13]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
-INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[14]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
-INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[15]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
 INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[16]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
 INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[17]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
 INFO: [Synth 8-3886] merging instance 'U0/wb_add_const_inst/readdata_s_reg[18]' (FDCE) to 'U0/wb_add_const_inst/readdata_s_reg[31]'
@@ -271,7 +253,7 @@ WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_awaddr_reg[0])
 WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_araddr_reg[1]) is unused and will be removed from module add_const.
 WARNING: [Synth 8-3332] Sequential element (add_constHandComm/axi_araddr_reg[0]) is unused and will be removed from module add_const.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2495 ; free virtual = 12530
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 1104 ; free virtual = 9910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,10 +268,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:30 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2276 ; free virtual = 12311
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:40 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 849 ; free virtual = 9652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:30 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2276 ; free virtual = 12311
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:40 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 849 ; free virtual = 9652
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -301,7 +283,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:30 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2250 ; free virtual = 12285
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:40 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 824 ; free virtual = 9628
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,7 +307,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2224 ; free virtual = 12259
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 838 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -338,7 +320,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2223 ; free virtual = 12258
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 838 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,25 +332,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2223 ; free virtual = 12258
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 838 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2223 ; free virtual = 12258
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 838 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2221 ; free virtual = 12256
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 869 ; free virtual = 9672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2221 ; free virtual = 12256
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 869 ; free virtual = 9672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -384,14 +366,14 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |CARRY4 |     3|
-|2     |LUT2   |    12|
+|1     |CARRY4 |     4|
+|2     |LUT2   |    18|
 |3     |LUT3   |     4|
 |4     |LUT4   |     5|
 |5     |LUT5   |     6|
-|6     |LUT6   |    11|
-|7     |FDCE   |    20|
-|8     |FDRE   |    40|
+|6     |LUT6   |    17|
+|7     |FDCE   |    32|
+|8     |FDRE   |    58|
 |9     |FDSE   |     2|
 +------+-------+------+
 
@@ -399,20 +381,20 @@ Report Instance Areas:
 +------+----------------------+-------------------+------+
 |      |Instance              |Module             |Cells |
 +------+----------------------+-------------------+------+
-|1     |top                   |                   |   103|
-|2     |  U0                  |add_const          |   103|
-|3     |    add_constHandComm |add_const_handComm |    38|
-|4     |    add_constLogic    |add_const_logic    |    45|
-|5     |    wb_add_const_inst |wb_add_const       |    20|
+|1     |top                   |                   |   146|
+|2     |  U0                  |add_const          |   146|
+|3     |    add_constHandComm |add_const_handComm |    44|
+|4     |    add_constLogic    |add_const_logic    |    70|
+|5     |    wb_add_const_inst |wb_add_const       |    32|
 +------+----------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.918 ; gain = 552.738 ; free physical = 2221 ; free virtual = 12256
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.906 ; gain = 553.727 ; free physical = 869 ; free virtual = 9672
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 1483.918 ; gain = 108.465 ; free physical = 2218 ; free virtual = 12253
-Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1483.926 ; gain = 552.746 ; free physical = 2219 ; free virtual = 12254
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 1484.906 ; gain = 109.465 ; free physical = 868 ; free virtual = 9671
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1484.914 ; gain = 553.734 ; free physical = 869 ; free virtual = 9672
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/add_const_ooc.xdc] for cell 'U0'
@@ -422,11 +404,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+43 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 1483.926 ; gain = 452.242 ; free physical = 2189 ; free virtual = 12224
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 1484.914 ; gain = 454.230 ; free physical = 894 ; free virtual = 9697
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_dds1_phase_0_synth_1/double_dds_wrapper_dds1_phase_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_dds1_phase_0_synth_1/double_dds_wrapper_dds1_phase_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1507.930 ; gain = 0.000 ; free physical = 2189 ; free virtual = 12224
-INFO: [Common 17-206] Exiting Vivado at Wed May 10 18:19:44 2017...
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1508.918 ; gain = 0.000 ; free physical = 1979 ; free virtual = 10782
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 20 16:48:38 2017...

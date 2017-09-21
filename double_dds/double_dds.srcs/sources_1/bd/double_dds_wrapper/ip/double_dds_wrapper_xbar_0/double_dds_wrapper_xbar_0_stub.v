@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Wed May 10 18:18:13 2017
+// Date        : Wed May 10 18:18:11 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
-// Command     : write_verilog -force -mode synth_stub
-//               /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_xbar_0/double_dds_wrapper_xbar_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top double_dds_wrapper_xbar_0 -prefix
+//               double_dds_wrapper_xbar_0_ double_dds_wrapper_xbar_0_stub.v
 // Design      : double_dds_wrapper_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

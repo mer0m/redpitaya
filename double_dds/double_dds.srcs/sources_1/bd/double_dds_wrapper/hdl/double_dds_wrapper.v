@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Wed May 10 18:25:58 2017
-//Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+//Date        : Thu Sep 21 16:09:15 2017
+//Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 //Command     : generate_target double_dds_wrapper.bd
 //Design      : double_dds_wrapper
 //Purpose     : IP block netlist
@@ -286,11 +286,7 @@ module double_dds_wrapper
   wire dds1_nco_counter1_dds_clk_o;
   wire dds1_nco_counter1_dds_en_o;
   wire [13:0]dds1_nco_counter1_dds_sin_o;
-  wire [9:0]dds1_phase1_data_out_DATA;
-  wire dds1_phase1_data_out_DATA_CLK;
-  wire dds1_phase1_data_out_DATA_EN;
-  wire dds1_phase1_data_out_DATA_RST;
-  wire [9:0]dds1_phase_data_out_DATA;
+  wire [15:0]dds1_phase_data_out_DATA;
   wire dds1_phase_data_out_DATA_CLK;
   wire dds1_phase_data_out_DATA_EN;
   wire dds1_phase_data_out_DATA_RST;
@@ -300,6 +296,10 @@ module double_dds_wrapper
   wire [13:0]dds2_offset_data_out_DATA;
   wire dds2_offset_data_out_DATA_EN;
   wire dds2_offset_data_out_DATA_RST;
+  wire [15:0]dds2_phase_data_out_DATA;
+  wire dds2_phase_data_out_DATA_CLK;
+  wire dds2_phase_data_out_DATA_EN;
+  wire dds2_phase_data_out_DATA_RST;
   wire ltc2145_0_adc_cdcs;
   wire ltc2145_0_adc_clk;
   wire nco_counter_0_dds_clk_o;
@@ -339,7 +339,7 @@ module double_dds_wrapper
   wire twoInMult_0_data_en_o;
   wire [27:0]twoInMult_0_data_o;
   wire [13:0]xlconstant_0_dout;
-  wire [9:0]xlconstant_1_dout;
+  wire [15:0]xlconstant_1_dout;
   wire [13:0]xlslice_0_Dout;
   wire [13:0]xlslice_1_Dout;
 
@@ -609,7 +609,7 @@ module double_dds_wrapper
         .s00_axi_wready(axi_interconnect_0_M04_AXI_WREADY),
         .s00_axi_wstrb(axi_interconnect_0_M04_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M04_AXI_WVALID));
-  double_dds_wrapper_nco_counter_0_0 dds1_nco_counter
+  double_dds_wrapper_nco_counter_0_2 dds1_nco_counter
        (.dds_clk_o(nco_counter_0_dds_clk_o),
         .dds_en_o(nco_counter_0_dds_en_o),
         .dds_sin_o(nco_counter_0_dds_sin_o),
@@ -619,7 +619,7 @@ module double_dds_wrapper
         .pinc_rst_i(1'b0),
         .poff_clk_i(dds1_phase_data_out_DATA_CLK),
         .poff_en_i(dds1_phase_data_out_DATA_EN),
-        .poff_i(dds1_phase_data_out_DATA),
+        .poff_i(dds1_phase_data_out_DATA[11:0]),
         .poff_rst_i(dds1_phase_data_out_DATA_RST),
         .ref_clk_i(ltc2145_0_adc_clk),
         .ref_rst_i(proc_sys_reset_0_peripheral_reset),
@@ -742,7 +742,7 @@ module double_dds_wrapper
         .s00_axi_wready(axi_interconnect_0_M02_AXI_WREADY),
         .s00_axi_wstrb(axi_interconnect_0_M02_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M02_AXI_WVALID));
-  double_dds_wrapper_dds1_nco_counter_0 dds2_nco_counter1
+  double_dds_wrapper_dds1_nco_counter_1 dds2_nco_counter
        (.dds_clk_o(dds1_nco_counter1_dds_clk_o),
         .dds_en_o(dds1_nco_counter1_dds_en_o),
         .dds_sin_o(dds1_nco_counter1_dds_sin_o),
@@ -750,10 +750,10 @@ module double_dds_wrapper
         .pinc_en_i(1'b0),
         .pinc_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .pinc_rst_i(1'b0),
-        .poff_clk_i(dds1_phase1_data_out_DATA_CLK),
-        .poff_en_i(dds1_phase1_data_out_DATA_EN),
-        .poff_i(dds1_phase1_data_out_DATA),
-        .poff_rst_i(dds1_phase1_data_out_DATA_RST),
+        .poff_clk_i(dds2_phase_data_out_DATA_CLK),
+        .poff_en_i(dds2_phase_data_out_DATA_EN),
+        .poff_i(dds2_phase_data_out_DATA[9:0]),
+        .poff_rst_i(dds2_phase_data_out_DATA_RST),
         .ref_clk_i(ltc2145_0_adc_clk),
         .ref_rst_i(proc_sys_reset_0_peripheral_reset),
         .s00_axi_aclk(ACLK_1),
@@ -808,13 +808,13 @@ module double_dds_wrapper
         .s00_axi_wvalid(axi_interconnect_0_M01_AXI_WVALID));
   double_dds_wrapper_dds1_phase_0 dds2_phase
        (.data_clk_i(dds1_nco_counter1_dds_clk_o),
-        .data_clk_o(dds1_phase1_data_out_DATA_CLK),
+        .data_clk_o(dds2_phase_data_out_DATA_CLK),
         .data_en_i(dds1_nco_counter1_dds_en_o),
-        .data_en_o(dds1_phase1_data_out_DATA_EN),
+        .data_en_o(dds2_phase_data_out_DATA_EN),
         .data_i(xlconstant_1_dout),
-        .data_o(dds1_phase1_data_out_DATA),
+        .data_o(dds2_phase_data_out_DATA),
         .data_rst_i(proc_sys_reset_0_peripheral_reset),
-        .data_rst_o(dds1_phase1_data_out_DATA_RST),
+        .data_rst_o(dds2_phase_data_out_DATA_RST),
         .s00_axi_aclk(ACLK_1),
         .s00_axi_araddr(axi_interconnect_0_M07_AXI_ARADDR[3:0]),
         .s00_axi_arprot(axi_interconnect_0_M07_AXI_ARPROT),

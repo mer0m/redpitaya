@@ -76,10 +76,10 @@ ENTITY double_dds_wrapper_dds1_phase_0 IS
     s00_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s00_axi_rvalid : OUT STD_LOGIC;
     s00_axi_rready : IN STD_LOGIC;
-    data_i : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    data_i : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     data_en_i : IN STD_LOGIC;
     data_clk_i : IN STD_LOGIC;
-    data_o : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+    data_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     data_en_o : OUT STD_LOGIC;
     data_clk_o : OUT STD_LOGIC;
     data_rst_o : OUT STD_LOGIC;
@@ -122,10 +122,10 @@ ARCHITECTURE double_dds_wrapper_dds1_phase_0_arch OF double_dds_wrapper_dds1_pha
       s00_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s00_axi_rvalid : OUT STD_LOGIC;
       s00_axi_rready : IN STD_LOGIC;
-      data_i : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      data_i : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       data_en_i : IN STD_LOGIC;
       data_clk_i : IN STD_LOGIC;
-      data_o : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+      data_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       data_en_o : OUT STD_LOGIC;
       data_clk_o : OUT STD_LOGIC;
       data_rst_o : OUT STD_LOGIC;
@@ -171,8 +171,8 @@ BEGIN
     GENERIC MAP (
       format => "unsigned",
       add_val => 0,
-      DATA_OUT_SIZE => 10,
-      DATA_IN_SIZE => 10,
+      DATA_OUT_SIZE => 16,
+      DATA_IN_SIZE => 16,
       id => 1,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 4

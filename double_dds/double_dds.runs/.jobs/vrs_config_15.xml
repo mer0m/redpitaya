@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="double_dds_wrapper_dds1_nco_counter_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_dds1_nco_counter_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_wrapper_dds_ampl_1_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_dds_ampl_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_wrapper_dds1_phase_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_dds1_phase_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_wrapper_xlconstant_0_1_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_xlconstant_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_wrapper_nco_counter_0_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/double_dds_wrapper_nco_counter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="double_dds_wrapper_dds1_nco_counter_0_synth_1"/>
+		<Parent Id="double_dds_wrapper_dds_ampl_1_synth_1"/>
+		<Parent Id="double_dds_wrapper_dds1_phase_0_synth_1"/>
+		<Parent Id="double_dds_wrapper_xlconstant_0_1_synth_1"/>
+		<Parent Id="double_dds_wrapper_nco_counter_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="double_dds_wrapper_dds1_nco_counter_0_synth_1"/>
+		<Parent Id="double_dds_wrapper_dds_ampl_1_synth_1"/>
+		<Parent Id="double_dds_wrapper_dds1_phase_0_synth_1"/>
+		<Parent Id="double_dds_wrapper_xlconstant_0_1_synth_1"/>
+		<Parent Id="double_dds_wrapper_nco_counter_0_0_synth_1"/>
+	</Run>
+</Runs>
+

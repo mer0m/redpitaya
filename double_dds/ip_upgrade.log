@@ -1,0 +1,377 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 17:20:39 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of double_dds_wrapper_nco_counter_0_0 from user.org:user:nco_counter:1.0 (Rev. 18) to ggm:cogen:nco_counter:1.0 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 17:20:38 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of double_dds_wrapper_dds1_nco_counter_0 from user.org:user:nco_counter:1.0 (Rev. 18) to ggm:cogen:nco_counter:1.0 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 16:26:27 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_nco_counter_0_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 16:26:27 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_dds1_nco_counter_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 16:23:39 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of double_dds_wrapper_nco_counter_0_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'double_dds_wrapper_nco_counter_0_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'double_dds_wrapper_nco_counter_0_0'. These changes may impact your design.
+
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'C_S00_AXI_DATA_WIDTH' is no longer present on the upgraded IP 'double_dds_wrapper_nco_counter_0_0', and cannot be set to '32'
+
+Parameter 'C_S00_AXI_ADDR_WIDTH' is no longer present on the upgraded IP 'double_dds_wrapper_nco_counter_0_0', and cannot be set to '4'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:nco_counter:1.0 -user_name double_dds_wrapper_nco_counter_0_0
+set_property -dict "\
+  CONFIG.COUNTER_SIZE {40} \
+  CONFIG.Component_Name {double_dds_wrapper_nco_counter_0_0} \
+  CONFIG.DATA_SIZE {14} \
+  CONFIG.DEFAULT_RST_ACCUM_VAL {25} \
+  CONFIG.LUT_SIZE {10} \
+  CONFIG.RESET_ACCUM {false} \
+  CONFIG.id {1} " [get_ips double_dds_wrapper_nco_counter_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 16:23:39 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of double_dds_wrapper_dds1_nco_counter_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'double_dds_wrapper_dds1_nco_counter_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'double_dds_wrapper_dds1_nco_counter_0'. These changes may impact your design.
+
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'C_S00_AXI_DATA_WIDTH' is no longer present on the upgraded IP 'double_dds_wrapper_dds1_nco_counter_0', and cannot be set to '32'
+
+Parameter 'C_S00_AXI_ADDR_WIDTH' is no longer present on the upgraded IP 'double_dds_wrapper_dds1_nco_counter_0', and cannot be set to '4'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv user.org:user:nco_counter:1.0 -user_name double_dds_wrapper_dds1_nco_counter_0
+set_property -dict "\
+  CONFIG.COUNTER_SIZE {32} \
+  CONFIG.Component_Name {double_dds_wrapper_dds1_nco_counter_0} \
+  CONFIG.DATA_SIZE {14} \
+  CONFIG.DEFAULT_RST_ACCUM_VAL {25} \
+  CONFIG.LUT_SIZE {10} \
+  CONFIG.RESET_ACCUM {false} \
+  CONFIG.id {1} " [get_ips double_dds_wrapper_dds1_nco_counter_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 16:08:04 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_nco_counter_0_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 16:08:04 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_dds1_nco_counter_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 15:47:28 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_nco_counter_0_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 15:47:28 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_dds1_nco_counter_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 15:41:22 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_nco_counter_0_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 15:41:22 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_dds1_nco_counter_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 15:22:44 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_nco_counter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_nco_counter_0_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Sep 20 15:22:44 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'double_dds_wrapper_dds1_nco_counter_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of double_dds_wrapper_dds1_nco_counter_0 (user.org:user:nco_counter:1.0 (Rev. 18)) to current project options.
+

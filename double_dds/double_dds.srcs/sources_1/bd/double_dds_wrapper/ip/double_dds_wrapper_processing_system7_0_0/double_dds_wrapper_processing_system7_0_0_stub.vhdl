@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed May 10 18:24:17 2017
--- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
--- Command     : write_vhdl -force -mode synth_stub
---               /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_processing_system7_0_0/double_dds_wrapper_processing_system7_0_0_stub.vhdl
+-- Date        : Wed Sep 20 12:05:11 2017
+-- Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top double_dds_wrapper_processing_system7_0_0 -prefix
+--               double_dds_wrapper_processing_system7_0_0_ double_dds_wrapper_processing_system7_0_0_stub.vhdl
 -- Design      : double_dds_wrapper_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

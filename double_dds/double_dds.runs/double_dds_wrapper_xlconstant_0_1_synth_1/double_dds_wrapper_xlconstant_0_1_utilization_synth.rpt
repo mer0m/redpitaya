@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed May 10 18:23:04 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date         : Wed Sep 20 16:48:35 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command      : report_utilization -file double_dds_wrapper_xlconstant_0_1_utilization_synth.rpt -pb double_dds_wrapper_xlconstant_0_1_utilization_synth.pb
 | Design       : double_dds_wrapper_xlconstant_0_1
 | Device       : 7z010clg400-1

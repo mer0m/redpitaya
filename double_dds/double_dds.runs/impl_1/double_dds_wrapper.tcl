@@ -70,8 +70,6 @@ set rc [catch {
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/double_dds_wrapper_dds_offset_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_ltc2145_0_0/double_dds_wrapper_ltc2145_0_0.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_ltc2145_0_0/double_dds_wrapper_ltc2145_0_0.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/double_dds_wrapper_nco_counter_0_0.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/double_dds_wrapper_nco_counter_0_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_processing_system7_0_0/double_dds_wrapper_processing_system7_0_0.dcp
@@ -96,20 +94,18 @@ set rc [catch {
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_twoInMult_0_0/double_dds_wrapper_dds1_twoInMult_0_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/double_dds_wrapper_dds1_nco_counter_0.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/double_dds_wrapper_dds1_nco_counter_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.dcp]
+  add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2.dcp
+  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2.dcp]
+  add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.dcp
+  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_auto_pc_0/double_dds_wrapper_auto_pc_0.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_auto_pc_0/double_dds_wrapper_auto_pc_0.dcp]
-  read_xdc -mode out_of_context -ref double_dds_wrapper /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/double_dds_wrapper_ooc.xdc
-  set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/double_dds_wrapper_ooc.xdc]
   read_xdc -ref double_dds_wrapper_dds_ampl_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_0/add_const_ooc.xdc
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_0/add_const_ooc.xdc]
   read_xdc -ref double_dds_wrapper_dds_offset_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/add_const_ooc.xdc
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/add_const_ooc.xdc]
-  read_xdc -ref double_dds_wrapper_nco_counter_0_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/nco_counter_ooc.xdc
-  set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/nco_counter_ooc.xdc]
   read_xdc -prop_thru_buffers -ref double_dds_wrapper_proc_sys_reset_0_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0_board.xdc
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0_board.xdc]
   read_xdc -ref double_dds_wrapper_proc_sys_reset_0_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.xdc
@@ -124,10 +120,13 @@ set rc [catch {
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_offset_0/add_const_ooc.xdc]
   read_xdc -ref double_dds_wrapper_dds1_ampl_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/add_const_ooc.xdc
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/add_const_ooc.xdc]
-  read_xdc -ref double_dds_wrapper_dds1_nco_counter_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/nco_counter_ooc.xdc
-  set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/nco_counter_ooc.xdc]
   read_xdc -ref double_dds_wrapper_dds1_phase_0 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/add_const_ooc.xdc
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/add_const_ooc.xdc]
+  read_xdc -ref double_dds_wrapper_nco_counter_0_2 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/nco_counter_ooc.xdc
+  set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/nco_counter_ooc.xdc]
+  read_xdc -ref double_dds_wrapper_dds1_nco_counter_1 -cells U0 /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/nco_counter_ooc.xdc
+  set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/nco_counter_ooc.xdc]
+  read_xdc -mode out_of_context -ref double_dds_wrapper /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/double_dds_wrapper_ooc.xdc
   read_xdc /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc
   read_xdc /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/constrs_1/imports/fpga_ip/ltc2145/ltc2145-redpy.xdc
   read_xdc /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/constrs_1/imports/fpga_ip/redpitaya_adc_dac_clk/redpitaya_clk_pin.xdc

@@ -191,7 +191,13 @@ CONFIG.format {unsigned} \
   set_property -dict [ list \
 CONFIG.COUNTER_SIZE {32} \
 CONFIG.DATA_SIZE {14} \
+CONFIG.LUT_SIZE {12} \
  ] $dds1_nco_counter
+
+  set_property -dict [ list \
+CONFIG.NUM_READ_OUTSTANDING {1} \
+CONFIG.NUM_WRITE_OUTSTANDING {1} \
+ ] [get_bd_intf_pins /dds1_nco_counter/s00_axi]
 
   # Create instance: dds1_offset, and set properties
   set dds1_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds1_offset ]
@@ -203,8 +209,8 @@ CONFIG.DATA_OUT_SIZE {14} \
   # Create instance: dds1_phase, and set properties
   set dds1_phase [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds1_phase ]
   set_property -dict [ list \
-CONFIG.DATA_IN_SIZE {10} \
-CONFIG.DATA_OUT_SIZE {10} \
+CONFIG.DATA_IN_SIZE {16} \
+CONFIG.DATA_OUT_SIZE {16} \
 CONFIG.format {unsigned} \
  ] $dds1_phase
 
@@ -222,12 +228,13 @@ CONFIG.DATA_OUT_SIZE {14} \
 CONFIG.format {unsigned} \
  ] $dds2_ampl
 
-  # Create instance: dds2_nco_counter1, and set properties
-  set dds2_nco_counter1 [ create_bd_cell -type ip -vlnv user.org:user:nco_counter:1.0 dds2_nco_counter1 ]
+  # Create instance: dds2_nco_counter, and set properties
+  set dds2_nco_counter [ create_bd_cell -type ip -vlnv user.org:user:nco_counter:1.0 dds2_nco_counter ]
   set_property -dict [ list \
 CONFIG.COUNTER_SIZE {32} \
 CONFIG.DATA_SIZE {14} \
- ] $dds2_nco_counter1
+CONFIG.LUT_SIZE {10} \
+ ] $dds2_nco_counter
 
   # Create instance: dds2_offset, and set properties
   set dds2_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds2_offset ]
@@ -239,8 +246,8 @@ CONFIG.DATA_OUT_SIZE {14} \
   # Create instance: dds2_phase, and set properties
   set dds2_phase [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds2_phase ]
   set_property -dict [ list \
-CONFIG.DATA_IN_SIZE {10} \
-CONFIG.DATA_OUT_SIZE {10} \
+CONFIG.DATA_IN_SIZE {16} \
+CONFIG.DATA_OUT_SIZE {16} \
 CONFIG.format {unsigned} \
  ] $dds2_phase
 
@@ -833,7 +840,7 @@ CONFIG.PCW_PACKAGE_NAME {clg400} \
 CONFIG.PCW_PCAP_PERIPHERAL_CLKSRC {1} \
 CONFIG.PCW_PCAP_PERIPHERAL_DIVISOR0 {5} \
 CONFIG.PCW_PCAP_PERIPHERAL_FREQMHZ {200} \
-CONFIG.PCW_PERIPHERAL_BOARD_PRESET {None} \
+CONFIG.PCW_PERIPHERAL_BOARD_PRESET {part0} \
 CONFIG.PCW_PJTAG_PERIPHERAL_ENABLE {0} \
 CONFIG.PCW_PJTAG_PJTAG_IO {<Select>} \
 CONFIG.PCW_PLL_BYPASSMODE_ENABLE {0} \
@@ -1144,7 +1151,7 @@ CONFIG.CONST_WIDTH {14} \
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
   set_property -dict [ list \
 CONFIG.CONST_VAL {0} \
-CONFIG.CONST_WIDTH {10} \
+CONFIG.CONST_WIDTH {16} \
  ] $xlconstant_1
 
   # Create instance: xlslice_0, and set properties
@@ -1175,17 +1182,17 @@ CONFIG.DOUT_WIDTH {14} \
   connect_bd_intf_net -intf_net axi_interconnect_0_M03_AXI [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins dds1_nco_counter/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M04_AXI [get_bd_intf_pins axi_interconnect_0/M04_AXI] [get_bd_intf_pins dds1_ampl/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M05_AXI [get_bd_intf_pins axi_interconnect_0/M05_AXI] [get_bd_intf_pins dds1_offset/s00_axi]
-  connect_bd_intf_net -intf_net axi_interconnect_0_M06_AXI [get_bd_intf_pins axi_interconnect_0/M06_AXI] [get_bd_intf_pins dds2_nco_counter1/s00_axi]
+  connect_bd_intf_net -intf_net axi_interconnect_0_M06_AXI [get_bd_intf_pins axi_interconnect_0/M06_AXI] [get_bd_intf_pins dds2_nco_counter/s00_axi]
   connect_bd_intf_net -intf_net axi_interconnect_0_M07_AXI [get_bd_intf_pins axi_interconnect_0/M07_AXI] [get_bd_intf_pins dds2_phase/s00_axi]
   connect_bd_intf_net -intf_net dds1_ampl1_data_out [get_bd_intf_pins dds2_ampl/data_out] [get_bd_intf_pins dds2_twoInMult_1/data2]
-  connect_bd_intf_net -intf_net dds1_phase1_data_out [get_bd_intf_pins dds2_nco_counter1/poff_in] [get_bd_intf_pins dds2_phase/data_out]
   connect_bd_intf_net -intf_net dds1_phase_data_out [get_bd_intf_pins dds1_nco_counter/poff_in] [get_bd_intf_pins dds1_phase/data_out]
   connect_bd_intf_net -intf_net dds2_offset_data_out [get_bd_intf_pins ad9767_0/dataB] [get_bd_intf_pins dds2_offset/data_out]
+  connect_bd_intf_net -intf_net dds2_phase_data_out [get_bd_intf_pins dds2_nco_counter/poff_in] [get_bd_intf_pins dds2_phase/data_out]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
 
   # Create port connections
-  connect_bd_net -net ACLK_1 [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins axi_interconnect_0/M07_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins dds1_ampl/s00_axi_aclk] [get_bd_pins dds1_nco_counter/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds1_phase/s00_axi_aclk] [get_bd_pins dds2_ampl/s00_axi_aclk] [get_bd_pins dds2_nco_counter1/s00_axi_aclk] [get_bd_pins dds2_offset/s00_axi_aclk] [get_bd_pins dds2_phase/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+  connect_bd_net -net ACLK_1 [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/M03_ACLK] [get_bd_pins axi_interconnect_0/M04_ACLK] [get_bd_pins axi_interconnect_0/M05_ACLK] [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins axi_interconnect_0/M07_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins dds1_ampl/s00_axi_aclk] [get_bd_pins dds1_nco_counter/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds1_phase/s00_axi_aclk] [get_bd_pins dds2_ampl/s00_axi_aclk] [get_bd_pins dds2_nco_counter/s00_axi_aclk] [get_bd_pins dds2_offset/s00_axi_aclk] [get_bd_pins dds2_phase/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
   connect_bd_net -net ad9767_0_dac_clk_o [get_bd_ports dac_clk_o] [get_bd_pins ad9767_0/dac_clk_o]
   connect_bd_net -net ad9767_0_dac_dat_o [get_bd_ports dac_dat_o] [get_bd_pins ad9767_0/dac_dat_o]
   connect_bd_net -net ad9767_0_dac_rst_o [get_bd_ports dac_rst_o] [get_bd_pins ad9767_0/dac_rst_o]
@@ -1195,20 +1202,20 @@ CONFIG.DOUT_WIDTH {14} \
   connect_bd_net -net adc_clk_p_i_1 [get_bd_ports adc_clk_p_i] [get_bd_pins redpitaya_adc_dac_clk_0/adc_clk_p_i]
   connect_bd_net -net adc_data_a_i_1 [get_bd_ports adc_data_a_i] [get_bd_pins ltc2145_0/adc_data_a_i]
   connect_bd_net -net adc_data_b_i_1 [get_bd_ports adc_data_b_i] [get_bd_pins ltc2145_0/adc_data_b_i]
-  connect_bd_net -net dds1_nco_counter1_dds_clk_o [get_bd_pins dds2_ampl/data_clk_i] [get_bd_pins dds2_nco_counter1/dds_clk_o] [get_bd_pins dds2_phase/data_clk_i] [get_bd_pins dds2_twoInMult_1/data1_clk_i]
-  connect_bd_net -net dds1_nco_counter1_dds_en_o [get_bd_pins dds2_ampl/data_en_i] [get_bd_pins dds2_nco_counter1/dds_en_o] [get_bd_pins dds2_phase/data_en_i] [get_bd_pins dds2_twoInMult_1/data1_en_i]
-  connect_bd_net -net dds1_nco_counter1_dds_sin_o [get_bd_pins dds2_nco_counter1/dds_sin_o] [get_bd_pins dds2_twoInMult_1/data1_i]
+  connect_bd_net -net dds1_nco_counter1_dds_clk_o [get_bd_pins dds2_ampl/data_clk_i] [get_bd_pins dds2_nco_counter/dds_clk_o] [get_bd_pins dds2_phase/data_clk_i] [get_bd_pins dds2_twoInMult_1/data1_clk_i]
+  connect_bd_net -net dds1_nco_counter1_dds_en_o [get_bd_pins dds2_ampl/data_en_i] [get_bd_pins dds2_nco_counter/dds_en_o] [get_bd_pins dds2_phase/data_en_i] [get_bd_pins dds2_twoInMult_1/data1_en_i]
+  connect_bd_net -net dds1_nco_counter1_dds_sin_o [get_bd_pins dds2_nco_counter/dds_sin_o] [get_bd_pins dds2_twoInMult_1/data1_i]
   connect_bd_net -net dds1_twoInMult_1_data_clk_o [get_bd_pins dds2_offset/data_clk_i] [get_bd_pins dds2_twoInMult_1/data_clk_o]
   connect_bd_net -net dds1_twoInMult_1_data_en_o [get_bd_pins dds2_offset/data_en_i] [get_bd_pins dds2_twoInMult_1/data_en_o]
   connect_bd_net -net dds1_twoInMult_1_data_o [get_bd_pins dds2_twoInMult_1/data_o] [get_bd_pins xlslice_1/Din]
   connect_bd_net -net ltc2145_0_adc_cdcs [get_bd_ports adc_cdcs] [get_bd_pins ltc2145_0/adc_cdcs]
-  connect_bd_net -net ltc2145_0_adc_clk [get_bd_pins dds1_nco_counter/ref_clk_i] [get_bd_pins dds2_nco_counter1/ref_clk_i] [get_bd_pins ltc2145_0/adc_clk]
+  connect_bd_net -net ltc2145_0_adc_clk [get_bd_pins dds1_nco_counter/ref_clk_i] [get_bd_pins dds2_nco_counter/ref_clk_i] [get_bd_pins ltc2145_0/adc_clk]
   connect_bd_net -net nco_counter_0_dds_clk_o [get_bd_pins dds1_ampl/data_clk_i] [get_bd_pins dds1_nco_counter/dds_clk_o] [get_bd_pins dds1_phase/data_clk_i] [get_bd_pins dds1_twoInMult_0/data1_clk_i]
   connect_bd_net -net nco_counter_0_dds_en_o [get_bd_pins dds1_ampl/data_en_i] [get_bd_pins dds1_nco_counter/dds_en_o] [get_bd_pins dds1_phase/data_en_i] [get_bd_pins dds1_twoInMult_0/data1_en_i]
   connect_bd_net -net nco_counter_0_dds_sin_o [get_bd_pins dds1_nco_counter/dds_sin_o] [get_bd_pins dds1_twoInMult_0/data1_i]
   connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
   connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/M03_ARESETN] [get_bd_pins axi_interconnect_0/M04_ARESETN] [get_bd_pins axi_interconnect_0/M05_ARESETN] [get_bd_pins axi_interconnect_0/M06_ARESETN] [get_bd_pins axi_interconnect_0/M07_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins ltc2145_0/resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
-  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins dds1_ampl/data_rst_i] [get_bd_pins dds1_ampl/s00_axi_reset] [get_bd_pins dds1_nco_counter/ref_rst_i] [get_bd_pins dds1_nco_counter/s00_axi_reset] [get_bd_pins dds1_offset/data_rst_i] [get_bd_pins dds1_offset/s00_axi_reset] [get_bd_pins dds1_phase/data_rst_i] [get_bd_pins dds1_phase/s00_axi_reset] [get_bd_pins dds2_ampl/data_rst_i] [get_bd_pins dds2_ampl/s00_axi_reset] [get_bd_pins dds2_nco_counter1/ref_rst_i] [get_bd_pins dds2_nco_counter1/s00_axi_reset] [get_bd_pins dds2_offset/data_rst_i] [get_bd_pins dds2_offset/s00_axi_reset] [get_bd_pins dds2_phase/data_rst_i] [get_bd_pins dds2_phase/s00_axi_reset] [get_bd_pins ltc2145_0/processing_rst_i] [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins redpitaya_adc_dac_clk_0/adc_rst_i]
+  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins dds1_ampl/data_rst_i] [get_bd_pins dds1_ampl/s00_axi_reset] [get_bd_pins dds1_nco_counter/ref_rst_i] [get_bd_pins dds1_nco_counter/s00_axi_reset] [get_bd_pins dds1_offset/data_rst_i] [get_bd_pins dds1_offset/s00_axi_reset] [get_bd_pins dds1_phase/data_rst_i] [get_bd_pins dds1_phase/s00_axi_reset] [get_bd_pins dds2_ampl/data_rst_i] [get_bd_pins dds2_ampl/s00_axi_reset] [get_bd_pins dds2_nco_counter/ref_rst_i] [get_bd_pins dds2_nco_counter/s00_axi_reset] [get_bd_pins dds2_offset/data_rst_i] [get_bd_pins dds2_offset/s00_axi_reset] [get_bd_pins dds2_phase/data_rst_i] [get_bd_pins dds2_phase/s00_axi_reset] [get_bd_pins ltc2145_0/processing_rst_i] [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins redpitaya_adc_dac_clk_0/adc_rst_i]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
   connect_bd_net -net redpitaya_adc_dac_clk_0_adc_clk_o [get_bd_pins ltc2145_0/adc_clk_i] [get_bd_pins redpitaya_adc_dac_clk_0/adc_clk_o]
   connect_bd_net -net redpitaya_adc_dac_clk_0_dac_2clk_o [get_bd_pins ad9767_0/dac_2clk_i] [get_bd_pins redpitaya_adc_dac_clk_0/dac_2clk_o]
@@ -1225,105 +1232,105 @@ CONFIG.DOUT_WIDTH {14} \
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C20000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds2_ampl/s00_axi/reg0] SEG_dds1_ampl1_reg0
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C60000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds2_nco_counter1/s00_axi/reg0] SEG_dds1_nco_counter1_reg0
+  create_bd_addr_seg -range 0x00010000 -offset 0x43C30000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds1_nco_counter/s00_axi/reg0] SEG_dds1_nco_counter_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43C10000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds2_offset/s00_axi/reg0] SEG_dds1_offset1_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43C70000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds2_phase/s00_axi/reg0] SEG_dds1_phase1_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds1_phase/s00_axi/reg0] SEG_dds1_phase_reg0
+  create_bd_addr_seg -range 0x00010000 -offset 0x43C60000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds2_nco_counter/s00_axi/reg0] SEG_dds2_nco_counter_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43C40000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds1_ampl/s00_axi/reg0] SEG_dds_ampl_reg0
   create_bd_addr_seg -range 0x00010000 -offset 0x43C50000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds1_offset/s00_axi/reg0] SEG_dds_offset_reg0
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C30000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs dds1_nco_counter/s00_axi/reg0] SEG_nco_counter_0_reg0
 
   # Perform GUI Layout
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y 1290 -defaultsOSRD
-preplace port adc_cdcs -pg 1 -y 1530 -defaultsOSRD
-preplace port adc_clk_p_i -pg 1 -y 1840 -defaultsOSRD
+preplace port DDR -pg 1 -y 1280 -defaultsOSRD
+preplace port adc_cdcs -pg 1 -y 1550 -defaultsOSRD
+preplace port adc_clk_p_i -pg 1 -y 1810 -defaultsOSRD
 preplace port dac_rst_o -pg 1 -y 1690 -defaultsOSRD
 preplace port dac_clk_o -pg 1 -y 1670 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y 1300 -defaultsOSRD
 preplace port dac_sel_o -pg 1 -y 1650 -defaultsOSRD
 preplace port dac_wrt_o -pg 1 -y 1630 -defaultsOSRD
 preplace port adc_clk_n_i -pg 1 -y 1870 -defaultsOSRD
-preplace portBus adc_data_a_i -pg 1 -y 1860 -defaultsOSRD
-preplace portBus adc_data_b_i -pg 1 -y 1850 -defaultsOSRD
+preplace portBus adc_data_a_i -pg 1 -y 1850 -defaultsOSRD
+preplace portBus adc_data_b_i -pg 1 -y 1830 -defaultsOSRD
 preplace portBus dac_dat_o -pg 1 -y 1610 -defaultsOSRD
 preplace inst dds2_offset -pg 1 -lvl 3 -y 1420 -defaultsOSRD
 preplace inst xlslice_0 -pg 1 -lvl 2 -y 100 -defaultsOSRD
 preplace inst xlslice_1 -pg 1 -lvl 2 -y 1370 -defaultsOSRD
 preplace inst dds1_phase -pg 1 -lvl 3 -y 640 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 2 -y 370 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 670 -defaultsOSRD
 preplace inst redpitaya_adc_dac_clk_0 -pg 1 -lvl 2 -y 1790 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 2 -y 450 -defaultsOSRD
 preplace inst dds1_nco_counter -pg 1 -lvl 4 -y 580 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -y 590 -defaultsOSRD
 preplace inst dds1_ampl -pg 1 -lvl 3 -y 400 -defaultsOSRD
 preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 1750 -defaultsOSRD
-preplace inst dds1_twoInMult_0 -pg 1 -lvl 4 -y 360 -defaultsOSRD
-preplace inst dds2_phase -pg 1 -lvl 3 -y 1170 -defaultsOSRD
+preplace inst dds1_twoInMult_0 -pg 1 -lvl 4 -y 350 -defaultsOSRD
+preplace inst dds2_phase -pg 1 -lvl 3 -y 1140 -defaultsOSRD
 preplace inst ad9767_0 -pg 1 -lvl 4 -y 1650 -defaultsOSRD
-preplace inst dds2_ampl -pg 1 -lvl 3 -y 920 -defaultsOSRD
-preplace inst dds2_twoInMult_1 -pg 1 -lvl 4 -y 1040 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 740 -defaultsOSRD
+preplace inst dds2_ampl -pg 1 -lvl 3 -y 890 -defaultsOSRD
+preplace inst dds2_twoInMult_1 -pg 1 -lvl 4 -y 1180 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 1030 -defaultsOSRD
 preplace inst dds1_offset -pg 1 -lvl 3 -y 150 -defaultsOSRD
 preplace inst ltc2145_0 -pg 1 -lvl 3 -y 1650 -defaultsOSRD
-preplace inst dds2_nco_counter1 -pg 1 -lvl 4 -y 840 -defaultsOSRD
+preplace inst dds2_nco_counter -pg 1 -lvl 4 -y 950 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 1450 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 4 450J 1290 NJ 1290 NJ 1290 NJ
-preplace netloc xlconstant_1_dout 1 2 1 840
-preplace netloc twoInMult_0_data_clk_o 1 2 3 810 10 NJ 10 1580
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 1300 910J 1290 NJ 1290 1610J
+preplace netloc xlconstant_1_dout 1 2 1 880
+preplace netloc twoInMult_0_data_clk_o 1 2 3 790 10 NJ 10 1610
 preplace netloc ad9767_0_dac_wrt_o 1 4 1 NJ
 preplace netloc ad9767_0_dac_rst_o 1 4 1 NJ
 preplace netloc xlslice_1_Dout 1 2 1 NJ
-preplace netloc ltc2145_0_adc_cdcs 1 3 2 1210J 1530 NJ
-preplace netloc add_const_3_data_out 1 3 1 1200
-preplace netloc add_const_2_data_out 1 3 1 N
-preplace netloc nco_counter_0_dds_clk_o 1 2 3 900 270 1220 450 1580
-preplace netloc dds2_offset_data_out 1 3 1 1150
-preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 2 NJ 1760 1230
-preplace netloc ACLK_1 1 0 4 20 200 430 200 860 520 1150
-preplace netloc axi_interconnect_0_M02_AXI 1 2 1 820
-preplace netloc dds1_twoInMult_1_data_en_o 1 2 3 900 1550 NJ 1550 1570
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1660 440
-preplace netloc dds1_nco_counter1_dds_en_o 1 2 3 900 1040 1230 1140 1580
-preplace netloc adc_data_b_i_1 1 0 3 NJ 1850 500J 1690 NJ
-preplace netloc adc_clk_n_i_1 1 0 2 NJ 1870 530J
-preplace netloc axi_interconnect_0_M07_AXI 1 2 1 810
-preplace netloc dds1_phase_data_out 1 3 1 1170
-preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 2 NJ 1800 1250
-preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 2 NJ 1780 1240
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 460
-preplace netloc axi_interconnect_0_M04_AXI 1 2 1 850
-preplace netloc dds1_nco_counter1_dds_clk_o 1 2 3 910 1050 1150 1130 1550
-preplace netloc xlconstant_0_dout 1 2 1 890
-preplace netloc processing_system7_0_FIXED_IO 1 1 4 470J 1300 NJ 1300 NJ 1300 NJ
-preplace netloc dds1_phase1_data_out 1 3 1 1160
+preplace netloc ltc2145_0_adc_cdcs 1 3 2 1250J 1550 NJ
+preplace netloc dds2_phase_data_out 1 3 1 1210
+preplace netloc add_const_3_data_out 1 3 1 1240
+preplace netloc add_const_2_data_out 1 3 1 1180
+preplace netloc nco_counter_0_dds_clk_o 1 2 3 940 280 1250 440 1580
+preplace netloc dds2_offset_data_out 1 3 1 1180
+preplace netloc redpitaya_adc_dac_clk_0_dac_2clk_o 1 2 2 NJ 1760 1270
+preplace netloc ACLK_1 1 0 4 30 450 430 450 890 760 1260
+preplace netloc axi_interconnect_0_M02_AXI 1 2 1 840
+preplace netloc dds1_twoInMult_1_data_en_o 1 2 3 940 1270 NJ 1270 1570
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1850 430
+preplace netloc dds1_nco_counter1_dds_en_o 1 2 3 930 1020 1220 1080 1580
+preplace netloc adc_data_b_i_1 1 0 3 20J 1840 480J 1690 NJ
+preplace netloc adc_clk_n_i_1 1 0 2 NJ 1870 510J
+preplace netloc dds1_phase_data_out 1 3 1 1180
+preplace netloc axi_interconnect_0_M07_AXI 1 2 1 800
+preplace netloc redpitaya_adc_dac_clk_0_dac_locked_o 1 2 2 NJ 1800 1290
+preplace netloc redpitaya_adc_dac_clk_0_dac_2ph_o 1 2 2 NJ 1780 1280
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 450
+preplace netloc axi_interconnect_0_M04_AXI 1 2 1 820
+preplace netloc dds1_nco_counter1_dds_clk_o 1 2 3 940 1010 1180 1070 1570
+preplace netloc xlconstant_0_dout 1 2 1 800
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 1320 920J 1300 NJ 1300 NJ
 preplace netloc S00_AXI_1 1 1 1 440
-preplace netloc twoInMult_0_data_en_o 1 2 3 910 30 NJ 30 1540
-preplace netloc nco_counter_0_dds_sin_o 1 3 2 1230 270 1570
-preplace netloc nco_counter_0_dds_en_o 1 2 3 910 280 1210 460 1540
-preplace netloc ltc2145_0_adc_clk 1 3 1 1180
-preplace netloc dds1_ampl1_data_out 1 3 1 1190
-preplace netloc axi_interconnect_0_M00_AXI 1 2 1 N
-preplace netloc axi_interconnect_0_M05_AXI 1 2 1 810
-preplace netloc dds1_nco_counter1_dds_sin_o 1 3 2 1230 730 1540
-preplace netloc dds1_twoInMult_1_data_clk_o 1 2 3 910 1540 NJ 1540 1540
-preplace netloc twoInMult_0_data_o 1 1 4 430 20 NJ 20 NJ 20 1550
-preplace netloc proc_sys_reset_0_peripheral_reset 1 1 3 520 1610 870 790 1210
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 480 1630 NJ
+preplace netloc nco_counter_0_dds_sin_o 1 3 2 1270 260 1570
+preplace netloc twoInMult_0_data_en_o 1 2 3 800 30 NJ 30 1580
+preplace netloc nco_counter_0_dds_en_o 1 2 3 930 270 1260 250 1600
+preplace netloc ltc2145_0_adc_clk 1 3 1 1200
+preplace netloc dds1_ampl1_data_out 1 3 1 1230
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 810
+preplace netloc axi_interconnect_0_M05_AXI 1 2 1 790
+preplace netloc dds1_nco_counter1_dds_sin_o 1 3 2 1270 830 1570
+preplace netloc dds1_twoInMult_1_data_clk_o 1 2 3 930 1260 1180J 1310 1580
+preplace netloc twoInMult_0_data_o 1 1 4 430 20 NJ 20 NJ 20 1590
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 3 490 1610 860 1540 1190
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 460 1630 NJ
 preplace netloc ad9767_0_dac_clk_o 1 4 1 NJ
-preplace netloc axi_interconnect_0_M01_AXI 1 2 1 830
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 850
 preplace netloc redpitaya_adc_dac_clk_0_adc_clk_o 1 2 1 870
-preplace netloc adc_data_a_i_1 1 0 3 NJ 1860 490J 1670 NJ
+preplace netloc adc_data_a_i_1 1 0 3 0J 1860 470J 1670 NJ
 preplace netloc ad9767_0_dac_sel_o 1 4 1 NJ
-preplace netloc axi_interconnect_0_M06_AXI 1 2 2 850 780 NJ
-preplace netloc axi_interconnect_0_M03_AXI 1 2 2 880 760 1160J
-preplace netloc dds1_twoInMult_1_data_o 1 1 4 520 1560 NJ 1560 1190J 1430 1560
+preplace netloc axi_interconnect_0_M06_AXI 1 2 2 870J 770 1250
+preplace netloc axi_interconnect_0_M03_AXI 1 2 2 830 520 NJ
+preplace netloc dds1_twoInMult_1_data_o 1 1 4 500 1290 900J 1280 NJ 1280 1590
 preplace netloc xlslice_0_Dout 1 2 1 NJ
-preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 2 NJ 1740 1220
-preplace netloc adc_clk_p_i_1 1 0 2 NJ 1840 510J
+preplace netloc redpitaya_adc_dac_clk_0_dac_clk_o 1 2 2 NJ 1740 1260
+preplace netloc adc_clk_p_i_1 1 0 2 10J 1880 500J
 preplace netloc ad9767_0_dac_dat_o 1 4 1 NJ
-levelinfo -pg 1 0 230 670 1030 1400 1600 -top 0 -bot 1910
+levelinfo -pg 1 -20 230 650 1060 1430 1630 -top 0 -bot 1910
 ",
 }
 

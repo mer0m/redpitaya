@@ -261,15 +261,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>dds1_nco_counter</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_nco_counter_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>proc_sys_reset_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="proc_sys_reset" spirit:vendor="xilinx.com" spirit:version="5.0"/>
         <spirit:configurableElementValues>
@@ -481,6 +472,10 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_M_AXI_GP0_SUPPORT_NARROW_BURST">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_M_AXI_GP0_THREAD_ID_WIDTH">12</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_INCLUDE_ACP_TRANS_CHECK">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP0_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP1_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP2_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP3_DATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_DDR">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_SMC">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_QSPI">1</spirit:configurableElementValue>
@@ -525,7 +520,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_IRQ_F2P_MODE">REVERSE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_VALUE_SILVERSION">3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_IMPORT_BOARD_PRESET">None</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PCW_PERIPHERAL_BOARD_PRESET">None</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_PERIPHERAL_BOARD_PRESET">part0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_PRESET_BANK0_VOLTAGE">LVCMOS 3.3V</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_PRESET_BANK1_VOLTAGE">LVCMOS 2.5V</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_UIPARAM_DDR_ENABLE">1</spirit:configurableElementValue>
@@ -556,6 +551,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET_RESET_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET_RESET_SELECT">Share reset pin</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_RESET_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_RESET_IO">&lt;Select&gt;</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_SD0_IO">MIO 40 .. 45</spirit:configurableElementValue>
@@ -597,6 +593,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_I2C0_IO">MIO 50 .. 51</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_GRP_INT_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_RESET_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_RESET_IO">&lt;Select&gt;</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C_RESET_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C_RESET_SELECT">Share reset pin</spirit:configurableElementValue>
@@ -884,8 +881,8 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_dds_ampl_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">10</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">10</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">16</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -893,7 +890,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_xlconstant_0_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">10</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -936,22 +933,33 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>dds2_nco_counter1</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_dds1_nco_counter_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>dds2_phase</spirit:instanceName>
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_dds1_phase_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">10</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">10</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">16</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dds1_nco_counter</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_nco_counter_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">12</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dds2_nco_counter</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="nco_counter" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">double_dds_wrapper_dds1_nco_counter_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="COUNTER_SIZE">32</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="LUT_SIZE">10</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -972,11 +980,6 @@
         <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="dds1_offset"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>axi_interconnect_0_M03_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="M03_AXI" spirit:componentRef="axi_interconnect_0"/>
-        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds1_nco_counter"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M04_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M04_AXI" spirit:componentRef="axi_interconnect_0"/>
         <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds1_ampl"/>
@@ -990,11 +993,6 @@
         <spirit:name>axi_interconnect_0_M00_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M00_AXI" spirit:componentRef="axi_interconnect_0"/>
         <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds1_phase"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>dds1_phase_data_out</spirit:name>
-        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="dds1_phase"/>
-        <spirit:activeInterface spirit:busRef="poff_in" spirit:componentRef="dds1_nco_counter"/>
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M01_AXI</spirit:name>
@@ -1017,19 +1015,29 @@
         <spirit:activeInterface spirit:busRef="data2" spirit:componentRef="dds2_twoInMult_1"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>axi_interconnect_0_M06_AXI</spirit:name>
-        <spirit:activeInterface spirit:busRef="M06_AXI" spirit:componentRef="axi_interconnect_0"/>
-        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds2_nco_counter1"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M07_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M07_AXI" spirit:componentRef="axi_interconnect_0"/>
         <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds2_phase"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>dds1_phase1_data_out</spirit:name>
+        <spirit:name>axi_interconnect_0_M03_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M03_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds1_nco_counter"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>dds1_phase_data_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="dds1_phase"/>
+        <spirit:activeInterface spirit:busRef="poff_in" spirit:componentRef="dds1_nco_counter"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_interconnect_0_M06_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M06_AXI" spirit:componentRef="axi_interconnect_0"/>
+        <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="dds2_nco_counter"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>dds2_phase_data_out</spirit:name>
         <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="dds2_phase"/>
-        <spirit:activeInterface spirit:busRef="poff_in" spirit:componentRef="dds2_nco_counter1"/>
+        <spirit:activeInterface spirit:busRef="poff_in" spirit:componentRef="dds2_nco_counter"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -1040,11 +1048,9 @@
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds1_phase" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds2_offset" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds2_ampl" spirit:portRef="s00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds2_phase" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
@@ -1056,6 +1062,8 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M05_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M06_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M07_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="s00_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ad9767_0_dac_clk_o</spirit:name>
@@ -1111,7 +1119,7 @@
         <spirit:name>ltc2145_0_adc_clk</spirit:name>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="adc_clk"/>
         <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="ref_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="ref_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="ref_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>nco_counter_0_dds_clk_o</spirit:name>
@@ -1126,11 +1134,6 @@
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="data_en_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_twoInMult_0" spirit:portRef="data1_en_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_phase" spirit:portRef="data_en_i"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>nco_counter_0_dds_sin_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="dds_sin_o"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_twoInMult_0" spirit:portRef="data1_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>proc_sys_reset_0_interconnect_aresetn</spirit:name>
@@ -1160,18 +1163,18 @@
         <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="processing_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="ref_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds1_phase" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds1_phase" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds2_offset" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_ampl" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds2_ampl" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="s00_axi_reset"/>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="ref_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_phase" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds2_phase" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="ref_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="s00_axi_reset"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="ref_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="s00_axi_reset"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -1256,23 +1259,28 @@
         <spirit:internalPortReference spirit:componentRef="dds2_offset" spirit:portRef="data_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>dds1_nco_counter1_dds_sin_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="dds_sin_o"/>
-        <spirit:internalPortReference spirit:componentRef="dds2_twoInMult_1" spirit:portRef="data1_i"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>dds1_nco_counter1_dds_en_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="dds_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="dds_en_o"/>
         <spirit:internalPortReference spirit:componentRef="dds2_twoInMult_1" spirit:portRef="data1_en_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_phase" spirit:portRef="data_en_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_ampl" spirit:portRef="data_en_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dds1_nco_counter1_dds_clk_o</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter1" spirit:portRef="dds_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="dds_clk_o"/>
         <spirit:internalPortReference spirit:componentRef="dds2_twoInMult_1" spirit:portRef="data1_clk_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_phase" spirit:portRef="data_clk_i"/>
         <spirit:internalPortReference spirit:componentRef="dds2_ampl" spirit:portRef="data_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>nco_counter_0_dds_sin_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dds1_nco_counter" spirit:portRef="dds_sin_o"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_twoInMult_0" spirit:portRef="data1_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dds1_nco_counter1_dds_sin_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dds2_nco_counter" spirit:portRef="dds_sin_o"/>
+        <spirit:internalPortReference spirit:componentRef="dds2_twoInMult_1" spirit:portRef="data1_i"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -3951,9 +3959,9 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_dds1_nco_counter1_reg0</spirit:name>
-            <spirit:displayName>/dds2_nco_counter1/s00_axi/reg0</spirit:displayName>
-            <spirit:addressOffset>0x43C60000</spirit:addressOffset>
+            <spirit:name>SEG_dds1_nco_counter_reg0</spirit:name>
+            <spirit:displayName>/dds1_nco_counter/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43C30000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
@@ -3975,6 +3983,12 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
+            <spirit:name>SEG_dds2_nco_counter_reg0</spirit:name>
+            <spirit:displayName>/dds2_nco_counter/s00_axi/reg0</spirit:displayName>
+            <spirit:addressOffset>0x43C60000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
             <spirit:name>SEG_dds_ampl_reg0</spirit:name>
             <spirit:displayName>/dds1_ampl/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x43C40000</spirit:addressOffset>
@@ -3984,12 +3998,6 @@
             <spirit:name>SEG_dds_offset_reg0</spirit:name>
             <spirit:displayName>/dds1_offset/s00_axi/reg0</spirit:displayName>
             <spirit:addressOffset>0x43C50000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
-          </spirit:segment>
-          <spirit:segment>
-            <spirit:name>SEG_nco_counter_0_reg0</spirit:name>
-            <spirit:displayName>/dds1_nco_counter/s00_axi/reg0</spirit:displayName>
-            <spirit:addressOffset>0x43C30000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>

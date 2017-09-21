@@ -1,8 +1,8 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed May 10 18:17:47 2017
--- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+-- Date        : Wed Sep 20 16:48:35 2017
+-- Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ double_dds_wrapper_dds_ampl_1_stub.vhdl
 -- Design      : double_dds_wrapper_dds_ampl_1
@@ -35,10 +35,10 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC;
-    data_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    data_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     data_en_i : in STD_LOGIC;
     data_clk_i : in STD_LOGIC;
-    data_o : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    data_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     data_en_o : out STD_LOGIC;
     data_clk_o : out STD_LOGIC;
     data_rst_o : out STD_LOGIC;
@@ -51,7 +51,7 @@ architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "s00_axi_aclk,s00_axi_reset,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,data_i[9:0],data_en_i,data_clk_i,data_o[9:0],data_en_o,data_clk_o,data_rst_o,data_rst_i";
+attribute black_box_pad_pin of stub : architecture is "s00_axi_aclk,s00_axi_reset,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,data_i[15:0],data_en_i,data_clk_i,data_o[15:0],data_en_o,data_clk_o,data_rst_o,data_rst_i";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "add_const,Vivado 2016.4";
 begin

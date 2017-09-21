@@ -28,9 +28,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrap
 # IP: bd/double_dds_wrapper/ip/double_dds_wrapper_ltc2145_0_0/double_dds_wrapper_ltc2145_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_ltc2145_0_0 || ORIG_REF_NAME==double_dds_wrapper_ltc2145_0_0}]
 
-# IP: bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/double_dds_wrapper_nco_counter_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_nco_counter_0_0 || ORIG_REF_NAME==double_dds_wrapper_nco_counter_0_0}]
-
 # IP: bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_proc_sys_reset_0_0 || ORIG_REF_NAME==double_dds_wrapper_proc_sys_reset_0_0}]
 
@@ -67,11 +64,14 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrap
 # IP: bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_dds1_ampl_0 || ORIG_REF_NAME==double_dds_wrapper_dds1_ampl_0}]
 
-# IP: bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/double_dds_wrapper_dds1_nco_counter_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_dds1_nco_counter_0 || ORIG_REF_NAME==double_dds_wrapper_dds1_nco_counter_0}]
-
 # IP: bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_dds1_phase_0 || ORIG_REF_NAME==double_dds_wrapper_dds1_phase_0}]
+
+# IP: bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_nco_counter_0_2 || ORIG_REF_NAME==double_dds_wrapper_nco_counter_0_2}]
+
+# IP: bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_dds1_nco_counter_1 || ORIG_REF_NAME==double_dds_wrapper_dds1_nco_counter_1}]
 
 # IP: bd/double_dds_wrapper/ip/double_dds_wrapper_auto_pc_0/double_dds_wrapper_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_wrapper_auto_pc_0 || ORIG_REF_NAME==double_dds_wrapper_auto_pc_0}]

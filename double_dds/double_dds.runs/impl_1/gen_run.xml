@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1494480725">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1506002964">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="double_dds_wrapper.drc"/>
   <File Type="BG-BGN" Name="double_dds_wrapper.bgn"/>
@@ -116,24 +116,22 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_nco_counter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_ltc2145_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_nco_counter_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_xlslice_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_xlconstant_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_twoInMult_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_ampl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds_ampl_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_phase_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_xlslice_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_xlconstant_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds_ampl_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds_ampl_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_twoInMult_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_nco_counter_1"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_redpitaya_adc_dac_clk_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_ad9767_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_wrapper_dds1_nco_counter_0"/>
 </GenRun>

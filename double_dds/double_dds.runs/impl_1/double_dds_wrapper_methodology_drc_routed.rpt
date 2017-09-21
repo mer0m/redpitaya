@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu May 11 07:34:43 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date         : Thu Sep 21 16:13:56 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command      : report_methodology -file double_dds_wrapper_methodology_drc_routed.rpt -rpx double_dds_wrapper_methodology_drc_routed.rpx
 | Design       : double_dds_wrapper
 | Device       : xc7z010clg400-1
@@ -149,27 +149,27 @@ Related violations: <none>
 
 TIMING-28#1 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_2clk_out is referenced by name inside timing constraint (see constraint position 16 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT1]
+The auto-derived clock dac_2clk_out is referenced by name inside timing constraint (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT1]
 Related violations: <none>
 
 TIMING-28#2 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_2ph_out is referenced by name inside timing constraint (see constraint position 17 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT2]
+The auto-derived clock dac_2ph_out is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT2]
 Related violations: <none>
 
 TIMING-28#3 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT0]
+The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 13 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#4 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 16 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT0]
+The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 14 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#5 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 17 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT0]
+The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 15 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins redpitaya_adc_dac_clk_0/inst/i_dac_plle2/CLKOUT0]
 Related violations: <none>
 
 

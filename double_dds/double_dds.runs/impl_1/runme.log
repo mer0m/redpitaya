@@ -14,12 +14,12 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_ad9767_0_0/double_dds_wrapper_ad9767_0_0.dcp' for cell 'ad9767_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_0/double_dds_wrapper_dds_ampl_0.dcp' for cell 'dds1_ampl'
-INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/double_dds_wrapper_nco_counter_0_0.dcp' for cell 'dds1_nco_counter'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2.dcp' for cell 'dds1_nco_counter'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/double_dds_wrapper_dds_offset_0.dcp' for cell 'dds1_offset'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_1/double_dds_wrapper_dds_ampl_1.dcp' for cell 'dds1_phase'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_twoInMult_0_0/double_dds_wrapper_twoInMult_0_0.dcp' for cell 'dds1_twoInMult_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.dcp' for cell 'dds2_ampl'
-INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/double_dds_wrapper_dds1_nco_counter_0.dcp' for cell 'dds2_nco_counter1'
+INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.dcp' for cell 'dds2_nco_counter'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_offset_0/double_dds_wrapper_dds1_offset_0.dcp' for cell 'dds2_offset'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.dcp' for cell 'dds2_phase'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_twoInMult_0_0/double_dds_wrapper_dds1_twoInMult_0_0.dcp' for cell 'dds2_twoInMult_1'
@@ -33,7 +33,7 @@ INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpi
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_xlslice_0_1/double_dds_wrapper_xlslice_0_1.dcp' for cell 'xlslice_1'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_xbar_0/double_dds_wrapper_xbar_0.dcp' for cell 'axi_interconnect_0/xbar'
 INFO: [Project 1-454] Reading design checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_auto_pc_0/double_dds_wrapper_auto_pc_0.dcp' for cell 'axi_interconnect_0/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7z010clg400-1
@@ -42,11 +42,6 @@ Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_0/add_const_ooc.xdc] for cell 'dds1_ampl/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/add_const_ooc.xdc] for cell 'dds1_offset/U0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/add_const_ooc.xdc] for cell 'dds1_offset/U0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/nco_counter_ooc.xdc] for cell 'dds1_nco_counter/U0'
-WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/nco_counter_ooc.xdc:5]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/nco_counter_ooc.xdc:5]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/nco_counter_ooc.xdc] for cell 'dds1_nco_counter/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0_board.xdc] for cell 'proc_sys_reset_0/U0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0_board.xdc] for cell 'proc_sys_reset_0/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.xdc] for cell 'proc_sys_reset_0/U0'
@@ -56,7 +51,7 @@ Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'redpitaya_adc_dac_clk_0/inst'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
 INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc:9]
-get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1746.434 ; gain = 412.508 ; free physical = 3901 ; free virtual = 13711
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1745.445 ; gain = 411.508 ; free physical = 133 ; free virtual = 10953
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_redpitaya_adc_dac_clk_0_0/adc_dac_clk_ooc.xdc] for cell 'redpitaya_adc_dac_clk_0/inst'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_1/add_const_ooc.xdc] for cell 'dds1_phase/U0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_1/add_const_ooc.xdc] for cell 'dds1_phase/U0'
@@ -64,13 +59,18 @@ Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_offset_0/add_const_ooc.xdc] for cell 'dds2_offset/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/add_const_ooc.xdc] for cell 'dds2_ampl/U0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/add_const_ooc.xdc] for cell 'dds2_ampl/U0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/nco_counter_ooc.xdc] for cell 'dds2_nco_counter1/U0'
-WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/nco_counter_ooc.xdc:5]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/nco_counter_ooc.xdc:5]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/nco_counter_ooc.xdc] for cell 'dds2_nco_counter1/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/add_const_ooc.xdc] for cell 'dds2_phase/U0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/add_const_ooc.xdc] for cell 'dds2_phase/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/nco_counter_ooc.xdc] for cell 'dds1_nco_counter/U0'
+WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/nco_counter_ooc.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/nco_counter_ooc.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/nco_counter_ooc.xdc] for cell 'dds1_nco_counter/U0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/nco_counter_ooc.xdc] for cell 'dds2_nco_counter/U0'
+WARNING: [Vivado 12-508] No pins matched 'nco_inst1/cpt_off2_s_reg[*]/D'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/nco_counter_ooc.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_pins {nco_inst1/cpt_off2_s_reg[*]/D}]'. [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/nco_counter_ooc.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/nco_counter_ooc.xdc] for cell 'dds2_nco_counter/U0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc]
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/constrs_1/imports/fpga_ip/ad9767/ad9767.xdc]
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/constrs_1/imports/fpga_ip/ltc2145/ltc2145-redpy.xdc]
@@ -80,21 +80,21 @@ Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/double
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_xbar_0/double_dds_wrapper_xbar_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_0/double_dds_wrapper_dds_ampl_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_offset_0/double_dds_wrapper_dds_offset_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_0/double_dds_wrapper_nco_counter_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_processing_system7_0_0/double_dds_wrapper_processing_system7_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_redpitaya_adc_dac_clk_0_0/double_dds_wrapper_redpitaya_adc_dac_clk_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_1/double_dds_wrapper_dds_ampl_1.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_offset_0/double_dds_wrapper_dds1_offset_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_0/double_dds_wrapper_dds1_nco_counter_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_auto_pc_0/double_dds_wrapper_auto_pc_0.dcp'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1746.434 ; gain = 735.754 ; free physical = 3909 ; free virtual = 13710
+link_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1745.445 ; gain = 735.758 ; free physical = 142 ; free virtual = 10952
 INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
@@ -106,46 +106,46 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.85 . Memory (MB): peak = 1778.449 ; gain = 32.016 ; free physical = 3896 ; free virtual = 13698
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.98 . Memory (MB): peak = 1777.461 ; gain = 32.016 ; free physical = 132 ; free virtual = 10942
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 91a74e9e
+Implement Debug Cores | Checksum: 1326c83a4
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 26 inverter(s) to 26 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1e2353dec
+Phase 1 Retarget | Checksum: 1b2d16ecd
 
-Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.48 . Memory (MB): peak = 1788.449 ; gain = 0.000 ; free physical = 3887 ; free virtual = 13696
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.91 . Memory (MB): peak = 1784.461 ; gain = 0.000 ; free physical = 135 ; free virtual = 10943
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-10] Eliminated 200 cells.
-Phase 2 Constant propagation | Checksum: 192f456ce
+INFO: [Opt 31-10] Eliminated 206 cells.
+Phase 2 Constant propagation | Checksum: 1253c8f75
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1788.449 ; gain = 0.000 ; free physical = 3888 ; free virtual = 13695
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1784.461 ; gain = 0.000 ; free physical = 135 ; free virtual = 10942
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 498 unconnected nets.
-INFO: [Opt 31-11] Eliminated 413 unconnected cells.
-Phase 3 Sweep | Checksum: 17ae413e4
+INFO: [Opt 31-12] Eliminated 526 unconnected nets.
+INFO: [Opt 31-11] Eliminated 441 unconnected cells.
+Phase 3 Sweep | Checksum: ff93a177
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1788.449 ; gain = 0.000 ; free physical = 3888 ; free virtual = 13696
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1784.461 ; gain = 0.000 ; free physical = 121 ; free virtual = 10945
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: 19dffade4
+Phase 4 BUFG optimization | Checksum: 7caef30c
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1788.449 ; gain = 0.000 ; free physical = 3892 ; free virtual = 13699
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1784.461 ; gain = 0.000 ; free physical = 143 ; free virtual = 10948
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1788.449 ; gain = 0.000 ; free physical = 3892 ; free virtual = 13699
-Ending Logic Optimization Task | Checksum: 19dffade4
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1784.461 ; gain = 0.000 ; free physical = 143 ; free virtual = 10948
+Ending Logic Optimization Task | Checksum: 7caef30c
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1788.449 ; gain = 0.000 ; free physical = 3892 ; free virtual = 13699
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1784.461 ; gain = 0.000 ; free physical = 187 ; free virtual = 10947
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -158,24 +158,24 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 4
-Ending PowerOpt Patch Enables Task | Checksum: 1b92c0217
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 3 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 3 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: ffd0f162
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3833 ; free virtual = 13648
-Ending Power Optimization Task | Checksum: 1b92c0217
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 184 ; free virtual = 10890
+Ending Power Optimization Task | Checksum: ffd0f162
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1971.539 ; gain = 183.090 ; free physical = 3809 ; free virtual = 13648
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1946.570 ; gain = 162.109 ; free physical = 184 ; free virtual = 10890
 INFO: [Common 17-83] Releasing license: Implementation
 64 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1971.539 ; gain = 225.105 ; free physical = 3809 ; free virtual = 13648
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.570 ; gain = 201.125 ; free physical = 184 ; free virtual = 10890
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3755 ; free virtual = 13648
+Write XDEF Complete: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 157 ; free virtual = 10890
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/double_dds_wrapper_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/double_dds_wrapper_drc_opted.rpt.
@@ -197,79 +197,79 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3728 ; free virtual = 13621
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3798 ; free virtual = 13622
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 11d7f97ce
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f56ad70d
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3800 ; free virtual = 13627
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 1be2fd60f
+Phase 1.2 Build Placer Netlist Model | Checksum: 1d4609bb0
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3799 ; free virtual = 13628
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 1be2fd60f
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1d4609bb0
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3798 ; free virtual = 13628
-Phase 1 Placer Initialization | Checksum: 1be2fd60f
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
+Phase 1 Placer Initialization | Checksum: 1d4609bb0
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3798 ; free virtual = 13628
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 2195b1244
+Phase 2 Global Placement | Checksum: 16f4c559b
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3797 ; free virtual = 13627
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 2195b1244
+Phase 3.1 Commit Multi Column Macros | Checksum: 16f4c559b
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3797 ; free virtual = 13627
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16acc09fc
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 214ccb9ba
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3797 ; free virtual = 13628
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10888
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 183f41ff1
+Phase 3.3 Area Swap Optimization | Checksum: 1d0a483db
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3797 ; free virtual = 13628
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10888
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 183f41ff1
+Phase 3.4 Pipeline Register Optimization | Checksum: 1d0a483db
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3797 ; free virtual = 13628
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10888
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 194e0d681
+Phase 3.5 Timing Path Optimizer | Checksum: 15c282785
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3796 ; free virtual = 13628
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 10e8826e2
+Phase 3.6 Small Shape Detail Placement | Checksum: 160279e67
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3796 ; free virtual = 13628
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: fcc94393
+Phase 3.7 Re-assign LUT pins | Checksum: 207a59acc
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3796 ; free virtual = 13628
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: fcc94393
+Phase 3.8 Pipeline Register Optimization | Checksum: 207a59acc
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3796 ; free virtual = 13628
-Phase 3 Detail Placement | Checksum: fcc94393
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
+Phase 3 Detail Placement | Checksum: 207a59acc
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3796 ; free virtual = 13628
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 186 ; free virtual = 10888
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -277,47 +277,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.591. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: edfe760f
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.544. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2222d7987
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
-Phase 4.1 Post Commit Optimization | Checksum: edfe760f
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
+Phase 4.1 Post Commit Optimization | Checksum: 2222d7987
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: edfe760f
+Phase 4.2 Post Placement Cleanup | Checksum: 2222d7987
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: edfe760f
+Phase 4.3 Placer Reporting | Checksum: 2222d7987
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 128a60986
+Phase 4.4 Final Placement Cleanup | Checksum: 2e4961862
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 128a60986
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2e4961862
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
-Ending Placer Task | Checksum: 49d1f604
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
+Ending Placer Task | Checksum: 1e617175d
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
 INFO: [Common 17-83] Releasing license: Implementation
 82 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3795 ; free virtual = 13628
+place_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:16 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 185 ; free virtual = 10889
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.41 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3790 ; free virtual = 13628
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.57 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 180 ; free virtual = 10888
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/double_dds_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3794 ; free virtual = 13628
-report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3794 ; free virtual = 13628
-report_control_sets: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3794 ; free virtual = 13629
+report_io: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 182 ; free virtual = 10888
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 181 ; free virtual = 10887
+report_control_sets: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 180 ; free virtual = 10887
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -329,117 +329,110 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: 6587052 ConstDB: 0 ShapeSum: 437985b2 RouteDB: 0
+Checksum: PlaceDB: eb7e0aa3 ConstDB: 0 ShapeSum: fa990cba RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 14e7404da
+Phase 1 Build RT Design | Checksum: 129212ec2
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3739 ; free virtual = 13599
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 136 ; free virtual = 10841
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 14e7404da
+Phase 2.1 Create Timer | Checksum: 129212ec2
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3738 ; free virtual = 13599
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 136 ; free virtual = 10841
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 14e7404da
+Phase 2.2 Fix Topology Constraints | Checksum: 129212ec2
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3725 ; free virtual = 13586
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10829
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 14e7404da
+Phase 2.3 Pre Route Cleanup | Checksum: 129212ec2
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3724 ; free virtual = 13586
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10829
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1f15cf79b
+Phase 2.4 Update Timing | Checksum: 189f0aca8
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3721 ; free virtual = 13584
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.725  | TNS=0.000  | WHS=-0.889 | THS=-151.519|
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10829
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.678  | TNS=0.000  | WHS=-0.843 | THS=-169.217|
 
-Phase 2 Router Initialization | Checksum: 235a62845
+Phase 2 Router Initialization | Checksum: 142dcb1a4
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3720 ; free virtual = 13582
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10829
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1354169b6
+Phase 3 Initial Routing | Checksum: 216403744
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10829
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 184
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 238
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 11a93138f
+Phase 4.1.1 Update Timing | Checksum: 1514187a8
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.483  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.533  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 131a13964
+Phase 4.1 Global Iteration 0 | Checksum: 270ffaf93
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
+Phase 4 Rip-up And Reroute | Checksum: 270ffaf93
 
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 0
-
-Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: c1ce0ee2
-
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.483  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: f7aeb876
-
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
-Phase 4 Rip-up And Reroute | Checksum: f7aeb876
-
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: f7aeb876
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 24679950a
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.648  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 24679950a
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: f7aeb876
+Phase 5.2 Clock Skew Optimization | Checksum: 24679950a
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
-Phase 5 Delay and Skew Optimization | Checksum: f7aeb876
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
+Phase 5 Delay and Skew Optimization | Checksum: 24679950a
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3718 ; free virtual = 13581
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 19ddb166e
+Phase 6.1.1 Update Timing | Checksum: 1f0a36ce7
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3742 ; free virtual = 13581
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.598  | TNS=0.000  | WHS=0.048  | THS=0.000  |
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.648  | TNS=0.000  | WHS=0.022  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: bec815a7
+Phase 6.1 Hold Fix Iter | Checksum: 1a147e75c
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3742 ; free virtual = 13581
-Phase 6 Post Hold Fix | Checksum: bec815a7
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
+Phase 6 Post Hold Fix | Checksum: 1a147e75c
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3742 ; free virtual = 13581
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.3415 %
-  Global Horizontal Routing Utilization  = 1.79389 %
+  Global Vertical Routing Utilization    = 1.46495 %
+  Global Horizontal Routing Utilization  = 1.85823 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -448,43 +441,43 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: dd71bcb3
+Phase 7 Route finalize | Checksum: 1e8ef01a8
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3742 ; free virtual = 13581
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 124 ; free virtual = 10829
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: dd71bcb3
+Phase 8 Verifying routed nets | Checksum: 1e8ef01a8
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3740 ; free virtual = 13579
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10829
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: a7a8e7bb
+Phase 9 Depositing Routes | Checksum: 15177b7d8
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3740 ; free virtual = 13579
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10828
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.598  | TNS=0.000  | WHS=0.048  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.648  | TNS=0.000  | WHS=0.022  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: a7a8e7bb
+Phase 10 Post Router Timing | Checksum: 15177b7d8
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3740 ; free virtual = 13579
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:25 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10828
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3740 ; free virtual = 13579
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10828
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 96 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:20 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3740 ; free virtual = 13579
+route_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:30 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 10828
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 1971.539 ; gain = 0.000 ; free physical = 3734 ; free virtual = 13579
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.43 . Memory (MB): peak = 1946.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 10828
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/double_dds_wrapper_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/double_dds_wrapper_drc_routed.rpt.
@@ -519,10 +512,10 @@ Creating bitstream...
 Writing bitstream ./double_dds_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu May 11 07:35:07 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/bma/git/fpga_design/redpitaya/double_dds/double_dds.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Sep 21 16:14:24 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 114 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 2249.473 ; gain = 273.902 ; free physical = 3381 ; free virtual = 13234
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2251.555 ; gain = 279.902 ; free physical = 164 ; free virtual = 10538
 INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file double_dds_wrapper.hwdef
-INFO: [Common 17-206] Exiting Vivado at Thu May 11 07:35:07 2017...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 16:14:24 2017...

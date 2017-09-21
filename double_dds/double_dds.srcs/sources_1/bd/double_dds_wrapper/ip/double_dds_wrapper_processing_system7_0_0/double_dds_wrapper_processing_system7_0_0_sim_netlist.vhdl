@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed May 10 18:24:17 2017
--- Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
--- Command     : write_vhdl -force -mode funcsim
---               /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_processing_system7_0_0/double_dds_wrapper_processing_system7_0_0_sim_netlist.vhdl
+-- Date        : Wed Sep 20 12:05:11 2017
+-- Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+-- Command     : write_vhdl -force -mode funcsim -rename_top double_dds_wrapper_processing_system7_0_0 -prefix
+--               double_dds_wrapper_processing_system7_0_0_ double_dds_wrapper_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : double_dds_wrapper_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -814,8 +814,6 @@ entity double_dds_wrapper_processing_system7_0_0_processing_system7_v5_5_process
   attribute C_USE_S_AXI_HP3 of double_dds_wrapper_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of double_dds_wrapper_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "double_dds_wrapper_processing_system7_0_0.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_dds_wrapper_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
   attribute POWER of double_dds_wrapper_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS25} bidis={1} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={Timer} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS33} bidis={4} ioBank={Vcco_p0} clockFreq={166.666672} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={LVCMOS25} bidis={2} ioBank={Vcco_p1} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS25} bidis={8} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS25} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS25} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={125} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={125} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;

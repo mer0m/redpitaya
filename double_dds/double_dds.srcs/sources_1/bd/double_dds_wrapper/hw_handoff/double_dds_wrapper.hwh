@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 10 18:26:00 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep 21 16:09:18 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:redpitaya:part0:1.0" DEVICE="7z010" NAME="double_dds_wrapper" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -1408,97 +1408,97 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_awaddr"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="2" NAME="M06_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_awprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_awprot"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_awprot"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_awvalid"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_awready"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_awready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M06_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_wdata"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="M06_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_wstrb"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_wvalid"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_wready"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_wready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M06_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_bresp"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_bvalid"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_bready"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_bready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M06_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_araddr"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="2" NAME="M06_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_arprot">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_arprot"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_arprot"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_arvalid"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_arready"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_arready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="M06_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_rdata"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="1" NAME="M06_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_rresp"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_rvalid"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef" SIGNAME="axi_interconnect_0_M06_AXI_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_rready"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M07_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_interconnect_0_M07_AXI_awaddr">
@@ -2070,10 +2070,10 @@
         <PARAMETER NAME="COUNTER_SIZE" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="LUT_SIZE" VALUE="10"/>
+        <PARAMETER NAME="LUT_SIZE" VALUE="12"/>
         <PARAMETER NAME="RESET_ACCUM" VALUE="false"/>
         <PARAMETER NAME="DEFAULT_RST_ACCUM_VAL" VALUE="25"/>
-        <PARAMETER NAME="Component_Name" VALUE="double_dds_wrapper_nco_counter_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="double_dds_wrapper_nco_counter_0_2"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x43C30000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C3FFFF"/>
@@ -2198,7 +2198,7 @@
         <PORT DIR="I" NAME="pinc_en_i" SIGIS="undef"/>
         <PORT DIR="I" NAME="pinc_rst_i" SIGIS="undef"/>
         <PORT DIR="I" NAME="pinc_clk_i" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="9" NAME="poff_i" RIGHT="0" SIGIS="undef" SIGNAME="dds1_nco_counter_poff_i">
+        <PORT DIR="I" LEFT="11" NAME="poff_i" RIGHT="0" SIGIS="undef" SIGNAME="dds1_nco_counter_poff_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds1_phase" PORT="data_o"/>
           </CONNECTIONS>
@@ -2577,8 +2577,8 @@
       <PARAMETERS>
         <PARAMETER NAME="format" VALUE="unsigned"/>
         <PARAMETER NAME="add_val" VALUE="0"/>
-        <PARAMETER NAME="DATA_OUT_SIZE" VALUE="10"/>
-        <PARAMETER NAME="DATA_IN_SIZE" VALUE="10"/>
+        <PARAMETER NAME="DATA_OUT_SIZE" VALUE="16"/>
+        <PARAMETER NAME="DATA_IN_SIZE" VALUE="16"/>
         <PARAMETER NAME="id" VALUE="1"/>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
@@ -2693,7 +2693,7 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M00_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+        <PORT DIR="I" LEFT="15" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
@@ -2708,7 +2708,7 @@
             <CONNECTION INSTANCE="dds1_nco_counter" PORT="dds_clk_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="9" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="dds1_nco_counter_poff_i">
+        <PORT DIR="O" LEFT="15" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="dds1_nco_counter_poff_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds1_nco_counter" PORT="poff_i"/>
           </CONNECTIONS>
@@ -3014,14 +3014,14 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_en_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_clk_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="dds2_ampl_data_o">
@@ -3118,7 +3118,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/dds2_nco_counter1" HWVERSION="1.0" INSTANCE="dds2_nco_counter1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nco_counter" VLNV="user.org:user:nco_counter:1.0">
+    <MODULE FULLNAME="/dds2_nco_counter" HWVERSION="1.0" INSTANCE="dds2_nco_counter" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nco_counter" VLNV="user.org:user:nco_counter:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="s00_axi" NAME="reg0" RANGE="16" USAGE="register"/>
@@ -3132,7 +3132,7 @@
         <PARAMETER NAME="LUT_SIZE" VALUE="10"/>
         <PARAMETER NAME="RESET_ACCUM" VALUE="false"/>
         <PARAMETER NAME="DEFAULT_RST_ACCUM_VAL" VALUE="25"/>
-        <PARAMETER NAME="Component_Name" VALUE="double_dds_wrapper_dds1_nco_counter_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="double_dds_wrapper_dds1_nco_counter_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x43C60000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C6FFFF"/>
@@ -3257,40 +3257,40 @@
         <PORT DIR="I" NAME="pinc_en_i" SIGIS="undef"/>
         <PORT DIR="I" NAME="pinc_rst_i" SIGIS="undef"/>
         <PORT DIR="I" NAME="pinc_clk_i" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="9" NAME="poff_i" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_i">
+        <PORT DIR="I" LEFT="9" NAME="poff_i" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="poff_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_en_i">
+        <PORT DIR="I" NAME="poff_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_en_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="poff_rst_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_rst_i">
+        <PORT DIR="I" NAME="poff_rst_i" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_rst_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_rst_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="poff_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_clk_i">
+        <PORT DIR="I" NAME="poff_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_clk_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="dds_cos_o" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="13" NAME="dds_sin_o" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_sin_o">
+        <PORT DIR="O" LEFT="13" NAME="dds_sin_o" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_sin_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_twoInMult_1" PORT="data1_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="dds_en_o" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_en_o">
+        <PORT DIR="O" NAME="dds_en_o" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_en_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_twoInMult_1" PORT="data1_en_i"/>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_en_i"/>
             <CONNECTION INSTANCE="dds2_ampl" PORT="data_en_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="dds_clk_o" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_clk_o">
+        <PORT DIR="O" NAME="dds_clk_o" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_clk_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds2_twoInMult_1" PORT="data1_clk_i"/>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_clk_i"/>
@@ -3636,8 +3636,8 @@
       <PARAMETERS>
         <PARAMETER NAME="format" VALUE="unsigned"/>
         <PARAMETER NAME="add_val" VALUE="0"/>
-        <PARAMETER NAME="DATA_OUT_SIZE" VALUE="10"/>
-        <PARAMETER NAME="DATA_IN_SIZE" VALUE="10"/>
+        <PARAMETER NAME="DATA_OUT_SIZE" VALUE="16"/>
+        <PARAMETER NAME="DATA_IN_SIZE" VALUE="16"/>
         <PARAMETER NAME="id" VALUE="1"/>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="4"/>
@@ -3752,39 +3752,39 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M07_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+        <PORT DIR="I" LEFT="15" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_en_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_clk_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_clk_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="9" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_i">
+        <PORT DIR="O" LEFT="15" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="poff_i"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="poff_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="data_en_o" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_en_i">
+        <PORT DIR="O" NAME="data_en_o" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_en_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="poff_en_i"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="poff_en_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="data_clk_o" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_clk_i">
+        <PORT DIR="O" NAME="data_clk_o" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_clk_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="poff_clk_i"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="poff_clk_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="data_rst_o" SIGIS="undef" SIGNAME="dds2_nco_counter1_poff_rst_i">
+        <PORT DIR="O" NAME="data_rst_o" SIGIS="undef" SIGNAME="dds2_nco_counter_poff_rst_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="poff_rst_i"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="poff_rst_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="proc_sys_reset_0_peripheral_reset">
@@ -3874,19 +3874,19 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="13" NAME="data1_i" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_sin_o">
+        <PORT DIR="I" LEFT="13" NAME="data1_i" RIGHT="0" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_sin_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_sin_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_sin_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data1_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_en_o">
+        <PORT DIR="I" NAME="data1_en_i" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_en_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data1_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter1_dds_clk_o">
+        <PORT DIR="I" NAME="data1_clk_i" SIGIS="undef" SIGNAME="dds2_nco_counter_dds_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="dds_clk_o"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="dds_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="13" NAME="data2_i" RIGHT="0" SIGIS="undef" SIGNAME="dds2_ampl_data_o">
@@ -3985,7 +3985,7 @@
         <PORT DIR="O" NAME="adc_clk" SIGIS="undef" SIGNAME="ltc2145_0_adc_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds1_nco_counter" PORT="ref_clk_i"/>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="ref_clk_i"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="ref_clk_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data_a_en_o" SIGIS="undef"/>
@@ -4059,18 +4059,18 @@
             <CONNECTION INSTANCE="dds1_offset" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dds1_offset" PORT="data_rst_i"/>
             <CONNECTION INSTANCE="ltc2145_0" PORT="processing_rst_i"/>
-            <CONNECTION INSTANCE="dds1_nco_counter" PORT="ref_rst_i"/>
-            <CONNECTION INSTANCE="dds1_nco_counter" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dds1_phase" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dds1_phase" PORT="data_rst_i"/>
             <CONNECTION INSTANCE="dds2_offset" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dds2_offset" PORT="data_rst_i"/>
             <CONNECTION INSTANCE="dds2_ampl" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dds2_ampl" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_reset"/>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="ref_rst_i"/>
             <CONNECTION INSTANCE="dds2_phase" PORT="s00_axi_reset"/>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="dds1_nco_counter" PORT="ref_rst_i"/>
+            <CONNECTION INSTANCE="dds1_nco_counter" PORT="s00_axi_reset"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="ref_rst_i"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_interconnect_aresetn">
@@ -4552,7 +4552,7 @@
         <PARAMETER NAME="PCW_GP0_EN_MODIFIABLE_TXN" VALUE="0"/>
         <PARAMETER NAME="PCW_GP1_EN_MODIFIABLE_TXN" VALUE="0"/>
         <PARAMETER NAME="PCW_IMPORT_BOARD_PRESET" VALUE="None"/>
-        <PARAMETER NAME="PCW_PERIPHERAL_BOARD_PRESET" VALUE="None"/>
+        <PARAMETER NAME="PCW_PERIPHERAL_BOARD_PRESET" VALUE="part0"/>
         <PARAMETER NAME="PCW_PRESET_BANK0_VOLTAGE" VALUE="LVCMOS 3.3V"/>
         <PARAMETER NAME="PCW_PRESET_BANK1_VOLTAGE" VALUE="LVCMOS 2.5V"/>
         <PARAMETER NAME="PCW_UIPARAM_DDR_ENABLE" VALUE="1"/>
@@ -5254,11 +5254,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="dds1_ampl" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="dds1_offset" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="dds1_nco_counter" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="dds1_phase" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="dds2_offset" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="dds2_ampl" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="dds2_nco_counter1" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="dds2_phase" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="S00_ACLK"/>
@@ -5270,6 +5268,8 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M05_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M06_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M07_ACLK"/>
+            <CONNECTION INSTANCE="dds1_nco_counter" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="dds2_nco_counter" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="250000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk"/>
@@ -5453,7 +5453,7 @@
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C30000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C3FFFF" INSTANCE="dds1_nco_counter" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s00_axi"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C40000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C4FFFF" INSTANCE="dds1_ampl" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s00_axi"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C50000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C5FFFF" INSTANCE="dds1_offset" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s00_axi"/>
-        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C60000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C6FFFF" INSTANCE="dds2_nco_counter1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s00_axi"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C60000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C6FFFF" INSTANCE="dds2_nco_counter" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s00_axi"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C70000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C7FFFF" INSTANCE="dds2_phase" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s00_axi"/>
       </MEMORYMAP>
       <PERIPHERALS>
@@ -5463,7 +5463,7 @@
         <PERIPHERAL INSTANCE="dds1_nco_counter"/>
         <PERIPHERAL INSTANCE="dds1_ampl"/>
         <PERIPHERAL INSTANCE="dds1_offset"/>
-        <PERIPHERAL INSTANCE="dds2_nco_counter1"/>
+        <PERIPHERAL INSTANCE="dds2_nco_counter"/>
         <PERIPHERAL INSTANCE="dds2_phase"/>
       </PERIPHERALS>
     </MODULE>
@@ -5539,13 +5539,13 @@
     <MODULE FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0000000000"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0000000000000000"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="16"/>
         <PARAMETER NAME="Component_Name" VALUE="double_dds_wrapper_xlconstant_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="9" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dds1_phase" PORT="data_i"/>
             <CONNECTION INSTANCE="dds2_phase" PORT="data_i"/>

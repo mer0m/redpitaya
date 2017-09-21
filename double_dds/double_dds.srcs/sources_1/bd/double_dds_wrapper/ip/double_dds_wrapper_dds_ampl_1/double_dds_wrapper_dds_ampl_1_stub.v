@@ -1,8 +1,8 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Wed May 10 18:17:48 2017
-// Host        : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+// Date        : Wed Sep 20 16:48:36 2017
+// Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 // Command     : write_verilog -force -mode synth_stub
 //               /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_dds_ampl_1/double_dds_wrapper_dds_ampl_1_stub.v
 // Design      : double_dds_wrapper_dds_ampl_1
@@ -20,7 +20,7 @@ module double_dds_wrapper_dds_ampl_1(s00_axi_aclk, s00_axi_reset, s00_axi_awaddr
   s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, s00_axi_rdata, 
   s00_axi_rresp, s00_axi_rvalid, s00_axi_rready, data_i, data_en_i, data_clk_i, data_o, 
   data_en_o, data_clk_o, data_rst_o, data_rst_i)
-/* synthesis syn_black_box black_box_pad_pin="s00_axi_aclk,s00_axi_reset,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,data_i[9:0],data_en_i,data_clk_i,data_o[9:0],data_en_o,data_clk_o,data_rst_o,data_rst_i" */;
+/* synthesis syn_black_box black_box_pad_pin="s00_axi_aclk,s00_axi_reset,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,data_i[15:0],data_en_i,data_clk_i,data_o[15:0],data_en_o,data_clk_o,data_rst_o,data_rst_i" */;
   input s00_axi_aclk;
   input s00_axi_reset;
   input [3:0]s00_axi_awaddr;
@@ -42,10 +42,10 @@ module double_dds_wrapper_dds_ampl_1(s00_axi_aclk, s00_axi_reset, s00_axi_awaddr
   output [1:0]s00_axi_rresp;
   output s00_axi_rvalid;
   input s00_axi_rready;
-  input [9:0]data_i;
+  input [15:0]data_i;
   input data_en_i;
   input data_clk_i;
-  output [9:0]data_o;
+  output [15:0]data_o;
   output data_en_o;
   output data_clk_o;
   output data_rst_o;
