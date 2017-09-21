@@ -82,7 +82,7 @@ ENTITY double_dds_wrapper_dds1_nco_counter_1 IS
     pinc_en_i : IN STD_LOGIC;
     pinc_rst_i : IN STD_LOGIC;
     pinc_clk_i : IN STD_LOGIC;
-    poff_i : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    poff_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
     poff_en_i : IN STD_LOGIC;
     poff_rst_i : IN STD_LOGIC;
     poff_clk_i : IN STD_LOGIC;
@@ -142,7 +142,7 @@ ARCHITECTURE double_dds_wrapper_dds1_nco_counter_1_arch OF double_dds_wrapper_dd
       pinc_en_i : IN STD_LOGIC;
       pinc_rst_i : IN STD_LOGIC;
       pinc_clk_i : IN STD_LOGIC;
-      poff_i : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+      poff_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
       poff_en_i : IN STD_LOGIC;
       poff_rst_i : IN STD_LOGIC;
       poff_clk_i : IN STD_LOGIC;
@@ -211,7 +211,7 @@ BEGIN
       COUNTER_SIZE => 32,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 4,
-      LUT_SIZE => 10,
+      LUT_SIZE => 12,
       RESET_ACCUM => false,
       DEFAULT_RST_ACCUM_VAL => 25
     )

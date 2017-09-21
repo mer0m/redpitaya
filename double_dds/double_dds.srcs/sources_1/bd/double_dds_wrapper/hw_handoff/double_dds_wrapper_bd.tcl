@@ -194,11 +194,6 @@ CONFIG.DATA_SIZE {14} \
 CONFIG.LUT_SIZE {12} \
  ] $dds1_nco_counter
 
-  set_property -dict [ list \
-CONFIG.NUM_READ_OUTSTANDING {1} \
-CONFIG.NUM_WRITE_OUTSTANDING {1} \
- ] [get_bd_intf_pins /dds1_nco_counter/s00_axi]
-
   # Create instance: dds1_offset, and set properties
   set dds1_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_const:1.0 dds1_offset ]
   set_property -dict [ list \
@@ -233,7 +228,7 @@ CONFIG.format {unsigned} \
   set_property -dict [ list \
 CONFIG.COUNTER_SIZE {32} \
 CONFIG.DATA_SIZE {14} \
-CONFIG.LUT_SIZE {10} \
+CONFIG.LUT_SIZE {12} \
  ] $dds2_nco_counter
 
   # Create instance: dds2_offset, and set properties
@@ -1293,7 +1288,7 @@ preplace netloc ACLK_1 1 0 4 30 450 430 450 890 760 1260
 preplace netloc axi_interconnect_0_M02_AXI 1 2 1 840
 preplace netloc dds1_twoInMult_1_data_en_o 1 2 3 940 1270 NJ 1270 1570
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1850 430
-preplace netloc dds1_nco_counter1_dds_en_o 1 2 3 930 1020 1220 1080 1580
+preplace netloc dds1_nco_counter1_dds_en_o 1 2 3 930 1020 1220 1060 1580
 preplace netloc adc_data_b_i_1 1 0 3 20J 1840 480J 1690 NJ
 preplace netloc adc_clk_n_i_1 1 0 2 NJ 1870 510J
 preplace netloc dds1_phase_data_out 1 3 1 1180
@@ -1313,7 +1308,7 @@ preplace netloc ltc2145_0_adc_clk 1 3 1 1200
 preplace netloc dds1_ampl1_data_out 1 3 1 1230
 preplace netloc axi_interconnect_0_M00_AXI 1 2 1 810
 preplace netloc axi_interconnect_0_M05_AXI 1 2 1 790
-preplace netloc dds1_nco_counter1_dds_sin_o 1 3 2 1270 830 1570
+preplace netloc dds1_nco_counter1_dds_sin_o 1 3 2 1270 840 1570
 preplace netloc dds1_twoInMult_1_data_clk_o 1 2 3 930 1260 1180J 1310 1580
 preplace netloc twoInMult_0_data_o 1 1 4 430 20 NJ 20 NJ 20 1590
 preplace netloc proc_sys_reset_0_peripheral_reset 1 1 3 490 1610 860 1540 1190

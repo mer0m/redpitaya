@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Thu Sep 21 16:09:15 2017
+//Date        : Thu Sep 21 16:48:27 2017
 //Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 //Command     : generate_target double_dds_wrapper.bd
 //Design      : double_dds_wrapper
@@ -752,7 +752,7 @@ module double_dds_wrapper
         .pinc_rst_i(1'b0),
         .poff_clk_i(dds2_phase_data_out_DATA_CLK),
         .poff_en_i(dds2_phase_data_out_DATA_EN),
-        .poff_i(dds2_phase_data_out_DATA[9:0]),
+        .poff_i(dds2_phase_data_out_DATA[11:0]),
         .poff_rst_i(dds2_phase_data_out_DATA_RST),
         .ref_clk_i(ltc2145_0_adc_clk),
         .ref_rst_i(proc_sys_reset_0_peripheral_reset),

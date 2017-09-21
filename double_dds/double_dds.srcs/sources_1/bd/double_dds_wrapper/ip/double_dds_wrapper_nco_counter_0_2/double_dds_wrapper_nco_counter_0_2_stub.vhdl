@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Thu Sep 21 16:10:53 2017
+-- Date        : Thu Sep 21 16:49:55 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/bma/git/fpga_design/redpitaya/double_dds/double_dds.srcs/sources_1/bd/double_dds_wrapper/ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2_stub.vhdl

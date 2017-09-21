@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Thu Sep 21 16:13:58 2017
+| Date             : Thu Sep 21 16:52:46 2017
 | Host             : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command          : report_power -file double_dds_wrapper_power_routed.rpt -pb double_dds_wrapper_power_summary_routed.pb -rpx double_dds_wrapper_power_routed.rpx
 | Design           : double_dds_wrapper
@@ -30,9 +30,9 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 2.010  |
-| Dynamic (W)              | 1.868  |
-| Device Static (W)        | 0.142  |
+| Total On-Chip Power (W)  | 2.015  |
+| Dynamic (W)              | 1.872  |
+| Device Static (W)        | 0.143  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 61.8   |
 | Junction Temperature (C) | 48.2   |
@@ -50,20 +50,20 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.014 |       11 |       --- |             --- |
-| Slice Logic             |     0.003 |     3328 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1038 |     17600 |            5.90 |
+| Slice Logic             |     0.003 |     3340 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1040 |     17600 |            5.91 |
 |   CARRY4                |    <0.001 |       58 |      4400 |            1.32 |
-|   Register              |    <0.001 |     1581 |     35200 |            4.49 |
-|   LUT as Shift Register |    <0.001 |      108 |      6000 |            1.80 |
+|   Register              |    <0.001 |     1585 |     35200 |            4.50 |
+|   LUT as Shift Register |    <0.001 |      110 |      6000 |            1.83 |
 |   Others                |     0.000 |      250 |       --- |             --- |
-| Signals                 |     0.005 |     2482 |       --- |             --- |
-| Block RAM               |     0.006 |      2.5 |        60 |            4.17 |
+| Signals                 |     0.006 |     2492 |       --- |             --- |
+| Block RAM               |     0.010 |        4 |        60 |            6.67 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.002 |        2 |        80 |            2.50 |
 | I/O                     |     0.458 |       21 |       100 |           21.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
-| Static Power            |     0.142 |          |           |                 |
-| Total                   |     2.010 |          |           |                 |
+| Static Power            |     0.143 |          |           |                 |
+| Total                   |     2.015 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.048 |       0.040 |      0.008 |
+| Vccint    |       1.000 |     0.052 |       0.044 |      0.008 |
 | Vccaux    |       1.800 |     0.072 |       0.060 |      0.012 |
 | Vcco33    |       3.300 |     0.135 |       0.134 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -82,7 +82,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.001 |      0.001 |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -154,9 +154,9 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| double_dds_wrapper                             |     1.868 |
-|   ad9767_0                                     |     0.007 |
-|     inst                                       |     0.007 |
+| double_dds_wrapper                             |     1.872 |
+|   ad9767_0                                     |     0.008 |
+|     inst                                       |     0.008 |
 |   axi_interconnect_0                           |     0.006 |
 |     s00_couplers                               |     0.005 |
 |       auto_pc                                  |     0.005 |
@@ -219,11 +219,11 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   dds2_nco_counter                             |     0.004 |
-|     U0                                         |     0.004 |
+|   dds2_nco_counter                             |     0.008 |
+|     U0                                         |     0.008 |
 |       handle_comm                              |    <0.001 |
-|       nco_inst1                                |     0.003 |
-|         rom_10.rom10_inst                      |     0.002 |
+|       nco_inst1                                |     0.007 |
+|         rom_12.rom12_inst                      |     0.005 |
 |       wb_nco_inst                              |    <0.001 |
 |   dds2_offset                                  |    <0.001 |
 |     U0                                         |    <0.001 |

@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-// Date        : Thu Sep 21 13:27:55 2017
+// Date        : Thu Sep 21 16:33:14 2017
 // Host        : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ double_dds_wrapper_dds1_nco_counter_1_stub.v
@@ -22,7 +22,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(ref_clk_i, ref_rst_i, s00_axi_a
   pinc_en_i, pinc_rst_i, pinc_clk_i, poff_i, poff_en_i, poff_rst_i, poff_clk_i, dds_cos_o, 
   dds_sin_o, dds_en_o, dds_clk_o, dds_rst_o, test_o, cos_fake_o, sin_fake_o, wave_clk_o, 
   wave_rst_o, wave_en_o)
-/* synthesis syn_black_box black_box_pad_pin="ref_clk_i,ref_rst_i,s00_axi_aclk,s00_axi_reset,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,pinc_i[31:0],pinc_en_i,pinc_rst_i,pinc_clk_i,poff_i[9:0],poff_en_i,poff_rst_i,poff_clk_i,dds_cos_o[13:0],dds_sin_o[13:0],dds_en_o,dds_clk_o,dds_rst_o,test_o,cos_fake_o,sin_fake_o,wave_clk_o,wave_rst_o,wave_en_o" */;
+/* synthesis syn_black_box black_box_pad_pin="ref_clk_i,ref_rst_i,s00_axi_aclk,s00_axi_reset,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,pinc_i[31:0],pinc_en_i,pinc_rst_i,pinc_clk_i,poff_i[11:0],poff_en_i,poff_rst_i,poff_clk_i,dds_cos_o[13:0],dds_sin_o[13:0],dds_en_o,dds_clk_o,dds_rst_o,test_o,cos_fake_o,sin_fake_o,wave_clk_o,wave_rst_o,wave_en_o" */;
   input ref_clk_i;
   input ref_rst_i;
   input s00_axi_aclk;
@@ -50,7 +50,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(ref_clk_i, ref_rst_i, s00_axi_a
   input pinc_en_i;
   input pinc_rst_i;
   input pinc_clk_i;
-  input [9:0]poff_i;
+  input [11:0]poff_i;
   input poff_en_i;
   input poff_rst_i;
   input poff_clk_i;
