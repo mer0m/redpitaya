@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Jul  7 19:20:25 2017
-| Host             : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date             : Tue Nov 21 16:58:30 2017
+| Host             : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command          : report_power -file pid_only_wrapper_power_routed.rpt -pb pid_only_wrapper_power_summary_routed.pb -rpx pid_only_wrapper_power_routed.rpx
 | Design           : pid_only_wrapper
 | Device           : xc7z010clg400-1
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.012 |       11 |       --- |             --- |
-| Slice Logic             |     0.002 |     2674 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      883 |     17600 |            5.02 |
+| Slice Logic             |     0.002 |     2676 |       --- |             --- |
+|   LUT as Logic          |     0.002 |      888 |     17600 |            5.05 |
 |   Register              |    <0.001 |     1193 |     35200 |            3.39 |
 |   CARRY4                |    <0.001 |       31 |      4400 |            0.70 |
 |   LUT as Shift Register |    <0.001 |       62 |      6000 |            1.03 |
 |   Others                |     0.000 |      236 |       --- |             --- |
-| Signals                 |     0.004 |     2028 |       --- |             --- |
+| Signals                 |     0.003 |     2034 |       --- |             --- |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.003 |        2 |        80 |            2.50 |
 | I/O                     |     0.213 |       49 |       100 |           49.00 |

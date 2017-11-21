@@ -928,10 +928,10 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_only_wrapper_red_pitaya_pidv3_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PSR">13</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="ISR">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ISR">21</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DSR">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="P_SIZE">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="I_SIZE">18</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="I_SIZE">20</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="D_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>

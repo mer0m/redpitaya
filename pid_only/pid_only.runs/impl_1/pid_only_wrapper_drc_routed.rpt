@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Jul  7 19:20:22 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date         : Tue Nov 21 16:58:27 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
 | Command      : report_drc -file pid_only_wrapper_drc_routed.rpt -pb pid_only_wrapper_drc_routed.pb -rpx pid_only_wrapper_drc_routed.rpx
 | Design       : pid_only_wrapper
 | Device       : xc7z010clg400-1
@@ -38,7 +38,7 @@ Table of Contents
 -----------------
 DPIP-1#1 Warning
 Input pipelining  
-DSP red_pitaya_pidv3_0/U0/red_pitaya_pidv3Logic/I_sum_s input red_pitaya_pidv3_0/U0/red_pitaya_pidv3Logic/I_sum_s/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP red_pitaya_pidv3_0/U0/red_pitaya_pidv3Logic/I_sum_s input red_pitaya_pidv3_0/U0/red_pitaya_pidv3Logic/I_sum_s/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#2 Warning

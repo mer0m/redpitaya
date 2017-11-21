@@ -61,7 +61,7 @@ ENTITY pid_only_wrapper_red_pitaya_pidv3_0_0 IS
     data_rst_i : IN STD_LOGIC;
     setpoint_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
     kp_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
-    ki_i : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+    ki_i : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
     kd_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
     sign_i : IN STD_LOGIC;
     int_rst_i : IN STD_LOGIC;
@@ -94,7 +94,7 @@ ARCHITECTURE pid_only_wrapper_red_pitaya_pidv3_0_0_arch OF pid_only_wrapper_red_
       data_rst_i : IN STD_LOGIC;
       setpoint_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
       kp_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
-      ki_i : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
+      ki_i : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
       kd_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
       sign_i : IN STD_LOGIC;
       int_rst_i : IN STD_LOGIC;
@@ -127,11 +127,11 @@ BEGIN
   U0 : red_pitaya_pidv3
     GENERIC MAP (
       PSR => 13,
-      ISR => 19,
+      ISR => 21,
       DSR => 0,
       id => 1,
       P_SIZE => 14,
-      I_SIZE => 18,
+      I_SIZE => 20,
       D_SIZE => 14,
       DATA_IN_SIZE => 14,
       DATA_OUT_SIZE => 14
