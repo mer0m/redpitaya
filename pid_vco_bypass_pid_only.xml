@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<drivers name="pid_vco_bypass_pid_only" version="1.0">
+
+    <driver name ="add_const" >
+        <board_driver name="adc1_offset" id = "0"
+            base_addr="0x43C00000" addr_size="0xffff" />
+        <board_driver name="dds1_ampl" id = "2"
+            base_addr="0x43C20000" addr_size="0xffff" />
+        <board_driver name="dds1_f0" id = "3"
+            base_addr="0x43C30000" addr_size="0xffff" />
+        <board_driver name="dds1_offset" id = "4"
+            base_addr="0x43C40000" addr_size="0xffff" />
+        <board_driver name="dds1_range" id = "5"
+            base_addr="0x43C50000" addr_size="0xffff" />
+        <board_driver name="pid2_offset" id = "8"
+            base_addr="0x43D70000" addr_size="0xffff" />
+        <board_driver name="pid1_kp" id = "10"
+            base_addr="0x43C60000" addr_size="0xffff" />
+        <board_driver name="pid1_ki" id = "11"
+            base_addr="0x43C70000" addr_size="0xffff" />
+        <board_driver name="pid1_kd" id = "12"
+            base_addr="0x43C80000" addr_size="0xffff" />
+        <board_driver name="pid1_rst_int" id = "13"
+            base_addr="0x43C90000" addr_size="0xffff" />
+        <board_driver name="pid1_sign" id = "14"
+            base_addr="0x43CB0000" addr_size="0xffff" />
+        <board_driver name="pid1_setpoint" id = "15"
+            base_addr="0x43CC0000" addr_size="0xffff" />
+        <board_driver name="pid2_kp" id = "16"
+            base_addr="0x43CE0000" addr_size="0xffff" />
+        <board_driver name="pid2_ki" id = "17"
+            base_addr="0x43CF0000" addr_size="0xffff" />
+        <board_driver name="pid2_kd" id = "18"
+            base_addr="0x43D20000" addr_size="0xffff" />
+        <board_driver name="pid2_rst_int" id = "19"
+            base_addr="0x43D10000" addr_size="0xffff" />
+        <board_driver name="pid2_sign" id = "20"
+            base_addr="0x43D00000" addr_size="0xffff" />
+        <board_driver name="pid2_setpoint" id = "21"
+            base_addr="0x43CD0000" addr_size="0xffff" />
+        <board_driver name="mod_input_ampl" id = "22"
+            base_addr="0x43D30000" addr_size="0xffff" />
+        <board_driver name="mod_out_pid2_ampl" id = "23"
+            base_addr="0x43D50000" addr_size="0xffff" />
+    </driver>
+
+    <driver name ="nco_counter" >
+        <board_driver name="dds1_nco" id = "0"
+            base_addr="0x43CA0000" addr_size="0xffff" />
+        <board_driver name="mod_input_nco" id = "1"
+            base_addr="0x43D40000" addr_size="0xffff" />
+        <board_driver name="mod_out_pid2_nco" id = "2"
+            base_addr="0x43D60000" addr_size="0xffff" />
+    </driver>
+
+    <driver name ="switchComplex" >
+        <board_driver name="switchComplex_pid2_input" id = "0"
+            base_addr="0x43C10000" addr_size="0xffff" />
+        <board_driver name="switchComplex_vco" id = "1"
+            base_addr="0x43D80000" addr_size="0xffff" />
+    </driver>
+
+
+</drivers>
