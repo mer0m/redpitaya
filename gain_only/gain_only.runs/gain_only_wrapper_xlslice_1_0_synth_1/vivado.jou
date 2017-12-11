@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Dec  7 10:24:39 2017
+# Process ID: 25107
+# Current directory: /home/bma/git/fpga_design/redpitaya/gain_only/gain_only.runs/gain_only_wrapper_xlslice_1_0_synth_1
+# Command line: vivado -log gain_only_wrapper_xlslice_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gain_only_wrapper_xlslice_1_0.tcl
+# Log file: /home/bma/git/fpga_design/redpitaya/gain_only/gain_only.runs/gain_only_wrapper_xlslice_1_0_synth_1/gain_only_wrapper_xlslice_1_0.vds
+# Journal file: /home/bma/git/fpga_design/redpitaya/gain_only/gain_only.runs/gain_only_wrapper_xlslice_1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source gain_only_wrapper_xlslice_1_0.tcl -notrace
