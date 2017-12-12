@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
 -- Date        : Mon Dec 11 09:22:47 2017
 -- Host        : ux305 running 64-bit Debian GNU/Linux 9.3 (stretch)
--- Command     : write_vhdl -force -mode synth_stub
---               /home/bma/git/fpga_design/redpitaya/gain_only/gain_only.srcs/sources_1/bd/gain_only_wrapper/ip/gain_only_wrapper_xlslice_0_0/gain_only_wrapper_xlslice_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ gain_only_wrapper_xlslice_0_0_stub.vhdl
 -- Design      : gain_only_wrapper_xlslice_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
@@ -12,15 +12,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity gain_only_wrapper_xlslice_0_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   Port ( 
     Din : in STD_LOGIC_VECTOR ( 27 downto 0 );
     Dout : out STD_LOGIC_VECTOR ( 13 downto 0 )
   );
 
-end gain_only_wrapper_xlslice_0_0;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture stub of gain_only_wrapper_xlslice_0_0 is
+architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;

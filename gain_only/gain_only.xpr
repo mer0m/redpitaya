@@ -60,21 +60,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_phase_0/gain_only_wrapper_dds2_phase_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds2_phase_0"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_nco_counter_0/gain_only_wrapper_dds2_nco_counter_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds2_nco_counter_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_twoInMult_1_0/gain_only_wrapper_dds2_twoInMult_1_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds2_twoInMult_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_auto_pc_0/gain_only_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_ad9767_0_0/gain_only_wrapper_ad9767_0_0.xci">
           <Proxy FileSetName="gain_only_wrapper_ad9767_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_axi_interconnect_0_0/gain_only_wrapper_axi_interconnect_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper.hwh"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_redpitaya_adc_dac_clk_0_0/gain_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds1_twoInMult_0_0/gain_only_wrapper_dds1_twoInMult_0_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds1_twoInMult_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_offset_0/gain_only_wrapper_dds2_offset_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds2_offset_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_xlconstant_0_0/gain_only_wrapper_xlconstant_0_0.xci">
           <Proxy FileSetName="gain_only_wrapper_xlconstant_0_0"/>
@@ -82,44 +78,48 @@
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_xlconstant_1_0/gain_only_wrapper_xlconstant_1_0.xci">
           <Proxy FileSetName="gain_only_wrapper_xlconstant_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_xlslice_1_0/gain_only_wrapper_xlslice_1_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_xlslice_1_0"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_redpitaya_adc_dac_clk_0_0/gain_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_ltc2145_0_0/gain_only_wrapper_ltc2145_0_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_ltc2145_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds1_ampl_0/gain_only_wrapper_dds1_ampl_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds1_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hdl/gain_only_wrapper.v"/>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_processing_system7_0_0/gain_only_wrapper_processing_system7_0_0.xci">
           <Proxy FileSetName="gain_only_wrapper_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_xlslice_1_0/gain_only_wrapper_xlslice_1_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_xlslice_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_xlslice_0_0/gain_only_wrapper_xlslice_0_0.xci">
           <Proxy FileSetName="gain_only_wrapper_xlslice_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_proc_sys_reset_0_0/gain_only_wrapper_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_proc_sys_reset_0_0"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_ltc2145_0_0/gain_only_wrapper_ltc2145_0_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_ltc2145_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hdl/gain_only_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_axi_interconnect_0_0/gain_only_wrapper_axi_interconnect_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds1_offset_0/gain_only_wrapper_dds1_offset_0.xci">
           <Proxy FileSetName="gain_only_wrapper_dds1_offset_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds1_twoInMult_0_0/gain_only_wrapper_dds1_twoInMult_0_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds1_twoInMult_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_ampl_0/gain_only_wrapper_dds2_ampl_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds2_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_nco_counter_0/gain_only_wrapper_dds2_nco_counter_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds2_nco_counter_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_offset_0/gain_only_wrapper_dds2_offset_0.xci">
-          <Proxy FileSetName="gain_only_wrapper_dds2_offset_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_xbar_0/gain_only_wrapper_xbar_0.xci">
           <Proxy FileSetName="gain_only_wrapper_xbar_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds1_ampl_0/gain_only_wrapper_dds1_ampl_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds1_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_twoInMult_1_0/gain_only_wrapper_dds2_twoInMult_1_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds2_twoInMult_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_ampl_0/gain_only_wrapper_dds2_ampl_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds2_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_proc_sys_reset_0_0/gain_only_wrapper_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_proc_sys_reset_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_phase_0/gain_only_wrapper_dds2_phase_0.xci">
+          <Proxy FileSetName="gain_only_wrapper_dds2_phase_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="gain_only_wrapper_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_auto_pc_0/gain_only_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hdl/gain_only_wrapper.hwdef"/>
       </File>
       <Config>
@@ -309,9 +309,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_phase_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds2_phase_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_phase_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds2_phase_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -319,9 +317,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_twoInMult_1_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds2_twoInMult_1_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_twoInMult_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds2_twoInMult_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -329,9 +325,7 @@
     </Run>
     <Run Id="gain_only_wrapper_ad9767_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_ad9767_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_ad9767_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_ad9767_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -339,9 +333,7 @@
     </Run>
     <Run Id="gain_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_redpitaya_adc_dac_clk_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_redpitaya_adc_dac_clk_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -349,9 +341,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlconstant_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_xlconstant_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlconstant_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_xlconstant_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -359,9 +349,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlconstant_1_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_xlconstant_1_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlconstant_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_xlconstant_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -369,9 +357,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlslice_1_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_xlslice_1_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlslice_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_xlslice_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -379,9 +365,7 @@
     </Run>
     <Run Id="gain_only_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -389,9 +373,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds1_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds1_ampl_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds1_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds1_ampl_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -399,9 +381,7 @@
     </Run>
     <Run Id="gain_only_wrapper_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_processing_system7_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -409,9 +389,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlslice_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_xlslice_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlslice_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_xlslice_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -419,9 +397,7 @@
     </Run>
     <Run Id="gain_only_wrapper_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_proc_sys_reset_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -429,9 +405,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds1_offset_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds1_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds1_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -439,9 +413,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds1_twoInMult_0_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds1_twoInMult_0_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds1_twoInMult_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds1_twoInMult_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -449,9 +421,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_ampl_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds2_ampl_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_ampl_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds2_ampl_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -459,9 +429,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_nco_counter_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds2_nco_counter_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_nco_counter_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds2_nco_counter_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -469,9 +437,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_offset_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_dds2_offset_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_offset_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_dds2_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -479,9 +445,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="gain_only_wrapper_xbar_0" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xbar_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/gain_only_wrapper_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -505,9 +469,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_phase_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_phase_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds2_phase_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -522,9 +484,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_twoInMult_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_twoInMult_1_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds2_twoInMult_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -539,9 +499,7 @@
     </Run>
     <Run Id="gain_only_wrapper_ad9767_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_ad9767_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_ad9767_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -556,9 +514,7 @@
     </Run>
     <Run Id="gain_only_wrapper_redpitaya_adc_dac_clk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_redpitaya_adc_dac_clk_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_redpitaya_adc_dac_clk_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -573,9 +529,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlconstant_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlconstant_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_xlconstant_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -590,9 +544,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlconstant_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlconstant_1_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_xlconstant_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -607,9 +559,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlslice_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlslice_1_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_xlslice_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -624,9 +574,7 @@
     </Run>
     <Run Id="gain_only_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -641,9 +589,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds1_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds1_ampl_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds1_ampl_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -658,9 +604,7 @@
     </Run>
     <Run Id="gain_only_wrapper_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_processing_system7_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_processing_system7_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -675,9 +619,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xlslice_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xlslice_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_xlslice_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -692,9 +634,7 @@
     </Run>
     <Run Id="gain_only_wrapper_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_proc_sys_reset_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_proc_sys_reset_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -709,9 +649,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds1_offset_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds1_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -726,9 +664,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds1_twoInMult_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds1_twoInMult_0_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds1_twoInMult_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -743,9 +679,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_ampl_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_ampl_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds2_ampl_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -760,9 +694,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_nco_counter_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_nco_counter_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds2_nco_counter_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -777,9 +709,7 @@
     </Run>
     <Run Id="gain_only_wrapper_dds2_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_dds2_offset_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_dds2_offset_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -794,9 +724,7 @@
     </Run>
     <Run Id="gain_only_wrapper_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="gain_only_wrapper_xbar_0" Description="Default settings for Implementation." SynthRun="gain_only_wrapper_xbar_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

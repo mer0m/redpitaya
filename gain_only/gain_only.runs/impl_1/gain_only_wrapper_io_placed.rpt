@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Fri Dec  8 08:51:55 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Date         : Mon Dec 11 09:24:37 2017
+| Host         : ux305 running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command      : report_io -file gain_only_wrapper_io_placed.rpt
 | Design       : gain_only_wrapper
 | Device       : xc7z010

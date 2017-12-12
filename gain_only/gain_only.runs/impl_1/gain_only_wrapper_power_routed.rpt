@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Fri Dec  8 08:52:30 2017
-| Host             : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Date             : Mon Dec 11 09:25:05 2017
+| Host             : ux305 running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command          : report_power -file gain_only_wrapper_power_routed.rpt -pb gain_only_wrapper_power_summary_routed.pb -rpx gain_only_wrapper_power_routed.rpx
 | Design           : gain_only_wrapper
 | Device           : xc7z010clg400-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.670 |
+| Total On-Chip Power (W)  | 1.669 |
 | Dynamic (W)              | 1.533 |
 | Device Static (W)        | 0.136 |
 | Effective TJA (C/W)      | 11.5  |
@@ -51,19 +51,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.012 |       11 |       --- |             --- |
 | Slice Logic             |     0.002 |     2811 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      874 |     17600 |            4.97 |
+|   LUT as Logic          |     0.001 |      873 |     17600 |            4.96 |
 |   CARRY4                |    <0.001 |       40 |      4400 |            0.91 |
 |   Register              |    <0.001 |     1314 |     35200 |            3.73 |
 |   LUT as Shift Register |    <0.001 |       86 |      6000 |            1.43 |
 |   Others                |     0.000 |      239 |       --- |             --- |
-| Signals                 |     0.003 |     2121 |       --- |             --- |
+| Signals                 |     0.003 |     2118 |       --- |             --- |
 | Block RAM               |     0.005 |        2 |        60 |            3.33 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.002 |        2 |        80 |            2.50 |
 | I/O                     |     0.129 |       35 |       100 |           35.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
 | Static Power            |     0.136 |          |           |                 |
-| Total                   |     1.670 |          |           |                 |
+| Total                   |     1.669 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
