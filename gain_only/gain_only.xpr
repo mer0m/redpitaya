@@ -94,6 +94,11 @@
           <Proxy FileSetName="gain_only_wrapper_ltc2145_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hdl/gain_only_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_auto_pc_0/gain_only_wrapper_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="gain_only_wrapper_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hdl/gain_only_wrapper.hwdef"/>
+        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_axi_interconnect_0_0/gain_only_wrapper_axi_interconnect_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds1_offset_0/gain_only_wrapper_dds1_offset_0.xci">
           <Proxy FileSetName="gain_only_wrapper_dds1_offset_0"/>
@@ -116,11 +121,6 @@
         <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_dds2_phase_0/gain_only_wrapper_dds2_phase_0.xci">
           <Proxy FileSetName="gain_only_wrapper_dds2_phase_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="gain_only_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hw_handoff/gain_only_wrapper.hwh"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="ip/gain_only_wrapper_auto_pc_0/gain_only_wrapper_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="gain_only_wrapper.bd" FileRelPathName="hdl/gain_only_wrapper.hwdef"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
