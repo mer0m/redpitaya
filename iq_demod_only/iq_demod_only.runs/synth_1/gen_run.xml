@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1493104437">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1517382714">
   <File Type="VDS-TIMING-PB" Name="iq_demod_only_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="iq_demod_only_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="iq_demod_only_wrapper.dcp"/>
@@ -56,20 +56,21 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_xlconstant_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_nco_counter_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_twoInMult_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_mixer_sin_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_ltc2145_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_add_const_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_add_const_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_add_const_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_nco_counter_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_ad9767_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_cordicAtan_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_xlslice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_nco_counter_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_add_const_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_add_const_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_mixer_sin_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_add_const_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_ltc2145_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_twoInMult_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_nco_counter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_ad9767_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
 </GenRun>

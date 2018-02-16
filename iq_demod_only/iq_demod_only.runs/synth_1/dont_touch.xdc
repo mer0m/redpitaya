@@ -64,25 +64,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_w
 # IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_xlslice_0_1/iq_demod_only_wrapper_xlslice_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_xlslice_0_1 || ORIG_REF_NAME==iq_demod_only_wrapper_xlslice_0_1}]
 
+# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_cordicAtan_0_0/iq_demod_only_wrapper_cordicAtan_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_cordicAtan_0_0 || ORIG_REF_NAME==iq_demod_only_wrapper_cordicAtan_0_0}]
+
 # IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_0/iq_demod_only_wrapper_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_0 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_0}]
-
-# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_1/iq_demod_only_wrapper_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_1 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_1}]
-
-# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_2/iq_demod_only_wrapper_auto_pc_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_2 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_2}]
-
-# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_3/iq_demod_only_wrapper_auto_pc_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_3 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_3}]
-
-# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_4/iq_demod_only_wrapper_auto_pc_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_4 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_4}]
-
-# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_5/iq_demod_only_wrapper_auto_pc_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_5 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_5}]
-
-# IP: bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_6/iq_demod_only_wrapper_auto_pc_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==iq_demod_only_wrapper_auto_pc_6 || ORIG_REF_NAME==iq_demod_only_wrapper_auto_pc_6}]
 
 # XDC: bd/iq_demod_only_wrapper/iq_demod_only_wrapper_ooc.xdc

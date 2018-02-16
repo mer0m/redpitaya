@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -95,20 +94,10 @@ set rc [catch {
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0/iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_xlslice_0_1/iq_demod_only_wrapper_xlslice_0_1.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_xlslice_0_1/iq_demod_only_wrapper_xlslice_0_1.dcp]
+  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_cordicAtan_0_0/iq_demod_only_wrapper_cordicAtan_0_0.dcp
+  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_cordicAtan_0_0/iq_demod_only_wrapper_cordicAtan_0_0.dcp]
   add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_0/iq_demod_only_wrapper_auto_pc_0.dcp
   set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_0/iq_demod_only_wrapper_auto_pc_0.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_1/iq_demod_only_wrapper_auto_pc_1.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_1/iq_demod_only_wrapper_auto_pc_1.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_2/iq_demod_only_wrapper_auto_pc_2.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_2/iq_demod_only_wrapper_auto_pc_2.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_3/iq_demod_only_wrapper_auto_pc_3.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_3/iq_demod_only_wrapper_auto_pc_3.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_4/iq_demod_only_wrapper_auto_pc_4.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_4/iq_demod_only_wrapper_auto_pc_4.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_5/iq_demod_only_wrapper_auto_pc_5.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_5/iq_demod_only_wrapper_auto_pc_5.dcp]
-  add_files -quiet /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_6/iq_demod_only_wrapper_auto_pc_6.dcp
-  set_property netlist_only true [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_auto_pc_6/iq_demod_only_wrapper_auto_pc_6.dcp]
   read_xdc -ref iq_demod_only_wrapper_add_const_0_0 -cells U0 /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_add_const_0_0/add_const_ooc.xdc
   set_property processing_order EARLY [get_files /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_add_const_0_0/add_const_ooc.xdc]
   read_xdc -ref iq_demod_only_wrapper_add_const_2_0 -cells U0 /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_add_const_2_0/add_const_ooc.xdc

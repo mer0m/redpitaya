@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Tue Apr 25 09:16:53 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date         : Wed Jan 31 08:15:05 2018
+| Host         : ux305 running 64-bit Debian GNU/Linux testing/unstable
 | Command      : report_utilization -file iq_demod_only_wrapper_utilization_synth.rpt -pb iq_demod_only_wrapper_utilization_synth.pb
 | Design       : iq_demod_only_wrapper
 | Device       : 7z010clg400-1
@@ -189,12 +189,7 @@ Table of Contents
 | iq_demod_only_wrapper_mixer_sin_0_0                      |    1 |
 | iq_demod_only_wrapper_ltc2145_0_0                        |    1 |
 | iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0 |    1 |
-| iq_demod_only_wrapper_auto_pc_6                          |    1 |
-| iq_demod_only_wrapper_auto_pc_5                          |    1 |
-| iq_demod_only_wrapper_auto_pc_4                          |    1 |
-| iq_demod_only_wrapper_auto_pc_3                          |    1 |
-| iq_demod_only_wrapper_auto_pc_2                          |    1 |
-| iq_demod_only_wrapper_auto_pc_1                          |    1 |
+| iq_demod_only_wrapper_cordicAtan_0_0                     |    1 |
 | iq_demod_only_wrapper_auto_pc_0                          |    1 |
 | iq_demod_only_wrapper_add_const_3_0                      |    1 |
 | iq_demod_only_wrapper_add_const_2_0                      |    1 |

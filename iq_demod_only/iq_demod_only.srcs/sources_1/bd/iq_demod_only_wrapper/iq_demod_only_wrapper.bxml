@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="iq_demod_only_wrapper" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1493104433"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1493104433"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1493104433"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1517382709"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1517382709"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1517382709"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/iq_demod_only_wrapper_ad9767_0_0/iq_demod_only_wrapper_ad9767_0_0.xci" Type="IP">
         <Instance HierarchyPath="ad9767_0"/>
@@ -87,6 +87,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/iq_demod_only_wrapper_ps7_0_axi_periph_0/iq_demod_only_wrapper_ps7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -156,55 +157,15 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+      <File Name="ip/iq_demod_only_wrapper_cordicAtan_0_0/iq_demod_only_wrapper_cordicAtan_0_0.xci" Type="IP">
+        <Instance HierarchyPath="cordicAtan_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
       <File Name="ip/iq_demod_only_wrapper_auto_pc_0/iq_demod_only_wrapper_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/m00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/iq_demod_only_wrapper_auto_pc_1/iq_demod_only_wrapper_auto_pc_1.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/m01_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/iq_demod_only_wrapper_auto_pc_2/iq_demod_only_wrapper_auto_pc_2.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/m03_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/iq_demod_only_wrapper_auto_pc_3/iq_demod_only_wrapper_auto_pc_3.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/m04_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/iq_demod_only_wrapper_auto_pc_4/iq_demod_only_wrapper_auto_pc_4.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/m05_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/iq_demod_only_wrapper_auto_pc_5/iq_demod_only_wrapper_auto_pc_5.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/m06_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/iq_demod_only_wrapper_auto_pc_6/iq_demod_only_wrapper_auto_pc_6.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>

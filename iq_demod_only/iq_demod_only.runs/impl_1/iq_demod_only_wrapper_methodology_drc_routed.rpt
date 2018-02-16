@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Tue Apr 25 09:20:27 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date         : Wed Jan 31 08:30:30 2018
+| Host         : ux305 running 64-bit Debian GNU/Linux testing/unstable
 | Command      : report_methodology -file iq_demod_only_wrapper_methodology_drc_routed.rpt -rpx iq_demod_only_wrapper_methodology_drc_routed.rpx
 | Design       : iq_demod_only_wrapper
 | Device       : xc7z010clg400-1
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 41
+             Violations found: 48
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
@@ -31,6 +31,7 @@ Table of Contents
 | TIMING-7  | Warning  | No common node between related clocks                | 1          |
 | TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
+| TIMING-16 | Warning  | Large setup violation                                | 7          |
 | TIMING-18 | Warning  | Missing input or output delay                        | 32         |
 | TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 5          |
 +-----------+----------+------------------------------------------------------+------------+
@@ -55,6 +56,41 @@ Related violations: <none>
 TIMING-10#1 Warning
 Missing property on synchronizer  
 One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.005 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[17].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[17].cordic_impl_inst/s_alpha_s_reg[32]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.005 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[7].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[7].cordic_impl_inst/s_alpha_s_reg[28]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.020 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[21].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[21].cordic_impl_inst/s_alpha_s_reg[26]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.048 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[28].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[28].cordic_impl_inst/s_alpha_s_reg[32]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.061 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[21].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[21].cordic_impl_inst/s_alpha_s_reg[32]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.076 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[19].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[19].cordic_impl_inst/s_alpha_s_reg[32]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.095 ns between cordicAtan_0/U0/cordic_top_inst/generate_cordic[21].cordic_impl_inst/val_alpha_s_reg[0]/C (clocked by clk_fpga_0) and cordicAtan_0/U0/cordic_top_inst/generate_cordic[21].cordic_impl_inst/s_alpha_s_reg[28]/D (clocked by adc_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

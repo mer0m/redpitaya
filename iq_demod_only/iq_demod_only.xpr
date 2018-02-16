@@ -60,68 +60,65 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_0/iq_demod_only_wrapper_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_6/iq_demod_only_wrapper_auto_pc_6.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_1/iq_demod_only_wrapper_auto_pc_1.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_3/iq_demod_only_wrapper_auto_pc_3.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hdl/iq_demod_only_wrapper.hwdef"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_4/iq_demod_only_wrapper_auto_pc_4.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_ltc2145_0_0/iq_demod_only_wrapper_ltc2145_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_ltc2145_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_ad9767_0_0/iq_demod_only_wrapper_ad9767_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_ad9767_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_add_const_2_0/iq_demod_only_wrapper_add_const_2_0.xci">
           <Proxy FileSetName="iq_demod_only_wrapper_add_const_2_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_add_const_0_0/iq_demod_only_wrapper_add_const_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_add_const_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xlslice_0_1/iq_demod_only_wrapper_xlslice_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hdl/iq_demod_only_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xlslice_0_0/iq_demod_only_wrapper_xlslice_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_xlslice_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xbar_0/iq_demod_only_wrapper_xbar_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0/iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_twoInMult_0_0/iq_demod_only_wrapper_twoInMult_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_twoInMult_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_ltc2145_0_0/iq_demod_only_wrapper_ltc2145_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_ltc2145_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_nco_counter_0_0/iq_demod_only_wrapper_nco_counter_0_0.xci">
           <Proxy FileSetName="iq_demod_only_wrapper_nco_counter_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_mixer_sin_0_0/iq_demod_only_wrapper_mixer_sin_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_mixer_sin_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_proc_sys_reset_0_0/iq_demod_only_wrapper_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_proc_sys_reset_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_ps7_0_axi_periph_0/iq_demod_only_wrapper_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0/iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_redpitaya_adc_dac_clk_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hdl/iq_demod_only_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xlslice_0_0/iq_demod_only_wrapper_xlslice_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_xlslice_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xlconstant_0_0/iq_demod_only_wrapper_xlconstant_0_0.xci">
           <Proxy FileSetName="iq_demod_only_wrapper_xlconstant_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_processing_system7_0_0/iq_demod_only_wrapper_processing_system7_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xlslice_0_1/iq_demod_only_wrapper_xlslice_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0/iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_add_const_0_0/iq_demod_only_wrapper_add_const_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_add_const_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_add_const_3_0/iq_demod_only_wrapper_add_const_3_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_add_const_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_mixer_sin_0_0/iq_demod_only_wrapper_mixer_sin_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_mixer_sin_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_nco_counter_1_0/iq_demod_only_wrapper_nco_counter_1_0.xci">
           <Proxy FileSetName="iq_demod_only_wrapper_nco_counter_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_proc_sys_reset_0_0/iq_demod_only_wrapper_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_proc_sys_reset_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_processing_system7_0_0/iq_demod_only_wrapper_processing_system7_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_ad9767_0_0/iq_demod_only_wrapper_ad9767_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_ad9767_0_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_xbar_0/iq_demod_only_wrapper_xbar_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_ps7_0_axi_periph_0/iq_demod_only_wrapper_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_twoInMult_0_0/iq_demod_only_wrapper_twoInMult_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_twoInMult_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="iq_demod_only_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_add_const_3_0/iq_demod_only_wrapper_add_const_3_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_add_const_3_0"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_cordicAtan_0_0/iq_demod_only_wrapper_cordicAtan_0_0.xci">
+          <Proxy FileSetName="iq_demod_only_wrapper_cordicAtan_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hw_handoff/iq_demod_only_wrapper.hwh"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_5/iq_demod_only_wrapper_auto_pc_5.xci"/>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0/iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0.xci">
-          <Proxy FileSetName="iq_demod_only_wrapper_fir16RealbitsOneInTwoMult_v1_0_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_2/iq_demod_only_wrapper_auto_pc_2.xci"/>
         <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hw_handoff/iq_demod_only_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hw_handoff/iq_demod_only_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="ip/iq_demod_only_wrapper_auto_pc_0/iq_demod_only_wrapper_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="iq_demod_only_wrapper.bd" FileRelPathName="hdl/iq_demod_only_wrapper.hwdef"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -265,6 +262,12 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="iq_demod_only_wrapper_cordicAtan_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/iq_demod_only_wrapper_cordicAtan_0_0">
+      <Config>
+        <Option Name="TopModule" Val="iq_demod_only_wrapper_cordicAtan_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -402,9 +405,7 @@
     </Run>
     <Run Id="iq_demod_only_wrapper_ltc2145_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_demod_only_wrapper_ltc2145_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_ltc2145_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_demod_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -412,15 +413,21 @@
     </Run>
     <Run Id="iq_demod_only_wrapper_nco_counter_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_demod_only_wrapper_nco_counter_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_nco_counter_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_demod_only_wrapper_nco_counter_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="iq_demod_only_wrapper_nco_counter_1_0_synth_1" Type="Ft3:Synth" SrcSet="iq_demod_only_wrapper_nco_counter_1_0" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_nco_counter_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_demod_only_wrapper_nco_counter_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_demod_only_wrapper_cordicAtan_0_0_synth_1" Type="Ft3:Synth" SrcSet="iq_demod_only_wrapper_cordicAtan_0_0" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_cordicAtan_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/iq_demod_only_wrapper_cordicAtan_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -643,9 +650,7 @@
     </Run>
     <Run Id="iq_demod_only_wrapper_ltc2145_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_ltc2145_0_0" Description="Default settings for Implementation." SynthRun="iq_demod_only_wrapper_ltc2145_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -660,9 +665,7 @@
     </Run>
     <Run Id="iq_demod_only_wrapper_nco_counter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_nco_counter_0_0" Description="Default settings for Implementation." SynthRun="iq_demod_only_wrapper_nco_counter_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -676,6 +679,21 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="iq_demod_only_wrapper_nco_counter_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_nco_counter_1_0" Description="Default settings for Implementation." SynthRun="iq_demod_only_wrapper_nco_counter_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="iq_demod_only_wrapper_cordicAtan_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="iq_demod_only_wrapper_cordicAtan_0_0" Description="Default settings for Implementation." SynthRun="iq_demod_only_wrapper_cordicAtan_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>

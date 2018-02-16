@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Thu Apr 20 09:55:26 2017
-| Host         : ux305 running 64-bit Debian GNU/Linux 9.0 (stretch)
+| Date         : Wed Jan 31 08:13:14 2018
+| Host         : ux305 running 64-bit Debian GNU/Linux testing/unstable
 | Command      : report_utilization -file iq_demod_only_wrapper_xbar_0_utilization_synth.rpt -pb iq_demod_only_wrapper_xbar_0_utilization_synth.pb
 | Design       : iq_demod_only_wrapper_xbar_0
 | Device       : 7z010clg400-1
@@ -27,20 +27,18 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+----------------------------+------+-------+-----------+-------+
-|          Site Type         | Used | Fixed | Available | Util% |
-+----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  921 |     0 |     17600 |  5.23 |
-|   LUT as Logic             |  917 |     0 |     17600 |  5.21 |
-|   LUT as Memory            |    4 |     0 |      6000 |  0.07 |
-|     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |    4 |     0 |           |       |
-| Slice Registers            | 1417 |     0 |     35200 |  4.03 |
-|   Register as Flip Flop    | 1417 |     0 |     35200 |  4.03 |
-|   Register as Latch        |    0 |     0 |     35200 |  0.00 |
-| F7 Muxes                   |   63 |     0 |      8800 |  0.72 |
-| F8 Muxes                   |    0 |     0 |      4400 |  0.00 |
-+----------------------------+------+-------+-----------+-------+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs*             |  242 |     0 |     17600 |  1.38 |
+|   LUT as Logic          |  242 |     0 |     17600 |  1.38 |
+|   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
+| Slice Registers         |  136 |     0 |     35200 |  0.39 |
+|   Register as Flip Flop |  136 |     0 |     35200 |  0.39 |
+|   Register as Latch     |    0 |     0 |     35200 |  0.00 |
+| F7 Muxes                |    5 |     0 |      8800 |  0.06 |
+| F8 Muxes                |    0 |     0 |      4400 |  0.00 |
++-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -58,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 6     |          Yes |         Set |            - |
-| 1411  |          Yes |       Reset |            - |
+| 0     |          Yes |         Set |            - |
+| 136   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -148,17 +146,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 1411 |        Flop & Latch |
-| LUT6     |  418 |                 LUT |
-| LUT3     |  397 |                 LUT |
-| LUT5     |  175 |                 LUT |
-| LUT4     |  118 |                 LUT |
-| MUXF7    |   63 |               MuxFx |
-| LUT1     |   34 |                 LUT |
-| CARRY4   |   32 |          CarryLogic |
-| LUT2     |   27 |                 LUT |
-| FDSE     |    6 |        Flop & Latch |
-| SRL16E   |    4 |  Distributed Memory |
+| FDRE     |  136 |        Flop & Latch |
+| LUT6     |   97 |                 LUT |
+| LUT5     |   67 |                 LUT |
+| LUT4     |   60 |                 LUT |
+| LUT3     |   47 |                 LUT |
+| LUT2     |   13 |                 LUT |
+| MUXF7    |    5 |               MuxFx |
+| LUT1     |    2 |                 LUT |
 +----------+------+---------------------+
 
 
