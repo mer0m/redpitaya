@@ -1,0 +1,1406 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Jan 31 08:11:55 2018
+# Process ID: 26179
+# Current directory: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_cordicAtan_0_0_synth_1
+# Command line: vivado -log iq_demod_only_wrapper_cordicAtan_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source iq_demod_only_wrapper_cordicAtan_0_0.tcl
+# Log file: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_cordicAtan_0_0_synth_1/iq_demod_only_wrapper_cordicAtan_0_0.vds
+# Journal file: /home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_cordicAtan_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source iq_demod_only_wrapper_cordicAtan_0_0.tcl -notrace
+Command: synth_design -top iq_demod_only_wrapper_cordicAtan_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26218 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1114.645 ; gain = 183.086 ; free physical = 511 ; free virtual = 12975
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'iq_demod_only_wrapper_cordicAtan_0_0' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_cordicAtan_0_0/synth/iq_demod_only_wrapper_cordicAtan_0_0.vhd:91]
+	Parameter NB_ITER bound to: 30 - type: integer 
+	Parameter DATA_SIZE bound to: 14 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter PI_VALUE bound to: 205887 - type: integer 
+	Parameter OUTPUT_SIZE bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'cordic' declared at '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic.vhd:5' bound to instance 'U0' of component 'cordic' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_cordicAtan_0_0/synth/iq_demod_only_wrapper_cordicAtan_0_0.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'cordic' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic.vhd:55]
+	Parameter NB_ITER bound to: 30 - type: integer 
+	Parameter DATA_SIZE bound to: 14 - type: integer 
+	Parameter OUTPUT_SIZE bound to: 14 - type: integer 
+	Parameter PI_VALUE bound to: 205887 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cordic_top' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_top.vhd:34]
+	Parameter NB_ITER bound to: 30 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter DATA_SIZE bound to: 14 - type: integer 
+	Parameter OUTPUT_SIZE bound to: 14 - type: integer 
+	Parameter SHIFT_FACTOR bound to: 29 - type: integer 
+	Parameter PI_VALUE bound to: 205887 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cordic_impl' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 0 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized0' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 1 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized0' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized1' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 2 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized1' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized2' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 3 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized2' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized3' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 4 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized3' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized4' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 5 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized4' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized5' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 6 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized5' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized6' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 7 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized6' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized7' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 8 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized7' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized8' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 9 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized8' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized9' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 10 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized9' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized10' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 11 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized10' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized11' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 12 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized11' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized12' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 13 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized12' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized13' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 14 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized13' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized14' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 15 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized14' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized15' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 16 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized15' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized16' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 17 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized16' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized17' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 18 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized17' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized18' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 19 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized18' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized19' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 20 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized19' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized20' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 21 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized20' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized21' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 22 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized21' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized22' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 23 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized22' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized23' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 24 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized23' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized24' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 25 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized24' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized25' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 26 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized25' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized26' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 27 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized26' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized27' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 28 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized27' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'cordic_impl__parameterized28' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+	Parameter SHIFT_V bound to: 29 - type: integer 
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter ALPHA_SIZE bound to: 33 - type: integer 
+	Parameter DATA_SIZE bound to: 45 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_impl__parameterized28' (1#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_impl.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'cordic_top' (2#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_top.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'cordic_comm' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_comm.vhd:27]
+	Parameter ATAN_SIZE bound to: 29 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_comm' (3#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_comm.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'cordic_handCom' [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_handCom.vhd:87]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_handCom' (4#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_handCom.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'cordic' (5#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'iq_demod_only_wrapper_cordicAtan_0_0' (6#1) [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ip/iq_demod_only_wrapper_cordicAtan_0_0/synth/iq_demod_only_wrapper_cordicAtan_0_0.vhd:91]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design cordic_handCom has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design cordic_comm has unconnected port writedata[31]
+WARNING: [Synth 8-3331] design cordic_comm has unconnected port writedata[30]
+WARNING: [Synth 8-3331] design cordic_comm has unconnected port writedata[29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1168.113 ; gain = 236.555 ; free physical = 413 ; free virtual = 12894
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1168.113 ; gain = 236.555 ; free physical = 410 ; free virtual = 12894
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.45 . Memory (MB): peak = 1525.418 ; gain = 8.000 ; free physical = 135 ; free virtual = 12606
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 133 ; free virtual = 12515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 133 ; free virtual = 12515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 133 ; free virtual = 12515
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.srcs/sources_1/bd/iq_demod_only_wrapper/ipshared/8e87/hdl/cordic_top.vhd:119]
+INFO: [Synth 8-5546] ROM "sign_s[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sign_s[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "readdata_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 126 ; free virtual = 12508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 90    
+	   3 Input     45 Bit       Adders := 30    
+	   2 Input     33 Bit       Adders := 31    
+	   3 Input     33 Bit       Adders := 30    
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 180   
+	               33 Bit    Registers := 121   
+	               32 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 62    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 68    
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 60    
+	   3 Input     33 Bit        Muxes := 30    
+	   2 Input     33 Bit        Muxes := 30    
+	   8 Input     33 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 34    
+	   2 Input      1 Bit        Muxes := 38    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cordic_impl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module cordic_impl__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized26 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized27 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_impl__parameterized28 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     45 Bit       Adders := 3     
+	   3 Input     45 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	               45 Bit    Registers := 6     
+	               33 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 2     
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module cordic_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     33 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module cordic_comm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module cordic_handCom 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module cordic 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sign_next_s" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sign_s[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sign_s[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wdata[31]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wdata[30]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wdata[29]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design iq_demod_only_wrapper_cordicAtan_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[0]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/val_alpha_s_reg[29]' (FDRE) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/val_alpha_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/val_alpha_s_reg[30]' (FDRE) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/val_alpha_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/val_alpha_s_reg[31]' (FDRE) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/val_alpha_s_reg[32]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[0].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_i_s_reg[0]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/sign2_s_reg[1]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/sign2_s_reg[3]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_i_s_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[1]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[2]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[3]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[4]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[5]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[6]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[7]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[8]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[9]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[10]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[11]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[12]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[13]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[14]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[15]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[16]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[17]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[18]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[19]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[20]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[21]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[22]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[23]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[24]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[25]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[26]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[27]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[28]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[29]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[30]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[31]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_atan_s_reg[32]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[0]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[1]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[1]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[2]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[2]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[3]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[3]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[4]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[4]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[5]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[5]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[6]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[6]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[7]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[7]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[8]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[8]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[9]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[9]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[10]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[10]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[11]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[11]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[12]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[12]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[13]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[13]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[14]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[14]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[15]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[15]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[16]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[16]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[17]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[17]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[18]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[18]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[19]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[19]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[20]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[20]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[21]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[21]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[22]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[22]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[23]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[23]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[24]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[24]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[25]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[25]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[26]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[26]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[27]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[27]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[28]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[28]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[29]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[29]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_q_s_reg[30]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_i_div_s_reg[30]' (FD) to 'U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/data2_i_s_reg[30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[0].cordic_impl_inst /\s_q_div_s_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[1].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[2].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[3].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[4].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[5].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[6].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[7].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[8].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[9].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[10].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[11].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[12].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[13].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[14].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[15].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[16].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[17].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[18].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[19].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[20].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[21].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[22].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[23].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[24].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[25].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[26].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[27].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[28].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[29].cordic_impl_inst /\val_alpha_s_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/handle_comm/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_comm_inst/readdata_s_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/handle_comm/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[1].cordic_impl_inst /\data2_q_s_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[30]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[29]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[28]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[27]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[26]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[25]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[24]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[23]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[22]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[21]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[20]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[19]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[18]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[17]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[16]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[15]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[14]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[13]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[12]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[11]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[10]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[9]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[8]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[7]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[6]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[5]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[4]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[3]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[2]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (data_q_s_reg[1]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (s_q_div_s_reg[30]) is unused and will be removed from module cordic_impl.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (data2_q_s_reg[30]) is unused and will be removed from module cordic_impl__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized1.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized2.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized4.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized5.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized6.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized7.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized8.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized9.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized10.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized11.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized12.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized13.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized14.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized15.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized16.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized17.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized18.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized19.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized20.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized21.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized22.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized23.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized24.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized25.
+WARNING: [Synth 8-3332] Sequential element (val_alpha_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized26.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[43]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[42]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[41]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[40]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[39]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[38]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[37]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[36]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[35]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[34]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[33]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[32]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[31]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[30]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[29]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[28]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[27]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[26]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[25]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[24]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[23]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[22]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[21]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[20]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[19]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[18]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[17]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[16]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[15]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[14]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[13]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[12]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[11]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[10]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[9]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[8]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[7]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[6]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[5]) is unused and will be removed from module cordic_impl__parameterized27.
+WARNING: [Synth 8-3332] Sequential element (data_i_s_reg[4]) is unused and will be removed from module cordic_impl__parameterized27.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[0].cordic_impl_inst /\s_i_div_s_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[1].cordic_impl_inst /\s_q_div_s_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[0].cordic_impl_inst /\data_q_s_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[1].cordic_impl_inst /\data2_q_s_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[1].cordic_impl_inst /\data_i_s_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/cordic_top_inst /\generate_cordic[2].cordic_impl_inst /\data2_i_s_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 652 ; free virtual = 12926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 596 ; free virtual = 12870
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1525.418 ; gain = 593.859 ; free physical = 588 ; free virtual = 12862
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[0] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[0]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[1] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[1]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[2] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[2]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[3] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[3]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[4] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[4]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[5] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[5]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[6] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[6]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[7] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[7]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[8] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[8]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[9] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[9]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[10] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[10]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[11] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[11]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[12] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[12]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[13] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[13]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[14] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[14]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[15] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[15]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[16] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[16]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[17] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[17]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[18] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[18]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[19] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[19]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[20] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[20]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[21] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[21]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[22] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[22]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[23] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[23]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[24] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[24]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[25] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[25]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[26] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[26]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[27] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[27]_inv.
+INFO: [Synth 8-5365] Flop U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[28] is being inverted and renamed to U0/cordic_top_inst/generate_cordic[0].cordic_impl_inst/s_alpha_s_reg[28]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:44 ; elapsed = 00:01:47 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |  1625|
+|2     |LUT1   |  2561|
+|3     |LUT2   |  3489|
+|4     |LUT3   |   151|
+|5     |LUT4   |  2383|
+|6     |LUT5   |    38|
+|7     |LUT6   |    25|
+|8     |FDRE   | 10635|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+-----------------------------+------+
+|      |Instance                                     |Module                       |Cells |
++------+---------------------------------------------+-----------------------------+------+
+|1     |top                                          |                             | 20909|
+|2     |  U0                                         |cordic                       | 20873|
+|3     |    cordic_comm_inst                         |cordic_comm                  |   106|
+|4     |    cordic_top_inst                          |cordic_top                   | 20740|
+|5     |      \generate_cordic[0].cordic_impl_inst   |cordic_impl                  |   424|
+|6     |      \generate_cordic[10].cordic_impl_inst  |cordic_impl__parameterized9  |   761|
+|7     |      \generate_cordic[11].cordic_impl_inst  |cordic_impl__parameterized10 |   755|
+|8     |      \generate_cordic[12].cordic_impl_inst  |cordic_impl__parameterized11 |   747|
+|9     |      \generate_cordic[13].cordic_impl_inst  |cordic_impl__parameterized12 |   741|
+|10    |      \generate_cordic[14].cordic_impl_inst  |cordic_impl__parameterized13 |   735|
+|11    |      \generate_cordic[15].cordic_impl_inst  |cordic_impl__parameterized14 |   729|
+|12    |      \generate_cordic[16].cordic_impl_inst  |cordic_impl__parameterized15 |   721|
+|13    |      \generate_cordic[17].cordic_impl_inst  |cordic_impl__parameterized16 |   715|
+|14    |      \generate_cordic[18].cordic_impl_inst  |cordic_impl__parameterized17 |   709|
+|15    |      \generate_cordic[19].cordic_impl_inst  |cordic_impl__parameterized18 |   703|
+|16    |      \generate_cordic[1].cordic_impl_inst   |cordic_impl__parameterized0  |   546|
+|17    |      \generate_cordic[20].cordic_impl_inst  |cordic_impl__parameterized19 |   695|
+|18    |      \generate_cordic[21].cordic_impl_inst  |cordic_impl__parameterized20 |   689|
+|19    |      \generate_cordic[22].cordic_impl_inst  |cordic_impl__parameterized21 |   683|
+|20    |      \generate_cordic[23].cordic_impl_inst  |cordic_impl__parameterized22 |   677|
+|21    |      \generate_cordic[24].cordic_impl_inst  |cordic_impl__parameterized23 |   669|
+|22    |      \generate_cordic[25].cordic_impl_inst  |cordic_impl__parameterized24 |   663|
+|23    |      \generate_cordic[26].cordic_impl_inst  |cordic_impl__parameterized25 |   657|
+|24    |      \generate_cordic[27].cordic_impl_inst  |cordic_impl__parameterized26 |   651|
+|25    |      \generate_cordic[28].cordic_impl_inst  |cordic_impl__parameterized27 |   511|
+|26    |      \generate_cordic[29].cordic_impl_inst  |cordic_impl__parameterized28 |   273|
+|27    |      \generate_cordic[2].cordic_impl_inst   |cordic_impl__parameterized1  |   758|
+|28    |      \generate_cordic[3].cordic_impl_inst   |cordic_impl__parameterized2  |   807|
+|29    |      \generate_cordic[4].cordic_impl_inst   |cordic_impl__parameterized3  |   799|
+|30    |      \generate_cordic[5].cordic_impl_inst   |cordic_impl__parameterized4  |   793|
+|31    |      \generate_cordic[6].cordic_impl_inst   |cordic_impl__parameterized5  |   787|
+|32    |      \generate_cordic[7].cordic_impl_inst   |cordic_impl__parameterized6  |   781|
+|33    |      \generate_cordic[8].cordic_impl_inst   |cordic_impl__parameterized7  |   773|
+|34    |      \generate_cordic[9].cordic_impl_inst   |cordic_impl__parameterized8  |   767|
+|35    |    handle_comm                              |cordic_handCom               |    27|
++------+---------------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1572.746 ; gain = 641.188 ; free physical = 491 ; free virtual = 12777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 458 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1572.746 ; gain = 169.793 ; free physical = 491 ; free virtual = 12777
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1572.754 ; gain = 641.195 ; free physical = 491 ; free virtual = 12777
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1625 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+291 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:46 . Memory (MB): peak = 1572.754 ; gain = 539.691 ; free physical = 493 ; free virtual = 12779
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_cordicAtan_0_0_synth_1/iq_demod_only_wrapper_cordicAtan_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 34 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/iq_demod_only/iq_demod_only.runs/iq_demod_only_wrapper_cordicAtan_0_0_synth_1/iq_demod_only_wrapper_cordicAtan_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.25 . Memory (MB): peak = 1596.758 ; gain = 0.000 ; free physical = 480 ; free virtual = 12778
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 31 08:14:13 2018...
