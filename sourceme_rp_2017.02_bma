@@ -1,9 +1,12 @@
+# BR RedPitaya
+source ~/git/buildroot/redpitaya/sourceme.pyb
+source ~/git/buildroot/redpitaya/redpitaya/sourceme.ggm
 export BR_DIR='~/git/buildroot/redpitaya/buildroot/'
 
+# OIMP suite
 source ~/git/gitlab/oimp/fpga_app/source_me.ggm
 source ~/git/gitlab/oimp/fpga_lib/source_me.ggm
 source ~/git/gitlab/oimp/fpga_driver/sourceme.ggm
-
 export OSC_IMP_NFS_DIR='/usr/local/export/nfs_fpga_design'
 export OSC_IMP_DEV='~/fpga_design/'
 export BOARD_NAME='redpitaya'
