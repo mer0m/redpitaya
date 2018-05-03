@@ -4,6 +4,7 @@ source ~/git/buildroot/redpitaya/redpitaya/sourceme.ggm
 export BR_DIR='~/git/buildroot/redpitaya/buildroot/'
 
 # OIMP suite
+find ~/git/gitlab/oimp -name .git -not -path './.*' -execdir echo '' \; -execdir git rev-parse --show-toplevel \; -execdir git checkout br2017.02_bma \;
 source ~/git/gitlab/oimp/fpga_app/source_me.ggm
 source ~/git/gitlab/oimp/fpga_lib/source_me.ggm
 source ~/git/gitlab/oimp/fpga_driver/sourceme.ggm
