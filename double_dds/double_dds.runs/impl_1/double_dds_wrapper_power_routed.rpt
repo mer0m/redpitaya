@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Thu Sep 21 16:52:46 2017
-| Host             : ux305 running 64-bit Debian GNU/Linux 9.1 (stretch)
+| Date             : Wed May  2 15:29:29 2018
+| Host             : ux305 running 64-bit Debian GNU/Linux testing/unstable
 | Command          : report_power -file double_dds_wrapper_power_routed.rpt -pb double_dds_wrapper_power_summary_routed.pb -rpx double_dds_wrapper_power_routed.rpx
 | Design           : double_dds_wrapper
 | Device           : xc7z010clg400-1

@@ -60,40 +60,51 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_twoInMult_0_0/double_dds_wrapper_twoInMult_0_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_twoInMult_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xlslice_0_1/double_dds_wrapper_xlslice_0_1.xci">
-          <Proxy FileSetName="double_dds_wrapper_xlslice_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_twoInMult_0_0/double_dds_wrapper_dds1_twoInMult_0_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds1_twoInMult_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds1_ampl_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xlconstant_0_1/double_dds_wrapper_xlconstant_0_1.xci">
-          <Proxy FileSetName="double_dds_wrapper_xlconstant_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_axi_interconnect_0_0/double_dds_wrapper_axi_interconnect_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xbar_0/double_dds_wrapper_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds_offset_0/double_dds_wrapper_dds_offset_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds_offset_0"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_ad9767_0_0/double_dds_wrapper_ad9767_0_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_ad9767_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_nco_counter_0_2/double_dds_wrapper_nco_counter_0_2.xci">
           <Proxy FileSetName="double_dds_wrapper_nco_counter_0_2"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_ad9767_0_0/double_dds_wrapper_ad9767_0_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_ad9767_0_0"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xbar_0/double_dds_wrapper_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_ltc2145_0_0/double_dds_wrapper_ltc2145_0_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_ltc2145_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds_ampl_0/double_dds_wrapper_dds_ampl_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds_ampl_0"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_processing_system7_0_0/double_dds_wrapper_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_twoInMult_0_0/double_dds_wrapper_twoInMult_0_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_twoInMult_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xlslice_0_0/double_dds_wrapper_xlslice_0_0.xci">
           <Proxy FileSetName="double_dds_wrapper_xlslice_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds_ampl_1/double_dds_wrapper_dds_ampl_1.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds_ampl_1"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xlconstant_0_1/double_dds_wrapper_xlconstant_0_1.xci">
+          <Proxy FileSetName="double_dds_wrapper_xlconstant_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds1_phase_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_ampl_0/double_dds_wrapper_dds1_ampl_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds1_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_twoInMult_0_0/double_dds_wrapper_dds1_twoInMult_0_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds1_twoInMult_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds1_nco_counter_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hdl/double_dds_wrapper.v"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xlslice_0_1/double_dds_wrapper_xlslice_0_1.xci">
+          <Proxy FileSetName="double_dds_wrapper_xlslice_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds_ampl_0/double_dds_wrapper_dds_ampl_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds_ampl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_axi_interconnect_0_0/double_dds_wrapper_axi_interconnect_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds_offset_0/double_dds_wrapper_dds_offset_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds_offset_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="double_dds_wrapper_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_redpitaya_adc_dac_clk_0_0/double_dds_wrapper_redpitaya_adc_dac_clk_0_0.xci">
           <Proxy FileSetName="double_dds_wrapper_redpitaya_adc_dac_clk_0_0"/>
@@ -101,28 +112,17 @@
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_xlconstant_0_0/double_dds_wrapper_xlconstant_0_0.xci">
           <Proxy FileSetName="double_dds_wrapper_xlconstant_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_proc_sys_reset_0_0/double_dds_wrapper_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_ltc2145_0_0/double_dds_wrapper_ltc2145_0_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_ltc2145_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_processing_system7_0_0/double_dds_wrapper_processing_system7_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_phase_0/double_dds_wrapper_dds1_phase_0.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds1_phase_0"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds_ampl_1/double_dds_wrapper_dds_ampl_1.xci">
+          <Proxy FileSetName="double_dds_wrapper_dds_ampl_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_offset_0/double_dds_wrapper_dds1_offset_0.xci">
           <Proxy FileSetName="double_dds_wrapper_dds1_offset_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hdl/double_dds_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hdl/double_dds_wrapper.hwdef"/>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_dds1_nco_counter_1/double_dds_wrapper_dds1_nco_counter_1.xci">
-          <Proxy FileSetName="double_dds_wrapper_dds1_nco_counter_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hw_handoff/double_dds_wrapper_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="ip/double_dds_wrapper_auto_pc_0/double_dds_wrapper_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="double_dds_wrapper_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hw_handoff/double_dds_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hw_handoff/double_dds_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="double_dds_wrapper.bd" FileRelPathName="hdl/double_dds_wrapper.hwdef"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
