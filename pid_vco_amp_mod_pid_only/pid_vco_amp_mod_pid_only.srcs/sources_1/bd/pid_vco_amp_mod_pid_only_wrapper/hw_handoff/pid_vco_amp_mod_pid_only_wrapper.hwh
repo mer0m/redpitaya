@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May  9 21:05:15 2018" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May  9 21:48:33 2018" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:redpitaya:part0:1.0" DEVICE="7z010" NAME="pid_vco_amp_mod_pid_only_wrapper" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -584,17 +584,17 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M24_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="13" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="adc2_offset_data_i">
+        <PORT DIR="I" LEFT="13" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="ltc2145_0_data_b_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="adc2_offset_data_en_i">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="adc2_offset_data_clk_i">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
@@ -619,14 +619,14 @@
             <CONNECTION INSTANCE="pid3" PORT="data_rst_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="adc2_offset_data_rst_i">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="ltc2145_0_data_b" NAME="data_in" TYPE="TARGET" VLNV="xilinx.com:interface:real:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="data_in" TYPE="TARGET" VLNV="xilinx.com:interface:real:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="DATA" PHYSICAL="data_i"/>
             <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data_en_i"/>
@@ -7553,12 +7553,6 @@
             <CONNECTION INSTANCE="pid2_setpoint" PORT="data_en_i"/>
             <CONNECTION INSTANCE="pid2_sign" PORT="data_en_i"/>
             <CONNECTION INSTANCE="pid2_rst_int" PORT="data_en_i"/>
-            <CONNECTION INSTANCE="pid3_kp" PORT="data_en_i"/>
-            <CONNECTION INSTANCE="pid3_ki" PORT="data_en_i"/>
-            <CONNECTION INSTANCE="pid3_kd" PORT="data_en_i"/>
-            <CONNECTION INSTANCE="pid3_setpoint" PORT="data_en_i"/>
-            <CONNECTION INSTANCE="pid3_sign" PORT="data_en_i"/>
-            <CONNECTION INSTANCE="pid3_rst_int" PORT="data_en_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data_a_clk_o" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
@@ -7576,12 +7570,6 @@
             <CONNECTION INSTANCE="pid2_setpoint" PORT="data_clk_i"/>
             <CONNECTION INSTANCE="pid2_sign" PORT="data_clk_i"/>
             <CONNECTION INSTANCE="pid2_rst_int" PORT="data_clk_i"/>
-            <CONNECTION INSTANCE="pid3_kp" PORT="data_clk_i"/>
-            <CONNECTION INSTANCE="pid3_ki" PORT="data_clk_i"/>
-            <CONNECTION INSTANCE="pid3_kd" PORT="data_clk_i"/>
-            <CONNECTION INSTANCE="pid3_setpoint" PORT="data_clk_i"/>
-            <CONNECTION INSTANCE="pid3_sign" PORT="data_clk_i"/>
-            <CONNECTION INSTANCE="pid3_rst_int" PORT="data_clk_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data_a_rst_o" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
@@ -7599,12 +7587,6 @@
             <CONNECTION INSTANCE="pid2_setpoint" PORT="data_rst_i"/>
             <CONNECTION INSTANCE="pid2_sign" PORT="data_rst_i"/>
             <CONNECTION INSTANCE="pid2_rst_int" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="pid3_kp" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="pid3_ki" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="pid3_kd" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="pid3_setpoint" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="pid3_sign" PORT="data_rst_i"/>
-            <CONNECTION INSTANCE="pid3_rst_int" PORT="data_rst_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_a_o" RIGHT="0" SIGIS="undef" SIGNAME="ltc2145_0_data_a_o">
@@ -7612,22 +7594,40 @@
             <CONNECTION INSTANCE="adc1_offset" PORT="data_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="data_b_en_o" SIGIS="undef" SIGNAME="adc2_offset_data_en_i">
+        <PORT DIR="O" NAME="data_b_en_o" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="adc2_offset" PORT="data_en_i"/>
+            <CONNECTION INSTANCE="pid3_sign" PORT="data_en_i"/>
+            <CONNECTION INSTANCE="pid3_rst_int" PORT="data_en_i"/>
+            <CONNECTION INSTANCE="pid3_kd" PORT="data_en_i"/>
+            <CONNECTION INSTANCE="pid3_kp" PORT="data_en_i"/>
+            <CONNECTION INSTANCE="pid3_ki" PORT="data_en_i"/>
+            <CONNECTION INSTANCE="pid3_setpoint" PORT="data_en_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="data_b_clk_o" SIGIS="undef" SIGNAME="adc2_offset_data_clk_i">
+        <PORT DIR="O" NAME="data_b_clk_o" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="adc2_offset" PORT="data_clk_i"/>
+            <CONNECTION INSTANCE="pid3_sign" PORT="data_clk_i"/>
+            <CONNECTION INSTANCE="pid3_rst_int" PORT="data_clk_i"/>
+            <CONNECTION INSTANCE="pid3_kd" PORT="data_clk_i"/>
+            <CONNECTION INSTANCE="pid3_kp" PORT="data_clk_i"/>
+            <CONNECTION INSTANCE="pid3_ki" PORT="data_clk_i"/>
+            <CONNECTION INSTANCE="pid3_setpoint" PORT="data_clk_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="data_b_rst_o" SIGIS="undef" SIGNAME="adc2_offset_data_rst_i">
+        <PORT DIR="O" NAME="data_b_rst_o" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="adc2_offset" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="pid3_sign" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="pid3_setpoint" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="pid3_ki" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="pid3_kp" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="pid3_kd" PORT="data_rst_i"/>
+            <CONNECTION INSTANCE="pid3_rst_int" PORT="data_rst_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="13" NAME="data_b_o" RIGHT="0" SIGIS="undef" SIGNAME="adc2_offset_data_i">
+        <PORT DIR="O" LEFT="13" NAME="data_b_o" RIGHT="0" SIGIS="undef" SIGNAME="ltc2145_0_data_b_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="adc2_offset" PORT="data_i"/>
           </CONNECTIONS>
@@ -7642,7 +7642,7 @@
             <PORTMAP LOGICAL="DATA_RST" PHYSICAL="data_a_rst_o"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="ltc2145_0_data_b" NAME="data_b" TYPE="INITIATOR" VLNV="xilinx.com:interface:real:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="data_b" TYPE="INITIATOR" VLNV="xilinx.com:interface:real:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="DATA" PHYSICAL="data_b_o"/>
             <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data_b_en_o"/>
@@ -12577,14 +12577,14 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_en_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_clk_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="pid3_kd_data_o">
@@ -12595,9 +12595,9 @@
         <PORT DIR="O" NAME="data_en_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_clk_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_rst_o" SIGIS="undef"/>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_rst_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -12802,14 +12802,14 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_en_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_clk_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="expanderReal_0_ki_pid3_data_i">
@@ -12832,9 +12832,9 @@
             <CONNECTION INSTANCE="expanderReal_0_ki_pid3" PORT="data_rst_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_rst_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -13039,14 +13039,14 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_en_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_clk_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="pid3_kp_data_o">
@@ -13057,9 +13057,9 @@
         <PORT DIR="O" NAME="data_en_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_clk_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_rst_o" SIGIS="undef"/>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_rst_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -13264,14 +13264,14 @@
             <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_en_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_clk_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="pid3_rst_int_data_o">
@@ -13282,9 +13282,9 @@
         <PORT DIR="O" NAME="data_en_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_clk_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_rst_o" SIGIS="undef"/>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_rst_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -13489,14 +13489,14 @@
             <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_en_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_clk_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="pid3_setpoint_data_o">
@@ -13507,9 +13507,9 @@
         <PORT DIR="O" NAME="data_en_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_clk_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_rst_o" SIGIS="undef"/>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_rst_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -13714,14 +13714,14 @@
             <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_en_o">
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_en_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_clk_o">
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_clk_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_clk_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="pid3_sign_data_o">
@@ -13732,9 +13732,9 @@
         <PORT DIR="O" NAME="data_en_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_clk_o" SIGIS="undef"/>
         <PORT DIR="O" NAME="data_rst_o" SIGIS="undef"/>
-        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_a_rst_o">
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="ltc2145_0_data_b_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ltc2145_0" PORT="data_a_rst_o"/>
+            <CONNECTION INSTANCE="ltc2145_0" PORT="data_b_rst_o"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

@@ -60,8 +60,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_processing_system7_0_0/pid_vco_amp_mod_pid_only_wrapper_processing_system7_0_0.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid2_kp_0/pid_vco_amp_mod_pid_only_wrapper_pid2_kp_0.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid2_kp_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_xlslice_dds1_0/pid_vco_amp_mod_pid_only_wrapper_xlslice_dds1_0.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_xlslice_dds1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_ad9767_0_0/pid_vco_amp_mod_pid_only_wrapper_ad9767_0_0.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_ad9767_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1/pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_xlslice_mod_input_1_0/pid_vco_amp_mod_pid_only_wrapper_xlslice_mod_input_1_0.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_xlslice_mod_input_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_twoInMult_dds1_range_0/pid_vco_amp_mod_pid_only_wrapper_twoInMult_dds1_range_0.xci">
           <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_twoInMult_dds1_range_0"/>
@@ -72,23 +84,14 @@
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_switchComplex_0_0/pid_vco_amp_mod_pid_only_wrapper_switchComplex_0_0.xci">
           <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_switchComplex_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid2_kp_0/pid_vco_amp_mod_pid_only_wrapper_pid2_kp_0.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid2_kp_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_xlslice_mod_input_1_0/pid_vco_amp_mod_pid_only_wrapper_xlslice_mod_input_1_0.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_xlslice_mod_input_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_xlslice_dds1_0/pid_vco_amp_mod_pid_only_wrapper_xlslice_dds1_0.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_xlslice_dds1_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid2_sign_0/pid_vco_amp_mod_pid_only_wrapper_pid2_sign_0.xci">
           <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid2_sign_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_ad9767_0_0/pid_vco_amp_mod_pid_only_wrapper_ad9767_0_0.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_ad9767_0_0"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_processing_system7_0_0/pid_vco_amp_mod_pid_only_wrapper_processing_system7_0_0.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1/pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid1_0/pid_vco_amp_mod_pid_only_wrapper_pid1_0.xci">
+          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid1_kd_0/pid_vco_amp_mod_pid_only_wrapper_pid1_kd_0.xci">
           <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid1_kd_0"/>
@@ -250,19 +253,16 @@
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_mod_out_pid2_nco_0/pid_vco_amp_mod_pid_only_wrapper_mod_out_pid2_nco_0.xci">
           <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_mod_out_pid2_nco_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_pid1_0/pid_vco_amp_mod_pid_only_wrapper_pid1_0.xci">
-          <Proxy FileSetName="pid_vco_amp_mod_pid_only_wrapper_pid1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_0_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_4_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="pid_vco_amp_mod_pid_only_wrapper_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_3_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_3_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_2_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_0_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_1_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_auto_pc_0/pid_vco_amp_mod_pid_only_wrapper_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="pid_vco_amp_mod_pid_only_wrapper_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_amp_mod_pid_only_wrapper_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_4_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_4_0.xci"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="ip/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_2_0/pid_vco_amp_mod_pid_only_wrapper_tier2_xbar_2_0.xci"/>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="hdl/pid_vco_amp_mod_pid_only_wrapper.hwdef"/>
         <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_amp_mod_pid_only_wrapper.hwh"/>
+        <CompFileExtendedInfo CompFileName="pid_vco_amp_mod_pid_only_wrapper.bd" FileRelPathName="hw_handoff/pid_vco_amp_mod_pid_only_wrapper_bd.tcl"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>

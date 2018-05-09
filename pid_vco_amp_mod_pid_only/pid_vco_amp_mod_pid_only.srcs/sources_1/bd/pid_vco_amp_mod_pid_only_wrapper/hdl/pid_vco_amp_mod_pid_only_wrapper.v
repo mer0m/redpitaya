@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Wed May  9 21:05:08 2018
+//Date        : Wed May  9 21:48:25 2018
 //Host        : ux305 running 64-bit Debian GNU/Linux testing/unstable
 //Command     : generate_target pid_vco_amp_mod_pid_only_wrapper.bd
 //Design      : pid_vco_amp_mod_pid_only_wrapper
@@ -6325,10 +6325,10 @@ module pid_vco_amp_mod_pid_only_wrapper
   wire ltc2145_0_data_a_en_o;
   wire [13:0]ltc2145_0_data_a_o;
   wire ltc2145_0_data_a_rst_o;
-  wire [13:0]ltc2145_0_data_b_DATA;
-  wire ltc2145_0_data_b_DATA_CLK;
-  wire ltc2145_0_data_b_DATA_EN;
-  wire ltc2145_0_data_b_DATA_RST;
+  wire ltc2145_0_data_b_clk_o;
+  wire ltc2145_0_data_b_en_o;
+  wire [13:0]ltc2145_0_data_b_o;
+  wire ltc2145_0_data_b_rst_o;
   wire [13:0]mod_amp_dds_ampl_data_out_DATA;
   wire mod_amp_dds_ampl_data_out_DATA_CLK;
   wire mod_amp_dds_ampl_data_out_DATA_EN;
@@ -6546,13 +6546,13 @@ module pid_vco_amp_mod_pid_only_wrapper
         .s00_axi_wstrb(axi_interconnect_0_M01_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M01_AXI_WVALID));
   pid_vco_amp_mod_pid_only_wrapper_adc1_offset_1 adc2_offset
-       (.data_clk_i(ltc2145_0_data_b_DATA_CLK),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
         .data_clk_o(adc1_offset1_data_out_DATA_CLK),
-        .data_en_i(ltc2145_0_data_b_DATA_EN),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_en_o(adc1_offset1_data_out_DATA_EN),
-        .data_i(ltc2145_0_data_b_DATA),
+        .data_i(ltc2145_0_data_b_o),
         .data_o(adc1_offset1_data_out_DATA),
-        .data_rst_i(ltc2145_0_data_b_DATA_RST),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .data_rst_o(adc1_offset1_data_out_DATA_RST),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M24_AXI_ARADDR[3:0]),
@@ -7578,10 +7578,10 @@ module pid_vco_amp_mod_pid_only_wrapper
         .data_a_en_o(ltc2145_0_data_a_en_o),
         .data_a_o(ltc2145_0_data_a_o),
         .data_a_rst_o(ltc2145_0_data_a_rst_o),
-        .data_b_clk_o(ltc2145_0_data_b_DATA_CLK),
-        .data_b_en_o(ltc2145_0_data_b_DATA_EN),
-        .data_b_o(ltc2145_0_data_b_DATA),
-        .data_b_rst_o(ltc2145_0_data_b_DATA_RST),
+        .data_b_clk_o(ltc2145_0_data_b_clk_o),
+        .data_b_en_o(ltc2145_0_data_b_en_o),
+        .data_b_o(ltc2145_0_data_b_o),
+        .data_b_rst_o(ltc2145_0_data_b_rst_o),
         .processing_rst_i(proc_sys_reset_0_peripheral_reset),
         .resetn(proc_sys_reset_0_interconnect_aresetn));
   pid_vco_amp_mod_pid_only_wrapper_mod_out_pid2_ampl_1 mod_amp_dds_ampl
@@ -8184,11 +8184,11 @@ module pid_vco_amp_mod_pid_only_wrapper
         .setpoint_i(pid2_setpoint1_data_o),
         .sign_i(pid3_sign_data_o));
   pid_vco_amp_mod_pid_only_wrapper_pid2_kd_1 pid3_kd
-       (.data_clk_i(ltc2145_0_data_a_clk_o),
-        .data_en_i(ltc2145_0_data_a_en_o),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_i(xlconstant_0_dout),
         .data_o(pid3_kd_data_o),
-        .data_rst_i(ltc2145_0_data_a_rst_o),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M27_AXI_ARADDR[3:0]),
         .s00_axi_arprot(axi_interconnect_0_M27_AXI_ARPROT),
@@ -8211,13 +8211,13 @@ module pid_vco_amp_mod_pid_only_wrapper
         .s00_axi_wstrb(axi_interconnect_0_M27_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M27_AXI_WVALID));
   pid_vco_amp_mod_pid_only_wrapper_pid2_ki_1 pid3_ki
-       (.data_clk_i(ltc2145_0_data_a_clk_o),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
         .data_clk_o(pid3_ki_data_out_DATA_CLK),
-        .data_en_i(ltc2145_0_data_a_en_o),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_en_o(pid3_ki_data_out_DATA_EN),
         .data_i(xlconstant_0_dout),
         .data_o(pid3_ki_data_out_DATA),
-        .data_rst_i(ltc2145_0_data_a_rst_o),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .data_rst_o(pid3_ki_data_out_DATA_RST),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M26_AXI_ARADDR[3:0]),
@@ -8241,11 +8241,11 @@ module pid_vco_amp_mod_pid_only_wrapper
         .s00_axi_wstrb(axi_interconnect_0_M26_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M26_AXI_WVALID));
   pid_vco_amp_mod_pid_only_wrapper_pid2_kp_1 pid3_kp
-       (.data_clk_i(ltc2145_0_data_a_clk_o),
-        .data_en_i(ltc2145_0_data_a_en_o),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_i(xlconstant_0_dout),
         .data_o(pid3_kp_data_o),
-        .data_rst_i(ltc2145_0_data_a_rst_o),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M25_AXI_ARADDR[3:0]),
         .s00_axi_arprot(axi_interconnect_0_M25_AXI_ARPROT),
@@ -8268,11 +8268,11 @@ module pid_vco_amp_mod_pid_only_wrapper
         .s00_axi_wstrb(axi_interconnect_0_M25_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M25_AXI_WVALID));
   pid_vco_amp_mod_pid_only_wrapper_pid2_rst_int_1 pid3_rst_int
-       (.data_clk_i(ltc2145_0_data_a_clk_o),
-        .data_en_i(ltc2145_0_data_a_en_o),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_i(xlconstant_1_dout),
         .data_o(pid3_rst_int_data_o),
-        .data_rst_i(ltc2145_0_data_a_rst_o),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M30_AXI_ARADDR[3:0]),
         .s00_axi_arprot(axi_interconnect_0_M30_AXI_ARPROT),
@@ -8295,11 +8295,11 @@ module pid_vco_amp_mod_pid_only_wrapper
         .s00_axi_wstrb(axi_interconnect_0_M30_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M30_AXI_WVALID));
   pid_vco_amp_mod_pid_only_wrapper_pid2_setpoint_1 pid3_setpoint
-       (.data_clk_i(ltc2145_0_data_a_clk_o),
-        .data_en_i(ltc2145_0_data_a_en_o),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_i(xlconstant_0_dout),
         .data_o(pid2_setpoint1_data_o),
-        .data_rst_i(ltc2145_0_data_a_rst_o),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M28_AXI_ARADDR[3:0]),
         .s00_axi_arprot(axi_interconnect_0_M28_AXI_ARPROT),
@@ -8322,11 +8322,11 @@ module pid_vco_amp_mod_pid_only_wrapper
         .s00_axi_wstrb(axi_interconnect_0_M28_AXI_WSTRB),
         .s00_axi_wvalid(axi_interconnect_0_M28_AXI_WVALID));
   pid_vco_amp_mod_pid_only_wrapper_pid2_sign_1 pid3_sign
-       (.data_clk_i(ltc2145_0_data_a_clk_o),
-        .data_en_i(ltc2145_0_data_a_en_o),
+       (.data_clk_i(ltc2145_0_data_b_clk_o),
+        .data_en_i(ltc2145_0_data_b_en_o),
         .data_i(xlconstant_1_dout),
         .data_o(pid3_sign_data_o),
-        .data_rst_i(ltc2145_0_data_a_rst_o),
+        .data_rst_i(ltc2145_0_data_b_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M29_AXI_ARADDR[3:0]),
         .s00_axi_arprot(axi_interconnect_0_M29_AXI_ARPROT),

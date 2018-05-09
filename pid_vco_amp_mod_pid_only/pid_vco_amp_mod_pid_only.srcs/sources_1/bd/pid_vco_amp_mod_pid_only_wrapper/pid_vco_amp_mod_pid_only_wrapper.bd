@@ -772,6 +772,10 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_M_AXI_GP0_SUPPORT_NARROW_BURST">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_M_AXI_GP0_THREAD_ID_WIDTH">12</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_INCLUDE_ACP_TRANS_CHECK">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP0_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP1_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP2_DATA_WIDTH">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_S_AXI_HP3_DATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_DDR">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_SMC">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_EN_QSPI">1</spirit:configurableElementValue>
@@ -847,6 +851,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET_RESET_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET_RESET_SELECT">Share reset pin</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_RESET_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_ENET0_RESET_IO">&lt;Select&gt;</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_ENET1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_PERIPHERAL_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_SD0_SD0_IO">MIO 40 .. 45</spirit:configurableElementValue>
@@ -888,6 +893,7 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_I2C0_IO">MIO 50 .. 51</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_GRP_INT_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_RESET_ENABLE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_I2C0_RESET_IO">&lt;Select&gt;</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C_RESET_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_I2C_RESET_SELECT">Share reset pin</spirit:configurableElementValue>
@@ -1669,11 +1675,6 @@
         <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="dds1_ampl"/>
         <spirit:activeInterface spirit:busRef="data1" spirit:componentRef="adder_substracter_dds_ampl_mod"/>
       </spirit:interconnection>
-      <spirit:interconnection>
-        <spirit:name>ltc2145_0_data_b</spirit:name>
-        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="adc2_offset"/>
-        <spirit:activeInterface spirit:busRef="data_b" spirit:componentRef="ltc2145_0"/>
-      </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -1851,12 +1852,6 @@
         <spirit:internalPortReference spirit:componentRef="pid2_setpoint" spirit:portRef="data_clk_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_sign" spirit:portRef="data_clk_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_rst_int" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="data_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ltc2145_0_data_a_en_o</spirit:name>
@@ -1874,12 +1869,6 @@
         <spirit:internalPortReference spirit:componentRef="pid2_setpoint" spirit:portRef="data_en_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_sign" spirit:portRef="data_en_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_rst_int" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="data_en_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>ltc2145_0_data_a_o</spirit:name>
@@ -1902,12 +1891,6 @@
         <spirit:internalPortReference spirit:componentRef="pid2_setpoint" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_sign" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="pid2_rst_int" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="data_rst_i"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="data_rst_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mod_input_nco1_dds_clk_o</spirit:name>
@@ -2455,6 +2438,44 @@
         <spirit:name>dds1_nco_dds_rst_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="dds_rst_o"/>
         <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ltc2145_0_data_b_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="data_b_o"/>
+        <spirit:internalPortReference spirit:componentRef="adc2_offset" spirit:portRef="data_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ltc2145_0_data_b_en_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="data_b_en_o"/>
+        <spirit:internalPortReference spirit:componentRef="adc2_offset" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_en_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ltc2145_0_data_b_clk_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="data_b_clk_o"/>
+        <spirit:internalPortReference spirit:componentRef="adc2_offset" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_clk_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>ltc2145_0_data_b_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ltc2145_0" spirit:portRef="data_b_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="adc2_offset" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_rst_i"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="data_rst_i"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
