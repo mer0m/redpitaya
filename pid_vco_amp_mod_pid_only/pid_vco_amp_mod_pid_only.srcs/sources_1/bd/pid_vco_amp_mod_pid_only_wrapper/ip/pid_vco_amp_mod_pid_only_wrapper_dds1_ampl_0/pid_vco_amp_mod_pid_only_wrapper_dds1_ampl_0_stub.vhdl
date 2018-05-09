@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
--- Date        : Wed May  9 11:16:03 2018
+-- Date        : Wed May  9 17:01:39 2018
 -- Host        : ux305 running 64-bit Debian GNU/Linux testing/unstable
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/bma/git/fpga_design/redpitaya/pid_vco_amp_mod_pid_only/pid_vco_amp_mod_pid_only.srcs/sources_1/bd/pid_vco_amp_mod_pid_only_wrapper/ip/pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0/pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0_stub.vhdl

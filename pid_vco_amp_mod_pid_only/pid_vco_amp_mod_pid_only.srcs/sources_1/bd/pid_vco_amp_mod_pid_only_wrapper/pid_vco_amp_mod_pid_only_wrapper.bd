@@ -137,7 +137,35 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>adc_cdcs</spirit:name>
+          <spirit:name>dac_clk_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_dat_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>13</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_rst_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_sel_o</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>dac_wrt_o</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -175,35 +203,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>dac_clk_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_dat_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>13</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_rst_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_sel_o</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>dac_wrt_o</spirit:name>
+          <spirit:name>adc_cdcs</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -264,7 +264,7 @@
         <spirit:componentRef spirit:library="cogen" spirit:name="add_const" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="format">unsigned</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="format">signed</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_OUT_SIZE">14</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_IN_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -1259,6 +1259,7 @@
         <spirit:componentRef spirit:library="cogen" spirit:name="adder_substracter" spirit:vendor="ggm" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">pid_vco_amp_mod_pid_only_wrapper_adder_substracter_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="opp">add</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DATA_SIZE">14</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -1614,11 +1615,6 @@
         <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="pid3"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>ltc2145_0_data_b</spirit:name>
-        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="adc2_offset"/>
-        <spirit:activeInterface spirit:busRef="data_b" spirit:componentRef="ltc2145_0"/>
-      </spirit:interconnection>
-      <spirit:interconnection>
         <spirit:name>axi_interconnect_0_M25_AXI</spirit:name>
         <spirit:activeInterface spirit:busRef="M25_AXI" spirit:componentRef="axi_interconnect_0"/>
         <spirit:activeInterface spirit:busRef="s00_axi" spirit:componentRef="pid3_kp"/>
@@ -1672,6 +1668,11 @@
         <spirit:name>dds1_ampl_data_out</spirit:name>
         <spirit:activeInterface spirit:busRef="data_out" spirit:componentRef="dds1_ampl"/>
         <spirit:activeInterface spirit:busRef="data1" spirit:componentRef="adder_substracter_dds_ampl_mod"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>ltc2145_0_data_b</spirit:name>
+        <spirit:activeInterface spirit:busRef="data_in" spirit:componentRef="adc2_offset"/>
+        <spirit:activeInterface spirit:busRef="data_b" spirit:componentRef="ltc2145_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -2069,7 +2070,6 @@
         <spirit:internalPortReference spirit:componentRef="redpitaya_adc_dac_clk_0" spirit:portRef="adc_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="s00_axi_reset"/>
-        <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="dds1_f0" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="adc1_offset" spirit:portRef="s00_axi_reset"/>
         <spirit:internalPortReference spirit:componentRef="dds1_range" spirit:portRef="s00_axi_reset"/>
@@ -2136,6 +2136,15 @@
         <spirit:internalPortReference spirit:componentRef="mod_input_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="mod_out_pid2_ampl" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="mod_out_pid2_nco" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="adc2_offset" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="s00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M00_ACLK"/>
@@ -2162,23 +2171,14 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M21_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M22_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M23_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="adc2_offset" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M24_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kp" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M25_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M26_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M27_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M28_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_sign" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M29_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="pid3_rst_int" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M30_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M31_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_nco" spirit:portRef="s00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M32_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -2321,6 +2321,7 @@
         <spirit:internalPortReference spirit:componentRef="pid3_ki" spirit:portRef="data_i"/>
         <spirit:internalPortReference spirit:componentRef="pid3_kd" spirit:portRef="data_i"/>
         <spirit:internalPortReference spirit:componentRef="pid3_setpoint" spirit:portRef="data_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_1_dout</spirit:name>
@@ -2421,35 +2422,39 @@
         <spirit:name>mod_amp_dds_nco_dds_en_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mod_amp_dds_nco" spirit:portRef="dds_en_o"/>
         <spirit:internalPortReference spirit:componentRef="twoInMult_mod_amp_dds" spirit:portRef="data1_en_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_en_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mod_amp_dds_nco_dds_clk_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mod_amp_dds_nco" spirit:portRef="dds_clk_o"/>
         <spirit:internalPortReference spirit:componentRef="twoInMult_mod_amp_dds" spirit:portRef="data1_clk_i"/>
+        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlslice_mod_amp_dds_Dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlslice_mod_amp_dds" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="data_i"/>
-        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>twoInMult_mod_amp_dds_data_en_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="twoInMult_mod_amp_dds" spirit:portRef="data_en_o"/>
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="data_en_i"/>
-        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_en_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>twoInMult_mod_amp_dds_data_clk_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="twoInMult_mod_amp_dds" spirit:portRef="data_clk_o"/>
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="data_clk_i"/>
-        <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_clk_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mod_amp_dds_nco_dds_rst_o</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mod_amp_dds_nco" spirit:portRef="dds_rst_o"/>
         <spirit:internalPortReference spirit:componentRef="dds1_ampl" spirit:portRef="data_rst_i"/>
         <spirit:internalPortReference spirit:componentRef="mod_amp_dds_ampl" spirit:portRef="data_rst_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dds1_nco_dds_rst_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dds1_nco" spirit:portRef="dds_rst_o"/>
+        <spirit:internalPortReference spirit:componentRef="dds1_offset" spirit:portRef="data_rst_i"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

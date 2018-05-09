@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date             : Wed May  9 15:48:02 2018
+| Date             : Wed May  9 21:09:31 2018
 | Host             : ux305 running 64-bit Debian GNU/Linux testing/unstable
 | Command          : report_power -file pid_vco_amp_mod_pid_only_wrapper_power_routed.rpt -pb pid_vco_amp_mod_pid_only_wrapper_power_summary_routed.pb -rpx pid_vco_amp_mod_pid_only_wrapper_power_routed.rpx
 | Design           : pid_vco_amp_mod_pid_only_wrapper
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.799 |
-| Dynamic (W)              | 1.660 |
-| Device Static (W)        | 0.139 |
+| Total On-Chip Power (W)  | 1.841 |
+| Dynamic (W)              | 1.701 |
+| Device Static (W)        | 0.140 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 64.3  |
-| Junction Temperature (C) | 45.7  |
+| Max Ambient (C)          | 63.8  |
+| Junction Temperature (C) | 46.2  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,21 +50,21 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.027 |       11 |       --- |             --- |
-| Slice Logic             |     0.007 |     8947 |       --- |             --- |
-|   LUT as Logic          |     0.005 |     3165 |     17600 |           17.98 |
+| Slice Logic             |     0.007 |     8951 |       --- |             --- |
+|   LUT as Logic          |     0.005 |     3181 |     17600 |           18.07 |
 |   CARRY4                |    <0.001 |      173 |      4400 |            3.93 |
 |   Register              |    <0.001 |     4182 |     35200 |           11.88 |
 |   LUT as Shift Register |    <0.001 |      159 |      6000 |            2.65 |
 |   F7/F8 Muxes           |    <0.001 |        5 |     17600 |            0.03 |
 |   Others                |     0.000 |      446 |       --- |             --- |
-| Signals                 |     0.013 |     6888 |       --- |             --- |
+| Signals                 |     0.014 |     6901 |       --- |             --- |
 | Block RAM               |     0.020 |        8 |        60 |           13.33 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.014 |       11 |        80 |           13.75 |
-| I/O                     |     0.199 |       49 |       100 |           49.00 |
+| I/O                     |     0.239 |       49 |       100 |           49.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
-| Static Power            |     0.139 |          |           |                 |
-| Total                   |     1.799 |          |           |                 |
+| Static Power            |     0.140 |          |           |                 |
+| Total                   |     1.841 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.096 |       0.089 |      0.008 |
-| Vccaux    |       1.800 |     0.068 |       0.056 |      0.012 |
-| Vcco33    |       3.300 |     0.059 |       0.058 |      0.001 |
+| Vccint    |       1.000 |     0.098 |       0.090 |      0.008 |
+| Vccaux    |       1.800 |     0.069 |       0.057 |      0.012 |
+| Vcco33    |       3.300 |     0.071 |       0.070 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
 | Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
 | Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
@@ -87,7 +87,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.695 |       0.663 |      0.031 |
+| Vccpint   |       1.000 |     0.695 |       0.663 |      0.032 |
 | Vccpaux   |       1.800 |     0.038 |       0.027 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |
@@ -155,9 +155,9 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| pid_vco_amp_mod_pid_only_wrapper               |     1.660 |
-|   ad9767_0                                     |     0.004 |
-|     inst                                       |     0.004 |
+| pid_vco_amp_mod_pid_only_wrapper               |     1.701 |
+|   ad9767_0                                     |     0.005 |
+|     inst                                       |     0.005 |
 |   adc1_offset                                  |    <0.001 |
 |     U0                                         |    <0.001 |
 |       add_constHandComm                        |    <0.001 |
@@ -168,8 +168,8 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   adder_substracter_dds_ampl_mod               |    <0.001 |
-|     U0                                         |    <0.001 |
+|   adder_substracter_dds_ampl_mod               |     0.001 |
+|     U0                                         |     0.001 |
 |   adder_substracter_mod_input_0                |     0.001 |
 |     U0                                         |     0.001 |
 |   adder_substracter_mod_out_pid2               |     0.001 |
@@ -299,8 +299,8 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   mod_input_nco                                |     0.007 |
-|     U0                                         |     0.007 |
+|   mod_input_nco                                |     0.008 |
+|     U0                                         |     0.008 |
 |       handle_comm                              |    <0.001 |
 |       nco_inst1                                |     0.007 |
 |         rom_12.rom12_inst                      |     0.005 |
@@ -310,8 +310,8 @@ Table of Contents
 |       add_constHandComm                        |    <0.001 |
 |       add_constLogic                           |    <0.001 |
 |       wb_add_const_inst                        |    <0.001 |
-|   mod_out_pid2_nco                             |     0.007 |
-|     U0                                         |     0.007 |
+|   mod_out_pid2_nco                             |     0.008 |
+|     U0                                         |     0.008 |
 |       handle_comm                              |    <0.001 |
 |       nco_inst1                                |     0.007 |
 |         rom_12.rom12_inst                      |     0.005 |
@@ -430,10 +430,10 @@ Table of Contents
 |       switchComplexWb_inst                     |    <0.001 |
 |   twoInMult_dds1_ampl                          |     0.001 |
 |     U0                                         |     0.001 |
-|   twoInMult_dds1_range                         |     0.001 |
-|     U0                                         |     0.001 |
-|   twoInMult_mod_amp_dds                        |     0.002 |
+|   twoInMult_dds1_range                         |     0.002 |
 |     U0                                         |     0.002 |
+|   twoInMult_mod_amp_dds                        |     0.001 |
+|     U0                                         |     0.001 |
 |   twoInMult_mod_input_0                        |     0.001 |
 |     U0                                         |     0.001 |
 |   twoInMult_mod_out_pid2                       |     0.001 |

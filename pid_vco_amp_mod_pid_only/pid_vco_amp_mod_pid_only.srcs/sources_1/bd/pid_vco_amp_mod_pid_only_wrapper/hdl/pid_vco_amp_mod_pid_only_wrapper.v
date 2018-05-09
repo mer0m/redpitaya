@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-//Date        : Wed May  9 15:43:46 2018
+//Date        : Wed May  9 21:05:08 2018
 //Host        : ux305 running 64-bit Debian GNU/Linux testing/unstable
 //Command     : generate_target pid_vco_amp_mod_pid_only_wrapper.bd
 //Design      : pid_vco_amp_mod_pid_only_wrapper
@@ -6281,6 +6281,7 @@ module pid_vco_amp_mod_pid_only_wrapper
   wire dds1_ampl_data_out_DATA_CLK;
   wire dds1_ampl_data_out_DATA_EN;
   wire dds1_ampl_data_out_DATA_RST;
+  wire dds1_nco_dds_rst_o;
   wire [13:0]dds2_offset_data_out_DATA;
   wire dds2_offset_data_out_DATA_EN;
   wire dds2_offset_data_out_DATA_RST;
@@ -7417,6 +7418,7 @@ module pid_vco_amp_mod_pid_only_wrapper
   pid_vco_amp_mod_pid_only_wrapper_dds1_nco_0 dds1_nco
        (.dds_clk_o(nco_counter_0_dds_clk_o),
         .dds_en_o(nco_counter_0_dds_en_o),
+        .dds_rst_o(dds1_nco_dds_rst_o),
         .dds_sin_o(nco_counter_0_dds_sin_o),
         .pinc_clk_i(dds_f0_data_out_DATA_CLK),
         .pinc_en_i(dds_f0_data_out_DATA_EN),
@@ -7455,7 +7457,7 @@ module pid_vco_amp_mod_pid_only_wrapper
         .data_en_o(dds_offset_data_out_DATA_EN),
         .data_i(xlslice_0_Dout),
         .data_o(dds_offset_data_out_DATA),
-        .data_rst_i(proc_sys_reset_0_peripheral_reset),
+        .data_rst_i(dds1_nco_dds_rst_o),
         .data_rst_o(dds_offset_data_out_DATA_RST),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(axi_interconnect_0_M10_AXI_ARADDR[3:0]),
@@ -7583,11 +7585,11 @@ module pid_vco_amp_mod_pid_only_wrapper
         .processing_rst_i(proc_sys_reset_0_peripheral_reset),
         .resetn(proc_sys_reset_0_interconnect_aresetn));
   pid_vco_amp_mod_pid_only_wrapper_mod_out_pid2_ampl_1 mod_amp_dds_ampl
-       (.data_clk_i(twoInMult_mod_amp_dds_data_clk_o),
+       (.data_clk_i(mod_amp_dds_nco_dds_clk_o),
         .data_clk_o(mod_amp_dds_ampl_data_out_DATA_CLK),
-        .data_en_i(twoInMult_mod_amp_dds_data_en_o),
+        .data_en_i(mod_amp_dds_nco_dds_en_o),
         .data_en_o(mod_amp_dds_ampl_data_out_DATA_EN),
-        .data_i(xlslice_mod_amp_dds_Dout),
+        .data_i(xlconstant_0_dout),
         .data_o(mod_amp_dds_ampl_data_out_DATA),
         .data_rst_i(mod_amp_dds_nco_dds_rst_o),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),

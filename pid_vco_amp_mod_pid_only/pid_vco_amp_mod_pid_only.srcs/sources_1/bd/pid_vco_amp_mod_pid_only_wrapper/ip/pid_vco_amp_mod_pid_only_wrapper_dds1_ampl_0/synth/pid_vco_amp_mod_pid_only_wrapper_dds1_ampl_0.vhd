@@ -169,7 +169,7 @@ ARCHITECTURE pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0_arch OF pid_vco_amp_mo
 BEGIN
   U0 : add_const
     GENERIC MAP (
-      format => "unsigned",
+      format => "signed",
       add_val => 0,
       DATA_OUT_SIZE => 14,
       DATA_IN_SIZE => 14,

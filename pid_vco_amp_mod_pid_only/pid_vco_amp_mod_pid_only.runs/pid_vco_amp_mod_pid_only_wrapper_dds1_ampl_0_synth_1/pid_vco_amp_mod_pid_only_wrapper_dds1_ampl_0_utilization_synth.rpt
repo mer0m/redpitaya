@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
-| Date         : Wed May  9 11:16:03 2018
+| Date         : Wed May  9 17:01:39 2018
 | Host         : ux305 running 64-bit Debian GNU/Linux testing/unstable
 | Command      : report_utilization -file pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0_utilization_synth.rpt -pb pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0_utilization_synth.pb
 | Design       : pid_vco_amp_mod_pid_only_wrapper_dds1_ampl_0
