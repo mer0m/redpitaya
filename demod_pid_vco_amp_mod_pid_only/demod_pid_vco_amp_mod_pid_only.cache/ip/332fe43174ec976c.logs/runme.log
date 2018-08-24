@@ -1,0 +1,42 @@
+
+*** Running vivado
+    with args -log demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1111.926 ; gain = 180.086 ; free physical = 991 ; free virtual = 8749
+INFO: [Synth 8-638] synthesizing module 'demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0' [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ip/demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0/sim/demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (1#1) [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ipshared/e147/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0' (2#1) [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ip/demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0/sim/demod_pid_vco_amp_mod_pid_only_wrapper_xlconstant_0_0.v:56]
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1152.395 ; gain = 220.555 ; free physical = 851 ; free virtual = 8615
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1152.395 ; gain = 220.555 ; free physical = 844 ; free virtual = 8608
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1392.848 ; gain = 0.000 ; free physical = 217 ; free virtual = 8005
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:09 . Memory (MB): peak = 1392.848 ; gain = 461.008 ; free physical = 136 ; free virtual = 7923
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:09 . Memory (MB): peak = 1392.848 ; gain = 461.008 ; free physical = 136 ; free virtual = 7923
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:09 . Memory (MB): peak = 1392.848 ; gain = 461.008 ; free physical = 136 ; free virtual = 7923
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:09 . Memory (MB): peak = 1392.848 ; gain = 461.008 ; free physical = 136 ; free virtual = 7923
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 1392.848 ; gain = 461.008 ; free physical = 125 ; free virtual = 7813
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:42 . Memory (MB): peak = 1436.848 ; gain = 505.008 ; free physical = 151 ; free virtual = 7679
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:42 . Memory (MB): peak = 1436.848 ; gain = 505.008 ; free physical = 151 ; free virtual = 7679
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:42 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 141 ; free virtual = 7670
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 134 ; free virtual = 7648
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 134 ; free virtual = 7648
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 134 ; free virtual = 7648
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 134 ; free virtual = 7648
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 133 ; free virtual = 7648
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 133 ; free virtual = 7648
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 1446.863 ; gain = 515.023 ; free physical = 133 ; free virtual = 7648
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:28 . Memory (MB): peak = 1458.863 ; gain = 427.520 ; free physical = 140 ; free virtual = 7570

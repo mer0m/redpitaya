@@ -1,0 +1,282 @@
+
+*** Running vivado
+    with args -log demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.tcl -notrace
+Command: synth_design -top demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23546 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1111.930 ; gain = 180.086 ; free physical = 135 ; free virtual = 9262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0' [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ip/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0/synth/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.vhd:70]
+	Parameter format bound to: signed - type: string 
+	Parameter DATA_SIZE bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'twoInMult' declared at '/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ipshared/28d3/hdl/twoInMult.vhd:5' bound to instance 'U0' of component 'twoInMult' [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ip/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0/synth/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'twoInMult' [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ipshared/28d3/hdl/twoInMult.vhd:24]
+	Parameter format bound to: signed - type: string 
+	Parameter DATA_SIZE bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'twoInMult' (1#1) [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ipshared/28d3/hdl/twoInMult.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0' (2#1) [/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.srcs/sources_1/bd/demod_pid_vco_amp_mod_pid_only_wrapper/ip/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0/synth/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.vhd:70]
+WARNING: [Synth 8-3331] design twoInMult has unconnected port data2_clk_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 1152.398 ; gain = 220.555 ; free physical = 131 ; free virtual = 8936
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1152.398 ; gain = 220.555 ; free physical = 171 ; free virtual = 8939
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1482.836 ; gain = 1.000 ; free physical = 129 ; free virtual = 8378
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 1482.836 ; gain = 550.992 ; free physical = 125 ; free virtual = 8379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 1482.836 ; gain = 550.992 ; free physical = 125 ; free virtual = 8379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 1482.836 ; gain = 550.992 ; free physical = 125 ; free virtual = 8379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:24 . Memory (MB): peak = 1482.836 ; gain = 550.992 ; free physical = 150 ; free virtual = 8356
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module twoInMult 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP U0/data_s_reg, operation Mode is: (A2*B2)'.
+DSP Report: register U0/data2_in_s_reg is absorbed into DSP U0/data_s_reg.
+DSP Report: register U0/data1_in_s_reg is absorbed into DSP U0/data_s_reg.
+DSP Report: register U0/data_s_reg is absorbed into DSP U0/data_s_reg.
+DSP Report: operator U0/data_in_s is absorbed into DSP U0/data_s_reg.
+WARNING: [Synth 8-3331] design demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0 has unconnected port data2_clk_i
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:25 . Memory (MB): peak = 1482.836 ; gain = 550.992 ; free physical = 113 ; free virtual = 8324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|twoInMult   | (A2*B2)'    | 14     | 14     | -      | -      | 28     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:02:06 . Memory (MB): peak = 1485.836 ; gain = 553.992 ; free physical = 121 ; free virtual = 8046
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:02:06 . Memory (MB): peak = 1485.836 ; gain = 553.992 ; free physical = 126 ; free virtual = 8052
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:02:06 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 122 ; free virtual = 8041
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 130 ; free virtual = 8052
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 130 ; free virtual = 8052
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 130 ; free virtual = 8053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 130 ; free virtual = 8053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 126 ; free virtual = 8052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 126 ; free virtual = 8052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
+|2     |LUT2    |     1|
+|3     |FDRE    |     3|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |     5|
+|2     |  U0     |twoInMult |     5|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.867 ; gain = 573.023 ; free physical = 125 ; free virtual = 8052
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:22 . Memory (MB): peak = 1504.867 ; gain = 130.496 ; free physical = 140 ; free virtual = 8051
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:02:07 . Memory (MB): peak = 1504.875 ; gain = 573.031 ; free physical = 140 ; free virtual = 8051
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:49 . Memory (MB): peak = 1504.875 ; gain = 473.527 ; free physical = 1641 ; free virtual = 9610
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.runs/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0_synth_1/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/demod_pid_vco_amp_mod_pid_only/demod_pid_vco_amp_mod_pid_only.runs/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0_synth_1/demod_pid_vco_amp_mod_pid_only_wrapper_twoInMult_mod_amp_dds_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1504.875 ; gain = 0.000 ; free physical = 1608 ; free virtual = 9607
+INFO: [Common 17-206] Exiting Vivado at Wed May 16 11:32:24 2018...
