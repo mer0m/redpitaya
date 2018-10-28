@@ -1,4 +1,0 @@
-obj-m +=board_test_pound_FIR.o
-OSC_IMP_NFS_DIR ?= /usr/local/export/zedboard/
-OSC_IMP_NFS_DIR := $(OSC_IMP_NFS_DIR)/test_pound_FIR
-include $(OSC_IMP_DRIVER)/Makefile.include
