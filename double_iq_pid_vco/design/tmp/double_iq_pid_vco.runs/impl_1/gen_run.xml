@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1590861153" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/impl_1/double_iq_pid_vco_wrapper_routed.dcp">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="double_iq_pid_vco_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="double_iq_pid_vco_wrapper.ltx"/>
+  <File Type="BG-BGN" Name="double_iq_pid_vco_wrapper.bgn"/>
+  <File Type="RBD_FILE" Name="double_iq_pid_vco_wrapper.rbd"/>
+  <File Type="BG-DRC" Name="double_iq_pid_vco_wrapper.drc"/>
+  <File Type="NPI_FILE" Name="double_iq_pid_vco_wrapper.npi"/>
+  <File Type="RNPI_FILE" Name="double_iq_pid_vco_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="double_iq_pid_vco_wrapper.cfi"/>
+  <File Type="PDI-FILE" Name="double_iq_pid_vco_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="double_iq_pid_vco_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="double_iq_pid_vco_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="double_iq_pid_vco_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="double_iq_pid_vco_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="double_iq_pid_vco_wrapper.msk"/>
+  <File Type="BG-BIN" Name="double_iq_pid_vco_wrapper.bin"/>
+  <File Type="RCFI_FILE" Name="double_iq_pid_vco_wrapper.rcfi"/>
+  <File Type="BG-BIT" Name="double_iq_pid_vco_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="double_iq_pid_vco_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="double_iq_pid_vco_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="double_iq_pid_vco_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="double_iq_pid_vco_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="double_iq_pid_vco_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="double_iq_pid_vco_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="double_iq_pid_vco_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="double_iq_pid_vco_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="double_iq_pid_vco_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="double_iq_pid_vco_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="double_iq_pid_vco_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="double_iq_pid_vco_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="double_iq_pid_vco_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="double_iq_pid_vco_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="double_iq_pid_vco_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="double_iq_pid_vco_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="double_iq_pid_vco_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="double_iq_pid_vco_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="double_iq_pid_vco_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="double_iq_pid_vco_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="double_iq_pid_vco_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="double_iq_pid_vco_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="double_iq_pid_vco_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="double_iq_pid_vco_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="double_iq_pid_vco_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="double_iq_pid_vco_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="double_iq_pid_vco_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="double_iq_pid_vco_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="double_iq_pid_vco_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="double_iq_pid_vco_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="double_iq_pid_vco_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="double_iq_pid_vco_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="double_iq_pid_vco_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="double_iq_pid_vco_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="double_iq_pid_vco_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="double_iq_pid_vco_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="double_iq_pid_vco_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="double_iq_pid_vco_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="double_iq_pid_vco_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="double_iq_pid_vco_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="double_iq_pid_vco_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="double_iq_pid_vco_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="double_iq_pid_vco_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="double_iq_pid_vco_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="double_iq_pid_vco_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="double_iq_pid_vco_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="double_iq_pid_vco_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="double_iq_pid_vco_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="double_iq_pid_vco_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="double_iq_pid_vco_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/double_iq_pid_vco/double_iq_pid_vco.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/double_iq_pid_vco/hdl/double_iq_pid_vco_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="double_iq_pid_vco_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../github/oscimpDigital/fpga_ip/redpitaya_converters/redpitaya_converters_adc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../github/oscimpDigital/fpga_ip/redpitaya_converters/redpitaya_converters.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/impl_1/double_iq_pid_vco_wrapper_routed.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/impl_1/double_iq_pid_vco_wrapper_routed.dcp"/>
+        <Attr Name="ImportTime" Val="1590833408"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dupplReal_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dupplReal_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_adc1_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_convertComplexToReal_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_demod1_nco_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds_range_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds_ampl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds2_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds2_nco_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds1_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds1_nco_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dataReal_to_ram_slow_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_ps7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dataReal_to_ram_fast_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_convertComplexToReal_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds2_f0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_shifterReal_dyn_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_dds1_f0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_shifterReal_dyn_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_convertComplexToReal_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_shifterReal_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_pidv3_axi_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_pidv3_axi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_mixer_sin_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_mixer_sin_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_mixer_sin_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_mixer_sin_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_mixer_sin_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_meanReal_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_meanReal_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_adc2_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_meanReal_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_meanReal_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_firReal_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_ps7_rst_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_convertComplexToReal_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_shifterReal_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_firReal_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_expanderReal_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_mixer_sin_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_expanderReal_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_redpitaya_converters_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_iq_pid_vco_demod2_nco_0"/>
+</GenRun>

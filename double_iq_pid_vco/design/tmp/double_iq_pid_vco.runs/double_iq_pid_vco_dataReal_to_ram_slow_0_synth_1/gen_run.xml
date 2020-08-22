@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="double_iq_pid_vco_dataReal_to_ram_slow_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1590861150">
+  <File Type="VDS-TIMING-PB" Name="double_iq_pid_vco_dataReal_to_ram_slow_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="double_iq_pid_vco_dataReal_to_ram_slow_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="double_iq_pid_vco_dataReal_to_ram_slow_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="double_iq_pid_vco_dataReal_to_ram_slow_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="double_iq_pid_vco_dataReal_to_ram_slow_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="double_iq_pid_vco_dataReal_to_ram_slow_0_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="double_iq_pid_vco_dataReal_to_ram_slow_0.vds"/>
+  <File Type="REPORTS-TCL" Name="double_iq_pid_vco_dataReal_to_ram_slow_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="double_iq_pid_vco_dataReal_to_ram_slow_0.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_iq_pid_vco_dataReal_to_ram_slow_0">
+    <File Path="$PSRCDIR/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_slow_0/double_iq_pid_vco_dataReal_to_ram_slow_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="double_iq_pid_vco_dataReal_to_ram_slow_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_iq_pid_vco_dataReal_to_ram_slow_0">
+    <File Path="$PSRCDIR/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_slow_0/double_iq_pid_vco_dataReal_to_ram_slow_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="double_iq_pid_vco_dataReal_to_ram_slow_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/impl_1/double_iq_pid_vco_wrapper_routed.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/impl_1/double_iq_pid_vco_wrapper_routed.dcp"/>
+        <Attr Name="ImportTime" Val="1590833408"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

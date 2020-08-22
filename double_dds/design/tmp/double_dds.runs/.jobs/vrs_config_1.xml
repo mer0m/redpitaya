@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="double_dds_ps7_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_ps7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_dataReal_to_ram_1_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dataReal_to_ram_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_pwm_axi_0_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_pwm_axi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_pwm_axi_1_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_pwm_axi_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_pwm_axi_0_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_conv_nco_counter_1_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_conv_nco_counter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_auto_pc_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_xbar_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_redpitaya_converters_0_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_redpitaya_converters_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_dds_ampl_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dds_ampl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_ps7_rst_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_ps7_rst_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_conv_nco_counter_2_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_conv_nco_counter_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_conv_nco_counter_1_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_mixer_sin_1_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_mixer_sin_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_mixer_sin_2_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_mixer_sin_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_mixer_sin_1_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_dds1_offset_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dds1_offset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_dds2_offset_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dds2_offset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_dds1_offset_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_dds_ampl1_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dds_ampl1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_nco_counter_3_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_nco_counter_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_nco_counter_2_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_nco_counter_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_nco_counter_3_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_nco_counter_4_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_nco_counter_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_nco_counter_3_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_conv_nco_counter_3_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_conv_nco_counter_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_conv_nco_counter_1_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_nco_counter_1_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_nco_counter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_nco_counter_3_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_conv_nco_counter_4_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_conv_nco_counter_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_conv_nco_counter_1_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_data_pwm_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_data_pwm_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_dds3_offset_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dds3_offset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_mixer_sin_4_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_mixer_sin_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_dds_dds4_offset_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_dds4_offset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_dds3_offset_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_adc1_offset_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_adc1_offset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_dds1_offset_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_adc2_offset_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_adc2_offset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_dds1_offset_0_synth_1"/>
+	</Run>
+	<Run Id="double_dds_mixer_sin_3_0_synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_mixer_sin_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="double_dds_mixer_sin_4_0_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="double_dds_ps7_0_synth_1"/>
+		<Parent Id="double_dds_dataReal_to_ram_1_0_synth_1"/>
+		<Parent Id="double_dds_pwm_axi_0_0_synth_1"/>
+		<Parent Id="double_dds_pwm_axi_1_0_synth_1"/>
+		<Parent Id="double_dds_conv_nco_counter_1_0_synth_1"/>
+		<Parent Id="double_dds_auto_pc_0_synth_1"/>
+		<Parent Id="double_dds_xbar_0_synth_1"/>
+		<Parent Id="double_dds_redpitaya_converters_0_0_synth_1"/>
+		<Parent Id="double_dds_dds_ampl_0_synth_1"/>
+		<Parent Id="double_dds_ps7_rst_0_synth_1"/>
+		<Parent Id="double_dds_conv_nco_counter_2_0_synth_1"/>
+		<Parent Id="double_dds_mixer_sin_1_0_synth_1"/>
+		<Parent Id="double_dds_mixer_sin_2_0_synth_1"/>
+		<Parent Id="double_dds_dds1_offset_0_synth_1"/>
+		<Parent Id="double_dds_dds2_offset_0_synth_1"/>
+		<Parent Id="double_dds_dds_ampl1_0_synth_1"/>
+		<Parent Id="double_dds_nco_counter_3_0_synth_1"/>
+		<Parent Id="double_dds_nco_counter_2_0_synth_1"/>
+		<Parent Id="double_dds_nco_counter_4_0_synth_1"/>
+		<Parent Id="double_dds_conv_nco_counter_3_0_synth_1"/>
+		<Parent Id="double_dds_nco_counter_1_0_synth_1"/>
+		<Parent Id="double_dds_conv_nco_counter_4_0_synth_1"/>
+		<Parent Id="double_dds_data_pwm_0_synth_1"/>
+		<Parent Id="double_dds_dds3_offset_0_synth_1"/>
+		<Parent Id="double_dds_mixer_sin_4_0_synth_1"/>
+		<Parent Id="double_dds_dds4_offset_0_synth_1"/>
+		<Parent Id="double_dds_adc1_offset_0_synth_1"/>
+		<Parent Id="double_dds_adc2_offset_0_synth_1"/>
+		<Parent Id="double_dds_mixer_sin_3_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
