@@ -1,2 +1,0 @@
-NumberHits:3
-Timestamp: Fri May 15 16:35:07 UTC 2020
