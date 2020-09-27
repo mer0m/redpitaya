@@ -1,0 +1,389 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 15 18:39:46 2020
+# Process ID: 29083
+# Current directory: /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1
+# Command line: vivado -log double_iq_pid_vco_dds2_f0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_iq_pid_vco_dds2_f0_0.tcl
+# Log file: /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/double_iq_pid_vco_dds2_f0_0.vds
+# Journal file: /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source double_iq_pid_vco_dds2_f0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/github/oscimpDigital/fpga_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top double_iq_pid_vco_dds2_f0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29633 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1845.398 ; gain = 202.715 ; free physical = 1268 ; free virtual = 11519
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'double_iq_pid_vco_dds2_f0_0' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/synth/double_iq_pid_vco_dds2_f0_0.vhd:90]
+	Parameter format bound to: unsigned - type: string 
+	Parameter add_val bound to: 0 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 40 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 40 - type: integer 
+	Parameter id bound to: 1 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'add_constReal' declared at '/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal.vhd:5' bound to instance 'U0' of component 'add_constReal' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/synth/double_iq_pid_vco_dds2_f0_0.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'add_constReal' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal.vhd:52]
+	Parameter id bound to: 1 - type: integer 
+	Parameter format bound to: unsigned - type: string 
+	Parameter add_val bound to: 0 - type: integer 
+	Parameter DATA_OUT_SIZE bound to: 40 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 40 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'add_constReal_logic' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_logic.vhd:25]
+	Parameter format bound to: unsigned - type: string 
+	Parameter DATA_OUT_SIZE bound to: 40 - type: integer 
+	Parameter DATA_IN_SIZE bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_constReal_logic' (1#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_logic.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'add_constReal_synchronizer_vector' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_synchronizer_vector.vhd:13]
+	Parameter stages bound to: 3 - type: integer 
+	Parameter DATA bound to: 40 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_synchronizer_vector.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'add_constReal_synchronizer_vector' (2#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_synchronizer_vector.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'wb_add_constReal' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/wb_add_constReal.vhd:29]
+	Parameter DEFAULT_OFFSET bound to: 0 - type: integer 
+	Parameter FORMAT bound to: unsigned - type: string 
+	Parameter DATA_SIZE bound to: 40 - type: integer 
+	Parameter id bound to: 1 - type: integer 
+	Parameter wb_size bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wb_add_constReal' (3#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/wb_add_constReal.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'add_constReal_handComm' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_handComm.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter INTERNAL_ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_constReal_handComm' (4#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal_handComm.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'add_constReal' (5#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/b281/hdl/add_constReal.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'double_iq_pid_vco_dds2_f0_0' (6#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/synth/double_iq_pid_vco_dds2_f0_0.vhd:90]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design add_constReal_handComm has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1910.117 ; gain = 267.434 ; free physical = 1274 ; free virtual = 11533
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1910.117 ; gain = 267.434 ; free physical = 1262 ; free virtual = 11526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1910.117 ; gain = 267.434 ; free physical = 1262 ; free virtual = 11526
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1910.117 ; gain = 0.000 ; free physical = 1255 ; free virtual = 11519
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/add_constReal.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/add_constReal.xdc] for cell 'U0'
+Parsing XDC File [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2045.852 ; gain = 0.000 ; free physical = 1133 ; free virtual = 11398
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2048.820 ; gain = 2.969 ; free physical = 1133 ; free virtual = 11397
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 964 ; free virtual = 11202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 964 ; free virtual = 11202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 964 ; free virtual = 11202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:58 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 958 ; free virtual = 11190
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               40 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module add_constReal_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module add_constReal_synchronizer_vector 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 3     
+Module wb_add_constReal 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module add_constReal_handComm 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design add_constReal has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/add_constRealHandComm/axi_rresp_reg[0]' (FDRE) to 'U0/add_constRealHandComm/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constRealHandComm/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/add_constRealHandComm/axi_bresp_reg[0]' (FDRE) to 'U0/add_constRealHandComm/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\add_constRealHandComm/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 746 ; free virtual = 10987
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:40 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 2001 ; free virtual = 12229
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:40 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 2001 ; free virtual = 12229
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:41 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1986 ; free virtual = 12220
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1831 ; free virtual = 12065
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1827 ; free virtual = 12061
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1827 ; free virtual = 12062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1825 ; free virtual = 12059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1873 ; free virtual = 12107
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1857 ; free virtual = 12091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    10|
+|2     |LUT2   |    41|
+|3     |LUT3   |     3|
+|4     |LUT4   |    36|
+|5     |LUT5   |     4|
+|6     |LUT6   |     3|
+|7     |FDCE   |   128|
+|8     |FDRE   |   170|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------------+------+
+|      |Instance                  |Module                            |Cells |
++------+--------------------------+----------------------------------+------+
+|1     |top                       |                                  |   397|
+|2     |  U0                      |add_constReal                     |   397|
+|3     |    add_constRealHandComm |add_constReal_handComm            |    26|
+|4     |    add_constRealLogic    |add_constReal_logic               |    91|
+|5     |    offset_syn            |add_constReal_synchronizer_vector |   120|
+|6     |    wb_add_constReal_inst |wb_add_constReal                  |   160|
++------+--------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.820 ; gain = 406.137 ; free physical = 1856 ; free virtual = 12090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:47 . Memory (MB): peak = 2048.820 ; gain = 267.434 ; free physical = 1873 ; free virtual = 12108
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:54 . Memory (MB): peak = 2048.828 ; gain = 406.137 ; free physical = 1873 ; free virtual = 12107
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2048.828 ; gain = 0.000 ; free physical = 1978 ; free virtual = 12212
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2048.828 ; gain = 0.000 ; free physical = 1765 ; free virtual = 11993
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:26 . Memory (MB): peak = 2048.828 ; gain = 611.547 ; free physical = 1879 ; free virtual = 12107
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2048.828 ; gain = 0.000 ; free physical = 1878 ; free virtual = 12106
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/double_iq_pid_vco_dds2_f0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP double_iq_pid_vco_dds2_f0_0, cache-ID = ab96c6e0af970cb4
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.832 ; gain = 0.000 ; free physical = 1912 ; free virtual = 12140
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_f0_0_synth_1/double_iq_pid_vco_dds2_f0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file double_iq_pid_vco_dds2_f0_0_utilization_synth.rpt -pb double_iq_pid_vco_dds2_f0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 18:42:50 2020...
