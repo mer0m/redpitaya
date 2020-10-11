@@ -47,17 +47,9 @@ set_property used_in_implementation false [get_files -all /home/bma/git/fpga_des
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_nco_counter_2_0/nco_counter.xdc]
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dds1_offset_0/add_constReal.xdc]
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dds2_offset_0/add_constReal.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dds_ampl1_0/axi_to_dac.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_nco_counter_3_0/nco_counter.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_nco_counter_4_0/nco_counter.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dds3_offset_0/add_constReal.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dds4_offset_0/add_constReal.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_data_pwm_0/dataReal_to_ram.xdc]
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_adc1_offset_0/add_constReal.xdc]
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_adc2_offset_0/add_constReal.xdc]
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dataReal_to_ram_1_0/dataReal_to_ram.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_pwm_axi_0_0/pwm_axi.xdc]
-set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_pwm_axi_1_0/pwm_axi.xdc]
 set_property used_in_implementation false [get_files -all /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/double_dds_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

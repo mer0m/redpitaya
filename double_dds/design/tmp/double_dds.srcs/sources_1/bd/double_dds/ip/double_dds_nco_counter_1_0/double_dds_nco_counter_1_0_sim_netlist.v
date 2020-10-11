@@ -1,18 +1,18 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Sun May 31 18:55:26 2020
+// Date        : Sun Oct 11 16:23:07 2020
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 // Command     : write_verilog -force -mode funcsim -rename_top double_dds_nco_counter_1_0 -prefix
-//               double_dds_nco_counter_1_0_ double_dds_nco_counter_3_0_sim_netlist.v
-// Design      : double_dds_nco_counter_3_0
+//               double_dds_nco_counter_1_0_ double_dds_nco_counter_2_0_sim_netlist.v
+// Design      : double_dds_nco_counter_2_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "double_dds_nco_counter_3_0,nco_counter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* CHECK_LICENSE_TYPE = "double_dds_nco_counter_2_0,nco_counter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
 (* x_core_info = "nco_counter,Vivado 2019.2" *) 
 (* NotValidForBitStream *)
 module double_dds_nco_counter_1_0

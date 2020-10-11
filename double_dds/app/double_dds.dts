@@ -24,16 +24,6 @@
 				reg = <0x43C60000 0xffff>;
 			};
 
-			dds3_offset: dds3_offset@43CA0000{
-				compatible = "ggm,add_const";
-				reg = <0x43CA0000 0xffff>;
-			};
-
-			dds4_offset: dds4_offset@43CB0000{
-				compatible = "ggm,add_const";
-				reg = <0x43CB0000 0xffff>;
-			};
-
 			adc1_offset: adc1_offset@43C20000{
 				compatible = "ggm,add_const";
 				reg = <0x43C20000 0xffff>;
@@ -49,16 +39,6 @@
 				reg = <0x43C10000 0xffff>;
 			};
 
-			dds_ampl1: dds_ampl1@43CC0000{
-				compatible = "ggm,axi_to_dac";
-				reg = <0x43CC0000 0xffff>;
-			};
-
-			data_pwm: data_pwm@43CF0000{
-				compatible = "ggm,dataToRam";
-				reg = <0x43CF0000 0xffff>;
-			};
-
 			dataReal_to_ram_1: dataReal_to_ram_1@43C00000{
 				compatible = "ggm,dataToRam";
 				reg = <0x43C00000 0xffff>;
@@ -72,26 +52,6 @@
 			nco_counter_2: nco_counter_2@43C80000{
 				compatible = "ggm,nco_counter";
 				reg = <0x43C80000 0xffff>;
-			};
-
-			nco_counter_3: nco_counter_3@43CD0000{
-				compatible = "ggm,nco_counter";
-				reg = <0x43CD0000 0xffff>;
-			};
-
-			nco_counter_4: nco_counter_4@43CE0000{
-				compatible = "ggm,nco_counter";
-				reg = <0x43CE0000 0xffff>;
-			};
-
-			pwm_axi_0: pwm_axi_0@43C30000{
-				compatible = "ggm,fpgagen";
-				reg = <0x43C30000 0xffff>;
-			};
-
-			pwm_axi_1: pwm_axi_1@43C90000{
-				compatible = "ggm,fpgagen";
-				reg = <0x43C90000 0xffff>;
 			};
 
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1590944392">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1602426294">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BITSTR-SYSDEF" Name="double_dds_wrapper.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -139,33 +139,21 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_adc2_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds4_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds3_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_data_pwm_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_pwm_axi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_pwm_axi_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds_ampl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_ps7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_dataReal_to_ram_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_ps7_rst_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_adc2_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_redpitaya_converters_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds_ampl_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_ps7_rst_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds_ampl1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_dds1_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_adc1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_adc1_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_dds2_offset_0"/>
 </GenRun>

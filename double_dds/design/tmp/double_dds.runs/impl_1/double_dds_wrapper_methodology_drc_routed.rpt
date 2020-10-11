@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun May 31 19:03:17 2020
+| Date         : Sun Oct 11 16:27:11 2020
 | Host         : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 | Command      : report_methodology -file double_dds_wrapper_methodology_drc_routed.rpt -pb double_dds_wrapper_methodology_drc_routed.pb -rpx double_dds_wrapper_methodology_drc_routed.rpx
 | Design       : double_dds_wrapper
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 56
+             Violations found: 54
 +-----------+----------+-------------------------------------------------------------------+------------+
 | Rule      | Severity | Description                                                       | Violations |
 +-----------+----------+-------------------------------------------------------------------+------------+
 | TIMING-9  | Warning  | Unknown CDC Logic                                                 | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                                  | 1          |
-| TIMING-18 | Warning  | Missing input or output delay                                     | 46         |
+| TIMING-18 | Warning  | Missing input or output delay                                     | 44         |
 | TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint              | 5          |
 | TIMING-47 | Warning  | False path or asynchronous clock group between synchronous clocks | 3          |
 +-----------+----------+-------------------------------------------------------------------+------------+
@@ -266,54 +266,44 @@ Missing input or output delay
 An output delay is missing on phys_interface_0_dac_sel relative to clock(s) adc_clk
 Related violations: <none>
 
-TIMING-18#45 Warning
-Missing input or output delay  
-An output delay is missing on pwm_1 relative to clock(s) adc_clk
-Related violations: <none>
-
-TIMING-18#46 Warning
-Missing input or output delay  
-An output delay is missing on pwm_o relative to clock(s) adc_clk
-Related violations: <none>
-
 TIMING-28#1 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_2clk_out is referenced by name inside timing constraint (see constraint position 12 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT1]
+The auto-derived clock dac_2clk_out is referenced by name inside timing constraint (see constraint position 10 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT1]
 Related violations: <none>
 
 TIMING-28#2 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_2ph_out is referenced by name inside timing constraint (see constraint position 13 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT2]
+The auto-derived clock dac_2ph_out is referenced by name inside timing constraint (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT2]
 Related violations: <none>
 
 TIMING-28#3 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT0]
+The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 10 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#4 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 12 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT0]
+The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT0]
 Related violations: <none>
 
 TIMING-28#5 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 13 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT0]
+The auto-derived clock dac_clk_out is referenced by name inside timing constraint (see constraint position 9 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins double_dds_i/redpitaya_converters_0/U0/redpitaya_clk/i_dac_plle2/CLKOUT0]
 Related violations: <none>
 
 TIMING-47#1 Warning
 False path or asynchronous clock group between synchronous clocks  
-A False Path timing constraint is set between synchronous clocks adc_clk and dac_clk_out (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+A False Path timing constraint is set between synchronous clocks adc_clk and dac_clk_out (see constraint position 9 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
 Related violations: <none>
 
 TIMING-47#2 Warning
 False path or asynchronous clock group between synchronous clocks  
-A False Path timing constraint is set between synchronous clocks dac_clk_out and dac_2clk_out (see constraint position 12 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+A False Path timing constraint is set between synchronous clocks dac_clk_out and dac_2clk_out (see constraint position 10 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
 Related violations: <none>
 
 TIMING-47#3 Warning
 False path or asynchronous clock group between synchronous clocks  
-A False Path timing constraint is set between synchronous clocks dac_clk_out and dac_2ph_out (see constraint position 13 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
+A False Path timing constraint is set between synchronous clocks dac_clk_out and dac_2ph_out (see constraint position 11 in the Timing Constraint window in Vivado IDE). It is not recommended to cover synchronous clock domains with constraints that prevent timing analysis as the design could fail in hardware.
 Related violations: <none>
 
 

@@ -163,8 +163,6 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
-  set pwm_1 [ create_bd_port -dir O pwm_1 ]
-  set pwm_o [ create_bd_port -dir O pwm_o ]
 
   # Create instance: adc1_offset, and set properties
   set adc1_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_constReal:1.0 adc1_offset ]
@@ -192,18 +190,6 @@ proc create_root_design { parentCell } {
    CONFIG.DATA_SIZE {16} \
  ] $conv_nco_counter_2
 
-  # Create instance: conv_nco_counter_3, and set properties
-  set conv_nco_counter_3 [ create_bd_cell -type ip -vlnv ggm:cogen:convertComplexToReal:1.0 conv_nco_counter_3 ]
-  set_property -dict [ list \
-   CONFIG.DATA_SIZE {16} \
- ] $conv_nco_counter_3
-
-  # Create instance: conv_nco_counter_4, and set properties
-  set conv_nco_counter_4 [ create_bd_cell -type ip -vlnv ggm:cogen:convertComplexToReal:1.0 conv_nco_counter_4 ]
-  set_property -dict [ list \
-   CONFIG.DATA_SIZE {16} \
- ] $conv_nco_counter_4
-
   # Create instance: dataReal_to_ram_1, and set properties
   set dataReal_to_ram_1 [ create_bd_cell -type ip -vlnv ggm:cogen:dataReal_to_ram:1.0 dataReal_to_ram_1 ]
   set_property -dict [ list \
@@ -211,14 +197,6 @@ proc create_root_design { parentCell } {
    CONFIG.NB_INPUT {2} \
    CONFIG.NB_SAMPLE {8192} \
  ] $dataReal_to_ram_1
-
-  # Create instance: data_pwm, and set properties
-  set data_pwm [ create_bd_cell -type ip -vlnv ggm:cogen:dataReal_to_ram:1.0 data_pwm ]
-  set_property -dict [ list \
-   CONFIG.DATA_SIZE {16} \
-   CONFIG.NB_INPUT {2} \
-   CONFIG.NB_SAMPLE {2048} \
- ] $data_pwm
 
   # Create instance: dds1_offset, and set properties
   set dds1_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_constReal:1.0 dds1_offset ]
@@ -234,28 +212,8 @@ proc create_root_design { parentCell } {
    CONFIG.DATA_OUT_SIZE {14} \
  ] $dds2_offset
 
-  # Create instance: dds3_offset, and set properties
-  set dds3_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_constReal:1.0 dds3_offset ]
-  set_property -dict [ list \
-   CONFIG.DATA_IN_SIZE {16} \
-   CONFIG.DATA_OUT_SIZE {16} \
- ] $dds3_offset
-
-  # Create instance: dds4_offset, and set properties
-  set dds4_offset [ create_bd_cell -type ip -vlnv ggm:cogen:add_constReal:1.0 dds4_offset ]
-  set_property -dict [ list \
-   CONFIG.DATA_IN_SIZE {16} \
-   CONFIG.DATA_OUT_SIZE {16} \
- ] $dds4_offset
-
   # Create instance: dds_ampl, and set properties
   set dds_ampl [ create_bd_cell -type ip -vlnv ggm:cogen:axi_to_dac:1.0 dds_ampl ]
-
-  # Create instance: dds_ampl1, and set properties
-  set dds_ampl1 [ create_bd_cell -type ip -vlnv ggm:cogen:axi_to_dac:1.0 dds_ampl1 ]
-  set_property -dict [ list \
-   CONFIG.DATA_SIZE {16} \
- ] $dds_ampl1
 
   # Create instance: mixer_sin_1, and set properties
   set mixer_sin_1 [ create_bd_cell -type ip -vlnv ggm:cogen:multiplierReal:1.0 mixer_sin_1 ]
@@ -273,22 +231,6 @@ proc create_root_design { parentCell } {
    CONFIG.DATA_OUT_SIZE {14} \
  ] $mixer_sin_2
 
-  # Create instance: mixer_sin_3, and set properties
-  set mixer_sin_3 [ create_bd_cell -type ip -vlnv ggm:cogen:multiplierReal:1.0 mixer_sin_3 ]
-  set_property -dict [ list \
-   CONFIG.DATA1_IN_SIZE {16} \
-   CONFIG.DATA2_IN_SIZE {16} \
-   CONFIG.DATA_OUT_SIZE {16} \
- ] $mixer_sin_3
-
-  # Create instance: mixer_sin_4, and set properties
-  set mixer_sin_4 [ create_bd_cell -type ip -vlnv ggm:cogen:multiplierReal:1.0 mixer_sin_4 ]
-  set_property -dict [ list \
-   CONFIG.DATA1_IN_SIZE {16} \
-   CONFIG.DATA2_IN_SIZE {16} \
-   CONFIG.DATA_OUT_SIZE {16} \
- ] $mixer_sin_4
-
   # Create instance: nco_counter_1, and set properties
   set nco_counter_1 [ create_bd_cell -type ip -vlnv ggm:cogen:nco_counter:1.0 nco_counter_1 ]
   set_property -dict [ list \
@@ -302,20 +244,6 @@ proc create_root_design { parentCell } {
    CONFIG.COUNTER_SIZE {40} \
    CONFIG.LUT_SIZE {12} \
  ] $nco_counter_2
-
-  # Create instance: nco_counter_3, and set properties
-  set nco_counter_3 [ create_bd_cell -type ip -vlnv ggm:cogen:nco_counter:1.0 nco_counter_3 ]
-  set_property -dict [ list \
-   CONFIG.COUNTER_SIZE {40} \
-   CONFIG.LUT_SIZE {12} \
- ] $nco_counter_3
-
-  # Create instance: nco_counter_4, and set properties
-  set nco_counter_4 [ create_bd_cell -type ip -vlnv ggm:cogen:nco_counter:1.0 nco_counter_4 ]
-  set_property -dict [ list \
-   CONFIG.COUNTER_SIZE {40} \
-   CONFIG.LUT_SIZE {12} \
- ] $nco_counter_4
 
   # Create instance: ps7, and set properties
   set ps7 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 ps7 ]
@@ -974,23 +902,11 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_axi, and set properties
   set ps7_axi [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_axi ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {16} \
+   CONFIG.NUM_MI {8} \
  ] $ps7_axi
 
   # Create instance: ps7_rst, and set properties
   set ps7_rst [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 ps7_rst ]
-
-  # Create instance: pwm_axi_0, and set properties
-  set pwm_axi_0 [ create_bd_cell -type ip -vlnv ggm:cogen:pwm_axi:1.0 pwm_axi_0 ]
-  set_property -dict [ list \
-   CONFIG.COUNTER_SIZE {14} \
- ] $pwm_axi_0
-
-  # Create instance: pwm_axi_1, and set properties
-  set pwm_axi_1 [ create_bd_cell -type ip -vlnv ggm:cogen:pwm_axi:1.0 pwm_axi_1 ]
-  set_property -dict [ list \
-   CONFIG.COUNTER_SIZE {14} \
- ] $pwm_axi_1
 
   # Create instance: redpitaya_converters_0, and set properties
   set redpitaya_converters_0 [ create_bd_cell -type ip -vlnv ggm:cogen:redpitaya_converters:1.0 redpitaya_converters_0 ]
@@ -1003,24 +919,14 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net adc2_offset_data_out [get_bd_intf_pins adc2_offset/data_out] [get_bd_intf_pins dataReal_to_ram_1/data2_in]
   connect_bd_intf_net -intf_net conv_nco_counter_1_dataI_out [get_bd_intf_pins conv_nco_counter_1/dataI_out] [get_bd_intf_pins mixer_sin_1/data2_in]
   connect_bd_intf_net -intf_net conv_nco_counter_2_dataI_out [get_bd_intf_pins conv_nco_counter_2/dataI_out] [get_bd_intf_pins mixer_sin_2/data2_in]
-  connect_bd_intf_net -intf_net conv_nco_counter_3_dataI_out [get_bd_intf_pins conv_nco_counter_3/dataI_out] [get_bd_intf_pins mixer_sin_3/data2_in]
-  connect_bd_intf_net -intf_net conv_nco_counter_4_dataI_out [get_bd_intf_pins conv_nco_counter_4/dataI_out] [get_bd_intf_pins mixer_sin_4/data2_in]
   connect_bd_intf_net -intf_net dds1_offset_data_out [get_bd_intf_pins dds1_offset/data_out] [get_bd_intf_pins redpitaya_converters_0/dataA_in]
   connect_bd_intf_net -intf_net dds2_offset_data_out [get_bd_intf_pins dds2_offset/data_out] [get_bd_intf_pins redpitaya_converters_0/dataB_in]
-  connect_bd_intf_net -intf_net dds3_offset_data_out [get_bd_intf_pins data_pwm/data1_in] [get_bd_intf_pins dds3_offset/data_out]
-  connect_bd_intf_net -intf_net dds4_offset_data_out [get_bd_intf_pins data_pwm/data2_in] [get_bd_intf_pins dds4_offset/data_out]
-  connect_bd_intf_net -intf_net dds_ampl1_dataA_out [get_bd_intf_pins dds_ampl1/dataA_out] [get_bd_intf_pins mixer_sin_3/data1_in]
-  connect_bd_intf_net -intf_net dds_ampl1_dataB_out [get_bd_intf_pins dds_ampl1/dataB_out] [get_bd_intf_pins mixer_sin_4/data1_in]
   connect_bd_intf_net -intf_net dds_ampl_dataA_out [get_bd_intf_pins dds_ampl/dataA_out] [get_bd_intf_pins mixer_sin_1/data1_in]
   connect_bd_intf_net -intf_net dds_ampl_dataB_out [get_bd_intf_pins dds_ampl/dataB_out] [get_bd_intf_pins mixer_sin_2/data1_in]
   connect_bd_intf_net -intf_net mixer_sin_1_data_out [get_bd_intf_pins dds1_offset/data_in] [get_bd_intf_pins mixer_sin_1/data_out]
   connect_bd_intf_net -intf_net mixer_sin_2_data_out [get_bd_intf_pins dds2_offset/data_in] [get_bd_intf_pins mixer_sin_2/data_out]
-  connect_bd_intf_net -intf_net mixer_sin_3_data_out [get_bd_intf_pins dds3_offset/data_in] [get_bd_intf_pins mixer_sin_3/data_out]
-  connect_bd_intf_net -intf_net mixer_sin_4_data_out [get_bd_intf_pins dds4_offset/data_in] [get_bd_intf_pins mixer_sin_4/data_out]
   connect_bd_intf_net -intf_net nco_counter_1_sine_out [get_bd_intf_pins conv_nco_counter_1/data_in] [get_bd_intf_pins nco_counter_1/sine_out]
   connect_bd_intf_net -intf_net nco_counter_2_sine_out [get_bd_intf_pins conv_nco_counter_2/data_in] [get_bd_intf_pins nco_counter_2/sine_out]
-  connect_bd_intf_net -intf_net nco_counter_3_sine_out [get_bd_intf_pins conv_nco_counter_3/data_in] [get_bd_intf_pins nco_counter_3/sine_out]
-  connect_bd_intf_net -intf_net nco_counter_4_sine_out [get_bd_intf_pins conv_nco_counter_4/data_in] [get_bd_intf_pins nco_counter_4/sine_out]
   connect_bd_intf_net -intf_net phys_interface_0_1 [get_bd_intf_ports phys_interface_0] [get_bd_intf_pins redpitaya_converters_0/phys_interface]
   connect_bd_intf_net -intf_net ps7_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins ps7/DDR]
   connect_bd_intf_net -intf_net ps7_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins ps7/FIXED_IO]
@@ -1030,48 +936,30 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_axi_M02_AXI [get_bd_intf_pins nco_counter_2/s00_axi] [get_bd_intf_pins ps7_axi/M02_AXI]
   connect_bd_intf_net -intf_net ps7_axi_M03_AXI [get_bd_intf_pins dds1_offset/s00_axi] [get_bd_intf_pins ps7_axi/M03_AXI]
   connect_bd_intf_net -intf_net ps7_axi_M04_AXI [get_bd_intf_pins dds2_offset/s00_axi] [get_bd_intf_pins ps7_axi/M04_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M05_AXI [get_bd_intf_pins dds_ampl1/s00_axi] [get_bd_intf_pins ps7_axi/M05_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M06_AXI [get_bd_intf_pins nco_counter_3/s00_axi] [get_bd_intf_pins ps7_axi/M06_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M07_AXI [get_bd_intf_pins nco_counter_4/s00_axi] [get_bd_intf_pins ps7_axi/M07_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M08_AXI [get_bd_intf_pins dds3_offset/s00_axi] [get_bd_intf_pins ps7_axi/M08_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M09_AXI [get_bd_intf_pins dds4_offset/s00_axi] [get_bd_intf_pins ps7_axi/M09_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M10_AXI [get_bd_intf_pins data_pwm/s00_axi] [get_bd_intf_pins ps7_axi/M10_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M11_AXI [get_bd_intf_pins adc1_offset/s00_axi] [get_bd_intf_pins ps7_axi/M11_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M12_AXI [get_bd_intf_pins adc2_offset/s00_axi] [get_bd_intf_pins ps7_axi/M12_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M13_AXI [get_bd_intf_pins dataReal_to_ram_1/s00_axi] [get_bd_intf_pins ps7_axi/M13_AXI]
-  connect_bd_intf_net -intf_net ps7_axi_M14_AXI [get_bd_intf_pins ps7_axi/M14_AXI] [get_bd_intf_pins pwm_axi_0/s00_axi]
-  connect_bd_intf_net -intf_net ps7_axi_M15_AXI [get_bd_intf_pins ps7_axi/M15_AXI] [get_bd_intf_pins pwm_axi_1/s00_axi]
+  connect_bd_intf_net -intf_net ps7_axi_M05_AXI [get_bd_intf_pins adc1_offset/s00_axi] [get_bd_intf_pins ps7_axi/M05_AXI]
+  connect_bd_intf_net -intf_net ps7_axi_M06_AXI [get_bd_intf_pins adc2_offset/s00_axi] [get_bd_intf_pins ps7_axi/M06_AXI]
+  connect_bd_intf_net -intf_net ps7_axi_M07_AXI [get_bd_intf_pins dataReal_to_ram_1/s00_axi] [get_bd_intf_pins ps7_axi/M07_AXI]
   connect_bd_intf_net -intf_net redpitaya_converters_0_dataA_out [get_bd_intf_pins adc1_offset/data_in] [get_bd_intf_pins redpitaya_converters_0/dataA_out]
   connect_bd_intf_net -intf_net redpitaya_converters_0_dataB_out [get_bd_intf_pins adc2_offset/data_in] [get_bd_intf_pins redpitaya_converters_0/dataB_out]
 
   # Create port connections
-  connect_bd_net -net ps7_FCLK_CLK0 [get_bd_pins adc1_offset/s00_axi_aclk] [get_bd_pins adc2_offset/s00_axi_aclk] [get_bd_pins dataReal_to_ram_1/s00_axi_aclk] [get_bd_pins data_pwm/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds2_offset/s00_axi_aclk] [get_bd_pins dds3_offset/s00_axi_aclk] [get_bd_pins dds4_offset/s00_axi_aclk] [get_bd_pins dds_ampl/s00_axi_aclk] [get_bd_pins dds_ampl1/s00_axi_aclk] [get_bd_pins nco_counter_1/s00_axi_aclk] [get_bd_pins nco_counter_2/s00_axi_aclk] [get_bd_pins nco_counter_3/s00_axi_aclk] [get_bd_pins nco_counter_4/s00_axi_aclk] [get_bd_pins ps7/FCLK_CLK0] [get_bd_pins ps7/M_AXI_GP0_ACLK] [get_bd_pins ps7_axi/ACLK] [get_bd_pins ps7_axi/M00_ACLK] [get_bd_pins ps7_axi/M01_ACLK] [get_bd_pins ps7_axi/M02_ACLK] [get_bd_pins ps7_axi/M03_ACLK] [get_bd_pins ps7_axi/M04_ACLK] [get_bd_pins ps7_axi/M05_ACLK] [get_bd_pins ps7_axi/M06_ACLK] [get_bd_pins ps7_axi/M07_ACLK] [get_bd_pins ps7_axi/M08_ACLK] [get_bd_pins ps7_axi/M09_ACLK] [get_bd_pins ps7_axi/M10_ACLK] [get_bd_pins ps7_axi/M11_ACLK] [get_bd_pins ps7_axi/M12_ACLK] [get_bd_pins ps7_axi/M13_ACLK] [get_bd_pins ps7_axi/M14_ACLK] [get_bd_pins ps7_axi/M15_ACLK] [get_bd_pins ps7_axi/S00_ACLK] [get_bd_pins ps7_rst/slowest_sync_clk] [get_bd_pins pwm_axi_0/s00_axi_aclk] [get_bd_pins pwm_axi_1/s00_axi_aclk]
+  connect_bd_net -net ps7_FCLK_CLK0 [get_bd_pins adc1_offset/s00_axi_aclk] [get_bd_pins adc2_offset/s00_axi_aclk] [get_bd_pins dataReal_to_ram_1/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds2_offset/s00_axi_aclk] [get_bd_pins dds_ampl/s00_axi_aclk] [get_bd_pins nco_counter_1/s00_axi_aclk] [get_bd_pins nco_counter_2/s00_axi_aclk] [get_bd_pins ps7/FCLK_CLK0] [get_bd_pins ps7/M_AXI_GP0_ACLK] [get_bd_pins ps7_axi/ACLK] [get_bd_pins ps7_axi/M00_ACLK] [get_bd_pins ps7_axi/M01_ACLK] [get_bd_pins ps7_axi/M02_ACLK] [get_bd_pins ps7_axi/M03_ACLK] [get_bd_pins ps7_axi/M04_ACLK] [get_bd_pins ps7_axi/M05_ACLK] [get_bd_pins ps7_axi/M06_ACLK] [get_bd_pins ps7_axi/M07_ACLK] [get_bd_pins ps7_axi/S00_ACLK] [get_bd_pins ps7_rst/slowest_sync_clk]
   connect_bd_net -net ps7_FCLK_RESET0_N [get_bd_pins ps7/FCLK_RESET0_N] [get_bd_pins ps7_rst/ext_reset_in]
   connect_bd_net -net ps7_rst_interconnect_aresetn [get_bd_pins ps7_axi/ARESETN] [get_bd_pins ps7_rst/interconnect_aresetn]
-  connect_bd_net -net ps7_rst_peripheral_aresetn [get_bd_pins ps7_axi/M00_ARESETN] [get_bd_pins ps7_axi/M01_ARESETN] [get_bd_pins ps7_axi/M02_ARESETN] [get_bd_pins ps7_axi/M03_ARESETN] [get_bd_pins ps7_axi/M04_ARESETN] [get_bd_pins ps7_axi/M05_ARESETN] [get_bd_pins ps7_axi/M06_ARESETN] [get_bd_pins ps7_axi/M07_ARESETN] [get_bd_pins ps7_axi/M08_ARESETN] [get_bd_pins ps7_axi/M09_ARESETN] [get_bd_pins ps7_axi/M10_ARESETN] [get_bd_pins ps7_axi/M11_ARESETN] [get_bd_pins ps7_axi/M12_ARESETN] [get_bd_pins ps7_axi/M13_ARESETN] [get_bd_pins ps7_axi/M14_ARESETN] [get_bd_pins ps7_axi/M15_ARESETN] [get_bd_pins ps7_axi/S00_ARESETN] [get_bd_pins ps7_rst/peripheral_aresetn]
-  connect_bd_net -net ps7_rst_peripheral_reset [get_bd_pins adc1_offset/s00_axi_reset] [get_bd_pins adc2_offset/s00_axi_reset] [get_bd_pins dataReal_to_ram_1/s00_axi_reset] [get_bd_pins data_pwm/s00_axi_reset] [get_bd_pins dds1_offset/s00_axi_reset] [get_bd_pins dds2_offset/s00_axi_reset] [get_bd_pins dds3_offset/s00_axi_reset] [get_bd_pins dds4_offset/s00_axi_reset] [get_bd_pins dds_ampl/s00_axi_reset] [get_bd_pins dds_ampl1/s00_axi_reset] [get_bd_pins nco_counter_1/s00_axi_reset] [get_bd_pins nco_counter_2/s00_axi_reset] [get_bd_pins nco_counter_3/s00_axi_reset] [get_bd_pins nco_counter_4/s00_axi_reset] [get_bd_pins ps7_rst/peripheral_reset] [get_bd_pins pwm_axi_0/s00_axi_reset] [get_bd_pins pwm_axi_1/s00_axi_reset] [get_bd_pins redpitaya_converters_0/adc_rst_i]
-  connect_bd_net -net pwm_axi_0_pwm_o [get_bd_ports pwm_o] [get_bd_pins pwm_axi_0/pwm_o]
-  connect_bd_net -net pwm_axi_1_pwm_o [get_bd_ports pwm_1] [get_bd_pins pwm_axi_1/pwm_o]
-  connect_bd_net -net redpitaya_converters_0_clk_o [get_bd_pins dds_ampl/ref_clk_i] [get_bd_pins dds_ampl1/ref_clk_i] [get_bd_pins nco_counter_1/ref_clk_i] [get_bd_pins nco_counter_2/ref_clk_i] [get_bd_pins nco_counter_3/ref_clk_i] [get_bd_pins nco_counter_4/ref_clk_i] [get_bd_pins pwm_axi_0/ref_clk_i] [get_bd_pins pwm_axi_1/ref_clk_i] [get_bd_pins redpitaya_converters_0/clk_o]
-  connect_bd_net -net redpitaya_converters_0_rst_o [get_bd_pins dds_ampl/ref_rst_i] [get_bd_pins dds_ampl1/ref_rst_i] [get_bd_pins nco_counter_1/ref_rst_i] [get_bd_pins nco_counter_2/ref_rst_i] [get_bd_pins nco_counter_3/ref_rst_i] [get_bd_pins nco_counter_4/ref_rst_i] [get_bd_pins pwm_axi_0/ref_rst_i] [get_bd_pins pwm_axi_1/ref_rst_i] [get_bd_pins redpitaya_converters_0/rst_o]
+  connect_bd_net -net ps7_rst_peripheral_aresetn [get_bd_pins ps7_axi/M00_ARESETN] [get_bd_pins ps7_axi/M01_ARESETN] [get_bd_pins ps7_axi/M02_ARESETN] [get_bd_pins ps7_axi/M03_ARESETN] [get_bd_pins ps7_axi/M04_ARESETN] [get_bd_pins ps7_axi/M05_ARESETN] [get_bd_pins ps7_axi/M06_ARESETN] [get_bd_pins ps7_axi/M07_ARESETN] [get_bd_pins ps7_axi/S00_ARESETN] [get_bd_pins ps7_rst/peripheral_aresetn]
+  connect_bd_net -net ps7_rst_peripheral_reset [get_bd_pins adc1_offset/s00_axi_reset] [get_bd_pins adc2_offset/s00_axi_reset] [get_bd_pins dataReal_to_ram_1/s00_axi_reset] [get_bd_pins dds1_offset/s00_axi_reset] [get_bd_pins dds2_offset/s00_axi_reset] [get_bd_pins dds_ampl/s00_axi_reset] [get_bd_pins nco_counter_1/s00_axi_reset] [get_bd_pins nco_counter_2/s00_axi_reset] [get_bd_pins ps7_rst/peripheral_reset] [get_bd_pins redpitaya_converters_0/adc_rst_i]
+  connect_bd_net -net redpitaya_converters_0_clk_o [get_bd_pins dds_ampl/ref_clk_i] [get_bd_pins nco_counter_1/ref_clk_i] [get_bd_pins nco_counter_2/ref_clk_i] [get_bd_pins redpitaya_converters_0/clk_o]
+  connect_bd_net -net redpitaya_converters_0_rst_o [get_bd_pins dds_ampl/ref_rst_i] [get_bd_pins nco_counter_1/ref_rst_i] [get_bd_pins nco_counter_2/ref_rst_i] [get_bd_pins redpitaya_converters_0/rst_o]
 
   # Create address segments
   assign_bd_address -offset 0x43C20000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs adc1_offset/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C40000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs adc2_offset/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C00000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dataReal_to_ram_1/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43CF0000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs data_pwm/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C50000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dds1_offset/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C60000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dds2_offset/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43CA0000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dds3_offset/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43CB0000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dds4_offset/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43CC0000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dds_ampl1/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C10000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs dds_ampl/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C70000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs nco_counter_1/s00_axi/reg0] -force
   assign_bd_address -offset 0x43C80000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs nco_counter_2/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43CD0000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs nco_counter_3/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43CE0000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs nco_counter_4/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43C30000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs pwm_axi_0/s00_axi/reg0] -force
-  assign_bd_address -offset 0x43C90000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps7/Data] [get_bd_addr_segs pwm_axi_1/s00_axi/reg0] -force
 
 
   # Restore current instance

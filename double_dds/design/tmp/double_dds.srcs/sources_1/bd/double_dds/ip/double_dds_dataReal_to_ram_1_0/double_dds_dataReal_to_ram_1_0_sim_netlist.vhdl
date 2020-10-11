@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Sun May 31 18:43:58 2020
+-- Date        : Sun Oct 11 16:23:27 2020
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dataReal_to_ram_1_0/double_dds_dataReal_to_ram_1_0_sim_netlist.vhdl
@@ -99,15 +99,16 @@ entity \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__1\ is
   port (
     busy_s_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     s00_axi_reset_0 : out STD_LOGIC;
-    sync_stage3_s_reg_0 : out STD_LOGIC;
+    s00_axi_reset_1 : out STD_LOGIC;
     busy_s_1 : in STD_LOGIC;
     data1_clk_i : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
-    start_acq2_s : in STD_LOGIC;
-    start_o : in STD_LOGIC;
+    busy_d_s : in STD_LOGIC;
     start_s : in STD_LOGIC;
-    start_s_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
+    interrupt_o_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
+    start_acq2_s : in STD_LOGIC;
+    start_o : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__1\ : entity is "dataReal_sync";
@@ -129,6 +130,18 @@ architecture STRUCTURE of \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup_
   attribute KEEP of sync_stage2_s_reg : label is "yes";
 begin
   busy_s_0(0) <= \^busy_s_0\(0);
+interrupt_o_i_1: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"00000004"
+    )
+        port map (
+      I0 => s00_axi_reset,
+      I1 => busy_d_s,
+      I2 => start_s,
+      I3 => \^busy_s_0\(0),
+      I4 => interrupt_o_reg(0),
+      O => s00_axi_reset_0
+    );
 start_acq2_s_i_1: unisim.vcomponents.LUT4
     generic map(
       INIT => X"1110"
@@ -138,19 +151,7 @@ start_acq2_s_i_1: unisim.vcomponents.LUT4
       I1 => \^busy_s_0\(0),
       I2 => start_acq2_s,
       I3 => start_o,
-      O => s00_axi_reset_0
-    );
-start_s_i_1: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000054"
-    )
-        port map (
-      I0 => \^busy_s_0\(0),
-      I1 => start_o,
-      I2 => start_s,
-      I3 => s00_axi_reset,
-      I4 => start_s_reg(0),
-      O => sync_stage3_s_reg_0
+      O => s00_axi_reset_1
     );
 sync_stage0_s_reg: unisim.vcomponents.FDRE
      port map (
@@ -272,17 +273,18 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__3\ is
   port (
-    sync_stage3_s_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
+    sync_stage3_s_reg_0 : out STD_LOGIC;
     s00_axi_reset_0 : out STD_LOGIC;
     busy_s : out STD_LOGIC;
+    s00_axi_reset_1 : out STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     busy_s_1 : in STD_LOGIC;
     data2_clk_i : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
-    start_acq2_s_reg : in STD_LOGIC;
     start_o : in STD_LOGIC;
+    start_s : in STD_LOGIC;
     busy_s_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    start_s : in STD_LOGIC
+    start_acq2_s_reg : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__3\ : entity is "dataReal_sync";
@@ -295,7 +297,10 @@ architecture STRUCTURE of \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup_
   attribute async_reg of sync_stage1_s : signal is "true";
   signal sync_stage2_s : STD_LOGIC;
   attribute async_reg of sync_stage2_s : signal is "true";
-  signal \^sync_stage3_s_reg_0\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \^sync_stage3_s_reg_0\ : STD_LOGIC;
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of busy_d_s_i_1 : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of start_s_i_1 : label is "soft_lutpair0";
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of sync_stage1_s_reg : label is std.standard.true;
   attribute KEEP : string;
@@ -303,13 +308,13 @@ architecture STRUCTURE of \double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup_
   attribute ASYNC_REG_boolean of sync_stage2_s_reg : label is std.standard.true;
   attribute KEEP of sync_stage2_s_reg : label is "yes";
 begin
-  sync_stage3_s_reg_0(0) <= \^sync_stage3_s_reg_0\(0);
-\readdata_s[0]_i_2\: unisim.vcomponents.LUT3
+  sync_stage3_s_reg_0 <= \^sync_stage3_s_reg_0\;
+busy_d_s_i_1: unisim.vcomponents.LUT3
     generic map(
       INIT => X"FE"
     )
         port map (
-      I0 => \^sync_stage3_s_reg_0\(0),
+      I0 => \^sync_stage3_s_reg_0\,
       I1 => busy_s_0(0),
       I2 => start_s,
       O => busy_s
@@ -320,9 +325,21 @@ begin
     )
         port map (
       I0 => s00_axi_reset,
-      I1 => \^sync_stage3_s_reg_0\(0),
+      I1 => \^sync_stage3_s_reg_0\,
       I2 => start_acq2_s_reg,
       I3 => start_o,
+      O => s00_axi_reset_1
+    );
+start_s_i_1: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"00000054"
+    )
+        port map (
+      I0 => s00_axi_reset,
+      I1 => start_o,
+      I2 => start_s,
+      I3 => \^sync_stage3_s_reg_0\,
+      I4 => busy_s_0(0),
       O => s00_axi_reset_0
     );
 sync_stage0_s_reg: unisim.vcomponents.FDRE
@@ -354,7 +371,7 @@ sync_stage3_s_reg: unisim.vcomponents.FDRE
       C => s00_axi_aclk,
       CE => '1',
       D => sync_stage2_s,
-      Q => \^sync_stage3_s_reg_0\(0),
+      Q => \^sync_stage3_s_reg_0\,
       R => '0'
     );
 end STRUCTURE;
@@ -369,17 +386,17 @@ entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_handCom is
     axi_arready_reg_0 : out STD_LOGIC;
     s00_axi_bvalid : out STD_LOGIC;
     \select_chan_s_reg[0]\ : out STD_LOGIC;
-    addr_s : out STD_LOGIC_VECTOR ( 1 downto 0 );
     read_en_s : out STD_LOGIC;
+    addr_s : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    select_chan_s : out STD_LOGIC;
     s00_axi_reset_0 : out STD_LOGIC;
     ram_reinit_s : out STD_LOGIC;
-    axi_rvalid_reg_0 : out STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_awvalid : in STD_LOGIC;
     incr_addr_s : in STD_LOGIC;
     s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_awvalid : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC;
     s00_axi_rready : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -411,14 +428,16 @@ architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram_handCom
   signal write_addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal write_en_s : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \addr_reg[1]_i_2\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \axi_araddr[2]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \axi_awaddr[2]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of axi_awready_i_1 : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \readdata_s[31]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \axi_araddr[2]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \axi_awaddr[2]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of axi_awready_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \ram_addr_s[0]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \readdata_s[31]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of start_o_i_1 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of start_o_i_2 : label is "soft_lutpair3";
 begin
   addr_s(1 downto 0) <= \^addr_s\(1 downto 0);
   axi_arready_reg_0 <= \^axi_arready_reg_0\;
@@ -449,17 +468,6 @@ begin
       I3 => write_en_s,
       I4 => write_addr_s(1),
       O => \^addr_s\(1)
-    );
-\addr_reg[1]_i_2\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"8000"
-    )
-        port map (
-      I0 => \^axi_awready_reg_0\,
-      I1 => \^axi_wready_reg_0\,
-      I2 => s00_axi_wvalid,
-      I3 => s00_axi_awvalid,
-      O => write_en_s
     );
 \addr_reg_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -661,16 +669,16 @@ axi_wready_reg: unisim.vcomponents.FDRE
     );
 \ram_addr_s[0]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0400000000000000"
+      INIT => X"0020000000000000"
     )
         port map (
-      I0 => \^addr_s\(0),
-      I1 => \^addr_s\(1),
-      I2 => axi_rvalid_reg_n_0,
-      I3 => s00_axi_arvalid,
-      I4 => \^axi_arready_reg_0\,
-      I5 => incr_addr_s,
-      O => axi_rvalid_reg_0
+      I0 => incr_addr_s,
+      I1 => \^addr_s\(0),
+      I2 => \^addr_s\(1),
+      I3 => axi_rvalid_reg_n_0,
+      I4 => s00_axi_arvalid,
+      I5 => \^axi_arready_reg_0\,
+      O => select_chan_s
     );
 \readdata_s[31]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -684,29 +692,37 @@ axi_wready_reg: unisim.vcomponents.FDRE
     );
 \select_chan_s[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000AE400000BF40"
+      INIT => X"0C060C060C000C0C"
     )
         port map (
-      I0 => \^addr_s\(0),
-      I1 => \^addr_s\(1),
-      I2 => \^read_en_s\,
-      I3 => incr_addr_s,
-      I4 => s00_axi_reset,
-      I5 => write_en_s,
+      I0 => \^read_en_s\,
+      I1 => incr_addr_s,
+      I2 => s00_axi_reset,
+      I3 => \^addr_s\(0),
+      I4 => write_en_s,
+      I5 => \^addr_s\(1),
       O => \select_chan_s_reg[0]\
     );
-start_o_i_1: unisim.vcomponents.LUT6
+start_o_i_1: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0000000040000000"
+      INIT => X"10"
     )
         port map (
       I0 => \^addr_s\(1),
-      I1 => \^axi_awready_reg_0\,
-      I2 => \^axi_wready_reg_0\,
-      I3 => s00_axi_wvalid,
-      I4 => s00_axi_awvalid,
-      I5 => \^addr_s\(0),
+      I1 => write_addr_s(0),
+      I2 => write_en_s,
       O => ram_reinit_s
+    );
+start_o_i_2: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"8000"
+    )
+        port map (
+      I0 => \^axi_awready_reg_0\,
+      I1 => \^axi_wready_reg_0\,
+      I2 => s00_axi_wvalid,
+      I3 => s00_axi_awvalid,
+      O => write_en_s
     );
 end STRUCTURE;
 library IEEE;
@@ -1042,9 +1058,9 @@ entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_0 is
   port (
     D : out STD_LOGIC_VECTOR ( 9 downto 0 );
     dout_b : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    \readdata_s_reg[31]\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    \readdata_s_reg[31]\ : in STD_LOGIC;
-    \readdata_s_reg[31]_0\ : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    \readdata_s_reg[18]\ : in STD_LOGIC;
     busy_s_1 : in STD_LOGIC;
     data2_en_i : in STD_LOGIC;
     \sample_cpt_s_reg__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1288,122 +1304,122 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
     );
 \readdata_s[18]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(18),
-      I3 => \readdata_s_reg[31]_0\(0),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(18),
+      I1 => \readdata_s_reg[31]\(0),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(0)
     );
 \readdata_s[19]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(19),
-      I3 => \readdata_s_reg[31]_0\(1),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(19),
+      I1 => \readdata_s_reg[31]\(1),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(1)
     );
 \readdata_s[22]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(22),
-      I3 => \readdata_s_reg[31]_0\(2),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(22),
+      I1 => \readdata_s_reg[31]\(2),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(2)
     );
 \readdata_s[23]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(23),
-      I3 => \readdata_s_reg[31]_0\(3),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(23),
+      I1 => \readdata_s_reg[31]\(3),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(3)
     );
 \readdata_s[24]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(24),
-      I3 => \readdata_s_reg[31]_0\(4),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(24),
+      I1 => \readdata_s_reg[31]\(4),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(4)
     );
 \readdata_s[25]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(25),
-      I3 => \readdata_s_reg[31]_0\(5),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(25),
+      I1 => \readdata_s_reg[31]\(5),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(5)
     );
 \readdata_s[27]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(27),
-      I3 => \readdata_s_reg[31]_0\(6),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(27),
+      I1 => \readdata_s_reg[31]\(6),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(6)
     );
 \readdata_s[28]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(28),
-      I3 => \readdata_s_reg[31]_0\(7),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(28),
+      I1 => \readdata_s_reg[31]\(7),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(7)
     );
 \readdata_s[29]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(29),
-      I3 => \readdata_s_reg[31]_0\(8),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(29),
+      I1 => \readdata_s_reg[31]\(8),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(8)
     );
 \readdata_s[31]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[31]\,
-      I2 => \res_s[1]_2\(31),
-      I3 => \readdata_s_reg[31]_0\(9),
-      I4 => addr_s(1),
+      I0 => \res_s[1]_2\(31),
+      I1 => \readdata_s_reg[31]\(9),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[18]\,
       O => D(9)
     );
 end STRUCTURE;
@@ -1413,11 +1429,12 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_1 is
   port (
-    D : out STD_LOGIC_VECTOR ( 6 downto 0 );
-    mem_reg_1_0 : out STD_LOGIC_VECTOR ( 8 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    mem_reg_1_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    \readdata_s_reg[0]\ : in STD_LOGIC;
+    dout_b : in STD_LOGIC_VECTOR ( 7 downto 0 );
     addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    dout_b : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    \readdata_s_reg[2]\ : in STD_LOGIC;
+    busy_s : in STD_LOGIC;
     busy_s_1 : in STD_LOGIC;
     data1_en_i : in STD_LOGIC;
     \sample_cpt_s_reg__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1433,7 +1450,7 @@ entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_1 is
 end double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_1;
 
 architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_1 is
-  signal \res_s[0]_1\ : STD_LOGIC_VECTOR ( 15 downto 2 );
+  signal \res_s[0]_1\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal we_even_s : STD_LOGIC;
   signal NLW_mem_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
   signal NLW_mem_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
@@ -1549,16 +1566,17 @@ mem_reg_0: unisim.vcomponents.RAMB36E1
       DIPBDIP(3 downto 0) => B"0001",
       DOADO(31 downto 0) => NLW_mem_reg_0_DOADO_UNCONNECTED(31 downto 0),
       DOBDO(31 downto 8) => NLW_mem_reg_0_DOBDO_UNCONNECTED(31 downto 8),
-      DOBDO(7) => mem_reg_1_0(4),
+      DOBDO(7) => mem_reg_1_0(3),
       DOBDO(6) => \res_s[0]_1\(6),
-      DOBDO(5) => mem_reg_1_0(3),
+      DOBDO(5) => mem_reg_1_0(2),
       DOBDO(4) => \res_s[0]_1\(4),
-      DOBDO(3) => mem_reg_1_0(2),
+      DOBDO(3) => mem_reg_1_0(1),
       DOBDO(2) => \res_s[0]_1\(2),
-      DOBDO(1 downto 0) => mem_reg_1_0(1 downto 0),
+      DOBDO(1) => mem_reg_1_0(0),
+      DOBDO(0) => \res_s[0]_1\(0),
       DOPADOP(3 downto 0) => NLW_mem_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
       DOPBDOP(3 downto 1) => NLW_mem_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
-      DOPBDOP(0) => mem_reg_1_0(5),
+      DOPBDOP(0) => mem_reg_1_0(4),
       ECCPARITY(7 downto 0) => NLW_mem_reg_0_ECCPARITY_UNCONNECTED(7 downto 0),
       ENARDEN => we_even_s,
       ENBWREN => '1',
@@ -1637,11 +1655,11 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
       DOADO(31 downto 0) => NLW_mem_reg_1_DOADO_UNCONNECTED(31 downto 0),
       DOBDO(31 downto 7) => NLW_mem_reg_1_DOBDO_UNCONNECTED(31 downto 7),
       DOBDO(6) => \res_s[0]_1\(15),
-      DOBDO(5) => mem_reg_1_0(8),
+      DOBDO(5) => mem_reg_1_0(7),
       DOBDO(4) => \res_s[0]_1\(13),
-      DOBDO(3) => mem_reg_1_0(7),
+      DOBDO(3) => mem_reg_1_0(6),
       DOBDO(2) => \res_s[0]_1\(11),
-      DOBDO(1) => mem_reg_1_0(6),
+      DOBDO(1) => mem_reg_1_0(5),
       DOBDO(0) => \res_s[0]_1\(9),
       DOPADOP(3 downto 0) => NLW_mem_reg_1_DOPADOP_UNCONNECTED(3 downto 0),
       DOPBDOP(3 downto 0) => NLW_mem_reg_1_DOPBDOP_UNCONNECTED(3 downto 0),
@@ -1664,6 +1682,19 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
       WEA(0) => '1',
       WEBWE(7 downto 0) => B"00000000"
     );
+\readdata_s[0]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFE4FFFFFFE400FF"
+    )
+        port map (
+      I0 => \readdata_s_reg[0]\,
+      I1 => \res_s[0]_1\(0),
+      I2 => dout_b(0),
+      I3 => addr_s(0),
+      I4 => addr_s(1),
+      I5 => busy_s,
+      O => D(0)
+    );
 \readdata_s[11]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FAEE5555"
@@ -1671,10 +1702,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(11),
-      I2 => dout_b(4),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(5),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(4)
+      O => D(5)
     );
 \readdata_s[13]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1683,10 +1714,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(13),
-      I2 => dout_b(5),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(6),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(5)
+      O => D(6)
     );
 \readdata_s[15]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1695,10 +1726,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(15),
-      I2 => dout_b(6),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(7),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(6)
+      O => D(7)
     );
 \readdata_s[2]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1707,10 +1738,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(2),
-      I2 => dout_b(0),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(1),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(0)
+      O => D(1)
     );
 \readdata_s[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1719,10 +1750,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(4),
-      I2 => dout_b(1),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(2),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(1)
+      O => D(2)
     );
 \readdata_s[6]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1731,10 +1762,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(6),
-      I2 => dout_b(2),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(3),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(2)
+      O => D(3)
     );
 \readdata_s[9]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1743,10 +1774,10 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
         port map (
       I0 => addr_s(0),
       I1 => \res_s[0]_1\(9),
-      I2 => dout_b(3),
-      I3 => \readdata_s_reg[2]\,
+      I2 => dout_b(4),
+      I3 => \readdata_s_reg[0]\,
       I4 => addr_s(1),
-      O => D(3)
+      O => D(4)
     );
 end STRUCTURE;
 library IEEE;
@@ -1755,12 +1786,11 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_2 is
   port (
-    D : out STD_LOGIC_VECTOR ( 8 downto 0 );
-    dout_b : out STD_LOGIC_VECTOR ( 6 downto 0 );
-    busy_s : in STD_LOGIC;
-    \readdata_s_reg[14]\ : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    dout_b : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    \readdata_s_reg[14]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    \readdata_s_reg[0]\ : in STD_LOGIC;
+    \readdata_s_reg[1]\ : in STD_LOGIC;
     busy_s_1 : in STD_LOGIC;
     data1_en_i : in STD_LOGIC;
     \sample_cpt_s_reg__0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1776,7 +1806,7 @@ entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_2 is
 end double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_2;
 
 architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_2 is
-  signal \res_s[0]_1\ : STD_LOGIC_VECTOR ( 30 downto 16 );
+  signal \res_s[0]_1\ : STD_LOGIC_VECTOR ( 30 downto 17 );
   signal we_odd_s : STD_LOGIC;
   signal NLW_mem_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
   signal NLW_mem_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
@@ -1893,12 +1923,13 @@ mem_reg_0: unisim.vcomponents.RAMB36E1
       DOADO(31 downto 0) => NLW_mem_reg_0_DOADO_UNCONNECTED(31 downto 0),
       DOBDO(31 downto 8) => NLW_mem_reg_0_DOBDO_UNCONNECTED(31 downto 8),
       DOBDO(7) => \res_s[0]_1\(23),
-      DOBDO(6) => dout_b(2),
+      DOBDO(6) => dout_b(3),
       DOBDO(5) => \res_s[0]_1\(21),
-      DOBDO(4) => dout_b(1),
+      DOBDO(4) => dout_b(2),
       DOBDO(3) => \res_s[0]_1\(19),
-      DOBDO(2) => dout_b(0),
-      DOBDO(1 downto 0) => \res_s[0]_1\(17 downto 16),
+      DOBDO(2) => dout_b(1),
+      DOBDO(1) => \res_s[0]_1\(17),
+      DOBDO(0) => dout_b(0),
       DOPADOP(3 downto 0) => NLW_mem_reg_0_DOPADOP_UNCONNECTED(3 downto 0),
       DOPBDOP(3 downto 1) => NLW_mem_reg_0_DOPBDOP_UNCONNECTED(3 downto 1),
       DOPBDOP(0) => \res_s[0]_1\(24),
@@ -1979,13 +2010,13 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
       DIPBDIP(3 downto 0) => B"0000",
       DOADO(31 downto 0) => NLW_mem_reg_1_DOADO_UNCONNECTED(31 downto 0),
       DOBDO(31 downto 7) => NLW_mem_reg_1_DOBDO_UNCONNECTED(31 downto 7),
-      DOBDO(6) => dout_b(6),
+      DOBDO(6) => dout_b(7),
       DOBDO(5) => \res_s[0]_1\(30),
-      DOBDO(4) => dout_b(5),
+      DOBDO(4) => dout_b(6),
       DOBDO(3) => \res_s[0]_1\(28),
-      DOBDO(2) => dout_b(4),
+      DOBDO(2) => dout_b(5),
       DOBDO(1) => \res_s[0]_1\(26),
-      DOBDO(0) => dout_b(3),
+      DOBDO(0) => dout_b(4),
       DOPADOP(3 downto 0) => NLW_mem_reg_1_DOPADOP_UNCONNECTED(3 downto 0),
       DOPBDOP(3 downto 0) => NLW_mem_reg_1_DOPBDOP_UNCONNECTED(3 downto 0),
       ECCPARITY(7 downto 0) => NLW_mem_reg_1_ECCPARITY_UNCONNECTED(7 downto 0),
@@ -2007,114 +2038,101 @@ mem_reg_1: unisim.vcomponents.RAMB36E1
       WEA(0) => '1',
       WEBWE(7 downto 0) => B"00000000"
     );
-\readdata_s[0]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FCAFFFAFFCAFF0AF"
-    )
-        port map (
-      I0 => busy_s,
-      I1 => \res_s[0]_1\(16),
-      I2 => addr_s(0),
-      I3 => addr_s(1),
-      I4 => \readdata_s_reg[0]\,
-      I5 => \readdata_s_reg[14]\(0),
-      O => D(0)
-    );
 \readdata_s[10]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(26),
-      I3 => \readdata_s_reg[14]\(6),
-      I4 => addr_s(1),
-      O => D(6)
+      I0 => \res_s[0]_1\(26),
+      I1 => \readdata_s_reg[14]\(5),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(5)
     );
 \readdata_s[12]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(28),
-      I3 => \readdata_s_reg[14]\(7),
-      I4 => addr_s(1),
-      O => D(7)
+      I0 => \res_s[0]_1\(28),
+      I1 => \readdata_s_reg[14]\(6),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(6)
     );
 \readdata_s[14]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(30),
-      I3 => \readdata_s_reg[14]\(8),
-      I4 => addr_s(1),
-      O => D(8)
+      I0 => \res_s[0]_1\(30),
+      I1 => \readdata_s_reg[14]\(7),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(7)
     );
 \readdata_s[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(17),
-      I3 => \readdata_s_reg[14]\(1),
-      I4 => addr_s(1),
-      O => D(1)
+      I0 => \res_s[0]_1\(17),
+      I1 => \readdata_s_reg[14]\(0),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(0)
     );
 \readdata_s[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(19),
-      I3 => \readdata_s_reg[14]\(2),
-      I4 => addr_s(1),
-      O => D(2)
+      I0 => \res_s[0]_1\(19),
+      I1 => \readdata_s_reg[14]\(1),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(1)
     );
 \readdata_s[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(21),
-      I3 => \readdata_s_reg[14]\(3),
-      I4 => addr_s(1),
-      O => D(3)
+      I0 => \res_s[0]_1\(21),
+      I1 => \readdata_s_reg[14]\(2),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(2)
     );
 \readdata_s[7]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(23),
-      I3 => \readdata_s_reg[14]\(4),
-      I4 => addr_s(1),
-      O => D(4)
+      I0 => \res_s[0]_1\(23),
+      I1 => \readdata_s_reg[14]\(3),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(3)
     );
 \readdata_s[8]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"51400000"
+      INIT => X"0A000C00"
     )
         port map (
-      I0 => addr_s(0),
-      I1 => \readdata_s_reg[0]\,
-      I2 => \res_s[0]_1\(24),
-      I3 => \readdata_s_reg[14]\(5),
-      I4 => addr_s(1),
-      O => D(5)
+      I0 => \res_s[0]_1\(24),
+      I1 => \readdata_s_reg[14]\(4),
+      I2 => addr_s(0),
+      I3 => addr_s(1),
+      I4 => \readdata_s_reg[1]\,
+      O => D(4)
     );
 end STRUCTURE;
 library IEEE;
@@ -2418,16 +2436,17 @@ use UNISIM.VCOMPONENTS.ALL;
 entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_subtop is
   port (
     sync_stage3_s_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
-    D : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    s00_axi_reset_0 : out STD_LOGIC;
     busy_s : out STD_LOGIC;
+    D : out STD_LOGIC_VECTOR ( 15 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
     data2_clk_i : in STD_LOGIC;
-    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    \readdata_s_reg[31]\ : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
     start_o : in STD_LOGIC;
-    busy_s_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     start_s : in STD_LOGIC;
+    busy_s_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    \readdata_s_reg[18]\ : in STD_LOGIC;
     addr_b : in STD_LOGIC_VECTOR ( 11 downto 0 );
     data2_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     data2_en_i : in STD_LOGIC;
@@ -2443,7 +2462,7 @@ architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram_subtop 
   signal \busy_s_i_3__0_n_0\ : STD_LOGIC;
   signal \busy_s_i_4__0_n_0\ : STD_LOGIC;
   signal \busy_s_i_5__0_n_0\ : STD_LOGIC;
-  signal busy_sync_n_1 : STD_LOGIC;
+  signal busy_sync_n_3 : STD_LOGIC;
   signal \res_s[1]_2\ : STD_LOGIC_VECTOR ( 30 downto 2 );
   signal sample_cpt_s0 : STD_LOGIC;
   signal \sample_cpt_s[0]_i_3__0_n_0\ : STD_LOGIC;
@@ -2544,11 +2563,12 @@ busy_sync: entity work.\double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__3\
       data2_clk_i => data2_clk_i,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
-      s00_axi_reset_0 => busy_sync_n_1,
+      s00_axi_reset_0 => s00_axi_reset_0,
+      s00_axi_reset_1 => busy_sync_n_3,
       start_acq2_s_reg => start_acq2_s_reg_n_0,
       start_o => start_o,
       start_s => start_s,
-      sync_stage3_s_reg_0(0) => sync_stage3_s_reg(0)
+      sync_stage3_s_reg_0 => sync_stage3_s_reg(0)
     );
 \half_axi_bits.ram_even\: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage
      port map (
@@ -2571,7 +2591,7 @@ busy_sync: entity work.\double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__3\
       mem_reg_1_0(8 downto 6) => \res_s[1]_2\(13 downto 11),
       mem_reg_1_0(5 downto 2) => \res_s[1]_2\(9 downto 6),
       mem_reg_1_0(1 downto 0) => \res_s[1]_2\(3 downto 2),
-      \readdata_s_reg[16]\ => \readdata_s_reg[31]\,
+      \readdata_s_reg[16]\ => \readdata_s_reg[18]\,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
       \sample_cpt_s_reg__0\(0) => \sample_cpt_s_reg__0\(0)
@@ -2593,11 +2613,11 @@ busy_sync: entity work.\double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__3\
       dout_b(4) => \res_s[1]_2\(26),
       dout_b(3 downto 2) => \res_s[1]_2\(21 downto 20),
       dout_b(1 downto 0) => \res_s[1]_2\(17 downto 16),
-      \readdata_s_reg[31]\ => \readdata_s_reg[31]\,
-      \readdata_s_reg[31]_0\(9) => \res_s[1]_2\(15),
-      \readdata_s_reg[31]_0\(8 downto 6) => \res_s[1]_2\(13 downto 11),
-      \readdata_s_reg[31]_0\(5 downto 2) => \res_s[1]_2\(9 downto 6),
-      \readdata_s_reg[31]_0\(1 downto 0) => \res_s[1]_2\(3 downto 2),
+      \readdata_s_reg[18]\ => \readdata_s_reg[18]\,
+      \readdata_s_reg[31]\(9) => \res_s[1]_2\(15),
+      \readdata_s_reg[31]\(8 downto 6) => \res_s[1]_2\(13 downto 11),
+      \readdata_s_reg[31]\(5 downto 2) => \res_s[1]_2\(9 downto 6),
+      \readdata_s_reg[31]\(1 downto 0) => \res_s[1]_2\(3 downto 2),
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
       \sample_cpt_s_reg__0\(0) => \sample_cpt_s_reg__0\(0)
@@ -2784,7 +2804,7 @@ start_acq2_s_reg: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
       CE => '1',
-      D => busy_sync_n_1,
+      D => busy_sync_n_3,
       Q => start_acq2_s_reg_n_0,
       R => '0'
     );
@@ -2808,17 +2828,18 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \double_dds_dataReal_to_ram_1_0_dataReal_to_ram_subtop__xdcDup__1\ is
   port (
     busy_s_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
+    s00_axi_reset_0 : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    sync_stage3_s_reg : out STD_LOGIC;
     data1_clk_i : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
-    busy_s : in STD_LOGIC;
-    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    \readdata_s_reg[0]\ : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
-    start_o : in STD_LOGIC;
+    busy_d_s : in STD_LOGIC;
     start_s : in STD_LOGIC;
-    start_s_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
+    interrupt_o_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \readdata_s_reg[1]\ : in STD_LOGIC;
+    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    busy_s : in STD_LOGIC;
+    start_o : in STD_LOGIC;
     addr_b : in STD_LOGIC_VECTOR ( 11 downto 0 );
     data1_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     data1_en_i : in STD_LOGIC;
@@ -2834,8 +2855,8 @@ architecture STRUCTURE of \double_dds_dataReal_to_ram_1_0_dataReal_to_ram_subtop
   signal busy_s_i_3_n_0 : STD_LOGIC;
   signal busy_s_i_4_n_0 : STD_LOGIC;
   signal busy_s_i_5_n_0 : STD_LOGIC;
-  signal busy_sync_n_1 : STD_LOGIC;
-  signal \res_s[0]_1\ : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal busy_sync_n_2 : STD_LOGIC;
+  signal \res_s[0]_1\ : STD_LOGIC_VECTOR ( 31 downto 1 );
   signal sample_cpt_s0 : STD_LOGIC;
   signal \sample_cpt_s[0]_i_3_n_0\ : STD_LOGIC;
   signal sample_cpt_s_reg : STD_LOGIC_VECTOR ( 12 downto 1 );
@@ -2929,63 +2950,30 @@ busy_s_reg: unisim.vcomponents.FDRE
     );
 busy_sync: entity work.\double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__1\
      port map (
+      busy_d_s => busy_d_s,
       busy_s_0(0) => busy_s_0(0),
       busy_s_1 => busy_s_1,
       data1_clk_i => data1_clk_i,
+      interrupt_o_reg(0) => interrupt_o_reg(0),
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
-      s00_axi_reset_0 => busy_sync_n_1,
+      s00_axi_reset_0 => s00_axi_reset_0,
+      s00_axi_reset_1 => busy_sync_n_2,
       start_acq2_s => start_acq2_s,
       start_o => start_o,
-      start_s => start_s,
-      start_s_reg(0) => start_s_reg(0),
-      sync_stage3_s_reg_0 => sync_stage3_s_reg
+      start_s => start_s
     );
 \half_axi_bits.ram_even\: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_1
      port map (
       ADDRARDADDR(11 downto 0) => sample_cpt_s_reg(12 downto 1),
-      D(6) => D(15),
-      D(5) => D(13),
-      D(4) => D(11),
-      D(3) => D(9),
-      D(2) => D(6),
-      D(1) => D(4),
-      D(0) => D(2),
-      addr_b(11 downto 0) => addr_b(11 downto 0),
-      addr_s(1 downto 0) => addr_s(1 downto 0),
-      busy_s_1 => busy_s_1,
-      data1_clk_i => data1_clk_i,
-      data1_en_i => data1_en_i,
-      data1_i(13 downto 0) => data1_i(13 downto 0),
-      dout_b(6) => \res_s[0]_1\(31),
-      dout_b(5) => \res_s[0]_1\(29),
-      dout_b(4) => \res_s[0]_1\(27),
-      dout_b(3) => \res_s[0]_1\(25),
-      dout_b(2) => \res_s[0]_1\(22),
-      dout_b(1) => \res_s[0]_1\(20),
-      dout_b(0) => \res_s[0]_1\(18),
-      mem_reg_1_0(8) => \res_s[0]_1\(14),
-      mem_reg_1_0(7) => \res_s[0]_1\(12),
-      mem_reg_1_0(6) => \res_s[0]_1\(10),
-      mem_reg_1_0(5 downto 4) => \res_s[0]_1\(8 downto 7),
-      mem_reg_1_0(3) => \res_s[0]_1\(5),
-      mem_reg_1_0(2) => \res_s[0]_1\(3),
-      mem_reg_1_0(1 downto 0) => \res_s[0]_1\(1 downto 0),
-      \readdata_s_reg[2]\ => \readdata_s_reg[0]\,
-      s00_axi_aclk => s00_axi_aclk,
-      s00_axi_reset => s00_axi_reset,
-      \sample_cpt_s_reg__0\(0) => \sample_cpt_s_reg__0\(0)
-    );
-\half_axi_bits.ram_odd\: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_2
-     port map (
-      ADDRARDADDR(11 downto 0) => sample_cpt_s_reg(12 downto 1),
-      D(8) => D(14),
-      D(7) => D(12),
-      D(6) => D(10),
-      D(5 downto 4) => D(8 downto 7),
-      D(3) => D(5),
-      D(2) => D(3),
-      D(1 downto 0) => D(1 downto 0),
+      D(7) => D(15),
+      D(6) => D(13),
+      D(5) => D(11),
+      D(4) => D(9),
+      D(3) => D(6),
+      D(2) => D(4),
+      D(1) => D(2),
+      D(0) => D(0),
       addr_b(11 downto 0) => addr_b(11 downto 0),
       addr_s(1 downto 0) => addr_s(1 downto 0),
       busy_s => busy_s,
@@ -2993,21 +2981,58 @@ busy_sync: entity work.\double_dds_dataReal_to_ram_1_0_dataReal_sync__xdcDup__1\
       data1_clk_i => data1_clk_i,
       data1_en_i => data1_en_i,
       data1_i(13 downto 0) => data1_i(13 downto 0),
-      dout_b(6) => \res_s[0]_1\(31),
-      dout_b(5) => \res_s[0]_1\(29),
-      dout_b(4) => \res_s[0]_1\(27),
-      dout_b(3) => \res_s[0]_1\(25),
-      dout_b(2) => \res_s[0]_1\(22),
-      dout_b(1) => \res_s[0]_1\(20),
-      dout_b(0) => \res_s[0]_1\(18),
-      \readdata_s_reg[0]\ => \readdata_s_reg[0]\,
-      \readdata_s_reg[14]\(8) => \res_s[0]_1\(14),
-      \readdata_s_reg[14]\(7) => \res_s[0]_1\(12),
-      \readdata_s_reg[14]\(6) => \res_s[0]_1\(10),
-      \readdata_s_reg[14]\(5 downto 4) => \res_s[0]_1\(8 downto 7),
-      \readdata_s_reg[14]\(3) => \res_s[0]_1\(5),
-      \readdata_s_reg[14]\(2) => \res_s[0]_1\(3),
-      \readdata_s_reg[14]\(1 downto 0) => \res_s[0]_1\(1 downto 0),
+      dout_b(7) => \res_s[0]_1\(31),
+      dout_b(6) => \res_s[0]_1\(29),
+      dout_b(5) => \res_s[0]_1\(27),
+      dout_b(4) => \res_s[0]_1\(25),
+      dout_b(3) => \res_s[0]_1\(22),
+      dout_b(2) => \res_s[0]_1\(20),
+      dout_b(1) => \res_s[0]_1\(18),
+      dout_b(0) => \res_s[0]_1\(16),
+      mem_reg_1_0(7) => \res_s[0]_1\(14),
+      mem_reg_1_0(6) => \res_s[0]_1\(12),
+      mem_reg_1_0(5) => \res_s[0]_1\(10),
+      mem_reg_1_0(4 downto 3) => \res_s[0]_1\(8 downto 7),
+      mem_reg_1_0(2) => \res_s[0]_1\(5),
+      mem_reg_1_0(1) => \res_s[0]_1\(3),
+      mem_reg_1_0(0) => \res_s[0]_1\(1),
+      \readdata_s_reg[0]\ => \readdata_s_reg[1]\,
+      s00_axi_aclk => s00_axi_aclk,
+      s00_axi_reset => s00_axi_reset,
+      \sample_cpt_s_reg__0\(0) => \sample_cpt_s_reg__0\(0)
+    );
+\half_axi_bits.ram_odd\: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_storage_2
+     port map (
+      ADDRARDADDR(11 downto 0) => sample_cpt_s_reg(12 downto 1),
+      D(7) => D(14),
+      D(6) => D(12),
+      D(5) => D(10),
+      D(4 downto 3) => D(8 downto 7),
+      D(2) => D(5),
+      D(1) => D(3),
+      D(0) => D(1),
+      addr_b(11 downto 0) => addr_b(11 downto 0),
+      addr_s(1 downto 0) => addr_s(1 downto 0),
+      busy_s_1 => busy_s_1,
+      data1_clk_i => data1_clk_i,
+      data1_en_i => data1_en_i,
+      data1_i(13 downto 0) => data1_i(13 downto 0),
+      dout_b(7) => \res_s[0]_1\(31),
+      dout_b(6) => \res_s[0]_1\(29),
+      dout_b(5) => \res_s[0]_1\(27),
+      dout_b(4) => \res_s[0]_1\(25),
+      dout_b(3) => \res_s[0]_1\(22),
+      dout_b(2) => \res_s[0]_1\(20),
+      dout_b(1) => \res_s[0]_1\(18),
+      dout_b(0) => \res_s[0]_1\(16),
+      \readdata_s_reg[14]\(7) => \res_s[0]_1\(14),
+      \readdata_s_reg[14]\(6) => \res_s[0]_1\(12),
+      \readdata_s_reg[14]\(5) => \res_s[0]_1\(10),
+      \readdata_s_reg[14]\(4 downto 3) => \res_s[0]_1\(8 downto 7),
+      \readdata_s_reg[14]\(2) => \res_s[0]_1\(5),
+      \readdata_s_reg[14]\(1) => \res_s[0]_1\(3),
+      \readdata_s_reg[14]\(0) => \res_s[0]_1\(1),
+      \readdata_s_reg[1]\ => \readdata_s_reg[1]\,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
       \sample_cpt_s_reg__0\(0) => \sample_cpt_s_reg__0\(0)
@@ -3194,7 +3219,7 @@ start_acq2_s_reg: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
       CE => '1',
-      D => busy_sync_n_1,
+      D => busy_sync_n_2,
       Q => start_acq2_s,
       R => '0'
     );
@@ -3218,16 +3243,19 @@ use UNISIM.VCOMPONENTS.ALL;
 entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top is
   port (
     incr_addr_s : out STD_LOGIC;
+    s00_axi_reset_0 : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    busy_s : out STD_LOGIC;
     data1_clk_i : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     data2_clk_i : in STD_LOGIC;
-    \ram_addr_s_reg[0]_0\ : in STD_LOGIC;
     \ram_addr_s_reg[11]_0\ : in STD_LOGIC;
+    select_chan_s : in STD_LOGIC;
     \select_chan_s_reg[0]_0\ : in STD_LOGIC;
-    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_reset : in STD_LOGIC;
     start_o : in STD_LOGIC;
+    busy_d_s : in STD_LOGIC;
+    addr_s : in STD_LOGIC_VECTOR ( 1 downto 0 );
     data1_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     data2_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     data1_en_i : in STD_LOGIC;
@@ -3240,7 +3268,7 @@ entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top is
 end double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top;
 
 architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top is
-  signal busy_s : STD_LOGIC;
+  signal \^busy_s\ : STD_LOGIC;
   signal busy_s_0 : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^incr_addr_s\ : STD_LOGIC;
   signal \ram_addr_s[0]_i_4_n_0\ : STD_LOGIC;
@@ -3269,9 +3297,10 @@ architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top is
   signal \ram_addr_s_reg[8]_i_1_n_6\ : STD_LOGIC;
   signal \ram_addr_s_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal start_s : STD_LOGIC;
-  signal \subtop_loop[0].data_subtop_inst_n_17\ : STD_LOGIC;
+  signal \subtop_loop[1].data_subtop_inst_n_1\ : STD_LOGIC;
   signal \NLW_ram_addr_s_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
 begin
+  busy_s <= \^busy_s\;
   incr_addr_s <= \^incr_addr_s\;
 \ram_addr_s[0]_i_4\: unisim.vcomponents.LUT1
     generic map(
@@ -3284,10 +3313,10 @@ begin
 \ram_addr_s_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[0]_i_3_n_7\,
       Q => ram_addr_s_reg(0),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[0]_i_3\: unisim.vcomponents.CARRY4
      port map (
@@ -3308,50 +3337,50 @@ begin
 \ram_addr_s_reg[10]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[8]_i_1_n_5\,
       Q => ram_addr_s_reg(10),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[11]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[8]_i_1_n_4\,
       Q => ram_addr_s_reg(11),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[0]_i_3_n_6\,
       Q => ram_addr_s_reg(1),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[0]_i_3_n_5\,
       Q => ram_addr_s_reg(2),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[0]_i_3_n_4\,
       Q => ram_addr_s_reg(3),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[4]_i_1_n_7\,
       Q => ram_addr_s_reg(4),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3371,34 +3400,34 @@ begin
 \ram_addr_s_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[4]_i_1_n_6\,
       Q => ram_addr_s_reg(5),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[4]_i_1_n_5\,
       Q => ram_addr_s_reg(6),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[4]_i_1_n_4\,
       Q => ram_addr_s_reg(7),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[8]_i_1_n_7\,
       Q => ram_addr_s_reg(8),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \ram_addr_s_reg[8]_i_1\: unisim.vcomponents.CARRY4
      port map (
@@ -3418,10 +3447,10 @@ begin
 \ram_addr_s_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
-      CE => \ram_addr_s_reg[11]_0\,
+      CE => select_chan_s,
       D => \ram_addr_s_reg[8]_i_1_n_6\,
       Q => ram_addr_s_reg(9),
-      R => \ram_addr_s_reg[0]_0\
+      R => \ram_addr_s_reg[11]_0\
     );
 \select_chan_s_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -3435,7 +3464,7 @@ start_s_reg: unisim.vcomponents.FDRE
      port map (
       C => s00_axi_aclk,
       CE => '1',
-      D => \subtop_loop[0].data_subtop_inst_n_17\,
+      D => \subtop_loop[1].data_subtop_inst_n_1\,
       Q => start_s,
       R => '0'
     );
@@ -3444,34 +3473,36 @@ start_s_reg: unisim.vcomponents.FDRE
       D(15 downto 0) => D(15 downto 0),
       addr_b(11 downto 0) => ram_addr_s_reg(11 downto 0),
       addr_s(1 downto 0) => addr_s(1 downto 0),
-      busy_s => busy_s,
+      busy_d_s => busy_d_s,
+      busy_s => \^busy_s\,
       busy_s_0(0) => busy_s_0(0),
       data1_clk_i => data1_clk_i,
       data1_en_i => data1_en_i,
       data1_i(13 downto 0) => data1_i(13 downto 0),
       data1_rst_i => data1_rst_i,
-      \readdata_s_reg[0]\ => \^incr_addr_s\,
+      interrupt_o_reg(0) => busy_s_0(1),
+      \readdata_s_reg[1]\ => \^incr_addr_s\,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
+      s00_axi_reset_0 => s00_axi_reset_0,
       start_o => start_o,
-      start_s => start_s,
-      start_s_reg(0) => busy_s_0(1),
-      sync_stage3_s_reg => \subtop_loop[0].data_subtop_inst_n_17\
+      start_s => start_s
     );
 \subtop_loop[1].data_subtop_inst\: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_subtop
      port map (
       D(15 downto 0) => D(31 downto 16),
       addr_b(11 downto 0) => ram_addr_s_reg(11 downto 0),
       addr_s(1 downto 0) => addr_s(1 downto 0),
-      busy_s => busy_s,
+      busy_s => \^busy_s\,
       busy_s_0(0) => busy_s_0(0),
       data2_clk_i => data2_clk_i,
       data2_en_i => data2_en_i,
       data2_i(13 downto 0) => data2_i(13 downto 0),
       data2_rst_i => data2_rst_i,
-      \readdata_s_reg[31]\ => \^incr_addr_s\,
+      \readdata_s_reg[18]\ => \^incr_addr_s\,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
+      s00_axi_reset_0 => \subtop_loop[1].data_subtop_inst_n_1\,
       start_o => start_o,
       start_s => start_s,
       sync_stage3_s_reg(0) => busy_s_0(1)
@@ -3543,6 +3574,7 @@ entity double_dds_dataReal_to_ram_1_0_dataReal_to_ram is
     data12_clk_i : in STD_LOGIC;
     data12_rst_i : in STD_LOGIC;
     data12_eof_i : in STD_LOGIC;
+    interrupt_o : out STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3586,13 +3618,16 @@ end double_dds_dataReal_to_ram_1_0_dataReal_to_ram;
 architecture STRUCTURE of double_dds_dataReal_to_ram_1_0_dataReal_to_ram is
   signal \<const0>\ : STD_LOGIC;
   signal addr_s : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal handle_comm_n_10 : STD_LOGIC;
+  signal busy_d_s : STD_LOGIC;
+  signal busy_s : STD_LOGIC;
+  signal data32_top_inst_n_1 : STD_LOGIC;
   signal handle_comm_n_4 : STD_LOGIC;
-  signal handle_comm_n_8 : STD_LOGIC;
+  signal handle_comm_n_9 : STD_LOGIC;
   signal incr_addr_s : STD_LOGIC;
   signal p_0_in : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ram_reinit_s : STD_LOGIC;
   signal read_en_s : STD_LOGIC;
+  signal select_chan_s : STD_LOGIC;
   signal start_o : STD_LOGIC;
 begin
   s00_axi_bresp(1) <= \<const0>\;
@@ -3603,10 +3638,20 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
+busy_d_s_reg: unisim.vcomponents.FDRE
+     port map (
+      C => s00_axi_aclk,
+      CE => '1',
+      D => busy_s,
+      Q => busy_d_s,
+      R => s00_axi_reset
+    );
 data32_top_inst: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top
      port map (
       D(31 downto 0) => p_0_in(31 downto 0),
       addr_s(1 downto 0) => addr_s(1 downto 0),
+      busy_d_s => busy_d_s,
+      busy_s => busy_s,
       data1_clk_i => data1_clk_i,
       data1_en_i => data1_en_i,
       data1_i(13 downto 0) => data1_i(13 downto 0),
@@ -3616,10 +3661,11 @@ data32_top_inst: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_top
       data2_i(13 downto 0) => data2_i(13 downto 0),
       data2_rst_i => data2_rst_i,
       incr_addr_s => incr_addr_s,
-      \ram_addr_s_reg[0]_0\ => handle_comm_n_8,
-      \ram_addr_s_reg[11]_0\ => handle_comm_n_10,
+      \ram_addr_s_reg[11]_0\ => handle_comm_n_9,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
+      s00_axi_reset_0 => data32_top_inst_n_1,
+      select_chan_s => select_chan_s,
       \select_chan_s_reg[0]_0\ => handle_comm_n_4,
       start_o => start_o
     );
@@ -3628,7 +3674,6 @@ handle_comm: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_handCom
       addr_s(1 downto 0) => addr_s(1 downto 0),
       axi_arready_reg_0 => s00_axi_arready,
       axi_awready_reg_0 => s00_axi_awready,
-      axi_rvalid_reg_0 => handle_comm_n_10,
       axi_wready_reg_0 => s00_axi_wready,
       incr_addr_s => incr_addr_s,
       ram_reinit_s => ram_reinit_s,
@@ -3641,10 +3686,19 @@ handle_comm: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram_handCom
       s00_axi_bready => s00_axi_bready,
       s00_axi_bvalid => s00_axi_bvalid,
       s00_axi_reset => s00_axi_reset,
-      s00_axi_reset_0 => handle_comm_n_8,
+      s00_axi_reset_0 => handle_comm_n_9,
       s00_axi_rready => s00_axi_rready,
       s00_axi_wvalid => s00_axi_wvalid,
+      select_chan_s => select_chan_s,
       \select_chan_s_reg[0]\ => handle_comm_n_4
+    );
+interrupt_o_reg: unisim.vcomponents.FDRE
+     port map (
+      C => s00_axi_aclk,
+      CE => '1',
+      D => data32_top_inst_n_1,
+      Q => interrupt_o,
+      R => '0'
     );
 wb_inst: entity work.double_dds_dataReal_to_ram_1_0_wb_dataReal_to_ram
      port map (
@@ -3674,6 +3728,7 @@ entity double_dds_dataReal_to_ram_1_0 is
     data2_clk_i : in STD_LOGIC;
     data2_rst_i : in STD_LOGIC;
     data2_eof_i : in STD_LOGIC;
+    interrupt_o : out STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_reset : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3700,67 +3755,67 @@ entity double_dds_dataReal_to_ram_1_0 is
   attribute NotValidForBitStream of double_dds_dataReal_to_ram_1_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of double_dds_dataReal_to_ram_1_0 : entity is "double_dds_dataReal_to_ram_1_0,dataReal_to_ram,{}";
-  attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of double_dds_dataReal_to_ram_1_0 : entity is "yes";
-  attribute IP_DEFINITION_SOURCE : string;
-  attribute IP_DEFINITION_SOURCE of double_dds_dataReal_to_ram_1_0 : entity is "package_project";
-  attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of double_dds_dataReal_to_ram_1_0 : entity is "dataReal_to_ram,Vivado 2019.2";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of double_dds_dataReal_to_ram_1_0 : entity is "yes";
+  attribute ip_definition_source : string;
+  attribute ip_definition_source of double_dds_dataReal_to_ram_1_0 : entity is "package_project";
+  attribute x_core_info : string;
+  attribute x_core_info of double_dds_dataReal_to_ram_1_0 : entity is "dataReal_to_ram,Vivado 2019.2";
 end double_dds_dataReal_to_ram_1_0;
 
 architecture STRUCTURE of double_dds_dataReal_to_ram_1_0 is
   attribute C_S00_AXI_ADDR_WIDTH : integer;
-  attribute C_S00_AXI_ADDR_WIDTH of inst : label is 4;
+  attribute C_S00_AXI_ADDR_WIDTH of U0 : label is 4;
   attribute C_S00_AXI_DATA_WIDTH : integer;
-  attribute C_S00_AXI_DATA_WIDTH of inst : label is 32;
+  attribute C_S00_AXI_DATA_WIDTH of U0 : label is 32;
   attribute DATA_FORMAT : string;
-  attribute DATA_FORMAT of inst : label is "signed";
+  attribute DATA_FORMAT of U0 : label is "signed";
   attribute DATA_SIZE : integer;
-  attribute DATA_SIZE of inst : label is 14;
+  attribute DATA_SIZE of U0 : label is 14;
   attribute NB_INPUT : integer;
-  attribute NB_INPUT of inst : label is 2;
+  attribute NB_INPUT of U0 : label is 2;
   attribute NB_SAMPLE : integer;
-  attribute NB_SAMPLE of inst : label is 8192;
+  attribute NB_SAMPLE of U0 : label is 8192;
   attribute USE_EOF : string;
-  attribute USE_EOF of inst : label is "FALSE";
-  attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of data1_clk_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_CLK";
-  attribute X_INTERFACE_INFO of data1_en_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_EN";
-  attribute X_INTERFACE_INFO of data1_eof_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_EOF";
-  attribute X_INTERFACE_INFO of data1_rst_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_RST";
-  attribute X_INTERFACE_INFO of data2_clk_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_CLK";
-  attribute X_INTERFACE_INFO of data2_en_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_EN";
-  attribute X_INTERFACE_INFO of data2_eof_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_EOF";
-  attribute X_INTERFACE_INFO of data2_rst_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_RST";
-  attribute X_INTERFACE_INFO of s00_axi_aclk : signal is "xilinx.com:signal:clock:1.0 s00_axi_signal_clock CLK";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of s00_axi_aclk : signal is "XIL_INTERFACENAME s00_axi_signal_clock, ASSOCIATED_BUSIF s00_axi, ASSOCIATED_RESET s00_axi_reset, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s00_axi_arready : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARREADY";
-  attribute X_INTERFACE_INFO of s00_axi_arvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARVALID";
-  attribute X_INTERFACE_INFO of s00_axi_awready : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWREADY";
-  attribute X_INTERFACE_INFO of s00_axi_awvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWVALID";
-  attribute X_INTERFACE_INFO of s00_axi_bready : signal is "xilinx.com:interface:aximm:1.0 s00_axi BREADY";
-  attribute X_INTERFACE_INFO of s00_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi BVALID";
-  attribute X_INTERFACE_INFO of s00_axi_reset : signal is "xilinx.com:signal:reset:1.0 s00_axi_signal_reset RST";
-  attribute X_INTERFACE_PARAMETER of s00_axi_reset : signal is "XIL_INTERFACENAME s00_axi_signal_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s00_axi_rready : signal is "xilinx.com:interface:aximm:1.0 s00_axi RREADY";
-  attribute X_INTERFACE_PARAMETER of s00_axi_rready : signal is "XIL_INTERFACENAME s00_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s00_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi RVALID";
-  attribute X_INTERFACE_INFO of s00_axi_wready : signal is "xilinx.com:interface:aximm:1.0 s00_axi WREADY";
-  attribute X_INTERFACE_INFO of s00_axi_wvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi WVALID";
-  attribute X_INTERFACE_INFO of data1_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA";
-  attribute X_INTERFACE_INFO of data2_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA";
-  attribute X_INTERFACE_INFO of s00_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARADDR";
-  attribute X_INTERFACE_INFO of s00_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARPROT";
-  attribute X_INTERFACE_INFO of s00_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWADDR";
-  attribute X_INTERFACE_INFO of s00_axi_awprot : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWPROT";
-  attribute X_INTERFACE_INFO of s00_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 s00_axi BRESP";
-  attribute X_INTERFACE_INFO of s00_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 s00_axi RDATA";
-  attribute X_INTERFACE_INFO of s00_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 s00_axi RRESP";
-  attribute X_INTERFACE_INFO of s00_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 s00_axi WDATA";
-  attribute X_INTERFACE_INFO of s00_axi_wstrb : signal is "xilinx.com:interface:aximm:1.0 s00_axi WSTRB";
+  attribute USE_EOF of U0 : label is "FALSE";
+  attribute x_interface_info : string;
+  attribute x_interface_info of data1_clk_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_CLK";
+  attribute x_interface_info of data1_en_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_EN";
+  attribute x_interface_info of data1_eof_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_EOF";
+  attribute x_interface_info of data1_rst_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA_RST";
+  attribute x_interface_info of data2_clk_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_CLK";
+  attribute x_interface_info of data2_en_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_EN";
+  attribute x_interface_info of data2_eof_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_EOF";
+  attribute x_interface_info of data2_rst_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA_RST";
+  attribute x_interface_info of s00_axi_aclk : signal is "xilinx.com:signal:clock:1.0 s00_axi_aclk CLK";
+  attribute x_interface_parameter : string;
+  attribute x_interface_parameter of s00_axi_aclk : signal is "XIL_INTERFACENAME s00_axi_aclk, ASSOCIATED_BUSIF s00_axi, ASSOCIATED_RESET s00_axi_reset, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_info of s00_axi_arready : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARREADY";
+  attribute x_interface_info of s00_axi_arvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARVALID";
+  attribute x_interface_info of s00_axi_awready : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWREADY";
+  attribute x_interface_info of s00_axi_awvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWVALID";
+  attribute x_interface_info of s00_axi_bready : signal is "xilinx.com:interface:aximm:1.0 s00_axi BREADY";
+  attribute x_interface_info of s00_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi BVALID";
+  attribute x_interface_info of s00_axi_reset : signal is "xilinx.com:signal:reset:1.0 s00_axi_reset RST";
+  attribute x_interface_parameter of s00_axi_reset : signal is "XIL_INTERFACENAME s00_axi_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
+  attribute x_interface_info of s00_axi_rready : signal is "xilinx.com:interface:aximm:1.0 s00_axi RREADY";
+  attribute x_interface_info of s00_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi RVALID";
+  attribute x_interface_info of s00_axi_wready : signal is "xilinx.com:interface:aximm:1.0 s00_axi WREADY";
+  attribute x_interface_info of s00_axi_wvalid : signal is "xilinx.com:interface:aximm:1.0 s00_axi WVALID";
+  attribute x_interface_info of data1_i : signal is "xilinx.com:interface:real:1.0 data1_in DATA";
+  attribute x_interface_info of data2_i : signal is "xilinx.com:interface:real:1.0 data2_in DATA";
+  attribute x_interface_info of s00_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARADDR";
+  attribute x_interface_info of s00_axi_arprot : signal is "xilinx.com:interface:aximm:1.0 s00_axi ARPROT";
+  attribute x_interface_info of s00_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWADDR";
+  attribute x_interface_parameter of s00_axi_awaddr : signal is "XIL_INTERFACENAME s00_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_info of s00_axi_awprot : signal is "xilinx.com:interface:aximm:1.0 s00_axi AWPROT";
+  attribute x_interface_info of s00_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 s00_axi BRESP";
+  attribute x_interface_info of s00_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 s00_axi RDATA";
+  attribute x_interface_info of s00_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 s00_axi RRESP";
+  attribute x_interface_info of s00_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 s00_axi WDATA";
+  attribute x_interface_info of s00_axi_wstrb : signal is "xilinx.com:interface:aximm:1.0 s00_axi WSTRB";
 begin
-inst: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram
+U0: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram
      port map (
       data10_clk_i => '0',
       data10_en_i => '0',
@@ -3822,6 +3877,7 @@ inst: entity work.double_dds_dataReal_to_ram_1_0_dataReal_to_ram
       data9_eof_i => '0',
       data9_i(13 downto 0) => B"00000000000000",
       data9_rst_i => '0',
+      interrupt_o => interrupt_o,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(3 downto 0) => s00_axi_araddr(3 downto 0),
       s00_axi_arprot(2 downto 0) => s00_axi_arprot(2 downto 0),

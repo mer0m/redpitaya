@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Sun May 31 18:39:18 2020
+//Date        : Sun Oct 11 16:12:19 2020
 //Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 //Command     : generate_target double_dds_wrapper.bd
 //Design      : double_dds_wrapper
@@ -40,9 +40,7 @@ module double_dds_wrapper
     phys_interface_0_dac_dat,
     phys_interface_0_dac_rst,
     phys_interface_0_dac_sel,
-    phys_interface_0_dac_wrt,
-    pwm_1,
-    pwm_o);
+    phys_interface_0_dac_wrt);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -74,8 +72,6 @@ module double_dds_wrapper
   output phys_interface_0_dac_rst;
   output phys_interface_0_dac_sel;
   output phys_interface_0_dac_wrt;
-  output pwm_1;
-  output pwm_o;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -108,8 +104,6 @@ module double_dds_wrapper
   wire phys_interface_0_dac_rst;
   wire phys_interface_0_dac_sel;
   wire phys_interface_0_dac_wrt;
-  wire pwm_1;
-  wire pwm_o;
 
   double_dds double_dds_i
        (.DDR_addr(DDR_addr),
@@ -142,7 +136,5 @@ module double_dds_wrapper
         .phys_interface_0_dac_dat(phys_interface_0_dac_dat),
         .phys_interface_0_dac_rst(phys_interface_0_dac_rst),
         .phys_interface_0_dac_sel(phys_interface_0_dac_sel),
-        .phys_interface_0_dac_wrt(phys_interface_0_dac_wrt),
-        .pwm_1(pwm_1),
-        .pwm_o(pwm_o));
+        .phys_interface_0_dac_wrt(phys_interface_0_dac_wrt));
 endmodule

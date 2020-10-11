@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun May 31 18:40:27 2020
-# Process ID: 9412
+# Start of session at: Sun Oct 11 16:13:16 2020
+# Process ID: 8747
 # Current directory: /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_ps7_0_synth_1
 # Command line: vivado -log double_dds_ps7_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_dds_ps7_0.tcl
 # Log file: /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_ps7_0_synth_1/double_dds_ps7_0.vds

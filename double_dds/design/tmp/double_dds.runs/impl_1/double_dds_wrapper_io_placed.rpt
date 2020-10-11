@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date                      : Sun May 31 19:02:04 2020
+| Date                      : Sun Oct 11 16:26:29 2020
 | Host                      : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 | Command                   : report_io -file double_dds_wrapper_io_placed.rpt
 | Design                    : double_dds_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           181 |
+|           179 |
 +---------------+
 
 
@@ -344,8 +344,8 @@ Table of Contents
 | T7         |                              |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | T8         |                              | Dedicated  | VCCO_13                 | VCCO          |                   |      13 |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | T9         |                              |            | NC                      | Not Connected |                   |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| T10        | pwm_o                        | High Range | IO_L1N_T0_34            | OUTPUT        | LVCMOS18          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| T11        | pwm_1                        | High Range | IO_L1P_T0_34            | OUTPUT        | LVCMOS18          |      34 |         12 | FAST |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| T10        |                              | High Range | IO_L1N_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| T11        |                              | High Range | IO_L1P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T12        |                              | High Range | IO_L2P_T0_34            | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T13        |                              |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | T14        | phys_interface_0_adc_a[9]    | High Range | IO_L5P_T0_34            | INPUT         | LVCMOS18          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |

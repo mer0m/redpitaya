@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Sun May 31 18:55:27 2020
+-- Date        : Sun Oct 11 16:23:08 2020
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
--- Command     : write_vhdl -force -mode funcsim -rename_top double_dds_nco_counter_2_0 -prefix
---               double_dds_nco_counter_2_0_ double_dds_nco_counter_3_0_sim_netlist.vhdl
--- Design      : double_dds_nco_counter_3_0
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_nco_counter_2_0/double_dds_nco_counter_2_0_sim_netlist.vhdl
+-- Design      : double_dds_nco_counter_2_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z010clg400-1
@@ -31,6 +31,8 @@ entity double_dds_nco_counter_2_0_nco_counter_cos_rom_a12_d16 is
     sel : in STD_LOGIC_VECTOR ( 11 downto 0 );
     ADDRBWRADDR : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_nco_counter_cos_rom_a12_d16 : entity is "nco_counter_cos_rom_a12_d16";
 end double_dds_nco_counter_2_0_nco_counter_cos_rom_a12_d16;
 
 architecture STRUCTURE of double_dds_nco_counter_2_0_nco_counter_cos_rom_a12_d16 is
@@ -656,6 +658,8 @@ entity double_dds_nco_counter_2_0_nco_counter_handcomm is
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_nco_counter_handcomm : entity is "nco_counter_handcomm";
 end double_dds_nco_counter_2_0_nco_counter_handcomm;
 
 architecture STRUCTURE of double_dds_nco_counter_2_0_nco_counter_handcomm is
@@ -1210,6 +1214,8 @@ entity double_dds_nco_counter_2_0_nco_counter_synchronizer_bit is
     s00_axi_aclk : in STD_LOGIC;
     ref_clk_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_nco_counter_synchronizer_bit : entity is "nco_counter_synchronizer_bit";
 end double_dds_nco_counter_2_0_nco_counter_synchronizer_bit;
 
 architecture STRUCTURE of double_dds_nco_counter_2_0_nco_counter_synchronizer_bit is
@@ -1895,6 +1901,8 @@ entity double_dds_nco_counter_2_0_nco_counter_synchronizer_vector is
     s00_axi_aclk : in STD_LOGIC;
     ref_clk_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_nco_counter_synchronizer_vector : entity is "nco_counter_synchronizer_vector";
 end double_dds_nco_counter_2_0_nco_counter_synchronizer_vector;
 
 architecture STRUCTURE of double_dds_nco_counter_2_0_nco_counter_synchronizer_vector is
@@ -6319,6 +6327,8 @@ entity double_dds_nco_counter_2_0_wb_nco_counter is
     \cpt_step_s_reg[63]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \readdata_s_reg[31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_wb_nco_counter : entity is "wb_nco_counter";
 end double_dds_nco_counter_2_0_wb_nco_counter;
 
 architecture STRUCTURE of double_dds_nco_counter_2_0_wb_nco_counter is
@@ -8640,6 +8650,8 @@ entity double_dds_nco_counter_2_0_nco_counter_logic is
     \counter_s_reg[35]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \counter_s_reg[39]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_nco_counter_logic : entity is "nco_counter_logic";
 end double_dds_nco_counter_2_0_nco_counter_logic;
 
 architecture STRUCTURE of double_dds_nco_counter_2_0_nco_counter_logic is
@@ -9799,6 +9811,8 @@ entity double_dds_nco_counter_2_0_nco_counter is
   attribute DEFAULT_RST_ACCUM_VAL of double_dds_nco_counter_2_0_nco_counter : entity is 25;
   attribute LUT_SIZE : integer;
   attribute LUT_SIZE of double_dds_nco_counter_2_0_nco_counter : entity is 12;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_dds_nco_counter_2_0_nco_counter : entity is "nco_counter";
   attribute RESET_ACCUM : string;
   attribute RESET_ACCUM of double_dds_nco_counter_2_0_nco_counter : entity is "FALSE";
   attribute id : integer;
@@ -10324,7 +10338,7 @@ entity double_dds_nco_counter_2_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of double_dds_nco_counter_2_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of double_dds_nco_counter_2_0 : entity is "double_dds_nco_counter_3_0,nco_counter,{}";
+  attribute CHECK_LICENSE_TYPE of double_dds_nco_counter_2_0 : entity is "double_dds_nco_counter_2_0,nco_counter,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of double_dds_nco_counter_2_0 : entity is "yes";
   attribute ip_definition_source : string;

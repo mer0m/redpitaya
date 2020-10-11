@@ -55,36 +55,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_dds1
 # IP: bd/double_dds/ip/double_dds_dds2_offset_0/double_dds_dds2_offset_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_dds2_offset_0 || ORIG_REF_NAME==double_dds_dds2_offset_0} -quiet] -quiet
 
-# IP: bd/double_dds/ip/double_dds_dds_ampl1_0/double_dds_dds_ampl1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_dds_ampl1_0 || ORIG_REF_NAME==double_dds_dds_ampl1_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_nco_counter_3_0/double_dds_nco_counter_3_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_nco_counter_3_0 || ORIG_REF_NAME==double_dds_nco_counter_3_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_conv_nco_counter_3_0/double_dds_conv_nco_counter_3_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_conv_nco_counter_3_0 || ORIG_REF_NAME==double_dds_conv_nco_counter_3_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_nco_counter_4_0/double_dds_nco_counter_4_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_nco_counter_4_0 || ORIG_REF_NAME==double_dds_nco_counter_4_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_conv_nco_counter_4_0/double_dds_conv_nco_counter_4_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_conv_nco_counter_4_0 || ORIG_REF_NAME==double_dds_conv_nco_counter_4_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_mixer_sin_3_0/double_dds_mixer_sin_3_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_mixer_sin_3_0 || ORIG_REF_NAME==double_dds_mixer_sin_3_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_mixer_sin_4_0/double_dds_mixer_sin_4_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_mixer_sin_4_0 || ORIG_REF_NAME==double_dds_mixer_sin_4_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_dds3_offset_0/double_dds_dds3_offset_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_dds3_offset_0 || ORIG_REF_NAME==double_dds_dds3_offset_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_dds4_offset_0/double_dds_dds4_offset_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_dds4_offset_0 || ORIG_REF_NAME==double_dds_dds4_offset_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_data_pwm_0/double_dds_data_pwm_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_data_pwm_0 || ORIG_REF_NAME==double_dds_data_pwm_0} -quiet] -quiet
-
 # IP: bd/double_dds/ip/double_dds_adc1_offset_0/double_dds_adc1_offset_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_adc1_offset_0 || ORIG_REF_NAME==double_dds_adc1_offset_0} -quiet] -quiet
 
@@ -93,11 +63,5 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_adc2
 
 # IP: bd/double_dds/ip/double_dds_dataReal_to_ram_1_0/double_dds_dataReal_to_ram_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_dataReal_to_ram_1_0 || ORIG_REF_NAME==double_dds_dataReal_to_ram_1_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_pwm_axi_0_0/double_dds_pwm_axi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_pwm_axi_0_0 || ORIG_REF_NAME==double_dds_pwm_axi_0_0} -quiet] -quiet
-
-# IP: bd/double_dds/ip/double_dds_pwm_axi_1_0/double_dds_pwm_axi_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_pwm_axi_1_0 || ORIG_REF_NAME==double_dds_pwm_axi_1_0} -quiet] -quiet
 
 # XDC: bd/double_dds/double_dds_ooc.xdc

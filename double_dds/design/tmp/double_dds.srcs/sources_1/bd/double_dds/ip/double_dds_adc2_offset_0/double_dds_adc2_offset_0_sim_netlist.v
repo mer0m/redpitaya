@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Sun May 31 18:52:45 2020
+// Date        : Sun Oct 11 16:21:48 2020
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 // Command     : write_verilog -force -mode funcsim -rename_top double_dds_adc2_offset_0 -prefix
 //               double_dds_adc2_offset_0_ double_dds_dds1_offset_0_sim_netlist.v

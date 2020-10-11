@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun May 31 18:59:45 2020
+| Date         : Sun Oct 11 16:24:48 2020
 | Host         : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 | Command      : report_utilization -file double_dds_wrapper_utilization_synth.rpt -pb double_dds_wrapper_utilization_synth.pb
 | Design       : double_dds_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   49 |     0 |       100 | 49.00 |
+| Bonded IOB                  |   47 |     0 |       100 | 47.00 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         2 |  0.00 |
@@ -147,7 +147,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | IBUF     |   28 |                  IO |
-| OBUF     |   21 |                  IO |
+| OBUF     |   19 |                  IO |
 +----------+------+---------------------+
 
 
@@ -159,28 +159,16 @@ Table of Contents
 +-------------------------------------+------+
 | double_dds_xbar_0                   |    1 |
 | double_dds_redpitaya_converters_0_0 |    1 |
-| double_dds_pwm_axi_1_0              |    1 |
-| double_dds_pwm_axi_0_0              |    1 |
 | double_dds_ps7_rst_0                |    1 |
 | double_dds_ps7_0                    |    1 |
-| double_dds_nco_counter_4_0          |    1 |
-| double_dds_nco_counter_3_0          |    1 |
 | double_dds_nco_counter_2_0          |    1 |
 | double_dds_nco_counter_1_0          |    1 |
-| double_dds_mixer_sin_4_0            |    1 |
-| double_dds_mixer_sin_3_0            |    1 |
 | double_dds_mixer_sin_2_0            |    1 |
 | double_dds_mixer_sin_1_0            |    1 |
 | double_dds_dds_ampl_0               |    1 |
-| double_dds_dds_ampl1_0              |    1 |
-| double_dds_dds4_offset_0            |    1 |
-| double_dds_dds3_offset_0            |    1 |
 | double_dds_dds2_offset_0            |    1 |
 | double_dds_dds1_offset_0            |    1 |
-| double_dds_data_pwm_0               |    1 |
 | double_dds_dataReal_to_ram_1_0      |    1 |
-| double_dds_conv_nco_counter_4_0     |    1 |
-| double_dds_conv_nco_counter_3_0     |    1 |
 | double_dds_conv_nco_counter_2_0     |    1 |
 | double_dds_conv_nco_counter_1_0     |    1 |
 | double_dds_auto_pc_0                |    1 |

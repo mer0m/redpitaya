@@ -65,6 +65,7 @@ ENTITY double_dds_dataReal_to_ram_1_0 IS
     data2_clk_i : IN STD_LOGIC;
     data2_rst_i : IN STD_LOGIC;
     data2_eof_i : IN STD_LOGIC;
+    interrupt_o : OUT STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_reset : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -163,6 +164,7 @@ ARCHITECTURE double_dds_dataReal_to_ram_1_0_arch OF double_dds_dataReal_to_ram_1
       data12_clk_i : IN STD_LOGIC;
       data12_rst_i : IN STD_LOGIC;
       data12_eof_i : IN STD_LOGIC;
+      interrupt_o : OUT STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_reset : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -211,10 +213,10 @@ ARCHITECTURE double_dds_dataReal_to_ram_1_0_arch OF double_dds_dataReal_to_ram_1
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_awaddr: SIGNAL IS "XIL_INTERFACENAME s00_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE" & 
 "_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 s00_axi AWADDR";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_reset: SIGNAL IS "XIL_INTERFACENAME s00_axi_signal_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF s00_axi_reset: SIGNAL IS "xilinx.com:signal:reset:1.0 s00_axi_signal_reset RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s00_axi_signal_clock, ASSOCIATED_BUSIF s00_axi, ASSOCIATED_RESET s00_axi_reset, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s00_axi_signal_clock CLK";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_reset: SIGNAL IS "XIL_INTERFACENAME s00_axi_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF s00_axi_reset: SIGNAL IS "xilinx.com:signal:reset:1.0 s00_axi_reset RST";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME s00_axi_aclk, ASSOCIATED_BUSIF s00_axi, ASSOCIATED_RESET s00_axi_reset, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_dds_ps7_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 s00_axi_aclk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF data2_eof_i: SIGNAL IS "xilinx.com:interface:real:1.0 data2_in DATA_EOF";
   ATTRIBUTE X_INTERFACE_INFO OF data2_rst_i: SIGNAL IS "xilinx.com:interface:real:1.0 data2_in DATA_RST";
   ATTRIBUTE X_INTERFACE_INFO OF data2_clk_i: SIGNAL IS "xilinx.com:interface:real:1.0 data2_in DATA_CLK";
@@ -297,6 +299,7 @@ BEGIN
       data12_clk_i => '0',
       data12_rst_i => '0',
       data12_eof_i => '0',
+      interrupt_o => interrupt_o,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_reset => s00_axi_reset,
       s00_axi_awaddr => s00_axi_awaddr,
