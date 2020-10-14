@@ -151,16 +151,16 @@ connect_intf adc1_duppl data1_out data2ram data1_in
 # adc2_duppl -> dataReal_to_ram(data2)
 connect_intf adc2_duppl data1_out data2ram data2_in
 
-## Create instance: , and set properties
-add_ip_and_conf dataReal_dma_direct dma {
-	DATA_SIZE 14 \
-	NB_INPUT 2 \
-	NB_SAMPLE 8192 }
-connect_proc dma s00_axi 0x80000
-# adc1_duppl -> dataReal_to_ram(data1)
-connect_intf adc1_duppl data2_out dma data1_in
-# adc2_duppl -> dataReal_to_ram(data2)
-connect_intf adc2_duppl data2_out dma data2_in
+### Create instance: dma, and set properties
+#add_ip_and_conf dataReal_dma_direct dma {
+#	DATA_SIZE 14 \
+#	NB_INPUT 2 \
+#	NB_SAMPLE 8192 }
+#connect_proc dma s00_axi 0x80000
+## adc1_duppl -> dataReal_to_ram(data1)
+#connect_intf adc1_duppl data2_out dma data1_in
+## adc2_duppl -> dataReal_to_ram(data2)
+#connect_intf adc2_duppl data2_out dma data2_in
 
 
 connect_proc_rst redpitaya_converters_0 adc_rst_i
