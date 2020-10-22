@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Sun Oct 11 16:23:27 2020
+// Date        : Thu Oct 22 19:00:24 2020
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 // Command     : write_verilog -force -mode synth_stub
 //               /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_dataReal_to_ram_1_0/double_dds_dataReal_to_ram_1_0_stub.v

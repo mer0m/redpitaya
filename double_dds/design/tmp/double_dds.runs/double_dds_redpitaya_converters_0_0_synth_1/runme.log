@@ -18,13 +18,13 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10472 
+INFO: Helper process launched with PID 3908 
 WARNING: [Synth 8-6901] identifier 'dac_clk' is used before its declaration [/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ipshared/a28d/hdl/redpitaya_adc_dac_clk.v:29]
 WARNING: [Synth 8-6901] identifier 'dac_2clk' is used before its declaration [/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ipshared/a28d/hdl/redpitaya_adc_dac_clk.v:30]
 WARNING: [Synth 8-6901] identifier 'dac_2ph' is used before its declaration [/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ipshared/a28d/hdl/redpitaya_adc_dac_clk.v:31]
 WARNING: [Synth 8-6901] identifier 'dac_locked' is used before its declaration [/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ipshared/a28d/hdl/redpitaya_adc_dac_clk.v:32]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1853.305 ; gain = 206.652 ; free physical = 923 ; free virtual = 26455
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1852.367 ; gain = 208.652 ; free physical = 930 ; free virtual = 25869
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'double_dds_redpitaya_converters_0_0' [/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_redpitaya_converters_0_0/synth/double_dds_redpitaya_converters_0_0.vhd:89]
 	Parameter ADC_SIZE bound to: 14 - type: integer 
@@ -107,7 +107,7 @@ INFO: [Synth 8-256] done synthesizing module 'double_dds_redpitaya_converters_0_
 WARNING: [Synth 8-3331] design ad9767 has unconnected port dac_dat_a_rst_i
 WARNING: [Synth 8-3331] design ad9767 has unconnected port dac_dat_b_rst_i
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1890.180 ; gain = 243.527 ; free physical = 835 ; free virtual = 26371
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1890.242 ; gain = 246.527 ; free physical = 941 ; free virtual = 25879
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -120,12 +120,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1905.023 ; gain = 258.371 ; free physical = 820 ; free virtual = 26353
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1905.086 ; gain = 261.371 ; free physical = 882 ; free virtual = 25821
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1905.023 ; gain = 258.371 ; free physical = 820 ; free virtual = 26353
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1905.086 ; gain = 261.371 ; free physical = 882 ; free virtual = 25821
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1911.961 ; gain = 0.000 ; free physical = 793 ; free virtual = 26327
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1913.023 ; gain = 0.000 ; free physical = 864 ; free virtual = 25799
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -139,30 +139,30 @@ INFO: [Timing 38-2] Deriving generated clocks [/home/bma/git/fpga_design/redpita
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.srcs/sources_1/bd/double_dds/ip/double_dds_redpitaya_converters_0_0/redpitaya_converters_ooc.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2025.789 ; gain = 0.000 ; free physical = 572 ; free virtual = 26105
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.820 ; gain = 0.000 ; free physical = 1043 ; free virtual = 25967
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2025.789 ; gain = 0.000 ; free physical = 610 ; free virtual = 26143
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2028.820 ; gain = 0.000 ; free physical = 1043 ; free virtual = 25967
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1634 ; free virtual = 27165
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2477 ; free virtual = 27274
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1633 ; free virtual = 27165
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2477 ; free virtual = 27274
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_redpitaya_converters_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:55 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1633 ; free virtual = 27164
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:16 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2477 ; free virtual = 27274
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:56 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1612 ; free virtual = 27143
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:18 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2485 ; free virtual = 27256
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -217,7 +217,7 @@ Warning: Parallel synthesis criteria is not met
 WARNING: [Synth 8-3331] design redpitaya_converters has unconnected port dac_dat_a_rst_i
 WARNING: [Synth 8-3331] design redpitaya_converters has unconnected port dac_dat_b_rst_i
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 2258 ; free virtual = 27789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2452 ; free virtual = 27222
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -229,13 +229,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:31 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1664 ; free virtual = 27199
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:02:11 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2031 ; free virtual = 26801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:31 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1663 ; free virtual = 27198
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:02:11 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2029 ; free virtual = 26799
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -247,7 +247,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:31 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1659 ; free virtual = 27194
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:02:11 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 2024 ; free virtual = 26794
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -271,13 +271,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:43 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1690 ; free virtual = 27225
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1840 ; free virtual = 26610
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:43 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1689 ; free virtual = 27224
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1840 ; free virtual = 26610
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -296,25 +296,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:43 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1690 ; free virtual = 27225
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1840 ; free virtual = 26610
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:43 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1690 ; free virtual = 27225
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1839 ; free virtual = 26609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:44 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1690 ; free virtual = 27225
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1839 ; free virtual = 26609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:44 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1690 ; free virtual = 27225
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1839 ; free virtual = 26609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -350,35 +350,35 @@ Report Instance Areas:
 |5     |    redpitaya_clk                           |redpitaya_adc_dac_clk      |    13|
 +------+--------------------------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:44 . Memory (MB): peak = 2025.789 ; gain = 379.137 ; free physical = 1690 ; free virtual = 27225
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2028.820 ; gain = 385.105 ; free physical = 1839 ; free virtual = 26609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:01:32 . Memory (MB): peak = 2025.789 ; gain = 258.371 ; free physical = 1729 ; free virtual = 27268
-Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 2025.797 ; gain = 379.137 ; free physical = 1729 ; free virtual = 27268
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:35 ; elapsed = 00:02:19 . Memory (MB): peak = 2028.820 ; gain = 261.371 ; free physical = 1892 ; free virtual = 26662
+Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:02:31 . Memory (MB): peak = 2028.828 ; gain = 385.105 ; free physical = 1891 ; free virtual = 26661
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2025.797 ; gain = 0.000 ; free physical = 1718 ; free virtual = 27257
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2028.828 ; gain = 0.000 ; free physical = 1883 ; free virtual = 26653
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2025.797 ; gain = 0.000 ; free physical = 1707 ; free virtual = 27246
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.828 ; gain = 0.000 ; free physical = 1832 ; free virtual = 26602
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 39 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:02:10 . Memory (MB): peak = 2025.797 ; gain = 585.516 ; free physical = 1838 ; free virtual = 27376
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2025.797 ; gain = 0.000 ; free physical = 1838 ; free virtual = 27376
+synth_design: Time (s): cpu = 00:02:16 ; elapsed = 00:03:07 . Memory (MB): peak = 2028.828 ; gain = 591.516 ; free physical = 1966 ; free virtual = 26736
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.828 ; gain = 0.000 ; free physical = 1966 ; free virtual = 26736
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_redpitaya_converters_0_0_synth_1/double_dds_redpitaya_converters_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP double_dds_redpitaya_converters_0_0, cache-ID = ef11258e670c66b9
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2025.797 ; gain = 0.000 ; free physical = 1843 ; free virtual = 27378
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.828 ; gain = 0.000 ; free physical = 1895 ; free virtual = 26666
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.runs/double_dds_redpitaya_converters_0_0_synth_1/double_dds_redpitaya_converters_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file double_dds_redpitaya_converters_0_0_utilization_synth.rpt -pb double_dds_redpitaya_converters_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 16:18:54 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 18:53:33 2020...
