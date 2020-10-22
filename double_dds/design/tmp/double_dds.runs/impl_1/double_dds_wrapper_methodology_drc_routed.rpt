@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Oct 22 19:06:02 2020
+| Date         : Thu Oct 22 19:54:21 2020
 | Host         : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 | Command      : report_methodology -file double_dds_wrapper_methodology_drc_routed.rpt -pb double_dds_wrapper_methodology_drc_routed.pb -rpx double_dds_wrapper_methodology_drc_routed.rpx
 | Design       : double_dds_wrapper

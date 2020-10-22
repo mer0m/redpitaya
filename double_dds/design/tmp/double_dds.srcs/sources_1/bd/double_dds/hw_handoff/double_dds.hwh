@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 22 18:44:32 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 22 19:32:14 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="double_dds" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -709,27 +709,27 @@
       <PORTS>
         <PORT DIR="O" LEFT="15" NAME="data1_o" RIGHT="0" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_i"/>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data1_en_o" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_en_i"/>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_en_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data1_eof_o" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_eof_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_eof_i"/>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_eof_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data1_clk_o" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_clk_i"/>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_clk_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data1_rst_o" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_rst_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_rst_i"/>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_rst_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="15" NAME="data2_o" RIGHT="0" SIGIS="undef"/>
@@ -1864,6 +1864,96 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/expander_nco_counter_1" HWVERSION="1.0" INSTANCE="expander_nco_counter_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="expanderReal" VLNV="ggm:cogen:expanderReal:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="format" VALUE="signed"/>
+        <PARAMETER NAME="DATA_IN_SIZE" VALUE="1"/>
+        <PARAMETER NAME="DATA_OUT_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="double_dds_expander_nco_counter_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_en_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_en_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_sof_i" SIGIS="undef"/>
+        <PORT DIR="I" NAME="data_eof_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_eof_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_eof_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_rst_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_rst_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_clk_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shifter_nco_counter_1" PORT="data_clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_en_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_en_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_en_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_sof_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_sof_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_sof_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_eof_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_eof_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_eof_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_rst_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_rst_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_rst_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_clk_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mixer_sin_1" PORT="data2_clk_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="shifter_nco_counter_1_data_out" NAME="data_in" TYPE="TARGET" VLNV="xilinx.com:interface:real:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="data_i"/>
+            <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data_en_i"/>
+            <PORTMAP LOGICAL="DATA_SOF" PHYSICAL="data_sof_i"/>
+            <PORTMAP LOGICAL="DATA_EOF" PHYSICAL="data_eof_i"/>
+            <PORTMAP LOGICAL="DATA_CLK" PHYSICAL="data_clk_i"/>
+            <PORTMAP LOGICAL="DATA_RST" PHYSICAL="data_rst_i"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="expander_nco_counter_1_data_out" NAME="data_out" TYPE="INITIATOR" VLNV="xilinx.com:interface:real:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="data_o"/>
+            <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data_en_o"/>
+            <PORTMAP LOGICAL="DATA_SOF" PHYSICAL="data_sof_o"/>
+            <PORTMAP LOGICAL="DATA_EOF" PHYSICAL="data_eof_o"/>
+            <PORTMAP LOGICAL="DATA_CLK" PHYSICAL="data_clk_o"/>
+            <PORTMAP LOGICAL="DATA_RST" PHYSICAL="data_rst_o"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/mixer_sin_1" HWVERSION="1.0" INSTANCE="mixer_sin_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="multiplierReal" VLNV="ggm:cogen:multiplierReal:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -1901,30 +1991,34 @@
             <CONNECTION INSTANCE="dds_ampl" PORT="dataA_rst_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="data2_i" RIGHT="0" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_o">
+        <PORT DIR="I" LEFT="15" NAME="data2_i" RIGHT="0" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_o"/>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data2_en_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_en_o">
+        <PORT DIR="I" NAME="data2_en_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_en_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_en_o"/>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_en_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data2_eof_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_eof_o">
+        <PORT DIR="I" NAME="data2_eof_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_eof_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_eof_o"/>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_eof_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data2_sof_i" SIGIS="undef"/>
-        <PORT DIR="I" NAME="data2_clk_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_clk_o">
+        <PORT DIR="I" NAME="data2_sof_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_sof_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_clk_o"/>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_sof_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data2_rst_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_rst_o">
+        <PORT DIR="I" NAME="data2_clk_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_clk_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_rst_o"/>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data2_rst_i" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_rst_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_rst_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="13" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="dds1_offset_data_i">
@@ -1961,7 +2055,7 @@
             <PORTMAP LOGICAL="DATA_RST" PHYSICAL="data1_rst_i"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="conv_nco_counter_1_dataI_out" NAME="data2_in" TYPE="TARGET" VLNV="xilinx.com:interface:real:1.0">
+        <BUSINTERFACE BUSNAME="expander_nco_counter_1_data_out" NAME="data2_in" TYPE="TARGET" VLNV="xilinx.com:interface:real:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="DATA" PHYSICAL="data2_i"/>
             <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data2_en_i"/>
@@ -6229,6 +6323,87 @@
             <PORTMAP LOGICAL="DATA" PHYSICAL="dac_dat_b_i"/>
             <PORTMAP LOGICAL="DATA_EN" PHYSICAL="dac_dat_b_en_i"/>
             <PORTMAP LOGICAL="DATA_RST" PHYSICAL="dac_dat_b_rst_i"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="11" FULLNAME="/shifter_nco_counter_1" HWVERSION="1.0" INSTANCE="shifter_nco_counter_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="shifterReal" VLNV="ggm:cogen:shifterReal:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_IN_SIZE" VALUE="16"/>
+        <PARAMETER NAME="DATA_OUT_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="double_dds_shifter_nco_counter_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="data_i" RIGHT="0" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_en_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_en_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_en_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_eof_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_eof_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_eof_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_clk_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_rst_i" SIGIS="undef" SIGNAME="conv_nco_counter_1_data1_rst_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="conv_nco_counter_1" PORT="data1_rst_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="data_o" RIGHT="0" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_en_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_en_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_en_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_eof_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_eof_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_eof_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_rst_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_rst_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_rst_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_clk_o" SIGIS="undef" SIGNAME="expander_nco_counter_1_data_clk_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="expander_nco_counter_1" PORT="data_clk_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="conv_nco_counter_1_dataI_out" NAME="data_in" TYPE="TARGET" VLNV="xilinx.com:interface:real:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data_en_i"/>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="data_i"/>
+            <PORTMAP LOGICAL="DATA_CLK" PHYSICAL="data_clk_i"/>
+            <PORTMAP LOGICAL="DATA_EOF" PHYSICAL="data_eof_i"/>
+            <PORTMAP LOGICAL="DATA_RST" PHYSICAL="data_rst_i"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="shifter_nco_counter_1_data_out" NAME="data_out" TYPE="INITIATOR" VLNV="xilinx.com:interface:real:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="DATA_EN" PHYSICAL="data_en_o"/>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="data_o"/>
+            <PORTMAP LOGICAL="DATA_CLK" PHYSICAL="data_clk_o"/>
+            <PORTMAP LOGICAL="DATA_EOF" PHYSICAL="data_eof_o"/>
+            <PORTMAP LOGICAL="DATA_RST" PHYSICAL="data_rst_o"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>

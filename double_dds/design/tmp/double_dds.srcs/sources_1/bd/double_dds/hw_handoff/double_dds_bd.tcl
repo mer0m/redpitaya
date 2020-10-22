@@ -215,6 +215,13 @@ proc create_root_design { parentCell } {
   # Create instance: dds_ampl, and set properties
   set dds_ampl [ create_bd_cell -type ip -vlnv ggm:cogen:axi_to_dac:1.0 dds_ampl ]
 
+  # Create instance: expander_nco_counter_1, and set properties
+  set expander_nco_counter_1 [ create_bd_cell -type ip -vlnv ggm:cogen:expanderReal:1.0 expander_nco_counter_1 ]
+  set_property -dict [ list \
+   CONFIG.DATA_IN_SIZE {1} \
+   CONFIG.DATA_OUT_SIZE {16} \
+ ] $expander_nco_counter_1
+
   # Create instance: mixer_sin_1, and set properties
   set mixer_sin_1 [ create_bd_cell -type ip -vlnv ggm:cogen:multiplierReal:1.0 mixer_sin_1 ]
   set_property -dict [ list \
@@ -914,15 +921,23 @@ proc create_root_design { parentCell } {
    CONFIG.CLOCK_DUTY_CYCLE_STABILIZER_EN {false} \
  ] $redpitaya_converters_0
 
+  # Create instance: shifter_nco_counter_1, and set properties
+  set shifter_nco_counter_1 [ create_bd_cell -type ip -vlnv ggm:cogen:shifterReal:1.0 shifter_nco_counter_1 ]
+  set_property -dict [ list \
+   CONFIG.DATA_IN_SIZE {16} \
+   CONFIG.DATA_OUT_SIZE {1} \
+ ] $shifter_nco_counter_1
+
   # Create interface connections
   connect_bd_intf_net -intf_net adc1_offset_data_out [get_bd_intf_pins adc1_offset/data_out] [get_bd_intf_pins dataReal_to_ram_1/data1_in]
   connect_bd_intf_net -intf_net adc2_offset_data_out [get_bd_intf_pins adc2_offset/data_out] [get_bd_intf_pins dataReal_to_ram_1/data2_in]
-  connect_bd_intf_net -intf_net conv_nco_counter_1_dataI_out [get_bd_intf_pins conv_nco_counter_1/dataI_out] [get_bd_intf_pins mixer_sin_1/data2_in]
+  connect_bd_intf_net -intf_net conv_nco_counter_1_dataI_out [get_bd_intf_pins conv_nco_counter_1/dataI_out] [get_bd_intf_pins shifter_nco_counter_1/data_in]
   connect_bd_intf_net -intf_net conv_nco_counter_2_dataI_out [get_bd_intf_pins conv_nco_counter_2/dataI_out] [get_bd_intf_pins mixer_sin_2/data2_in]
   connect_bd_intf_net -intf_net dds1_offset_data_out [get_bd_intf_pins dds1_offset/data_out] [get_bd_intf_pins redpitaya_converters_0/dataA_in]
   connect_bd_intf_net -intf_net dds2_offset_data_out [get_bd_intf_pins dds2_offset/data_out] [get_bd_intf_pins redpitaya_converters_0/dataB_in]
   connect_bd_intf_net -intf_net dds_ampl_dataA_out [get_bd_intf_pins dds_ampl/dataA_out] [get_bd_intf_pins mixer_sin_1/data1_in]
   connect_bd_intf_net -intf_net dds_ampl_dataB_out [get_bd_intf_pins dds_ampl/dataB_out] [get_bd_intf_pins mixer_sin_2/data1_in]
+  connect_bd_intf_net -intf_net expander_nco_counter_1_data_out [get_bd_intf_pins expander_nco_counter_1/data_out] [get_bd_intf_pins mixer_sin_1/data2_in]
   connect_bd_intf_net -intf_net mixer_sin_1_data_out [get_bd_intf_pins dds1_offset/data_in] [get_bd_intf_pins mixer_sin_1/data_out]
   connect_bd_intf_net -intf_net mixer_sin_2_data_out [get_bd_intf_pins dds2_offset/data_in] [get_bd_intf_pins mixer_sin_2/data_out]
   connect_bd_intf_net -intf_net nco_counter_1_sine_out [get_bd_intf_pins conv_nco_counter_1/data_in] [get_bd_intf_pins nco_counter_1/sine_out]
@@ -941,6 +956,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_axi_M07_AXI [get_bd_intf_pins dataReal_to_ram_1/s00_axi] [get_bd_intf_pins ps7_axi/M07_AXI]
   connect_bd_intf_net -intf_net redpitaya_converters_0_dataA_out [get_bd_intf_pins adc1_offset/data_in] [get_bd_intf_pins redpitaya_converters_0/dataA_out]
   connect_bd_intf_net -intf_net redpitaya_converters_0_dataB_out [get_bd_intf_pins adc2_offset/data_in] [get_bd_intf_pins redpitaya_converters_0/dataB_out]
+  connect_bd_intf_net -intf_net shifter_nco_counter_1_data_out [get_bd_intf_pins expander_nco_counter_1/data_in] [get_bd_intf_pins shifter_nco_counter_1/data_out]
 
   # Create port connections
   connect_bd_net -net ps7_FCLK_CLK0 [get_bd_pins adc1_offset/s00_axi_aclk] [get_bd_pins adc2_offset/s00_axi_aclk] [get_bd_pins dataReal_to_ram_1/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds2_offset/s00_axi_aclk] [get_bd_pins dds_ampl/s00_axi_aclk] [get_bd_pins nco_counter_1/s00_axi_aclk] [get_bd_pins nco_counter_2/s00_axi_aclk] [get_bd_pins ps7/FCLK_CLK0] [get_bd_pins ps7/M_AXI_GP0_ACLK] [get_bd_pins ps7_axi/ACLK] [get_bd_pins ps7_axi/M00_ACLK] [get_bd_pins ps7_axi/M01_ACLK] [get_bd_pins ps7_axi/M02_ACLK] [get_bd_pins ps7_axi/M03_ACLK] [get_bd_pins ps7_axi/M04_ACLK] [get_bd_pins ps7_axi/M05_ACLK] [get_bd_pins ps7_axi/M06_ACLK] [get_bd_pins ps7_axi/M07_ACLK] [get_bd_pins ps7_axi/S00_ACLK] [get_bd_pins ps7_rst/slowest_sync_clk]

@@ -42,6 +42,20 @@ add_ip_and_conf convertComplexToReal conv_nco_counter_1 {
 # nco_counter_1 -> conv_nco_counter_1
 connect_intf nco_counter_1 sine_out conv_nco_counter_1 data_in
 
+## Create instance: shifter_nco_counter_1, and set properties
+add_ip_and_conf shifterReal shifter_nco_counter_1 {
+    DATA_IN_SIZE 16 \
+	DATA_OUT_SIZE 1 }
+# conv_nco_counter_1 -> shifter_nco_counter_1
+connect_intf conv_nco_counter_1 dataI_out shifter_nco_counter_1 data_in
+
+## Create instance: shifter_nco_counter_1, and set properties
+add_ip_and_conf expanderReal expander_nco_counter_1 {
+    DATA_IN_SIZE 1 \
+	DATA_OUT_SIZE 16 }
+# shifter_nco_counter_1 -> expander_nco_counter_1
+connect_intf shifter_nco_counter_1 data_out expander_nco_counter_1 data_in
+
 ## Create instance: nco_counter_2, and set properties
 add_ip_and_conf nco_counter nco_counter_2 {
 	COUNTER_SIZE 40 \
@@ -64,7 +78,7 @@ add_ip_and_conf multiplierReal mixer_sin_1 {
 # dds_ampl(A) -> mixer_sin_1(data1)
 connect_intf dds_ampl dataA_out mixer_sin_1 data1_in
 # conv_nco_counter_1(I) -> mixer_sin_1(data2)
-connect_intf conv_nco_counter_1 dataI_out mixer_sin_1 data2_in
+connect_intf expander_nco_counter_1 data_out mixer_sin_1 data2_in
 
 ## Create instance: mixer_sin_2, and set properties
 add_ip_and_conf multiplierReal mixer_sin_2 {

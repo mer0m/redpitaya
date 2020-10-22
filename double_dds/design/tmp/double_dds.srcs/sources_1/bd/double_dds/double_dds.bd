@@ -29,6 +29,8 @@
       },
       "nco_counter_1": "",
       "conv_nco_counter_1": "",
+      "shifter_nco_counter_1": "",
+      "expander_nco_counter_1": "",
       "nco_counter_2": "",
       "conv_nco_counter_2": "",
       "mixer_sin_1": "",
@@ -2328,30 +2330,6 @@
           }
         },
         "interface_nets": {
-          "m02_couplers_to_ps7_axi": {
-            "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
-            ]
-          },
-          "ps7_axi_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "m01_couplers_to_ps7_axi": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "m03_couplers_to_ps7_axi": {
-            "interface_ports": [
-              "M03_AXI",
-              "m03_couplers/M_AXI"
-            ]
-          },
           "m00_couplers_to_ps7_axi": {
             "interface_ports": [
               "M00_AXI",
@@ -2370,10 +2348,40 @@
               "m01_couplers/S_AXI"
             ]
           },
-          "xbar_to_m07_couplers": {
+          "m04_couplers_to_ps7_axi": {
             "interface_ports": [
-              "xbar/M07_AXI",
-              "m07_couplers/S_AXI"
+              "M04_AXI",
+              "m04_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m05_couplers": {
+            "interface_ports": [
+              "xbar/M05_AXI",
+              "m05_couplers/S_AXI"
+            ]
+          },
+          "m03_couplers_to_ps7_axi": {
+            "interface_ports": [
+              "M03_AXI",
+              "m03_couplers/M_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_axi": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
+          "m02_couplers_to_ps7_axi": {
+            "interface_ports": [
+              "M02_AXI",
+              "m02_couplers/M_AXI"
+            ]
+          },
+          "ps7_axi_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           },
           "xbar_to_m04_couplers": {
@@ -2412,28 +2420,22 @@
               "m02_couplers/S_AXI"
             ]
           },
-          "m07_couplers_to_ps7_axi": {
-            "interface_ports": [
-              "M07_AXI",
-              "m07_couplers/M_AXI"
-            ]
-          },
           "s00_couplers_to_xbar": {
             "interface_ports": [
               "s00_couplers/M_AXI",
               "xbar/S00_AXI"
             ]
           },
-          "m04_couplers_to_ps7_axi": {
+          "m07_couplers_to_ps7_axi": {
             "interface_ports": [
-              "M04_AXI",
-              "m04_couplers/M_AXI"
+              "M07_AXI",
+              "m07_couplers/M_AXI"
             ]
           },
-          "xbar_to_m05_couplers": {
+          "xbar_to_m07_couplers": {
             "interface_ports": [
-              "xbar/M05_AXI",
-              "m05_couplers/S_AXI"
+              "xbar/M07_AXI",
+              "m07_couplers/S_AXI"
             ]
           }
         },
@@ -2599,6 +2601,30 @@
           }
         }
       },
+      "shifter_nco_counter_1": {
+        "vlnv": "ggm:cogen:shifterReal:1.0",
+        "xci_name": "double_dds_shifter_nco_counter_1_0",
+        "parameters": {
+          "DATA_IN_SIZE": {
+            "value": "16"
+          },
+          "DATA_OUT_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "expander_nco_counter_1": {
+        "vlnv": "ggm:cogen:expanderReal:1.0",
+        "xci_name": "double_dds_expander_nco_counter_1_0",
+        "parameters": {
+          "DATA_IN_SIZE": {
+            "value": "1"
+          },
+          "DATA_OUT_SIZE": {
+            "value": "16"
+          }
+        }
+      },
       "nco_counter_2": {
         "vlnv": "ggm:cogen:nco_counter:1.0",
         "xci_name": "double_dds_nco_counter_2_0",
@@ -2715,48 +2741,6 @@
       }
     },
     "interface_nets": {
-      "phys_interface_0_1": {
-        "interface_ports": [
-          "phys_interface_0",
-          "redpitaya_converters_0/phys_interface"
-        ]
-      },
-      "ps7_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "ps7/FIXED_IO"
-        ]
-      },
-      "ps7_DDR": {
-        "interface_ports": [
-          "DDR",
-          "ps7/DDR"
-        ]
-      },
-      "ps7_axi_M03_AXI": {
-        "interface_ports": [
-          "ps7_axi/M03_AXI",
-          "dds1_offset/s00_axi"
-        ]
-      },
-      "dds_ampl_dataB_out": {
-        "interface_ports": [
-          "dds_ampl/dataB_out",
-          "mixer_sin_2/data1_in"
-        ]
-      },
-      "conv_nco_counter_2_dataI_out": {
-        "interface_ports": [
-          "conv_nco_counter_2/dataI_out",
-          "mixer_sin_2/data2_in"
-        ]
-      },
-      "adc1_offset_data_out": {
-        "interface_ports": [
-          "adc1_offset/data_out",
-          "dataReal_to_ram_1/data1_in"
-        ]
-      },
       "dds1_offset_data_out": {
         "interface_ports": [
           "dds1_offset/data_out",
@@ -2775,28 +2759,16 @@
           "dds2_offset/s00_axi"
         ]
       },
-      "conv_nco_counter_1_dataI_out": {
+      "expander_nco_counter_1_data_out": {
         "interface_ports": [
-          "conv_nco_counter_1/dataI_out",
+          "expander_nco_counter_1/data_out",
           "mixer_sin_1/data2_in"
-        ]
-      },
-      "nco_counter_2_sine_out": {
-        "interface_ports": [
-          "nco_counter_2/sine_out",
-          "conv_nco_counter_2/data_in"
         ]
       },
       "dds_ampl_dataA_out": {
         "interface_ports": [
           "dds_ampl/dataA_out",
           "mixer_sin_1/data1_in"
-        ]
-      },
-      "mixer_sin_2_data_out": {
-        "interface_ports": [
-          "mixer_sin_2/data_out",
-          "dds2_offset/data_in"
         ]
       },
       "ps7_axi_M02_AXI": {
@@ -2811,6 +2783,18 @@
           "adc2_offset/s00_axi"
         ]
       },
+      "mixer_sin_2_data_out": {
+        "interface_ports": [
+          "mixer_sin_2/data_out",
+          "dds2_offset/data_in"
+        ]
+      },
+      "nco_counter_2_sine_out": {
+        "interface_ports": [
+          "nco_counter_2/sine_out",
+          "conv_nco_counter_2/data_in"
+        ]
+      },
       "ps7_axi_M05_AXI": {
         "interface_ports": [
           "ps7_axi/M05_AXI",
@@ -2823,10 +2807,10 @@
           "adc1_offset/data_in"
         ]
       },
-      "dds2_offset_data_out": {
+      "shifter_nco_counter_1_data_out": {
         "interface_ports": [
-          "dds2_offset/data_out",
-          "redpitaya_converters_0/dataB_in"
+          "shifter_nco_counter_1/data_out",
+          "expander_nco_counter_1/data_in"
         ]
       },
       "nco_counter_1_sine_out": {
@@ -2841,16 +2825,10 @@
           "nco_counter_1/s00_axi"
         ]
       },
-      "adc2_offset_data_out": {
+      "conv_nco_counter_1_dataI_out": {
         "interface_ports": [
-          "adc2_offset/data_out",
-          "dataReal_to_ram_1/data2_in"
-        ]
-      },
-      "ps7_axi_M07_AXI": {
-        "interface_ports": [
-          "ps7_axi/M07_AXI",
-          "dataReal_to_ram_1/s00_axi"
+          "conv_nco_counter_1/dataI_out",
+          "shifter_nco_counter_1/data_in"
         ]
       },
       "redpitaya_converters_0_dataB_out": {
@@ -2869,6 +2847,66 @@
         "interface_ports": [
           "ps7_axi/M00_AXI",
           "dds_ampl/s00_axi"
+        ]
+      },
+      "ps7_axi_M03_AXI": {
+        "interface_ports": [
+          "ps7_axi/M03_AXI",
+          "dds1_offset/s00_axi"
+        ]
+      },
+      "dds2_offset_data_out": {
+        "interface_ports": [
+          "dds2_offset/data_out",
+          "redpitaya_converters_0/dataB_in"
+        ]
+      },
+      "dds_ampl_dataB_out": {
+        "interface_ports": [
+          "dds_ampl/dataB_out",
+          "mixer_sin_2/data1_in"
+        ]
+      },
+      "conv_nco_counter_2_dataI_out": {
+        "interface_ports": [
+          "conv_nco_counter_2/dataI_out",
+          "mixer_sin_2/data2_in"
+        ]
+      },
+      "phys_interface_0_1": {
+        "interface_ports": [
+          "phys_interface_0",
+          "redpitaya_converters_0/phys_interface"
+        ]
+      },
+      "ps7_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "ps7/FIXED_IO"
+        ]
+      },
+      "ps7_DDR": {
+        "interface_ports": [
+          "DDR",
+          "ps7/DDR"
+        ]
+      },
+      "adc1_offset_data_out": {
+        "interface_ports": [
+          "adc1_offset/data_out",
+          "dataReal_to_ram_1/data1_in"
+        ]
+      },
+      "adc2_offset_data_out": {
+        "interface_ports": [
+          "adc2_offset/data_out",
+          "dataReal_to_ram_1/data2_in"
+        ]
+      },
+      "ps7_axi_M07_AXI": {
+        "interface_ports": [
+          "ps7_axi/M07_AXI",
+          "dataReal_to_ram_1/s00_axi"
         ]
       }
     },

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="double_dds" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1603385072"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1603385072"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1603385072"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1603385072"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1603387934"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1603387934"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1603387934"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1603387934"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/double_dds_ps7_0/double_dds_ps7_0.xci" Type="IP">
         <Instance HierarchyPath="ps7"/>
@@ -73,6 +73,22 @@
       </File>
       <File Name="ip/double_dds_conv_nco_counter_1_0/double_dds_conv_nco_counter_1_0.xci" Type="IP">
         <Instance HierarchyPath="conv_nco_counter_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_dds_shifter_nco_counter_1_0/double_dds_shifter_nco_counter_1_0.xci" Type="IP">
+        <Instance HierarchyPath="shifter_nco_counter_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_dds_expander_nco_counter_1_0/double_dds_expander_nco_counter_1_0.xci" Type="IP">
+        <Instance HierarchyPath="expander_nco_counter_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

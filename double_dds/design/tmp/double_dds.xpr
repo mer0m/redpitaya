@@ -6,7 +6,7 @@
 <Project Version="7" Minor="44" Path="/home/bma/git/fpga_design/redpitaya/double_dds/design/tmp/double_dds.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ee08939960034b81bc4fe26c4873f31c"/>
+    <Option Name="Id" Val="f3bf1362577b434eaf370d42d3040910"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -65,6 +65,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_dataReal_to_ram_1_0/double_dds_dataReal_to_ram_1_0.xci">
+          <Proxy FileSetName="double_dds_dataReal_to_ram_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_ps7_0/double_dds_ps7_0.xci">
           <Proxy FileSetName="double_dds_ps7_0"/>
         </CompFileExtendedInfo>
@@ -86,6 +89,12 @@
         <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_ps7_rst_0/double_dds_ps7_rst_0.xci">
           <Proxy FileSetName="double_dds_ps7_rst_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_expander_nco_counter_1_0/double_dds_expander_nco_counter_1_0.xci">
+          <Proxy FileSetName="double_dds_expander_nco_counter_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_nco_counter_2_0/double_dds_nco_counter_2_0.xci">
+          <Proxy FileSetName="double_dds_nco_counter_2_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_conv_nco_counter_2_0/double_dds_conv_nco_counter_2_0.xci">
           <Proxy FileSetName="double_dds_conv_nco_counter_2_0"/>
         </CompFileExtendedInfo>
@@ -101,17 +110,14 @@
         <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_dds2_offset_0/double_dds_dds2_offset_0.xci">
           <Proxy FileSetName="double_dds_dds2_offset_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_adc1_offset_0/double_dds_adc1_offset_0.xci">
-          <Proxy FileSetName="double_dds_adc1_offset_0"/>
+        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_shifter_nco_counter_1_0/double_dds_shifter_nco_counter_1_0.xci">
+          <Proxy FileSetName="double_dds_shifter_nco_counter_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_adc2_offset_0/double_dds_adc2_offset_0.xci">
           <Proxy FileSetName="double_dds_adc2_offset_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_nco_counter_2_0/double_dds_nco_counter_2_0.xci">
-          <Proxy FileSetName="double_dds_nco_counter_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_dataReal_to_ram_1_0/double_dds_dataReal_to_ram_1_0.xci">
-          <Proxy FileSetName="double_dds_dataReal_to_ram_1_0"/>
+        <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_adc1_offset_0/double_dds_adc1_offset_0.xci">
+          <Proxy FileSetName="double_dds_adc1_offset_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="double_dds.bd" FileRelPathName="ip/double_dds_nco_counter_1_0/double_dds_nco_counter_1_0.xci">
           <Proxy FileSetName="double_dds_nco_counter_1_0"/>
@@ -172,6 +178,13 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
+    <FileSet Name="double_dds_dataReal_to_ram_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_dataReal_to_ram_1_0">
+      <Config>
+        <Option Name="TopModule" Val="double_dds_dataReal_to_ram_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="TOOL_VIVADO"/>
+      </Config>
+    </FileSet>
     <FileSet Name="double_dds_ps7_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_ps7_0">
       <Config>
         <Option Name="TopModule" Val="double_dds_ps7_0"/>
@@ -221,6 +234,20 @@
         <Define Name="TOOL_VIVADO"/>
       </Config>
     </FileSet>
+    <FileSet Name="double_dds_expander_nco_counter_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_expander_nco_counter_1_0">
+      <Config>
+        <Option Name="TopModule" Val="double_dds_expander_nco_counter_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="TOOL_VIVADO"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="double_dds_nco_counter_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_nco_counter_2_0">
+      <Config>
+        <Option Name="TopModule" Val="double_dds_nco_counter_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Define Name="TOOL_VIVADO"/>
+      </Config>
+    </FileSet>
     <FileSet Name="double_dds_conv_nco_counter_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_conv_nco_counter_2_0">
       <Config>
         <Option Name="TopModule" Val="double_dds_conv_nco_counter_2_0"/>
@@ -256,9 +283,9 @@
         <Define Name="TOOL_VIVADO"/>
       </Config>
     </FileSet>
-    <FileSet Name="double_dds_adc1_offset_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_adc1_offset_0">
+    <FileSet Name="double_dds_shifter_nco_counter_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_shifter_nco_counter_1_0">
       <Config>
-        <Option Name="TopModule" Val="double_dds_adc1_offset_0"/>
+        <Option Name="TopModule" Val="double_dds_shifter_nco_counter_1_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
         <Define Name="TOOL_VIVADO"/>
       </Config>
@@ -270,16 +297,9 @@
         <Define Name="TOOL_VIVADO"/>
       </Config>
     </FileSet>
-    <FileSet Name="double_dds_nco_counter_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_nco_counter_2_0">
+    <FileSet Name="double_dds_adc1_offset_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_adc1_offset_0">
       <Config>
-        <Option Name="TopModule" Val="double_dds_nco_counter_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-        <Define Name="TOOL_VIVADO"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="double_dds_dataReal_to_ram_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_dds_dataReal_to_ram_1_0">
-      <Config>
-        <Option Name="TopModule" Val="double_dds_dataReal_to_ram_1_0"/>
+        <Option Name="TopModule" Val="double_dds_adc1_offset_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
         <Define Name="TOOL_VIVADO"/>
       </Config>
@@ -320,6 +340,18 @@
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="double_dds_dataReal_to_ram_1_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_dataReal_to_ram_1_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_dataReal_to_ram_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_dataReal_to_ram_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -411,6 +443,30 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="double_dds_expander_nco_counter_1_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_expander_nco_counter_1_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_expander_nco_counter_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_expander_nco_counter_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="double_dds_nco_counter_2_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_nco_counter_2_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_nco_counter_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_nco_counter_2_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="double_dds_conv_nco_counter_2_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_conv_nco_counter_2_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_conv_nco_counter_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_conv_nco_counter_2_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
@@ -471,7 +527,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="double_dds_adc1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_adc1_offset_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_adc1_offset_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_adc1_offset_0_synth_1" IncludeInArchive="true">
+    <Run Id="double_dds_shifter_nco_counter_1_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_shifter_nco_counter_1_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_shifter_nco_counter_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_shifter_nco_counter_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -495,19 +551,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="double_dds_nco_counter_2_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_nco_counter_2_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_nco_counter_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_nco_counter_2_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="double_dds_dataReal_to_ram_1_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_dataReal_to_ram_1_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_dataReal_to_ram_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_dataReal_to_ram_1_0_synth_1" IncludeInArchive="true">
+    <Run Id="double_dds_adc1_offset_0_synth_1" Type="Ft3:Synth" SrcSet="double_dds_adc1_offset_0" Part="xc7z010clg400-1" ConstrsSet="double_dds_adc1_offset_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/double_dds_adc1_offset_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -545,6 +589,25 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="double_dds_dataReal_to_ram_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_dataReal_to_ram_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_dataReal_to_ram_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -682,6 +745,44 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="double_dds_expander_nco_counter_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_expander_nco_counter_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_expander_nco_counter_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="double_dds_nco_counter_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_nco_counter_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_nco_counter_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="double_dds_conv_nco_counter_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_conv_nco_counter_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_conv_nco_counter_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
@@ -777,7 +878,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="double_dds_adc1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_adc1_offset_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_adc1_offset_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="double_dds_shifter_nco_counter_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_shifter_nco_counter_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_shifter_nco_counter_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>
@@ -815,26 +916,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="double_dds_nco_counter_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_nco_counter_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_nco_counter_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="double_dds_dataReal_to_ram_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_dataReal_to_ram_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_dataReal_to_ram_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="double_dds_adc1_offset_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="double_dds_adc1_offset_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="double_dds_adc1_offset_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>

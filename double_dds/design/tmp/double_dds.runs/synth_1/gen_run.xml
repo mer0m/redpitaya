@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1603385102">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1603387961">
   <File Type="VDS-TIMING-PB" Name="double_dds_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="double_dds_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="double_dds_wrapper.dcp"/>
@@ -66,20 +66,22 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds_ampl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_adc2_offset_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_ps7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_dataReal_to_ram_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_conv_nco_counter_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_adc2_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_ps7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_dds_ampl_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_redpitaya_converters_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_ps7_rst_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_shifter_nco_counter_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_expander_nco_counter_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_mixer_sin_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_dds1_offset_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_adc1_offset_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_dds_nco_counter_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="double_dds_dds2_offset_0"/>
 </GenRun>

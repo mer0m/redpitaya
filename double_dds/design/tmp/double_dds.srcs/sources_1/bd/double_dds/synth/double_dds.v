@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Thu Oct 22 18:43:53 2020
+//Date        : Thu Oct 22 19:31:45 2020
 //Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 //Command     : generate_target double_dds.bd
 //Design      : double_dds
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "double_dds,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=double_dds,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=17,numNonXlnxBlks=13,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "double_dds.hwdef" *) 
+(* CORE_GENERATION_INFO = "double_dds,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=double_dds,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=29,numReposBlks=19,numNonXlnxBlks=15,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "double_dds.hwdef" *) 
 module double_dds
    (DDR_addr,
     DDR_ba,
@@ -108,6 +108,12 @@ module double_dds
   wire dds_ampl_dataB_out_DATA_EN;
   wire dds_ampl_dataB_out_DATA_EOF;
   wire dds_ampl_dataB_out_DATA_RST;
+  wire [15:0]expander_nco_counter_1_data_out_DATA;
+  wire expander_nco_counter_1_data_out_DATA_CLK;
+  wire expander_nco_counter_1_data_out_DATA_EN;
+  wire expander_nco_counter_1_data_out_DATA_EOF;
+  wire expander_nco_counter_1_data_out_DATA_RST;
+  wire expander_nco_counter_1_data_out_DATA_SOF;
   wire [13:0]mixer_sin_1_data_out_DATA;
   wire mixer_sin_1_data_out_DATA_CLK;
   wire mixer_sin_1_data_out_DATA_EN;
@@ -362,6 +368,11 @@ module double_dds
   wire redpitaya_converters_0_dataB_out_DATA_EN;
   wire redpitaya_converters_0_dataB_out_DATA_RST;
   wire redpitaya_converters_0_rst_o;
+  wire [0:0]shifter_nco_counter_1_data_out_DATA;
+  wire shifter_nco_counter_1_data_out_DATA_CLK;
+  wire shifter_nco_counter_1_data_out_DATA_EN;
+  wire shifter_nco_counter_1_data_out_DATA_EOF;
+  wire shifter_nco_counter_1_data_out_DATA_RST;
 
   assign phys_interface_0_1_ADC_A = phys_interface_0_adc_a[13:0];
   assign phys_interface_0_1_ADC_B = phys_interface_0_adc_b[13:0];
@@ -581,6 +592,19 @@ module double_dds
         .s00_axi_wready(ps7_axi_M00_AXI_WREADY),
         .s00_axi_wstrb(ps7_axi_M00_AXI_WSTRB),
         .s00_axi_wvalid(ps7_axi_M00_AXI_WVALID));
+  double_dds_expander_nco_counter_1_0 expander_nco_counter_1
+       (.data_clk_i(shifter_nco_counter_1_data_out_DATA_CLK),
+        .data_clk_o(expander_nco_counter_1_data_out_DATA_CLK),
+        .data_en_i(shifter_nco_counter_1_data_out_DATA_EN),
+        .data_en_o(expander_nco_counter_1_data_out_DATA_EN),
+        .data_eof_i(shifter_nco_counter_1_data_out_DATA_EOF),
+        .data_eof_o(expander_nco_counter_1_data_out_DATA_EOF),
+        .data_i(shifter_nco_counter_1_data_out_DATA),
+        .data_o(expander_nco_counter_1_data_out_DATA),
+        .data_rst_i(shifter_nco_counter_1_data_out_DATA_RST),
+        .data_rst_o(expander_nco_counter_1_data_out_DATA_RST),
+        .data_sof_i(1'b0),
+        .data_sof_o(expander_nco_counter_1_data_out_DATA_SOF));
   double_dds_mixer_sin_1_0 mixer_sin_1
        (.data1_clk_i(dds_ampl_dataA_out_DATA_CLK),
         .data1_en_i(dds_ampl_dataA_out_DATA_EN),
@@ -588,12 +612,12 @@ module double_dds
         .data1_i(dds_ampl_dataA_out_DATA),
         .data1_rst_i(dds_ampl_dataA_out_DATA_RST),
         .data1_sof_i(1'b0),
-        .data2_clk_i(conv_nco_counter_1_dataI_out_DATA_CLK),
-        .data2_en_i(conv_nco_counter_1_dataI_out_DATA_EN),
-        .data2_eof_i(conv_nco_counter_1_dataI_out_DATA_EOF),
-        .data2_i(conv_nco_counter_1_dataI_out_DATA),
-        .data2_rst_i(conv_nco_counter_1_dataI_out_DATA_RST),
-        .data2_sof_i(1'b0),
+        .data2_clk_i(expander_nco_counter_1_data_out_DATA_CLK),
+        .data2_en_i(expander_nco_counter_1_data_out_DATA_EN),
+        .data2_eof_i(expander_nco_counter_1_data_out_DATA_EOF),
+        .data2_i(expander_nco_counter_1_data_out_DATA),
+        .data2_rst_i(expander_nco_counter_1_data_out_DATA_RST),
+        .data2_sof_i(expander_nco_counter_1_data_out_DATA_SOF),
         .data_clk_o(mixer_sin_1_data_out_DATA_CLK),
         .data_en_o(mixer_sin_1_data_out_DATA_EN),
         .data_o(mixer_sin_1_data_out_DATA),
@@ -1008,6 +1032,17 @@ module double_dds
         .data_b_o(redpitaya_converters_0_dataB_out_DATA),
         .data_b_rst_o(redpitaya_converters_0_dataB_out_DATA_RST),
         .rst_o(redpitaya_converters_0_rst_o));
+  double_dds_shifter_nco_counter_1_0 shifter_nco_counter_1
+       (.data_clk_i(conv_nco_counter_1_dataI_out_DATA_CLK),
+        .data_clk_o(shifter_nco_counter_1_data_out_DATA_CLK),
+        .data_en_i(conv_nco_counter_1_dataI_out_DATA_EN),
+        .data_en_o(shifter_nco_counter_1_data_out_DATA_EN),
+        .data_eof_i(conv_nco_counter_1_dataI_out_DATA_EOF),
+        .data_eof_o(shifter_nco_counter_1_data_out_DATA_EOF),
+        .data_i(conv_nco_counter_1_dataI_out_DATA),
+        .data_o(shifter_nco_counter_1_data_out_DATA),
+        .data_rst_i(conv_nco_counter_1_dataI_out_DATA_RST),
+        .data_rst_o(shifter_nco_counter_1_data_out_DATA_RST));
 endmodule
 
 module double_dds_ps7_axi_0

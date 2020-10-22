@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Oct 22 19:02:31 2020
+| Date         : Thu Oct 22 19:51:49 2020
 | Host         : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 | Command      : report_utilization -file double_dds_wrapper_utilization_synth.rpt -pb double_dds_wrapper_utilization_synth.pb
 | Design       : double_dds_wrapper
@@ -158,6 +158,7 @@ Table of Contents
 |               Ref Name              | Used |
 +-------------------------------------+------+
 | double_dds_xbar_0                   |    1 |
+| double_dds_shifter_nco_counter_1_0  |    1 |
 | double_dds_redpitaya_converters_0_0 |    1 |
 | double_dds_ps7_rst_0                |    1 |
 | double_dds_ps7_0                    |    1 |
@@ -165,6 +166,7 @@ Table of Contents
 | double_dds_nco_counter_1_0          |    1 |
 | double_dds_mixer_sin_2_0            |    1 |
 | double_dds_mixer_sin_1_0            |    1 |
+| double_dds_expander_nco_counter_1_0 |    1 |
 | double_dds_dds_ampl_0               |    1 |
 | double_dds_dds2_offset_0            |    1 |
 | double_dds_dds1_offset_0            |    1 |

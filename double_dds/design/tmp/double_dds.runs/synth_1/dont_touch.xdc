@@ -37,6 +37,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_nco_
 # IP: bd/double_dds/ip/double_dds_conv_nco_counter_1_0/double_dds_conv_nco_counter_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_conv_nco_counter_1_0 || ORIG_REF_NAME==double_dds_conv_nco_counter_1_0} -quiet] -quiet
 
+# IP: bd/double_dds/ip/double_dds_shifter_nco_counter_1_0/double_dds_shifter_nco_counter_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_shifter_nco_counter_1_0 || ORIG_REF_NAME==double_dds_shifter_nco_counter_1_0} -quiet] -quiet
+
+# IP: bd/double_dds/ip/double_dds_expander_nco_counter_1_0/double_dds_expander_nco_counter_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_expander_nco_counter_1_0 || ORIG_REF_NAME==double_dds_expander_nco_counter_1_0} -quiet] -quiet
+
 # IP: bd/double_dds/ip/double_dds_nco_counter_2_0/double_dds_nco_counter_2_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_dds_nco_counter_2_0 || ORIG_REF_NAME==double_dds_nco_counter_2_0} -quiet] -quiet
 
