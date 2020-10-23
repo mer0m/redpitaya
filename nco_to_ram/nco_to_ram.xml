@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="nco_to_ram" version="1.0">
+	<ips>
+		<ip name ="add_constReal" >
+			<instance name="dds1_offset" id="0"
+				base_addr="0x43C30000" addr_size="0xffff" />
+			<instance name="dds2_offset" id="1"
+				base_addr="0x43C40000" addr_size="0xffff" />
+		</ip>
+		<ip name ="axi_to_dac" >
+			<instance name="dds_ampl" id="0"
+				base_addr="0x43C00000" addr_size="0xffff" />
+		</ip>
+		<ip name ="dataReal_to_ram" >
+			<instance name="data2ram" id="0"
+				base_addr="0x43C50000" addr_size="0xffff" />
+		</ip>
+		<ip name ="nco_counter" >
+			<instance name="nco_counter_1" id="0"
+				base_addr="0x43C10000" addr_size="0xffff" />
+			<instance name="nco_counter_2" id="1"
+				base_addr="0x43C20000" addr_size="0xffff" />
+		</ip>
+	</ips>
+</project>
