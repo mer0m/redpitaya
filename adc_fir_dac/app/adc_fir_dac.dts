@@ -1,0 +1,39 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "xlnx,zynq-7000";
+
+	fragment0 {
+		target = <&fpga_full>;
+		#address-cells = <1>;
+		#size-cells = <1>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <1>;
+
+			firmware-name = "adc_fir_dac_wrapper.bit.bin";
+
+			data1: data1@43C10000{
+				compatible = "ggm,dataToRam";
+				reg = <0x43C10000 0xffff>;
+			};
+
+			data2: data2@43C30000{
+				compatible = "ggm,dataToRam";
+				reg = <0x43C30000 0xffff>;
+			};
+
+			fir1: fir1@43C00000{
+				compatible = "ggm,fir";
+				reg = <0x43C00000 0xffff>;
+			};
+
+			fir2: fir2@43C20000{
+				compatible = "ggm,fir";
+				reg = <0x43C20000 0xffff>;
+			};
+
+		};
+	};
+};
