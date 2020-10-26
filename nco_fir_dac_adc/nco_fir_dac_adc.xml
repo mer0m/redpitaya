@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="nco_fir_dac_adc" version="1.0">
+	<ips>
+		<ip name ="dataReal_to_ram" >
+			<instance name="data1" id="0"
+				base_addr="0x43C40000" addr_size="0xffff" />
+			<instance name="data2" id="1"
+				base_addr="0x43C50000" addr_size="0xffff" />
+		</ip>
+		<ip name ="firReal" >
+			<instance name="fir1" id="0"
+				base_addr="0x43C10000" addr_size="0xffff" />
+			<instance name="fir2" id="1"
+				base_addr="0x43C30000" addr_size="0xffff" />
+		</ip>
+		<ip name ="nco_counter" >
+			<instance name="nco1" id="0"
+				base_addr="0x43C00000" addr_size="0xffff" />
+			<instance name="nco2" id="1"
+				base_addr="0x43C20000" addr_size="0xffff" />
+		</ip>
+	</ips>
+</project>
