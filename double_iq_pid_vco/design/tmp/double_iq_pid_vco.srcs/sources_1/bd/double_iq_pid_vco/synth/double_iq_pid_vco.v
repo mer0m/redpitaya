@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Sat May 30 19:52:18 2020
+//Date        : Fri Jan 29 17:00:06 2021
 //Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 //Command     : generate_target double_iq_pid_vco.bd
 //Design      : double_iq_pid_vco
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "double_iq_pid_vco,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=double_iq_pid_vco,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=73,numReposBlks=48,numNonXlnxBlks=41,numHierBlks=25,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "double_iq_pid_vco.hwdef" *) 
+(* CORE_GENERATION_INFO = "double_iq_pid_vco,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=double_iq_pid_vco,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=75,numReposBlks=50,numNonXlnxBlks=43,numHierBlks=25,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "double_iq_pid_vco.hwdef" *) 
 module double_iq_pid_vco
    (DDR_addr,
     DDR_ba,
@@ -150,30 +150,40 @@ module double_iq_pid_vco
   wire [15:0]demod2_nco_sine_out_DATA_I;
   wire [15:0]demod2_nco_sine_out_DATA_Q;
   wire demod2_nco_sine_out_DATA_RST;
-  wire [39:0]dupplReal_0_data1_out_DATA;
-  wire dupplReal_0_data1_out_DATA_CLK;
-  wire dupplReal_0_data1_out_DATA_EN;
-  wire dupplReal_0_data1_out_DATA_RST;
-  wire [39:0]dupplReal_0_data2_out_DATA;
-  wire dupplReal_0_data2_out_DATA_CLK;
-  wire dupplReal_0_data2_out_DATA_EN;
-  wire dupplReal_0_data2_out_DATA_RST;
-  wire [39:0]dupplReal_0_data3_out_DATA;
-  wire dupplReal_0_data3_out_DATA_CLK;
-  wire dupplReal_0_data3_out_DATA_EN;
-  wire dupplReal_0_data3_out_DATA_RST;
-  wire [39:0]dupplReal_1_data1_out_DATA;
-  wire dupplReal_1_data1_out_DATA_CLK;
-  wire dupplReal_1_data1_out_DATA_EN;
-  wire dupplReal_1_data1_out_DATA_RST;
-  wire [39:0]dupplReal_1_data2_out_DATA;
-  wire dupplReal_1_data2_out_DATA_CLK;
-  wire dupplReal_1_data2_out_DATA_EN;
-  wire dupplReal_1_data2_out_DATA_RST;
-  wire [39:0]dupplReal_1_data3_out_DATA;
-  wire dupplReal_1_data3_out_DATA_CLK;
-  wire dupplReal_1_data3_out_DATA_EN;
-  wire dupplReal_1_data3_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_1_data1_out_DATA;
+  wire dupplReal_1_to_2_1_data1_out_DATA_CLK;
+  wire dupplReal_1_to_2_1_data1_out_DATA_EN;
+  wire dupplReal_1_to_2_1_data1_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_1_data2_out_DATA;
+  wire dupplReal_1_to_2_1_data2_out_DATA_CLK;
+  wire dupplReal_1_to_2_1_data2_out_DATA_EN;
+  wire dupplReal_1_to_2_1_data2_out_DATA_EOF;
+  wire dupplReal_1_to_2_1_data2_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_2_data1_out_DATA;
+  wire dupplReal_1_to_2_2_data1_out_DATA_CLK;
+  wire dupplReal_1_to_2_2_data1_out_DATA_EN;
+  wire dupplReal_1_to_2_2_data1_out_DATA_EOF;
+  wire dupplReal_1_to_2_2_data1_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_2_data2_out_DATA;
+  wire dupplReal_1_to_2_2_data2_out_DATA_CLK;
+  wire dupplReal_1_to_2_2_data2_out_DATA_EN;
+  wire dupplReal_1_to_2_2_data2_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_3_data1_out_DATA;
+  wire dupplReal_1_to_2_3_data1_out_DATA_CLK;
+  wire dupplReal_1_to_2_3_data1_out_DATA_EN;
+  wire dupplReal_1_to_2_3_data1_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_3_data2_out_DATA;
+  wire dupplReal_1_to_2_3_data2_out_DATA_CLK;
+  wire dupplReal_1_to_2_3_data2_out_DATA_EN;
+  wire dupplReal_1_to_2_3_data2_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_4_data1_out_DATA;
+  wire dupplReal_1_to_2_4_data1_out_DATA_CLK;
+  wire dupplReal_1_to_2_4_data1_out_DATA_EN;
+  wire dupplReal_1_to_2_4_data1_out_DATA_RST;
+  wire [13:0]dupplReal_1_to_2_4_data2_out_DATA;
+  wire dupplReal_1_to_2_4_data2_out_DATA_CLK;
+  wire dupplReal_1_to_2_4_data2_out_DATA_EN;
+  wire dupplReal_1_to_2_4_data2_out_DATA_RST;
   wire [18:0]expanderReal_2_data_out_DATA;
   wire expanderReal_2_data_out_DATA_CLK;
   wire expanderReal_2_data_out_DATA_EN;
@@ -192,19 +202,19 @@ module double_iq_pid_vco
   wire firReal_1_data_out_DATA_CLK;
   wire firReal_1_data_out_DATA_EN;
   wire firReal_1_data_out_DATA_RST;
-  wire [63:0]meanReal_0_data_out_DATA;
+  wire [15:0]meanReal_0_data_out_DATA;
   wire meanReal_0_data_out_DATA_CLK;
   wire meanReal_0_data_out_DATA_EN;
   wire meanReal_0_data_out_DATA_RST;
-  wire [63:0]meanReal_1_data_out_DATA;
+  wire [15:0]meanReal_1_data_out_DATA;
   wire meanReal_1_data_out_DATA_CLK;
   wire meanReal_1_data_out_DATA_EN;
   wire meanReal_1_data_out_DATA_RST;
-  wire [63:0]meanReal_2_data_out_DATA;
+  wire [15:0]meanReal_2_data_out_DATA;
   wire meanReal_2_data_out_DATA_CLK;
   wire meanReal_2_data_out_DATA_EN;
   wire meanReal_2_data_out_DATA_RST;
-  wire [63:0]meanReal_3_data_out_DATA;
+  wire [15:0]meanReal_3_data_out_DATA;
   wire meanReal_3_data_out_DATA_CLK;
   wire meanReal_3_data_out_DATA_EN;
   wire meanReal_3_data_out_DATA_RST;
@@ -717,10 +727,12 @@ module double_iq_pid_vco
   wire [13:0]shifterReal_dyn_0_data_out_DATA;
   wire shifterReal_dyn_0_data_out_DATA_CLK;
   wire shifterReal_dyn_0_data_out_DATA_EN;
+  wire shifterReal_dyn_0_data_out_DATA_EOF;
   wire shifterReal_dyn_0_data_out_DATA_RST;
   wire [13:0]shifterReal_dyn_1_data_out_DATA;
   wire shifterReal_dyn_1_data_out_DATA_CLK;
   wire shifterReal_dyn_1_data_out_DATA_EN;
+  wire shifterReal_dyn_1_data_out_DATA_EOF;
   wire shifterReal_dyn_1_data_out_DATA_RST;
 
   assign phys_interface_0_1_ADC_A = phys_interface_0_adc_a[13:0];
@@ -937,10 +949,10 @@ module double_iq_pid_vco
         .dds_en_o(dds1_nco_sine_out_DATA_EN),
         .dds_rst_o(dds1_nco_sine_out_DATA_RST),
         .dds_sin_o(dds1_nco_sine_out_DATA_Q),
-        .pinc_clk_i(1'b0),
-        .pinc_en_i(1'b0),
-        .pinc_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .pinc_rst_i(1'b0),
+        .pinc_clk_i(dds1_f0_data_out_DATA_CLK),
+        .pinc_en_i(dds1_f0_data_out_DATA_EN),
+        .pinc_i(dds1_f0_data_out_DATA),
+        .pinc_rst_i(dds1_f0_data_out_DATA_RST),
         .poff_clk_i(1'b0),
         .poff_en_i(1'b0),
         .poff_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -1034,10 +1046,10 @@ module double_iq_pid_vco
         .dds_en_o(dds2_nco_sine_out_DATA_EN),
         .dds_rst_o(dds2_nco_sine_out_DATA_RST),
         .dds_sin_o(dds2_nco_sine_out_DATA_Q),
-        .pinc_clk_i(1'b0),
-        .pinc_en_i(1'b0),
-        .pinc_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .pinc_rst_i(1'b0),
+        .pinc_clk_i(dds2_f0_data_out_DATA_CLK),
+        .pinc_en_i(dds2_f0_data_out_DATA_EN),
+        .pinc_i(dds2_f0_data_out_DATA),
+        .pinc_rst_i(dds2_f0_data_out_DATA_RST),
         .poff_clk_i(1'b0),
         .poff_en_i(1'b0),
         .poff_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -1167,10 +1179,10 @@ module double_iq_pid_vco
         .dds_en_o(demod1_nco_sine_out_DATA_EN),
         .dds_rst_o(demod1_nco_sine_out_DATA_RST),
         .dds_sin_o(demod1_nco_sine_out_DATA_Q),
-        .pinc_clk_i(dupplReal_0_data1_out_DATA_CLK),
-        .pinc_en_i(dupplReal_0_data1_out_DATA_EN),
-        .pinc_i(dupplReal_0_data1_out_DATA),
-        .pinc_rst_i(dupplReal_0_data1_out_DATA_RST),
+        .pinc_clk_i(1'b0),
+        .pinc_en_i(1'b0),
+        .pinc_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .pinc_rst_i(1'b0),
         .poff_clk_i(1'b0),
         .poff_en_i(1'b0),
         .poff_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -1205,10 +1217,10 @@ module double_iq_pid_vco
         .dds_en_o(demod2_nco_sine_out_DATA_EN),
         .dds_rst_o(demod2_nco_sine_out_DATA_RST),
         .dds_sin_o(demod2_nco_sine_out_DATA_Q),
-        .pinc_clk_i(dupplReal_1_data1_out_DATA_CLK),
-        .pinc_en_i(dupplReal_1_data1_out_DATA_EN),
-        .pinc_i(dupplReal_1_data1_out_DATA),
-        .pinc_rst_i(dupplReal_1_data1_out_DATA_RST),
+        .pinc_clk_i(1'b0),
+        .pinc_en_i(1'b0),
+        .pinc_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .pinc_rst_i(1'b0),
         .poff_clk_i(1'b0),
         .poff_en_i(1'b0),
         .poff_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -1237,44 +1249,64 @@ module double_iq_pid_vco
         .s00_axi_wstrb(ps7_axi_M13_AXI_WSTRB),
         .s00_axi_wvalid(ps7_axi_M13_AXI_WVALID),
         .sync_i(1'b0));
-  double_iq_pid_vco_dupplReal_0_0 dupplReal_0
-       (.data1_clk_o(dupplReal_0_data1_out_DATA_CLK),
-        .data1_en_o(dupplReal_0_data1_out_DATA_EN),
-        .data1_o(dupplReal_0_data1_out_DATA),
-        .data1_rst_o(dupplReal_0_data1_out_DATA_RST),
-        .data2_clk_o(dupplReal_0_data2_out_DATA_CLK),
-        .data2_en_o(dupplReal_0_data2_out_DATA_EN),
-        .data2_o(dupplReal_0_data2_out_DATA),
-        .data2_rst_o(dupplReal_0_data2_out_DATA_RST),
-        .data3_clk_o(dupplReal_0_data3_out_DATA_CLK),
-        .data3_en_o(dupplReal_0_data3_out_DATA_EN),
-        .data3_o(dupplReal_0_data3_out_DATA),
-        .data3_rst_o(dupplReal_0_data3_out_DATA_RST),
-        .data_clk_i(dds1_f0_data_out_DATA_CLK),
-        .data_en_i(dds1_f0_data_out_DATA_EN),
-        .data_eof_i(1'b0),
-        .data_i(dds1_f0_data_out_DATA),
-        .data_rst_i(dds1_f0_data_out_DATA_RST),
-        .data_sof_i(1'b0));
-  double_iq_pid_vco_dupplReal_0_1 dupplReal_1
-       (.data1_clk_o(dupplReal_1_data1_out_DATA_CLK),
-        .data1_en_o(dupplReal_1_data1_out_DATA_EN),
-        .data1_o(dupplReal_1_data1_out_DATA),
-        .data1_rst_o(dupplReal_1_data1_out_DATA_RST),
-        .data2_clk_o(dupplReal_1_data2_out_DATA_CLK),
-        .data2_en_o(dupplReal_1_data2_out_DATA_EN),
-        .data2_o(dupplReal_1_data2_out_DATA),
-        .data2_rst_o(dupplReal_1_data2_out_DATA_RST),
-        .data3_clk_o(dupplReal_1_data3_out_DATA_CLK),
-        .data3_en_o(dupplReal_1_data3_out_DATA_EN),
-        .data3_o(dupplReal_1_data3_out_DATA),
-        .data3_rst_o(dupplReal_1_data3_out_DATA_RST),
-        .data_clk_i(dds2_f0_data_out_DATA_CLK),
-        .data_en_i(dds2_f0_data_out_DATA_EN),
-        .data_eof_i(1'b0),
-        .data_i(dds2_f0_data_out_DATA),
-        .data_rst_i(dds2_f0_data_out_DATA_RST),
-        .data_sof_i(1'b0));
+  double_iq_pid_vco_dupplReal_1_to_2_1_0 dupplReal_1_to_2_1
+       (.data1_clk_o(dupplReal_1_to_2_1_data1_out_DATA_CLK),
+        .data1_en_o(dupplReal_1_to_2_1_data1_out_DATA_EN),
+        .data1_o(dupplReal_1_to_2_1_data1_out_DATA),
+        .data1_rst_o(dupplReal_1_to_2_1_data1_out_DATA_RST),
+        .data2_clk_o(dupplReal_1_to_2_1_data2_out_DATA_CLK),
+        .data2_en_o(dupplReal_1_to_2_1_data2_out_DATA_EN),
+        .data2_eof_o(dupplReal_1_to_2_1_data2_out_DATA_EOF),
+        .data2_o(dupplReal_1_to_2_1_data2_out_DATA),
+        .data2_rst_o(dupplReal_1_to_2_1_data2_out_DATA_RST),
+        .data_clk_i(shifterReal_dyn_0_data_out_DATA_CLK),
+        .data_en_i(shifterReal_dyn_0_data_out_DATA_EN),
+        .data_eof_i(shifterReal_dyn_0_data_out_DATA_EOF),
+        .data_i(shifterReal_dyn_0_data_out_DATA),
+        .data_rst_i(shifterReal_dyn_0_data_out_DATA_RST));
+  double_iq_pid_vco_dupplReal_1_to_2_2_0 dupplReal_1_to_2_2
+       (.data1_clk_o(dupplReal_1_to_2_2_data1_out_DATA_CLK),
+        .data1_en_o(dupplReal_1_to_2_2_data1_out_DATA_EN),
+        .data1_eof_o(dupplReal_1_to_2_2_data1_out_DATA_EOF),
+        .data1_o(dupplReal_1_to_2_2_data1_out_DATA),
+        .data1_rst_o(dupplReal_1_to_2_2_data1_out_DATA_RST),
+        .data2_clk_o(dupplReal_1_to_2_2_data2_out_DATA_CLK),
+        .data2_en_o(dupplReal_1_to_2_2_data2_out_DATA_EN),
+        .data2_o(dupplReal_1_to_2_2_data2_out_DATA),
+        .data2_rst_o(dupplReal_1_to_2_2_data2_out_DATA_RST),
+        .data_clk_i(shifterReal_dyn_1_data_out_DATA_CLK),
+        .data_en_i(shifterReal_dyn_1_data_out_DATA_EN),
+        .data_eof_i(shifterReal_dyn_1_data_out_DATA_EOF),
+        .data_i(shifterReal_dyn_1_data_out_DATA),
+        .data_rst_i(shifterReal_dyn_1_data_out_DATA_RST));
+  double_iq_pid_vco_dupplReal_1_to_2_3_0 dupplReal_1_to_2_3
+       (.data1_clk_o(dupplReal_1_to_2_3_data1_out_DATA_CLK),
+        .data1_en_o(dupplReal_1_to_2_3_data1_out_DATA_EN),
+        .data1_o(dupplReal_1_to_2_3_data1_out_DATA),
+        .data1_rst_o(dupplReal_1_to_2_3_data1_out_DATA_RST),
+        .data2_clk_o(dupplReal_1_to_2_3_data2_out_DATA_CLK),
+        .data2_en_o(dupplReal_1_to_2_3_data2_out_DATA_EN),
+        .data2_o(dupplReal_1_to_2_3_data2_out_DATA),
+        .data2_rst_o(dupplReal_1_to_2_3_data2_out_DATA_RST),
+        .data_clk_i(dupplReal_1_to_2_2_data1_out_DATA_CLK),
+        .data_en_i(dupplReal_1_to_2_2_data1_out_DATA_EN),
+        .data_eof_i(dupplReal_1_to_2_2_data1_out_DATA_EOF),
+        .data_i(dupplReal_1_to_2_2_data1_out_DATA),
+        .data_rst_i(dupplReal_1_to_2_2_data1_out_DATA_RST));
+  double_iq_pid_vco_dupplReal_1_to_2_4_0 dupplReal_1_to_2_4
+       (.data1_clk_o(dupplReal_1_to_2_4_data1_out_DATA_CLK),
+        .data1_en_o(dupplReal_1_to_2_4_data1_out_DATA_EN),
+        .data1_o(dupplReal_1_to_2_4_data1_out_DATA),
+        .data1_rst_o(dupplReal_1_to_2_4_data1_out_DATA_RST),
+        .data2_clk_o(dupplReal_1_to_2_4_data2_out_DATA_CLK),
+        .data2_en_o(dupplReal_1_to_2_4_data2_out_DATA_EN),
+        .data2_o(dupplReal_1_to_2_4_data2_out_DATA),
+        .data2_rst_o(dupplReal_1_to_2_4_data2_out_DATA_RST),
+        .data_clk_i(dupplReal_1_to_2_1_data2_out_DATA_CLK),
+        .data_en_i(dupplReal_1_to_2_1_data2_out_DATA_EN),
+        .data_eof_i(dupplReal_1_to_2_1_data2_out_DATA_EOF),
+        .data_i(dupplReal_1_to_2_1_data2_out_DATA),
+        .data_rst_i(dupplReal_1_to_2_1_data2_out_DATA_RST));
   double_iq_pid_vco_expanderReal_2_0 expanderReal_2
        (.data_clk_i(mixer_sin_2_data_out_DATA_CLK),
         .data_clk_o(expanderReal_2_data_out_DATA_CLK),
@@ -1354,40 +1386,40 @@ module double_iq_pid_vco
         .s00_axi_wready(ps7_axi_M15_AXI_WREADY),
         .s00_axi_wvalid(ps7_axi_M15_AXI_WVALID));
   double_iq_pid_vco_meanReal_0_0 meanReal_0
-       (.data_clk_i(dupplReal_0_data2_out_DATA_CLK),
+       (.data_clk_i(dupplReal_1_to_2_4_data1_out_DATA_CLK),
         .data_clk_o(meanReal_0_data_out_DATA_CLK),
-        .data_en_i(dupplReal_0_data2_out_DATA_EN),
+        .data_en_i(dupplReal_1_to_2_4_data1_out_DATA_EN),
         .data_en_o(meanReal_0_data_out_DATA_EN),
-        .data_i(dupplReal_0_data2_out_DATA),
+        .data_i(dupplReal_1_to_2_4_data1_out_DATA),
         .data_o(meanReal_0_data_out_DATA),
-        .data_rst_i(dupplReal_0_data2_out_DATA_RST),
+        .data_rst_i(dupplReal_1_to_2_4_data1_out_DATA_RST),
         .data_rst_o(meanReal_0_data_out_DATA_RST));
   double_iq_pid_vco_meanReal_1_0 meanReal_1
-       (.data_clk_i(dupplReal_1_data2_out_DATA_CLK),
+       (.data_clk_i(dupplReal_1_to_2_3_data1_out_DATA_CLK),
         .data_clk_o(meanReal_1_data_out_DATA_CLK),
-        .data_en_i(dupplReal_1_data2_out_DATA_EN),
+        .data_en_i(dupplReal_1_to_2_3_data1_out_DATA_EN),
         .data_en_o(meanReal_1_data_out_DATA_EN),
-        .data_i(dupplReal_1_data2_out_DATA),
+        .data_i(dupplReal_1_to_2_3_data1_out_DATA),
         .data_o(meanReal_1_data_out_DATA),
-        .data_rst_i(dupplReal_1_data2_out_DATA_RST),
+        .data_rst_i(dupplReal_1_to_2_3_data1_out_DATA_RST),
         .data_rst_o(meanReal_1_data_out_DATA_RST));
   double_iq_pid_vco_meanReal_2_0 meanReal_2
-       (.data_clk_i(dupplReal_0_data3_out_DATA_CLK),
+       (.data_clk_i(dupplReal_1_to_2_4_data2_out_DATA_CLK),
         .data_clk_o(meanReal_2_data_out_DATA_CLK),
-        .data_en_i(dupplReal_0_data3_out_DATA_EN),
+        .data_en_i(dupplReal_1_to_2_4_data2_out_DATA_EN),
         .data_en_o(meanReal_2_data_out_DATA_EN),
-        .data_i(dupplReal_0_data3_out_DATA),
+        .data_i(dupplReal_1_to_2_4_data2_out_DATA),
         .data_o(meanReal_2_data_out_DATA),
-        .data_rst_i(dupplReal_0_data3_out_DATA_RST),
+        .data_rst_i(dupplReal_1_to_2_4_data2_out_DATA_RST),
         .data_rst_o(meanReal_2_data_out_DATA_RST));
   double_iq_pid_vco_meanReal_3_0 meanReal_3
-       (.data_clk_i(dupplReal_1_data3_out_DATA_CLK),
+       (.data_clk_i(dupplReal_1_to_2_3_data2_out_DATA_CLK),
         .data_clk_o(meanReal_3_data_out_DATA_CLK),
-        .data_en_i(dupplReal_1_data3_out_DATA_EN),
+        .data_en_i(dupplReal_1_to_2_3_data2_out_DATA_EN),
         .data_en_o(meanReal_3_data_out_DATA_EN),
-        .data_i(dupplReal_1_data3_out_DATA),
+        .data_i(dupplReal_1_to_2_3_data2_out_DATA),
         .data_o(meanReal_3_data_out_DATA),
-        .data_rst_i(dupplReal_1_data3_out_DATA_RST),
+        .data_rst_i(dupplReal_1_to_2_3_data2_out_DATA_RST),
         .data_rst_o(meanReal_3_data_out_DATA_RST));
   double_iq_pid_vco_mixer_sin_0_0 mixer_sin_0
        (.data_clk_i(adc1_offset_data_out_DATA_CLK),
@@ -1488,13 +1520,13 @@ module double_iq_pid_vco
         .nco_q_i(dds2_nco_sine_out_DATA_Q),
         .nco_rst_i(dds2_nco_sine_out_DATA_RST));
   double_iq_pid_vco_pidv3_axi_0_0 pidv3_axi_0
-       (.data_clk_i(shifterReal_dyn_0_data_out_DATA_CLK),
+       (.data_clk_i(dupplReal_1_to_2_1_data1_out_DATA_CLK),
         .data_clk_o(pidv3_axi_0_data_out_DATA_CLK),
-        .data_en_i(shifterReal_dyn_0_data_out_DATA_EN),
+        .data_en_i(dupplReal_1_to_2_1_data1_out_DATA_EN),
         .data_en_o(pidv3_axi_0_data_out_DATA_EN),
-        .data_i(shifterReal_dyn_0_data_out_DATA),
+        .data_i(dupplReal_1_to_2_1_data1_out_DATA),
         .data_o(pidv3_axi_0_data_out_DATA),
-        .data_rst_i(shifterReal_dyn_0_data_out_DATA_RST),
+        .data_rst_i(dupplReal_1_to_2_1_data1_out_DATA_RST),
         .data_rst_o(pidv3_axi_0_data_out_DATA_RST),
         .int_rst_i(1'b0),
         .kd_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -1524,13 +1556,13 @@ module double_iq_pid_vco
         .setpoint_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .sign_i(1'b0));
   double_iq_pid_vco_pidv3_axi_1_0 pidv3_axi_1
-       (.data_clk_i(shifterReal_dyn_1_data_out_DATA_CLK),
+       (.data_clk_i(dupplReal_1_to_2_2_data2_out_DATA_CLK),
         .data_clk_o(pidv3_axi_1_data_out_DATA_CLK),
-        .data_en_i(shifterReal_dyn_1_data_out_DATA_EN),
+        .data_en_i(dupplReal_1_to_2_2_data2_out_DATA_EN),
         .data_en_o(pidv3_axi_1_data_out_DATA_EN),
-        .data_i(shifterReal_dyn_1_data_out_DATA),
+        .data_i(dupplReal_1_to_2_2_data2_out_DATA),
         .data_o(pidv3_axi_1_data_out_DATA),
-        .data_rst_i(shifterReal_dyn_1_data_out_DATA_RST),
+        .data_rst_i(dupplReal_1_to_2_2_data2_out_DATA_RST),
         .data_rst_o(pidv3_axi_1_data_out_DATA_RST),
         .int_rst_i(1'b0),
         .kd_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
@@ -2148,6 +2180,7 @@ module double_iq_pid_vco
         .data_en_i(firReal_0_data_out_DATA_EN),
         .data_en_o(shifterReal_dyn_0_data_out_DATA_EN),
         .data_eof_i(1'b0),
+        .data_eof_o(shifterReal_dyn_0_data_out_DATA_EOF),
         .data_i(firReal_0_data_out_DATA),
         .data_o(shifterReal_dyn_0_data_out_DATA),
         .data_rst_i(firReal_0_data_out_DATA_RST),
@@ -2180,6 +2213,7 @@ module double_iq_pid_vco
         .data_en_i(firReal_1_data_out_DATA_EN),
         .data_en_o(shifterReal_dyn_1_data_out_DATA_EN),
         .data_eof_i(1'b0),
+        .data_eof_o(shifterReal_dyn_1_data_out_DATA_EOF),
         .data_i(firReal_1_data_out_DATA),
         .data_o(shifterReal_dyn_1_data_out_DATA),
         .data_rst_i(firReal_1_data_out_DATA_RST),

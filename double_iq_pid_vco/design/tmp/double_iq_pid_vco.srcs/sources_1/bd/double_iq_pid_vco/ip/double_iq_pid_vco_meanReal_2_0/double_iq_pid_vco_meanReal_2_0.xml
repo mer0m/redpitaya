@@ -99,11 +99,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 30 10:10:09 UTC 2020</spirit:value>
+            <spirit:value>Fri Jan 29 16:00:35 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:38e4e9e5</spirit:value>
+            <spirit:value>9:250126f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -114,7 +114,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:38e4e9e5</spirit:value>
+            <spirit:value>9:250126f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -130,11 +130,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 30 17:52:20 UTC 2020</spirit:value>
+            <spirit:value>Fri Jan 29 16:00:35 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:38e4e9e5</spirit:value>
+            <spirit:value>9:250126f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -149,11 +149,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 30 10:10:09 UTC 2020</spirit:value>
+            <spirit:value>Fri Jan 29 16:00:35 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:663f9451</spirit:value>
+            <spirit:value>9:00b24950</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -169,11 +169,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 30 17:52:20 UTC 2020</spirit:value>
+            <spirit:value>Fri Jan 29 16:00:35 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:663f9451</spirit:value>
+            <spirit:value>9:00b24950</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -187,11 +187,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat May 30 17:55:58 UTC 2020</spirit:value>
+            <spirit:value>Fri Jan 29 16:07:40 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:38e4e9e5</spirit:value>
+            <spirit:value>9:250126f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -202,7 +202,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.DATA_IN_SIZE&apos;)) - 1)">39</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.DATA_IN_SIZE&apos;)) - 1)">13</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -258,7 +258,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.DATA_OUT_SIZE&apos;)) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.DATA_OUT_SIZE&apos;)) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -319,22 +319,22 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>NB_ACCUM</spirit:name>
         <spirit:displayName>Nb Accum</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NB_ACCUM" spirit:minimum="0" spirit:rangeType="long">32768</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.NB_ACCUM" spirit:minimum="0" spirit:rangeType="long">8192</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>SHIFT</spirit:name>
         <spirit:displayName>Shift</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SHIFT" spirit:minimum="0" spirit:rangeType="long">15</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SHIFT" spirit:minimum="0" spirit:rangeType="long">13</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>DATA_OUT_SIZE</spirit:name>
         <spirit:displayName>Data Out Size</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DATA_OUT_SIZE" spirit:minimum="0" spirit:rangeType="long">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DATA_OUT_SIZE" spirit:minimum="0" spirit:rangeType="long">16</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>DATA_IN_SIZE</spirit:name>
         <spirit:displayName>Data In Size</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DATA_IN_SIZE" spirit:minimum="0" spirit:rangeType="long">40</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DATA_IN_SIZE" spirit:minimum="0" spirit:rangeType="long">14</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -418,25 +418,25 @@
       <spirit:name>NB_ACCUM</spirit:name>
       <spirit:displayName>Nb Accum</spirit:displayName>
       <spirit:description>Number Of Accumulation.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NB_ACCUM" spirit:minimum="0" spirit:rangeType="long">32768</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NB_ACCUM" spirit:minimum="0" spirit:rangeType="long">8192</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SHIFT</spirit:name>
       <spirit:displayName>Shift</spirit:displayName>
       <spirit:description>Shift applied to the result just before produce.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SHIFT" spirit:minimum="0" spirit:rangeType="long">15</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SHIFT" spirit:minimum="0" spirit:rangeType="long">13</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_OUT_SIZE</spirit:name>
       <spirit:displayName>Output Data Size</spirit:displayName>
       <spirit:description>Size of the output data stream.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_OUT_SIZE" spirit:minimum="0" spirit:rangeType="long">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_OUT_SIZE" spirit:minimum="0" spirit:rangeType="long">16</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DATA_IN_SIZE</spirit:name>
       <spirit:displayName>Input Data Size</spirit:displayName>
       <spirit:description>Size of the input data stream.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_IN_SIZE" spirit:minimum="0" spirit:rangeType="long">40</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_IN_SIZE" spirit:minimum="0" spirit:rangeType="long">14</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>

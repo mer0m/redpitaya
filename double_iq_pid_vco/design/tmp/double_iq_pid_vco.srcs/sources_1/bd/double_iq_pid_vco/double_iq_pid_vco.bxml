@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="double_iq_pid_vco" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1590861141"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1590861141"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1590861141"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1590861141"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1611936036"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1611936036"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1611936036"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1611936036"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/double_iq_pid_vco_ps7_0/double_iq_pid_vco_ps7_0.xci" Type="IP">
         <Instance HierarchyPath="ps7"/>
@@ -41,6 +41,38 @@
       </File>
       <File Name="ip/double_iq_pid_vco_xbar_0/double_iq_pid_vco_xbar_0.xci" Type="IP">
         <Instance HierarchyPath="ps7_axi/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_axi/tier2_xbar_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_axi/tier2_xbar_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_axi/tier2_xbar_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_axi/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -185,6 +217,38 @@
       </File>
       <File Name="ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0.xci" Type="IP">
         <Instance HierarchyPath="demod2_nco"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_dupplReal_1_to_2_1_0/double_iq_pid_vco_dupplReal_1_to_2_1_0.xci" Type="IP">
+        <Instance HierarchyPath="dupplReal_1_to_2_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_dupplReal_1_to_2_2_0/double_iq_pid_vco_dupplReal_1_to_2_2_0.xci" Type="IP">
+        <Instance HierarchyPath="dupplReal_1_to_2_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_dupplReal_1_to_2_3_0/double_iq_pid_vco_dupplReal_1_to_2_3_0.xci" Type="IP">
+        <Instance HierarchyPath="dupplReal_1_to_2_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/double_iq_pid_vco_dupplReal_1_to_2_4_0/double_iq_pid_vco_dupplReal_1_to_2_4_0.xci" Type="IP">
+        <Instance HierarchyPath="dupplReal_1_to_2_4"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -360,54 +424,6 @@
       <File Name="sim/double_iq_pid_vco.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/double_iq_pid_vco_dupplReal_0_0/double_iq_pid_vco_dupplReal_0_0.xci" Type="IP">
-        <Instance HierarchyPath="dupplReal_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/double_iq_pid_vco_dupplReal_0_1/double_iq_pid_vco_dupplReal_0_1.xci" Type="IP">
-        <Instance HierarchyPath="dupplReal_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_axi/tier2_xbar_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_axi/tier2_xbar_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_axi/tier2_xbar_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_axi/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="double_iq_pid_vco_ooc.xdc" Type="XDC">

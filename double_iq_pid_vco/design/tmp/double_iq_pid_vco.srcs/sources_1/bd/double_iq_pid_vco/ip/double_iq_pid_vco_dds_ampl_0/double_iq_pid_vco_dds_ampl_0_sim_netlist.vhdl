@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri May 15 18:50:15 2020
+-- Date        : Fri Jan 29 17:12:29 2021
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
--- Command     : write_vhdl -force -mode funcsim
---               /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0_sim_netlist.vhdl
--- Design      : double_iq_pid_vco_dds_ampl_0
+-- Command     : write_vhdl -force -mode funcsim -rename_top double_iq_pid_vco_dds_ampl_0 -prefix
+--               double_iq_pid_vco_dds_ampl_0_ double_iq_pid_vco_dds_range_0_sim_netlist.vhdl
+-- Design      : double_iq_pid_vco_dds_range_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z010clg400-1
@@ -42,8 +42,6 @@ entity double_iq_pid_vco_dds_ampl_0_axi_to_dac_handcomm is
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_iq_pid_vco_dds_ampl_0_axi_to_dac_handcomm : entity is "axi_to_dac_handcomm";
 end double_iq_pid_vco_dds_ampl_0_axi_to_dac_handcomm;
 
 architecture STRUCTURE of double_iq_pid_vco_dds_ampl_0_axi_to_dac_handcomm is
@@ -418,8 +416,6 @@ entity double_iq_pid_vco_dds_ampl_0_axi_to_dac_sync_vect is
     s00_axi_aclk : in STD_LOGIC;
     ref_clk_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_iq_pid_vco_dds_ampl_0_axi_to_dac_sync_vect : entity is "axi_to_dac_sync_vect";
 end double_iq_pid_vco_dds_ampl_0_axi_to_dac_sync_vect;
 
 architecture STRUCTURE of double_iq_pid_vco_dds_ampl_0_axi_to_dac_sync_vect is
@@ -2104,8 +2100,6 @@ entity double_iq_pid_vco_dds_ampl_0_wb_axi_to_dac is
     \data_b_s_reg[31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \readdata_s_reg[31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_iq_pid_vco_dds_ampl_0_wb_axi_to_dac : entity is "wb_axi_to_dac";
 end double_iq_pid_vco_dds_ampl_0_wb_axi_to_dac;
 
 architecture STRUCTURE of double_iq_pid_vco_dds_ampl_0_wb_axi_to_dac is
@@ -3337,8 +3331,6 @@ entity double_iq_pid_vco_dds_ampl_0_axi_to_dac is
   attribute DATAB_EN_ALWAYS_HIGH of double_iq_pid_vco_dds_ampl_0_axi_to_dac : entity is "FALSE";
   attribute DATA_SIZE : integer;
   attribute DATA_SIZE of double_iq_pid_vco_dds_ampl_0_axi_to_dac : entity is 14;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of double_iq_pid_vco_dds_ampl_0_axi_to_dac : entity is "axi_to_dac";
   attribute SYNCHRONIZE_CHAN : string;
   attribute SYNCHRONIZE_CHAN of double_iq_pid_vco_dds_ampl_0_axi_to_dac : entity is "FALSE";
   attribute id : integer;
@@ -3740,7 +3732,7 @@ entity double_iq_pid_vco_dds_ampl_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of double_iq_pid_vco_dds_ampl_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of double_iq_pid_vco_dds_ampl_0 : entity is "double_iq_pid_vco_dds_ampl_0,axi_to_dac,{}";
+  attribute CHECK_LICENSE_TYPE of double_iq_pid_vco_dds_ampl_0 : entity is "double_iq_pid_vco_dds_range_0,axi_to_dac,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of double_iq_pid_vco_dds_ampl_0 : entity is "yes";
   attribute ip_definition_source : string;

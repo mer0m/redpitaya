@@ -1,171 +1,20 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri May 15 18:50:15 2020
+// Date        : Fri Jan 29 17:12:29 2021
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
-// Command     : write_verilog -force -mode funcsim
-//               /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0_sim_netlist.v
-// Design      : double_iq_pid_vco_dds_ampl_0
+// Command     : write_verilog -force -mode funcsim -rename_top double_iq_pid_vco_dds_ampl_0 -prefix
+//               double_iq_pid_vco_dds_ampl_0_ double_iq_pid_vco_dds_range_0_sim_netlist.v
+// Design      : double_iq_pid_vco_dds_range_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "double_iq_pid_vco_dds_ampl_0,axi_to_dac,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
-(* x_core_info = "axi_to_dac,Vivado 2019.2" *) 
-(* NotValidForBitStream *)
-module double_iq_pid_vco_dds_ampl_0
-   (ref_clk_i,
-    ref_rst_i,
-    s00_axi_aclk,
-    s00_axi_reset,
-    s00_axi_awaddr,
-    s00_axi_awprot,
-    s00_axi_awvalid,
-    s00_axi_awready,
-    s00_axi_wdata,
-    s00_axi_wstrb,
-    s00_axi_wvalid,
-    s00_axi_wready,
-    s00_axi_bresp,
-    s00_axi_bvalid,
-    s00_axi_bready,
-    s00_axi_araddr,
-    s00_axi_arprot,
-    s00_axi_arvalid,
-    s00_axi_arready,
-    s00_axi_rdata,
-    s00_axi_rresp,
-    s00_axi_rvalid,
-    s00_axi_rready,
-    dataA_o,
-    dataA_en_o,
-    dataA_eof_o,
-    dataA_clk_o,
-    dataA_rst_o,
-    dataB_o,
-    dataB_en_o,
-    dataB_eof_o,
-    dataB_clk_o,
-    dataB_rst_o);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 ref_clk_i CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME ref_clk_i, ASSOCIATED_BUSIF dataA_out:dataB_out, ASSOCIATED_RESET ref_rst_i, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_iq_pid_vco_redpitaya_converters_0_0_clk_o, INSERT_VIP 0" *) input ref_clk_i;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 ref_rst_i RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ref_rst_i, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input ref_rst_i;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 s00_axi_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axi_aclk, ASSOCIATED_BUSIF s00_axi, ASSOCIATED_RESET s00_axi_reset, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_iq_pid_vco_ps7_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 s00_axi_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axi_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input s00_axi_reset;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN double_iq_pid_vco_ps7_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWPROT" *) input [2:0]s00_axi_awprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWVALID" *) input s00_axi_awvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWREADY" *) output s00_axi_awready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WDATA" *) input [31:0]s00_axi_wdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WSTRB" *) input [3:0]s00_axi_wstrb;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WVALID" *) input s00_axi_wvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WREADY" *) output s00_axi_wready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi BRESP" *) output [1:0]s00_axi_bresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi BVALID" *) output s00_axi_bvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi BREADY" *) input s00_axi_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARADDR" *) input [3:0]s00_axi_araddr;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARPROT" *) input [2:0]s00_axi_arprot;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARVALID" *) input s00_axi_arvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARREADY" *) output s00_axi_arready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RDATA" *) output [31:0]s00_axi_rdata;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RRESP" *) output [1:0]s00_axi_rresp;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RVALID" *) output s00_axi_rvalid;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RREADY" *) input s00_axi_rready;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA" *) output [13:0]dataA_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_EN" *) output dataA_en_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_EOF" *) output dataA_eof_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_CLK" *) output dataA_clk_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_RST" *) output dataA_rst_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA" *) output [13:0]dataB_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_EN" *) output dataB_en_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_EOF" *) output dataB_eof_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_CLK" *) output dataB_clk_o;
-  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_RST" *) output dataB_rst_o;
-
-  wire dataA_clk_o;
-  wire dataA_en_o;
-  wire dataA_eof_o;
-  wire [13:0]dataA_o;
-  wire dataA_rst_o;
-  wire dataB_clk_o;
-  wire dataB_en_o;
-  wire dataB_eof_o;
-  wire [13:0]dataB_o;
-  wire dataB_rst_o;
-  wire ref_clk_i;
-  wire ref_rst_i;
-  wire s00_axi_aclk;
-  wire [3:0]s00_axi_araddr;
-  wire [2:0]s00_axi_arprot;
-  wire s00_axi_arready;
-  wire s00_axi_arvalid;
-  wire [3:0]s00_axi_awaddr;
-  wire [2:0]s00_axi_awprot;
-  wire s00_axi_awready;
-  wire s00_axi_awvalid;
-  wire s00_axi_bready;
-  wire [1:0]s00_axi_bresp;
-  wire s00_axi_bvalid;
-  wire [31:0]s00_axi_rdata;
-  wire s00_axi_reset;
-  wire s00_axi_rready;
-  wire [1:0]s00_axi_rresp;
-  wire s00_axi_rvalid;
-  wire [31:0]s00_axi_wdata;
-  wire s00_axi_wready;
-  wire [3:0]s00_axi_wstrb;
-  wire s00_axi_wvalid;
-
-  (* C_S00_AXI_ADDR_WIDTH = "4" *) 
-  (* C_S00_AXI_DATA_WIDTH = "32" *) 
-  (* DATAA_DEFAULT_OUT = "0" *) 
-  (* DATAA_EN_ALWAYS_HIGH = "FALSE" *) 
-  (* DATAB_DEFAULT_OUT = "0" *) 
-  (* DATAB_EN_ALWAYS_HIGH = "FALSE" *) 
-  (* DATA_SIZE = "14" *) 
-  (* SYNCHRONIZE_CHAN = "FALSE" *) 
-  (* id = "1" *) 
-  double_iq_pid_vco_dds_ampl_0_axi_to_dac U0
-       (.dataA_clk_o(dataA_clk_o),
-        .dataA_en_o(dataA_en_o),
-        .dataA_eof_o(dataA_eof_o),
-        .dataA_o(dataA_o),
-        .dataA_rst_o(dataA_rst_o),
-        .dataB_clk_o(dataB_clk_o),
-        .dataB_en_o(dataB_en_o),
-        .dataB_eof_o(dataB_eof_o),
-        .dataB_o(dataB_o),
-        .dataB_rst_o(dataB_rst_o),
-        .ref_clk_i(ref_clk_i),
-        .ref_rst_i(ref_rst_i),
-        .s00_axi_aclk(s00_axi_aclk),
-        .s00_axi_araddr(s00_axi_araddr),
-        .s00_axi_arprot(s00_axi_arprot),
-        .s00_axi_arready(s00_axi_arready),
-        .s00_axi_arvalid(s00_axi_arvalid),
-        .s00_axi_awaddr(s00_axi_awaddr),
-        .s00_axi_awprot(s00_axi_awprot),
-        .s00_axi_awready(s00_axi_awready),
-        .s00_axi_awvalid(s00_axi_awvalid),
-        .s00_axi_bready(s00_axi_bready),
-        .s00_axi_bresp(s00_axi_bresp),
-        .s00_axi_bvalid(s00_axi_bvalid),
-        .s00_axi_rdata(s00_axi_rdata),
-        .s00_axi_reset(s00_axi_reset),
-        .s00_axi_rready(s00_axi_rready),
-        .s00_axi_rresp(s00_axi_rresp),
-        .s00_axi_rvalid(s00_axi_rvalid),
-        .s00_axi_wdata(s00_axi_wdata),
-        .s00_axi_wready(s00_axi_wready),
-        .s00_axi_wstrb(s00_axi_wstrb),
-        .s00_axi_wvalid(s00_axi_wvalid));
-endmodule
-
 (* C_S00_AXI_ADDR_WIDTH = "4" *) (* C_S00_AXI_DATA_WIDTH = "32" *) (* DATAA_DEFAULT_OUT = "0" *) 
 (* DATAA_EN_ALWAYS_HIGH = "FALSE" *) (* DATAB_DEFAULT_OUT = "0" *) (* DATAB_EN_ALWAYS_HIGH = "FALSE" *) 
-(* DATA_SIZE = "14" *) (* ORIG_REF_NAME = "axi_to_dac" *) (* SYNCHRONIZE_CHAN = "FALSE" *) 
-(* id = "1" *) 
+(* DATA_SIZE = "14" *) (* SYNCHRONIZE_CHAN = "FALSE" *) (* id = "1" *) 
 module double_iq_pid_vco_dds_ampl_0_axi_to_dac
    (ref_clk_i,
     ref_rst_i,
@@ -532,7 +381,6 @@ module double_iq_pid_vco_dds_ampl_0_axi_to_dac
         .synchronize_chan_s_reg_0(handle_comm_n_12));
 endmodule
 
-(* ORIG_REF_NAME = "axi_to_dac_handcomm" *) 
 module double_iq_pid_vco_dds_ampl_0_axi_to_dac_handcomm
    (axi_awready_reg_0,
     axi_wready_reg_0,
@@ -871,7 +719,6 @@ module double_iq_pid_vco_dds_ampl_0_axi_to_dac_handcomm
         .O(s00_axi_wdata_0_sn_1));
 endmodule
 
-(* ORIG_REF_NAME = "axi_to_dac_sync_vect" *) 
 module double_iq_pid_vco_dds_ampl_0_axi_to_dac_sync_vect
    (D,
     Q,
@@ -2160,7 +2007,156 @@ module double_iq_pid_vco_dds_ampl_0_axi_to_dac_sync_vect__xdcDup__1
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "wb_axi_to_dac" *) 
+(* CHECK_LICENSE_TYPE = "double_iq_pid_vco_dds_range_0,axi_to_dac,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* x_core_info = "axi_to_dac,Vivado 2019.2" *) 
+(* NotValidForBitStream *)
+module double_iq_pid_vco_dds_ampl_0
+   (ref_clk_i,
+    ref_rst_i,
+    s00_axi_aclk,
+    s00_axi_reset,
+    s00_axi_awaddr,
+    s00_axi_awprot,
+    s00_axi_awvalid,
+    s00_axi_awready,
+    s00_axi_wdata,
+    s00_axi_wstrb,
+    s00_axi_wvalid,
+    s00_axi_wready,
+    s00_axi_bresp,
+    s00_axi_bvalid,
+    s00_axi_bready,
+    s00_axi_araddr,
+    s00_axi_arprot,
+    s00_axi_arvalid,
+    s00_axi_arready,
+    s00_axi_rdata,
+    s00_axi_rresp,
+    s00_axi_rvalid,
+    s00_axi_rready,
+    dataA_o,
+    dataA_en_o,
+    dataA_eof_o,
+    dataA_clk_o,
+    dataA_rst_o,
+    dataB_o,
+    dataB_en_o,
+    dataB_eof_o,
+    dataB_clk_o,
+    dataB_rst_o);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 ref_clk_i CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME ref_clk_i, ASSOCIATED_BUSIF dataA_out:dataB_out, ASSOCIATED_RESET ref_rst_i, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_iq_pid_vco_redpitaya_converters_0_0_clk_o, INSERT_VIP 0" *) input ref_clk_i;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 ref_rst_i RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ref_rst_i, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input ref_rst_i;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 s00_axi_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axi_aclk, ASSOCIATED_BUSIF s00_axi, ASSOCIATED_RESET s00_axi_reset, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN double_iq_pid_vco_ps7_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 s00_axi_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axi_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input s00_axi_reset;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME s00_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 125000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN double_iq_pid_vco_ps7_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWPROT" *) input [2:0]s00_axi_awprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWVALID" *) input s00_axi_awvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi AWREADY" *) output s00_axi_awready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WDATA" *) input [31:0]s00_axi_wdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WSTRB" *) input [3:0]s00_axi_wstrb;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WVALID" *) input s00_axi_wvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi WREADY" *) output s00_axi_wready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi BRESP" *) output [1:0]s00_axi_bresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi BVALID" *) output s00_axi_bvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi BREADY" *) input s00_axi_bready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARADDR" *) input [3:0]s00_axi_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARPROT" *) input [2:0]s00_axi_arprot;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARVALID" *) input s00_axi_arvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi ARREADY" *) output s00_axi_arready;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RDATA" *) output [31:0]s00_axi_rdata;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RRESP" *) output [1:0]s00_axi_rresp;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RVALID" *) output s00_axi_rvalid;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 s00_axi RREADY" *) input s00_axi_rready;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA" *) output [13:0]dataA_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_EN" *) output dataA_en_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_EOF" *) output dataA_eof_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_CLK" *) output dataA_clk_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataA_out DATA_RST" *) output dataA_rst_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA" *) output [13:0]dataB_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_EN" *) output dataB_en_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_EOF" *) output dataB_eof_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_CLK" *) output dataB_clk_o;
+  (* x_interface_info = "xilinx.com:interface:real:1.0 dataB_out DATA_RST" *) output dataB_rst_o;
+
+  wire dataA_clk_o;
+  wire dataA_en_o;
+  wire dataA_eof_o;
+  wire [13:0]dataA_o;
+  wire dataA_rst_o;
+  wire dataB_clk_o;
+  wire dataB_en_o;
+  wire dataB_eof_o;
+  wire [13:0]dataB_o;
+  wire dataB_rst_o;
+  wire ref_clk_i;
+  wire ref_rst_i;
+  wire s00_axi_aclk;
+  wire [3:0]s00_axi_araddr;
+  wire [2:0]s00_axi_arprot;
+  wire s00_axi_arready;
+  wire s00_axi_arvalid;
+  wire [3:0]s00_axi_awaddr;
+  wire [2:0]s00_axi_awprot;
+  wire s00_axi_awready;
+  wire s00_axi_awvalid;
+  wire s00_axi_bready;
+  wire [1:0]s00_axi_bresp;
+  wire s00_axi_bvalid;
+  wire [31:0]s00_axi_rdata;
+  wire s00_axi_reset;
+  wire s00_axi_rready;
+  wire [1:0]s00_axi_rresp;
+  wire s00_axi_rvalid;
+  wire [31:0]s00_axi_wdata;
+  wire s00_axi_wready;
+  wire [3:0]s00_axi_wstrb;
+  wire s00_axi_wvalid;
+
+  (* C_S00_AXI_ADDR_WIDTH = "4" *) 
+  (* C_S00_AXI_DATA_WIDTH = "32" *) 
+  (* DATAA_DEFAULT_OUT = "0" *) 
+  (* DATAA_EN_ALWAYS_HIGH = "FALSE" *) 
+  (* DATAB_DEFAULT_OUT = "0" *) 
+  (* DATAB_EN_ALWAYS_HIGH = "FALSE" *) 
+  (* DATA_SIZE = "14" *) 
+  (* SYNCHRONIZE_CHAN = "FALSE" *) 
+  (* id = "1" *) 
+  double_iq_pid_vco_dds_ampl_0_axi_to_dac U0
+       (.dataA_clk_o(dataA_clk_o),
+        .dataA_en_o(dataA_en_o),
+        .dataA_eof_o(dataA_eof_o),
+        .dataA_o(dataA_o),
+        .dataA_rst_o(dataA_rst_o),
+        .dataB_clk_o(dataB_clk_o),
+        .dataB_en_o(dataB_en_o),
+        .dataB_eof_o(dataB_eof_o),
+        .dataB_o(dataB_o),
+        .dataB_rst_o(dataB_rst_o),
+        .ref_clk_i(ref_clk_i),
+        .ref_rst_i(ref_rst_i),
+        .s00_axi_aclk(s00_axi_aclk),
+        .s00_axi_araddr(s00_axi_araddr),
+        .s00_axi_arprot(s00_axi_arprot),
+        .s00_axi_arready(s00_axi_arready),
+        .s00_axi_arvalid(s00_axi_arvalid),
+        .s00_axi_awaddr(s00_axi_awaddr),
+        .s00_axi_awprot(s00_axi_awprot),
+        .s00_axi_awready(s00_axi_awready),
+        .s00_axi_awvalid(s00_axi_awvalid),
+        .s00_axi_bready(s00_axi_bready),
+        .s00_axi_bresp(s00_axi_bresp),
+        .s00_axi_bvalid(s00_axi_bvalid),
+        .s00_axi_rdata(s00_axi_rdata),
+        .s00_axi_reset(s00_axi_reset),
+        .s00_axi_rready(s00_axi_rready),
+        .s00_axi_rresp(s00_axi_rresp),
+        .s00_axi_rvalid(s00_axi_rvalid),
+        .s00_axi_wdata(s00_axi_wdata),
+        .s00_axi_wready(s00_axi_wready),
+        .s00_axi_wstrb(s00_axi_wstrb),
+        .s00_axi_wvalid(s00_axi_wvalid));
+endmodule
+
 module double_iq_pid_vco_dds_ampl_0_wb_axi_to_dac
    (D,
     Q,

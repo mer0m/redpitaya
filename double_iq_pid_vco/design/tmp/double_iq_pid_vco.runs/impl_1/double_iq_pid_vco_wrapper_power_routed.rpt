@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Sat May 30 20:04:25 2020
+| Date             : Fri Jan 29 17:31:11 2021
 | Host             : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 | Command          : report_power -file double_iq_pid_vco_wrapper_power_routed.rpt -pb double_iq_pid_vco_wrapper_power_summary_routed.pb -rpx double_iq_pid_vco_wrapper_power_routed.rpx
 | Design           : double_iq_pid_vco_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.000        |
+| Total On-Chip Power (W)  | 1.963        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.867        |
-| Device Static (W)        | 0.133        |
+| Dynamic (W)              | 1.832        |
+| Device Static (W)        | 0.131        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 61.9         |
-| Junction Temperature (C) | 48.1         |
+| Max Ambient (C)          | 62.4         |
+| Junction Temperature (C) | 47.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.042 |        8 |       --- |             --- |
-| Slice Logic             |     0.013 |    15025 |       --- |             --- |
-|   LUT as Logic          |     0.010 |     4264 |     17600 |           24.23 |
-|   CARRY4                |     0.002 |      326 |      4400 |            7.41 |
-|   Register              |    <0.001 |     8878 |     35200 |           25.22 |
+| Clocks                  |     0.041 |        8 |       --- |             --- |
+| Slice Logic             |     0.012 |    14079 |       --- |             --- |
+|   LUT as Logic          |     0.010 |     3805 |     17600 |           21.62 |
+|   CARRY4                |     0.001 |      230 |      4400 |            5.23 |
+|   Register              |    <0.001 |     8480 |     35200 |           24.09 |
 |   F7/F8 Muxes           |    <0.001 |      196 |     17600 |            1.11 |
 |   LUT as Shift Register |    <0.001 |       62 |      6000 |            1.03 |
-|   Others                |     0.000 |      734 |       --- |             --- |
-| Signals                 |     0.055 |    15012 |       --- |             --- |
-| Block RAM               |     0.050 |       21 |        60 |           35.00 |
+|   Others                |     0.000 |      738 |       --- |             --- |
+| Signals                 |     0.039 |    14325 |       --- |             --- |
+| Block RAM               |     0.032 |       13 |        60 |           21.67 |
 | PLL                     |     0.102 |        1 |         2 |           50.00 |
 | DSPs                    |     0.058 |       60 |        80 |           75.00 |
 | I/O                     |     0.269 |       49 |       100 |           49.00 |
 | PS7                     |     1.277 |        1 |       --- |             --- |
-| Static Power            |     0.133 |          |           |                 |
-| Total                   |     2.000 |          |           |                 |
+| Static Power            |     0.131 |          |           |                 |
+| Total                   |     1.963 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.232 |       0.224 |      0.009 |
+| Vccint    |       1.000 |     0.198 |       0.190 |      0.009 |
 | Vccaux    |       1.800 |     0.066 |       0.057 |      0.009 |
 | Vcco33    |       3.300 |     0.079 |       0.078 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -86,11 +86,11 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.006 |       0.004 |      0.002 |
+| Vccbram   |       1.000 |     0.004 |       0.003 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.697 |       0.663 |      0.034 |
+| Vccpint   |       1.000 |     0.697 |       0.663 |      0.033 |
 | Vccpaux   |       1.800 |     0.037 |       0.027 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |
@@ -158,22 +158,24 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| double_iq_pid_vco_wrapper  |     1.867 |
-|   double_iq_pid_vco_i      |     1.600 |
+| double_iq_pid_vco_wrapper  |     1.832 |
+|   double_iq_pid_vco_i      |     1.565 |
 |     adc1_offset            |     0.001 |
 |       U0                   |     0.001 |
-|     dataReal_to_ram_fast   |     0.009 |
-|       inst                 |     0.009 |
-|     dataReal_to_ram_slow   |     0.019 |
-|       inst                 |     0.019 |
-|     dds1_f0                |     0.002 |
-|       U0                   |     0.002 |
+|     adc2_offset            |     0.001 |
+|       U0                   |     0.001 |
+|     dataReal_to_ram_fast   |     0.005 |
+|       U0                   |     0.005 |
+|     dataReal_to_ram_slow   |     0.005 |
+|       U0                   |     0.005 |
+|     dds1_f0                |     0.001 |
+|       U0                   |     0.001 |
 |     dds1_nco               |     0.008 |
 |       U0                   |     0.008 |
 |     dds1_offset            |     0.001 |
 |       U0                   |     0.001 |
-|     dds2_f0                |     0.002 |
-|       U0                   |     0.002 |
+|     dds2_f0                |     0.001 |
+|       U0                   |     0.001 |
 |     dds2_nco               |     0.008 |
 |       U0                   |     0.008 |
 |     dds2_offset            |     0.001 |
@@ -186,22 +188,14 @@ Table of Contents
 |       U0                   |     0.008 |
 |     demod2_nco             |     0.008 |
 |       U0                   |     0.008 |
-|     firReal_0              |     0.052 |
-|       U0                   |     0.052 |
-|     firReal_1              |     0.049 |
-|       U0                   |     0.049 |
-|     meanReal_0             |     0.001 |
-|       U0                   |     0.001 |
-|     meanReal_1             |     0.001 |
-|       U0                   |     0.001 |
-|     meanReal_2             |     0.001 |
-|       U0                   |     0.001 |
-|     meanReal_3             |     0.001 |
-|       U0                   |     0.001 |
+|     firReal_0              |     0.043 |
+|       U0                   |     0.043 |
+|     firReal_1              |     0.043 |
+|       U0                   |     0.043 |
 |     mixer_sin_0            |     0.005 |
 |       U0                   |     0.005 |
-|     mixer_sin_1            |     0.004 |
-|       U0                   |     0.004 |
+|     mixer_sin_1            |     0.005 |
+|       U0                   |     0.005 |
 |     mixer_sin_4            |     0.002 |
 |       U0                   |     0.002 |
 |     mixer_sin_5            |     0.002 |
@@ -219,6 +213,10 @@ Table of Contents
 |       xbar                 |     0.001 |
 |     redpitaya_converters_0 |     0.109 |
 |       U0                   |     0.109 |
+|     shifterReal_dyn_0      |     0.001 |
+|       inst                 |     0.001 |
+|     shifterReal_dyn_1      |     0.001 |
+|       inst                 |     0.001 |
 +----------------------------+-----------+
 
 

@@ -18,41 +18,41 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27315 
+INFO: Helper process launched with PID 9274 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1845.430 ; gain = 202.715 ; free physical = 1106 ; free virtual = 11379
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1846.336 ; gain = 202.684 ; free physical = 261 ; free virtual = 26332
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/synth/double_iq_pid_vco_mixer_sin_2_0.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/synth/double_iq_pid_vco_mixer_sin_2_0.vhd:79]
 	Parameter SIGNED_FORMAT bound to: 1 - type: bool 
 	Parameter DATA1_IN_SIZE bound to: 14 - type: integer 
 	Parameter DATA2_IN_SIZE bound to: 14 - type: integer 
 	Parameter DATA_OUT_SIZE bound to: 14 - type: integer 
-INFO: [Synth 8-3491] module 'multiplierReal' declared at '/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:9' bound to instance 'U0' of component 'multiplierReal' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/synth/double_iq_pid_vco_mixer_sin_2_0.vhd:136]
-INFO: [Synth 8-638] synthesizing module 'multiplierReal' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:41]
+INFO: [Synth 8-3491] module 'multiplierReal' declared at '/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:9' bound to instance 'U0' of component 'multiplierReal' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/synth/double_iq_pid_vco_mixer_sin_2_0.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'multiplierReal' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:41]
 	Parameter SIGNED_FORMAT bound to: 1 - type: bool 
 	Parameter DATA1_IN_SIZE bound to: 14 - type: integer 
 	Parameter DATA2_IN_SIZE bound to: 14 - type: integer 
 	Parameter DATA_OUT_SIZE bound to: 14 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'multiplierReal_redim' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'multiplierReal_redim' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:33]
 	Parameter SIGNED_FORMAT bound to: 1 - type: bool 
 	Parameter IN_SZ bound to: 28 - type: integer 
 	Parameter OUT_SZ bound to: 14 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element shift_data.data_eof_in_s_reg was removed.  [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:107]
-WARNING: [Synth 8-6014] Unused sequential element shift_data.data_sof_in_s_reg was removed.  [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:108]
-INFO: [Synth 8-4471] merging register 'data_eof_out_s_reg' into 'data_en_out_s_reg' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:121]
-INFO: [Synth 8-4471] merging register 'data_sof_out_s_reg' into 'data_en_out_s_reg' [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:122]
-WARNING: [Synth 8-6014] Unused sequential element data_eof_out_s_reg was removed.  [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:121]
-WARNING: [Synth 8-6014] Unused sequential element data_sof_out_s_reg was removed.  [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:122]
-INFO: [Synth 8-256] done synthesizing module 'multiplierReal_redim' (1#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:33]
-WARNING: [Synth 8-3848] Net data_sof_s in module/entity multiplierReal does not have driver. [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:55]
-INFO: [Synth 8-256] done synthesizing module 'multiplierReal' (2#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' (3#1) [/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/synth/double_iq_pid_vco_mixer_sin_2_0.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element shift_data.data_eof_in_s_reg was removed.  [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:107]
+WARNING: [Synth 8-6014] Unused sequential element shift_data.data_sof_in_s_reg was removed.  [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:108]
+INFO: [Synth 8-4471] merging register 'data_eof_out_s_reg' into 'data_en_out_s_reg' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:121]
+INFO: [Synth 8-4471] merging register 'data_sof_out_s_reg' into 'data_en_out_s_reg' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:122]
+WARNING: [Synth 8-6014] Unused sequential element data_eof_out_s_reg was removed.  [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:121]
+WARNING: [Synth 8-6014] Unused sequential element data_sof_out_s_reg was removed.  [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'multiplierReal_redim' (1#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal_redim.vhd:33]
+WARNING: [Synth 8-3848] Net data_sof_s in module/entity multiplierReal does not have driver. [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'multiplierReal' (2#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ipshared/8d93/hdl/multiplierReal.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' (3#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/synth/double_iq_pid_vco_mixer_sin_2_0.vhd:79]
 WARNING: [Synth 8-3331] design multiplierReal_redim has unconnected port data_eof_i
 WARNING: [Synth 8-3331] design multiplierReal_redim has unconnected port data_sof_i
 WARNING: [Synth 8-3331] design multiplierReal has unconnected port data1_sof_i
 WARNING: [Synth 8-3331] design multiplierReal has unconnected port data2_sof_i
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1910.148 ; gain = 267.434 ; free physical = 1136 ; free virtual = 11410
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1911.055 ; gain = 267.402 ; free physical = 325 ; free virtual = 26399
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -65,43 +65,43 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1910.148 ; gain = 267.434 ; free physical = 1091 ; free virtual = 11365
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1911.055 ; gain = 267.402 ; free physical = 261 ; free virtual = 26338
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1910.148 ; gain = 267.434 ; free physical = 1091 ; free virtual = 11365
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1911.055 ; gain = 267.402 ; free physical = 261 ; free virtual = 26338
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1910.148 ; gain = 0.000 ; free physical = 1083 ; free virtual = 11357
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1911.055 ; gain = 0.000 ; free physical = 252 ; free virtual = 26330
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2035.945 ; gain = 0.000 ; free physical = 918 ; free virtual = 11193
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2037.820 ; gain = 0.000 ; free physical = 144 ; free virtual = 26217
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2035.945 ; gain = 0.000 ; free physical = 915 ; free virtual = 11189
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.50 . Memory (MB): peak = 2037.820 ; gain = 0.000 ; free physical = 159 ; free virtual = 26233
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1018 ; free virtual = 11296
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1123 ; free virtual = 27142
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1018 ; free virtual = 11296
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1122 ; free virtual = 27141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1018 ; free virtual = 11296
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1122 ; free virtual = 27141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1008 ; free virtual = 11287
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1108 ; free virtual = 27127
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -169,7 +169,7 @@ WARNING: [Synth 8-3331] design double_iq_pid_vco_mixer_sin_2_0 has unconnected p
 INFO: [Synth 8-3886] merging instance 'U0/redim_inst/shift_data.is_neg_s_reg[0]' (FDR) to 'U0/redim_inst/shift_data.data_in_s_reg[13]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/redim_inst/shift_data.is_neg_s_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 981 ; free virtual = 11262
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1016 ; free virtual = 27042
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -196,13 +196,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:42 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1421 ; free virtual = 11674
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1897 ; free virtual = 27916
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:42 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1419 ; free virtual = 11672
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1895 ; free virtual = 27914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -214,7 +214,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:42 . Memory (MB): peak = 2035.945 ; gain = 393.230 ; free physical = 1412 ; free virtual = 11665
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 2037.820 ; gain = 394.168 ; free physical = 1896 ; free virtual = 27915
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -238,13 +238,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11974
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11974
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,25 +263,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11974
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11974
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11974
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11974
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -314,35 +314,35 @@ Report Instance Areas:
 |3     |    redim_inst |multiplierReal_redim |    35|
 +------+---------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.852 ; gain = 402.137 ; free physical = 1724 ; free virtual = 11973
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.727 ; gain = 403.074 ; free physical = 2481 ; free virtual = 28501
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 2044.852 ; gain = 276.340 ; free physical = 1761 ; free virtual = 12011
-Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:01:57 . Memory (MB): peak = 2044.859 ; gain = 402.137 ; free physical = 1756 ; free virtual = 12005
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:41 . Memory (MB): peak = 2046.727 ; gain = 276.309 ; free physical = 2532 ; free virtual = 28552
+Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:47 . Memory (MB): peak = 2046.734 ; gain = 403.074 ; free physical = 2532 ; free virtual = 28552
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.859 ; gain = 0.000 ; free physical = 1882 ; free virtual = 12131
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2046.734 ; gain = 0.000 ; free physical = 2595 ; free virtual = 28615
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.859 ; gain = 0.000 ; free physical = 1792 ; free virtual = 12042
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.734 ; gain = 0.000 ; free physical = 2498 ; free virtual = 28515
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 25 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:26 . Memory (MB): peak = 2044.859 ; gain = 607.578 ; free physical = 1919 ; free virtual = 12169
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.859 ; gain = 0.000 ; free physical = 1919 ; free virtual = 12169
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:02:18 . Memory (MB): peak = 2046.734 ; gain = 563.336 ; free physical = 2621 ; free virtual = 28637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.734 ; gain = 0.000 ; free physical = 2621 ; free virtual = 28637
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_mixer_sin_2_0_synth_1/double_iq_pid_vco_mixer_sin_2_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_mixer_sin_2_0_synth_1/double_iq_pid_vco_mixer_sin_2_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP double_iq_pid_vco_mixer_sin_2_0, cache-ID = c210cfab4cf8373a
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.863 ; gain = 0.000 ; free physical = 1921 ; free virtual = 12171
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2070.738 ; gain = 0.000 ; free physical = 2610 ; free virtual = 28626
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_mixer_sin_2_0_synth_1/double_iq_pid_vco_mixer_sin_2_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_mixer_sin_2_0_synth_1/double_iq_pid_vco_mixer_sin_2_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file double_iq_pid_vco_mixer_sin_2_0_utilization_synth.rpt -pb double_iq_pid_vco_mixer_sin_2_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 15 18:38:34 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 29 17:08:46 2021...

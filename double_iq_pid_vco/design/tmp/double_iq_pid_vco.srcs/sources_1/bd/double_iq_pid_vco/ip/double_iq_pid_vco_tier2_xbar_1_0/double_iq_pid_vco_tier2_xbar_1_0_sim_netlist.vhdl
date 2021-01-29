@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri May 15 18:55:37 2020
+-- Date        : Fri Jan 29 17:22:21 2021
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
--- Command     : write_vhdl -force -mode funcsim -rename_top double_iq_pid_vco_tier2_xbar_1_0 -prefix
---               double_iq_pid_vco_tier2_xbar_1_0_ double_iq_pid_vco_tier2_xbar_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0_sim_netlist.vhdl
 -- Design      : double_iq_pid_vco_tier2_xbar_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -83,6 +83,8 @@ entity double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_addr_arbiter_sasd i
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_21_addr_arbiter_sasd";
 end double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_addr_arbiter_sasd;
 
 architecture STRUCTURE of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_addr_arbiter_sasd is
@@ -2277,6 +2279,8 @@ entity double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_decerr_slave is
     m_axi_awready : in STD_LOGIC_VECTOR ( 1 downto 0 );
     aa_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_decerr_slave : entity is "axi_crossbar_v2_1_21_decerr_slave";
 end double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_decerr_slave;
 
 architecture STRUCTURE of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_decerr_slave is
@@ -2491,6 +2495,8 @@ entity double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_splitter is
     m_ready_d0 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_splitter : entity is "axi_crossbar_v2_1_21_splitter";
 end double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_splitter;
 
 architecture STRUCTURE of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_splitter is
@@ -2822,6 +2828,8 @@ entity double_iq_pid_vco_tier2_xbar_1_0_axi_register_slice_v2_1_20_axic_register
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_tier2_xbar_1_0_axi_register_slice_v2_1_20_axic_register_slice : entity is "axi_register_slice_v2_1_20_axic_register_slice";
 end double_iq_pid_vco_tier2_xbar_1_0_axi_register_slice_v2_1_20_axic_register_slice;
 
 architecture STRUCTURE of double_iq_pid_vco_tier2_xbar_1_0_axi_register_slice_v2_1_20_axic_register_slice is
@@ -5766,6 +5774,8 @@ entity double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_crossbar_sasd : entity is "axi_crossbar_v2_1_21_crossbar_sasd";
 end double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_crossbar_sasd;
 
 architecture STRUCTURE of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_crossbar_sasd is
@@ -6476,6 +6486,8 @@ entity double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_axi_crossbar : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_axi_crossbar : entity is "axi_crossbar_v2_1_21_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of double_iq_pid_vco_tier2_xbar_1_0_axi_crossbar_v2_1_21_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

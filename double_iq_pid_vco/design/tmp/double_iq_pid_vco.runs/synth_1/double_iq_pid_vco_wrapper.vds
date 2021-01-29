@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat May 30 19:58:00 2020
-# Process ID: 29854
+# Start of session at: Fri Jan 29 17:25:55 2021
+# Process ID: 19129
 # Current directory: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1
 # Command line: vivado -log double_iq_pid_vco_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_iq_pid_vco_wrapper.tcl
 # Log file: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/double_iq_pid_vco_wrapper.vds
@@ -19,187 +19,195 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30189 
+INFO: Helper process launched with PID 19312 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1872.336 ; gain = 198.684 ; free physical = 2038 ; free virtual = 10525
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1872.336 ; gain = 199.715 ; free physical = 2930 ; free virtual = 28864
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_wrapper' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/hdl/double_iq_pid_vco_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:13]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_adc1_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_adc1_offset_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_adc1_offset_0' (1#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_adc1_offset_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_adc2_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_adc2_offset_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_adc2_offset_0' (2#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_adc2_offset_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_0_0' (3#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'convertComplexToReal_0' of module 'double_iq_pid_vco_convertComplexToReal_0_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:796]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_1_0' (4#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_1_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'convertComplexToReal_1' of module 'double_iq_pid_vco_convertComplexToReal_1_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:807]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_4_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_4_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_4_0' (5#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_4_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'convertComplexToReal_4' of module 'double_iq_pid_vco_convertComplexToReal_4_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:818]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_5_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_5_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_5_0' (6#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_convertComplexToReal_5_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'convertComplexToReal_5' of module 'double_iq_pid_vco_convertComplexToReal_5_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:829]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dataReal_to_ram_fast_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_fast_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dataReal_to_ram_fast_0' (7#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_fast_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dataReal_to_ram_slow_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_slow_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dataReal_to_ram_slow_0' (8#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_slow_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds1_f0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds1_f0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds1_f0_0' (9#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds1_f0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds1_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds1_nco_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds1_nco_0' (10#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds1_nco_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dds1_nco' of module 'double_iq_pid_vco_dds1_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:934]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds1_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds1_offset_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds1_offset_0' (11#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds1_offset_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dds1_offset' of module 'double_iq_pid_vco_dds1_offset_0' has 29 connections declared, but only 28 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:972]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds2_f0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds2_f0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds2_f0_0' (12#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds2_f0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds2_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds2_nco_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds2_nco_0' (13#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds2_nco_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dds2_nco' of module 'double_iq_pid_vco_dds2_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1031]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds2_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds2_offset_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds2_offset_0' (14#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds2_offset_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dds2_offset' of module 'double_iq_pid_vco_dds2_offset_0' has 29 connections declared, but only 28 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1069]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds_ampl_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds_ampl_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds_ampl_0' (15#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds_ampl_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dds_ampl' of module 'double_iq_pid_vco_dds_ampl_0' has 33 connections declared, but only 31 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1098]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds_range_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds_range_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds_range_0' (16#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dds_range_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_demod1_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_demod1_nco_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_demod1_nco_0' (17#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_demod1_nco_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'demod1_nco' of module 'double_iq_pid_vco_demod1_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1164]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_demod2_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_demod2_nco_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_demod2_nco_0' (18#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_demod2_nco_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'demod2_nco' of module 'double_iq_pid_vco_demod2_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1202]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dupplReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dupplReal_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dupplReal_0_0' (19#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dupplReal_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dupplReal_0' of module 'double_iq_pid_vco_dupplReal_0_0' has 24 connections declared, but only 18 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1240]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dupplReal_0_1' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dupplReal_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dupplReal_0_1' (20#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_dupplReal_0_1_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dupplReal_1' of module 'double_iq_pid_vco_dupplReal_0_1' has 24 connections declared, but only 18 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1259]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_expanderReal_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_expanderReal_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_expanderReal_2_0' (21#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_expanderReal_2_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'expanderReal_2' of module 'double_iq_pid_vco_expanderReal_2_0' has 12 connections declared, but only 11 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1278]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_expanderReal_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_expanderReal_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_expanderReal_3_0' (22#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_expanderReal_3_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'expanderReal_3' of module 'double_iq_pid_vco_expanderReal_3_0' has 12 connections declared, but only 11 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1290]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_firReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_firReal_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_firReal_0_0' (23#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_firReal_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'firReal_0' of module 'double_iq_pid_vco_firReal_0_0' has 27 connections declared, but only 26 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1302]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_firReal_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_firReal_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_firReal_1_0' (24#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_firReal_1_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'firReal_1' of module 'double_iq_pid_vco_firReal_1_0' has 27 connections declared, but only 26 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1329]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_0_0' (25#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_1_0' (26#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_2_0' (27#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_3_0' (28#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_meanReal_3_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_0_0' (29#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_1_0' (30#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' (31#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_3_0' (32#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_3_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_4_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_4_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_4_0' (33#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_4_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_5_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_5_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_5_0' (34#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_mixer_sin_5_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_pidv3_axi_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_pidv3_axi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_pidv3_axi_0_0' (35#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_pidv3_axi_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_pidv3_axi_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_pidv3_axi_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_pidv3_axi_1_0' (36#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_pidv3_axi_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_ps7_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_ps7_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_ps7_0' (37#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_ps7_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'ps7' of module 'double_iq_pid_vco_ps7_0' has 86 connections declared, but only 68 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1562]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_ps7_axi_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2211]
-INFO: [Synth 8-6157] synthesizing module 'i00_couplers_imp_J51K6B' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5750]
-INFO: [Synth 8-6155] done synthesizing module 'i00_couplers_imp_J51K6B' (38#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5750]
-INFO: [Synth 8-6157] synthesizing module 'i01_couplers_imp_BS6QZM' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5896]
-INFO: [Synth 8-6155] done synthesizing module 'i01_couplers_imp_BS6QZM' (39#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5896]
-INFO: [Synth 8-6157] synthesizing module 'i02_couplers_imp_16P58M9' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6042]
-INFO: [Synth 8-6155] done synthesizing module 'i02_couplers_imp_16P58M9' (40#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6042]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_5FLNZM' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6188]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_5FLNZM' (41#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6188]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_YPKH6B' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6334]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_YPKH6B' (42#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6334]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1LB6Q7K' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6480]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1LB6Q7K' (43#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6480]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_18E8MLT' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6626]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_18E8MLT' (44#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6626]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_VV01YV' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6772]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_VV01YV' (45#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6772]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_7V4XX2' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6918]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_7V4XX2' (46#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6918]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1CRZY45' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7064]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1CRZY45' (47#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7064]
-INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1HMBXO4' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7210]
-INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1HMBXO4' (48#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7210]
-INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1M0KMYG' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7356]
-INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1M0KMYG' (49#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7356]
-INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1H5X8JD' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7502]
-INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1H5X8JD' (50#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7502]
-INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_512YZZ' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7648]
-INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_512YZZ' (51#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7648]
-INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_YLCJCE' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7794]
-INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_YLCJCE' (52#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7794]
-INFO: [Synth 8-6157] synthesizing module 'm12_couplers_imp_1LHVORX' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7940]
-INFO: [Synth 8-6155] done synthesizing module 'm12_couplers_imp_1LHVORX' (53#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7940]
-INFO: [Synth 8-6157] synthesizing module 'm13_couplers_imp_18V8OZ0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8086]
-INFO: [Synth 8-6155] done synthesizing module 'm13_couplers_imp_18V8OZ0' (54#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8086]
-INFO: [Synth 8-6157] synthesizing module 'm14_couplers_imp_W0IEI2' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8232]
-INFO: [Synth 8-6155] done synthesizing module 'm14_couplers_imp_W0IEI2' (55#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8232]
-INFO: [Synth 8-6157] synthesizing module 'm15_couplers_imp_8AXUI3' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8357]
-INFO: [Synth 8-6155] done synthesizing module 'm15_couplers_imp_8AXUI3' (56#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8357]
-INFO: [Synth 8-6157] synthesizing module 'm16_couplers_imp_1CES9YG' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8482]
-INFO: [Synth 8-6155] done synthesizing module 'm16_couplers_imp_1CES9YG' (57#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8482]
-INFO: [Synth 8-6157] synthesizing module 'm17_couplers_imp_1HJF67D' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8628]
-INFO: [Synth 8-6155] done synthesizing module 'm17_couplers_imp_1HJF67D' (58#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8628]
-INFO: [Synth 8-6157] synthesizing module 'm18_couplers_imp_1LVZAQT' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8774]
-INFO: [Synth 8-6155] done synthesizing module 'm18_couplers_imp_1LVZAQT' (59#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8774]
-INFO: [Synth 8-6157] synthesizing module 'm19_couplers_imp_1GRNTD0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8920]
-INFO: [Synth 8-6155] done synthesizing module 'm19_couplers_imp_1GRNTD0' (60#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8920]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1BEUG7G' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:9066]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_auto_pc_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_auto_pc_0' (61#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1BEUG7G' (62#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:9066]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_tier2_xbar_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_tier2_xbar_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_tier2_xbar_0_0' (63#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_tier2_xbar_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_tier2_xbar_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_tier2_xbar_1_0' (64#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_tier2_xbar_1_0_stub.v:6]
-WARNING: [Synth 8-689] width (18) of port connection 'm_axi_arprot' does not match port width (24) of module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5629]
-WARNING: [Synth 8-689] width (18) of port connection 'm_axi_awprot' does not match port width (24) of module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5633]
-WARNING: [Synth 8-689] width (24) of port connection 'm_axi_wstrb' does not match port width (32) of module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5645]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_tier2_xbar_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_tier2_xbar_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_tier2_xbar_2_0' (65#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_tier2_xbar_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_xbar_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_xbar_0' (66#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_ps7_axi_0' (67#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2211]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_ps7_rst_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_ps7_rst_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_ps7_rst_0' (68#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_ps7_rst_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'ps7_rst' of module 'double_iq_pid_vco_ps7_rst_0' has 10 connections declared, but only 8 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2088]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_redpitaya_converters_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_redpitaya_converters_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_redpitaya_converters_0_0' (69#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_redpitaya_converters_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'redpitaya_converters_0' of module 'double_iq_pid_vco_redpitaya_converters_0_0' has 28 connections declared, but only 27 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2097]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_2_0' (70#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_2_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'shifterReal_2' of module 'double_iq_pid_vco_shifterReal_2_0' has 10 connections declared, but only 9 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2125]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_3_0' (71#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_3_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'shifterReal_3' of module 'double_iq_pid_vco_shifterReal_3_0' has 10 connections declared, but only 9 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2135]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_dyn_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_dyn_0_0' (72#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'shifterReal_dyn_0' of module 'double_iq_pid_vco_shifterReal_dyn_0_0' has 33 connections declared, but only 31 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2145]
-INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_dyn_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_dyn_1_0' (73#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-29854-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_1_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'shifterReal_dyn_1' of module 'double_iq_pid_vco_shifterReal_dyn_1_0' has 33 connections declared, but only 31 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2177]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco' (74#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_wrapper' (75#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/hdl/double_iq_pid_vco_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_adc1_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_adc1_offset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_adc1_offset_0' (1#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_adc1_offset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_adc2_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_adc2_offset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_adc2_offset_0' (2#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_adc2_offset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_0_0' (3#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'convertComplexToReal_0' of module 'double_iq_pid_vco_convertComplexToReal_0_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:808]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_1_0' (4#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'convertComplexToReal_1' of module 'double_iq_pid_vco_convertComplexToReal_1_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:819]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_4_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_4_0' (5#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_4_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'convertComplexToReal_4' of module 'double_iq_pid_vco_convertComplexToReal_4_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:830]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_convertComplexToReal_5_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_convertComplexToReal_5_0' (6#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_convertComplexToReal_5_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'convertComplexToReal_5' of module 'double_iq_pid_vco_convertComplexToReal_5_0' has 16 connections declared, but only 10 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:841]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dataReal_to_ram_fast_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_fast_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dataReal_to_ram_fast_0' (7#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_fast_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dataReal_to_ram_fast' of module 'double_iq_pid_vco_dataReal_to_ram_fast_0' has 32 connections declared, but only 31 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:852]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dataReal_to_ram_slow_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_slow_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dataReal_to_ram_slow_0' (8#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dataReal_to_ram_slow_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dataReal_to_ram_slow' of module 'double_iq_pid_vco_dataReal_to_ram_slow_0' has 32 connections declared, but only 31 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:884]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds1_f0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds1_f0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds1_f0_0' (9#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds1_f0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds1_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds1_nco_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds1_nco_0' (10#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds1_nco_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dds1_nco' of module 'double_iq_pid_vco_dds1_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:946]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds1_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds1_offset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds1_offset_0' (11#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds1_offset_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dds1_offset' of module 'double_iq_pid_vco_dds1_offset_0' has 29 connections declared, but only 28 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:984]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds2_f0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds2_f0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds2_f0_0' (12#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds2_f0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds2_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds2_nco_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds2_nco_0' (13#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds2_nco_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dds2_nco' of module 'double_iq_pid_vco_dds2_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1043]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds2_offset_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds2_offset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds2_offset_0' (14#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds2_offset_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dds2_offset' of module 'double_iq_pid_vco_dds2_offset_0' has 29 connections declared, but only 28 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1081]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds_ampl_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds_ampl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds_ampl_0' (15#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds_ampl_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dds_ampl' of module 'double_iq_pid_vco_dds_ampl_0' has 33 connections declared, but only 31 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1110]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dds_range_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds_range_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dds_range_0' (16#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dds_range_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_demod1_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_demod1_nco_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_demod1_nco_0' (17#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_demod1_nco_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'demod1_nco' of module 'double_iq_pid_vco_demod1_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1176]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_demod2_nco_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_demod2_nco_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_demod2_nco_0' (18#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_demod2_nco_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'demod2_nco' of module 'double_iq_pid_vco_demod2_nco_0' has 43 connections declared, but only 37 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1214]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_1_0' (19#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dupplReal_1_to_2_1' of module 'double_iq_pid_vco_dupplReal_1_to_2_1_0' has 15 connections declared, but only 14 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1252]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_2_0' (20#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_2_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dupplReal_1_to_2_2' of module 'double_iq_pid_vco_dupplReal_1_to_2_2_0' has 15 connections declared, but only 14 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1267]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_3_0' (21#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_3_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dupplReal_1_to_2_3' of module 'double_iq_pid_vco_dupplReal_1_to_2_3_0' has 15 connections declared, but only 13 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1282]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_4_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_dupplReal_1_to_2_4_0' (22#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_dupplReal_1_to_2_4_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dupplReal_1_to_2_4' of module 'double_iq_pid_vco_dupplReal_1_to_2_4_0' has 15 connections declared, but only 13 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1296]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_expanderReal_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_expanderReal_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_expanderReal_2_0' (23#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_expanderReal_2_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'expanderReal_2' of module 'double_iq_pid_vco_expanderReal_2_0' has 12 connections declared, but only 11 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1310]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_expanderReal_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_expanderReal_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_expanderReal_3_0' (24#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_expanderReal_3_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'expanderReal_3' of module 'double_iq_pid_vco_expanderReal_3_0' has 12 connections declared, but only 11 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1322]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_firReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_firReal_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_firReal_0_0' (25#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_firReal_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'firReal_0' of module 'double_iq_pid_vco_firReal_0_0' has 27 connections declared, but only 26 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1334]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_firReal_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_firReal_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_firReal_1_0' (26#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_firReal_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'firReal_1' of module 'double_iq_pid_vco_firReal_1_0' has 27 connections declared, but only 26 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1361]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_0_0' (27#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_1_0' (28#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_2_0' (29#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_meanReal_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_meanReal_3_0' (30#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_meanReal_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_0_0' (31#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_1_0' (32#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_2_0' (33#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_3_0' (34#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_4_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_4_0' (35#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_mixer_sin_5_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_mixer_sin_5_0' (36#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_mixer_sin_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_pidv3_axi_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_pidv3_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_pidv3_axi_0_0' (37#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_pidv3_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_pidv3_axi_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_pidv3_axi_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_pidv3_axi_1_0' (38#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_pidv3_axi_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_ps7_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_ps7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_ps7_0' (39#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_ps7_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ps7' of module 'double_iq_pid_vco_ps7_0' has 86 connections declared, but only 68 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:1594]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_ps7_axi_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2245]
+INFO: [Synth 8-6157] synthesizing module 'i00_couplers_imp_J51K6B' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5784]
+INFO: [Synth 8-6155] done synthesizing module 'i00_couplers_imp_J51K6B' (40#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5784]
+INFO: [Synth 8-6157] synthesizing module 'i01_couplers_imp_BS6QZM' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5930]
+INFO: [Synth 8-6155] done synthesizing module 'i01_couplers_imp_BS6QZM' (41#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5930]
+INFO: [Synth 8-6157] synthesizing module 'i02_couplers_imp_16P58M9' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6076]
+INFO: [Synth 8-6155] done synthesizing module 'i02_couplers_imp_16P58M9' (42#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6076]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_5FLNZM' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6222]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_5FLNZM' (43#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6222]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_YPKH6B' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6368]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_YPKH6B' (44#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6368]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1LB6Q7K' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6514]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1LB6Q7K' (45#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6514]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_18E8MLT' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6660]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_18E8MLT' (46#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6660]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_VV01YV' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6806]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_VV01YV' (47#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6806]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_7V4XX2' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6952]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_7V4XX2' (48#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:6952]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1CRZY45' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7098]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1CRZY45' (49#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7098]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1HMBXO4' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7244]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1HMBXO4' (50#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7244]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1M0KMYG' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7390]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1M0KMYG' (51#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7390]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1H5X8JD' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7536]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1H5X8JD' (52#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7536]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_512YZZ' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7682]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_512YZZ' (53#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7682]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_YLCJCE' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7828]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_YLCJCE' (54#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7828]
+INFO: [Synth 8-6157] synthesizing module 'm12_couplers_imp_1LHVORX' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7974]
+INFO: [Synth 8-6155] done synthesizing module 'm12_couplers_imp_1LHVORX' (55#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:7974]
+INFO: [Synth 8-6157] synthesizing module 'm13_couplers_imp_18V8OZ0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8120]
+INFO: [Synth 8-6155] done synthesizing module 'm13_couplers_imp_18V8OZ0' (56#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8120]
+INFO: [Synth 8-6157] synthesizing module 'm14_couplers_imp_W0IEI2' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8266]
+INFO: [Synth 8-6155] done synthesizing module 'm14_couplers_imp_W0IEI2' (57#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8266]
+INFO: [Synth 8-6157] synthesizing module 'm15_couplers_imp_8AXUI3' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8391]
+INFO: [Synth 8-6155] done synthesizing module 'm15_couplers_imp_8AXUI3' (58#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8391]
+INFO: [Synth 8-6157] synthesizing module 'm16_couplers_imp_1CES9YG' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8516]
+INFO: [Synth 8-6155] done synthesizing module 'm16_couplers_imp_1CES9YG' (59#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8516]
+INFO: [Synth 8-6157] synthesizing module 'm17_couplers_imp_1HJF67D' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8662]
+INFO: [Synth 8-6155] done synthesizing module 'm17_couplers_imp_1HJF67D' (60#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8662]
+INFO: [Synth 8-6157] synthesizing module 'm18_couplers_imp_1LVZAQT' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8808]
+INFO: [Synth 8-6155] done synthesizing module 'm18_couplers_imp_1LVZAQT' (61#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8808]
+INFO: [Synth 8-6157] synthesizing module 'm19_couplers_imp_1GRNTD0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8954]
+INFO: [Synth 8-6155] done synthesizing module 'm19_couplers_imp_1GRNTD0' (62#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:8954]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1BEUG7G' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:9100]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_auto_pc_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_auto_pc_0' (63#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1BEUG7G' (64#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:9100]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_tier2_xbar_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_tier2_xbar_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_tier2_xbar_0_0' (65#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_tier2_xbar_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_tier2_xbar_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_tier2_xbar_1_0' (66#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_tier2_xbar_1_0_stub.v:6]
+WARNING: [Synth 8-689] width (18) of port connection 'm_axi_arprot' does not match port width (24) of module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5663]
+WARNING: [Synth 8-689] width (18) of port connection 'm_axi_awprot' does not match port width (24) of module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5667]
+WARNING: [Synth 8-689] width (24) of port connection 'm_axi_wstrb' does not match port width (32) of module 'double_iq_pid_vco_tier2_xbar_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:5679]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_tier2_xbar_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_tier2_xbar_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_tier2_xbar_2_0' (67#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_tier2_xbar_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_xbar_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_xbar_0' (68#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_ps7_axi_0' (69#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2245]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_ps7_rst_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_ps7_rst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_ps7_rst_0' (70#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_ps7_rst_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ps7_rst' of module 'double_iq_pid_vco_ps7_rst_0' has 10 connections declared, but only 8 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2120]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_redpitaya_converters_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_redpitaya_converters_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_redpitaya_converters_0_0' (71#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_redpitaya_converters_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'redpitaya_converters_0' of module 'double_iq_pid_vco_redpitaya_converters_0_0' has 28 connections declared, but only 27 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2129]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_2_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_2_0' (72#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_2_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'shifterReal_2' of module 'double_iq_pid_vco_shifterReal_2_0' has 10 connections declared, but only 9 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_3_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_3_0' (73#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_3_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'shifterReal_3' of module 'double_iq_pid_vco_shifterReal_3_0' has 10 connections declared, but only 9 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2167]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_dyn_0_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_dyn_0_0' (74#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'shifterReal_dyn_0' of module 'double_iq_pid_vco_shifterReal_dyn_0_0' has 33 connections declared, but only 32 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2177]
+INFO: [Synth 8-6157] synthesizing module 'double_iq_pid_vco_shifterReal_dyn_1_0' [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_shifterReal_dyn_1_0' (75#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/.Xil/Vivado-19129-ux305/realtime/double_iq_pid_vco_shifterReal_dyn_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'shifterReal_dyn_1' of module 'double_iq_pid_vco_shifterReal_dyn_1_0' has 33 connections declared, but only 32 given [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:2210]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco' (76#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/synth/double_iq_pid_vco.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'double_iq_pid_vco_wrapper' (77#1) [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/hdl/double_iq_pid_vco_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_1BEUG7G has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_1BEUG7G has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m19_couplers_imp_1GRNTD0 has unconnected port M_ACLK
@@ -295,7 +303,7 @@ WARNING: [Synth 8-3331] design i00_couplers_imp_J51K6B has unconnected port M_AR
 WARNING: [Synth 8-3331] design i00_couplers_imp_J51K6B has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design i00_couplers_imp_J51K6B has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1944.023 ; gain = 270.371 ; free physical = 2065 ; free virtual = 10553
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1944.023 ; gain = 271.402 ; free physical = 2936 ; free virtual = 28868
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -308,12 +316,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1946.992 ; gain = 273.340 ; free physical = 2063 ; free virtual = 10551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1949.961 ; gain = 277.340 ; free physical = 2935 ; free virtual = 28866
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1946.992 ; gain = 273.340 ; free physical = 2063 ; free virtual = 10551
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1949.961 ; gain = 277.340 ; free physical = 2935 ; free virtual = 28866
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1946.992 ; gain = 0.000 ; free physical = 2054 ; free virtual = 10542
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1949.961 ; gain = 0.000 ; free physical = 2926 ; free virtual = 28857
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -324,44 +332,60 @@ Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/t
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_ps7_rst_0/double_iq_pid_vco_ps7_rst_0/double_iq_pid_vco_ps7_rst_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_rst'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_redpitaya_converters_0_0/double_iq_pid_vco_redpitaya_converters_0_0/double_iq_pid_vco_redpitaya_converters_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/redpitaya_converters_0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_redpitaya_converters_0_0/double_iq_pid_vco_redpitaya_converters_0_0/double_iq_pid_vco_redpitaya_converters_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/redpitaya_converters_0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc1_offset'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc1_offset'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc1_offset'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_adc1_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc1_offset'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_xbar_0/double_iq_pid_vco_xbar_0/double_iq_pid_vco_xbar_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/xbar'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_xbar_0/double_iq_pid_vco_xbar_0/double_iq_pid_vco_xbar_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/xbar'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc2_offset'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc2_offset'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_0'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_1'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_1'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_4'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_4'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_5'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_5'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_1'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_1'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_2'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_2'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/s00_couplers/auto_pc'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc2_offset'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_adc2_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/adc2_offset'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_0'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_0_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_0'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_1'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_1_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_1'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_4'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_4_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_4'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_5'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_5_0/double_iq_pid_vco_convertComplexToReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/convertComplexToReal_5'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_fast_0/double_iq_pid_vco_dataReal_to_ram_fast_0/double_iq_pid_vco_dataReal_to_ram_fast_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dataReal_to_ram_fast'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_fast_0/double_iq_pid_vco_dataReal_to_ram_fast_0/double_iq_pid_vco_dataReal_to_ram_fast_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dataReal_to_ram_fast'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_slow_0/double_iq_pid_vco_dataReal_to_ram_slow_0/double_iq_pid_vco_dataReal_to_ram_slow_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dataReal_to_ram_slow'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_slow_0/double_iq_pid_vco_dataReal_to_ram_slow_0/double_iq_pid_vco_dataReal_to_ram_slow_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dataReal_to_ram_slow'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_f0_0/double_iq_pid_vco_dds1_f0_0/double_iq_pid_vco_dds2_f0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_f0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_f0_0/double_iq_pid_vco_dds1_f0_0/double_iq_pid_vco_dds2_f0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_f0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_nco'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_nco'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_offset'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_offset'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_nco'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_dds1_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_nco'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_offset'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_dds1_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds1_offset'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/double_iq_pid_vco_dds2_f0_0/double_iq_pid_vco_dds2_f0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_f0'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_f0_0/double_iq_pid_vco_dds2_f0_0/double_iq_pid_vco_dds2_f0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_f0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_nco'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_nco'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_offset'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_adc2_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_offset'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_ampl'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_ampl'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_ampl_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_range'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_ampl_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_range'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod1_nco'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod1_nco'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod2_nco'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod2_nco'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_nco'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_dds2_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_nco'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_offset'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_dds2_offset_0/double_iq_pid_vco_dds1_offset_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds2_offset'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_range_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_ampl'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_ampl_0/double_iq_pid_vco_dds_range_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_ampl'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_range_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_range'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_range_0/double_iq_pid_vco_dds_range_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dds_range'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod1_nco'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_demod1_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod1_nco'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod2_nco'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_dds1_nco_0_in_context.xdc] for cell 'double_iq_pid_vco_i/demod2_nco'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_1_0/double_iq_pid_vco_dupplReal_1_to_2_1_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_1'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_1_0/double_iq_pid_vco_dupplReal_1_to_2_1_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_1'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_2_0/double_iq_pid_vco_dupplReal_1_to_2_2_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_2'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_2_0/double_iq_pid_vco_dupplReal_1_to_2_2_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_2'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_3_0/double_iq_pid_vco_dupplReal_1_to_2_3_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_3'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_3_0/double_iq_pid_vco_dupplReal_1_to_2_3_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_3'
+Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_4_0/double_iq_pid_vco_dupplReal_1_to_2_4_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_4'
+Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_4_0/double_iq_pid_vco_dupplReal_1_to_2_4_0/double_iq_pid_vco_dupplReal_1_to_2_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1_to_2_4'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_expanderReal_2_0/double_iq_pid_vco_expanderReal_2_0/double_iq_pid_vco_expanderReal_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/expanderReal_2'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_expanderReal_2_0/double_iq_pid_vco_expanderReal_2_0/double_iq_pid_vco_expanderReal_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/expanderReal_2'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_expanderReal_3_0/double_iq_pid_vco_expanderReal_3_0/double_iq_pid_vco_expanderReal_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/expanderReal_3'
@@ -402,18 +426,6 @@ Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/t
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_shifterReal_dyn_0_0/double_iq_pid_vco_shifterReal_dyn_0_0/double_iq_pid_vco_shifterReal_dyn_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/shifterReal_dyn_0'
 Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_shifterReal_dyn_1_0/double_iq_pid_vco_shifterReal_dyn_1_0/double_iq_pid_vco_shifterReal_dyn_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/shifterReal_dyn_1'
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_shifterReal_dyn_1_0/double_iq_pid_vco_shifterReal_dyn_1_0/double_iq_pid_vco_shifterReal_dyn_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/shifterReal_dyn_1'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_0_0/double_iq_pid_vco_dupplReal_0_0/double_iq_pid_vco_dupplReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_0'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_0_0/double_iq_pid_vco_dupplReal_0_0/double_iq_pid_vco_dupplReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_0_1/double_iq_pid_vco_dupplReal_0_1/double_iq_pid_vco_dupplReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_0_1/double_iq_pid_vco_dupplReal_0_1/double_iq_pid_vco_dupplReal_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/dupplReal_1'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_0'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_0'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_1'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_1'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_2'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/tier2_xbar_2'
-Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0_in_context.xdc] for cell 'double_iq_pid_vco_i/ps7_axi/s00_couplers/auto_pc'
 Parsing XDC File [/home/bma/git/github/oscimpDigital/fpga_ip/redpitaya_converters/redpitaya_converters_adc.xdc]
 Finished Parsing XDC File [/home/bma/git/github/oscimpDigital/fpga_ip/redpitaya_converters/redpitaya_converters_adc.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bma/git/github/oscimpDigital/fpga_ip/redpitaya_converters/redpitaya_converters_adc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/double_iq_pid_vco_wrapper_propImpl.xdc].
@@ -426,20 +438,20 @@ Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/t
 Finished Parsing XDC File [/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.695 ; gain = 0.000 ; free physical = 1946 ; free virtual = 10437
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.664 ; gain = 0.000 ; free physical = 2761 ; free virtual = 28692
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2072.695 ; gain = 0.000 ; free physical = 1946 ; free virtual = 10437
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2073.664 ; gain = 0.000 ; free physical = 2761 ; free virtual = 28692
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 2026 ; free virtual = 10517
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2900 ; free virtual = 28831
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 2026 ; free virtual = 10517
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2900 ; free virtual = 28831
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -714,6 +726,10 @@ Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_rst. (constra
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/redpitaya_converters_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/adc1_offset. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/tier2_xbar_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/tier2_xbar_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/tier2_xbar_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/adc2_offset. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/convertComplexToReal_0. (constraint file  auto generated constraint, line ).
@@ -732,6 +748,10 @@ Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dds_ampl. (constr
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dds_range. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/demod1_nco. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/demod2_nco. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dupplReal_1_to_2_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dupplReal_1_to_2_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dupplReal_1_to_2_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dupplReal_1_to_2_4. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/expanderReal_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/expanderReal_3. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/firReal_0. (constraint file  auto generated constraint, line ).
@@ -752,17 +772,11 @@ Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/shifterReal_2. (c
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/shifterReal_3. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/shifterReal_dyn_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/shifterReal_dyn_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dupplReal_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/dupplReal_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/tier2_xbar_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/tier2_xbar_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/tier2_xbar_2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for double_iq_pid_vco_i/ps7_axi/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 2024 ; free virtual = 10515
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2900 ; free virtual = 28831
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 2024 ; free virtual = 10516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2902 ; free virtual = 28835
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -805,7 +819,7 @@ WARNING: [Synth 8-3331] design double_iq_pid_vco_ps7_axi_0 has unconnected port 
 WARNING: [Synth 8-3331] design double_iq_pid_vco_ps7_axi_0 has unconnected port M02_ARESETN
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 2010 ; free virtual = 10506
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2888 ; free virtual = 28825
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -817,13 +831,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1890 ; free virtual = 10386
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2776 ; free virtual = 28702
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1890 ; free virtual = 10386
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2776 ; free virtual = 28702
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -835,7 +849,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10384
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2758 ; free virtual = 28699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -859,13 +873,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -884,25 +898,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -935,31 +949,33 @@ Report BlackBoxes:
 |21    |double_iq_pid_vco_dds_range_0              |         1|
 |22    |double_iq_pid_vco_demod1_nco_0             |         1|
 |23    |double_iq_pid_vco_demod2_nco_0             |         1|
-|24    |double_iq_pid_vco_dupplReal_0_0            |         1|
-|25    |double_iq_pid_vco_dupplReal_0_1            |         1|
-|26    |double_iq_pid_vco_expanderReal_2_0         |         1|
-|27    |double_iq_pid_vco_expanderReal_3_0         |         1|
-|28    |double_iq_pid_vco_firReal_0_0              |         1|
-|29    |double_iq_pid_vco_firReal_1_0              |         1|
-|30    |double_iq_pid_vco_meanReal_0_0             |         1|
-|31    |double_iq_pid_vco_meanReal_1_0             |         1|
-|32    |double_iq_pid_vco_meanReal_2_0             |         1|
-|33    |double_iq_pid_vco_meanReal_3_0             |         1|
-|34    |double_iq_pid_vco_mixer_sin_0_0            |         1|
-|35    |double_iq_pid_vco_mixer_sin_1_0            |         1|
-|36    |double_iq_pid_vco_mixer_sin_2_0            |         1|
-|37    |double_iq_pid_vco_mixer_sin_3_0            |         1|
-|38    |double_iq_pid_vco_mixer_sin_4_0            |         1|
-|39    |double_iq_pid_vco_mixer_sin_5_0            |         1|
-|40    |double_iq_pid_vco_pidv3_axi_0_0            |         1|
-|41    |double_iq_pid_vco_pidv3_axi_1_0            |         1|
-|42    |double_iq_pid_vco_ps7_0                    |         1|
-|43    |double_iq_pid_vco_ps7_rst_0                |         1|
-|44    |double_iq_pid_vco_redpitaya_converters_0_0 |         1|
-|45    |double_iq_pid_vco_shifterReal_2_0          |         1|
-|46    |double_iq_pid_vco_shifterReal_3_0          |         1|
-|47    |double_iq_pid_vco_shifterReal_dyn_0_0      |         1|
-|48    |double_iq_pid_vco_shifterReal_dyn_1_0      |         1|
+|24    |double_iq_pid_vco_dupplReal_1_to_2_1_0     |         1|
+|25    |double_iq_pid_vco_dupplReal_1_to_2_2_0     |         1|
+|26    |double_iq_pid_vco_dupplReal_1_to_2_3_0     |         1|
+|27    |double_iq_pid_vco_dupplReal_1_to_2_4_0     |         1|
+|28    |double_iq_pid_vco_expanderReal_2_0         |         1|
+|29    |double_iq_pid_vco_expanderReal_3_0         |         1|
+|30    |double_iq_pid_vco_firReal_0_0              |         1|
+|31    |double_iq_pid_vco_firReal_1_0              |         1|
+|32    |double_iq_pid_vco_meanReal_0_0             |         1|
+|33    |double_iq_pid_vco_meanReal_1_0             |         1|
+|34    |double_iq_pid_vco_meanReal_2_0             |         1|
+|35    |double_iq_pid_vco_meanReal_3_0             |         1|
+|36    |double_iq_pid_vco_mixer_sin_0_0            |         1|
+|37    |double_iq_pid_vco_mixer_sin_1_0            |         1|
+|38    |double_iq_pid_vco_mixer_sin_2_0            |         1|
+|39    |double_iq_pid_vco_mixer_sin_3_0            |         1|
+|40    |double_iq_pid_vco_mixer_sin_4_0            |         1|
+|41    |double_iq_pid_vco_mixer_sin_5_0            |         1|
+|42    |double_iq_pid_vco_pidv3_axi_0_0            |         1|
+|43    |double_iq_pid_vco_pidv3_axi_1_0            |         1|
+|44    |double_iq_pid_vco_ps7_0                    |         1|
+|45    |double_iq_pid_vco_ps7_rst_0                |         1|
+|46    |double_iq_pid_vco_redpitaya_converters_0_0 |         1|
+|47    |double_iq_pid_vco_shifterReal_2_0          |         1|
+|48    |double_iq_pid_vco_shifterReal_3_0          |         1|
+|49    |double_iq_pid_vco_shifterReal_dyn_0_0      |         1|
+|50    |double_iq_pid_vco_shifterReal_dyn_1_0      |         1|
 +------+-------------------------------------------+----------+
 
 Report Cell Usage: 
@@ -985,69 +1001,71 @@ Report Cell Usage:
 |17    |double_iq_pid_vco_dds_range_0              |     1|
 |18    |double_iq_pid_vco_demod1_nco_0             |     1|
 |19    |double_iq_pid_vco_demod2_nco_0             |     1|
-|20    |double_iq_pid_vco_dupplReal_0_0            |     1|
-|21    |double_iq_pid_vco_dupplReal_0_1            |     1|
-|22    |double_iq_pid_vco_expanderReal_2_0         |     1|
-|23    |double_iq_pid_vco_expanderReal_3_0         |     1|
-|24    |double_iq_pid_vco_firReal_0_0              |     1|
-|25    |double_iq_pid_vco_firReal_1_0              |     1|
-|26    |double_iq_pid_vco_meanReal_0_0             |     1|
-|27    |double_iq_pid_vco_meanReal_1_0             |     1|
-|28    |double_iq_pid_vco_meanReal_2_0             |     1|
-|29    |double_iq_pid_vco_meanReal_3_0             |     1|
-|30    |double_iq_pid_vco_mixer_sin_0_0            |     1|
-|31    |double_iq_pid_vco_mixer_sin_1_0            |     1|
-|32    |double_iq_pid_vco_mixer_sin_2_0            |     1|
-|33    |double_iq_pid_vco_mixer_sin_3_0            |     1|
-|34    |double_iq_pid_vco_mixer_sin_4_0            |     1|
-|35    |double_iq_pid_vco_mixer_sin_5_0            |     1|
-|36    |double_iq_pid_vco_pidv3_axi_0_0            |     1|
-|37    |double_iq_pid_vco_pidv3_axi_1_0            |     1|
-|38    |double_iq_pid_vco_ps7_0                    |     1|
-|39    |double_iq_pid_vco_ps7_rst_0                |     1|
-|40    |double_iq_pid_vco_redpitaya_converters_0_0 |     1|
-|41    |double_iq_pid_vco_shifterReal_2_0          |     1|
-|42    |double_iq_pid_vco_shifterReal_3_0          |     1|
-|43    |double_iq_pid_vco_shifterReal_dyn_0_0      |     1|
-|44    |double_iq_pid_vco_shifterReal_dyn_1_0      |     1|
-|45    |double_iq_pid_vco_tier2_xbar_0_0           |     1|
-|46    |double_iq_pid_vco_tier2_xbar_1_0           |     1|
-|47    |double_iq_pid_vco_tier2_xbar_2_0           |     1|
-|48    |double_iq_pid_vco_xbar_0                   |     1|
-|49    |IBUF                                       |    28|
-|50    |OBUF                                       |    19|
+|20    |double_iq_pid_vco_dupplReal_1_to_2_1_0     |     1|
+|21    |double_iq_pid_vco_dupplReal_1_to_2_2_0     |     1|
+|22    |double_iq_pid_vco_dupplReal_1_to_2_3_0     |     1|
+|23    |double_iq_pid_vco_dupplReal_1_to_2_4_0     |     1|
+|24    |double_iq_pid_vco_expanderReal_2_0         |     1|
+|25    |double_iq_pid_vco_expanderReal_3_0         |     1|
+|26    |double_iq_pid_vco_firReal_0_0              |     1|
+|27    |double_iq_pid_vco_firReal_1_0              |     1|
+|28    |double_iq_pid_vco_meanReal_0_0             |     1|
+|29    |double_iq_pid_vco_meanReal_1_0             |     1|
+|30    |double_iq_pid_vco_meanReal_2_0             |     1|
+|31    |double_iq_pid_vco_meanReal_3_0             |     1|
+|32    |double_iq_pid_vco_mixer_sin_0_0            |     1|
+|33    |double_iq_pid_vco_mixer_sin_1_0            |     1|
+|34    |double_iq_pid_vco_mixer_sin_2_0            |     1|
+|35    |double_iq_pid_vco_mixer_sin_3_0            |     1|
+|36    |double_iq_pid_vco_mixer_sin_4_0            |     1|
+|37    |double_iq_pid_vco_mixer_sin_5_0            |     1|
+|38    |double_iq_pid_vco_pidv3_axi_0_0            |     1|
+|39    |double_iq_pid_vco_pidv3_axi_1_0            |     1|
+|40    |double_iq_pid_vco_ps7_0                    |     1|
+|41    |double_iq_pid_vco_ps7_rst_0                |     1|
+|42    |double_iq_pid_vco_redpitaya_converters_0_0 |     1|
+|43    |double_iq_pid_vco_shifterReal_2_0          |     1|
+|44    |double_iq_pid_vco_shifterReal_3_0          |     1|
+|45    |double_iq_pid_vco_shifterReal_dyn_0_0      |     1|
+|46    |double_iq_pid_vco_shifterReal_dyn_1_0      |     1|
+|47    |double_iq_pid_vco_tier2_xbar_0_0           |     1|
+|48    |double_iq_pid_vco_tier2_xbar_1_0           |     1|
+|49    |double_iq_pid_vco_tier2_xbar_2_0           |     1|
+|50    |double_iq_pid_vco_xbar_0                   |     1|
+|51    |IBUF                                       |    28|
+|52    |OBUF                                       |    19|
 +------+-------------------------------------------+------+
 
 Report Instance Areas: 
 +------+----------------------+----------------------------+------+
 |      |Instance              |Module                      |Cells |
 +------+----------------------+----------------------------+------+
-|1     |top                   |                            |  5543|
-|2     |  double_iq_pid_vco_i |double_iq_pid_vco           |  5496|
+|1     |top                   |                            |  5227|
+|2     |  double_iq_pid_vco_i |double_iq_pid_vco           |  5180|
 |3     |    ps7_axi           |double_iq_pid_vco_ps7_axi_0 |  2894|
 |4     |      s00_couplers    |s00_couplers_imp_1BEUG7G    |   177|
 +------+----------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2072.695 ; gain = 399.043 ; free physical = 1888 ; free virtual = 10385
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.664 ; gain = 401.043 ; free physical = 2763 ; free virtual = 28700
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 40 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2072.695 ; gain = 273.340 ; free physical = 1943 ; free virtual = 10439
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 2072.703 ; gain = 399.043 ; free physical = 1943 ; free virtual = 10439
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2073.664 ; gain = 277.340 ; free physical = 2814 ; free virtual = 28751
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2073.672 ; gain = 401.043 ; free physical = 2814 ; free virtual = 28751
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2072.703 ; gain = 0.000 ; free physical = 2012 ; free virtual = 10508
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2073.672 ; gain = 0.000 ; free physical = 2895 ; free virtual = 28832
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.703 ; gain = 0.000 ; free physical = 1952 ; free virtual = 10448
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.672 ; gain = 0.000 ; free physical = 2838 ; free virtual = 28775
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-165 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+169 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 2072.703 ; gain = 635.391 ; free physical = 2076 ; free virtual = 10573
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.703 ; gain = 0.000 ; free physical = 2076 ; free virtual = 10573
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 2073.672 ; gain = 636.359 ; free physical = 2960 ; free virtual = 28897
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2073.672 ; gain = 0.000 ; free physical = 2960 ; free virtual = 28897
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/synth_1/double_iq_pid_vco_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file double_iq_pid_vco_wrapper_utilization_synth.rpt -pb double_iq_pid_vco_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 30 19:59:20 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 29 17:27:09 2021...

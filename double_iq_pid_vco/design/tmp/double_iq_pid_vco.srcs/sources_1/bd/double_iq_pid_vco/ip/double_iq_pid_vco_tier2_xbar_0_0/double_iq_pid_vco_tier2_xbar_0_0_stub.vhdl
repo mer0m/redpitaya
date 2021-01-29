@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri May 15 18:53:44 2020
+-- Date        : Fri Jan 29 17:25:50 2021
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
--- Command     : write_vhdl -force -mode synth_stub -rename_top double_iq_pid_vco_tier2_xbar_0_0 -prefix
---               double_iq_pid_vco_tier2_xbar_0_0_ double_iq_pid_vco_tier2_xbar_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0_stub.vhdl
 -- Design      : double_iq_pid_vco_tier2_xbar_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

@@ -23,6 +23,18 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_v
 # IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_xbar_0/double_iq_pid_vco_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_xbar_0 || ORIG_REF_NAME==double_iq_pid_vco_xbar_0} -quiet] -quiet
 
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_tier2_xbar_0_0 || ORIG_REF_NAME==double_iq_pid_vco_tier2_xbar_0_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_tier2_xbar_1_0 || ORIG_REF_NAME==double_iq_pid_vco_tier2_xbar_1_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_tier2_xbar_2_0 || ORIG_REF_NAME==double_iq_pid_vco_tier2_xbar_2_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_auto_pc_0 || ORIG_REF_NAME==double_iq_pid_vco_auto_pc_0} -quiet] -quiet
+
 # IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_ps7_axi_0/double_iq_pid_vco_ps7_axi_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_ps7_axi_0 || ORIG_REF_NAME==double_iq_pid_vco_ps7_axi_0} -quiet] -quiet
 
@@ -76,6 +88,18 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_v
 
 # IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_demod2_nco_0 || ORIG_REF_NAME==double_iq_pid_vco_demod2_nco_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_1_0/double_iq_pid_vco_dupplReal_1_to_2_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_1_0 || ORIG_REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_1_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_2_0/double_iq_pid_vco_dupplReal_1_to_2_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_2_0 || ORIG_REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_2_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_3_0/double_iq_pid_vco_dupplReal_1_to_2_3_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_3_0 || ORIG_REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_3_0} -quiet] -quiet
+
+# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_1_to_2_4_0/double_iq_pid_vco_dupplReal_1_to_2_4_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_4_0 || ORIG_REF_NAME==double_iq_pid_vco_dupplReal_1_to_2_4_0} -quiet] -quiet
 
 # IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_expanderReal_2_0/double_iq_pid_vco_expanderReal_2_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_expanderReal_2_0 || ORIG_REF_NAME==double_iq_pid_vco_expanderReal_2_0} -quiet] -quiet
@@ -136,23 +160,5 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_v
 
 # IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_shifterReal_dyn_1_0/double_iq_pid_vco_shifterReal_dyn_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_shifterReal_dyn_1_0 || ORIG_REF_NAME==double_iq_pid_vco_shifterReal_dyn_1_0} -quiet] -quiet
-
-# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_0_0/double_iq_pid_vco_dupplReal_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_dupplReal_0_0 || ORIG_REF_NAME==double_iq_pid_vco_dupplReal_0_0} -quiet] -quiet
-
-# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_dupplReal_0_1/double_iq_pid_vco_dupplReal_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_dupplReal_0_1 || ORIG_REF_NAME==double_iq_pid_vco_dupplReal_0_1} -quiet] -quiet
-
-# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_0_0/double_iq_pid_vco_tier2_xbar_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_tier2_xbar_0_0 || ORIG_REF_NAME==double_iq_pid_vco_tier2_xbar_0_0} -quiet] -quiet
-
-# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_1_0/double_iq_pid_vco_tier2_xbar_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_tier2_xbar_1_0 || ORIG_REF_NAME==double_iq_pid_vco_tier2_xbar_1_0} -quiet] -quiet
-
-# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_tier2_xbar_2_0/double_iq_pid_vco_tier2_xbar_2_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_tier2_xbar_2_0 || ORIG_REF_NAME==double_iq_pid_vco_tier2_xbar_2_0} -quiet] -quiet
-
-# IP: bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==double_iq_pid_vco_auto_pc_0 || ORIG_REF_NAME==double_iq_pid_vco_auto_pc_0} -quiet] -quiet
 
 # XDC: bd/double_iq_pid_vco/double_iq_pid_vco_ooc.xdc

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri May 15 18:38:33 2020
+// Date        : Fri Jan 29 17:08:46 2021
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 // Command     : write_verilog -force -mode funcsim
-//               /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/double_iq_pid_vco_mixer_sin_2_0_sim_netlist.v
+//               /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_mixer_sin_2_0/double_iq_pid_vco_mixer_sin_2_0_sim_netlist.v
 // Design      : double_iq_pid_vco_mixer_sin_2_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

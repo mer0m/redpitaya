@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri May 15 18:56:37 2020
+-- Date        : Fri Jan 29 17:23:31 2021
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
--- Command     : write_vhdl -force -mode funcsim -rename_top double_iq_pid_vco_auto_pc_0 -prefix
---               double_iq_pid_vco_auto_pc_0_ double_iq_pid_vco_auto_pc_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_auto_pc_0/double_iq_pid_vco_auto_pc_0_sim_netlist.vhdl
 -- Design      : double_iq_pid_vco_auto_pc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -43,6 +43,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_incr_cmd i
     \axlen_cnt_reg[4]_0\ : in STD_LOGIC;
     \axlen_cnt_reg[8]_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_incr_cmd : entity is "axi_protocol_converter_v2_1_20_b2s_incr_cmd";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_incr_cmd;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_incr_cmd is
@@ -1943,6 +1945,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm
     r_full : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm : entity is "axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_rd_cmd_fsm is
@@ -2355,6 +2359,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_simple_fif
     \in\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_simple_fifo : entity is "axi_protocol_converter_v2_1_20_b2s_simple_fifo";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_simple_fifo;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_simple_fifo is
@@ -4085,6 +4091,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wr_cmd_fsm
     cnt_read : in STD_LOGIC_VECTOR ( 1 downto 0 );
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wr_cmd_fsm : entity is "axi_protocol_converter_v2_1_20_b2s_wr_cmd_fsm";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wr_cmd_fsm;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wr_cmd_fsm is
@@ -4323,6 +4331,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wrap_cmd i
     \wrap_cnt_r_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \wrap_boundary_axaddr_r_reg[6]_0\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wrap_cmd : entity is "axi_protocol_converter_v2_1_20_b2s_wrap_cmd";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wrap_cmd;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_wrap_cmd is
@@ -5768,6 +5778,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axic_register_slic
     \m_axi_araddr[11]_2\ : in STD_LOGIC;
     \m_payload_i_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axic_register_slice : entity is "axi_register_slice_v2_1_20_axic_register_slice";
 end double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axic_register_slice;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axic_register_slice is
@@ -12180,6 +12192,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_b_channel 
     \in\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_b_channel : entity is "axi_protocol_converter_v2_1_20_b2s_b_channel";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_b_channel;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_b_channel is
@@ -12527,6 +12541,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_cmd_transl
     \wrap_cnt_r_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \wrap_boundary_axaddr_r_reg[6]\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_cmd_translator : entity is "axi_protocol_converter_v2_1_20_b2s_cmd_translator";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_cmd_translator;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_cmd_translator is
@@ -12867,6 +12883,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_r_channel 
     D : in STD_LOGIC_VECTOR ( 11 downto 0 );
     areset_d1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_r_channel : entity is "axi_protocol_converter_v2_1_20_b2s_r_channel";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_r_channel;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_r_channel is
@@ -13110,6 +13128,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axi_register_slice
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \m_payload_i_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axi_register_slice : entity is "axi_register_slice_v2_1_20_axi_register_slice";
 end double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axi_register_slice;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_register_slice_v2_1_20_axi_register_slice is
@@ -13279,6 +13299,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_ar_channel
     \wrap_cnt_r_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \wrap_boundary_axaddr_r_reg[6]\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_ar_channel : entity is "axi_protocol_converter_v2_1_20_b2s_ar_channel";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_ar_channel;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_ar_channel is
@@ -13619,6 +13641,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_aw_channel
     \wrap_cnt_r_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \wrap_boundary_axaddr_r_reg[6]\ : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_aw_channel : entity is "axi_protocol_converter_v2_1_20_b2s_aw_channel";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_aw_channel;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s_aw_channel is
@@ -13893,6 +13917,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s is
     s_axi_bready : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s : entity is "axi_protocol_converter_v2_1_20_b2s";
 end double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s;
 
 architecture STRUCTURE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_b2s is
@@ -14443,6 +14469,8 @@ entity double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_axi_protocol_c
   attribute C_TRANSLATION_MODE of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_20_axi_protocol_converter";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of double_iq_pid_vco_auto_pc_0_axi_protocol_converter_v2_1_20_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;

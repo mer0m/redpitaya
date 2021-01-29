@@ -2,16 +2,16 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri May 15 18:46:41 2020
-# Process ID: 32765
-# Current directory: /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_nco_0_synth_1
+# Start of session at: Fri Jan 29 17:12:38 2021
+# Process ID: 12438
+# Current directory: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_nco_0_synth_1
 # Command line: vivado -log double_iq_pid_vco_dds2_nco_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_iq_pid_vco_dds2_nco_0.tcl
-# Log file: /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_nco_0_synth_1/double_iq_pid_vco_dds2_nco_0.vds
-# Journal file: /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_nco_0_synth_1/vivado.jou
+# Log file: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_nco_0_synth_1/double_iq_pid_vco_dds2_nco_0.vds
+# Journal file: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.runs/double_iq_pid_vco_dds2_nco_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source double_iq_pid_vco_dds2_nco_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bma/git/github/oscimpDigital/fpga_ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'.
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP double_iq_pid_vco_dds2_nco_0, cache-ID = 6fdb688fb3ce0760.
-INFO: [Common 17-206] Exiting Vivado at Fri May 15 18:47:15 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 29 17:13:11 2021...

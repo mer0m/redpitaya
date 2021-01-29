@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri May 15 18:34:21 2020
+-- Date        : Fri Jan 29 17:04:55 2021
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top double_iq_pid_vco_demod1_nco_0 -prefix
---               double_iq_pid_vco_demod1_nco_0_ double_iq_pid_vco_demod2_nco_0_stub.vhdl
--- Design      : double_iq_pid_vco_demod2_nco_0
+--               double_iq_pid_vco_demod1_nco_0_ double_iq_pid_vco_dds1_nco_0_stub.vhdl
+-- Design      : double_iq_pid_vco_dds1_nco_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------

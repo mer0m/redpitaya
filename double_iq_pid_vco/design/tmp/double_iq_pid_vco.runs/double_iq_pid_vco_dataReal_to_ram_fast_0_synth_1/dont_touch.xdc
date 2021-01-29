@@ -6,11 +6,11 @@
 
 # XDC: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_fast_0/dataReal_to_ram.xdc
 # XDC: The top module name and the constraint reference have the same name: 'double_iq_pid_vco_dataReal_to_ram_fast_0'. Do not add the DONT_TOUCH constraint.
-set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+set_property DONT_TOUCH TRUE [get_cells U0 -quiet] -quiet
 
 # IP: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_fast_0/double_iq_pid_vco_dataReal_to_ram_fast_0.xci
 # IP: The module: 'double_iq_pid_vco_dataReal_to_ram_fast_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
 # XDC: /home/bma/git/fpga_design/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_dataReal_to_ram_fast_0/dataReal_to_ram.xdc
 # XDC: The top module name and the constraint reference have the same name: 'double_iq_pid_vco_dataReal_to_ram_fast_0'. Do not add the DONT_TOUCH constraint.
-#dup# set_property DONT_TOUCH TRUE [get_cells inst -quiet] -quiet
+#dup# set_property DONT_TOUCH TRUE [get_cells U0 -quiet] -quiet

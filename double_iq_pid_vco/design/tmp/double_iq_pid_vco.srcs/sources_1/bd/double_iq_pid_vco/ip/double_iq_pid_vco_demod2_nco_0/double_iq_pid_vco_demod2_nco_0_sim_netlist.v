@@ -1,18 +1,18 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri May 15 18:34:23 2020
+// Date        : Fri Jan 29 17:04:56 2021
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
-// Command     : write_verilog -force -mode funcsim
-//               /home/bma/git/github/oscimpDigital/app/redpitaya/double_iq_pid_vco/design/tmp/double_iq_pid_vco.srcs/sources_1/bd/double_iq_pid_vco/ip/double_iq_pid_vco_demod2_nco_0/double_iq_pid_vco_demod2_nco_0_sim_netlist.v
-// Design      : double_iq_pid_vco_demod2_nco_0
+// Command     : write_verilog -force -mode funcsim -rename_top double_iq_pid_vco_demod2_nco_0 -prefix
+//               double_iq_pid_vco_demod2_nco_0_ double_iq_pid_vco_dds1_nco_0_sim_netlist.v
+// Design      : double_iq_pid_vco_dds1_nco_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "double_iq_pid_vco_demod2_nco_0,nco_counter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
+(* CHECK_LICENSE_TYPE = "double_iq_pid_vco_dds1_nco_0,nco_counter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "package_project" *) 
 (* x_core_info = "nco_counter,Vivado 2019.2" *) 
 (* NotValidForBitStream *)
 module double_iq_pid_vco_demod2_nco_0
@@ -203,7 +203,7 @@ endmodule
 
 (* COUNTER_SIZE = "40" *) (* C_S00_AXI_ADDR_WIDTH = "5" *) (* C_S00_AXI_DATA_WIDTH = "32" *) 
 (* DATA_SIZE = "16" *) (* DEFAULT_RST_ACCUM_VAL = "25" *) (* LUT_SIZE = "12" *) 
-(* ORIG_REF_NAME = "nco_counter" *) (* RESET_ACCUM = "FALSE" *) (* id = "1" *) 
+(* RESET_ACCUM = "FALSE" *) (* id = "1" *) 
 module double_iq_pid_vco_demod2_nco_0_nco_counter
    (ref_clk_i,
     ref_rst_i,
@@ -591,7 +591,6 @@ module double_iq_pid_vco_demod2_nco_0_nco_counter
         .s00_axi_wdata(s00_axi_wdata));
 endmodule
 
-(* ORIG_REF_NAME = "nco_counter_cos_rom_a12_d16" *) 
 module double_iq_pid_vco_demod2_nco_0_nco_counter_cos_rom_a12_d16
    (S,
     \poff_i[11] ,
@@ -1162,7 +1161,6 @@ module double_iq_pid_vco_demod2_nco_0_nco_counter_cos_rom_a12_d16
         .O(data_a_reg_1_i_1_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "nco_counter_handcomm" *) 
 module double_iq_pid_vco_demod2_nco_0_nco_counter_handcomm
    (axi_awready_reg_0,
     axi_wready_reg_0,
@@ -1655,7 +1653,6 @@ module double_iq_pid_vco_demod2_nco_0_nco_counter_handcomm
         .O(read_en_s));
 endmodule
 
-(* ORIG_REF_NAME = "nco_counter_logic" *) 
 module double_iq_pid_vco_demod2_nco_0_nco_counter_logic
    (cos_next,
     sin_fake_o,
@@ -2490,7 +2487,6 @@ module double_iq_pid_vco_demod2_nco_0_nco_counter_logic
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "nco_counter_synchronizer_bit" *) 
 module double_iq_pid_vco_demod2_nco_0_nco_counter_synchronizer_bit
    (out,
     data3,
@@ -3054,7 +3050,6 @@ module double_iq_pid_vco_demod2_nco_0_nco_counter_synchronizer_bit__xdcDup__2
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "nco_counter_synchronizer_vector" *) 
 module double_iq_pid_vco_demod2_nco_0_nco_counter_synchronizer_vector
    (Q,
     s00_axi_aclk,
@@ -6429,7 +6424,6 @@ module double_iq_pid_vco_demod2_nco_0_nco_counter_synchronizer_vector__xdcDup__1
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "wb_nco_counter" *) 
 module double_iq_pid_vco_demod2_nco_0_wb_nco_counter
    (data3,
     enable_s,

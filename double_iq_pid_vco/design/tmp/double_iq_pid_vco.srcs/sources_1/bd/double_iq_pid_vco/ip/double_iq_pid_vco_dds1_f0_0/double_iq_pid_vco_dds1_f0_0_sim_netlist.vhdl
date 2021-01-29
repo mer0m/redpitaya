@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Fri May 15 18:42:48 2020
+-- Date        : Fri Jan 29 17:16:46 2021
 -- Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 -- Command     : write_vhdl -force -mode funcsim -rename_top double_iq_pid_vco_dds1_f0_0 -prefix
 --               double_iq_pid_vco_dds1_f0_0_ double_iq_pid_vco_dds2_f0_0_sim_netlist.vhdl

@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2020 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -55,11 +55,11 @@ USE ieee.numeric_std.ALL;
 
 ENTITY double_iq_pid_vco_meanReal_2_0 IS
   PORT (
-    data_i : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
+    data_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
     data_en_i : IN STD_LOGIC;
     data_clk_i : IN STD_LOGIC;
     data_rst_i : IN STD_LOGIC;
-    data_o : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+    data_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     data_clk_o : OUT STD_LOGIC;
     data_rst_o : OUT STD_LOGIC;
     data_en_o : OUT STD_LOGIC
@@ -78,11 +78,11 @@ ARCHITECTURE double_iq_pid_vco_meanReal_2_0_arch OF double_iq_pid_vco_meanReal_2
       DATA_IN_SIZE : INTEGER
     );
     PORT (
-      data_i : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
+      data_i : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
       data_en_i : IN STD_LOGIC;
       data_clk_i : IN STD_LOGIC;
       data_rst_i : IN STD_LOGIC;
-      data_o : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+      data_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       data_clk_o : OUT STD_LOGIC;
       data_rst_o : OUT STD_LOGIC;
       data_en_o : OUT STD_LOGIC
@@ -103,10 +103,10 @@ BEGIN
   U0 : meanReal
     GENERIC MAP (
       SIGNED_FORMAT => true,
-      NB_ACCUM => 32768,
-      SHIFT => 15,
-      DATA_OUT_SIZE => 64,
-      DATA_IN_SIZE => 40
+      NB_ACCUM => 8192,
+      SHIFT => 13,
+      DATA_OUT_SIZE => 16,
+      DATA_IN_SIZE => 14
     )
     PORT MAP (
       data_i => data_i,

@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Fri May 15 18:45:51 2020
+// Date        : Fri Jan 29 17:15:13 2021
 // Host        : ux305 running 64-bit Debian GNU/Linux 10 (buster)
 // Command     : write_verilog -force -mode funcsim -rename_top double_iq_pid_vco_adc1_offset_0 -prefix
-//               double_iq_pid_vco_adc1_offset_0_ double_iq_pid_vco_adc2_offset_0_sim_netlist.v
-// Design      : double_iq_pid_vco_adc2_offset_0
+//               double_iq_pid_vco_adc1_offset_0_ double_iq_pid_vco_dds1_offset_0_sim_netlist.v
+// Design      : double_iq_pid_vco_dds1_offset_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z010clg400-1
@@ -1122,7 +1122,7 @@ module double_iq_pid_vco_adc1_offset_0_add_constReal_synchronizer_vector
         .R(1'b0));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "double_iq_pid_vco_adc2_offset_0,add_constReal,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "add_constReal,Vivado 2019.2" *) 
+(* CHECK_LICENSE_TYPE = "double_iq_pid_vco_dds1_offset_0,add_constReal,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "add_constReal,Vivado 2019.2" *) 
 (* NotValidForBitStream *)
 module double_iq_pid_vco_adc1_offset_0
    (s00_axi_aclk,

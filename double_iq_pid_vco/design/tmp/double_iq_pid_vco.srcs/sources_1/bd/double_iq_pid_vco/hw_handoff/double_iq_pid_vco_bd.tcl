@@ -205,7 +205,7 @@ proc create_root_design { parentCell } {
   # Create instance: dataReal_to_ram_fast, and set properties
   set dataReal_to_ram_fast [ create_bd_cell -type ip -vlnv ggm:cogen:dataReal_to_ram:1.0 dataReal_to_ram_fast ]
   set_property -dict [ list \
-   CONFIG.DATA_SIZE {64} \
+   CONFIG.DATA_SIZE {16} \
    CONFIG.NB_INPUT {2} \
    CONFIG.NB_SAMPLE {1024} \
  ] $dataReal_to_ram_fast
@@ -213,7 +213,7 @@ proc create_root_design { parentCell } {
   # Create instance: dataReal_to_ram_slow, and set properties
   set dataReal_to_ram_slow [ create_bd_cell -type ip -vlnv ggm:cogen:dataReal_to_ram:1.0 dataReal_to_ram_slow ]
   set_property -dict [ list \
-   CONFIG.DATA_SIZE {64} \
+   CONFIG.DATA_SIZE {16} \
    CONFIG.NB_INPUT {2} \
    CONFIG.NB_SAMPLE {2048} \
  ] $dataReal_to_ram_slow
@@ -296,19 +296,29 @@ proc create_root_design { parentCell } {
    CONFIG.LUT_SIZE {12} \
  ] $demod2_nco
 
-  # Create instance: dupplReal_0, and set properties
-  set dupplReal_0 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal:1.0 dupplReal_0 ]
+  # Create instance: dupplReal_1_to_2_1, and set properties
+  set dupplReal_1_to_2_1 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_1 ]
   set_property -dict [ list \
-   CONFIG.DATA_SIZE {40} \
-   CONFIG.NB_OUTPUT {3} \
- ] $dupplReal_0
+   CONFIG.DATA_SIZE {14} \
+ ] $dupplReal_1_to_2_1
 
-  # Create instance: dupplReal_1, and set properties
-  set dupplReal_1 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal:1.0 dupplReal_1 ]
+  # Create instance: dupplReal_1_to_2_2, and set properties
+  set dupplReal_1_to_2_2 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_2 ]
   set_property -dict [ list \
-   CONFIG.DATA_SIZE {40} \
-   CONFIG.NB_OUTPUT {3} \
- ] $dupplReal_1
+   CONFIG.DATA_SIZE {14} \
+ ] $dupplReal_1_to_2_2
+
+  # Create instance: dupplReal_1_to_2_3, and set properties
+  set dupplReal_1_to_2_3 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_3 ]
+  set_property -dict [ list \
+   CONFIG.DATA_SIZE {14} \
+ ] $dupplReal_1_to_2_3
+
+  # Create instance: dupplReal_1_to_2_4, and set properties
+  set dupplReal_1_to_2_4 [ create_bd_cell -type ip -vlnv ggm:cogen:dupplReal_1_to_2:1.0 dupplReal_1_to_2_4 ]
+  set_property -dict [ list \
+   CONFIG.DATA_SIZE {14} \
+ ] $dupplReal_1_to_2_4
 
   # Create instance: expanderReal_2, and set properties
   set expanderReal_2 [ create_bd_cell -type ip -vlnv ggm:cogen:expanderReal:1.0 expanderReal_2 ]
@@ -345,8 +355,8 @@ proc create_root_design { parentCell } {
   # Create instance: meanReal_0, and set properties
   set meanReal_0 [ create_bd_cell -type ip -vlnv ggm:cogen:meanReal:1.0 meanReal_0 ]
   set_property -dict [ list \
-   CONFIG.DATA_IN_SIZE {40} \
-   CONFIG.DATA_OUT_SIZE {64} \
+   CONFIG.DATA_IN_SIZE {14} \
+   CONFIG.DATA_OUT_SIZE {16} \
    CONFIG.NB_ACCUM {128} \
    CONFIG.SHIFT {7} \
  ] $meanReal_0
@@ -354,8 +364,8 @@ proc create_root_design { parentCell } {
   # Create instance: meanReal_1, and set properties
   set meanReal_1 [ create_bd_cell -type ip -vlnv ggm:cogen:meanReal:1.0 meanReal_1 ]
   set_property -dict [ list \
-   CONFIG.DATA_IN_SIZE {40} \
-   CONFIG.DATA_OUT_SIZE {64} \
+   CONFIG.DATA_IN_SIZE {14} \
+   CONFIG.DATA_OUT_SIZE {16} \
    CONFIG.NB_ACCUM {128} \
    CONFIG.SHIFT {7} \
  ] $meanReal_1
@@ -363,19 +373,19 @@ proc create_root_design { parentCell } {
   # Create instance: meanReal_2, and set properties
   set meanReal_2 [ create_bd_cell -type ip -vlnv ggm:cogen:meanReal:1.0 meanReal_2 ]
   set_property -dict [ list \
-   CONFIG.DATA_IN_SIZE {40} \
-   CONFIG.DATA_OUT_SIZE {64} \
-   CONFIG.NB_ACCUM {32768} \
-   CONFIG.SHIFT {15} \
+   CONFIG.DATA_IN_SIZE {14} \
+   CONFIG.DATA_OUT_SIZE {16} \
+   CONFIG.NB_ACCUM {8192} \
+   CONFIG.SHIFT {13} \
  ] $meanReal_2
 
   # Create instance: meanReal_3, and set properties
   set meanReal_3 [ create_bd_cell -type ip -vlnv ggm:cogen:meanReal:1.0 meanReal_3 ]
   set_property -dict [ list \
-   CONFIG.DATA_IN_SIZE {40} \
-   CONFIG.DATA_OUT_SIZE {64} \
-   CONFIG.NB_ACCUM {32768} \
-   CONFIG.SHIFT {15} \
+   CONFIG.DATA_IN_SIZE {14} \
+   CONFIG.DATA_OUT_SIZE {16} \
+   CONFIG.NB_ACCUM {8192} \
+   CONFIG.SHIFT {13} \
  ] $meanReal_3
 
   # Create instance: mixer_sin_0, and set properties
@@ -1146,10 +1156,10 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net convertComplexToReal_1_dataI_out [get_bd_intf_pins convertComplexToReal_1/dataI_out] [get_bd_intf_pins firReal_1/data_in]
   connect_bd_intf_net -intf_net convertComplexToReal_4_dataI_out [get_bd_intf_pins convertComplexToReal_4/dataI_out] [get_bd_intf_pins dds1_offset/data_in]
   connect_bd_intf_net -intf_net convertComplexToReal_5_dataI_out [get_bd_intf_pins convertComplexToReal_5/dataI_out] [get_bd_intf_pins dds2_offset/data_in]
-  connect_bd_intf_net -intf_net dds1_f0_data_out [get_bd_intf_pins dds1_f0/data_out] [get_bd_intf_pins dupplReal_0/data_in]
+  connect_bd_intf_net -intf_net dds1_f0_data_out [get_bd_intf_pins dds1_f0/data_out] [get_bd_intf_pins dds1_nco/pinc_in]
   connect_bd_intf_net -intf_net dds1_nco_sine_out [get_bd_intf_pins dds1_nco/sine_out] [get_bd_intf_pins mixer_sin_4/nco_in]
   connect_bd_intf_net -intf_net dds1_offset_data_out [get_bd_intf_pins dds1_offset/data_out] [get_bd_intf_pins redpitaya_converters_0/dataA_in]
-  connect_bd_intf_net -intf_net dds2_f0_data_out [get_bd_intf_pins dds2_f0/data_out] [get_bd_intf_pins dupplReal_1/data_in]
+  connect_bd_intf_net -intf_net dds2_f0_data_out [get_bd_intf_pins dds2_f0/data_out] [get_bd_intf_pins dds2_nco/pinc_in]
   connect_bd_intf_net -intf_net dds2_nco_sine_out [get_bd_intf_pins dds2_nco/sine_out] [get_bd_intf_pins mixer_sin_5/nco_in]
   connect_bd_intf_net -intf_net dds2_offset_data_out [get_bd_intf_pins dds2_offset/data_out] [get_bd_intf_pins redpitaya_converters_0/dataB_in]
   connect_bd_intf_net -intf_net dds_ampl_dataA_out [get_bd_intf_pins dds_ampl/dataA_out] [get_bd_intf_pins mixer_sin_4/data_in]
@@ -1158,12 +1168,14 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net dds_range_dataB_out [get_bd_intf_pins dds_range/dataB_out] [get_bd_intf_pins mixer_sin_3/data2_in]
   connect_bd_intf_net -intf_net demod1_nco_sine_out [get_bd_intf_pins demod1_nco/sine_out] [get_bd_intf_pins mixer_sin_0/nco_in]
   connect_bd_intf_net -intf_net demod2_nco_sine_out [get_bd_intf_pins demod2_nco/sine_out] [get_bd_intf_pins mixer_sin_1/nco_in]
-  connect_bd_intf_net -intf_net dupplReal_0_data1_out [get_bd_intf_pins demod1_nco/pinc_in] [get_bd_intf_pins dupplReal_0/data1_out]
-  connect_bd_intf_net -intf_net dupplReal_0_data2_out [get_bd_intf_pins dupplReal_0/data2_out] [get_bd_intf_pins meanReal_0/data_in]
-  connect_bd_intf_net -intf_net dupplReal_0_data3_out [get_bd_intf_pins dupplReal_0/data3_out] [get_bd_intf_pins meanReal_2/data_in]
-  connect_bd_intf_net -intf_net dupplReal_1_data1_out [get_bd_intf_pins demod2_nco/pinc_in] [get_bd_intf_pins dupplReal_1/data1_out]
-  connect_bd_intf_net -intf_net dupplReal_1_data2_out [get_bd_intf_pins dupplReal_1/data2_out] [get_bd_intf_pins meanReal_1/data_in]
-  connect_bd_intf_net -intf_net dupplReal_1_data3_out [get_bd_intf_pins dupplReal_1/data3_out] [get_bd_intf_pins meanReal_3/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_1_data1_out [get_bd_intf_pins dupplReal_1_to_2_1/data1_out] [get_bd_intf_pins pidv3_axi_0/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_1_data2_out [get_bd_intf_pins dupplReal_1_to_2_1/data2_out] [get_bd_intf_pins dupplReal_1_to_2_4/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_2_data1_out [get_bd_intf_pins dupplReal_1_to_2_2/data1_out] [get_bd_intf_pins dupplReal_1_to_2_3/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_2_data2_out [get_bd_intf_pins dupplReal_1_to_2_2/data2_out] [get_bd_intf_pins pidv3_axi_1/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_3_data1_out [get_bd_intf_pins dupplReal_1_to_2_3/data1_out] [get_bd_intf_pins meanReal_1/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_3_data2_out [get_bd_intf_pins dupplReal_1_to_2_3/data2_out] [get_bd_intf_pins meanReal_3/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_4_data1_out [get_bd_intf_pins dupplReal_1_to_2_4/data1_out] [get_bd_intf_pins meanReal_0/data_in]
+  connect_bd_intf_net -intf_net dupplReal_1_to_2_4_data2_out [get_bd_intf_pins dupplReal_1_to_2_4/data2_out] [get_bd_intf_pins meanReal_2/data_in]
   connect_bd_intf_net -intf_net expanderReal_2_data_out [get_bd_intf_pins expanderReal_2/data_out] [get_bd_intf_pins shifterReal_3/data_in]
   connect_bd_intf_net -intf_net expanderReal_3_data_out [get_bd_intf_pins expanderReal_3/data_out] [get_bd_intf_pins shifterReal_2/data_in]
   connect_bd_intf_net -intf_net firReal_0_data_out [get_bd_intf_pins firReal_0/data_out] [get_bd_intf_pins shifterReal_dyn_0/data_in]
@@ -1208,8 +1220,8 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net redpitaya_converters_0_dataB_out [get_bd_intf_pins adc2_offset/data_in] [get_bd_intf_pins redpitaya_converters_0/dataB_out]
   connect_bd_intf_net -intf_net shifterReal_2_data_out [get_bd_intf_pins dds2_f0/data_in] [get_bd_intf_pins shifterReal_2/data_out]
   connect_bd_intf_net -intf_net shifterReal_3_data_out [get_bd_intf_pins dds1_f0/data_in] [get_bd_intf_pins shifterReal_3/data_out]
-  connect_bd_intf_net -intf_net shifterReal_dyn_0_data_out [get_bd_intf_pins pidv3_axi_0/data_in] [get_bd_intf_pins shifterReal_dyn_0/data_out]
-  connect_bd_intf_net -intf_net shifterReal_dyn_1_data_out [get_bd_intf_pins pidv3_axi_1/data_in] [get_bd_intf_pins shifterReal_dyn_1/data_out]
+  connect_bd_intf_net -intf_net shifterReal_dyn_0_data_out [get_bd_intf_pins dupplReal_1_to_2_1/data_in] [get_bd_intf_pins shifterReal_dyn_0/data_out]
+  connect_bd_intf_net -intf_net shifterReal_dyn_1_data_out [get_bd_intf_pins dupplReal_1_to_2_2/data_in] [get_bd_intf_pins shifterReal_dyn_1/data_out]
 
   # Create port connections
   connect_bd_net -net ps7_FCLK_CLK0 [get_bd_pins adc1_offset/s00_axi_aclk] [get_bd_pins adc2_offset/s00_axi_aclk] [get_bd_pins dataReal_to_ram_fast/s00_axi_aclk] [get_bd_pins dataReal_to_ram_slow/s00_axi_aclk] [get_bd_pins dds1_f0/s00_axi_aclk] [get_bd_pins dds1_nco/s00_axi_aclk] [get_bd_pins dds1_offset/s00_axi_aclk] [get_bd_pins dds2_f0/s00_axi_aclk] [get_bd_pins dds2_nco/s00_axi_aclk] [get_bd_pins dds2_offset/s00_axi_aclk] [get_bd_pins dds_ampl/s00_axi_aclk] [get_bd_pins dds_range/s00_axi_aclk] [get_bd_pins demod1_nco/s00_axi_aclk] [get_bd_pins demod2_nco/s00_axi_aclk] [get_bd_pins firReal_0/s00_axi_aclk] [get_bd_pins firReal_1/s00_axi_aclk] [get_bd_pins pidv3_axi_0/s00_axi_aclk] [get_bd_pins pidv3_axi_1/s00_axi_aclk] [get_bd_pins ps7/FCLK_CLK0] [get_bd_pins ps7/M_AXI_GP0_ACLK] [get_bd_pins ps7_axi/ACLK] [get_bd_pins ps7_axi/M00_ACLK] [get_bd_pins ps7_axi/M01_ACLK] [get_bd_pins ps7_axi/M02_ACLK] [get_bd_pins ps7_axi/M03_ACLK] [get_bd_pins ps7_axi/M04_ACLK] [get_bd_pins ps7_axi/M05_ACLK] [get_bd_pins ps7_axi/M06_ACLK] [get_bd_pins ps7_axi/M07_ACLK] [get_bd_pins ps7_axi/M08_ACLK] [get_bd_pins ps7_axi/M09_ACLK] [get_bd_pins ps7_axi/M10_ACLK] [get_bd_pins ps7_axi/M11_ACLK] [get_bd_pins ps7_axi/M12_ACLK] [get_bd_pins ps7_axi/M13_ACLK] [get_bd_pins ps7_axi/M14_ACLK] [get_bd_pins ps7_axi/M15_ACLK] [get_bd_pins ps7_axi/M16_ACLK] [get_bd_pins ps7_axi/M17_ACLK] [get_bd_pins ps7_axi/M18_ACLK] [get_bd_pins ps7_axi/M19_ACLK] [get_bd_pins ps7_axi/S00_ACLK] [get_bd_pins ps7_rst/slowest_sync_clk] [get_bd_pins shifterReal_dyn_0/s00_axi_aclk] [get_bd_pins shifterReal_dyn_1/s00_axi_aclk]

@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun May 31 19:56:31 2020">
+<application name="pa" timeStamp="Fri Jan 29 19:36:08 2021">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="a2b679fbf80b4dd0afa7c521355bfc67" type="ProjectID"/>
-<property name="ProjectIteration" value="3" type="ProjectIteration"/>
+<property name="ProjectID" value="55ac9251c7a9452ab5caf9e579d9985b" type="ProjectID"/>
+<property name="ProjectIteration" value="2" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,56 +17,20 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="CustomizeRSBBlock" value="58" type="JavaHandler"/>
-<property name="EditCopy" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="17" type="JavaHandler"/>
-<property name="EditPaste" value="1" type="JavaHandler"/>
-<property name="FileExit" value="1" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="2" type="JavaHandler"/>
 <property name="OpenBlockDesign" value="1" type="JavaHandler"/>
-<property name="RegenerateRSBLayout" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="1" type="JavaHandler"/>
-<property name="SaveRSBDesign" value="1" type="JavaHandler"/>
-<property name="ToolsSettings" value="3" type="JavaHandler"/>
-<property name="ZoomFit" value="1" type="JavaHandler"/>
-<property name="ZoomIn" value="4" type="JavaHandler"/>
-<property name="ZoomOut" value="7" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
-<property name="BaseDialog_CANCEL" value="46" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="16" type="GuiHandlerData"/>
-<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="6" type="GuiHandlerData"/>
-<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="7" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="2" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_CHECKPOINT" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_EDIT" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FLOW" value="6" type="GuiHandlerData"/>
-<property name="MainMenuMgr_IP" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_PROJECT" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TEXT_EDITOR" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TOOLS" value="8" type="GuiHandlerData"/>
-<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="23" type="GuiHandlerData"/>
-<property name="MsgView_INFORMATION_MESSAGES" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_EXIT" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_REGENERATE_LAYOUT" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_RUN_BITGEN" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_ZOOM_FIT" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_ZOOM_OUT" value="6" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="1" type="GuiHandlerData"/>
-<property name="RDICommands_CUSTOM_COMMANDS" value="3" type="GuiHandlerData"/>
-<property name="RDICommands_SETTINGS" value="3" type="GuiHandlerData"/>
-<property name="RunStrategyOptionsPanel_RUN_STRATEGIES_TREE" value="11" type="GuiHandlerData"/>
-<property name="SettingsDialog_OPTIONS_TREE" value="24" type="GuiHandlerData"/>
-<property name="SettingsDialog_PROJECT_TREE" value="9" type="GuiHandlerData"/>
-<property name="SystemBuilderView_EXPAND_COLLAPSE" value="1" type="GuiHandlerData"/>
-<property name="SystemBuilderView_ORIENTATION" value="1" type="GuiHandlerData"/>
-<property name="SystemBuilderView_PINNING" value="1" type="GuiHandlerData"/>
-<property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="15" type="GuiHandlerData"/>
+<property name="RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="248" type="GuiMode"/>
+<property name="GuiMode" value="278" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="233" type="TclMode"/>
+<property name="TclMode" value="264" type="TclMode"/>
 </item>
 </section>
 </application>
