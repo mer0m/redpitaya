@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="nco_counter" version="1.0">
+	<ips>
+		<ip name ="counter" >
+			<instance name="c1" id="0"
+				base_addr="0x43C10000" addr_size="0xffff" />
+		</ip>
+		<ip name ="nco_counter" >
+			<instance name="nco1" id="0"
+				base_addr="0x43C00000" addr_size="0xffff" />
+		</ip>
+	</ips>
+</project>
