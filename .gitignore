@@ -1,5 +1,4 @@
-tmp
-!/*/*/tmp
+*/*/tmp
 *.swp
 vivado.log
 vivado.jou
