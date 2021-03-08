@@ -1,4 +1,0 @@
-all:
-{
-	tmp/double_iq_pid_vco.runs/impl_1/double_iq_pid_vco_wrapper.bit
-}
