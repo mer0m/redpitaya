@@ -1,3 +1,4 @@
+*/*/*.bit.bin
 */*/tmp
 *.swp
 vivado.log
