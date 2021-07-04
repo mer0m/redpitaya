@@ -87,8 +87,8 @@ connect_intf adc2_dupl data2_out data_adc12 data2_in
 
 ## Create data_win12
 add_ip_and_conf dataReal_to_ram data_win12 {
-	USE_EOF false \
-	DATA_SIZE 16 \
+	USE_EOF true \
+	DATA_SIZE 14 \
 	NB_INPUT 2 \
 	NB_SAMPLE 2048 }
 connect_proc data_win12 s00_axi 0x50000
