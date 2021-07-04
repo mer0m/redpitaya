@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Sun Oct 25 00:17:01 2020
+# Generated: Sun Jul  4 19:57:13 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -68,34 +68,9 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.zeromq_sub_source_0_0 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9902', 200, False, -1)
         self.zeromq_sub_source_0 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9901', 200, False, -1)
-        self.qtgui_sink_x_0_0 = qtgui.sink_c(
-        	8192, #fftsize
-        	firdes.WIN_BLACKMAN_hARRIS, #wintype
-        	0, #fc
-        	samp_rate, #bw
-        	"", #name
-        	True, #plotfreq
-        	True, #plotwaterfall
-        	True, #plottime
-        	True, #plotconst
-        )
-        self.qtgui_sink_x_0_0.set_update_time(1.0/1)
-        self._qtgui_sink_x_0_0_win = sip.wrapinstance(self.qtgui_sink_x_0_0.pyqwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_sink_x_0_0_win, 1, 0, 1, 1)
-        for r in range(1, 2):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 1):
-            self.top_grid_layout.setColumnStretch(c, 1)
-
-
-        self.qtgui_sink_x_0_0.enable_rf_freq(False)
-
-
-
         self.qtgui_sink_x_0 = qtgui.sink_c(
-        	8192, #fftsize
+        	2048, #fftsize
         	firdes.WIN_BLACKMAN_hARRIS, #wintype
         	0, #fc
         	samp_rate, #bw
@@ -118,11 +93,8 @@ class zmq_stream(gr.top_block, Qt.QWidget):
 
 
 
-        self.blocks_short_to_float_0_0 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
-        self.blocks_float_to_complex_0_0 = blocks.float_to_complex(1)
         self.blocks_float_to_complex_0 = blocks.float_to_complex(1)
-        self.blocks_deinterleave_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
 
 
@@ -132,14 +104,9 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         ##################################################
         self.connect((self.blocks_deinterleave_0, 0), (self.blocks_float_to_complex_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.blocks_float_to_complex_0, 1))
-        self.connect((self.blocks_deinterleave_0_0, 0), (self.blocks_float_to_complex_0_0, 0))
-        self.connect((self.blocks_deinterleave_0_0, 1), (self.blocks_float_to_complex_0_0, 1))
         self.connect((self.blocks_float_to_complex_0, 0), (self.qtgui_sink_x_0, 0))
-        self.connect((self.blocks_float_to_complex_0_0, 0), (self.qtgui_sink_x_0_0, 0))
         self.connect((self.blocks_short_to_float_0, 0), (self.blocks_deinterleave_0, 0))
-        self.connect((self.blocks_short_to_float_0_0, 0), (self.blocks_deinterleave_0_0, 0))
         self.connect((self.zeromq_sub_source_0, 0), (self.blocks_short_to_float_0, 0))
-        self.connect((self.zeromq_sub_source_0_0, 0), (self.blocks_short_to_float_0_0, 0))
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "zmq_stream")
@@ -151,7 +118,6 @@ class zmq_stream(gr.top_block, Qt.QWidget):
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
-        self.qtgui_sink_x_0_0.set_frequency_range(0, self.samp_rate)
         self.qtgui_sink_x_0.set_frequency_range(0, self.samp_rate)
 
 

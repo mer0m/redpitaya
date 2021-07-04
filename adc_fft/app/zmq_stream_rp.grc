@@ -30,7 +30,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(16, 11)</value>
+      <value>(8, 12)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -140,7 +140,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(512, 252)</value>
+      <value>(56, 468)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -191,7 +191,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -297,7 +297,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 252)</value>
+      <value>(240, 468)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -336,7 +336,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -383,7 +383,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 252)</value>
+      <value>(128, 364)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -426,7 +426,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -489,11 +489,11 @@
     </param>
     <param>
       <key>fftsize</key>
-      <value>8192</value>
+      <value>2048</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(912, 224)</value>
+      <value>(104, 576)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -584,11 +584,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>fftsize</key>
-      <value>8192</value>
+      <value>2048</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -679,7 +679,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(48, 232)</value>
+      <value>(72, 216)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -738,7 +738,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
