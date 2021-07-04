@@ -3,4 +3,7 @@
 import liboscimp_fpga
 import sys
 
-liboscimp_fpga.fir_send_conf(sys.argv[1].encode('utf-8'), sys.argv[2].encode('utf-8'), 25)
+with open(sys.argv[2].encode('utf-8')) as f:
+	coeff_nb = len(f.readlines())
+
+liboscimp_fpga.fir_send_conf(sys.argv[1], sys.argv[2], coeff_nb)
