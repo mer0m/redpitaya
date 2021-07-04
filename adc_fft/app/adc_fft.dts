@@ -29,9 +29,9 @@
 				reg = <0x43C50000 0xffff>;
 			};
 
-			fft1: fft1@43C60000{
+			fft1: fft1@43C10000{
 				compatible = "ggm,fft";
-				reg = <0x43C60000 0xffff>;
+				reg = <0x43C10000 0xffff>;
 			};
 
 			fft2: fft2@43C30000{
@@ -39,9 +39,9 @@
 				reg = <0x43C30000 0xffff>;
 			};
 
-			win1: win1@43C50000{
+			win1: win1@43C00000{
 				compatible = "ggm,fir";
-				reg = <0x43C50000 0xffff>;
+				reg = <0x43C00000 0xffff>;
 			};
 
 			win2: win2@43C20000{

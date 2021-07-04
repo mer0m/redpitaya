@@ -13,13 +13,13 @@
 		</ip>
 		<ip name ="fft" >
 			<instance name="fft1" id="0"
-				base_addr="0x43C60000" addr_size="0xffff" />
+				base_addr="0x43C10000" addr_size="0xffff" />
 			<instance name="fft2" id="1"
 				base_addr="0x43C30000" addr_size="0xffff" />
 		</ip>
 		<ip name ="windowReal" >
 			<instance name="win1" id="0"
-				base_addr="0x43C50000" addr_size="0xffff" />
+				base_addr="0x43C00000" addr_size="0xffff" />
 			<instance name="win2" id="1"
 				base_addr="0x43C20000" addr_size="0xffff" />
 		</ip>
