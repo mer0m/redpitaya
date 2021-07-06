@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="adc_fft" version="1.0">
 	<ips>
+		<ip name ="add_constReal" >
+			<instance name="adc1_offset" id="0"
+				base_addr="0x43C00000" addr_size="0xffff" />
+			<instance name="adc2_offset" id="1"
+				base_addr="0x43C30000" addr_size="0xffff" />
+		</ip>
 		<ip name ="dataComplex_to_ram" >
 			<instance name="data_fft12" id="0"
-				base_addr="0x43C60000" addr_size="0xffff" />
+				base_addr="0x43C80000" addr_size="0xffff" />
 		</ip>
 		<ip name ="dataReal_to_ram" >
 			<instance name="data_adc12" id="0"
-				base_addr="0x43C40000" addr_size="0xffff" />
+				base_addr="0x43C60000" addr_size="0xffff" />
 			<instance name="data_win12" id="1"
-				base_addr="0x43C50000" addr_size="0xffff" />
+				base_addr="0x43C70000" addr_size="0xffff" />
 		</ip>
 		<ip name ="fft" >
 			<instance name="fft1" id="0"
-				base_addr="0x43C10000" addr_size="0xffff" />
+				base_addr="0x43C20000" addr_size="0xffff" />
 			<instance name="fft2" id="1"
-				base_addr="0x43C30000" addr_size="0xffff" />
+				base_addr="0x43C50000" addr_size="0xffff" />
 		</ip>
 		<ip name ="windowReal" >
 			<instance name="win1" id="0"
-				base_addr="0x43C00000" addr_size="0xffff" />
+				base_addr="0x43C10000" addr_size="0xffff" />
 			<instance name="win2" id="1"
-				base_addr="0x43C20000" addr_size="0xffff" />
+				base_addr="0x43C40000" addr_size="0xffff" />
 		</ip>
 	</ips>
 </project>

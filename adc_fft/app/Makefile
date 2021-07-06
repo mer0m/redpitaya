@@ -1,5 +1,6 @@
 BASE_NAME=adc_fft
 CORE_MODULES_LIST = \
+	${OSCIMP_DIGITAL_DRIVER}/add_const_core/add_const_core.ko \
 	${OSCIMP_DIGITAL_DRIVER}/data_to_ram_core/data_to_ram_core.ko \
 	${OSCIMP_DIGITAL_DRIVER}/data_to_ram_core/data_to_ram_core.ko \
 	${OSCIMP_DIGITAL_DRIVER}/fft_core/fft_core.ko \
