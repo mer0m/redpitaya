@@ -24,6 +24,21 @@
 				reg = <0x43C30000 0xffff>;
 			};
 
+			dds1_offset: dds1_offset@43CC0000{
+				compatible = "ggm,add_const";
+				reg = <0x43CC0000 0xffff>;
+			};
+
+			dds2_offset: dds2_offset@43CD0000{
+				compatible = "ggm,add_const";
+				reg = <0x43CD0000 0xffff>;
+			};
+
+			dds_ampl: dds_ampl@43C90000{
+				compatible = "ggm,axi_to_dac";
+				reg = <0x43C90000 0xffff>;
+			};
+
 			data_fft12: data_fft12@43C80000{
 				compatible = "ggm,dataToRam";
 				reg = <0x43C80000 0xffff>;
@@ -47,6 +62,16 @@
 			fft2: fft2@43C50000{
 				compatible = "ggm,fft";
 				reg = <0x43C50000 0xffff>;
+			};
+
+			nco_counter_1: nco_counter_1@43CA0000{
+				compatible = "ggm,nco_counter";
+				reg = <0x43CA0000 0xffff>;
+			};
+
+			nco_counter_2: nco_counter_2@43CB0000{
+				compatible = "ggm,nco_counter";
+				reg = <0x43CB0000 0xffff>;
 			};
 
 			win1: win1@43C10000{

@@ -6,6 +6,14 @@
 				base_addr="0x43C00000" addr_size="0xffff" />
 			<instance name="adc2_offset" id="1"
 				base_addr="0x43C30000" addr_size="0xffff" />
+			<instance name="dds1_offset" id="2"
+				base_addr="0x43CC0000" addr_size="0xffff" />
+			<instance name="dds2_offset" id="3"
+				base_addr="0x43CD0000" addr_size="0xffff" />
+		</ip>
+		<ip name ="axi_to_dac" >
+			<instance name="dds_ampl" id="0"
+				base_addr="0x43C90000" addr_size="0xffff" />
 		</ip>
 		<ip name ="dataComplex_to_ram" >
 			<instance name="data_fft12" id="0"
@@ -22,6 +30,12 @@
 				base_addr="0x43C20000" addr_size="0xffff" />
 			<instance name="fft2" id="1"
 				base_addr="0x43C50000" addr_size="0xffff" />
+		</ip>
+		<ip name ="nco_counter" >
+			<instance name="nco_counter_1" id="0"
+				base_addr="0x43CA0000" addr_size="0xffff" />
+			<instance name="nco_counter_2" id="1"
+				base_addr="0x43CB0000" addr_size="0xffff" />
 		</ip>
 		<ip name ="windowReal" >
 			<instance name="win1" id="0"

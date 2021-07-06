@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Tue Jul  6 07:04:08 2021
+# Generated: Tue Jul  6 17:53:44 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -124,7 +124,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
-        	256, #size
+        	1024, #size
         	samp_rate, #samp_rate
         	"", #name
         	2 #number of inputs
@@ -227,6 +227,53 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
+        self.qtgui_freq_sink_x_1 = qtgui.freq_sink_f(
+        	2048, #size
+        	firdes.WIN_HANN, #wintype
+        	0, #fc
+        	samp_rate, #bw
+        	"", #name
+        	2 #number of inputs
+        )
+        self.qtgui_freq_sink_x_1.set_update_time(0.10)
+        self.qtgui_freq_sink_x_1.set_y_axis(-140, 10)
+        self.qtgui_freq_sink_x_1.set_y_label('Relative Gain', 'dB')
+        self.qtgui_freq_sink_x_1.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
+        self.qtgui_freq_sink_x_1.enable_autoscale(False)
+        self.qtgui_freq_sink_x_1.enable_grid(True)
+        self.qtgui_freq_sink_x_1.set_fft_average(1.0)
+        self.qtgui_freq_sink_x_1.enable_axis_labels(True)
+        self.qtgui_freq_sink_x_1.enable_control_panel(True)
+
+        if not True:
+          self.qtgui_freq_sink_x_1.disable_legend()
+
+        if "float" == "float" or "float" == "msg_float":
+          self.qtgui_freq_sink_x_1.set_plot_pos_half(not True)
+
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        widths = [1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        colors = ["blue", "red", "green", "black", "cyan",
+                  "magenta", "yellow", "dark red", "dark green", "dark blue"]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+                  1.0, 1.0, 1.0, 1.0, 1.0]
+        for i in xrange(2):
+            if len(labels[i]) == 0:
+                self.qtgui_freq_sink_x_1.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_freq_sink_x_1.set_line_label(i, labels[i])
+            self.qtgui_freq_sink_x_1.set_line_width(i, widths[i])
+            self.qtgui_freq_sink_x_1.set_line_color(i, colors[i])
+            self.qtgui_freq_sink_x_1.set_line_alpha(i, alphas[i])
+
+        self._qtgui_freq_sink_x_1_win = sip.wrapinstance(self.qtgui_freq_sink_x_1.pyqwidget(), Qt.QWidget)
+        self.top_grid_layout.addWidget(self._qtgui_freq_sink_x_1_win, 1, 1, 1, 1)
+        for r in range(1, 2):
+            self.top_grid_layout.setRowStretch(r, 1)
+        for c in range(1, 2):
+            self.top_grid_layout.setColumnStretch(c, 1)
         self.blocks_short_to_float_0_1 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
         self.blocks_nlog10_ff_0_0 = blocks.nlog10_ff(20, 1, 0)
@@ -247,6 +294,8 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         ##################################################
         self.connect((self.blocks_complex_to_mag_0, 0), (self.blocks_nlog10_ff_0, 0))
         self.connect((self.blocks_complex_to_mag_0_0, 0), (self.blocks_nlog10_ff_0_0, 0))
+        self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_freq_sink_x_1, 0))
+        self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_freq_sink_x_1, 1))
         self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_time_sink_x_0, 1))
         self.connect((self.blocks_deinterleave_0_0, 0), (self.blocks_float_to_complex_0_1_0, 0))
@@ -279,6 +328,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0_1.set_samp_rate(self.samp_rate)
         self.qtgui_time_sink_x_0_0_0.set_samp_rate(self.samp_rate)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
+        self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate)
 
 
 def main(top_block_cls=zmq_stream, options=None):
