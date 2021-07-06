@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Mon Jul  5 23:31:42 2021
+# Generated: Tue Jul  6 07:04:08 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -124,12 +124,12 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
-        	2048, #size
+        	256, #size
         	samp_rate, #samp_rate
         	"", #name
         	2 #number of inputs
         )
-        self.qtgui_time_sink_x_0_0_0.set_update_time(0.10)
+        self.qtgui_time_sink_x_0_0_0.set_update_time(0.1)
         self.qtgui_time_sink_x_0_0_0.set_y_axis(-1, 1)
 
         self.qtgui_time_sink_x_0_0_0.set_y_label('Amplitude', "")
@@ -170,10 +170,10 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.qtgui_time_sink_x_0_0_0.set_line_alpha(i, alphas[i])
 
         self._qtgui_time_sink_x_0_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0_0.pyqwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_0_0_win, 2, 0, 1, 1)
-        for r in range(2, 3):
+        self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_0_0_win, 0, 1, 1, 1)
+        for r in range(0, 1):
             self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 1):
+        for c in range(1, 2):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
         	2048, #size
