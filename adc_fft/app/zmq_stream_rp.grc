@@ -195,7 +195,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1056, 236)</value>
+      <value>(144, 1052)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -250,7 +250,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(112, 788)</value>
+      <value>(128, 756)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -348,7 +348,54 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 684)</value>
+      <value>(368, 924)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_short_to_float_0_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>scale</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_short_to_float</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(352, 652)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -379,7 +426,7 @@
     <key>qtgui_freq_sink_x</key>
     <param>
       <key>autoscale</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>average</key>
@@ -407,7 +454,7 @@
     </param>
     <param>
       <key>ctrlpanel</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>affinity</key>
@@ -427,7 +474,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>1,1</value>
+      <value>3,0</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -678,7 +725,7 @@
     <key>qtgui_time_sink_x</key>
     <param>
       <key>autoscale</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>axislabels</key>
@@ -694,7 +741,7 @@
     </param>
     <param>
       <key>ctrlpanel</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1045,7 +1092,7 @@
     <key>qtgui_time_sink_x</key>
     <param>
       <key>autoscale</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>axislabels</key>
@@ -1061,7 +1108,7 @@
     </param>
     <param>
       <key>ctrlpanel</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1077,11 +1124,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1288, 216)</value>
+      <value>(336, 1032)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>0,1</value>
+      <value>4,0</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1349,11 +1396,11 @@
     </param>
     <param>
       <key>size</key>
-      <value>4096</value>
+      <value>2048</value>
     </param>
     <param>
       <key>srate</key>
-      <value>samp_rate</value>
+      <value>int(2048/samp_rate*1e6)</value>
     </param>
     <param>
       <key>stemplot</key>
@@ -1412,7 +1459,7 @@
     <key>qtgui_time_sink_x</key>
     <param>
       <key>autoscale</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>axislabels</key>
@@ -1428,7 +1475,7 @@
     </param>
     <param>
       <key>ctrlpanel</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1444,7 +1491,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 768)</value>
+      <value>(304, 736)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1862,7 +1909,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(720, 216)</value>
+      <value>(72, 904)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1878,7 +1925,7 @@
     </param>
     <param>
       <key>type</key>
-      <value>float</value>
+      <value>short</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1925,7 +1972,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(48, 664)</value>
+      <value>(64, 632)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2019,6 +2066,12 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_short_to_float_0_0</source_block_id>
+    <sink_block_id>blocks_deinterleave_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_short_to_float_0_1</source_block_id>
     <sink_block_id>blocks_deinterleave_0_1</sink_block_id>
     <source_key>0</source_key>
@@ -2032,7 +2085,7 @@
   </connection>
   <connection>
     <source_block_id>zeromq_sub_source_0_0</source_block_id>
-    <sink_block_id>blocks_deinterleave_0_0</sink_block_id>
+    <sink_block_id>blocks_short_to_float_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
