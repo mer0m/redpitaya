@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Tue Jul  6 17:53:44 2021
+# Generated: Wed Jul  7 21:20:01 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -69,7 +69,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         # Blocks
         ##################################################
         self.zeromq_sub_source_0_1 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9902', 200, False, -1)
-        self.zeromq_sub_source_0_0 = zeromq.sub_source(gr.sizeof_int, 1, 'tcp://192.168.0.200:9903', 200, False, -1)
+        self.zeromq_sub_source_0_0 = zeromq.sub_source(gr.sizeof_float, 1, 'tcp://192.168.0.200:9903', 200, False, -1)
         self.zeromq_sub_source_0 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9901', 200, False, -1)
         self.qtgui_time_sink_x_0_1 = qtgui.time_sink_f(
         	2048, #size
@@ -84,7 +84,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
 
         self.qtgui_time_sink_x_0_1.enable_tags(-1, True)
         self.qtgui_time_sink_x_0_1.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
-        self.qtgui_time_sink_x_0_1.enable_autoscale(True)
+        self.qtgui_time_sink_x_0_1.enable_autoscale(False)
         self.qtgui_time_sink_x_0_1.enable_grid(True)
         self.qtgui_time_sink_x_0_1.enable_axis_labels(True)
         self.qtgui_time_sink_x_0_1.enable_control_panel(True)
@@ -124,7 +124,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
-        	1024, #size
+        	4096, #size
         	samp_rate, #samp_rate
         	"", #name
         	2 #number of inputs
@@ -136,7 +136,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
 
         self.qtgui_time_sink_x_0_0_0.enable_tags(-1, True)
         self.qtgui_time_sink_x_0_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
-        self.qtgui_time_sink_x_0_0_0.enable_autoscale(True)
+        self.qtgui_time_sink_x_0_0_0.enable_autoscale(False)
         self.qtgui_time_sink_x_0_0_0.enable_grid(True)
         self.qtgui_time_sink_x_0_0_0.enable_axis_labels(True)
         self.qtgui_time_sink_x_0_0_0.enable_control_panel(True)
@@ -188,7 +188,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
 
         self.qtgui_time_sink_x_0.enable_tags(-1, True)
         self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
-        self.qtgui_time_sink_x_0.enable_autoscale(True)
+        self.qtgui_time_sink_x_0.enable_autoscale(False)
         self.qtgui_time_sink_x_0.enable_grid(True)
         self.qtgui_time_sink_x_0.enable_axis_labels(True)
         self.qtgui_time_sink_x_0.enable_control_panel(True)
@@ -276,43 +276,27 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.blocks_short_to_float_0_1 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
-        self.blocks_nlog10_ff_0_0 = blocks.nlog10_ff(20, 1, 0)
-        self.blocks_nlog10_ff_0 = blocks.nlog10_ff(20, 1, 0)
-        self.blocks_int_to_float_0 = blocks.int_to_float(1, 1)
-        self.blocks_float_to_complex_0_1_0_0 = blocks.float_to_complex(1)
-        self.blocks_float_to_complex_0_1_0 = blocks.float_to_complex(1)
         self.blocks_deinterleave_0_1 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
-        self.blocks_complex_to_mag_0_0 = blocks.complex_to_mag(1)
-        self.blocks_complex_to_mag_0 = blocks.complex_to_mag(1)
 
 
 
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blocks_complex_to_mag_0, 0), (self.blocks_nlog10_ff_0, 0))
-        self.connect((self.blocks_complex_to_mag_0_0, 0), (self.blocks_nlog10_ff_0_0, 0))
         self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_freq_sink_x_1, 1))
         self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_time_sink_x_0, 1))
-        self.connect((self.blocks_deinterleave_0_0, 0), (self.blocks_float_to_complex_0_1_0, 0))
-        self.connect((self.blocks_deinterleave_0_0, 1), (self.blocks_float_to_complex_0_1_0, 1))
-        self.connect((self.blocks_deinterleave_0_0, 2), (self.blocks_float_to_complex_0_1_0_0, 0))
-        self.connect((self.blocks_deinterleave_0_0, 3), (self.blocks_float_to_complex_0_1_0_0, 1))
+        self.connect((self.blocks_deinterleave_0_0, 0), (self.qtgui_time_sink_x_0_0_0, 0))
+        self.connect((self.blocks_deinterleave_0_0, 1), (self.qtgui_time_sink_x_0_0_0, 1))
         self.connect((self.blocks_deinterleave_0_1, 0), (self.qtgui_time_sink_x_0_1, 0))
         self.connect((self.blocks_deinterleave_0_1, 1), (self.qtgui_time_sink_x_0_1, 1))
-        self.connect((self.blocks_float_to_complex_0_1_0, 0), (self.blocks_complex_to_mag_0, 0))
-        self.connect((self.blocks_float_to_complex_0_1_0_0, 0), (self.blocks_complex_to_mag_0_0, 0))
-        self.connect((self.blocks_int_to_float_0, 0), (self.blocks_deinterleave_0_0, 0))
-        self.connect((self.blocks_nlog10_ff_0, 0), (self.qtgui_time_sink_x_0_0_0, 0))
-        self.connect((self.blocks_nlog10_ff_0_0, 0), (self.qtgui_time_sink_x_0_0_0, 1))
         self.connect((self.blocks_short_to_float_0, 0), (self.blocks_deinterleave_0, 0))
         self.connect((self.blocks_short_to_float_0_1, 0), (self.blocks_deinterleave_0_1, 0))
         self.connect((self.zeromq_sub_source_0, 0), (self.blocks_short_to_float_0, 0))
-        self.connect((self.zeromq_sub_source_0_0, 0), (self.blocks_int_to_float_0, 0))
+        self.connect((self.zeromq_sub_source_0_0, 0), (self.blocks_deinterleave_0_0, 0))
         self.connect((self.zeromq_sub_source_0_1, 0), (self.blocks_short_to_float_0_1, 0))
 
     def closeEvent(self, event):

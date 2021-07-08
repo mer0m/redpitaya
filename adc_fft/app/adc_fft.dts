@@ -39,14 +39,14 @@
 				reg = <0x43C90000 0xffff>;
 			};
 
-			data_fft12: data_fft12@43C80000{
-				compatible = "ggm,dataToRam";
-				reg = <0x43C80000 0xffff>;
-			};
-
 			data_adc12: data_adc12@43C60000{
 				compatible = "ggm,dataToRam";
 				reg = <0x43C60000 0xffff>;
+			};
+
+			data_fft12: data_fft12@43C80000{
+				compatible = "ggm,dataToRam";
+				reg = <0x43C80000 0xffff>;
 			};
 
 			data_win12: data_win12@43C70000{

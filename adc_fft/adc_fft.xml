@@ -15,14 +15,12 @@
 			<instance name="dds_ampl" id="0"
 				base_addr="0x43C90000" addr_size="0xffff" />
 		</ip>
-		<ip name ="dataComplex_to_ram" >
-			<instance name="data_fft12" id="0"
-				base_addr="0x43C80000" addr_size="0xffff" />
-		</ip>
 		<ip name ="dataReal_to_ram" >
 			<instance name="data_adc12" id="0"
 				base_addr="0x43C60000" addr_size="0xffff" />
-			<instance name="data_win12" id="1"
+			<instance name="data_fft12" id="1"
+				base_addr="0x43C80000" addr_size="0xffff" />
+			<instance name="data_win12" id="2"
 				base_addr="0x43C70000" addr_size="0xffff" />
 		</ip>
 		<ip name ="fft" >
