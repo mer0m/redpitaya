@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Thu Jul  8 20:33:25 2021
+# Generated: Fri Jul  9 06:39:12 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -277,7 +277,9 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.blocks_short_to_float_0_1 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0_0 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
+        self.blocks_interleave_0 = blocks.interleave(gr.sizeof_float*1, 1024)
         self.blocks_deinterleave_0_1 = blocks.deinterleave(gr.sizeof_float*1, 1)
+        self.blocks_deinterleave_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1024)
         self.blocks_deinterleave_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
 
@@ -290,10 +292,13 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_freq_sink_x_1, 1))
         self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_time_sink_x_0, 1))
-        self.connect((self.blocks_deinterleave_0_0, 0), (self.qtgui_time_sink_x_0_0_0, 0))
+        self.connect((self.blocks_deinterleave_0_0, 0), (self.blocks_deinterleave_0_0_0, 0))
         self.connect((self.blocks_deinterleave_0_0, 1), (self.qtgui_time_sink_x_0_0_0, 1))
+        self.connect((self.blocks_deinterleave_0_0_0, 0), (self.blocks_interleave_0, 1))
+        self.connect((self.blocks_deinterleave_0_0_0, 1), (self.blocks_interleave_0, 0))
         self.connect((self.blocks_deinterleave_0_1, 0), (self.qtgui_time_sink_x_0_1, 0))
         self.connect((self.blocks_deinterleave_0_1, 1), (self.qtgui_time_sink_x_0_1, 1))
+        self.connect((self.blocks_interleave_0, 0), (self.qtgui_time_sink_x_0_0_0, 0))
         self.connect((self.blocks_short_to_float_0, 0), (self.blocks_deinterleave_0, 0))
         self.connect((self.blocks_short_to_float_0_0, 0), (self.blocks_deinterleave_0_0, 0))
         self.connect((self.blocks_short_to_float_0_1, 0), (self.blocks_deinterleave_0_1, 0))
