@@ -1,5 +1,5 @@
 nbcoeff = 2**11;
-coef_size = 16;
+coef_size = 14;
 
 IM(1:nbcoeff/2)=sin(linspace(0,nbcoeff/2,nbcoeff/2)/nbcoeff*2*pi)*2**(coef_size-1);
 IM(nbcoeff/2+1:nbcoeff)=0;

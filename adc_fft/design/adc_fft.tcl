@@ -57,11 +57,17 @@ add_ip_and_conf magnitude mag_fft1 {
 	DATA_SIZE 32 }
 connect_intf fft1 data_out mag_fft1 data_in
 
+## create mag_expander_fft1
+add_ip_and_conf expanderReal mag_expander_fft1 {
+	DATA_IN_SIZE 64 \
+	DATA_OUT_SIZE 52 }
+connect_intf mag_fft1 data_out mag_expander_fft1 data_in
+
 ## create mag_shifter_fft1
 add_ip_and_conf shifterReal mag_shifter_fft1 {
-	DATA_IN_SIZE 64 \
+	DATA_IN_SIZE 52 \
 	DATA_OUT_SIZE 16 }
-connect_intf mag_fft1 data_out mag_shifter_fft1 data_in
+connect_intf mag_expander_fft1 data_out mag_shifter_fft1 data_in
 
 ## Create adc2_offset
 add_ip_and_conf add_constReal adc2_offset {
@@ -105,11 +111,17 @@ add_ip_and_conf magnitude mag_fft2 {
 	DATA_SIZE 32 }
 connect_intf fft2 data_out mag_fft2 data_in
 
+## create mag_expander_fft2
+add_ip_and_conf expanderReal mag_expander_fft2 {
+	DATA_IN_SIZE 64 \
+	DATA_OUT_SIZE 52 }
+connect_intf mag_fft2 data_out mag_expander_fft2 data_in
+
 ## create mag_shifter_fft2
 add_ip_and_conf shifterReal mag_shifter_fft2 {
-	DATA_IN_SIZE 64 \
+	DATA_IN_SIZE 52 \
 	DATA_OUT_SIZE 16 }
-connect_intf mag_fft2 data_out mag_shifter_fft2 data_in
+connect_intf mag_expander_fft2 data_out mag_shifter_fft2 data_in
 
 ## Create data_adc12
 add_ip_and_conf dataReal_to_ram data_adc12 {
