@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Fri Jul  9 06:39:12 2021
+# Generated: Sat Jul 10 16:28:58 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -229,7 +229,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_1 = qtgui.freq_sink_f(
         	2048, #size
-        	firdes.WIN_HANN, #wintype
+        	firdes.WIN_RECTANGULAR, #wintype
         	0, #fc
         	samp_rate, #bw
         	"", #name
@@ -277,6 +277,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.blocks_short_to_float_0_1 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0_0 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
+        self.blocks_nlog10_ff_0 = blocks.nlog10_ff(10, 1, 0)
         self.blocks_interleave_0 = blocks.interleave(gr.sizeof_float*1, 1024)
         self.blocks_deinterleave_0_1 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1024)
@@ -288,17 +289,18 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_freq_sink_x_1, 0))
-        self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_freq_sink_x_1, 1))
         self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_time_sink_x_0, 1))
         self.connect((self.blocks_deinterleave_0_0, 0), (self.blocks_deinterleave_0_0_0, 0))
         self.connect((self.blocks_deinterleave_0_0, 1), (self.qtgui_time_sink_x_0_0_0, 1))
         self.connect((self.blocks_deinterleave_0_0_0, 0), (self.blocks_interleave_0, 1))
         self.connect((self.blocks_deinterleave_0_0_0, 1), (self.blocks_interleave_0, 0))
+        self.connect((self.blocks_deinterleave_0_1, 1), (self.qtgui_freq_sink_x_1, 1))
+        self.connect((self.blocks_deinterleave_0_1, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.blocks_deinterleave_0_1, 0), (self.qtgui_time_sink_x_0_1, 0))
         self.connect((self.blocks_deinterleave_0_1, 1), (self.qtgui_time_sink_x_0_1, 1))
-        self.connect((self.blocks_interleave_0, 0), (self.qtgui_time_sink_x_0_0_0, 0))
+        self.connect((self.blocks_interleave_0, 0), (self.blocks_nlog10_ff_0, 0))
+        self.connect((self.blocks_nlog10_ff_0, 0), (self.qtgui_time_sink_x_0_0_0, 0))
         self.connect((self.blocks_short_to_float_0, 0), (self.blocks_deinterleave_0, 0))
         self.connect((self.blocks_short_to_float_0_0, 0), (self.blocks_deinterleave_0_0, 0))
         self.connect((self.blocks_short_to_float_0_1, 0), (self.blocks_deinterleave_0_1, 0))

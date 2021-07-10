@@ -392,6 +392,57 @@
     </param>
   </block>
   <block>
+    <key>blocks_nlog10_ff</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(416, 1084)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_nlog10_ff_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>k</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>10</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_short_to_float</key>
     <param>
       <key>alias</key>
@@ -580,7 +631,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(552, 272)</value>
+      <value>(544, 568)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -812,7 +863,7 @@
     </param>
     <param>
       <key>wintype</key>
-      <value>firdes.WIN_HANN</value>
+      <value>firdes.WIN_RECTANGULAR</value>
     </param>
     <param>
       <key>label</key>
@@ -1234,7 +1285,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(448, 968)</value>
+      <value>(536, 968)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1601,7 +1652,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(296, 456)</value>
+      <value>(448, 456)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2123,21 +2174,9 @@
   </block>
   <connection>
     <source_block_id>blocks_deinterleave_0</source_block_id>
-    <sink_block_id>qtgui_freq_sink_x_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_deinterleave_0</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_deinterleave_0</source_block_id>
-    <sink_block_id>qtgui_freq_sink_x_1</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>1</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_deinterleave_0</source_block_id>
@@ -2171,9 +2210,21 @@
   </connection>
   <connection>
     <source_block_id>blocks_deinterleave_0_1</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_1</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_1</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_1</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_deinterleave_0_1</source_block_id>
@@ -2183,6 +2234,12 @@
   </connection>
   <connection>
     <source_block_id>blocks_interleave_0</source_block_id>
+    <sink_block_id>blocks_nlog10_ff_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_nlog10_ff_0</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
