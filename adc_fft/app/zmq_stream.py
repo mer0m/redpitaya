@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Sun Jul 11 17:48:45 2021
+# Generated: Sun Jul 11 21:25:47 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -125,7 +125,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
         	2048, #size
-        	int(2048/samp_rate*1e6), #samp_rate
+        	2048/samp_rate*1e6, #samp_rate
         	"", #name
         	2 #number of inputs
         )
@@ -322,7 +322,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self.qtgui_time_sink_x_0_1.set_samp_rate(self.samp_rate)
-        self.qtgui_time_sink_x_0_0_0.set_samp_rate(int(2048/self.samp_rate*1e6))
+        self.qtgui_time_sink_x_0_0_0.set_samp_rate(2048/self.samp_rate*1e6)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
         self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate)
 

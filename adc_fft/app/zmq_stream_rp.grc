@@ -1722,7 +1722,7 @@
     </param>
     <param>
       <key>srate</key>
-      <value>int(2048/samp_rate*1e6)</value>
+      <value>2048/samp_rate*1e6</value>
     </param>
     <param>
       <key>stemplot</key>
