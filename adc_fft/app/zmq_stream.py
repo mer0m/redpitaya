@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Sun Jul 11 21:25:47 2021
+# Generated: Tue Jul 13 08:21:08 2021
 ##################################################
 
 from distutils.version import StrictVersion
@@ -72,7 +72,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.zeromq_sub_source_0_0 = zeromq.sub_source(gr.sizeof_float, 1, 'tcp://192.168.0.200:9903', 200, False, -1)
         self.zeromq_sub_source_0 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9901', 200, False, -1)
         self.qtgui_time_sink_x_0_1 = qtgui.time_sink_f(
-        	1024, #size
+        	2**14, #size
         	samp_rate, #samp_rate
         	"", #name
         	2 #number of inputs
@@ -124,8 +124,8 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
-        	2048, #size
-        	2048/samp_rate*1e6, #samp_rate
+        	2**10, #size
+        	2**10/samp_rate*1e6, #samp_rate
         	"", #name
         	2 #number of inputs
         )
@@ -176,7 +176,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-        	1024, #size
+        	2**10, #size
         	samp_rate, #samp_rate
         	"", #name
         	2 #number of inputs
@@ -228,7 +228,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_1 = qtgui.freq_sink_f(
-        	1024, #size
+        	2**10, #size
         	firdes.WIN_RECTANGULAR, #wintype
         	0, #fc
         	samp_rate, #bw
@@ -276,12 +276,12 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.blocks_short_to_float_0_1 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
-        self.blocks_interleave_0_0 = blocks.interleave(gr.sizeof_float*1, 1024)
-        self.blocks_interleave_0 = blocks.interleave(gr.sizeof_float*1, 1024)
+        self.blocks_interleave_0_0 = blocks.interleave(gr.sizeof_float*1, 2**9)
+        self.blocks_interleave_0 = blocks.interleave(gr.sizeof_float*1, 2**9)
         self.blocks_int_to_float_0 = blocks.int_to_float(1, 1)
         self.blocks_deinterleave_0_1 = blocks.deinterleave(gr.sizeof_float*1, 1)
-        self.blocks_deinterleave_0_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1024)
-        self.blocks_deinterleave_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1024)
+        self.blocks_deinterleave_0_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 2**9)
+        self.blocks_deinterleave_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 2**9)
         self.blocks_deinterleave_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
 
@@ -322,7 +322,7 @@ class zmq_stream(gr.top_block, Qt.QWidget):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self.qtgui_time_sink_x_0_1.set_samp_rate(self.samp_rate)
-        self.qtgui_time_sink_x_0_0_0.set_samp_rate(2048/self.samp_rate*1e6)
+        self.qtgui_time_sink_x_0_0_0.set_samp_rate(2**10/self.samp_rate*1e6)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
         self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate)
 
