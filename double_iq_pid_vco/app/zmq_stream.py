@@ -184,10 +184,10 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_time_sink_x_0, 1))
-        self.connect((self.blocks_deinterleave_0_1, 1), (self.qtgui_freq_sink_x_1, 1))
+        self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0_1, 0), (self.qtgui_freq_sink_x_1, 0))
+        self.connect((self.blocks_deinterleave_0_1, 1), (self.qtgui_freq_sink_x_1, 1))
         self.connect((self.blocks_short_to_float_0, 0), (self.blocks_deinterleave_0, 0))
         self.connect((self.blocks_short_to_float_0_1, 0), (self.blocks_deinterleave_0_1, 0))
         self.connect((self.zeromq_sub_source_0, 0), (self.blocks_short_to_float_0, 0))
