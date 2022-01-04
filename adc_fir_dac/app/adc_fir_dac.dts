@@ -6,8 +6,6 @@
 
 	fragment0 {
 		target = <&fpga_full>;
-		#address-cells = <1>;
-		#size-cells = <1>;
 		__overlay__ {
 			#address-cells = <1>;
 			#size-cells = <1>;
