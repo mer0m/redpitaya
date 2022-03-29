@@ -1,7 +1,7 @@
 set adc_offset_output_size 15
 set adc2ram_addr_size 10
-set win_coeff_size 14
-set win_coeff_addr_size 14
+set win_coeff_size 16
+set win_coeff_addr_size 10
 set fft_coeff_size 16
 set fft_coeff_addr_size 10
 set fft_output_size 16

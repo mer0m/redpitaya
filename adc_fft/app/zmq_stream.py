@@ -1,10 +1,12 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-##################################################
+
+#
+# SPDX-License-Identifier: GPL-3.0
+#
 # GNU Radio Python Flow Graph
 # Title: Zmq Stream
-# Generated: Tue Jul 13 08:21:08 2021
-##################################################
+# GNU Radio version: 3.8.2.0
 
 from distutils.version import StrictVersion
 
@@ -16,22 +18,22 @@ if __name__ == '__main__':
             x11 = ctypes.cdll.LoadLibrary('libX11.so')
             x11.XInitThreads()
         except:
-            print "Warning: failed to XInitThreads()"
+            print("Warning: failed to XInitThreads()")
 
 from PyQt5 import Qt
-from PyQt5 import Qt, QtCore
-from gnuradio import blocks
-from gnuradio import eng_notation
-from gnuradio import gr
 from gnuradio import qtgui
-from gnuradio import zeromq
-from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
-from optparse import OptionParser
 import sip
+from gnuradio import blocks
+from gnuradio import gr
 import sys
-from gnuradio import qtgui
+import signal
+from argparse import ArgumentParser
+from gnuradio.eng_arg import eng_float, intx
+from gnuradio import eng_notation
+from gnuradio import zeromq
 
+from gnuradio import qtgui
 
 class zmq_stream(gr.top_block, Qt.QWidget):
 
@@ -57,32 +59,41 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.top_layout.addLayout(self.top_grid_layout)
 
         self.settings = Qt.QSettings("GNU Radio", "zmq_stream")
-        self.restoreGeometry(self.settings.value("geometry", type=QtCore.QByteArray))
 
+        try:
+            if StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
+                self.restoreGeometry(self.settings.value("geometry").toByteArray())
+            else:
+                self.restoreGeometry(self.settings.value("geometry"))
+        except:
+            pass
 
         ##################################################
         # Variables
         ##################################################
+        self.win_coeff_addr_size = win_coeff_addr_size = 10
         self.samp_rate = samp_rate = 125e6
+        self.fft_coeff_addr_size = fft_coeff_addr_size = 10
+        self.adc2ram_addr_size = adc2ram_addr_size = 10
 
         ##################################################
         # Blocks
         ##################################################
         self.zeromq_sub_source_0_1 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9902', 200, False, -1)
-        self.zeromq_sub_source_0_0 = zeromq.sub_source(gr.sizeof_float, 1, 'tcp://192.168.0.200:9903', 200, False, -1)
+        self.zeromq_sub_source_0_0 = zeromq.sub_source(gr.sizeof_int, 1, 'tcp://192.168.0.200:9903', 200, False, -1)
         self.zeromq_sub_source_0 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9901', 200, False, -1)
         self.qtgui_time_sink_x_0_1 = qtgui.time_sink_f(
-        	2**14, #size
-        	samp_rate, #samp_rate
-        	"", #name
-        	2 #number of inputs
+            2**win_coeff_addr_size, #size
+            samp_rate, #samp_rate
+            "", #name
+            2 #number of inputs
         )
         self.qtgui_time_sink_x_0_1.set_update_time(0.10)
         self.qtgui_time_sink_x_0_1.set_y_axis(-1, 1)
 
         self.qtgui_time_sink_x_0_1.set_y_label('Amplitude', "")
 
-        self.qtgui_time_sink_x_0_1.enable_tags(-1, True)
+        self.qtgui_time_sink_x_0_1.enable_tags(True)
         self.qtgui_time_sink_x_0_1.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
         self.qtgui_time_sink_x_0_1.enable_autoscale(True)
         self.qtgui_time_sink_x_0_1.enable_grid(True)
@@ -90,23 +101,22 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0_1.enable_control_panel(False)
         self.qtgui_time_sink_x_0_1.enable_stem_plot(False)
 
-        if not True:
-          self.qtgui_time_sink_x_0_1.disable_legend()
 
         labels = ['', '', '', '', '',
-                  '', '', '', '', '']
+            '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
-        colors = ["blue", "red", "green", "black", "cyan",
-                  "magenta", "yellow", "dark red", "dark green", "blue"]
-        styles = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
-        markers = [-1, -1, -1, -1, -1,
-                   -1, -1, -1, -1, -1]
+            1, 1, 1, 1, 1]
+        colors = ['blue', 'red', 'green', 'black', 'cyan',
+            'magenta', 'yellow', 'dark red', 'dark green', 'dark blue']
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
-                  1.0, 1.0, 1.0, 1.0, 1.0]
+            1.0, 1.0, 1.0, 1.0, 1.0]
+        styles = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        markers = [-1, -1, -1, -1, -1,
+            -1, -1, -1, -1, -1]
 
-        for i in xrange(2):
+
+        for i in range(2):
             if len(labels[i]) == 0:
                 self.qtgui_time_sink_x_0_1.set_line_label(i, "Data {0}".format(i))
             else:
@@ -124,17 +134,17 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_f(
-        	2**10, #size
-        	2**10/samp_rate*1e6, #samp_rate
-        	"", #name
-        	2 #number of inputs
+            2**fft_coeff_addr_size, #size
+            2**fft_coeff_addr_size/samp_rate*1e6, #samp_rate
+            "", #name
+            2 #number of inputs
         )
         self.qtgui_time_sink_x_0_0_0.set_update_time(0.1)
         self.qtgui_time_sink_x_0_0_0.set_y_axis(-1, 1)
 
         self.qtgui_time_sink_x_0_0_0.set_y_label('Amplitude', "")
 
-        self.qtgui_time_sink_x_0_0_0.enable_tags(-1, True)
+        self.qtgui_time_sink_x_0_0_0.enable_tags(True)
         self.qtgui_time_sink_x_0_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
         self.qtgui_time_sink_x_0_0_0.enable_autoscale(True)
         self.qtgui_time_sink_x_0_0_0.enable_grid(True)
@@ -142,23 +152,22 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0_0_0.enable_control_panel(False)
         self.qtgui_time_sink_x_0_0_0.enable_stem_plot(False)
 
-        if not True:
-          self.qtgui_time_sink_x_0_0_0.disable_legend()
 
         labels = ['', '', '', '', '',
-                  '', '', '', '', '']
+            '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
-        colors = ["blue", "red", "green", "black", "cyan",
-                  "magenta", "yellow", "dark red", "dark green", "blue"]
-        styles = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
-        markers = [-1, -1, -1, -1, -1,
-                   -1, -1, -1, -1, -1]
+            1, 1, 1, 1, 1]
+        colors = ['blue', 'red', 'green', 'black', 'cyan',
+            'magenta', 'yellow', 'dark red', 'dark green', 'dark blue']
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
-                  1.0, 1.0, 1.0, 1.0, 1.0]
+            1.0, 1.0, 1.0, 1.0, 1.0]
+        styles = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        markers = [-1, -1, -1, -1, -1,
+            -1, -1, -1, -1, -1]
 
-        for i in xrange(2):
+
+        for i in range(2):
             if len(labels[i]) == 0:
                 self.qtgui_time_sink_x_0_0_0.set_line_label(i, "Data {0}".format(i))
             else:
@@ -176,17 +185,17 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-        	2**10, #size
-        	samp_rate, #samp_rate
-        	"", #name
-        	2 #number of inputs
+            2**adc2ram_addr_size, #size
+            samp_rate, #samp_rate
+            "", #name
+            2 #number of inputs
         )
         self.qtgui_time_sink_x_0.set_update_time(0.10)
         self.qtgui_time_sink_x_0.set_y_axis(-1, 1)
 
         self.qtgui_time_sink_x_0.set_y_label('Amplitude', "")
 
-        self.qtgui_time_sink_x_0.enable_tags(-1, True)
+        self.qtgui_time_sink_x_0.enable_tags(True)
         self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
         self.qtgui_time_sink_x_0.enable_autoscale(True)
         self.qtgui_time_sink_x_0.enable_grid(True)
@@ -194,23 +203,22 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0.enable_control_panel(False)
         self.qtgui_time_sink_x_0.enable_stem_plot(False)
 
-        if not True:
-          self.qtgui_time_sink_x_0.disable_legend()
 
         labels = ['', '', '', '', '',
-                  '', '', '', '', '']
+            '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
-        colors = ["blue", "red", "green", "black", "cyan",
-                  "magenta", "yellow", "dark red", "dark green", "blue"]
-        styles = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
-        markers = [-1, -1, -1, -1, -1,
-                   -1, -1, -1, -1, -1]
+            1, 1, 1, 1, 1]
+        colors = ['blue', 'red', 'green', 'black', 'cyan',
+            'magenta', 'yellow', 'dark red', 'dark green', 'dark blue']
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
-                  1.0, 1.0, 1.0, 1.0, 1.0]
+            1.0, 1.0, 1.0, 1.0, 1.0]
+        styles = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        markers = [-1, -1, -1, -1, -1,
+            -1, -1, -1, -1, -1]
 
-        for i in xrange(2):
+
+        for i in range(2):
             if len(labels[i]) == 0:
                 self.qtgui_time_sink_x_0.set_line_label(i, "Data {0}".format(i))
             else:
@@ -228,12 +236,12 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         for c in range(0, 1):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_1 = qtgui.freq_sink_f(
-        	2**10, #size
-        	firdes.WIN_RECTANGULAR, #wintype
-        	0, #fc
-        	samp_rate, #bw
-        	"", #name
-        	2 #number of inputs
+            2**fft_coeff_addr_size, #size
+            firdes.WIN_RECTANGULAR, #wintype
+            0, #fc
+            samp_rate, #bw
+            "", #name
+            2
         )
         self.qtgui_freq_sink_x_1.set_update_time(0.10)
         self.qtgui_freq_sink_x_1.set_y_axis(-140, 10)
@@ -245,21 +253,19 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.qtgui_freq_sink_x_1.enable_axis_labels(True)
         self.qtgui_freq_sink_x_1.enable_control_panel(False)
 
-        if not True:
-          self.qtgui_freq_sink_x_1.disable_legend()
 
-        if "float" == "float" or "float" == "msg_float":
-          self.qtgui_freq_sink_x_1.set_plot_pos_half(not True)
+        self.qtgui_freq_sink_x_1.set_plot_pos_half(not True)
 
         labels = ['', '', '', '', '',
-                  '', '', '', '', '']
+            '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
-                  1, 1, 1, 1, 1]
+            1, 1, 1, 1, 1]
         colors = ["blue", "red", "green", "black", "cyan",
-                  "magenta", "yellow", "dark red", "dark green", "dark blue"]
+            "magenta", "yellow", "dark red", "dark green", "dark blue"]
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
-                  1.0, 1.0, 1.0, 1.0, 1.0]
-        for i in xrange(2):
+            1.0, 1.0, 1.0, 1.0, 1.0]
+
+        for i in range(2):
             if len(labels[i]) == 0:
                 self.qtgui_freq_sink_x_1.set_line_label(i, "Data {0}".format(i))
             else:
@@ -276,12 +282,12 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.blocks_short_to_float_0_1 = blocks.short_to_float(1, 1)
         self.blocks_short_to_float_0 = blocks.short_to_float(1, 1)
-        self.blocks_interleave_0_0 = blocks.interleave(gr.sizeof_float*1, 2**9)
-        self.blocks_interleave_0 = blocks.interleave(gr.sizeof_float*1, 2**9)
+        self.blocks_interleave_0_0 = blocks.interleave(gr.sizeof_float*1, 2**(fft_coeff_addr_size-1))
+        self.blocks_interleave_0 = blocks.interleave(gr.sizeof_float*1, 2**(fft_coeff_addr_size-1))
         self.blocks_int_to_float_0 = blocks.int_to_float(1, 1)
         self.blocks_deinterleave_0_1 = blocks.deinterleave(gr.sizeof_float*1, 1)
-        self.blocks_deinterleave_0_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 2**9)
-        self.blocks_deinterleave_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 2**9)
+        self.blocks_deinterleave_0_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 2**(fft_coeff_addr_size-1))
+        self.blocks_deinterleave_0_0_0 = blocks.deinterleave(gr.sizeof_float*1, 2**(fft_coeff_addr_size-1))
         self.blocks_deinterleave_0_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
         self.blocks_deinterleave_0 = blocks.deinterleave(gr.sizeof_float*1, 1)
 
@@ -290,12 +296,12 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0, 1), (self.qtgui_time_sink_x_0, 1))
+        self.connect((self.blocks_deinterleave_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_deinterleave_0_0, 0), (self.blocks_deinterleave_0_0_0, 0))
         self.connect((self.blocks_deinterleave_0_0, 1), (self.blocks_deinterleave_0_0_0_0, 0))
-        self.connect((self.blocks_deinterleave_0_0_0, 0), (self.blocks_interleave_0, 1))
         self.connect((self.blocks_deinterleave_0_0_0, 1), (self.blocks_interleave_0, 0))
+        self.connect((self.blocks_deinterleave_0_0_0, 0), (self.blocks_interleave_0, 1))
         self.connect((self.blocks_deinterleave_0_0_0_0, 0), (self.blocks_interleave_0_0, 1))
         self.connect((self.blocks_deinterleave_0_0_0_0, 1), (self.blocks_interleave_0_0, 0))
         self.connect((self.blocks_deinterleave_0_1, 0), (self.qtgui_freq_sink_x_1, 0))
@@ -311,36 +317,74 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.connect((self.zeromq_sub_source_0_0, 0), (self.blocks_int_to_float_0, 0))
         self.connect((self.zeromq_sub_source_0_1, 0), (self.blocks_short_to_float_0_1, 0))
 
+
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "zmq_stream")
         self.settings.setValue("geometry", self.saveGeometry())
         event.accept()
+
+    def get_win_coeff_addr_size(self):
+        return self.win_coeff_addr_size
+
+    def set_win_coeff_addr_size(self, win_coeff_addr_size):
+        self.win_coeff_addr_size = win_coeff_addr_size
 
     def get_samp_rate(self):
         return self.samp_rate
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
-        self.qtgui_time_sink_x_0_1.set_samp_rate(self.samp_rate)
-        self.qtgui_time_sink_x_0_0_0.set_samp_rate(2**10/self.samp_rate*1e6)
-        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
         self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate)
+        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
+        self.qtgui_time_sink_x_0_0_0.set_samp_rate(2**self.fft_coeff_addr_size/self.samp_rate*1e6)
+        self.qtgui_time_sink_x_0_1.set_samp_rate(self.samp_rate)
+
+    def get_fft_coeff_addr_size(self):
+        return self.fft_coeff_addr_size
+
+    def set_fft_coeff_addr_size(self, fft_coeff_addr_size):
+        self.fft_coeff_addr_size = fft_coeff_addr_size
+        self.qtgui_time_sink_x_0_0_0.set_samp_rate(2**self.fft_coeff_addr_size/self.samp_rate*1e6)
+
+    def get_adc2ram_addr_size(self):
+        return self.adc2ram_addr_size
+
+    def set_adc2ram_addr_size(self, adc2ram_addr_size):
+        self.adc2ram_addr_size = adc2ram_addr_size
+
+
+
 
 
 def main(top_block_cls=zmq_stream, options=None):
 
+    if StrictVersion("4.5.0") <= StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
+        style = gr.prefs().get_string('qtgui', 'style', 'raster')
+        Qt.QApplication.setGraphicsSystem(style)
     qapp = Qt.QApplication(sys.argv)
 
     tb = top_block_cls()
+
     tb.start()
+
     tb.show()
+
+    def sig_handler(sig=None, frame=None):
+        Qt.QApplication.quit()
+
+    signal.signal(signal.SIGINT, sig_handler)
+    signal.signal(signal.SIGTERM, sig_handler)
+
+    timer = Qt.QTimer()
+    timer.start(500)
+    timer.timeout.connect(lambda: None)
 
     def quitting():
         tb.stop()
         tb.wait()
+
     qapp.aboutToQuit.connect(quitting)
     qapp.exec_()
-
 
 if __name__ == '__main__':
     main()

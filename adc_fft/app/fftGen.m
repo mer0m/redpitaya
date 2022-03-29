@@ -6,7 +6,7 @@ coeff_size = eval(argv(){2}) ; % COEFF_SIZE
 RE(1:nb_coeff/2)=cos(linspace(0,nb_coeff/2,nb_coeff/2)/nb_coeff*2*pi)*2**(coeff_size-1);
 RE(nb_coeff/2+1:nb_coeff)=0;
 
-IM(1:nb_coeff/2)=sin(linspace(0,nb_coeff/2,nb_coeff/2)/nb_coeff*2*pi)*2**(coeff_size-1);
+IM(1:nb_coeff/2)=-sin(linspace(0,nb_coeff/2,nb_coeff/2)/nb_coeff*2*pi)*2**(coeff_size-1);
 IM(nb_coeff/2+1:nb_coeff)=0;
 
 csvwrite('fft_im.dat', round(transpose(IM)))

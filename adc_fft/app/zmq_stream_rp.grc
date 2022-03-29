@@ -101,6 +101,60 @@
     </param>
     <param>
       <key>_coordinate</key>
+      <value>(160, 116)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>adc2ram_addr_size</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>10</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(576, 116)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>fft_coeff_addr_size</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>10</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
       <value>(16, 115)</value>
     </param>
     <param>
@@ -114,6 +168,33 @@
     <param>
       <key>value</key>
       <value>125e6</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(376, 116)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>win_coeff_addr_size</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>10</value>
     </param>
   </block>
   <block>
@@ -140,7 +221,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(312, 172)</value>
+      <value>(112, 340)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -195,7 +276,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(192, 700)</value>
+      <value>(96, 868)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -234,7 +315,7 @@
     </param>
     <param>
       <key>blocksize</key>
-      <value>2**9</value>
+      <value>2**(fft_coeff_addr_size-1)</value>
     </param>
     <param>
       <key>comment</key>
@@ -250,7 +331,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(576, 668)</value>
+      <value>(480, 836)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -289,7 +370,7 @@
     </param>
     <param>
       <key>blocksize</key>
-      <value>2**9</value>
+      <value>2**(fft_coeff_addr_size-1)</value>
     </param>
     <param>
       <key>comment</key>
@@ -305,7 +386,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(576, 740)</value>
+      <value>(480, 908)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -360,7 +441,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(128, 388)</value>
+      <value>(96, 564)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -411,7 +492,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(408, 572)</value>
+      <value>(312, 740)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -446,7 +527,7 @@
     </param>
     <param>
       <key>blocksize</key>
-      <value>2**9</value>
+      <value>2**(fft_coeff_addr_size-1)</value>
     </param>
     <param>
       <key>comment</key>
@@ -462,7 +543,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(224, 844)</value>
+      <value>(128, 1012)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -501,7 +582,7 @@
     </param>
     <param>
       <key>blocksize</key>
-      <value>2**9</value>
+      <value>2**(fft_coeff_addr_size-1)</value>
     </param>
     <param>
       <key>comment</key>
@@ -517,7 +598,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(224, 932)</value>
+      <value>(128, 1100)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -568,7 +649,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(400, 828)</value>
+      <value>(304, 996)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -619,7 +700,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(400, 932)</value>
+      <value>(304, 1100)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -670,7 +751,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(536, 68)</value>
+      <value>(336, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -717,7 +798,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(352, 284)</value>
+      <value>(320, 460)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -788,11 +869,11 @@
     </param>
     <param>
       <key>fftsize</key>
-      <value>2**10</value>
+      <value>2**fft_coeff_addr_size</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(528, 472)</value>
+      <value>(496, 648)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1079,7 +1160,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(544, 152)</value>
+      <value>(344, 320)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1351,7 +1432,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>2**10</value>
+      <value>2**adc2ram_addr_size</value>
     </param>
     <param>
       <key>srate</key>
@@ -1446,7 +1527,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(544, 872)</value>
+      <value>(448, 1040)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1718,11 +1799,11 @@
     </param>
     <param>
       <key>size</key>
-      <value>2**10</value>
+      <value>2**fft_coeff_addr_size</value>
     </param>
     <param>
       <key>srate</key>
-      <value>2**10/samp_rate*1e6</value>
+      <value>2**fft_coeff_addr_size/samp_rate*1e6</value>
     </param>
     <param>
       <key>stemplot</key>
@@ -1813,7 +1894,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(456, 368)</value>
+      <value>(424, 544)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2085,7 +2166,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>2**14</value>
+      <value>2**win_coeff_addr_size</value>
     </param>
     <param>
       <key>srate</key>
@@ -2168,7 +2249,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(248, 48)</value>
+      <value>(48, 216)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2231,7 +2312,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(120, 552)</value>
+      <value>(24, 720)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2247,7 +2328,7 @@
     </param>
     <param>
       <key>type</key>
-      <value>float</value>
+      <value>int</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -2294,7 +2375,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(64, 264)</value>
+      <value>(32, 440)</value>
     </param>
     <param>
       <key>_rotation</key>
