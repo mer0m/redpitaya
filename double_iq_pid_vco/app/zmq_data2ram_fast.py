@@ -8,5 +8,5 @@ sock.bind("tcp://*:9901")
 
 while True:
     time.sleep(0.05)
-    with open('/dev/data_fast', 'rb') as f:
+    with open('/dev/dataReal_to_ram_fast', 'rb') as f:
         sock.send(f.read(65536))
