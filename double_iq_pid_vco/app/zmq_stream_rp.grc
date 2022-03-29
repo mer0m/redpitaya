@@ -134,7 +134,11 @@ blocks:
     autoscale: 'True'
     average: '1.0'
     axislabels: 'True'
+<<<<<<< HEAD
     bw: samp_rate/2**7
+=======
+    bw: samp_rate/128
+>>>>>>> ce10dcec6d7949a55a30723329b8b6cd614b6d15
     color1: '"blue"'
     color10: '"dark blue"'
     color2: '"red"'
@@ -252,7 +256,11 @@ blocks:
     name: '""'
     nconnections: '2'
     size: 2**11
+<<<<<<< HEAD
     srate: samp_rate
+=======
+    srate: samp_rate/8192
+>>>>>>> ce10dcec6d7949a55a30723329b8b6cd614b6d15
     stemplot: 'False'
     style1: '1'
     style10: '1'

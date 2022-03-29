@@ -6,23 +6,11 @@
 
 	fragment0 {
 		target = <&fpga_full>;
-		#address-cells = <1>;
-		#size-cells = <1>;
 		__overlay__ {
 			#address-cells = <1>;
 			#size-cells = <1>;
 
 			firmware-name = "data_to_ram_and_dma_wrapper.bit.bin";
-
-			dds1_offset: dds1_offset@43C30000{
-				compatible = "ggm,add_const";
-				reg = <0x43C30000 0xffff>;
-			};
-
-			dds2_offset: dds2_offset@43C40000{
-				compatible = "ggm,add_const";
-				reg = <0x43C40000 0xffff>;
-			};
 
 			adc1_offset: adc1_offset@43C50000{
 				compatible = "ggm,add_const";
@@ -32,6 +20,16 @@
 			adc2_offset: adc2_offset@43C60000{
 				compatible = "ggm,add_const";
 				reg = <0x43C60000 0xffff>;
+			};
+
+			dds1_offset: dds1_offset@43C30000{
+				compatible = "ggm,add_const";
+				reg = <0x43C30000 0xffff>;
+			};
+
+			dds2_offset: dds2_offset@43C40000{
+				compatible = "ggm,add_const";
+				reg = <0x43C40000 0xffff>;
 			};
 
 			dds_ampl: dds_ampl@43C00000{

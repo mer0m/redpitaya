@@ -80,7 +80,11 @@ class zmq_stream(gr.top_block, Qt.QWidget):
         self.zeromq_sub_source_0 = zeromq.sub_source(gr.sizeof_short, 1, 'tcp://192.168.0.200:9902', 200, False, -1)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
             2**11, #size
+<<<<<<< HEAD
             samp_rate, #samp_rate
+=======
+            samp_rate/8192, #samp_rate
+>>>>>>> ce10dcec6d7949a55a30723329b8b6cd614b6d15
             "", #name
             2 #number of inputs
         )
@@ -133,7 +137,11 @@ class zmq_stream(gr.top_block, Qt.QWidget):
             2**10, #size
             firdes.WIN_RECTANGULAR, #wintype
             0, #fc
+<<<<<<< HEAD
             samp_rate/2**7, #bw
+=======
+            samp_rate/128, #bw
+>>>>>>> ce10dcec6d7949a55a30723329b8b6cd614b6d15
             "", #name
             2
         )
@@ -204,8 +212,13 @@ class zmq_stream(gr.top_block, Qt.QWidget):
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
+<<<<<<< HEAD
         self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate/2**7)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
+=======
+        self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate/128)
+        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate/8192)
+>>>>>>> ce10dcec6d7949a55a30723329b8b6cd614b6d15
 
 
 
